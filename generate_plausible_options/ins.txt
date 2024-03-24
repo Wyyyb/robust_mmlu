@@ -1,0 +1,17 @@
+I have a multiple-choice question with four options, one of which is correct, and I need to expand it to a ten-option multiple-choice question. The original options are A, B, C, and D, with one of them being the correct answer. Please generate six additional plausible but incorrect options (E, F, G, H, I, J) to accompany the original four.
+Input:
+Question: What is the structure of the United Nations Security Council?
+Existing 4 Options: A: 5 permanent members with veto power, 10 rotating members with no veto power
+B: 5 permanent members and 10 rotating members, all with veto power
+C: 10 permanent members with veto power, and 5 rotating members without veto power
+D: 15 permanent members with veto power
+Answer: A: 5 permanent members with veto power, 10 rotating members with no veto power
+
+Output:
+Generated 6 Options:
+E: 20 members, half of whom have veto power
+F: 7 permanent members with veto power, 8 rotating members with no veto power
+G: 5 permanent members with no veto power, 10 rotating members with veto power
+H: 15 rotating members with no veto power
+I: 10 permanent members and 5 rotating members, all with veto power
+J: 10 permanent members with no veto power, and 5 rotating members with veto power
