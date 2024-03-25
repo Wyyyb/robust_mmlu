@@ -1,0 +1,11 @@
+
+------subcategory level sta------
+Average accuracy 0.500 - other
+Average accuracy 0.000 - politics
+
+------category level sta------
+Average accuracy 0.000 - social sciences
+Average accuracy 0.500 - other (business, health, misc.)
+
+------average acc sta------
+Average accuracy: 0.167
