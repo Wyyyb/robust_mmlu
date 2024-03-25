@@ -103,20 +103,22 @@ def expand_options():
     for each_file in os.listdir(input_dir):
         if each_file in skip_files:
             continue
-        if os.path.exists(os.path.join(output_dir, each_file)):
-            continue
+        output_path = os.path.join(output_dir, each_file)
+        if os.path.exists(output_path):
+            output_data = read_csv_file(output_path)
+        else:
+            output_data = []
         file_path = os.path.join(input_dir, each_file)
         input_data = read_csv_file(file_path)
-        output_data = []
-        output_path = os.path.join(output_dir, each_file)
+
         for i, line in tqdm(enumerate(input_data)):
             if len(line) != 6:
                 print("invalid format", i, line)
                 continue
-            if i > 6:
-                continue
             single_out = [line[0]]
             question_str = line[0]
+            if check_exist(question_str, output_data):
+                continue
             options = line[1: 5]
             ans_index = line[5]
             answer_content = options[re_index_map[ans_index]]
@@ -129,7 +131,7 @@ def expand_options():
             new_ans_index = index_map[new_options.index(answer_content)]
             single_out += new_options + [new_ans_index]
             output_data.append(single_out)
-        write_2dlist_to_csv(output_data, output_path)
+            write_2dlist_to_csv(output_data, output_path)
 
 
 if __name__ == "__main__":
