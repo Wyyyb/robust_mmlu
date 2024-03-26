@@ -164,13 +164,13 @@ def main(args):
             padding_side="right",
             use_fast=False,
         )
-        if tokenizer.pad_token is None and "chat" not in args.model:
-            print("add pad token")
-            smart_tokenizer_and_embedding_resize(
-                special_tokens_dict=dict(pad_token=DEFAULT_PAD_TOKEN),
-                tokenizer=tokenizer,
-                model=model,
-            )
+        # if tokenizer.pad_token is None and "chat" not in args.model:
+        #     print("add pad token")
+        #     smart_tokenizer_and_embedding_resize(
+        #         special_tokens_dict=dict(pad_token=DEFAULT_PAD_TOKEN),
+        #         tokenizer=tokenizer,
+        #         model=model,
+        #     )
         tokenizer.add_special_tokens(
             {
                 "eos_token": DEFAULT_EOS_TOKEN,
