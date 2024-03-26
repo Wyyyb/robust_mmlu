@@ -126,6 +126,9 @@ def expand_options():
             answer_str = "{}: {}".format(ans_index, options[re_index_map[ans_index]])
             response = request_gpt4(question_str, options_str, answer_str)
             expanded_options = parse_options(response)
+            if not expanded_options:
+                print("not enough")
+                continue
             new_options = options + expanded_options
             random.shuffle(new_options)
             new_ans_index = index_map[new_options.index(answer_content)]
