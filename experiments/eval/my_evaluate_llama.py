@@ -158,15 +158,14 @@ def main(args):
             args.model,
             device_map="auto",
         )
-        print("tokenizer = transformers.LlamaTokenizer.from_pretrained(")
         tokenizer = transformers.LlamaTokenizer.from_pretrained(
             args.model,
             model_max_length=2048,
             padding_side="right",
             use_fast=False,
         )
-        print("if tokenizer.pad_token is None:")
-        if tokenizer.pad_token is None:
+        if tokenizer.pad_token is None and "chat" not in args.model:
+            print("add pad token")
             smart_tokenizer_and_embedding_resize(
                 special_tokens_dict=dict(pad_token=DEFAULT_PAD_TOKEN),
                 tokenizer=tokenizer,
@@ -179,7 +178,6 @@ def main(args):
                 "unk_token": DEFAULT_UNK_TOKEN,
             }
         )
-
         print("model.eval()")
         model.eval()
     except Exception as e:
