@@ -1,0 +1,167 @@
+0,1,2,3,4,5,meta-llama/Llama-2-7b-hf_correct,meta-llama/Llama-2-7b-hf_choice_A_probs,meta-llama/Llama-2-7b-hf_choice_B_probs,meta-llama/Llama-2-7b-hf_choice_C_probs,meta-llama/Llama-2-7b-hf_choice_D_probs
+ Guru Nanak and his successors instructed the use of particular Sikh Ragas in order to promote which of the following?,Devotion and piety,Harmony and balance,Love and passion,Goodwill and love,B,False,0.86546826,0.056454513,0.019121924,0.058955308
+" Guru Nanak used what term to denote the ""divine word"" as part of divine revelation?",Khalse,Shabad,Nam,Guru,B,True,0.073841326,0.8952649,0.02401153,0.0068823453
+What is the mi'raj?,Muhammad's migration to Mecca,Muhammad's miraculous ascent to heaven,Muhammad's first community in Mecca,Muhammad's revelations of the Qur'an,B,True,0.021440547,0.93519276,0.009661799,0.033704862
+"What is the name of the most famous dharmashastras, which probably dates from around the first century?",Laws of Dharma,Laws of Manu,Laws of Vishnu,Laws of Karma,B,True,0.29747254,0.62301356,0.050010417,0.029503528
+"What does the term ""Qur'an"" literally mean?",The Holy Book,The Recitation,The Narrative,The Pillars,B,False,0.8642469,0.08076062,0.019470068,0.035522293
+ Mani referred to God by which of the following names?,Mother of Light,Father of Goodness,Ineffable Lover,Eternal Spirit,B,False,0.41063967,0.22083417,0.18608022,0.18244596
+" Which tradition is known to promote ""gradual enlightenment""?",Bushido,Soto Zen,Nichiren,Shinto,B,True,0.16574894,0.674396,0.11046168,0.04939341
+What is the communal meal offered at the place of worship called in Sikhism?,Sangat,Langar,Gurdwara,Panth,B,True,0.0076532033,0.97596174,0.012857202,0.003527738
+To which tradition do the anti-Han rebel group known as the Celestial Masters belong?,Buddhism,Daoism,Confucianism,Shamanism,B,False,0.5057883,0.38854766,0.03852224,0.067141764
+"What does the word ""Islam"" mean in Arabic?",Worship,Submission,Obedience,Faith,B,True,0.033227134,0.9225074,0.027520215,0.016745234
+What does the term anatman mean?,Suffering,No-self,Impermanence,Soul,B,True,0.004795131,0.97231275,0.015725657,0.007166397
+ What genre of Sikh literature is denoted by the term janam-sakhis?,Spiritual narratives,Birth narratives,Redemption narratives,Theological narratives,B,True,0.38993174,0.5984352,0.007842949,0.0037900133
+Pure Land Buddhism belongs to which school?,Vajrayana,Mahayana,Theravada,Mahavira,B,True,0.02773149,0.93906844,0.024378564,0.008821571
+ Which Jaina group only allows women to lead a life of semi-renunciation?,Svetambara,Digambara,Agama,Jina,B,True,0.3494771,0.52253413,0.07331589,0.05467279
+What is the most important prayer in Judaism?,The Sefirot,The Shema,Deuteronomy,The Decalogue,B,True,0.029015118,0.96241695,0.0060431156,0.002524812
+ The socio-political alliance between the kshatriyas and the shramanas was rooted in their shared opposition to which of the following?,Legalistic asceticism,Brahminic orthodoxy,Bhakti devotionals,Unorthodox practices,B,False,0.45559102,0.44480816,0.052670233,0.046930566
+ Which early battle led to the conversion of Mecca?,The Battle of Uhud,The Battle of the Trench,The Battle of Camel,The Battle of Badr,B,False,0.7859637,0.13704947,0.03976919,0.03721767
+ What interior discipline must be adopted to achieve spiritual liberation within Sikhism?,Meditating on the sacred hymns,Remembering the Divine Name,Remembering that death is inevitable,Meditating on the goodness of the created world,B,False,0.3768704,0.28609714,0.13944538,0.19758719
+" During Japan's occupation of Korea (1910-1945), which of the following was imposed upon the Koreans?",Buddhism,Confucianism,Christianity,Daoism,B,False,0.4641014,0.37905377,0.09687303,0.05997181
+"What is the meaning of the Punjabi word ""Sikh""?",Faithful,Disciple,Devotee,Enlightened,B,False,0.37416917,0.36719462,0.11479517,0.14384101
+ Which of the following shuns politics?,The Songs of the South,The sages of the Zhuangzi,The Duke of Zhou,"The Confucian ""sage kings""",B,False,0.5894412,0.2112738,0.09771209,0.101572916
+What does the Hebrew word mashiach mean?,God,Anointed one,Prophet,The line of David,B,True,0.020191345,0.97160137,0.0057059294,0.0025013518
+"According to Jaina traditions, what does the term ajiva mean?",Soul,Non-soul,Non-matter,Sound,B,True,0.1525136,0.63756514,0.15599222,0.053929016
+" In the Japanese Zen tradition, what is zazen?",A collection of statues,Seated meditation,Veneration of ancestors,Funeral rituals,B,True,0.020404965,0.97611266,0.0025568174,0.0009255941
+ What is a central component of tantric Buddhism?,Asceticism,Sexual union,Music,Bodily pleasure,B,True,0.010035676,0.95877784,0.018557416,0.012629066
+" How does the Egyptian composition Ludul Bel Nemequi (""I will praise the Lord of wisdom) portray Marduk?",Loving and forgiving,Wrathful and merciful,Judging and vengeful,Transcendent and immanent,B,True,0.16814241,0.5697392,0.10914619,0.15297224
+" After the Bar Kochba revolt, where were the two main centres for Jewish development?",Babylonia and Europe,Palestine and Babylonia,Palestine and Spain,Spain and France,B,True,0.27118656,0.5745445,0.07783835,0.076430574
+" In addition to Jainism, which other tradition began as a world-renouncing movement?",Hinduism,Buddhism,Judaism,Islam,B,False,0.5282735,0.43083218,0.025458073,0.01543636
+"According to Hindu tradition, which age are we in currently?",Maha yuga,Kali yuga,Krita yuga,Satya yuga,B,True,0.13399516,0.70010537,0.069607325,0.096292086
+" In the Zoroastrian tradition, the term Gathas refers to which of the following?",Laws,Hymns,Ethics,Myths,B,True,0.017597878,0.97696656,0.0037617562,0.0016738635
+Which form of Buddhism taught the only hope for salvation was in the saving grace of Amida?,Tendai,Pure Land,Shingon,Soto Zen,B,True,0.021616455,0.8736579,0.07179208,0.032933507
+" According to Hindu tradition, who is considered to be the ideal wife?",Rama,Sita,Kali,Durga,B,True,0.046519235,0.9264933,0.017036058,0.009951441
+Who is the woman mystic who exemplified the all-consuming love of the divine?,Rumi,Rabi'a,Fatimah,Khadija,B,True,0.10438242,0.71122134,0.12909658,0.055299688
+ Who is the eighth-century CE female poet worshipped throughout many South Indian temples dedicated to Vishnu?,Devi,Andal,Ganga,Kali,B,True,0.112233736,0.83952034,0.030442826,0.017803129
+ Who is associated with the stigmata and preaching to birds?,Paul of Tarsus,Francis of Assisi,Clare of Assisi,John of the Cross,B,True,0.053519282,0.7418624,0.12812287,0.076495446
+" In his final work, Laws, Plato shifted from cosmology to which of the following issues?",Epistemology,Morality,Religion,Aesthetics,B,True,0.12211361,0.43760186,0.39868277,0.04160186
+ Which Christian denomination promotes a stripped-down Christianity?,Greek Orthodox,Quakers,Puritans,Roman Catholic,B,True,0.09421972,0.45540157,0.1490361,0.3013427
+ Rome claimed that their bishop (pope) was the director successor of which leader?,Paul,Peter,Jesus,Matthew,B,True,0.015377688,0.9782833,0.0042386074,0.0021005091
+When was the current Dalai Lama born?,2000,1935,1965,1975,B,True,0.053670947,0.9116968,0.022032058,0.012600195
+" According to Jaina traditions, who were the caityavasis?",Householders who supported renouncers,Temple-dwelling renouncers,Women ascetics who lived in communities,Orthodox interpreters of the scriptures,B,True,0.17894009,0.69513416,0.054095685,0.07183004
+"Zhuangzi describes a state as ziran, which means which of the following?",Thoughtfulness,Spontaneity,Non-action,Meditation,B,True,0.048308868,0.9049318,0.032440215,0.014319185
+" The mudras, which are an important feature of Buddhist art, are also known as what?",saints,hand gestures,religious clothing,temples,B,True,0.0035229311,0.9949529,0.0010172181,0.00050700095
+ The Maccabean Revolt is associated with which ruler?,Julius Caesar,Antiochus IV Epiphanes,Cyrus of Persia,Alexander the Great,B,True,0.002044293,0.98898894,0.0050854385,0.0038812445
+ How old was Guru Nanak when he started to preach the message of the divine Name?,40,30,33,52,B,False,0.29739296,0.2853614,0.32186097,0.09538467
+The widely adored Egyptian goddess Hathor was depicted as which of the following?,Serpent,Cow,Cheetah,Eagle,B,True,0.04161378,0.87430185,0.058410686,0.025673766
+What does the phrase Guru-Panth mean within the Sikh traditions?,Scripture,Community,Worship,Apprenticeship,B,True,0.082948394,0.61751246,0.20220737,0.09733173
+ After what event did the Rabbinical period begin within Judaism?,Construction of the Second Temple,Destruction of the Second Temple,The Christianization of the Roman Empire,The emergence of Islam,B,True,0.14959766,0.65365756,0.037436064,0.15930876
+Which monk developed Pure Land Buddhism as we know it today?,Genshin,Honen,Dogen,Shinran,B,True,0.007908815,0.9538605,0.02189478,0.016335841
+Which is the largest Muslim country in the world with more than 200 million adherents?,Pakistan,Indonesia,Iraq,Turkey,B,True,0.18495668,0.7580584,0.0314048,0.025580082
+Which pope promoted the cults of St. Peter and St. Paul to bolster authority in Rome?,Augustine,Gregory,Athanasius,Francis,B,True,0.104437575,0.7313973,0.0904256,0.073739484
+"Which of the following does the term ""Arhats"" refer to?",Worthy ones,Enlightened being,Saintly ones,Sages,B,True,0.119611,0.85386354,0.015565284,0.010960218
+Which Guru was martyred when he refused to embrace Islam?,Guru Ram Das,Guru Tegh Bahadur,Guru Gobind Singh,Guru Har Rai,B,True,0.007188349,0.7880227,0.13131382,0.07347515
+ Which Guru donned the two swords symbolling temporal and spiritual authority?,Guru Nanak,Guru Hargobind,Guru Arjan,Guru Ram Das,B,True,0.08019034,0.6505147,0.18332903,0.085965894
+ Where is the key to liberation found within Sikhism?,In the community,In the life of the householder,In ascetic renunciation,In faith in God,B,False,0.36901492,0.11873175,0.18948723,0.32276607
+Which is one of the most fundamental themes of Japanese culture and civilization?,Humans can align themselves with life energy through worship of kami,God is eternal and merciful to those who offer worship,Justice will be the final outcome in the next world,Power and force are the most divine attributes,B,False,0.907487,0.039473195,0.011214488,0.04182541
+ Which goddess is worshipped during the festival of Divali?,Durga,Sri Lakshmi,Kali,Mahavira,B,False,0.43443158,0.4154026,0.06292815,0.08723769
+ Where did people believe in the goddess known as Holy Mother of Mount Fairy Peach?,China,Silla,Goguryeo,Joseon,B,False,0.48177558,0.19356349,0.2639313,0.06072962
+ To whom is the Yoga Sutras attributed?,Madhva,Patanjali,Ramanuja,Aryabhatta,B,True,0.0056124814,0.9858059,0.0068391855,0.0017424437
+ Which of the following does NOT describe the Ka'ba?,It is a haram.,It was visited by Moses.,It was built by Abraham.,It is a square building.,B,False,0.31160966,0.20075293,0.26060006,0.22703728
+Which elephant-headed Hindu deity is often described as the most beloved?,Parvati,Ganesha,Vishnu,Sita,B,True,0.006950673,0.9837617,0.0052867546,0.004000788
+Sacred literature originated with which of the following jina?,Sri Lakshmi,Rsabha,Mahavira,Nanak,B,False,0.020092752,0.17857821,0.75829,0.043039072
+ Who is the author of Admonitions for Women?,Laozi,Ban Zhao,Menicus,Liu Xiang,B,True,0.1103504,0.68261963,0.1414087,0.06562132
+How many female renouncers were under the tutelage of Chandanbala?,"12,000","36,000","24,000","7,000",B,True,0.14761251,0.39085773,0.30392283,0.15760694
+"According to the Sikh tradition, the Mul Mantar illuminates the nature of what?",The gurus,Ultimate Reality,The community,Sikh worship,B,True,0.3405307,0.639097,0.010880647,0.0094917165
+ What term refers the divine order as an ell-embracing higher principle in Sikhism?,Sansar,Hukam,Mantar,Karam,B,True,0.05978022,0.7906768,0.056953214,0.09258977
+ How many books are in the New Testament?,30,27,29,47,B,True,0.08567012,0.7782346,0.09136948,0.04472579
+Which form of Buddhism focuses on social engagement that attracts lay participation?,Zen Buddhism,Humanistic Buddhism,Chan Buddhism,Pure Land Buddhism,B,True,0.029067066,0.73135424,0.057414256,0.18216448
+ What was one of the distinctive beliefs or practices of the southerners (Digambara)?,They worshipped exclusively outside of the temple,They believed that nakedness was an elemental expression of non-attachment,They included women within the ranks of the leadership,They believed that the omniscient Jina must eat and sleep,B,False,0.68159103,0.13057438,0.07457962,0.11325494
+The central prayer in Jainism is known by which of the following names?,The Liberation Mantra,Namokar Mantra,Ahimsa,Archaryas,B,True,0.46683192,0.5048379,0.020189893,0.008140373
+When did the first Jaina temples appear?,Second century CE,Fifth century CE,Fifth century BCE,Eighteenth century CE,B,False,0.43855265,0.37094393,0.13474038,0.055763055
+How many Jinas have appeared during our age?,7,24,42,13,B,True,0.1933947,0.5157586,0.16873497,0.122111715
+The title Dalai Lama means which of the following?,Ocean of Love,Ocean of Wisdom,Lover of Wisdom,Stillness of Love,B,True,0.19550611,0.745939,0.037960634,0.020594168
+"Who accompanies Vishnu in many of his incarnations as his consort, and is known as the goddess of good fortune?",Parvati,Sri (Lakshmi),Sita,Sarasvati,B,True,0.02407187,0.92790025,0.026420789,0.021607127
+What is bhakti often translated as?,Gods,Devotion,Yoga,Religion,B,True,0.0057933144,0.9840851,0.005657946,0.004463613
+" Which Hindu god or goddess is speech incarnate, the power of the word, and the mother of the Vedas?",Vishnu,Sarasvati,Ganesha,Indra,B,True,0.009008536,0.975776,0.011243576,0.003971931
+ What is the name of the Jewish prayer used for mourning since the Middle Ages?,The Shema,The Kaddish,The K'nesset,The Kippah,B,True,0.002711473,0.9720563,0.008352609,0.01687959
+Krishna and Rama are incarnations of which Hindu god?,Shiva,Vishnu,Brahma,Ganesha,B,True,0.002693904,0.9895923,0.0027291498,0.004984517
+ The kshatriyas is the caste name assigned to which group?,Priests,"Rulers, warriors",Servants,Merchants,B,True,0.008131733,0.98395395,0.0042071724,0.0037071137
+When was the Old Babylonian version of Gilgamesh modified into the standard version?,Toward the end of the first millennium BCE,Toward the end of the second millennium BCE,Towards the middle of the first millennium BCE,Toward the middle of the second millennium BCE,B,False,0.6221587,0.22508869,0.064105384,0.08864725
+ What is the meaning ofsamyak jnanawithin the Jaina traditions?,Correct knowledge,Correct intiution,Correct practice,Correct belief,B,False,0.18877684,0.18418905,0.54275954,0.08427451
+ What type of Buddhist organization is the Bodu Bala Sena?,Ecumenical organization in India,Activist and militant organization in Sri Lanka,Modern organization in the United States,Peacekeeping organization in Japan,B,True,0.018745583,0.9594334,0.00870179,0.013119315
+Which mystic believed that evil was a distortion that reveals divine love more clearly?,Catherine of Siena,Julian of Norwich,Teresa of Avila,John of the Cross,B,False,0.14531025,0.1782383,0.35562652,0.32082495
+"In the Jaina traditions ""bad karma"" is known by which of the following terms?",Punya,Paap,Pudgala,Akash,B,False,0.5822412,0.34807682,0.052942194,0.016739808
+ During what Japanese festival do the spirits of deceased family members return to receive ritual offerings of food made by their loved ones?,Mikoshi,Obon,Omizutori,Tanabata,B,True,0.017307326,0.9698305,0.00875438,0.0041076997
+"What does ""Mahavira"" mean?","""Master""","""Great Hero""","""The Lesser One""","""Mendicant""",B,False,0.8419016,0.107995294,0.020478461,0.029624734
+ What does the Tripitaka mean?,Three gems,Three baskets,Three bodhisattvas,Three buddhas,B,False,0.8049736,0.16809112,0.010304285,0.016631026
+Where is the largest network of Confucian shrines in the world?,Indonesia,Korea,China,Singapore,B,True,0.088598065,0.6161243,0.2583255,0.03695212
+" Ghosa, Apala and Lopamurda, all named in the early Vedas, are which of the following?",Female princesses,Female poets,Female goddesses,Female warriors,B,False,0.11617996,0.2531406,0.501523,0.1291565
+ What is the title for the religious and administrative leaders who succeeded the Prophet?,Rasul,Caliph,Nabi,Mahdi,B,True,0.014892536,0.86764324,0.091358095,0.026106076
+Which of the following is NOT included in the Islamic understanding of jurisprudence?,Consensus,Divine inspiration,Interpretation,Personal reasoning,B,False,0.35370365,0.17677754,0.2547034,0.21481545
+Why is Mahavira a significant person in the Jaina traditions?,He is the first of the ascetic prophets,He is the last of the ascetic prophets.,He is the most learned of the ascetic prophets,He is the most holy of the ascetic prophets,B,False,0.8572629,0.07451209,0.021341393,0.046883613
+ The Tibetan Book of the Dead is also known as which of the following?,Bardo Ngawang,Bardo Thodol,Bardo Gyaltsen,Bardo Chogye,B,True,0.023577891,0.971095,0.0029297792,0.0023973994
+" Which Hindu festival involves decorating the house with lights, setting off firecrackers and wearing new clothes?",Holi,Deepavali,Diwali,Navaratri,B,True,0.12654097,0.6807601,0.15493156,0.03776747
+What hours are set aside as the ambrosial hours for the Sikhs?,5–7 a.m.,3–6 a.m.,3–6 p.m.,9–11 p.m.,B,False,0.7628821,0.12196002,0.06511907,0.050038833
+ Self-sacrifice is an important theme for which Buddhist thinker?,The Dalai Lama,Thich Nhat Hanh,Daisetsu T. Suzuki,Shaku Soyen,B,True,0.1340364,0.3173872,0.291317,0.2572595
+ How many times a day is the Fatihah recited?,Exactly 17,At least 17,At least 13,Exactly 24,B,False,0.36827424,0.31341648,0.18886685,0.12944247
+"Which branch of Judaism founded by Zacharias Frankel is known for its ""Positive-Historical Judaism""?",Reformed,Conservative,Reconstructionism,Orthodox,B,True,0.08999976,0.43061635,0.37903818,0.10034569
+" What is the term used to describe the ""pure"" as an order of loyal Sikhs bound together?",Rahit,Khalsa,Panj Kakke,Shabad,B,True,0.002762778,0.9846777,0.009785226,0.002774332
+Who is the founder of Sikhism?,Guru Gobind Singh,Guru Nanak,Guru Kabir,Guru Hargobind,B,False,0.9111459,0.051942643,0.014272149,0.022639317
+Which term is usually associated with women in Hindu traditions?,Polluted,Auspiciousness,Ideal,Kind,B,False,0.3684573,0.262357,0.18842769,0.18075797
+What is another name for Enuma Elish?,Epic of Destruction,Epic of Creation,Epic of Egypt,Epic of Origins,B,True,0.32121968,0.6670639,0.007979318,0.0037371211
+ What was the most important female-centered festival in cities throughout Greece?,Oracle Days,Thesmophoria,Isthmian Games,Feast of Athrodite,B,True,0.1326725,0.82322514,0.0318068,0.0122955665
+Speaking in tongues is a feature of which Christian denomination?,Evangelicalism,Pentecostalism,Pietism,Fundamentalism,B,True,0.03678696,0.95159525,0.0058814185,0.005736372
+ Charism can be defined as which of the following?,An oil,A spiritual gift,Prophecy,Authority,B,True,0.28038076,0.6871619,0.021124111,0.011333221
+" In Islam, what is the qiblah?",Almsgiving,Direction of prayer,Pilgrimage,Revelation,B,True,0.015430678,0.96891576,0.006734725,0.008918863
+"In Tendai Buddhism, what does the term honji mean?",Trace,Original ground,Manifestation,True sign,B,True,0.13287918,0.71796405,0.12419434,0.024962448
+ What is the name of a recent revivalist movement in Turkey led by Fetullah Gülen?,Nation of Islam,Hizmet,Muslim Brotherhood,Sufism,B,True,0.006923119,0.9245455,0.013787187,0.05474416
+For whom are the Hindu Vedas most significant?,Kshatriyas,Brahmins,Shiva,Yogis,B,True,0.26850134,0.67777574,0.028802184,0.024920795
+" According to the Korean foundation myth, who transformed into a human in order to father Dangun?",Hwanin,Hwanung,Joseon,Yi,B,True,0.02464792,0.9275758,0.028792549,0.018983765
+" In Buddhism, what are ordained women known as?",Bhikshus,Bhikshunis,The Sangha,Arhats,B,True,0.0065935357,0.96007967,0.013621053,0.019705774
+ What is the name of the most authoritative Kabbalah text?,Gemarah,Zohar,Midrash,Septuagint,B,True,0.0035354765,0.9762407,0.012053342,0.008170397
+ Which Confucian philosopher is described as a mystic due to his focus on qi (or ch'i)?,Dao,Mencius,Xunzi,Confucius,B,True,0.20599145,0.5286185,0.18440986,0.0809802
+ Which of the following does the Qur'an permit?,Honor Killing,Polygyny,Adultery,Stoning,B,False,0.40914053,0.3136074,0.15999697,0.11725516
+ Which is the main form of Buddhism in Sri Lanka?,Mahayana,Theravada,Pure Land,Zen,B,True,0.007670861,0.95329404,0.017187461,0.02184754
+ Which leader is known for spreading the dharma of non-violence?,Ngo Dinh Diem,Ashoka,Siddhartha,The Dalai Lama,B,True,0.11665633,0.7221165,0.13997985,0.021247411
+What are the two sacraments that all Christians celebrate?,Baptism and Ordination,Baptism and Eucharist,Eucharist and Marriage,Eucharist and Confession,B,True,0.05798922,0.9073359,0.0130979605,0.021576893
+What is the most important festival for Sikhs?,Holi,Baisakhi Day,Divali,Hola Mahalla,B,True,0.09974377,0.7916932,0.06247713,0.04608585
+ Who declared Muhammad a prophet?,Khadijah,Waraqah,Gabriel,Abu Bakr,B,True,0.18154816,0.62806416,0.099404894,0.09098274
+The Jataka tales are a collection of which genre of stories?,Life stories,Birth stories,Warrior stories,Hero stories,B,False,0.5512544,0.428617,0.012017845,0.008110816
+ Which of the following is the timespan for Japan's closure to Christianity and Europe?,1749-1945,1641-1853,1052-1616,1517-1870,B,True,0.15955754,0.6606063,0.087711096,0.09212509
+" In Yiddish, what is the word for covenant?",Haggadah,Bris,Brit,Halakhah,B,False,0.13571739,0.2051299,0.6217629,0.037389863
+"According to the Sumerian King List, where does kingship come from?",Through initiation into the mystery cults,Descends from heaven,Direct lineage of ancestors,By military victories,B,False,0.31054297,0.25357044,0.2323421,0.2035445
+What is the name of the Hindu community associated with environmental activism?,Puranas,Bishnoi,Rajasthan,Jambho,B,True,0.020036353,0.8912854,0.06689347,0.021784794
+ Which bodhisattva is known for conducting the souls of dead children to salvation?,Guan-yin,Ojizo-sama,Kannon,Amitabha,B,True,0.29630372,0.3785231,0.2687066,0.05646659
+ The Gospel of John is associated with which theological concept?,Incarnation,All of the above,Jesus as messiah and saviour,Logos of God,B,False,0.72949404,0.12826966,0.09351264,0.048723668
+Which god supplanted the earlier Mesopotamian supreme god Enil?,Horus,Marduk,Inanna,Isis,B,True,0.008295271,0.9748906,0.006650566,0.010163559
+Which of the following movements was founded by Mordechai Kaplan?,Liberal Judaism,Reconstructionist Judaism,Conservative Judaism,Reform Judaism,B,True,0.07705787,0.8430707,0.040795363,0.039076056
+When was the State of Israel established?,1947,1948,1945,1949,B,True,0.09300034,0.88324666,0.009162396,0.014590508
+ Icons are a main feature of which church?,Anglican,Orthodox,Catholic,Lutheran,B,True,0.03607662,0.93012667,0.02640978,0.007386867
+The first of the Four Noble Truths teaches which of the following cannot be escaped?,Pride,Suffering,Hatred,Fate,B,True,0.030322209,0.964716,0.0037073665,0.0012544532
+ The Continental Reformation started in what year?,1545,1517,1492,1705,B,True,0.1768868,0.7971244,0.016696936,0.009291826
+The minimalism of Haiku is said to be derived from which tradition?,Shinto,Zen Buddhism,Pure Land Buddhism,Confucianism,B,True,0.048580658,0.94647104,0.0029504842,0.0019978222
+Which deity is the Roman counterpart to the Greek god Zeus?,Juno,Jupiter,Dionysius,Neptune,B,True,0.005052005,0.9906612,0.0024418163,0.0018448819
+The philosopher Laozi is associated with which tradition?,Jainism,Daoism,Confucianism,Buddhism,B,True,0.002432257,0.9938909,0.00092512125,0.002751722
+ Which Egyptian gods did Akhenaten make a determined effort to eliminate?,Shu and Set,Amun and Mut,Horus and Isis,Khonsu and Nekhbet,B,True,0.45288548,0.4559224,0.05281451,0.038377635
+The term xin refers to which of the following?,Piety,Heart-mind,Non-action,World,B,True,0.08383527,0.88704604,0.022848446,0.0062702796
+ Which term in the dharma texts of the classical period denotes the four stages of life?,Kama,Ashramas,Samnyasin,Arthas,B,True,0.112609036,0.86196905,0.017223563,0.008198363
+"What is the term for commentary on the Qur'an, which means ""unveiling""?",fiqh,tafsir,ijtihad,dhikr,B,True,0.011437427,0.9690346,0.011643273,0.007884697
+ With which branch of Islam are the Isma'ilis are associated?,The Sunni,The Shi'a,The Sufi,The Ahmadiyya,B,True,0.18475401,0.69240254,0.09535605,0.02748738
+ The term mappo is associated with which of the following?,The dharma,An age of decline,The golden age,Samurai,B,False,0.4316573,0.33555943,0.14016266,0.09262066
+ What is the name of the bodhisattva in Japan known for a commitment to alleviating suffering?,Amaterasu,Kannon,Izanami,Guanyin,B,True,0.0037783503,0.94966257,0.024116186,0.022442942
+Who was the first significant anchorite hermit?,Pachomius,Anthony,Athanasius,Basil,B,False,0.4779154,0.44197506,0.05235473,0.027754785
+Which are the synoptic Gospels?,"Peter, John, Mark","Matthew, Mark, Luke","Matthew, Mark, John","John, Luke, Mark",B,True,0.10224777,0.8791076,0.011311122,0.0073335785
+What is the English title for the divination text also known as the Yijing?,The Classic of Documents,The Classic of Changes,The Flower Garland Sutra,The Lotus Sutra,B,True,0.018953813,0.9709721,0.0057589062,0.0043152543
+ Where was the most famous site of the mystery cults in Greece?,Ephesus,Eleusis,Athens,Corinth,B,True,0.011147227,0.9817291,0.0049426663,0.0021809428
+"When did the Babylonian captivity of ""Exile"" begin?",515 BCE,586 BCE,535 BCE,70 CE,B,True,0.17810021,0.74746954,0.051632185,0.022798043
+ The term vajrya means diamond and which of the following?,Emerald,Thunderbolt,Brilliance,Lightning,B,True,0.34522483,0.3796814,0.14161487,0.1334789
+" In Jainism, what is the cycle that one must liberate oneself from?",Punya,Samsara,Samayika,Jiva,B,True,0.021787414,0.9664337,0.008582771,0.0031960758
+ The classic text Daodejing is known by what title in English?,Classic of Changes,Classic of the Way and Power,Classic of Women,Classic of Philosophy,B,False,0.9090426,0.06964712,0.015920892,0.005389398
+ The Communidades de Base is associated with which of the following?,Bishop Oscar Romero,All of the above,Dignity of all human beings,Resistance and renewal,B,True,0.35905978,0.4623893,0.050470542,0.12808044
+What does the term matsuri mean?,Amulets,Grand festivals,Rituals,Meditation,B,True,0.008132026,0.97805595,0.007911743,0.0059002014
+ Which Roman statesman encouraged civic religion in his work The Laws?,Varro,Cicero,Plato,Augustus,B,True,0.31171337,0.65070814,0.024580313,0.012998155
+" What does ""Svetambara"" mean?","""Sky-clad""","""White-clad""","""Naked""","""Clothed""",B,False,0.6711281,0.28456894,0.019181758,0.02512125
+"What is seen by Europeans, and many Muslims, as the symbol of Islam?",The Hijab,The Crescent,The Minaret,The Qur'an,B,True,0.17667036,0.6126775,0.08325888,0.12739319
+ What is the purpose for hearing the Guru's Vak in the morning?,Prayers on behalf of people outside of the Sikh community,Inspiration for personal meditation throughout the day,Communal confession to cleanse the community,Doctrinal instruction for discussion in the community,B,False,0.47601438,0.16131325,0.113018475,0.2496539
+ What are the rabbinical commentaries produced after the Mishnah called?,Septuagint,Gemarah,Yeshiva,Talmud,B,True,0.0021182292,0.97817767,0.0065738596,0.013130234
+What is a mohel?,A type of oil lame,A ritual circumciser,A teacher,A covenant,B,True,0.06386801,0.9252686,0.0075669684,0.0032964577
+"The ""Flower Sermon"" is associated with which form of Buddhism?",Theravada,Chan-Zen,Pure Land,Yogicara,B,True,0.14042749,0.44094035,0.3506349,0.06799728
+ When was the major shift by Greek philosophers who rejected the anthropomorphic view of the divine?,Early Third Century BCE,Late Sixth Century BCE,Second and First Century BCE,Fourth and Third Century BCE,B,True,0.32949695,0.33428067,0.18212107,0.1541014
+ What is the foremost reason for wearing the hijab in the present day?,Islamic modesty,Islamic identity,Islamic obedience,Islamic seclusion,B,False,0.5215808,0.31052068,0.073654324,0.09424414
+"The Oral Torah, in its written form, is known as what?",Midrash,Mishnah,Tanakh,Pentateuch,B,True,0.06231633,0.9119303,0.0152791105,0.010474164
+What has been a central focus of religious traditions in China and Korea?,Power and influence,Peace and harmony,Truth and love,Wisdom and ethics,B,True,0.15541792,0.6163828,0.16174382,0.06645542
+ To whom did ordinary folk appeal during a drought in the time of the Han Dynasty?,The Buddha,The Queen Mother of the West,Laozi,Confucius,B,False,0.5331513,0.2534572,0.11498537,0.098406054
+ The theological term homoousios means which of the following?,of a similar substance,of the same substance,of like substance,of human substance,B,True,0.10192291,0.86657774,0.017263975,0.014235319
+"According to the Japanese origin myth, who gives birth to Amaterasu from his left eye?",Es,Izanagi,Izanami,Kami,B,True,0.18021698,0.72004414,0.05957691,0.040161945
+ The numen of Augustus referred to which of the following characteristics?,Sexual virility,Divine power,Military acumen,Philosophical intellect,B,True,0.03512848,0.9402202,0.015797932,0.008853339
