@@ -1,0 +1,28 @@
+
+------subcategory level sta------
+Average accuracy 0.512 - math
+Average accuracy 0.465 - health
+Average accuracy 0.442 - physics
+Average accuracy 0.637 - business
+Average accuracy 0.480 - biology
+Average accuracy 0.346 - chemistry
+Average accuracy 0.462 - computer science
+Average accuracy 0.460 - economics
+Average accuracy 0.464 - engineering
+Average accuracy 0.542 - philosophy
+Average accuracy 0.663 - other
+Average accuracy 0.547 - history
+Average accuracy 0.591 - geography
+Average accuracy 0.592 - politics
+Average accuracy 0.556 - psychology
+Average accuracy 0.547 - culture
+Average accuracy 0.403 - law
+
+------category level sta------
+Average accuracy 0.467 - STEM
+Average accuracy 0.478 - humanities
+Average accuracy 0.542 - social sciences
+Average accuracy 0.560 - other (business, health, misc.)
+
+------average acc sta------
+Average accuracy: 0.511
