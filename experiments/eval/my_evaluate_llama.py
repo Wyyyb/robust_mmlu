@@ -4,6 +4,7 @@ import torch
 import numpy as np
 import pandas as pd
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import AutoModelForCausalLM
 from categories import subcategories, categories
 import transformers
 import time
@@ -43,6 +44,21 @@ def smart_tokenizer_and_embedding_resize(
 
         input_embeddings[-num_new_tokens:] = input_embeddings_avg
         # output_embeddings[-num_new_tokens:] = output_embeddings_avg
+
+
+def fix_answer(all_df, fixed_answer_index):
+    column_names = all_df.columns.tolist()
+    all_data_list = all_df.to_numpy().tolist()
+    for i, row in enumerate(all_data_list):
+        ans = row[-1]
+        ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ans)
+        if ans_index != fixed_answer_index:
+            all_data_list[i][-1] = choices[fixed_answer_index]
+            temp = row[fixed_answer_index + 1]
+            all_data_list[i][fixed_answer_index + 1] = row[ans_index + 1]
+            all_data_list[i][ans_index + 1] = temp
+    all_df = pd.DataFrame(all_data_list, columns=column_names)
+    return all_df
 
 
 def format_subject(subject):
@@ -153,7 +169,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
 
 
 def main(args):
-    try:
+    if "llama" in args.model.lower():
         model = transformers.AutoModelForCausalLM.from_pretrained(
             args.model,
             device_map="auto",
@@ -164,13 +180,7 @@ def main(args):
             padding_side="right",
             use_fast=False,
         )
-        # if tokenizer.pad_token is None and "chat" not in args.model:
-        #     print("add pad token")
-        #     smart_tokenizer_and_embedding_resize(
-        #         special_tokens_dict=dict(pad_token=DEFAULT_PAD_TOKEN),
-        #         tokenizer=tokenizer,
-        #         model=model,
-        #     )
+
         tokenizer.add_special_tokens(
             {
                 "eos_token": DEFAULT_EOS_TOKEN,
@@ -178,11 +188,15 @@ def main(args):
                 "unk_token": DEFAULT_UNK_TOKEN,
             }
         )
-        print("model.eval()")
-        model.eval()
-    except Exception as e:
-        print("load model failed", e)
+    elif "gemma" in args.model.lower() or "mistral" in args.model.lower():
+        tokenizer = AutoTokenizer.from_pretrained(args.model)
+        model = AutoModelForCausalLM.from_pretrained(args.model)
+        print("length of {} tokenizer".format(args.model), len(tokenizer))
+    else:
         model, tokenizer = None, None
+    print("model.eval()")
+    model.eval()
+
     subjects = sorted(
         [
             f.split("_test.csv")[0]
@@ -205,20 +219,13 @@ def main(args):
 
     for subject in subjects:
         all_df = pd.read_csv(os.path.join(args.data_dir, subject + "_test.csv"), header=None)
-        if args.fixed_answer != -1:
-            column_names = all_df.columns.tolist()
-            all_data_list = all_df.to_numpy().tolist()
-            for i, row in enumerate(all_data_list):
-                ans = row[-1]
-                ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ans)
-                if ans_index != args.fixed_answer:
-                    all_data_list[i][-1] = choices[args.fixed_answer]
-                    temp = row[args.fixed_answer + 1]
-                    all_data_list[i][args.fixed_answer + 1] = row[ans_index + 1]
-                    all_data_list[i][ans_index + 1] = temp
-            all_df = pd.DataFrame(all_data_list, columns=column_names)
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
+        if args.fixed_answer != -1:
+            dev_df = fix_answer(dev_df, args.fixed_answer)
+            test_df = fix_answer(test_df, args.fixed_answer)
+        elif args.fixed_example_answer != -1:
+            dev_df = fix_answer(dev_df, args.fixed_example_answer)
 
         cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df)
         subcats = subcategories[subject]
@@ -268,6 +275,7 @@ if __name__ == "__main__":
     parser.add_argument("--options_num", "-o", type=int, default=4)
     parser.add_argument("--use_rare_symbol", "-r", type=bool, default=False)
     parser.add_argument("--fixed_answer", "-f", type=int, default=-1)
+    parser.add_argument("--fixed_example_answer", "-e", type=int, default=-1)
     parser.add_argument(
         "--model",
         "-m",
