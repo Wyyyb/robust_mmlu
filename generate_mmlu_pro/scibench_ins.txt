@@ -1,0 +1,7 @@
+I need to create a multiple-choice question with four options. I will provide the question and the correct answer. Please generate three plausible but incorrect answers to accompany the correct one. Ensure that these options are relevant to the topic but are clearly distinct from the correct answer to prevent ambiguity.
+Question: Suppose that $2 \mathrm{~J}$ of work is needed to stretch a spring from its natural length of $30 \mathrm{~cm}$ to a length of $42 \mathrm{~cm}$. How far beyond its natural length will a force of $30 \mathrm{~N}$ keep the spring stretched?
+Correct Answer: 10.8 $\mathrm{cm}$
+Three incorrect answers for the multiple-choice options:
+(1) 12.6 $\\mathrm{cm}$
+(2) 15.4 $\\mathrm{cm}$
+(3) 9.2 $\\mathrm{cm}$

@@ -1,0 +1,87 @@
+ Calculate (a) the wavelength and kinetic energy of an electron in a beam of electrons accelerated by a voltage increment of $100 \mathrm{~V}$ ,1.800 $10^{-17} \mathrm{~J} \cdot$ electron ${ }^{-1}$, 1.602 $10^{-17} \mathrm{~J} \cdot$ electron ${ }^{-1}$,2.304 $10^{-17} \mathrm{~J} \cdot$ electron ${ }^{-1}$,1.259 $10^{-17} \mathrm{~J} \cdot$ electron ${ }^{-1}$,B,scibench-chemmc
+" In the infrared spectrum of $\mathrm{H}^{127} \mathrm{I}$, there is an intense line at $2309 \mathrm{~cm}^{-1}$. Calculate the force constant of $\mathrm{H}^{127} \mathrm{I}$.",350 $ \mathrm{~N} \cdot \mathrm{m}^{-1}$,313 $ \mathrm{~N} \cdot \mathrm{m}^{-1}$,400 $ \mathrm{~N} \cdot \mathrm{m}^{-1}$,250 $ \mathrm{~N} \cdot \mathrm{m}^{-1}$,B,scibench-chemmc
+" Sirius, one of the hottest known stars, has approximately a blackbody spectrum with $\lambda_{\max }=260 \mathrm{~nm}$. Estimate the surface temperature of Sirius.
+",8500 $\mathrm{~K}$,15000 $\mathrm{~K}$,9500 $\mathrm{~K}$,"11000 $\mathrm{~K}$
+",D,scibench-chemmc
+"$$
+\beta=2 \pi c \tilde{\omega}_{\mathrm{obs}}\left(\frac{\mu}{2 D}\right)^{1 / 2}
+$$
+Given that $\tilde{\omega}_{\mathrm{obs}}=2886 \mathrm{~cm}^{-1}$ and $D=440.2 \mathrm{~kJ} \cdot \mathrm{mol}^{-1}$ for $\mathrm{H}^{35} \mathrm{Cl}$, calculate $\beta$.",2.10 $10^{10} \mathrm{~m}^{-1}$,1.35 $10^{10} \mathrm{~m}^{-1}$,2.45 $10^{10} \mathrm{~m}^{-1}$, 1.81 $10^{10} \mathrm{~m}^{-1}$,D,scibench-chemmc
+"$$
+\text { If we locate an electron to within } 20 \mathrm{pm} \text {, then what is the uncertainty in its speed? }
+$$",1.8$10^7 \mathrm{~m} \cdot \mathrm{s}^{-1}$,2.5$10^7 \mathrm{~m} \cdot \mathrm{s}^{-1}$, 3.7$10^7 \mathrm{~m} \cdot \mathrm{s}^{-1}$ ,4.9$10^7 \mathrm{~m} \cdot \mathrm{s}^{-1}$,C,scibench-chemmc
+"$$
+\text {Calculate the energy of a photon for a wavelength of } 100 \mathrm{pm} \text { (about one atomic diameter). }
+$$
+",1.5 $10^{-15} \mathrm{~J}$,2.5 $10^{-15} \mathrm{~J}$, 2 $10^{-15} \mathrm{~J}$,3 $10^{-15} \mathrm{~J}$,C,scibench-chemmc
+A ground-state hydrogen atom absorbs a photon of light that has a wavelength of $97.2 \mathrm{~nm}$. It then gives off a photon that has a wavelength of $486 \mathrm{~nm}$. What is the final state of the hydrogen atom?, 2,3,4,1,A,scibench-chemmc
+A helium-neon laser (used in supermarket scanners) emits light at $632.8 \mathrm{~nm}$. Calculate the frequency of this light.,5.500$10^{14} \mathrm{~Hz}$,3.982$10^{14} \mathrm{~Hz}$,4.200$10^{14} \mathrm{~Hz}$, 4.738$10^{14} \mathrm{~Hz}$ ,D,scibench-chemmc
+A household lightbulb is a blackbody radiator. Many lightbulbs use tungsten filaments that are heated by an electric current. What temperature is needed so that $\lambda_{\max }=550 \mathrm{~nm}$ ?,4500 $\mathrm{~K}$," 5300 $\mathrm{~K}$
+",4800 $\mathrm{~K}$,6000 $\mathrm{~K}$,B,scibench-chemmc
+A line in the Lyman series of hydrogen has a wavelength of $1.03 \times 10^{-7} \mathrm{~m}$. Find the original energy level of the electron.,2,4, 3,5,C,scibench-chemmc
+"A proton and a negatively charged $\mu$ meson (called a muon) can form a short-lived species called a mesonic atom. The charge of a muon is the same as that on an electron and the mass of a muon is $207 m_{\mathrm{e}}$. Assume that the Bohr theory can be applied to such a mesonic atom and calculate the ground-state energy, the radius of the first Bohr orbit, and the energy and frequency associated with the $n=1$ to $n=2$ transition in a mesonic atom.",1.35 $10^{-28} \mathrm{~kg}$,1.87 $10^{-28} \mathrm{~kg}$, 1.69 $10^{-28} \mathrm{~kg}$,2.07 $10^{-28} \mathrm{~kg}$,C,scibench-chemmc
+"Another application of the relationship given in Problem $1-48$ has to do with the excitedstate energies and lifetimes of atoms and molecules. If we know that the lifetime of an excited state is $10^{-9} \mathrm{~s}$, then what is the uncertainty in the energy of this state?
+",3 $10^{-25} \mathrm{~J}$,9 $10^{-25} \mathrm{~J}$,5 $10^{-25} \mathrm{~J}$, 7 $10^{-25} \mathrm{~J}$,D,scibench-chemmc
+Calculate the de Broglie wavelength for (a) an electron with a kinetic energy of $100 \mathrm{eV}$, 0.123nm ,0.200nm,0.150nm,0.098nm,A,scibench-chemmc
+Calculate the energy and wavelength associated with an $\alpha$ particle that has fallen through a potential difference of $4.0 \mathrm{~V}$. Take the mass of an $\alpha$ particle to be $6.64 \times 10^{-27} \mathrm{~kg}$.,$1.5 \times 10^{-18} \mathrm{~J} / \alpha$-particle," 1.3 $
+\text { 1-41. } 1.3 \times 10^{-18} \mathrm{~J} / \alpha \text {-particle, }
+$",$1.0 \times 10^{-18} \mathrm{~J} / \alpha$-particle,$2.6 \times 10^{-18} \mathrm{~J} / \alpha$-particle,B,scibench-chemmc
+"Calculate the number of photons in a $2.00 \mathrm{~mJ}$ light pulse at (a) $1.06 \mu \mathrm{m}$
+",0.89 $10^{16}$ photons,2.15 $10^{16}$ photons, 1.07 $10^{16}$ photons,1.50 $10^{16}$ photons,C,scibench-chemmc
+Calculate the percentage difference between $\ln (1+x)$ and $x$ for $x=0.0050$,0.025 %,2.490 %,0.050 %, 0.249 %,D,scibench-chemmc
+Calculate the percentage difference between $e^x$ and $1+x$ for $x=0.0050$,0.50 $10^{-3} \%$, 1.25 $10^{-3} \%$,5.00 $10^{-3} \%$,2.50 $10^{-3} \%$,B,scibench-chemmc
+Calculate the reduced mass of a nitrogen molecule in which both nitrogen atoms have an atomic mass of 14.00.,3.50,14.00,28.00, 7.00,D,scibench-chemmc
+Calculate the wavelength and the energy of a photon associated with the series limit of the Lyman series.,121.54nm, 91.17nm ,105.46nm,97.23nm,B,scibench-chemmc
+"Evaluate the series
+$$
+S=\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\cdots
+$$
+",2,0.5,1.5, 1,D,scibench-chemmc
+"Evaluate the series
+$$
+S=\sum_{n=0}^{\infty} \frac{1}{3^n}
+$$",1 / 2, 3 / 2,3,2 / 3,B,scibench-chemmc
+"Evaluate the series
+$$
+S=\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{2^n}
+$$", 1,0,0.5,-1,A,scibench-chemmc
+"Example 5-3 shows that a Maclaurin expansion of a Morse potential leads to
+$$
+V(x)=D \beta^2 x^2+\cdots
+$$
+Given that $D=7.31 \times 10^{-19} \mathrm{~J} \cdot$ molecule ${ }^{-1}$ and $\beta=1.81 \times 10^{10} \mathrm{~m}^{-1}$ for $\mathrm{HCl}$, calculate the force constant of $\mathrm{HCl}$.", 479$\mathrm{~N} \cdot \mathrm{m}^{-1}$ ,392$\mathrm{~N} \cdot \mathrm{m}^{-1}$,600$\mathrm{~N} \cdot \mathrm{m}^{-1}$,520$\mathrm{~N} \cdot \mathrm{m}^{-1}$,A,scibench-chemmc
+"It turns out that the solution of the Schrödinger equation for the Morse potential can be expressed as
+$$
+G(v)=\tilde{\omega}_{\mathrm{e}}\left(v+\frac{1}{2}\right)-\tilde{\omega}_{\mathrm{e}} \tilde{x}_{\mathrm{e}}\left(v+\frac{1}{2}\right)^2
+$$
+Chapter 5 / The Harmonic Oscillator and Vibrational Spectroscopy
+where
+$$
+\tilde{x}_{\mathrm{e}}=\frac{h c \tilde{\omega}_{\mathrm{e}}}{4 D}
+$$
+Given that $\tilde{\omega}_{\mathrm{e}}=2886 \mathrm{~cm}^{-1}$ and $D=440.2 \mathrm{~kJ} \cdot \mathrm{mol}^{-1}$ for $\mathrm{H}^{35} \mathrm{Cl}$, calculate $\tilde{x}_{\mathrm{e}}$ and $\tilde{\omega}_{\mathrm{e}} \tilde{x}_{\mathrm{e}}$.", 0.01961,0.01573,0.02564,0.03245,A,scibench-chemmc
+"One of the most powerful modern techniques for studying structure is neutron diffraction. This technique involves generating a collimated beam of neutrons at a particular temperature from a high-energy neutron source and is accomplished at several accelerator facilities around the world. If the speed of a neutron is given by $v_{\mathrm{n}}=\left(3 k_{\mathrm{B}} T / m\right)^{1 / 2}$, where $m$ is the mass of a neutron, then what temperature is needed so that the neutrons have a de Broglie wavelength of $50 \mathrm{pm}$ ?",3000$\mathrm{K}$, 2500$\mathrm{K}$ ,2000$\mathrm{K}$,3500$\mathrm{K}$,B,scibench-chemmc
+"Show that l'Hôpital's rule amounts to forming a Taylor expansion of both the numerator and the denominator. Evaluate the limit
+$$
+\lim _{x \rightarrow 0} \frac{\ln (1+x)-x}{x^2}
+$$
+both ways.", -1/2,1/2,0,-1,A,scibench-chemmc
+The force constant of ${ }^{35} \mathrm{Cl}^{35} \mathrm{Cl}$ is $319 \mathrm{~N} \cdot \mathrm{m}^{-1}$. Calculate the fundamental vibrational frequency,420 $\mathrm{~cm}^{-1}$, 556 $\mathrm{~cm}^{-1}$,675 $\mathrm{~cm}^{-1}$,610 $\mathrm{~cm}^{-1}$,B,scibench-chemmc
+The mean temperature of the earth's surface is $288 \mathrm{~K}$. What is the maximum wavelength of the earth's blackbody radiation?, 1.01 10^{-5} \mathrm{~m},1.5 10^{-5} $\mathrm{m}$,0.9 10^{-5} $\mathrm{m}$,1.2 10^{-5} $\mathrm{m}$,A,scibench-chemmc
+"The power output of a laser is measured in units of watts (W), where one watt is equal to one joule per second. $\left(1 \mathrm{~W}=1 \mathrm{~J} \cdot \mathrm{s}^{-1}\right.$.) What is the number of photons emitted per second by a $1.00 \mathrm{~mW}$ nitrogen laser? The wavelength emitted by a nitrogen laser is $337 \mathrm{~nm}$."," 1.70 $
+10^{15} \text { photon } \cdot \mathrm{s}^{-1}
+$",3.00 $10^{15} \text { photon } \cdot \mathrm{s}^{-1}$,1.20 $10^{15} \text { photon } \cdot \mathrm{s}^{-1}$,2.50 $10^{15} \text { photon } \cdot \mathrm{s}^{-1}$,A,scibench-chemmc
+"The relationship introduced in Problem $1-48$ has been interpreted to mean that a particle of mass $m\left(E=m c^2\right)$ can materialize from nothing provided that it returns to nothing within a time $\Delta t \leq h / m c^2$. Particles that last for time $\Delta t$ or more are called real particles; particles that last less than time $\Delta t$ are called virtual particles. The mass of the charged pion, a subatomic particle, is $2.5 \times 10^{-28} \mathrm{~kg}$. What is the minimum lifetime if the pion is to be considered a real particle?",3.7$10^{-23} \mathrm{~s}$, 2.9$10^{-23} \mathrm{~s}$ ,3.2$10^{-23} \mathrm{~s}$,2.5$10^{-23} \mathrm{~s}$,B,scibench-chemmc
+The temperature of the fireball in a thermonuclear explosion can reach temperatures of approximately $10^7 \mathrm{~K}$. What value of $\lambda_{\max }$ does this correspond to? ,5 $10^{-10} \mathrm{~m}$,1 $10^{-10} \mathrm{~m}$,2 $10^{-10} \mathrm{~m}$," 3 $10^{-10} \mathrm{~m}$
+",D,scibench-chemmc
+"The threshold wavelength for potassium metal is $564 \mathrm{~nm}$. What is its work function? 
+", 3.52$10^{-19} \mathrm{~J}$,2.78$10^{-19} \mathrm{~J}$,4.65$10^{-19} \mathrm{~J}$,3.01$10^{-19} \mathrm{~J}$,A,scibench-chemmc
+Through what potential must a proton initially at rest fall so that its de Broglie wavelength is $1.0 \times 10^{-10} \mathrm{~m}$ ?,0.120V,0.050V,0.100V, 0.082V ,D,scibench-chemmc
+"Two narrow slits are illuminated with red light of wavelength $694.3 \mathrm{~nm}$ from a laser, producing a set of evenly placed bright bands on a screen located $3.00 \mathrm{~m}$ beyond the slits. If the distance between the bands is $1.50 \mathrm{~cm}$, then what is the distance between the slits?
+",0.200mm,0.150mm,0.120mm, 0.139mm ,D,scibench-chemmc
+"Two narrow slits are illuminated with red light of wavelength $694.3 \mathrm{~nm}$ from a laser, producing a set of evenly placed bright bands on a screen located $3.00 \mathrm{~m}$ beyond the slits. If the distance between the bands is $1.50 \mathrm{~cm}$, then what is the distance between the slits?
+", 0.139mm ,0.175mm,0.210mm,0.095mm,A,scibench-chemmc
+"Two narrow slits separated by $0.10 \mathrm{~mm}$ are illuminated by light of wavelength $600 \mathrm{~nm}$. What is the angular position of the first maximum in the interference pattern? If a detector is located $2.00 \mathrm{~m}$ beyond the slits, what is the distance between the central maximum and the first maximum?",16 mm,8 mm,20 mm, 12 mm,D,scibench-chemmc
+"Using the Bohr theory, calculate the ionization energy (in electron volts and in $\mathrm{kJ} \cdot \mathrm{mol}^{-1}$ ) of singly ionized helium.",60.321 $\mathrm{eV}$,45.678 $\mathrm{eV}$, 54.394$\mathrm{eV}$ ,50.456 $\mathrm{eV}$,C,scibench-chemmc
+What is the uncertainty of the momentum of an electron if we know its position is somewhere in a $10 \mathrm{pm}$ interval?,5.5 $10^{-23} \mathrm{~kg} \cdot \mathrm{m} \cdot \mathrm{s}^{-1}$, 6.6 $10^{-23} \mathrm{~kg} \cdot \mathrm{m} \cdot \mathrm{s}^{-1}$,8.8 $10^{-23} \mathrm{~kg} \cdot \mathrm{m} \cdot \mathrm{s}^{-1}$,4.2 $10^{-23} \mathrm{~kg} \cdot \mathrm{m} \cdot \mathrm{s}^{-1}$,B,scibench-chemmc
+"When an excited nucleus decays, it emits a $\gamma$ ray. The lifetime of an excited state of a nucleus is of the order of $10^{-12} \mathrm{~s}$. What is the uncertainty in the energy of the $\gamma$ ray produced?",9$10^{-22} \mathrm{~J}$,5$10^{-22} \mathrm{~J}$,10$10^{-22} \mathrm{~J}$, 7$10^{-22} \mathrm{~J}$ ,D,scibench-chemmc

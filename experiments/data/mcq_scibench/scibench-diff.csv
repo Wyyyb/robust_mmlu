@@ -1,0 +1,128 @@
+ Radium-226 has a half-life of 1620 years. Find the time period during which a given amount of this material is reduced by one-quarter.,810 Years,1344.8 Years, 672.4 Year,1620 Years,C,scibench-diff
+"15. Consider the initial value problem
+$$
+4 y^{\prime \prime}+12 y^{\prime}+9 y=0, \quad y(0)=1, \quad y^{\prime}(0)=-4 .
+$$
+Determine where the solution has the value zero.",0.3,0.6,0.5, 0.4,D,scibench-diff
+"25. Consider the initial value problem
+$$
+2 y^{\prime \prime}+3 y^{\prime}-2 y=0, \quad y(0)=1, \quad y^{\prime}(0)=-\beta,
+$$
+where $\beta>0$.
+Find the smallest value of $\beta$ for which the solution has no minimum point.",3, 2,4,1,B,scibench-diff
+"28. A mass of $0.25 \mathrm{~kg}$ is dropped from rest in a medium offering a resistance of $0.2|v|$, where $v$ is measured in $\mathrm{m} / \mathrm{s}$.
+If the mass is to attain a velocity of no more than $10 \mathrm{~m} / \mathrm{s}$, find the maximum height from which it can be dropped.",12.3 m, 13.45 m,10.5 m,15.2 m,B,scibench-diff
+A certain college graduate borrows $8000 to buy a car. The lender charges interest at an annual rate of 10%. What monthly payment rate is required to pay off the loan in 3 years?,$300.00,$275.00,$220.00, 258.14 $,D,scibench-diff
+"A certain spring-mass system satisfies the initial value problem
+$$
+u^{\prime \prime}+\frac{1}{4} u^{\prime}+u=k g(t), \quad u(0)=0, \quad u^{\prime}(0)=0
+$$
+where $g(t)=u_{3 / 2}(t)-u_{5 / 2}(t)$ and $k>0$ is a parameter.
+Suppose $k=2$. Find the time $\tau$ after which $|u(t)|<0.1$ for all $t>\tau$.",28.6891,30.7654, 25.6773,20.5426,C,scibench-diff
+A certain vibrating system satisfies the equation $u^{\prime \prime}+\gamma u^{\prime}+u=0$. Find the value of the damping coefficient $\gamma$ for which the quasi period of the damped motion is $50 \%$ greater than the period of the corresponding undamped motion.,1.7089, 1.4907,1.5923,1.3295,B,scibench-diff
+"A home buyer can afford to spend no more than $\$ 800 /$ month on mortgage payments. Suppose that the interest rate is $9 \%$ and that the term of the mortgage is 20 years. Assume that interest is compounded continuously and that payments are also made continuously.
+Determine the total interest paid during the term of the mortgage.","$120,345.78","$85,250.65","$75,000.00"," 102,965.21 $",D,scibench-diff
+"A home buyer can afford to spend no more than $\$ 800$ /month on mortgage payments. Suppose that the interest rate is $9 \%$ and that the term of the mortgage is 20 years. Assume that interest is compounded continuously and that payments are also made continuously.
+Determine the maximum amount that this buyer can afford to borrow."," 89,034.79 $","$105,000.00","$95,000.00","$75,000.00",A,scibench-diff
+"A homebuyer wishes to finance the purchase with a \$95,000 mortgage with a 20-year term. What is the maximum interest rate the buyer can afford if the monthly payment is not to exceed \$900?",10.85 %,7.50 %,8.27 %, 9.73 %,D,scibench-diff
+"A homebuyer wishes to take out a mortgage of $100,000 for a 30-year period. What monthly payment is required if the interest rate is 9%?",$850.00,$900.00,$750.00,804.62$,D,scibench-diff
+"A mass of $0.25 \mathrm{~kg}$ is dropped from rest in a medium offering a resistance of $0.2|v|$, where $v$ is measured in $\mathrm{m} / \mathrm{s}$.
+If the mass is dropped from a height of $30 \mathrm{~m}$, find its velocity when it hits the ground.",12.75 m/s, 11.58 m/s,9.63 m/s,15.35 m/s,B,scibench-diff
+"A mass of $100 \mathrm{~g}$ stretches a spring $5 \mathrm{~cm}$. If the mass is set in motion from its equilibrium position with a downward velocity of $10 \mathrm{~cm} / \mathrm{s}$, and if there is no damping, determine when does the mass first return to its equilibrium position.",$\pi/20$ s, $\pi/14$ s,$\pi/7$ s,$\pi/10$ s,B,scibench-diff
+"A mass weighing $2 \mathrm{lb}$ stretches a spring 6 in. If the mass is pulled down an additional 3 in. and then released, and if there is no damping, determine the position $u$ of the mass at any time $t$. Find the frequency of the motion.",$\pi/6$ s, $\pi/4$ s,$\pi/2$ s,$\pi/3$ s,B,scibench-diff
+A mass weighing $8 \mathrm{lb}$ stretches a spring 1.5 in. The mass is also attached to a damper with coefficient $\gamma$. Determine the value of $\gamma$ for which the system is critically damped; be sure to give the units for $\gamma$,10 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,8 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,12 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,6 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,B,scibench-diff
+"A radioactive material, such as the isotope thorium-234, disintegrates at a rate proportional to the amount currently present. If $Q(t)$ is the amount present at time $t$, then $d Q / d t=-r Q$, where $r>0$ is the decay rate. If $100 \mathrm{mg}$ of thorium-234 decays to $82.04 \mathrm{mg}$ in 1 week, determine the decay rate $r$.", 0.02828 $\text{day}^{-1}$,0.03535 $\text{day}^{-1}$,0.04242 $\text{day}^{-1}$,0.02121 $\text{day}^{-1}$,A,scibench-diff
+"A recent college graduate borrows $\$ 100,000$ at an interest rate of $9 \%$ to purchase a condominium. Anticipating steady salary increases, the buyer expects to make payments at a monthly rate of $800(1+t / 120)$, where $t$ is the number of months since the loan was made.
+Assuming that this payment schedule can be maintained, when will the loan be fully paid?",120 months, 135.36 months,180 months,150 months,B,scibench-diff
+"A spring is stretched 6 in by a mass that weighs $8 \mathrm{lb}$. The mass is attached to a dashpot mechanism that has a damping constant of $0.25 \mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$ and is acted on by an external force of $4 \cos 2 t \mathrm{lb}$.
+If the given mass is replaced by a mass $m$, determine the value of $m$ for which the amplitude of the steady state response is maximum.",6 slugs,2 slugs,8 slugs, 4 slugs,D,scibench-diff
+"A tank contains 100 gal of water and $50 \mathrm{oz}$ of salt. Water containing a salt concentration of $\frac{1}{4}\left(1+\frac{1}{2} \sin t\right) \mathrm{oz} / \mathrm{gal}$ flows into the tank at a rate of $2 \mathrm{gal} / \mathrm{min}$, and the mixture in the tank flows out at the same rate.
+The long-time behavior of the solution is an oscillation about a certain constant level. What is the amplitude of the oscillation?",0.34995,0.29995,0.14995, 0.24995,D,scibench-diff
+"A tank originally contains $100 \mathrm{gal}$ of fresh water. Then water containing $\frac{1}{2} \mathrm{lb}$ of salt per gallon is poured into the tank at a rate of $2 \mathrm{gal} / \mathrm{min}$, and the mixture is allowed to leave at the same rate. After $10 \mathrm{~min}$ the process is stopped, and fresh water is poured into the tank at a rate of $2 \mathrm{gal} / \mathrm{min}$, with the mixture again leaving at the same rate. Find the amount of salt in the tank at the end of an additional $10 \mathrm{~min}$.",9.5 lb, 7.42 lb,8.1 lb,6.3 lb,B,scibench-diff
+"A young person with no initial capital invests $k$ dollars per year at an annual rate of return $r$. Assume that investments are made continuously and that the return is compounded continuously.
+If $r=7.5 \%$, determine $k$ so that $\$ 1$ million will be available for retirement in 40 years.",5000 $, 3930 $,4500 $,3500 $,B,scibench-diff
+"An investor deposits $1000 in an account paying interest at a rate of 8% compounded monthly, and also makes additional deposits of \$25 per month. Find the balance in the account after 3 years.", 2283.63 $,$1950.32,$2100.45,$2500.00,A,scibench-diff
+"Consider a tank used in certain hydrodynamic experiments. After one experiment the tank contains $200 \mathrm{~L}$ of a dye solution with a concentration of $1 \mathrm{~g} / \mathrm{L}$. To prepare for the next experiment, the tank is to be rinsed with fresh water flowing in at a rate of $2 \mathrm{~L} / \mathrm{min}$, the well-stirred solution flowing out at the same rate. Find the time that will elapse before the concentration of dye in the tank reaches $1 \%$ of its original value.",500 min,420 min, 460.5 min,385 min,C,scibench-diff
+"Consider the initial value problem
+$$
+3 u^{\prime \prime}-u^{\prime}+2 u=0, \quad u(0)=2, \quad u^{\prime}(0)=0
+$$
+For $t>0$ find the first time at which $|u(t)|=10$.", 10.7598,14.1234,8.9876,12.3456,A,scibench-diff
+"Consider the initial value problem
+$$
+5 u^{\prime \prime}+2 u^{\prime}+7 u=0, \quad u(0)=2, \quad u^{\prime}(0)=1
+$$
+Find the smallest $T$ such that $|u(t)| \leq 0.1$ for all $t>T$.",16.7890,10.1234,12.3456,14.5115,D,scibench-diff
+"Consider the initial value problem
+$$
+9 y^{\prime \prime}+12 y^{\prime}+4 y=0, \quad y(0)=a>0, \quad y^{\prime}(0)=-1
+$$
+Find the critical value of $a$ that separates solutions that become negative from those that are always positive.",1.0, 1.5,2.0,2.5,B,scibench-diff
+"Consider the initial value problem
+$$
+y^{\prime \prime}+2 a y^{\prime}+\left(a^2+1\right) y=0, \quad y(0)=1, \quad y^{\prime}(0)=0 .
+$$
+For $a=1$ find the smallest $T$ such that $|y(t)|<0.1$ for $t>T$.",2.3754,1.6520,2.1345,1.8763,D,scibench-diff
+"Consider the initial value problem
+$$
+y^{\prime \prime}+\gamma y^{\prime}+y=\delta(t-1), \quad y(0)=0, \quad y^{\prime}(0)=0,
+$$
+where $\gamma$ is the damping coefficient (or resistance).
+Find the time $t_1$ at which the solution attains its maximum value.", 2.3613,3.0124,2.9876,1.7632,A,scibench-diff
+"Consider the initial value problem
+$$
+y^{\prime \prime}+\gamma y^{\prime}+y=k \delta(t-1), \quad y(0)=0, \quad y^{\prime}(0)=0
+$$
+where $k$ is the magnitude of an impulse at $t=1$ and $\gamma$ is the damping coefficient (or resistance).
+Let $\gamma=\frac{1}{2}$. Find the value of $k$ for which the response has a peak value of 2 ; call this value $k_1$.",2.3456,1.7890, 2.8108,3.5672,C,scibench-diff
+"Consider the initial value problem
+$$
+y^{\prime}+\frac{1}{4} y=3+2 \cos 2 t, \quad y(0)=0
+$$
+Determine the value of $t$ for which the solution first intersects the line $y=12$.", 10.065778,9.876543,8.945321,11.234567,A,scibench-diff
+"Consider the initial value problem
+$$
+y^{\prime}+\frac{2}{3} y=1-\frac{1}{2} t, \quad y(0)=y_0 .
+$$
+Find the value of $y_0$ for which the solution touches, but does not cross, the $t$-axis.",-1.23456,-2.34567, −1.642876,-0.98765,C,scibench-diff
+"Consider the initial value problem
+$$
+y^{\prime}=t y(4-y) / 3, \quad y(0)=y_0
+$$
+Suppose that $y_0=0.5$. Find the time $T$ at which the solution first reaches the value 3.98.",3.87540,2.98732,4.65218, 3.29527,D,scibench-diff
+"Consider the initial value problem
+$$
+y^{\prime}=t y(4-y) /(1+t), \quad y(0)=y_0>0 .
+$$
+If $y_0=2$, find the time $T$ at which the solution first reaches the value 3.99.",3.45678,3.78901, 2.84367,2.12345,C,scibench-diff
+"Consider the initial value problem (see Example 5)
+$$
+y^{\prime \prime}+5 y^{\prime}+6 y=0, \quad y(0)=2, \quad y^{\prime}(0)=\beta
+$$
+where $\beta>0$.
+Determine the smallest value of $\beta$ for which $y_m \geq 4$.",18.2765,20.4521, 16.3923,15.3298,C,scibench-diff
+"Find $\gamma$ so that the solution of the initial value problem $x^2 y^{\prime \prime}-2 y=0, y(1)=1, y^{\prime}(1)=\gamma$ is bounded as $x \rightarrow 0$.", 2,1,3,4,A,scibench-diff
+"Find the effective annual yield of a bank account that pays interest at a rate of 7%, compounded daily; that is, divide the difference between the final and initial balances by the initial balance.",7.50 %,6.85 %,7.00 %,7.25 %,D,scibench-diff
+"Find the fundamental period of the given function:
+$$f(x)=\left\{\begin{array}{ll}(-1)^n, & 2 n-1 \leq x<2 n, \\ 1, & 2 n \leq x<2 n+1 ;\end{array} \quad n=0, \pm 1, \pm 2, \ldots\right.$$", 4,2,1,3,A,scibench-diff
+"Find the value of $y_0$ for which the solution of the initial value problem
+$$
+y^{\prime}-y=1+3 \sin t, \quad y(0)=y_0
+$$
+remains finite as $t \rightarrow \infty$",-1.5,0, -2.5,-3.5,C,scibench-diff
+"For small, slowly falling objects, the assumption made in the text that the drag force is proportional to the velocity is a good one. For larger, more rapidly falling objects, it is more accurate to assume that the drag force is proportional to the square of the velocity.  If m = 10 kg, find the drag coefficient so that the limiting velocity is 49 m/s.",$\frac{1}{49}$,$\frac{3}{49}$,$\frac{2}{49}$,$\frac{4}{49}$,C,scibench-diff
+"If $\mathbf{x}=\left(\begin{array}{c}2 \\ 3 i \\ 1-i\end{array}\right)$ and $\mathbf{y}=\left(\begin{array}{c}-1+i \\ 2 \\ 3-i\end{array}\right)$, find $(\mathbf{y}, \mathbf{y})$.",12,18,20, 16,D,scibench-diff
+"If $y_1$ and $y_2$ are a fundamental set of solutions of $t y^{\prime \prime}+2 y^{\prime}+t e^t y=0$ and if $W\left(y_1, y_2\right)(1)=2$, find the value of $W\left(y_1, y_2\right)(5)$.",1/5,5/2,1/25, 2/25,D,scibench-diff
+"If $y_1$ and $y_2$ are a fundamental set of solutions of $t^2 y^{\prime \prime}-2 y^{\prime}+(3+t) y=0$ and if $W\left(y_1, y_2\right)(2)=3$, find the value of $W\left(y_1, y_2\right)(4)$.",6.125,3.876,5.276, 4.946,D,scibench-diff
+"If a series circuit has a capacitor of $C=0.8 \times 10^{-6} \mathrm{~F}$ and an inductor of $L=0.2 \mathrm{H}$, find the resistance $R$ so that the circuit is critically damped.",500 $\Omega$,2000 $\Omega$, 1000 $\Omega$,1500 $\Omega$,C,scibench-diff
+"Let a metallic rod $20 \mathrm{~cm}$ long be heated to a uniform temperature of $100^{\circ} \mathrm{C}$. Suppose that at $t=0$ the ends of the bar are plunged into an ice bath at $0^{\circ} \mathrm{C}$, and thereafter maintained at this temperature, but that no heat is allowed to escape through the lateral surface. Determine the temperature at the center of the bar at time $t=30 \mathrm{~s}$ if the bar is made of silver.",45.78 ${ }^{\circ} \mathrm{C}$,40.32 ${ }^{\circ} \mathrm{C}$, 35.91 ${ }^{\circ} \mathrm{C}$,50.25 ${ }^{\circ} \mathrm{C}$,C,scibench-diff
+"Newton's law of cooling states that the temperature of an object changes at a rate proportional to the difference between its temperature and that of its surroundings. Suppose that the temperature of a cup of coffee obeys Newton's law of cooling. If the coffee has a temperature of $200^{\circ} \mathrm{F}$ when freshly poured, and $1 \mathrm{~min}$ later has cooled to $190^{\circ} \mathrm{F}$ in a room at $70^{\circ} \mathrm{F}$, determine when the coffee reaches a temperature of $150^{\circ} \mathrm{F}$.",5.2 min,4.5 min, 6.07 min,7.8 min,C,scibench-diff
+"Solve the initial value problem $4 y^{\prime \prime}-y=0, y(0)=2, y^{\prime}(0)=\beta$. Then find $\beta$ so that the solution approaches zero as $t \rightarrow \infty$.", -1,0,-2,1,A,scibench-diff
+"Solve the initial value problem $y^{\prime \prime}-y^{\prime}-2 y=0, y(0)=\alpha, y^{\prime}(0)=2$. Then find $\alpha$ so that the solution approaches zero as $t \rightarrow \infty$.", −2,0,-1,2,A,scibench-diff
+"Suppose that a sum $S_0$ is invested at an annual rate of return $r$ compounded continuously.
+Determine $T$ if $r=7 \%$.",8.75 year,7.50 year,10.50 year, 9.90 year,D,scibench-diff
+"Suppose that a tank containing a certain liquid has an outlet near the bottom. Let $h(t)$ be the height of the liquid surface above the outlet at time $t$. Torricelli's principle states that the outflow velocity $v$ at the outlet is equal to the velocity of a particle falling freely (with no drag) from the height $h$.
+Consider a water tank in the form of a right circular cylinder that is $3 \mathrm{~m}$ high above the outlet. The radius of the tank is $1 \mathrm{~m}$ and the radius of the circular outlet is $0.1 \mathrm{~m}$. If the tank is initially full of water, determine how long it takes to drain the tank down to the level of the outlet.",150.20 s,110.36 s, 130.41 s,98.75 s,C,scibench-diff
+"Suppose that a tank containing a certain liquid has an outlet near the bottom. Let $h(t)$ be the height of the liquid surface above the outlet at time $t$. Torricelli's principle states that the outflow velocity $v$ at the outlet is equal to the velocity of a particle falling freely (with no drag) from the height $h$.
+Consider a water tank in the form of a right circular cylinder that is $3 \mathrm{~m}$ high above the outlet. The radius of the tank is $1 \mathrm{~m}$ and the radius of the circular outlet is $0.1 \mathrm{~m}$. If the tank is initially full of water, determine how long it takes to drain the tank down to the level of the outlet.",150.57 s, 130.41 s,115.23 s,100.80 s,B,scibench-diff
+"Your swimming pool containing 60,000 gal of water has been contaminated by $5 \mathrm{~kg}$ of a nontoxic dye that leaves a swimmer's skin an unattractive green. The pool's filtering system can take water from the pool, remove the dye, and return the water to the pool at a flow rate of $200 \mathrm{gal} / \mathrm{min}$. Find the time $T$ at which the concentration of dye first reaches the value $0.02 \mathrm{~g} / \mathrm{gal}$.", 7.136 hour,7.550 hours,6.875 hours,8.255 hours,A,scibench-diff

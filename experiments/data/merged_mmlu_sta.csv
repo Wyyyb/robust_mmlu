@@ -1,0 +1,57 @@
+college_biology,144,biology,454
+high_school_biology,310,biology,454
+business_ethics,100,business,437
+management,103,business,437
+marketing,234,business,437
+college_chemistry,100,chemistry,303
+high_school_chemistry,203,chemistry,303
+college_computer_science,100,computer science,412
+computer_security,100,computer science,412
+high_school_computer_science,100,computer science,412
+machine_learning,112,computer science,412
+human_sexuality,131,culture,332
+sociology,201,culture,332
+econometrics,114,economics,742
+high_school_macroeconomics,390,economics,742
+high_school_microeconomics,238,economics,742
+electrical_engineering,145,engineering,145
+high_school_geography,198,geography,198
+anatomy,135,health,1562
+clinical_knowledge,187,health,1562
+college_medicine,173,health,1562
+human_aging,223,health,1562
+medical_genetics,100,health,1562
+nutrition,306,health,1562
+professional_medicine,272,health,1562
+virology,166,health,1562
+high_school_european_history,165,history,930
+high_school_us_history,204,history,930
+high_school_world_history,237,history,930
+prehistory,324,history,930
+international_law,121,law,1763
+jurisprudence,108,law,1763
+professional_law,1534,law,1763
+abstract_algebra,100,math,1063
+college_mathematics,100,math,1063
+elementary_mathematics,377,math,1063
+high_school_mathematics,270,math,1063
+high_school_statistics,216,math,1063
+global_facts,100,other,1165
+miscellaneous,783,other,1165
+professional_accounting,282,other,1165
+formal_logic,126,philosophy,2012
+logical_fallacies,163,philosophy,2012
+moral_disputes,346,philosophy,2012
+moral_scenarios,895,philosophy,2012
+philosophy,311,philosophy,2012
+world_religions,171,philosophy,2012
+astronomy,152,physics,629
+college_physics,91,physics,629
+conceptual_physics,235,physics,629
+high_school_physics,151,physics,629
+high_school_government_and_politics,193,politics,645
+public_relations,108,politics,645
+security_studies,245,politics,645
+us_foreign_policy,99,politics,645
+high_school_psychology,534,psychology,1145
+professional_psychology,611,psychology,1145
