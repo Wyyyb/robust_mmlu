@@ -252,7 +252,7 @@ def main(args):
             test_df["{}_choice_{}_probs".format(args.model, choice)] = probs[:, j]
         test_df.to_csv(
             os.path.join(
-                args.save_dir, "results_{}".format(args.model), "{}.csv".format(subject)
+                args.save_dir, "results_{}".format(args.model), "{}".format(subject)
             ),
             index=None,
         )
