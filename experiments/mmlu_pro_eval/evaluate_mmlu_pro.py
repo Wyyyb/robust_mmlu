@@ -9,6 +9,10 @@ from categories import subcategories, categories
 import transformers
 import time
 from transformers import GenerationConfig
+import warnings
+
+warnings.filterwarnings("ignore", message="Keyword arguments {'add_special_tokens': False} not recognized.")
+
 
 IGNORE_INDEX = -100
 DEFAULT_PAD_TOKEN = "[PAD]"
@@ -177,13 +181,13 @@ def main(args):
             padding_side="right",
             use_fast=False,
         )
-        # tokenizer.add_special_tokens(
-        #     {
-        #         "eos_token": DEFAULT_EOS_TOKEN,
-        #         "bos_token": DEFAULT_BOS_TOKEN,
-        #         "unk_token": DEFAULT_UNK_TOKEN,
-        #     }
-        # )
+        tokenizer.add_special_tokens(
+            {
+                "eos_token": DEFAULT_EOS_TOKEN,
+                "bos_token": DEFAULT_BOS_TOKEN,
+                "unk_token": DEFAULT_UNK_TOKEN,
+            }
+        )
     elif "gemma" in args.model.lower() or "mistral" in args.model.lower():
         tokenizer = AutoTokenizer.from_pretrained(args.model,
                                                   model_max_length=2048,
