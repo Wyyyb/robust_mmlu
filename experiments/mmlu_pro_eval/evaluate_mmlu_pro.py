@@ -70,10 +70,10 @@ def format_subject(subject):
 
 
 def format_example(df, idx, include_answer=True):
-    prompt = df.iloc[idx, 0]
+    prompt = str(df.iloc[idx, 0])
     k = df.shape[1] - 3
     for j in range(k):
-        prompt += "\n{}. {}".format(choices[j], df.iloc[idx, j + 1])
+        prompt += "\n{}. {}".format(choices[j], str(df.iloc[idx, j + 1]))
     prompt += "\nAnswer:"
     if include_answer:
         ori_ans = df.iloc[idx, k + 1]
