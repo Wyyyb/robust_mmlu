@@ -207,6 +207,7 @@ def main(args):
             if ".csv" in f
         ]
     )
+    print("subjects: {}".format(subjects))
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
@@ -221,7 +222,6 @@ def main(args):
     for subcat in subcategories.values():
         subcat_cors[subcat] = []
 
-    # 现在 subcat_cors 字典包含了所有子类别作为键，每个键对应的值都是一个空列表
     cat_cors = {cat: [] for cat in categories}
 
     for subject in subjects:
@@ -237,13 +237,14 @@ def main(args):
             test_df = fix_answer(test_df, args.fixed_question_answer)
 
         cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df)
-        subcats = subcategories[subject]
-        for subcat in subcats:
-            subcat_cors[subcat].append(cors)
-            for key in categories.keys():
-                if subcat in categories[key]:
-                    cat_cors[key].append(cors)
+        print("cors, acc, probs", cors, acc, probs)
+        subcat = subcategories[subject]
+        subcat_cors[subcat].append(cors)
+        for key in categories.keys():
+            if subcat in categories[key]:
+                cat_cors[key].append(cors)
         all_cors.append(cors)
+        print("all_cors", all_cors)
 
         test_df["{}_correct".format(args.model)] = cors
         for j in range(probs.shape[1]):
