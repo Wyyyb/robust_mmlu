@@ -1,9 +1,0 @@
-数据集 + 模型 + 评测tricks
-
-数据集包括：ori_mmlu, exp_10_mmlu
-模型包括：7b, 13b, 7b_chat, 13b_chat
-评测tricks包括：rare_symbol, fix_B, fix_C
-
-如：
-exp_10_mmlu-7b-rare_symbol
-

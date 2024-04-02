@@ -229,6 +229,8 @@ def main(args):
             test_df = fix_answer(test_df, args.fixed_answer)
         elif args.fixed_example_answer != -1:
             dev_df = fix_answer(dev_df, args.fixed_example_answer)
+        elif args.fixed_question_answer != -1:
+            test_df = fix_answer(test_df, args.fixed_question_answer)
 
         cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df)
         subcats = subcategories[subject]
@@ -279,6 +281,7 @@ if __name__ == "__main__":
     parser.add_argument("--use_rare_symbol", "-r", type=bool, default=False)
     parser.add_argument("--fixed_answer", "-f", type=int, default=-1)
     parser.add_argument("--fixed_example_answer", "-e", type=int, default=-1)
+    parser.add_argument("--fixed_question_answer", "-q", type=int, default=-1)
     parser.add_argument(
         "--model",
         "-m",
