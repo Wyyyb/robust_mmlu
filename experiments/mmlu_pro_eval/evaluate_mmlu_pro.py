@@ -75,7 +75,7 @@ def format_example(df, idx, include_answer=True):
         ori_ans = df.iloc[idx, k + 1]
         ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ori_ans)
         prompt += " {}\n\n".format(choices[ans_index])
-    print("prompt", prompt)
+    # print("prompt", prompt)
     return prompt
 
 
@@ -177,14 +177,13 @@ def main(args):
             padding_side="right",
             use_fast=False,
         )
-
-        tokenizer.add_special_tokens(
-            {
-                "eos_token": DEFAULT_EOS_TOKEN,
-                "bos_token": DEFAULT_BOS_TOKEN,
-                "unk_token": DEFAULT_UNK_TOKEN,
-            }
-        )
+        # tokenizer.add_special_tokens(
+        #     {
+        #         "eos_token": DEFAULT_EOS_TOKEN,
+        #         "bos_token": DEFAULT_BOS_TOKEN,
+        #         "unk_token": DEFAULT_UNK_TOKEN,
+        #     }
+        # )
     elif "gemma" in args.model.lower() or "mistral" in args.model.lower():
         tokenizer = AutoTokenizer.from_pretrained(args.model,
                                                   model_max_length=2048,
