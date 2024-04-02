@@ -14,7 +14,7 @@ from categories import subcategories, categories
 import transformers
 import time
 from transformers import GenerationConfig
-import tqdm
+from tqdm import tqdm
 
 
 IGNORE_INDEX = -100
