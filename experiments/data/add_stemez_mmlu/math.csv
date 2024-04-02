@@ -1272,290 +1272,290 @@ Does the following series $\sum_{i=0}^{\infty} \frac{n-1}{n^3+1}$ converge?,0.75
 Find the solutions y of the differential equation y'=(t^2+3y^2)/2ty with y(1) = 1. What is y(2)?,2.345,3.464,4.567,5.678,B,theoremQA-Math
 "For $p(x)=f(x)g(x)$, if $f(2)=3$, $f'(2)=-4$, $g(2)=1$, and $g'(2)=6$, what is $p'(2)$?",14,10,12,16,A,theoremQA-Math
 " A ball is thrown eastward into the air from the origin (in the direction of the positive $x$-axis). The initial velocity is $50 \mathrm{i}+80 \mathrm{k}$, with speed measured in feet per second. The spin of the ball results in a southward acceleration of $4 \mathrm{ft} / \mathrm{s}^2$, so the acceleration vector is $\mathbf{a}=-4 \mathbf{j}-32 \mathbf{k}$. What speed does the ball land?
-",$15\sqrt{93}$ $\mathrm{ft}/\mathrm{s}$,$8\sqrt{93}$ $\mathrm{ft}/\mathrm{s}$, $10\sqrt{93}$ $\mathrm{ft}/\mathrm{s}$,$12\sqrt{93}$ $\mathrm{ft}/\mathrm{s}$,C,scibench-calculus,scibench-calculus
-" A patient takes $150 \mathrm{mg}$ of a drug at the same time every day. Just before each tablet is taken, 5$\%$ of the drug remains in the body. What quantity of the drug is in the body after the third tablet? ",170 $\mathrm{mg}$,160.5 $\mathrm{mg}$,145.5 $\mathrm{mg}$, 157.875 $\mathrm{mg}$,D,scibench-calculus,scibench-calculus
+",$15\sqrt{93}$ $\mathrm{ft}/\mathrm{s}$,$8\sqrt{93}$ $\mathrm{ft}/\mathrm{s}$, $10\sqrt{93}$ $\mathrm{ft}/\mathrm{s}$,$12\sqrt{93}$ $\mathrm{ft}/\mathrm{s}$,C,scibench-calculus
+" A patient takes $150 \mathrm{mg}$ of a drug at the same time every day. Just before each tablet is taken, 5$\%$ of the drug remains in the body. What quantity of the drug is in the body after the third tablet? ",170 $\mathrm{mg}$,160.5 $\mathrm{mg}$,145.5 $\mathrm{mg}$, 157.875 $\mathrm{mg}$,D,scibench-calculus
 " If $R$ is the total resistance of three resistors, connected in parallel, with resistances $R_1, R_2, R_3$, then
 $$
 \frac{1}{R}=\frac{1}{R_1}+\frac{1}{R_2}+\frac{1}{R_3}
 $$
-If the resistances are measured in ohms as $R_1=25 \Omega$, $R_2=40 \Omega$, and $R_3=50 \Omega$, with a possible error of $0.5 \%$ in each case, estimate the maximum error in the calculated value of $R$.",$\frac{1}{15}$ $\Omega$,$\frac{1}{12}$ $\Omega$,$\frac{1}{20}$ $\Omega$, $\frac{1}{17}$ $\Omega$,D,scibench-calculus,scibench-calculus
-" If a ball is thrown into the air with a velocity of $40 \mathrm{ft} / \mathrm{s}$, its height in feet $t$ seconds later is given by $y=40 t-16 t^2$. Find the average velocity for the time period beginning when $t=2$ and lasting 0.5 second.",-28$\mathrm{ft} / \mathrm{s}$,-40$\mathrm{ft} / \mathrm{s}$, -32$\mathrm{ft} / \mathrm{s}$,-36$\mathrm{ft} / \mathrm{s}$,C,scibench-calculus,scibench-calculus
-A $360-\mathrm{lb}$ gorilla climbs a tree to a height of $20 \mathrm{~ft}$. Find the work done if the gorilla reaches that height in 10 seconds. ,1800$\mathrm{ft-lb}$, 7200$\mathrm{ft-lb}$,3600$\mathrm{ft-lb}$,14400$\mathrm{ft-lb}$,B,scibench-calculus,scibench-calculus
-A $360-\mathrm{lb}$ gorilla climbs a tree to a height of $20 \mathrm{~ft}$. Find the work done if the gorilla reaches that height in 5 seconds., 7200 $\mathrm{ft-lb}$,3600 $\mathrm{ft-lb}$,14400 $\mathrm{ft-lb}$,10800 $\mathrm{ft-lb}$,A,scibench-calculus,scibench-calculus
+If the resistances are measured in ohms as $R_1=25 \Omega$, $R_2=40 \Omega$, and $R_3=50 \Omega$, with a possible error of $0.5 \%$ in each case, estimate the maximum error in the calculated value of $R$.",$\frac{1}{15}$ $\Omega$,$\frac{1}{12}$ $\Omega$,$\frac{1}{20}$ $\Omega$, $\frac{1}{17}$ $\Omega$,D,scibench-calculus
+" If a ball is thrown into the air with a velocity of $40 \mathrm{ft} / \mathrm{s}$, its height in feet $t$ seconds later is given by $y=40 t-16 t^2$. Find the average velocity for the time period beginning when $t=2$ and lasting 0.5 second.",-28$\mathrm{ft} / \mathrm{s}$,-40$\mathrm{ft} / \mathrm{s}$, -32$\mathrm{ft} / \mathrm{s}$,-36$\mathrm{ft} / \mathrm{s}$,C,scibench-calculus
+A $360-\mathrm{lb}$ gorilla climbs a tree to a height of $20 \mathrm{~ft}$. Find the work done if the gorilla reaches that height in 10 seconds. ,1800$\mathrm{ft-lb}$, 7200$\mathrm{ft-lb}$,3600$\mathrm{ft-lb}$,14400$\mathrm{ft-lb}$,B,scibench-calculus
+A $360-\mathrm{lb}$ gorilla climbs a tree to a height of $20 \mathrm{~ft}$. Find the work done if the gorilla reaches that height in 5 seconds., 7200 $\mathrm{ft-lb}$,3600 $\mathrm{ft-lb}$,14400 $\mathrm{ft-lb}$,10800 $\mathrm{ft-lb}$,A,scibench-calculus
 "A CAT scan produces equally spaced cross-sectional views of a human organ that provide information about the organ otherwise obtained only by surgery. Suppose that a CAT scan of a human liver shows cross-sections spaced $1.5 \mathrm{~cm}$ apart. The liver is $15 \mathrm{~cm}$ long and the cross-sectional areas, in square centimeters, are $0,18,58,79,94,106,117,128,63$, 39 , and 0 . Use the Midpoint Rule to estimate the volume of the liver.
-",980 $\mathrm{cm}^3$,1050 $\mathrm{cm}^3$, 1110 $\mathrm{cm}^3$,1200 $\mathrm{cm}^3$,C,scibench-calculus,scibench-calculus
+",980 $\mathrm{cm}^3$,1050 $\mathrm{cm}^3$, 1110 $\mathrm{cm}^3$,1200 $\mathrm{cm}^3$,C,scibench-calculus
 "A ball is thrown at an angle of $45^{\circ}$ to the ground. If the ball lands $90 \mathrm{~m}$ away, what was the initial speed of the ball?
-",25 $\mathrm{m}/\mathrm{s}$,35 $\mathrm{m}/\mathrm{s}$,40 $\mathrm{m}/\mathrm{s}$, 30 $\mathrm{m}/\mathrm{s}$,D,scibench-calculus,scibench-calculus
+",25 $\mathrm{m}/\mathrm{s}$,35 $\mathrm{m}/\mathrm{s}$,40 $\mathrm{m}/\mathrm{s}$, 30 $\mathrm{m}/\mathrm{s}$,D,scibench-calculus
 "A boatman wants to cross a canal that is $3 \mathrm{~km}$ wide and wants to land at a point $2 \mathrm{~km}$ upstream from his starting point. The current in the canal flows at $3.5 \mathrm{~km} / \mathrm{h}$ and the speed of his boat is $13 \mathrm{~km} / \mathrm{h}$. How long will the trip take?
-",15.8 $\mathrm{min}$, 20.2 $\mathrm{min}$,22.9 $\mathrm{min}$,18.6 $\mathrm{min}$,B,scibench-calculus,scibench-calculus
+",15.8 $\mathrm{min}$, 20.2 $\mathrm{min}$,22.9 $\mathrm{min}$,18.6 $\mathrm{min}$,B,scibench-calculus
 "A fluid has density $870 \mathrm{~kg} / \mathrm{m}^3$ and flows with velocity $\mathbf{v}=z \mathbf{i}+y^2 \mathbf{j}+x^2 \mathbf{k}$, where $x, y$, and $z$ are measured in meters and the components of $\mathbf{v}$ in meters per second. Find the rate of flow outward through the cylinder $x^2+y^2=4$, $0 \leqslant z \leqslant 1$.
-",5 $\mathrm{kg}/\mathrm{s}$, 0 $\mathrm{kg}/\mathrm{s}$,10 $\mathrm{kg}/\mathrm{s}$,20 $\mathrm{kg}/\mathrm{s}$,B,scibench-calculus,scibench-calculus
+",5 $\mathrm{kg}/\mathrm{s}$, 0 $\mathrm{kg}/\mathrm{s}$,10 $\mathrm{kg}/\mathrm{s}$,20 $\mathrm{kg}/\mathrm{s}$,B,scibench-calculus
 "A force of $30 \mathrm{~N}$ is required to maintain a spring stretched from its natural length of $12 \mathrm{~cm}$ to a length of $15 \mathrm{~cm}$. How much work is done in stretching the spring from $12 \mathrm{~cm}$ to $20 \mathrm{~cm}$ ?
-",4.5 $\mathrm{J}$,5.0 $\mathrm{J}$, 3.2 $\mathrm{J}$,2.8 $\mathrm{J}$,C,scibench-calculus,scibench-calculus
+",4.5 $\mathrm{J}$,5.0 $\mathrm{J}$, 3.2 $\mathrm{J}$,2.8 $\mathrm{J}$,C,scibench-calculus
 "A hawk flying at $15 \mathrm{~m} / \mathrm{s}$ at an altitude of $180 \mathrm{~m}$ accidentally drops its prey. The parabolic trajectory of the falling prey is described by the equation
 $$
 y=180-\frac{x^2}{45}
 $$
-until it hits the ground, where $y$ is its height above the ground and $x$ is the horizontal distance traveled in meters. Calculate the distance traveled by the prey from the time it is dropped until the time it hits the ground. Express your answer correct to the nearest tenth of a meter.",198.7 $\mathrm{m}$, 209.1 $\mathrm{m}$,220.5 $\mathrm{m}$,235.3 $\mathrm{m}$,B,scibench-calculus,scibench-calculus
+until it hits the ground, where $y$ is its height above the ground and $x$ is the horizontal distance traveled in meters. Calculate the distance traveled by the prey from the time it is dropped until the time it hits the ground. Express your answer correct to the nearest tenth of a meter.",198.7 $\mathrm{m}$, 209.1 $\mathrm{m}$,220.5 $\mathrm{m}$,235.3 $\mathrm{m}$,B,scibench-calculus
 "A manufacturer of corrugated metal roofing wants to produce panels that are $28 \mathrm{in}$. wide and $2 \mathrm{in}$. thick by processing flat sheets of metal as shown in the figure. The profile of the roofing takes the shape of a sine wave. Verify that the sine curve has equation $y=\sin (\pi x / 7)$ and find the width $w$ of a flat metal sheet that is needed to make a 28-inch panel. (Use your calculator to evaluate the integral correct to four significant digits.)
-", 29.36 $\mathrm{in}$,27.90 $\mathrm{in}$,28.85 $\mathrm{in}$,30.62 $\mathrm{in}$,A,scibench-calculus,scibench-calculus
-"A model for the surface area of a human body is given by $S=0.1091 w^{0.425} h^{0.725}$, where $w$ is the weight (in pounds), $h$ is the height (in inches), and $S$ is measured in square feet. If the errors in measurement of $w$ and $h$ are at most $2 \%$, use differentials to estimate the maximum percentage error in the calculated surface area.", 2.3 $\%$,3.1 $\%$,2.9 $\%$,1.5 $\%$,A,scibench-calculus,scibench-calculus
-"A planning engineer for a new alum plant must present some estimates to his company regarding the capacity of a silo designed to contain bauxite ore until it is processed into alum. The ore resembles pink talcum powder and is poured from a conveyor at the top of the silo. The silo is a cylinder $100 \mathrm{ft}$ high with a radius of $200 \mathrm{ft}$. The conveyor carries ore at a rate of $60,000 \pi \mathrm{~ft}^3 / \mathrm{h}$ and the ore maintains a conical shape whose radius is 1.5 times its height. If, at a certain time $t$, the pile is $60 \mathrm{ft}$ high, how long will it take for the pile to reach the top of the silo?",8.5 $\mathrm{h}$, 9.8 $\mathrm{h}$,10.5 $\mathrm{h}$,11.2 $\mathrm{h}$,B,scibench-calculus,scibench-calculus
-A projectile is fired with an initial speed of $200 \mathrm{~m} / \mathrm{s}$ and angle of elevation $60^{\circ}$. Find the speed at impact.,150 $\mathrm{m}/\mathrm{s}$,250 $\mathrm{m}/\mathrm{s}$, 200 $\mathrm{m}/\mathrm{s}$,100 $\mathrm{m}/\mathrm{s}$,C,scibench-calculus,scibench-calculus
-A swimming pool is circular with a $40-\mathrm{ft}$ diameter. The depth is constant along east-west lines and increases linearly from $2 \mathrm{ft}$ at the south end to $7 \mathrm{ft}$ at the north end. Find the volume of water in the pool.,$1600\pi$ $\mathrm{ft}^3$,$2200\pi$ $\mathrm{ft}^3$,$2000\pi$ $\mathrm{ft}^3$, $1800\pi$ $\mathrm{ft}^3$,D,scibench-calculus,scibench-calculus
-A variable force of $5 x^{-2}$ pounds moves an object along a straight line when it is $x$ feet from the origin. Calculate the work done in moving the object from $x=1 \mathrm{~ft}$ to $x=10 \mathrm{~ft}$.,3.8 $\mathrm{ft-lb}$,6.1 $\mathrm{ft-lb}$, 4.5 $\mathrm{ft-lb}$,5.2 $\mathrm{ft-lb}$,C,scibench-calculus,scibench-calculus
-A woman walks due west on the deck of a ship at $3 \mathrm{mi} / \mathrm{h}$. The ship is moving north at a speed of $22 \mathrm{mi} / \mathrm{h}$. Find the speed of the woman relative to the surface of the water.,$\sqrt{529}$ $\mathrm{mi}/\mathrm{h}$,$\sqrt{25}$ $\mathrm{mi}/\mathrm{h}$, $\sqrt{493}$ $\mathrm{mi}/\mathrm{h}$,$\sqrt{441}$ $\mathrm{mi}/\mathrm{h}$,C,scibench-calculus,scibench-calculus
-Find the area bounded by the curves $y=\cos x$ and $y=\cos ^2 x$ between $x=0$ and $x=\pi$.,1.5, 2,1,2.5,B,scibench-calculus,scibench-calculus
+", 29.36 $\mathrm{in}$,27.90 $\mathrm{in}$,28.85 $\mathrm{in}$,30.62 $\mathrm{in}$,A,scibench-calculus
+"A model for the surface area of a human body is given by $S=0.1091 w^{0.425} h^{0.725}$, where $w$ is the weight (in pounds), $h$ is the height (in inches), and $S$ is measured in square feet. If the errors in measurement of $w$ and $h$ are at most $2 \%$, use differentials to estimate the maximum percentage error in the calculated surface area.", 2.3 $\%$,3.1 $\%$,2.9 $\%$,1.5 $\%$,A,scibench-calculus
+"A planning engineer for a new alum plant must present some estimates to his company regarding the capacity of a silo designed to contain bauxite ore until it is processed into alum. The ore resembles pink talcum powder and is poured from a conveyor at the top of the silo. The silo is a cylinder $100 \mathrm{ft}$ high with a radius of $200 \mathrm{ft}$. The conveyor carries ore at a rate of $60,000 \pi \mathrm{~ft}^3 / \mathrm{h}$ and the ore maintains a conical shape whose radius is 1.5 times its height. If, at a certain time $t$, the pile is $60 \mathrm{ft}$ high, how long will it take for the pile to reach the top of the silo?",8.5 $\mathrm{h}$, 9.8 $\mathrm{h}$,10.5 $\mathrm{h}$,11.2 $\mathrm{h}$,B,scibench-calculus
+A projectile is fired with an initial speed of $200 \mathrm{~m} / \mathrm{s}$ and angle of elevation $60^{\circ}$. Find the speed at impact.,150 $\mathrm{m}/\mathrm{s}$,250 $\mathrm{m}/\mathrm{s}$, 200 $\mathrm{m}/\mathrm{s}$,100 $\mathrm{m}/\mathrm{s}$,C,scibench-calculus
+A swimming pool is circular with a $40-\mathrm{ft}$ diameter. The depth is constant along east-west lines and increases linearly from $2 \mathrm{ft}$ at the south end to $7 \mathrm{ft}$ at the north end. Find the volume of water in the pool.,$1600\pi$ $\mathrm{ft}^3$,$2200\pi$ $\mathrm{ft}^3$,$2000\pi$ $\mathrm{ft}^3$, $1800\pi$ $\mathrm{ft}^3$,D,scibench-calculus
+A variable force of $5 x^{-2}$ pounds moves an object along a straight line when it is $x$ feet from the origin. Calculate the work done in moving the object from $x=1 \mathrm{~ft}$ to $x=10 \mathrm{~ft}$.,3.8 $\mathrm{ft-lb}$,6.1 $\mathrm{ft-lb}$, 4.5 $\mathrm{ft-lb}$,5.2 $\mathrm{ft-lb}$,C,scibench-calculus
+A woman walks due west on the deck of a ship at $3 \mathrm{mi} / \mathrm{h}$. The ship is moving north at a speed of $22 \mathrm{mi} / \mathrm{h}$. Find the speed of the woman relative to the surface of the water.,$\sqrt{529}$ $\mathrm{mi}/\mathrm{h}$,$\sqrt{25}$ $\mathrm{mi}/\mathrm{h}$, $\sqrt{493}$ $\mathrm{mi}/\mathrm{h}$,$\sqrt{441}$ $\mathrm{mi}/\mathrm{h}$,C,scibench-calculus
+Find the area bounded by the curves $y=\cos x$ and $y=\cos ^2 x$ between $x=0$ and $x=\pi$.,1.5, 2,1,2.5,B,scibench-calculus
 "Find the area of triangle $A B C$, correct to five decimal places, if
 $$
 |A B|=10 \mathrm{~cm} \quad|B C|=3 \mathrm{~cm} \quad \angle A B C=107^{\circ}
-$$",12.12345 $\mathrm{cm^2}$, 14.34457 $\mathrm{cm^2}$,16.23564 $\mathrm{cm^2}$,15.67890 $\mathrm{cm^2}$,B,scibench-calculus,scibench-calculus
-Find the volume of the described solid $S$. The base of $S$ is an elliptical region with boundary curve $9 x^2+4 y^2=36$. Cross-sections perpendicular to the $x$-axis are isosceles right triangles with hypotenuse in the base., 24,36,12,48,A,scibench-calculus,scibench-calculus
-"Find the volume of the described solid S. A tetrahedron with three mutually perpendicular faces and three mutually perpendicular edges with lengths $3 \mathrm{~cm}$, $4 \mathrm{~cm}$, and $5 \mathrm{~cm}$",12 $\mathrm{cm}^3$, 10 $\mathrm{cm}^3$,15 $\mathrm{cm}^3$,20 $\mathrm{cm}^3$,B,scibench-calculus,scibench-calculus
-"Find the work done by a force $\mathbf{F}=8 \mathbf{i}-6 \mathbf{j}+9 \mathbf{k}$ that moves an object from the point $(0,10,8)$ to the point $(6,12,20)$ along a straight line. The distance is measured in meters and the force in newtons.",160 $\mathrm{J}$,120 $\mathrm{J}$,180 $\mathrm{J}$, 144 $\mathrm{J}$,D,scibench-calculus,scibench-calculus
-"If a ball is thrown into the air with a velocity of $40 \mathrm{ft} / \mathrm{s}$, its height (in feet) after $t$ seconds is given by $y=40 t-16 t^2$. Find the velocity when $t=2$.",-16 $\mathrm{ft} / \mathrm{s}$, -24 $\mathrm{ft} / \mathrm{s}$,-32 $\mathrm{ft} / \mathrm{s}$,8 $\mathrm{ft} / \mathrm{s}$,B,scibench-calculus,scibench-calculus
-"One model for the spread of an epidemic is that the rate of spread is jointly proportional to the number of infected people and the number of uninfected people. In an isolated town of 5000 inhabitants, 160 people have a disease at the beginning of the week and 1200 have it at the end of the week. How long does it take for $80 \%$ of the population to become infected?",20 $\mathrm{days}$, 15 $\mathrm{days}$,25 $\mathrm{days}$,10 $\mathrm{days}$,B,scibench-calculus,scibench-calculus
+$$",12.12345 $\mathrm{cm^2}$, 14.34457 $\mathrm{cm^2}$,16.23564 $\mathrm{cm^2}$,15.67890 $\mathrm{cm^2}$,B,scibench-calculus
+Find the volume of the described solid $S$. The base of $S$ is an elliptical region with boundary curve $9 x^2+4 y^2=36$. Cross-sections perpendicular to the $x$-axis are isosceles right triangles with hypotenuse in the base., 24,36,12,48,A,scibench-calculus
+"Find the volume of the described solid S. A tetrahedron with three mutually perpendicular faces and three mutually perpendicular edges with lengths $3 \mathrm{~cm}$, $4 \mathrm{~cm}$, and $5 \mathrm{~cm}$",12 $\mathrm{cm}^3$, 10 $\mathrm{cm}^3$,15 $\mathrm{cm}^3$,20 $\mathrm{cm}^3$,B,scibench-calculus
+"Find the work done by a force $\mathbf{F}=8 \mathbf{i}-6 \mathbf{j}+9 \mathbf{k}$ that moves an object from the point $(0,10,8)$ to the point $(6,12,20)$ along a straight line. The distance is measured in meters and the force in newtons.",160 $\mathrm{J}$,120 $\mathrm{J}$,180 $\mathrm{J}$, 144 $\mathrm{J}$,D,scibench-calculus
+"If a ball is thrown into the air with a velocity of $40 \mathrm{ft} / \mathrm{s}$, its height (in feet) after $t$ seconds is given by $y=40 t-16 t^2$. Find the velocity when $t=2$.",-16 $\mathrm{ft} / \mathrm{s}$, -24 $\mathrm{ft} / \mathrm{s}$,-32 $\mathrm{ft} / \mathrm{s}$,8 $\mathrm{ft} / \mathrm{s}$,B,scibench-calculus
+"One model for the spread of an epidemic is that the rate of spread is jointly proportional to the number of infected people and the number of uninfected people. In an isolated town of 5000 inhabitants, 160 people have a disease at the beginning of the week and 1200 have it at the end of the week. How long does it take for $80 \%$ of the population to become infected?",20 $\mathrm{days}$, 15 $\mathrm{days}$,25 $\mathrm{days}$,10 $\mathrm{days}$,B,scibench-calculus
 "Show how to approximate the required work by a Riemann sum. Then express the work as an integral and evaluate it.  A cable that weighs $2 \mathrm{~lb} / \mathrm{ft}$ is used to lift $800 \mathrm{~lb}$ of coal up a mine shaft $500 \mathrm{~ft}$ deep. Find the work done.
-", 650000 $\mathrm{ft-lb}$,850000 $\mathrm{ft-lb}$,750000 $\mathrm{ft-lb}$,600000 $\mathrm{ft-lb}$,A,scibench-calculus,scibench-calculus
+", 650000 $\mathrm{ft-lb}$,850000 $\mathrm{ft-lb}$,750000 $\mathrm{ft-lb}$,600000 $\mathrm{ft-lb}$,A,scibench-calculus
 "Show how to approximate the required work by a Riemann sum. Then express the work as an integral and evaluate it. A leaky 10-kg bucket is lifted from the ground to a height of $12 \mathrm{~m}$ at a constant speed with a rope that weighs $0.8 \mathrm{~kg} / \mathrm{m}$. Initially the bucket contains $36 \mathrm{~kg}$ of water, but the water leaks at a constant rate and finishes draining just as the bucket reaches the 12-m level. How much work is done?
-", 3857 $\mathrm{J}$,3500 $\mathrm{J}$,4000 $\mathrm{J}$,4200 $\mathrm{J}$,A,scibench-calculus,scibench-calculus
-Suppose that $2 \mathrm{~J}$ of work is needed to stretch a spring from its natural length of $30 \mathrm{~cm}$ to a length of $42 \mathrm{~cm}$. How far beyond its natural length will a force of $30 \mathrm{~N}$ keep the spring stretched?,13.5 $\mathrm{cm}$, 10.8 $\mathrm{cm}$,16.2 $\mathrm{cm}$,20.4 $\mathrm{cm}$,B,scibench-calculus,scibench-calculus
-The base of a solid is a circular disk with radius 3 . Find the volume of the solid if parallel cross-sections perpendicular to the base are isosceles right triangles with hypotenuse lying along the base.,18, 36,54,72,B,scibench-calculus,scibench-calculus
+", 3857 $\mathrm{J}$,3500 $\mathrm{J}$,4000 $\mathrm{J}$,4200 $\mathrm{J}$,A,scibench-calculus
+Suppose that $2 \mathrm{~J}$ of work is needed to stretch a spring from its natural length of $30 \mathrm{~cm}$ to a length of $42 \mathrm{~cm}$. How far beyond its natural length will a force of $30 \mathrm{~N}$ keep the spring stretched?,13.5 $\mathrm{cm}$, 10.8 $\mathrm{cm}$,16.2 $\mathrm{cm}$,20.4 $\mathrm{cm}$,B,scibench-calculus
+The base of a solid is a circular disk with radius 3 . Find the volume of the solid if parallel cross-sections perpendicular to the base are isosceles right triangles with hypotenuse lying along the base.,18, 36,54,72,B,scibench-calculus
 "The demand function for a commodity is given by
 $$
 p=2000-0.1 x-0.01 x^2
 $$
-Find the consumer surplus when the sales level is 100 .",5000 $\$$, 7166.67 $\$$,6000 $\$$,8000 $\$$,B,scibench-calculus,scibench-calculus
-"The dye dilution method is used to measure cardiac output with $6 \mathrm{mg}$ of dye. The dye concentrations, in $\mathrm{mg} / \mathrm{L}$, are modeled by $c(t)=20 t e^{-0.6 t}, 0 \leqslant t \leqslant 10$, where $t$ is measured in seconds. Find the cardiac output.", 6.6 $\mathrm{L}/\mathrm{min}$,4.8 $\mathrm{L}/\mathrm{min}$,7.2 $\mathrm{L}/\mathrm{min}$,5.4 $\mathrm{L}/\mathrm{min}$,A,scibench-calculus,scibench-calculus
-"The intensity of light with wavelength $\lambda$ traveling through a diffraction grating with $N$ slits at an angle $\theta$ is given by $I(\theta)=N^2 \sin ^2 k / k^2$, where $k=(\pi N d \sin \theta) / \lambda$ and $d$ is the distance between adjacent slits. A helium-neon laser with wavelength $\lambda=632.8 \times 10^{-9} \mathrm{~m}$ is emitting a narrow band of light, given by $-10^{-6}<\theta<10^{-6}$, through a grating with 10,000 slits spaced $10^{-4} \mathrm{~m}$ apart. Use the Midpoint Rule with $n=10$ to estimate the total light intensity $\int_{-10^{-6}}^{10^{-6}} I(\theta) d \theta$ emerging from the grating.",72.3,67.9,51.2, 59.4,D,scibench-calculus,scibench-calculus
+Find the consumer surplus when the sales level is 100 .",5000 $\$$, 7166.67 $\$$,6000 $\$$,8000 $\$$,B,scibench-calculus
+"The dye dilution method is used to measure cardiac output with $6 \mathrm{mg}$ of dye. The dye concentrations, in $\mathrm{mg} / \mathrm{L}$, are modeled by $c(t)=20 t e^{-0.6 t}, 0 \leqslant t \leqslant 10$, where $t$ is measured in seconds. Find the cardiac output.", 6.6 $\mathrm{L}/\mathrm{min}$,4.8 $\mathrm{L}/\mathrm{min}$,7.2 $\mathrm{L}/\mathrm{min}$,5.4 $\mathrm{L}/\mathrm{min}$,A,scibench-calculus
+"The intensity of light with wavelength $\lambda$ traveling through a diffraction grating with $N$ slits at an angle $\theta$ is given by $I(\theta)=N^2 \sin ^2 k / k^2$, where $k=(\pi N d \sin \theta) / \lambda$ and $d$ is the distance between adjacent slits. A helium-neon laser with wavelength $\lambda=632.8 \times 10^{-9} \mathrm{~m}$ is emitting a narrow band of light, given by $-10^{-6}<\theta<10^{-6}$, through a grating with 10,000 slits spaced $10^{-4} \mathrm{~m}$ apart. Use the Midpoint Rule with $n=10$ to estimate the total light intensity $\int_{-10^{-6}}^{10^{-6}} I(\theta) d \theta$ emerging from the grating.",72.3,67.9,51.2, 59.4,D,scibench-calculus
 "The length and width of a rectangle are measured as $30 \mathrm{~cm}$ and $24 \mathrm{~cm}$, respectively, with an error in measurement of at most $0.1 \mathrm{~cm}$ in each. Use differentials to estimate the maximum error in the calculated area of the rectangle.
-",6.2 $\mathrm{cm^2}$,7.5 $\mathrm{cm^2}$,4.8 $\mathrm{cm^2}$, 5.4 $\mathrm{cm^2}$,D,scibench-calculus,scibench-calculus
-"The linear density in a rod $8 \mathrm{~m}$ long is $12 / \sqrt{x+1} \mathrm{~kg} / \mathrm{m}$, where $x$ is measured in meters from one end of the rod. Find the average density of the rod.",4 $\mathrm{~kg} / \mathrm{m}$,8 $\mathrm{~kg} / \mathrm{m}$, 6 $\mathrm{~kg} / \mathrm{m}$,10 $\mathrm{~kg} / \mathrm{m}$,C,scibench-calculus,scibench-calculus
-"The orbit of Halley's comet, last seen in 1986 and due to return in 2062, is an ellipse with eccentricity 0.97 and one focus at the sun. The length of its major axis is $36.18 \mathrm{AU}$. [An astronomical unit (AU) is the mean distance between the earth and the sun, about 93 million miles.] Find a polar equation for the orbit of Halley's comet. What is the maximum distance from the comet to the sun?",37.86 $\mathrm{AU}$,32.10 $\mathrm{AU}$, 35.64 $\mathrm{AU}$,33.25 $\mathrm{AU}$,C,scibench-calculus,scibench-calculus
-The planet Mercury travels in an elliptical orbit with eccentricity 0.206 . Its minimum distance from the sun is $4.6 \times 10^7 \mathrm{~km}$. Find its maximum distance from the sun.,8 $\mathrm{10^7} \mathrm{~km}$,6 $\mathrm{10^7} \mathrm{~km}$,5 $\mathrm{10^7} \mathrm{~km}$, 7 $\mathrm{10^7} \mathrm{~km}$,D,scibench-calculus,scibench-calculus
-"The temperature at the point $(x, y, z)$ in a substance with conductivity $K=6.5$ is $u(x, y, z)=2 y^2+2 z^2$. Find the rate of heat flow inward across the cylindrical surface $y^2+z^2=6$, $0 \leqslant x \leqslant 4$",$1560\pi$,$1248\pi$,$1040\pi$,$984\pi$,B,scibench-calculus,scibench-calculus
-"Use Poiseuille's Law to calculate the rate of flow in a small human artery where we can take $\eta=0.027, R=0.008 \mathrm{~cm}$, $I=2 \mathrm{~cm}$, and $P=4000$ dynes $/ \mathrm{cm}^2$.",0.89 $\mathrm{10^{-4}} \mathrm{~cm}^3/\mathrm{s}$,1.50 $\mathrm{10^{-4}} \mathrm{~cm}^3/\mathrm{s}$, 1.19 $\mathrm{10^{-4}} \mathrm{~cm}^3/\mathrm{s}$,2.35 $\mathrm{10^{-4}} \mathrm{~cm}^3/\mathrm{s}$,C,scibench-calculus,scibench-calculus
+",6.2 $\mathrm{cm^2}$,7.5 $\mathrm{cm^2}$,4.8 $\mathrm{cm^2}$, 5.4 $\mathrm{cm^2}$,D,scibench-calculus
+"The linear density in a rod $8 \mathrm{~m}$ long is $12 / \sqrt{x+1} \mathrm{~kg} / \mathrm{m}$, where $x$ is measured in meters from one end of the rod. Find the average density of the rod.",4 $\mathrm{~kg} / \mathrm{m}$,8 $\mathrm{~kg} / \mathrm{m}$, 6 $\mathrm{~kg} / \mathrm{m}$,10 $\mathrm{~kg} / \mathrm{m}$,C,scibench-calculus
+"The orbit of Halley's comet, last seen in 1986 and due to return in 2062, is an ellipse with eccentricity 0.97 and one focus at the sun. The length of its major axis is $36.18 \mathrm{AU}$. [An astronomical unit (AU) is the mean distance between the earth and the sun, about 93 million miles.] Find a polar equation for the orbit of Halley's comet. What is the maximum distance from the comet to the sun?",37.86 $\mathrm{AU}$,32.10 $\mathrm{AU}$, 35.64 $\mathrm{AU}$,33.25 $\mathrm{AU}$,C,scibench-calculus
+The planet Mercury travels in an elliptical orbit with eccentricity 0.206 . Its minimum distance from the sun is $4.6 \times 10^7 \mathrm{~km}$. Find its maximum distance from the sun.,8 $\mathrm{10^7} \mathrm{~km}$,6 $\mathrm{10^7} \mathrm{~km}$,5 $\mathrm{10^7} \mathrm{~km}$, 7 $\mathrm{10^7} \mathrm{~km}$,D,scibench-calculus
+"The temperature at the point $(x, y, z)$ in a substance with conductivity $K=6.5$ is $u(x, y, z)=2 y^2+2 z^2$. Find the rate of heat flow inward across the cylindrical surface $y^2+z^2=6$, $0 \leqslant x \leqslant 4$",$1560\pi$,$1248\pi$,$1040\pi$,$984\pi$,B,scibench-calculus
+"Use Poiseuille's Law to calculate the rate of flow in a small human artery where we can take $\eta=0.027, R=0.008 \mathrm{~cm}$, $I=2 \mathrm{~cm}$, and $P=4000$ dynes $/ \mathrm{cm}^2$.",0.89 $\mathrm{10^{-4}} \mathrm{~cm}^3/\mathrm{s}$,1.50 $\mathrm{10^{-4}} \mathrm{~cm}^3/\mathrm{s}$, 1.19 $\mathrm{10^{-4}} \mathrm{~cm}^3/\mathrm{s}$,2.35 $\mathrm{10^{-4}} \mathrm{~cm}^3/\mathrm{s}$,C,scibench-calculus
 "Use Stokes' Theorem to evaluate $\int_C \mathbf{F} \cdot d \mathbf{r}$, where $\mathbf{F}(x, y, z)=x y \mathbf{i}+y z \mathbf{j}+z x \mathbf{k}$, and $C$ is the triangle with vertices $(1,0,0),(0,1,0)$, and $(0,0,1)$, oriented counterclockwise as viewed from above.
-",$\frac{1}{2}$,$-\frac{1}{3}$, $-\frac{1}{2}$,$\frac{1}{4}$,C,scibench-calculus,scibench-calculus
-Use differentials to estimate the amount of tin in a closed tin can with diameter $8 \mathrm{~cm}$ and height $12 \mathrm{~cm}$ if the tin is $0.04 \mathrm{~cm}$ thick.,18 $\mathrm{cm^3}$,20 $\mathrm{cm^3}$,12 $\mathrm{cm^3}$, 16 $\mathrm{cm^3}$,D,scibench-calculus,scibench-calculus
- Radium-226 has a half-life of 1620 years. Find the time period during which a given amount of this material is reduced by one-quarter.,810 Years,1344.8 Years, 672.4 Year,1620 Years,C,scibench-diff,scibench-diff
+",$\frac{1}{2}$,$-\frac{1}{3}$, $-\frac{1}{2}$,$\frac{1}{4}$,C,scibench-calculus
+Use differentials to estimate the amount of tin in a closed tin can with diameter $8 \mathrm{~cm}$ and height $12 \mathrm{~cm}$ if the tin is $0.04 \mathrm{~cm}$ thick.,18 $\mathrm{cm^3}$,20 $\mathrm{cm^3}$,12 $\mathrm{cm^3}$, 16 $\mathrm{cm^3}$,D,scibench-calculus
+ Radium-226 has a half-life of 1620 years. Find the time period during which a given amount of this material is reduced by one-quarter.,810 Years,1344.8 Years, 672.4 Year,1620 Years,C,scibench-diff
 "15. Consider the initial value problem
 $$
 4 y^{\prime \prime}+12 y^{\prime}+9 y=0, \quad y(0)=1, \quad y^{\prime}(0)=-4 .
 $$
-Determine where the solution has the value zero.",0.3,0.6,0.5, 0.4,D,scibench-diff,scibench-diff
+Determine where the solution has the value zero.",0.3,0.6,0.5, 0.4,D,scibench-diff
 "25. Consider the initial value problem
 $$
 2 y^{\prime \prime}+3 y^{\prime}-2 y=0, \quad y(0)=1, \quad y^{\prime}(0)=-\beta,
 $$
 where $\beta>0$.
-Find the smallest value of $\beta$ for which the solution has no minimum point.",3, 2,4,1,B,scibench-diff,scibench-diff
+Find the smallest value of $\beta$ for which the solution has no minimum point.",3, 2,4,1,B,scibench-diff
 "28. A mass of $0.25 \mathrm{~kg}$ is dropped from rest in a medium offering a resistance of $0.2|v|$, where $v$ is measured in $\mathrm{m} / \mathrm{s}$.
-If the mass is to attain a velocity of no more than $10 \mathrm{~m} / \mathrm{s}$, find the maximum height from which it can be dropped.",12.3 m, 13.45 m,10.5 m,15.2 m,B,scibench-diff,scibench-diff
-A certain college graduate borrows $8000 to buy a car. The lender charges interest at an annual rate of 10%. What monthly payment rate is required to pay off the loan in 3 years?,$300.00,$275.00,$220.00, 258.14 $,D,scibench-diff,scibench-diff
+If the mass is to attain a velocity of no more than $10 \mathrm{~m} / \mathrm{s}$, find the maximum height from which it can be dropped.",12.3 m, 13.45 m,10.5 m,15.2 m,B,scibench-diff
+A certain college graduate borrows $8000 to buy a car. The lender charges interest at an annual rate of 10%. What monthly payment rate is required to pay off the loan in 3 years?,$300.00,$275.00,$220.00, 258.14 $,D,scibench-diff
 "A certain spring-mass system satisfies the initial value problem
 $$
 u^{\prime \prime}+\frac{1}{4} u^{\prime}+u=k g(t), \quad u(0)=0, \quad u^{\prime}(0)=0
 $$
 where $g(t)=u_{3 / 2}(t)-u_{5 / 2}(t)$ and $k>0$ is a parameter.
-Suppose $k=2$. Find the time $\tau$ after which $|u(t)|<0.1$ for all $t>\tau$.",28.6891,30.7654, 25.6773,20.5426,C,scibench-diff,scibench-diff
-A certain vibrating system satisfies the equation $u^{\prime \prime}+\gamma u^{\prime}+u=0$. Find the value of the damping coefficient $\gamma$ for which the quasi period of the damped motion is $50 \%$ greater than the period of the corresponding undamped motion.,1.7089, 1.4907,1.5923,1.3295,B,scibench-diff,scibench-diff
+Suppose $k=2$. Find the time $\tau$ after which $|u(t)|<0.1$ for all $t>\tau$.",28.6891,30.7654, 25.6773,20.5426,C,scibench-diff
+A certain vibrating system satisfies the equation $u^{\prime \prime}+\gamma u^{\prime}+u=0$. Find the value of the damping coefficient $\gamma$ for which the quasi period of the damped motion is $50 \%$ greater than the period of the corresponding undamped motion.,1.7089, 1.4907,1.5923,1.3295,B,scibench-diff
 "A home buyer can afford to spend no more than $\$ 800 /$ month on mortgage payments. Suppose that the interest rate is $9 \%$ and that the term of the mortgage is 20 years. Assume that interest is compounded continuously and that payments are also made continuously.
-Determine the total interest paid during the term of the mortgage.","$120,345.78","$85,250.65","$75,000.00"," 102,965.21 $",D,scibench-diff,scibench-diff
+Determine the total interest paid during the term of the mortgage.","$120,345.78","$85,250.65","$75,000.00"," 102,965.21 $",D,scibench-diff
 "A home buyer can afford to spend no more than $\$ 800$ /month on mortgage payments. Suppose that the interest rate is $9 \%$ and that the term of the mortgage is 20 years. Assume that interest is compounded continuously and that payments are also made continuously.
-Determine the maximum amount that this buyer can afford to borrow."," 89,034.79 $","$105,000.00","$95,000.00","$75,000.00",A,scibench-diff,scibench-diff
-"A homebuyer wishes to finance the purchase with a \$95,000 mortgage with a 20-year term. What is the maximum interest rate the buyer can afford if the monthly payment is not to exceed \$900?",10.85 %,7.50 %,8.27 %, 9.73 %,D,scibench-diff,scibench-diff
-"A homebuyer wishes to take out a mortgage of $100,000 for a 30-year period. What monthly payment is required if the interest rate is 9%?",$850.00,$900.00,$750.00,804.62$,D,scibench-diff,scibench-diff
+Determine the maximum amount that this buyer can afford to borrow."," 89,034.79 $","$105,000.00","$95,000.00","$75,000.00",A,scibench-diff
+"A homebuyer wishes to finance the purchase with a \$95,000 mortgage with a 20-year term. What is the maximum interest rate the buyer can afford if the monthly payment is not to exceed \$900?",10.85 %,7.50 %,8.27 %, 9.73 %,D,scibench-diff
+"A homebuyer wishes to take out a mortgage of $100,000 for a 30-year period. What monthly payment is required if the interest rate is 9%?",$850.00,$900.00,$750.00,804.62$,D,scibench-diff
 "A mass of $0.25 \mathrm{~kg}$ is dropped from rest in a medium offering a resistance of $0.2|v|$, where $v$ is measured in $\mathrm{m} / \mathrm{s}$.
-If the mass is dropped from a height of $30 \mathrm{~m}$, find its velocity when it hits the ground.",12.75 m/s, 11.58 m/s,9.63 m/s,15.35 m/s,B,scibench-diff,scibench-diff
-"A mass of $100 \mathrm{~g}$ stretches a spring $5 \mathrm{~cm}$. If the mass is set in motion from its equilibrium position with a downward velocity of $10 \mathrm{~cm} / \mathrm{s}$, and if there is no damping, determine when does the mass first return to its equilibrium position.",$\pi/20$ s, $\pi/14$ s,$\pi/7$ s,$\pi/10$ s,B,scibench-diff,scibench-diff
-"A mass weighing $2 \mathrm{lb}$ stretches a spring 6 in. If the mass is pulled down an additional 3 in. and then released, and if there is no damping, determine the position $u$ of the mass at any time $t$. Find the frequency of the motion.",$\pi/6$ s, $\pi/4$ s,$\pi/2$ s,$\pi/3$ s,B,scibench-diff,scibench-diff
-A mass weighing $8 \mathrm{lb}$ stretches a spring 1.5 in. The mass is also attached to a damper with coefficient $\gamma$. Determine the value of $\gamma$ for which the system is critically damped; be sure to give the units for $\gamma$,10 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,8 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,12 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,6 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,B,scibench-diff,scibench-diff
-"A radioactive material, such as the isotope thorium-234, disintegrates at a rate proportional to the amount currently present. If $Q(t)$ is the amount present at time $t$, then $d Q / d t=-r Q$, where $r>0$ is the decay rate. If $100 \mathrm{mg}$ of thorium-234 decays to $82.04 \mathrm{mg}$ in 1 week, determine the decay rate $r$.", 0.02828 $\text{day}^{-1}$,0.03535 $\text{day}^{-1}$,0.04242 $\text{day}^{-1}$,0.02121 $\text{day}^{-1}$,A,scibench-diff,scibench-diff
+If the mass is dropped from a height of $30 \mathrm{~m}$, find its velocity when it hits the ground.",12.75 m/s, 11.58 m/s,9.63 m/s,15.35 m/s,B,scibench-diff
+"A mass of $100 \mathrm{~g}$ stretches a spring $5 \mathrm{~cm}$. If the mass is set in motion from its equilibrium position with a downward velocity of $10 \mathrm{~cm} / \mathrm{s}$, and if there is no damping, determine when does the mass first return to its equilibrium position.",$\pi/20$ s, $\pi/14$ s,$\pi/7$ s,$\pi/10$ s,B,scibench-diff
+"A mass weighing $2 \mathrm{lb}$ stretches a spring 6 in. If the mass is pulled down an additional 3 in. and then released, and if there is no damping, determine the position $u$ of the mass at any time $t$. Find the frequency of the motion.",$\pi/6$ s, $\pi/4$ s,$\pi/2$ s,$\pi/3$ s,B,scibench-diff
+A mass weighing $8 \mathrm{lb}$ stretches a spring 1.5 in. The mass is also attached to a damper with coefficient $\gamma$. Determine the value of $\gamma$ for which the system is critically damped; be sure to give the units for $\gamma$,10 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,8 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,12 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,6 $\mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$,B,scibench-diff
+"A radioactive material, such as the isotope thorium-234, disintegrates at a rate proportional to the amount currently present. If $Q(t)$ is the amount present at time $t$, then $d Q / d t=-r Q$, where $r>0$ is the decay rate. If $100 \mathrm{mg}$ of thorium-234 decays to $82.04 \mathrm{mg}$ in 1 week, determine the decay rate $r$.", 0.02828 $\text{day}^{-1}$,0.03535 $\text{day}^{-1}$,0.04242 $\text{day}^{-1}$,0.02121 $\text{day}^{-1}$,A,scibench-diff
 "A recent college graduate borrows $\$ 100,000$ at an interest rate of $9 \%$ to purchase a condominium. Anticipating steady salary increases, the buyer expects to make payments at a monthly rate of $800(1+t / 120)$, where $t$ is the number of months since the loan was made.
-Assuming that this payment schedule can be maintained, when will the loan be fully paid?",120 months, 135.36 months,180 months,150 months,B,scibench-diff,scibench-diff
+Assuming that this payment schedule can be maintained, when will the loan be fully paid?",120 months, 135.36 months,180 months,150 months,B,scibench-diff
 "A spring is stretched 6 in by a mass that weighs $8 \mathrm{lb}$. The mass is attached to a dashpot mechanism that has a damping constant of $0.25 \mathrm{lb} \cdot \mathrm{s} / \mathrm{ft}$ and is acted on by an external force of $4 \cos 2 t \mathrm{lb}$.
-If the given mass is replaced by a mass $m$, determine the value of $m$ for which the amplitude of the steady state response is maximum.",6 slugs,2 slugs,8 slugs, 4 slugs,D,scibench-diff,scibench-diff
+If the given mass is replaced by a mass $m$, determine the value of $m$ for which the amplitude of the steady state response is maximum.",6 slugs,2 slugs,8 slugs, 4 slugs,D,scibench-diff
 "A tank contains 100 gal of water and $50 \mathrm{oz}$ of salt. Water containing a salt concentration of $\frac{1}{4}\left(1+\frac{1}{2} \sin t\right) \mathrm{oz} / \mathrm{gal}$ flows into the tank at a rate of $2 \mathrm{gal} / \mathrm{min}$, and the mixture in the tank flows out at the same rate.
-The long-time behavior of the solution is an oscillation about a certain constant level. What is the amplitude of the oscillation?",0.34995,0.29995,0.14995, 0.24995,D,scibench-diff,scibench-diff
-"A tank originally contains $100 \mathrm{gal}$ of fresh water. Then water containing $\frac{1}{2} \mathrm{lb}$ of salt per gallon is poured into the tank at a rate of $2 \mathrm{gal} / \mathrm{min}$, and the mixture is allowed to leave at the same rate. After $10 \mathrm{~min}$ the process is stopped, and fresh water is poured into the tank at a rate of $2 \mathrm{gal} / \mathrm{min}$, with the mixture again leaving at the same rate. Find the amount of salt in the tank at the end of an additional $10 \mathrm{~min}$.",9.5 lb, 7.42 lb,8.1 lb,6.3 lb,B,scibench-diff,scibench-diff
+The long-time behavior of the solution is an oscillation about a certain constant level. What is the amplitude of the oscillation?",0.34995,0.29995,0.14995, 0.24995,D,scibench-diff
+"A tank originally contains $100 \mathrm{gal}$ of fresh water. Then water containing $\frac{1}{2} \mathrm{lb}$ of salt per gallon is poured into the tank at a rate of $2 \mathrm{gal} / \mathrm{min}$, and the mixture is allowed to leave at the same rate. After $10 \mathrm{~min}$ the process is stopped, and fresh water is poured into the tank at a rate of $2 \mathrm{gal} / \mathrm{min}$, with the mixture again leaving at the same rate. Find the amount of salt in the tank at the end of an additional $10 \mathrm{~min}$.",9.5 lb, 7.42 lb,8.1 lb,6.3 lb,B,scibench-diff
 "A young person with no initial capital invests $k$ dollars per year at an annual rate of return $r$. Assume that investments are made continuously and that the return is compounded continuously.
-If $r=7.5 \%$, determine $k$ so that $\$ 1$ million will be available for retirement in 40 years.",5000 $, 3930 $,4500 $,3500 $,B,scibench-diff,scibench-diff
-"An investor deposits $1000 in an account paying interest at a rate of 8% compounded monthly, and also makes additional deposits of \$25 per month. Find the balance in the account after 3 years.", 2283.63 $,$1950.32,$2100.45,$2500.00,A,scibench-diff,scibench-diff
-"Consider a tank used in certain hydrodynamic experiments. After one experiment the tank contains $200 \mathrm{~L}$ of a dye solution with a concentration of $1 \mathrm{~g} / \mathrm{L}$. To prepare for the next experiment, the tank is to be rinsed with fresh water flowing in at a rate of $2 \mathrm{~L} / \mathrm{min}$, the well-stirred solution flowing out at the same rate. Find the time that will elapse before the concentration of dye in the tank reaches $1 \%$ of its original value.",500 min,420 min, 460.5 min,385 min,C,scibench-diff,scibench-diff
+If $r=7.5 \%$, determine $k$ so that $\$ 1$ million will be available for retirement in 40 years.",5000 $, 3930 $,4500 $,3500 $,B,scibench-diff
+"An investor deposits $1000 in an account paying interest at a rate of 8% compounded monthly, and also makes additional deposits of \$25 per month. Find the balance in the account after 3 years.", 2283.63 $,$1950.32,$2100.45,$2500.00,A,scibench-diff
+"Consider a tank used in certain hydrodynamic experiments. After one experiment the tank contains $200 \mathrm{~L}$ of a dye solution with a concentration of $1 \mathrm{~g} / \mathrm{L}$. To prepare for the next experiment, the tank is to be rinsed with fresh water flowing in at a rate of $2 \mathrm{~L} / \mathrm{min}$, the well-stirred solution flowing out at the same rate. Find the time that will elapse before the concentration of dye in the tank reaches $1 \%$ of its original value.",500 min,420 min, 460.5 min,385 min,C,scibench-diff
 "Consider the initial value problem
 $$
 3 u^{\prime \prime}-u^{\prime}+2 u=0, \quad u(0)=2, \quad u^{\prime}(0)=0
 $$
-For $t>0$ find the first time at which $|u(t)|=10$.", 10.7598,14.1234,8.9876,12.3456,A,scibench-diff,scibench-diff
+For $t>0$ find the first time at which $|u(t)|=10$.", 10.7598,14.1234,8.9876,12.3456,A,scibench-diff
 "Consider the initial value problem
 $$
 5 u^{\prime \prime}+2 u^{\prime}+7 u=0, \quad u(0)=2, \quad u^{\prime}(0)=1
 $$
-Find the smallest $T$ such that $|u(t)| \leq 0.1$ for all $t>T$.",16.7890,10.1234,12.3456,14.5115,D,scibench-diff,scibench-diff
+Find the smallest $T$ such that $|u(t)| \leq 0.1$ for all $t>T$.",16.7890,10.1234,12.3456,14.5115,D,scibench-diff
 "Consider the initial value problem
 $$
 9 y^{\prime \prime}+12 y^{\prime}+4 y=0, \quad y(0)=a>0, \quad y^{\prime}(0)=-1
 $$
-Find the critical value of $a$ that separates solutions that become negative from those that are always positive.",1.0, 1.5,2.0,2.5,B,scibench-diff,scibench-diff
+Find the critical value of $a$ that separates solutions that become negative from those that are always positive.",1.0, 1.5,2.0,2.5,B,scibench-diff
 "Consider the initial value problem
 $$
 y^{\prime \prime}+2 a y^{\prime}+\left(a^2+1\right) y=0, \quad y(0)=1, \quad y^{\prime}(0)=0 .
 $$
-For $a=1$ find the smallest $T$ such that $|y(t)|<0.1$ for $t>T$.",2.3754,1.6520,2.1345,1.8763,D,scibench-diff,scibench-diff
+For $a=1$ find the smallest $T$ such that $|y(t)|<0.1$ for $t>T$.",2.3754,1.6520,2.1345,1.8763,D,scibench-diff
 "Consider the initial value problem
 $$
 y^{\prime \prime}+\gamma y^{\prime}+y=\delta(t-1), \quad y(0)=0, \quad y^{\prime}(0)=0,
 $$
 where $\gamma$ is the damping coefficient (or resistance).
-Find the time $t_1$ at which the solution attains its maximum value.", 2.3613,3.0124,2.9876,1.7632,A,scibench-diff,scibench-diff
+Find the time $t_1$ at which the solution attains its maximum value.", 2.3613,3.0124,2.9876,1.7632,A,scibench-diff
 "Consider the initial value problem
 $$
 y^{\prime \prime}+\gamma y^{\prime}+y=k \delta(t-1), \quad y(0)=0, \quad y^{\prime}(0)=0
 $$
 where $k$ is the magnitude of an impulse at $t=1$ and $\gamma$ is the damping coefficient (or resistance).
-Let $\gamma=\frac{1}{2}$. Find the value of $k$ for which the response has a peak value of 2 ; call this value $k_1$.",2.3456,1.7890, 2.8108,3.5672,C,scibench-diff,scibench-diff
+Let $\gamma=\frac{1}{2}$. Find the value of $k$ for which the response has a peak value of 2 ; call this value $k_1$.",2.3456,1.7890, 2.8108,3.5672,C,scibench-diff
 "Consider the initial value problem
 $$
 y^{\prime}+\frac{1}{4} y=3+2 \cos 2 t, \quad y(0)=0
 $$
-Determine the value of $t$ for which the solution first intersects the line $y=12$.", 10.065778,9.876543,8.945321,11.234567,A,scibench-diff,scibench-diff
+Determine the value of $t$ for which the solution first intersects the line $y=12$.", 10.065778,9.876543,8.945321,11.234567,A,scibench-diff
 "Consider the initial value problem
 $$
 y^{\prime}+\frac{2}{3} y=1-\frac{1}{2} t, \quad y(0)=y_0 .
 $$
-Find the value of $y_0$ for which the solution touches, but does not cross, the $t$-axis.",-1.23456,-2.34567, −1.642876,-0.98765,C,scibench-diff,scibench-diff
+Find the value of $y_0$ for which the solution touches, but does not cross, the $t$-axis.",-1.23456,-2.34567, −1.642876,-0.98765,C,scibench-diff
 "Consider the initial value problem
 $$
 y^{\prime}=t y(4-y) / 3, \quad y(0)=y_0
 $$
-Suppose that $y_0=0.5$. Find the time $T$ at which the solution first reaches the value 3.98.",3.87540,2.98732,4.65218, 3.29527,D,scibench-diff,scibench-diff
+Suppose that $y_0=0.5$. Find the time $T$ at which the solution first reaches the value 3.98.",3.87540,2.98732,4.65218, 3.29527,D,scibench-diff
 "Consider the initial value problem
 $$
 y^{\prime}=t y(4-y) /(1+t), \quad y(0)=y_0>0 .
 $$
-If $y_0=2$, find the time $T$ at which the solution first reaches the value 3.99.",3.45678,3.78901, 2.84367,2.12345,C,scibench-diff,scibench-diff
+If $y_0=2$, find the time $T$ at which the solution first reaches the value 3.99.",3.45678,3.78901, 2.84367,2.12345,C,scibench-diff
 "Consider the initial value problem (see Example 5)
 $$
 y^{\prime \prime}+5 y^{\prime}+6 y=0, \quad y(0)=2, \quad y^{\prime}(0)=\beta
 $$
 where $\beta>0$.
-Determine the smallest value of $\beta$ for which $y_m \geq 4$.",18.2765,20.4521, 16.3923,15.3298,C,scibench-diff,scibench-diff
-"Find $\gamma$ so that the solution of the initial value problem $x^2 y^{\prime \prime}-2 y=0, y(1)=1, y^{\prime}(1)=\gamma$ is bounded as $x \rightarrow 0$.", 2,1,3,4,A,scibench-diff,scibench-diff
-"Find the effective annual yield of a bank account that pays interest at a rate of 7%, compounded daily; that is, divide the difference between the final and initial balances by the initial balance.",7.50 %,6.85 %,7.00 %,7.25 %,D,scibench-diff,scibench-diff
+Determine the smallest value of $\beta$ for which $y_m \geq 4$.",18.2765,20.4521, 16.3923,15.3298,C,scibench-diff
+"Find $\gamma$ so that the solution of the initial value problem $x^2 y^{\prime \prime}-2 y=0, y(1)=1, y^{\prime}(1)=\gamma$ is bounded as $x \rightarrow 0$.", 2,1,3,4,A,scibench-diff
+"Find the effective annual yield of a bank account that pays interest at a rate of 7%, compounded daily; that is, divide the difference between the final and initial balances by the initial balance.",7.50 %,6.85 %,7.00 %,7.25 %,D,scibench-diff
 "Find the fundamental period of the given function:
-$$f(x)=\left\{\begin{array}{ll}(-1)^n, & 2 n-1 \leq x<2 n, \\ 1, & 2 n \leq x<2 n+1 ;\end{array} \quad n=0, \pm 1, \pm 2, \ldots\right.$$", 4,2,1,3,A,scibench-diff,scibench-diff
+$$f(x)=\left\{\begin{array}{ll}(-1)^n, & 2 n-1 \leq x<2 n, \\ 1, & 2 n \leq x<2 n+1 ;\end{array} \quad n=0, \pm 1, \pm 2, \ldots\right.$$", 4,2,1,3,A,scibench-diff
 "Find the value of $y_0$ for which the solution of the initial value problem
 $$
 y^{\prime}-y=1+3 \sin t, \quad y(0)=y_0
 $$
-remains finite as $t \rightarrow \infty$",-1.5,0, -2.5,-3.5,C,scibench-diff,scibench-diff
-"For small, slowly falling objects, the assumption made in the text that the drag force is proportional to the velocity is a good one. For larger, more rapidly falling objects, it is more accurate to assume that the drag force is proportional to the square of the velocity.  If m = 10 kg, find the drag coefficient so that the limiting velocity is 49 m/s.",$\frac{1}{49}$,$\frac{3}{49}$,$\frac{2}{49}$,$\frac{4}{49}$,C,scibench-diff,scibench-diff
-"If $\mathbf{x}=\left(\begin{array}{c}2 \\ 3 i \\ 1-i\end{array}\right)$ and $\mathbf{y}=\left(\begin{array}{c}-1+i \\ 2 \\ 3-i\end{array}\right)$, find $(\mathbf{y}, \mathbf{y})$.",12,18,20, 16,D,scibench-diff,scibench-diff
-"If $y_1$ and $y_2$ are a fundamental set of solutions of $t y^{\prime \prime}+2 y^{\prime}+t e^t y=0$ and if $W\left(y_1, y_2\right)(1)=2$, find the value of $W\left(y_1, y_2\right)(5)$.",1/5,5/2,1/25, 2/25,D,scibench-diff,scibench-diff
-"If $y_1$ and $y_2$ are a fundamental set of solutions of $t^2 y^{\prime \prime}-2 y^{\prime}+(3+t) y=0$ and if $W\left(y_1, y_2\right)(2)=3$, find the value of $W\left(y_1, y_2\right)(4)$.",6.125,3.876,5.276, 4.946,D,scibench-diff,scibench-diff
-"If a series circuit has a capacitor of $C=0.8 \times 10^{-6} \mathrm{~F}$ and an inductor of $L=0.2 \mathrm{H}$, find the resistance $R$ so that the circuit is critically damped.",500 $\Omega$,2000 $\Omega$, 1000 $\Omega$,1500 $\Omega$,C,scibench-diff,scibench-diff
-"Let a metallic rod $20 \mathrm{~cm}$ long be heated to a uniform temperature of $100^{\circ} \mathrm{C}$. Suppose that at $t=0$ the ends of the bar are plunged into an ice bath at $0^{\circ} \mathrm{C}$, and thereafter maintained at this temperature, but that no heat is allowed to escape through the lateral surface. Determine the temperature at the center of the bar at time $t=30 \mathrm{~s}$ if the bar is made of silver.",45.78 ${ }^{\circ} \mathrm{C}$,40.32 ${ }^{\circ} \mathrm{C}$, 35.91 ${ }^{\circ} \mathrm{C}$,50.25 ${ }^{\circ} \mathrm{C}$,C,scibench-diff,scibench-diff
-"Newton's law of cooling states that the temperature of an object changes at a rate proportional to the difference between its temperature and that of its surroundings. Suppose that the temperature of a cup of coffee obeys Newton's law of cooling. If the coffee has a temperature of $200^{\circ} \mathrm{F}$ when freshly poured, and $1 \mathrm{~min}$ later has cooled to $190^{\circ} \mathrm{F}$ in a room at $70^{\circ} \mathrm{F}$, determine when the coffee reaches a temperature of $150^{\circ} \mathrm{F}$.",5.2 min,4.5 min, 6.07 min,7.8 min,C,scibench-diff,scibench-diff
-"Solve the initial value problem $4 y^{\prime \prime}-y=0, y(0)=2, y^{\prime}(0)=\beta$. Then find $\beta$ so that the solution approaches zero as $t \rightarrow \infty$.", -1,0,-2,1,A,scibench-diff,scibench-diff
-"Solve the initial value problem $y^{\prime \prime}-y^{\prime}-2 y=0, y(0)=\alpha, y^{\prime}(0)=2$. Then find $\alpha$ so that the solution approaches zero as $t \rightarrow \infty$.", −2,0,-1,2,A,scibench-diff,scibench-diff
+remains finite as $t \rightarrow \infty$",-1.5,0, -2.5,-3.5,C,scibench-diff
+"For small, slowly falling objects, the assumption made in the text that the drag force is proportional to the velocity is a good one. For larger, more rapidly falling objects, it is more accurate to assume that the drag force is proportional to the square of the velocity.  If m = 10 kg, find the drag coefficient so that the limiting velocity is 49 m/s.",$\frac{1}{49}$,$\frac{3}{49}$,$\frac{2}{49}$,$\frac{4}{49}$,C,scibench-diff
+"If $\mathbf{x}=\left(\begin{array}{c}2 \\ 3 i \\ 1-i\end{array}\right)$ and $\mathbf{y}=\left(\begin{array}{c}-1+i \\ 2 \\ 3-i\end{array}\right)$, find $(\mathbf{y}, \mathbf{y})$.",12,18,20, 16,D,scibench-diff
+"If $y_1$ and $y_2$ are a fundamental set of solutions of $t y^{\prime \prime}+2 y^{\prime}+t e^t y=0$ and if $W\left(y_1, y_2\right)(1)=2$, find the value of $W\left(y_1, y_2\right)(5)$.",1/5,5/2,1/25, 2/25,D,scibench-diff
+"If $y_1$ and $y_2$ are a fundamental set of solutions of $t^2 y^{\prime \prime}-2 y^{\prime}+(3+t) y=0$ and if $W\left(y_1, y_2\right)(2)=3$, find the value of $W\left(y_1, y_2\right)(4)$.",6.125,3.876,5.276, 4.946,D,scibench-diff
+"If a series circuit has a capacitor of $C=0.8 \times 10^{-6} \mathrm{~F}$ and an inductor of $L=0.2 \mathrm{H}$, find the resistance $R$ so that the circuit is critically damped.",500 $\Omega$,2000 $\Omega$, 1000 $\Omega$,1500 $\Omega$,C,scibench-diff
+"Let a metallic rod $20 \mathrm{~cm}$ long be heated to a uniform temperature of $100^{\circ} \mathrm{C}$. Suppose that at $t=0$ the ends of the bar are plunged into an ice bath at $0^{\circ} \mathrm{C}$, and thereafter maintained at this temperature, but that no heat is allowed to escape through the lateral surface. Determine the temperature at the center of the bar at time $t=30 \mathrm{~s}$ if the bar is made of silver.",45.78 ${ }^{\circ} \mathrm{C}$,40.32 ${ }^{\circ} \mathrm{C}$, 35.91 ${ }^{\circ} \mathrm{C}$,50.25 ${ }^{\circ} \mathrm{C}$,C,scibench-diff
+"Newton's law of cooling states that the temperature of an object changes at a rate proportional to the difference between its temperature and that of its surroundings. Suppose that the temperature of a cup of coffee obeys Newton's law of cooling. If the coffee has a temperature of $200^{\circ} \mathrm{F}$ when freshly poured, and $1 \mathrm{~min}$ later has cooled to $190^{\circ} \mathrm{F}$ in a room at $70^{\circ} \mathrm{F}$, determine when the coffee reaches a temperature of $150^{\circ} \mathrm{F}$.",5.2 min,4.5 min, 6.07 min,7.8 min,C,scibench-diff
+"Solve the initial value problem $4 y^{\prime \prime}-y=0, y(0)=2, y^{\prime}(0)=\beta$. Then find $\beta$ so that the solution approaches zero as $t \rightarrow \infty$.", -1,0,-2,1,A,scibench-diff
+"Solve the initial value problem $y^{\prime \prime}-y^{\prime}-2 y=0, y(0)=\alpha, y^{\prime}(0)=2$. Then find $\alpha$ so that the solution approaches zero as $t \rightarrow \infty$.", −2,0,-1,2,A,scibench-diff
 "Suppose that a sum $S_0$ is invested at an annual rate of return $r$ compounded continuously.
-Determine $T$ if $r=7 \%$.",8.75 year,7.50 year,10.50 year, 9.90 year,D,scibench-diff,scibench-diff
+Determine $T$ if $r=7 \%$.",8.75 year,7.50 year,10.50 year, 9.90 year,D,scibench-diff
 "Suppose that a tank containing a certain liquid has an outlet near the bottom. Let $h(t)$ be the height of the liquid surface above the outlet at time $t$. Torricelli's principle states that the outflow velocity $v$ at the outlet is equal to the velocity of a particle falling freely (with no drag) from the height $h$.
-Consider a water tank in the form of a right circular cylinder that is $3 \mathrm{~m}$ high above the outlet. The radius of the tank is $1 \mathrm{~m}$ and the radius of the circular outlet is $0.1 \mathrm{~m}$. If the tank is initially full of water, determine how long it takes to drain the tank down to the level of the outlet.",150.20 s,110.36 s, 130.41 s,98.75 s,C,scibench-diff,scibench-diff
+Consider a water tank in the form of a right circular cylinder that is $3 \mathrm{~m}$ high above the outlet. The radius of the tank is $1 \mathrm{~m}$ and the radius of the circular outlet is $0.1 \mathrm{~m}$. If the tank is initially full of water, determine how long it takes to drain the tank down to the level of the outlet.",150.20 s,110.36 s, 130.41 s,98.75 s,C,scibench-diff
 "Suppose that a tank containing a certain liquid has an outlet near the bottom. Let $h(t)$ be the height of the liquid surface above the outlet at time $t$. Torricelli's principle states that the outflow velocity $v$ at the outlet is equal to the velocity of a particle falling freely (with no drag) from the height $h$.
-Consider a water tank in the form of a right circular cylinder that is $3 \mathrm{~m}$ high above the outlet. The radius of the tank is $1 \mathrm{~m}$ and the radius of the circular outlet is $0.1 \mathrm{~m}$. If the tank is initially full of water, determine how long it takes to drain the tank down to the level of the outlet.",150.57 s, 130.41 s,115.23 s,100.80 s,B,scibench-diff,scibench-diff
-"Your swimming pool containing 60,000 gal of water has been contaminated by $5 \mathrm{~kg}$ of a nontoxic dye that leaves a swimmer's skin an unattractive green. The pool's filtering system can take water from the pool, remove the dye, and return the water to the pool at a flow rate of $200 \mathrm{gal} / \mathrm{min}$. Find the time $T$ at which the concentration of dye first reaches the value $0.02 \mathrm{~g} / \mathrm{gal}$.", 7.136 hour,7.550 hours,6.875 hours,8.255 hours,A,scibench-diff,scibench-diff
-" A typical roulette wheel used in a casino has 38 slots that are numbered $1,2,3, \ldots, 36,0,00$, respectively. The 0 and 00 slots are colored green. Half of the remaining slots are red and half are black. Also, half of the integers between 1 and 36 inclusive are odd, half are even, and 0 and 00 are defined to be neither odd nor even. A ball is rolled around the wheel and ends up in one of the slots; we assume that each slot has equal probability of $1 / 38$, and we are interested in the number of the slot into which the ball falls. Let $A=\{0,00\}$. Give the value of $P(A)$.",$\frac{2}{38}$,$\frac{1}{38}$,$\frac{1}{19}$,$\frac{36}{38}$,A,scibench-stat,scibench-stat
-" If $P(A)=0.8, P(B)=0.5$, and $P(A \cup B)=0.9$. What is $P(A \cap B)$?", 0.9,0.4,1.3,0.7,A,scibench-stat,scibench-stat
+Consider a water tank in the form of a right circular cylinder that is $3 \mathrm{~m}$ high above the outlet. The radius of the tank is $1 \mathrm{~m}$ and the radius of the circular outlet is $0.1 \mathrm{~m}$. If the tank is initially full of water, determine how long it takes to drain the tank down to the level of the outlet.",150.57 s, 130.41 s,115.23 s,100.80 s,B,scibench-diff
+"Your swimming pool containing 60,000 gal of water has been contaminated by $5 \mathrm{~kg}$ of a nontoxic dye that leaves a swimmer's skin an unattractive green. The pool's filtering system can take water from the pool, remove the dye, and return the water to the pool at a flow rate of $200 \mathrm{gal} / \mathrm{min}$. Find the time $T$ at which the concentration of dye first reaches the value $0.02 \mathrm{~g} / \mathrm{gal}$.", 7.136 hour,7.550 hours,6.875 hours,8.255 hours,A,scibench-diff
+" A typical roulette wheel used in a casino has 38 slots that are numbered $1,2,3, \ldots, 36,0,00$, respectively. The 0 and 00 slots are colored green. Half of the remaining slots are red and half are black. Also, half of the integers between 1 and 36 inclusive are odd, half are even, and 0 and 00 are defined to be neither odd nor even. A ball is rolled around the wheel and ends up in one of the slots; we assume that each slot has equal probability of $1 / 38$, and we are interested in the number of the slot into which the ball falls. Let $A=\{0,00\}$. Give the value of $P(A)$.",$\frac{2}{38}$,$\frac{1}{38}$,$\frac{1}{19}$,$\frac{36}{38}$,A,scibench-stat
+" If $P(A)=0.8, P(B)=0.5$, and $P(A \cup B)=0.9$. What is $P(A \cap B)$?", 0.9,0.4,1.3,0.7,A,scibench-stat
 " Of a group of patients having injuries, $28 \%$ visit both a physical therapist and a chiropractor and $8 \%$ visit neither. Say that the probability of visiting a physical therapist exceeds the probability of visiting a chiropractor by $16 \%$. What is the probability of a randomly selected person from this group visiting a physical therapist?
-", 0.68,0.76,0.52,0.44,A,scibench-stat,scibench-stat
+", 0.68,0.76,0.52,0.44,A,scibench-stat
 "5.2- II. Evaluate
 $$
 \int_0^{0.4} \frac{\Gamma(7)}{\Gamma(4) \Gamma(3)} y^3(1-y)^2 d y
 $$
-(a) Using integration.", 0.1792,0.2569,0.1286,0.3456,A,scibench-stat,scibench-stat
+(a) Using integration.", 0.1792,0.2569,0.1286,0.3456,A,scibench-stat
 "5.2-13. Let $X_1, X_2$ be independent random variables representing lifetimes (in hours) of two key components of a
 device that fails when and only when both components fail. Say each $X_i$ has an exponential distribution with mean 1000. Let $Y_1=\min \left(X_1, X_2\right)$ and $Y_2=\max \left(X_1, X_2\right)$, so that the space of $Y_1, Y_2$ is $ 0< y_1 < y_2 < \infty $
 (a) Find $G\left(y_1, y_2\right)=P\left(Y_1 \leq y_1, Y_2 \leq y_2\right)$.
-",0.4356,0.5789,0.5117 ,0.6123,C,scibench-stat,scibench-stat
+",0.4356,0.5789,0.5117 ,0.6123,C,scibench-stat
 "5.2-5. Let the distribution of $W$ be $F(8,4)$. Find the following:
 (a) $F_{0.01}(8,4)$.
-",16.30,12.50,10.75, 14.80,D,scibench-stat,scibench-stat
-"5.2-9. Determine the constant $c$ such that $f(x)= c x^3(1-x)^6$, $0 < x < 1$ is a pdf.",420,1680,1050, 840,D,scibench-stat,scibench-stat
+",16.30,12.50,10.75, 14.80,D,scibench-stat
+"5.2-9. Determine the constant $c$ such that $f(x)= c x^3(1-x)^6$, $0 < x < 1$ is a pdf.",420,1680,1050, 840,D,scibench-stat
 "5.3-1. Let $X_1$ and $X_2$ be independent Poisson random variables with respective means $\lambda_1=2$ and $\lambda_2=3$. Find
 (a) $P\left(X_1=3, X_2=5\right)$.
-HINT. Note that this event can occur if and only if $\left\{X_1=1, X_2=0\right\}$ or $\left\{X_1=0, X_2=1\right\}$.",0.0213,0.0157, 0.0182,0.0125,C,scibench-stat,scibench-stat
+HINT. Note that this event can occur if and only if $\left\{X_1=1, X_2=0\right\}$ or $\left\{X_1=0, X_2=1\right\}$.",0.0213,0.0157, 0.0182,0.0125,C,scibench-stat
 "5.3-13. A device contains three components, each of which has a lifetime in hours with the pdf
 $$
 f(x)=\frac{2 x}{10^2} e^{-(x / 10)^2}, \quad 0 < x < \infty .
 $$
-The device fails with the failure of one of the components. Assuming independent lifetimes, what is the probability that the device fails in the first hour of its operation? HINT: $G(y)=P(Y \leq y)=1-P(Y>y)=1-P$ (all three $>y$ ).", $0.03$,$0.05$,$0.01$,$0.02$,A,scibench-stat,scibench-stat
+The device fails with the failure of one of the components. Assuming independent lifetimes, what is the probability that the device fails in the first hour of its operation? HINT: $G(y)=P(Y \leq y)=1-P(Y>y)=1-P$ (all three $>y$ ).", $0.03$,$0.05$,$0.01$,$0.02$,A,scibench-stat
 "5.3-15. Three drugs are being tested for use as the treatment of a certain disease. Let $p_1, p_2$, and $p_3$ represent the probabilities of success for the respective drugs. As three patients come in, each is given one of the drugs in a random order. After $n=10$ ""triples"" and assuming independence, compute the probability that the maximum number of successes with one of the drugs exceeds eight if, in fact, $p_1=p_2=p_3=0.7$
-",$0.0278$,$0.0542$,$0.0996$, $0.0384$,D,scibench-stat,scibench-stat
+",$0.0278$,$0.0542$,$0.0996$, $0.0384$,D,scibench-stat
 "5.3-19. Two components operate in parallel in a device, so the device fails when and only when both components fail. The lifetimes, $X_1$ and $X_2$, of the respective components are independent and identically distributed with an exponential distribution with $\theta=2$. The cost of operating the device is $Z=2 Y_1+Y_2$, where $Y_1=\min \left(X_1, X_2\right)$ and $Y_2=\max \left(X_1, X_2\right)$. Compute $E(Z)$.
-",$4$,$6$, $5$,$7$,C,scibench-stat,scibench-stat
+",$4$,$6$, $5$,$7$,C,scibench-stat
 "5.3-3. Let $X_1$ and $X_2$ be independent random variables with probability density functions $f_1\left(x_1\right)=2 x_1, 0 < x_1 <1 $, and $f_2 \left(x_2\right) = 4x_2^3$ , $0 < x_2 < 1 $, respectively. Compute
 (a) $P \left(0.5 < X_1 < 1\right.$ and $\left.0.4 < X_2 < 0.8\right)$.",$\frac{48}{125}$,$\frac{24}{125}$," $\frac{36}{125}$
-",$\frac{30}{125}$,C,scibench-stat,scibench-stat
+",$\frac{30}{125}$,C,scibench-stat
 "5.3-7. The distributions of incomes in two cities follow the two Pareto-type pdfs
 $$
 f(x)=\frac{2}{x^3}, 1 < x < \infty , \text { and } g(y)= \frac{3}{y^4} ,  \quad 1 < y < \infty,
 $$
-respectively. Here one unit represents $\$ 20,000$. One person with income is selected at random from each city. Let $X$ and $Y$ be their respective incomes. Compute $P(X < Y)$.",$\frac{1}{5}$,$\frac{3}{5}$, $\frac{2}{5}$,$\frac{4}{5}$,C,scibench-stat,scibench-stat
+respectively. Here one unit represents $\$ 20,000$. One person with income is selected at random from each city. Let $X$ and $Y$ be their respective incomes. Compute $P(X < Y)$.",$\frac{1}{5}$,$\frac{3}{5}$, $\frac{2}{5}$,$\frac{4}{5}$,C,scibench-stat
 "5.3-9. Let $X_1, X_2$ be a random sample of size $n=2$ from a distribution with pdf $f(x)=3 x^2, 0 < x < 1$. Determine
-(a) $P\left(\max X_i < 3 / 4\right)=P\left(X_1<3 / 4, X_2<3 / 4\right)$",$\frac{961}{4096}$, $\frac{729}{4096}$,$\frac{625}{4096}$,$\frac{841}{4096}$,B,scibench-stat,scibench-stat
+(a) $P\left(\max X_i < 3 / 4\right)=P\left(X_1<3 / 4, X_2<3 / 4\right)$",$\frac{961}{4096}$, $\frac{729}{4096}$,$\frac{625}{4096}$,$\frac{841}{4096}$,B,scibench-stat
 "5.4-17. In a study concerning a new treatment of a certain disease, two groups of 25 participants in each were followed for five years. Those in one group took the old treatment and those in the other took the new treatment. The theoretical dropout rate for an individual was $50 \%$ in both groups over that 5 -year period. Let $X$ be the number that dropped out in the first group and $Y$ the number in the second group. Assuming independence where needed, give the sum that equals the probability that $Y \geq X+2$. HINT: What is the distribution of $Y-X+25$ ?
-",$0.3751$,$0.4256$,$0.2872$, $0.3359$,D,scibench-stat,scibench-stat
-"5.4-19. A doorman at a hotel is trying to get three taxicabs for three different couples. The arrival of empty cabs has an exponential distribution with mean 2 minutes. Assuming independence, what is the probability that the doorman will get all three couples taken care of within 6 minutes?",$4$,$3$, $5$,$7$,C,scibench-stat,scibench-stat
+",$0.3751$,$0.4256$,$0.2872$, $0.3359$,D,scibench-stat
+"5.4-19. A doorman at a hotel is trying to get three taxicabs for three different couples. The arrival of empty cabs has an exponential distribution with mean 2 minutes. Assuming independence, what is the probability that the doorman will get all three couples taken care of within 6 minutes?",$4$,$3$, $5$,$7$,C,scibench-stat
 "5.4-19. A doorman at a hotel is trying to get three taxicabs for three different couples. The arrival of empty cabs has an exponential distribution with mean 2 minutes. Assuming independence, what is the probability that the doorman will get all three couples taken care of within 6 minutes?
-",$0.6523$, $0.5768$,$0.4321$,$0.7234$,B,scibench-stat,scibench-stat
+",$0.6523$, $0.5768$,$0.4321$,$0.7234$,B,scibench-stat
 "5.4-21. Let $X$ and $Y$ be independent with distributions $N(5,16)$ and $N(6,9)$, respectively. Evaluate $P(X>Y)=$ $P(X-Y>0)$.
-",$0.5124$,$0.3256$, $0.4207$,$0.2769$,C,scibench-stat,scibench-stat
+",$0.5124$,$0.3256$, $0.4207$,$0.2769$,C,scibench-stat
 "5.4-5. Let $Z_1, Z_2, \ldots, Z_7$ be a random sample from the standard normal distribution $N(0,1)$. Let $W=Z_1^2+Z_2^2+$ $\cdots+Z_7^2$. Find $P(1.69 < W < 14.07)$
-",$0.850$,$0.815$, $0.925$,$0.975$,C,scibench-stat,scibench-stat
+",$0.850$,$0.815$, $0.925$,$0.975$,C,scibench-stat
 "5.5-1. Let $X_1, X_2, \ldots, X_{16}$ be a random sample from a normal distribution $N(77,25)$. Compute
-(a) $P(77<\bar{X}<79.5)$.", $0.4772$,$0.4298$,$0.3524$,$0.5012$,A,scibench-stat,scibench-stat
+(a) $P(77<\bar{X}<79.5)$.", $0.4772$,$0.4298$,$0.3524$,$0.5012$,A,scibench-stat
 "5.5-1. Let $X_1, X_2, \ldots, X_{16}$ be a random sample from a normal distribution $N(77,25)$. Compute
-(b) $P(74.2<\bar{X}<78.4)$.", $0.8561$,$0.9042$,$0.8925$,$0.7234$,A,scibench-stat,scibench-stat
+(b) $P(74.2<\bar{X}<78.4)$.", $0.8561$,$0.9042$,$0.8925$,$0.7234$,A,scibench-stat
 "5.5-15. Let the distribution of $T$ be $t(17)$. Find
 (a) $t_{0.01}(17)$.
-",$2.897$,$2.567$,$1.789$,$3.456$,B,scibench-stat,scibench-stat
+",$2.897$,$2.567$,$1.789$,$3.456$,B,scibench-stat
 "5.5-7. Suppose that the distribution of the weight of a prepackaged ""1-pound bag"" of carrots is $N\left(1.18,0.07^2\right)$ and the distribution of the weight of a prepackaged ""3-pound bag"" of carrots is $N\left(3.22,0.09^2\right)$. Selecting bags at random, find the probability that the sum of three 1-pound bags exceeds the weight of one 3-pound bag. HInT: First determine the distribution of $Y$, the sum of the three, and then compute $P(Y>W)$, where $W$ is the weight of the 3-pound bag.
-",$0.9830$ ,$0.8570$,$0.9100$,$0.9650$,A,scibench-stat,scibench-stat
+",$0.9830$ ,$0.8570$,$0.9100$,$0.9650$,A,scibench-stat
 "5.5-9. Suppose that the length of life in hours (say, $X$ ) of a light bulb manufactured by company $A$ is $N(800,14400)$ and the length of life in hours (say, $Y$ ) of a light bulb manufactured by company $B$ is $N(850,2500)$. One bulb is randomly selected from each company and is burned until ""death.""
 (a) Find the probability that the length of life of the bulb from company $A$ exceeds the length of life of the bulb from company $B$ by at least 15 hours.
-",$0.3654$,$0.2187$, $0.3085$,$0.4256$,C,scibench-stat,scibench-stat
+",$0.3654$,$0.2187$, $0.3085$,$0.4256$,C,scibench-stat
 "5.6-1. Let $\bar{X}$ be the mean of a random sample of size 12 from the uniform distribution on the interval $(0,1)$. Approximate $P(1 / 2 \leq \bar{X} \leq 2 / 3)$.
-",$0.4772$,$0.3456$,$0.2567$,$0.6123$,A,scibench-stat,scibench-stat
-"5.6-13. The tensile strength $X$ of paper, in pounds per square inch, has $\mu=30$ and $\sigma=3$. A random sample of size $n=100$ is taken from the distribution of tensile strengths. Compute the probability that the sample mean $\bar{X}$ is greater than 29.5 pounds per square inch.",$0.8913$, $0.9522$,$0.8421$,$0.9772$,B,scibench-stat,scibench-stat
+",$0.4772$,$0.3456$,$0.2567$,$0.6123$,A,scibench-stat
+"5.6-13. The tensile strength $X$ of paper, in pounds per square inch, has $\mu=30$ and $\sigma=3$. A random sample of size $n=100$ is taken from the distribution of tensile strengths. Compute the probability that the sample mean $\bar{X}$ is greater than 29.5 pounds per square inch.",$0.8913$, $0.9522$,$0.8421$,$0.9772$,B,scibench-stat
 "5.6-3. Let $\bar{X}$ be the mean of a random sample of size 36 from an exponential distribution with mean 3 . Approximate $P(2.5 \leq \bar{X} \leq 4)$
-", $0.8185$,0.9026,0.7653,0.6981,A,scibench-stat,scibench-stat
+", $0.8185$,0.9026,0.7653,0.6981,A,scibench-stat
 "5.6-7. Let $X$ equal the maximal oxygen intake of a human on a treadmill, where the measurements are in milliliters of oxygen per minute per kilogram of weight. Assume that, for a particular population, the mean of $X$ is $\mu=$ 54.030 and the standard deviation is $\sigma=5.8$. Let $\bar{X}$ be the sample mean of a random sample of size $n=47$. Find $P(52.761 \leq \bar{X} \leq 54.453)$, approximately.
-",$0.5462$,$0.7021$, $0.6247$,$0.4835$,C,scibench-stat,scibench-stat
+",$0.5462$,$0.7021$, $0.6247$,$0.4835$,C,scibench-stat
 "5.6-9. In Example 5.6-4, compute $P(1.7 \leq Y \leq 3.2)$ with $n=4$ and compare your answer with the normal approximation of this probability.
-", $0.6749$,$0.7891$,$0.6182$,$0.7254$,A,scibench-stat,scibench-stat
+", $0.6749$,$0.7891$,$0.6182$,$0.7254$,A,scibench-stat
 "5.8-1. If $X$ is a random variable with mean 33 and variance 16, use Chebyshev's inequality to find
-(a) A lower bound for $P(23 < X < 43)$.",$0.90$,$0.75$,$0.80$, $0.84$,D,scibench-stat,scibench-stat
+(a) A lower bound for $P(23 < X < 43)$.",$0.90$,$0.75$,$0.80$, $0.84$,D,scibench-stat
 "5.8-1. If $X$ is a random variable with mean 33 and variance 16, use Chebyshev's inequality to find
 (b) An upper bound for $P(|X-33| \geq 14)$.
-", $0.082$,0.056,0.138,0.102,A,scibench-stat,scibench-stat
+", $0.082$,0.056,0.138,0.102,A,scibench-stat
 "5.8-5. If the distribution of $Y$ is $b(n, 0.25)$, give a lower bound for $P(|Y / n-0.25|<0.05)$ when
 (a) $n=100$.
-", $0.25$,$0.15$,$0.45$,$0.35$,A,scibench-stat,scibench-stat
+", $0.25$,$0.15$,$0.45$,$0.35$,A,scibench-stat
 "5.8-5. If the distribution of $Y$ is $b(n, 0.25)$, give a lower bound for $P(|Y / n-0.25|<0.05)$ when
-(b) $n=500$.",0.75,0.80, $0.85$,0.90,C,scibench-stat,scibench-stat
+(b) $n=500$.",0.75,0.80, $0.85$,0.90,C,scibench-stat
 "5.8-5. If the distribution of $Y$ is $b(n, 0.25)$, give a lower bound for $P(|Y / n-0.25|<0.05)$ when
-(c) $n=1000$.",$0.950$, $0.925$,$0.875$,$0.900$,B,scibench-stat,scibench-stat
+(c) $n=1000$.",$0.950$, $0.925$,$0.875$,$0.900$,B,scibench-stat
 "5.9-1. Let $Y$ be the number of defectives in a box of 50 articles taken from the output of a machine. Each article is defective with probability 0.01 . Find the probability that $Y=0,1,2$, or 3
 (a) By using the binomial distribution.
-", $0.9984$,$0.9500$,$0.9753$,$0.8756$,A,scibench-stat,scibench-stat
+", $0.9984$,$0.9500$,$0.9753$,$0.8756$,A,scibench-stat
 "6.3-5. Let $Y_1 < Y_2 < \cdots < Y_8$ be the order statistics of eight independent observations from a continuous-type distribution with 70 th percentile $\pi_{0.7}=27.3$.
 (a) Determine $P\left(Y_7<27.3\right)$.
-",0.4334,0.1975,0.3456, $0.2553$,D,scibench-stat,scibench-stat
+",0.4334,0.1975,0.3456, $0.2553$,D,scibench-stat
 "6.I-I. One characteristic of a car's storage console that is checked by the manufacturer is the time in seconds that it takes for the lower storage compartment door to open completely. A random sample of size $n=5$ yielded the following times:
 $\begin{array}{lllll}1.1 & 0.9 & 1.4 & 1.1 & 1.0\end{array}$
-(a) Find the sample mean, $\bar{x}$.",0.9,1.4,1.2,$1.1$ ,D,scibench-stat,scibench-stat
+(a) Find the sample mean, $\bar{x}$.",0.9,1.4,1.2,$1.1$ ,D,scibench-stat
 "7.1-3. To determine the effect of $100 \%$ nitrate on the growth of pea plants, several specimens were planted and then watered with $100 \%$ nitrate every day. At the end of
 two weeks, the plants were measured. Here are data on seven of them:
 $$
@@ -1565,38 +1565,38 @@ $$
 $$
 Assume that these data are a random sample from a normal distribution $N\left(\mu, \sigma^2\right)$.
 (a) Find the value of a point estimate of $\mu$.
-",$14.857$, $15.757$,$17.512$,$16.231$,B,scibench-stat,scibench-stat
+",$14.857$, $15.757$,$17.512$,$16.231$,B,scibench-stat
 "7.3-3. Let $p$ equal the proportion of triathletes who suffered a training-related overuse injury during the past year. Out of 330 triathletes who responded to a survey, 167 indicated that they had suffered such an injury during the past year.
-(a) Use these data to give a point estimate of $p$.",$0.4562$, $0.5061$,$0.5894$,$0.6531$,B,scibench-stat,scibench-stat
+(a) Use these data to give a point estimate of $p$.",$0.4562$, $0.5061$,$0.5894$,$0.6531$,B,scibench-stat
 "7.3-5. In order to estimate the proportion, $p$, of a large class of college freshmen that had high school GPAs from 3.2 to 3.6 , inclusive, a sample of $n=50$ students was taken. It was found that $y=9$ students fell into this interval.
 (a) Give a point estimate of $p$.
-",$0.2200$,$0.2000$,$0.1800$,$0.1600$,C,scibench-stat,scibench-stat
+",$0.2200$,$0.2000$,$0.1800$,$0.1600$,C,scibench-stat
 "7.3-9. Consider the following two groups of women: Group 1 consists of women who spend less than $\$ 500$ annually on clothes; Group 2 comprises women who spend over $\$ 1000$ annually on clothes. Let $p_1$ and $p_2$ equal the proportions of women in these two groups, respectively, who believe that clothes are too expensive. If 1009 out of a random sample of 1230 women from group 1 and 207 out of a random sample 340 from group 2 believe that clothes are too expensive,
 (a) Give a point estimate of $p_1-p_2$.
-", $0.2115$,$0.1874$,$0.3256$,$0.2732$,A,scibench-stat,scibench-stat
+", $0.2115$,$0.1874$,$0.3256$,$0.2732$,A,scibench-stat
 "7.4-1. Let $X$ equal the tarsus length for a male grackle. Assume that the distribution of $X$ is $N(\mu, 4.84)$. Find the sample size $n$ that is needed so that we are $95 \%$ confident that the maximum error of the estimate of $\mu$ is 0.4 .
-",$94$, $117$,$108$,$140$,B,scibench-stat,scibench-stat
+",$94$, $117$,$108$,$140$,B,scibench-stat
 "7.4-11. Some dentists were interested in studying the fusion of embryonic rat palates by a standard transplantation technique. When no treatment is used, the probability of fusion equals approximately 0.89 . The dentists would like to estimate $p$, the probability of fusion, when vitamin A is lacking.
-(a) How large a sample $n$ of rat embryos is needed for $y / n \pm 0.10$ to be a $95 \%$ confidence interval for $p$ ?",50, $38$,30,45,B,scibench-stat,scibench-stat
-"7.4-15. If $\bar{X}$ and $\bar{Y}$ are the respective means of two independent random samples of the same size $n$, find $n$ if we want $\bar{x}-\bar{y} \pm 4$ to be a $90 \%$ confidence interval for $\mu_X-\mu_Y$. Assume that the standard deviations are known to be $\sigma_X=15$ and $\sigma_Y=25$.",120,200,160, $144$,D,scibench-stat,scibench-stat
+(a) How large a sample $n$ of rat embryos is needed for $y / n \pm 0.10$ to be a $95 \%$ confidence interval for $p$ ?",50, $38$,30,45,B,scibench-stat
+"7.4-15. If $\bar{X}$ and $\bar{Y}$ are the respective means of two independent random samples of the same size $n$, find $n$ if we want $\bar{x}-\bar{y} \pm 4$ to be a $90 \%$ confidence interval for $\mu_X-\mu_Y$. Assume that the standard deviations are known to be $\sigma_X=15$ and $\sigma_Y=25$.",120,200,160, $144$,D,scibench-stat
 "7.4-5. A quality engineer wanted to be $98 \%$ confident that the maximum error of the estimate of the mean strength, $\mu$, of the left hinge on a vanity cover molded by a machine is 0.25 . A preliminary sample of size $n=32$ parts yielded a sample mean of $\bar{x}=35.68$ and a standard deviation of $s=1.723$.
-(a) How large a sample is required?", $257$,$300$,$225$,$190$,A,scibench-stat,scibench-stat
+(a) How large a sample is required?", $257$,$300$,$225$,$190$,A,scibench-stat
 "7.4-7. For a public opinion poll for a close presidential election, let $p$ denote the proportion of voters who favor candidate $A$. How large a sample should be taken if we want the maximum error of the estimate of $p$ to be equal to
-(a) 0.03 with $95 \%$ confidence?",950,1500, $1068$,1200,C,scibench-stat,scibench-stat
+(a) 0.03 with $95 \%$ confidence?",950,1500, $1068$,1200,C,scibench-stat
 "7.5-1. Let $Y_1 < Y_2 < Y_3 < Y_4 < Y_5 < Y_6$ be the order statistics of a random sample of size $n=6$ from a distribution of the continuous type having $(100 p)$ th percentile $\pi_p$. Compute
-(a) $P\left(Y_2 < \pi_{0.5} < Y_5\right)$.",0.7137, $0.7812$,0.6214,0.8426,B,scibench-stat,scibench-stat
-"9.6-111. Let $X$ and $Y$ have a bivariate normal distribution with correlation coefficient $\rho$. To test $H_0: \rho=0$ against $H_1: \rho \neq 0$, a random sample of $n$ pairs of observations is selected. Suppose that the sample correlation coefficient is $r=0.68$. Using a significance level of $\alpha=0.05$, find the smallest value of the sample size $n$ so that $H_0$ is rejected.",$7$,$10$, $9$,$12$,C,scibench-stat,scibench-stat
-"A boy found a bicycle lock for which the combination was unknown. The correct combination is a four-digit number, $d_1 d_2 d_3 d_4$, where $d_i, i=1,2,3,4$, is selected from $1,2,3,4,5,6,7$, and 8 . How many different lock combinations are possible with such a lock?", 4096,8192,512,2048,A,scibench-stat,scibench-stat
-"A doctor is concerned about the relationship between blood pressure and irregular heartbeats. Among her patients, she classifies blood pressures as high, normal, or low and heartbeats as regular or irregular and finds that 16\% have high blood pressure; (b) 19\% have low blood pressure; (c) $17 \%$ have an irregular heartbeat; (d) of those with an irregular heartbeat, $35 \%$ have high blood pressure; and (e) of those with normal blood pressure, $11 \%$ have an irregular heartbeat. What percentage of her patients have a regular heartbeat and low blood pressure?",18.7%,12.5%,20.4%, 15.1% ,D,scibench-stat,scibench-stat
-A poker hand is defined as drawing 5 cards at random without replacement from a deck of 52 playing cards. Find the probability of four of a kind (four cards of equal face value and one card of a different value).,0.00048,0.00012, 0.00024,0.00036,C,scibench-stat,scibench-stat
-"An urn contains 10 red and 10 white balls. The balls are drawn from the urn at random, one at a time. Find the probability that the fourth white ball is the fourth ball drawn if the sampling is done with replacement.",$\frac{1}{4}$,$\frac{1}{16}$,$\frac{1}{8}$,$\frac{1}{32}$,B,scibench-stat,scibench-stat
-"An urn contains eight red and seven blue balls. A second urn contains an unknown number of red balls and nine blue balls. A ball is drawn from each urn at random, and the probability of getting two balls of the same color is $151 / 300$. How many red balls are in the second urn?",9,10, 11,12,C,scibench-stat,scibench-stat
-"An urn contains four balls numbered 1 through 4 . The balls are selected one at a time without replacement. A match occurs if the ball numbered $m$ is the $m$ th ball selected. Let the event $A_i$ denote a match on the $i$ th draw, $i=1,2,3,4$. Extend this exercise so that there are $n$ balls in the urn. What is the limit of this probability as $n$ increases without bound?",$\frac{1}{e}$,$\frac{1}{2}$, $1 - \frac{1}{e}$,$\frac{1}{n}$,C,scibench-stat,scibench-stat
-"An urn contains four colored balls: two orange and two blue. Two balls are selected at random without replacement, and you are told that at least one of them is orange. What is the probability that the other ball is also orange?",$\frac{1}{5}$,$\frac{1}{2}$,$\frac{2}{5}$,$\frac{1}{4}$,A,scibench-stat,scibench-stat
-"Bowl $B_1$ contains two white chips, bowl $B_2$ contains two red chips, bowl $B_3$ contains two white and two red chips, and bowl $B_4$ contains three white chips and one red chip. The probabilities of selecting bowl $B_1, B_2, B_3$, or $B_4$ are $1 / 2,1 / 4,1 / 8$, and $1 / 8$, respectively. A bowl is selected using these probabilities and a chip is then drawn at random. Find $P(W)$, the probability of drawing a white chip.",$\frac{23}{32}$,$\frac{25}{32}$,$\frac{19}{32}$, $\frac{21}{32}$,D,scibench-stat,scibench-stat
+(a) $P\left(Y_2 < \pi_{0.5} < Y_5\right)$.",0.7137, $0.7812$,0.6214,0.8426,B,scibench-stat
+"9.6-111. Let $X$ and $Y$ have a bivariate normal distribution with correlation coefficient $\rho$. To test $H_0: \rho=0$ against $H_1: \rho \neq 0$, a random sample of $n$ pairs of observations is selected. Suppose that the sample correlation coefficient is $r=0.68$. Using a significance level of $\alpha=0.05$, find the smallest value of the sample size $n$ so that $H_0$ is rejected.",$7$,$10$, $9$,$12$,C,scibench-stat
+"A boy found a bicycle lock for which the combination was unknown. The correct combination is a four-digit number, $d_1 d_2 d_3 d_4$, where $d_i, i=1,2,3,4$, is selected from $1,2,3,4,5,6,7$, and 8 . How many different lock combinations are possible with such a lock?", 4096,8192,512,2048,A,scibench-stat
+"A doctor is concerned about the relationship between blood pressure and irregular heartbeats. Among her patients, she classifies blood pressures as high, normal, or low and heartbeats as regular or irregular and finds that 16\% have high blood pressure; (b) 19\% have low blood pressure; (c) $17 \%$ have an irregular heartbeat; (d) of those with an irregular heartbeat, $35 \%$ have high blood pressure; and (e) of those with normal blood pressure, $11 \%$ have an irregular heartbeat. What percentage of her patients have a regular heartbeat and low blood pressure?",18.7%,12.5%,20.4%, 15.1% ,D,scibench-stat
+A poker hand is defined as drawing 5 cards at random without replacement from a deck of 52 playing cards. Find the probability of four of a kind (four cards of equal face value and one card of a different value).,0.00048,0.00012, 0.00024,0.00036,C,scibench-stat
+"An urn contains 10 red and 10 white balls. The balls are drawn from the urn at random, one at a time. Find the probability that the fourth white ball is the fourth ball drawn if the sampling is done with replacement.",$\frac{1}{4}$,$\frac{1}{16}$,$\frac{1}{8}$,$\frac{1}{32}$,B,scibench-stat
+"An urn contains eight red and seven blue balls. A second urn contains an unknown number of red balls and nine blue balls. A ball is drawn from each urn at random, and the probability of getting two balls of the same color is $151 / 300$. How many red balls are in the second urn?",9,10, 11,12,C,scibench-stat
+"An urn contains four balls numbered 1 through 4 . The balls are selected one at a time without replacement. A match occurs if the ball numbered $m$ is the $m$ th ball selected. Let the event $A_i$ denote a match on the $i$ th draw, $i=1,2,3,4$. Extend this exercise so that there are $n$ balls in the urn. What is the limit of this probability as $n$ increases without bound?",$\frac{1}{e}$,$\frac{1}{2}$, $1 - \frac{1}{e}$,$\frac{1}{n}$,C,scibench-stat
+"An urn contains four colored balls: two orange and two blue. Two balls are selected at random without replacement, and you are told that at least one of them is orange. What is the probability that the other ball is also orange?",$\frac{1}{5}$,$\frac{1}{2}$,$\frac{2}{5}$,$\frac{1}{4}$,A,scibench-stat
+"Bowl $B_1$ contains two white chips, bowl $B_2$ contains two red chips, bowl $B_3$ contains two white and two red chips, and bowl $B_4$ contains three white chips and one red chip. The probabilities of selecting bowl $B_1, B_2, B_3$, or $B_4$ are $1 / 2,1 / 4,1 / 8$, and $1 / 8$, respectively. A bowl is selected using these probabilities and a chip is then drawn at random. Find $P(W)$, the probability of drawing a white chip.",$\frac{23}{32}$,$\frac{25}{32}$,$\frac{19}{32}$, $\frac{21}{32}$,D,scibench-stat
 "Consider the trial on which a 3 is first observed in successive rolls of a six-sided die. Let $A$ be the event that 3 is observed on the first trial. Let $B$ be the event that at least two trials are required to observe a 3 . Assuming that each side has probability $1 / 6$, find (a) $P(A)$.
-",$\frac{1}{2}$,$\frac{1}{6}$,$\frac{2}{6}$,$\frac{1}{3}$,B,scibench-stat,scibench-stat
-Divide a line segment into two parts by selecting a point at random. Use your intuition to assign a probability to the event that the longer segment is at least two times longer than the shorter segment.,$\frac{3}{4}$, $\frac{2}{3}$,$\frac{1}{2}$,$\frac{1}{3}$,B,scibench-stat,scibench-stat
+",$\frac{1}{2}$,$\frac{1}{6}$,$\frac{2}{6}$,$\frac{1}{3}$,B,scibench-stat
+Divide a line segment into two parts by selecting a point at random. Use your intuition to assign a probability to the event that the longer segment is at least two times longer than the shorter segment.,$\frac{3}{4}$, $\frac{2}{3}$,$\frac{1}{2}$,$\frac{1}{3}$,B,scibench-stat
 "Draw one card at random from a standard deck of cards. The sample space $S$ is the collection of the 52 cards. Assume that the probability set function assigns $1 / 52$ to each of the 52 outcomes. Let
 $$
 \begin{aligned}
@@ -1606,19 +1606,19 @@ C & =\{x: x \text { is a club }\}, \\
 D & =\{x: x \text { is a diamond, a heart, or a spade }\} .
 \end{aligned}
 $$
-Find $P(A)$",$\frac{14}{52}$,$\frac{10}{52}$,$\frac{12}{52}$,$\frac{16}{52}$,C,scibench-stat,scibench-stat
-"Extend Example 1.4-6 to an $n$-sided die. That is, suppose that a fair $n$-sided die is rolled $n$ independent times. A match occurs if side $i$ is observed on the $i$ th trial, $i=1,2, \ldots, n$. Find the limit of this probability as $n$ increases without bound.",$1+1 / e$,$e$,$1 / e$, $ 1-1 / e$,D,scibench-stat,scibench-stat
-"Given that $P(A \cup B)=0.76$ and $P\left(A \cup B^{\prime}\right)=0.87$, find $P(A)$.",0.76, 0.63,0.50,0.70,B,scibench-stat,scibench-stat
-How many different license plates are possible if a state uses two letters followed by a four-digit integer (leading zeros are permissible and the letters and digits can be repeated)?,67600000, 6760000,676000,67600,B,scibench-stat,scibench-stat
-How many four-letter code words are possible using the letters in IOWA if The letters may not be repeated?,12, 24,36,48,B,scibench-stat,scibench-stat
-"In a state lottery, four digits are drawn at random one at a time with replacement from 0 to 9. Suppose that you win if any permutation of your selected integers is drawn. Give the probability of winning if you select $6,7,8,9$.",0.0012,0.0036,0.0048, 0.0024,D,scibench-stat,scibench-stat
-"In the gambling game ""craps,"" a pair of dice is rolled and the outcome of the experiment is the sum of the points on the up sides of the six-sided dice. The bettor wins on the first roll if the sum is 7 or 11. The bettor loses on the first roll if the sum is 2,3 , or 12 . If the sum is $4,5,6$, 8,9 , or 10 , that number is called the bettor's ""point."" Once the point is established, the rule is as follows: If the bettor rolls a 7 before the point, the bettor loses; but if the point is rolled before a 7 , the bettor wins. Find the probability that the bettor wins on the first roll. That is, find the probability of rolling a 7 or 11 , $P(7$ or 11$)$.",$\frac{10}{36}$, $\frac{8}{36}$,$\frac{12}{36}$,$\frac{6}{36}$,B,scibench-stat,scibench-stat
-Let $A$ and $B$ be independent events with $P(A)=$ $1 / 4$ and $P(B)=2 / 3$. Compute $P(A \cap B)$,$\frac{1}{4}$,$\frac{2}{3}$,$\frac{1}{3}$, $\frac{1}{6}$,D,scibench-stat,scibench-stat
+Find $P(A)$",$\frac{14}{52}$,$\frac{10}{52}$,$\frac{12}{52}$,$\frac{16}{52}$,C,scibench-stat
+"Extend Example 1.4-6 to an $n$-sided die. That is, suppose that a fair $n$-sided die is rolled $n$ independent times. A match occurs if side $i$ is observed on the $i$ th trial, $i=1,2, \ldots, n$. Find the limit of this probability as $n$ increases without bound.",$1+1 / e$,$e$,$1 / e$, $ 1-1 / e$,D,scibench-stat
+"Given that $P(A \cup B)=0.76$ and $P\left(A \cup B^{\prime}\right)=0.87$, find $P(A)$.",0.76, 0.63,0.50,0.70,B,scibench-stat
+How many different license plates are possible if a state uses two letters followed by a four-digit integer (leading zeros are permissible and the letters and digits can be repeated)?,67600000, 6760000,676000,67600,B,scibench-stat
+How many four-letter code words are possible using the letters in IOWA if The letters may not be repeated?,12, 24,36,48,B,scibench-stat
+"In a state lottery, four digits are drawn at random one at a time with replacement from 0 to 9. Suppose that you win if any permutation of your selected integers is drawn. Give the probability of winning if you select $6,7,8,9$.",0.0012,0.0036,0.0048, 0.0024,D,scibench-stat
+"In the gambling game ""craps,"" a pair of dice is rolled and the outcome of the experiment is the sum of the points on the up sides of the six-sided dice. The bettor wins on the first roll if the sum is 7 or 11. The bettor loses on the first roll if the sum is 2,3 , or 12 . If the sum is $4,5,6$, 8,9 , or 10 , that number is called the bettor's ""point."" Once the point is established, the rule is as follows: If the bettor rolls a 7 before the point, the bettor loses; but if the point is rolled before a 7 , the bettor wins. Find the probability that the bettor wins on the first roll. That is, find the probability of rolling a 7 or 11 , $P(7$ or 11$)$.",$\frac{10}{36}$, $\frac{8}{36}$,$\frac{12}{36}$,$\frac{6}{36}$,B,scibench-stat
+Let $A$ and $B$ be independent events with $P(A)=$ $1 / 4$ and $P(B)=2 / 3$. Compute $P(A \cap B)$,$\frac{1}{4}$,$\frac{2}{3}$,$\frac{1}{3}$, $\frac{1}{6}$,D,scibench-stat
 "Let $A$ and $B$ be independent events with $P(A)=$ 0.7 and $P(B)=0.2$. Compute $P(A \cap B)$.
-",0.35,0.5,0.9, 0.14,D,scibench-stat,scibench-stat
+",0.35,0.5,0.9, 0.14,D,scibench-stat
 "Let $A$ and $B$ be independent events with $P(A)=$ 0.7 and $P(B)=0.2$. Compute $P(A \cap B)$.
-",0.35, 0.14,0.90,0.10,B,scibench-stat,scibench-stat
-"Suppose that $A, B$, and $C$ are mutually independent events and that $P(A)=0.5, P(B)=0.8$, and $P(C)=$ 0.9 . Find the probabilities that all three events occur?", 0.36,0.5,0.4,0.45,A,scibench-stat,scibench-stat
-"Suppose that the alleles for eye color for a certain male fruit fly are $(R, W)$ and the alleles for eye color for the mating female fruit fly are $(R, W)$, where $R$ and $W$ represent red and white, respectively. Their offspring receive one allele for eye color from each parent. Assume that each of the four possible outcomes has equal probability. If an offspring ends up with either two white alleles or one red and one white allele for eye color, its eyes will look white. Given that an offspring's eyes look white, what is the conditional probability that it has two white alleles for eye color?",$\frac{2}{3}$,$\frac{1}{2}$,$\frac{1}{4}$,$\frac{1}{3}$,D,scibench-stat,scibench-stat
-"The World Series in baseball continues until either the American League team or the National League team wins four games. How many different orders are possible (e.g., ANNAAA means the American League team wins in six games) if the series goes four games?",4, 2,16,8,B,scibench-stat,scibench-stat
-Three students $(S)$ and six faculty members $(F)$ are on a panel discussing a new college policy. In how many different ways can the nine participants be lined up at a table in the front of the auditorium?,0.00730, 0.00539,0.00892,0.00345,B,scibench-stat,scibench-stat
+",0.35, 0.14,0.90,0.10,B,scibench-stat
+"Suppose that $A, B$, and $C$ are mutually independent events and that $P(A)=0.5, P(B)=0.8$, and $P(C)=$ 0.9 . Find the probabilities that all three events occur?", 0.36,0.5,0.4,0.45,A,scibench-stat
+"Suppose that the alleles for eye color for a certain male fruit fly are $(R, W)$ and the alleles for eye color for the mating female fruit fly are $(R, W)$, where $R$ and $W$ represent red and white, respectively. Their offspring receive one allele for eye color from each parent. Assume that each of the four possible outcomes has equal probability. If an offspring ends up with either two white alleles or one red and one white allele for eye color, its eyes will look white. Given that an offspring's eyes look white, what is the conditional probability that it has two white alleles for eye color?",$\frac{2}{3}$,$\frac{1}{2}$,$\frac{1}{4}$,$\frac{1}{3}$,D,scibench-stat
+"The World Series in baseball continues until either the American League team or the National League team wins four games. How many different orders are possible (e.g., ANNAAA means the American League team wins in six games) if the series goes four games?",4, 2,16,8,B,scibench-stat
+Three students $(S)$ and six faculty members $(F)$ are on a panel discussing a new college policy. In how many different ways can the nine participants be lined up at a table in the front of the auditorium?,0.00730, 0.00539,0.00892,0.00345,B,scibench-stat

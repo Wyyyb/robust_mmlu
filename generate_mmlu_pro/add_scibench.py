@@ -53,8 +53,8 @@ for file in os.listdir(scibench_dir):
         continue
     file_path = os.path.join(scibench_dir, file)
     data = read_csv_file(file_path)
-    for i, row in enumerate(data):
-        data[i].append(file.replace(".csv", ""))
+    # for i, row in enumerate(data):
+    #     data[i].append(file.replace(".csv", ""))
     if file not in scibench_map:
         print("file not in scibench_map")
         continue

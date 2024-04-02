@@ -108,6 +108,8 @@ for file in os.listdir(stemez_dir):
         random.shuffle(options)
         answer_idx = idx_map[options.index(each["answer"])]
         curr_res = [question] + options + [answer_idx, src]
+        if len(curr_res) != 7:
+            print("len(curr_res) != 7", curr_res)
         stemez_data_map[target_file].append(curr_res)
 
 for k, v in stemez_data_map.items():
