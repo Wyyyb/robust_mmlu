@@ -50,7 +50,7 @@ def fix_answer(all_df, fixed_answer_index):
     column_names = all_df.columns.tolist()
     all_data_list = all_df.to_numpy().tolist()
     for i, row in enumerate(all_data_list):
-        ans = row[-1]
+        ans = row[5]
         ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ans)
         if ans_index != fixed_answer_index:
             all_data_list[i][-1] = choices[fixed_answer_index]
@@ -75,6 +75,7 @@ def format_example(df, idx, include_answer=True):
         ori_ans = df.iloc[idx, k + 1]
         ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ori_ans)
         prompt += " {}\n\n".format(choices[ans_index])
+    print("prompt", prompt)
     return prompt
 
 
