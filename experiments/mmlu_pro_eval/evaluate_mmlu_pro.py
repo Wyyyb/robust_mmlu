@@ -1,3 +1,8 @@
+import warnings
+
+warnings.filterwarnings("ignore", message=".*not recognized.*")
+warnings.filterwarnings("ignore", message=".*caveats.*")
+
 import argparse
 import os
 import torch
@@ -9,9 +14,7 @@ from categories import subcategories, categories
 import transformers
 import time
 from transformers import GenerationConfig
-import warnings
-
-warnings.filterwarnings("ignore", message="Keyword arguments {'add_special_tokens': False} not recognized.")
+import tqdm
 
 
 IGNORE_INDEX = -100
@@ -114,7 +117,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
         choices = greek_letters
     answers = choices[: test_df.shape[1] - 2]
 
-    for i in range(test_df.shape[0]):
+    for i in tqdm(range(test_df.shape[0])):
         # get prompt and make sure it fits
         k = args.ntrain
         prompt_end = format_example(test_df, i, include_answer=False)
@@ -164,8 +167,13 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
     cors = np.array(cors)
 
     all_probs = np.array(all_probs)
-    print("Average accuracy {:.3f} - {}".format(acc, subject))
-
+    save_result_path = os.path.join(args.save_dir, "results_{}".format(args.model), "accu_subjects.txt")
+    if os.path.exists(save_result_path):
+        with open(save_result_path, "a") as fo:
+            fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
+    else:
+        with open(save_result_path, "w") as fo:
+            fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
     return cors, acc, all_probs
 
 
