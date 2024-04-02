@@ -207,7 +207,7 @@ def main(args):
             if ".csv" in f
         ]
     )
-    print("subjects: {}".format(subjects))
+    # print("subjects: {}".format(subjects))
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
@@ -237,14 +237,14 @@ def main(args):
             test_df = fix_answer(test_df, args.fixed_question_answer)
 
         cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df)
-        print("cors, acc, probs", cors, acc, probs)
+        # print("cors, acc, probs", cors, acc, probs)
         subcat = subcategories[subject]
         subcat_cors[subcat].append(cors)
         for key in categories.keys():
             if subcat in categories[key]:
                 cat_cors[key].append(cors)
         all_cors.append(cors)
-        print("all_cors", all_cors)
+        # print("all_cors", all_cors)
 
         test_df["{}_correct".format(args.model)] = cors
         for j in range(probs.shape[1]):
