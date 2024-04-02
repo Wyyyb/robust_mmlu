@@ -62,11 +62,7 @@ def fix_answer(all_df, fixed_answer_index):
 
 
 def format_subject(subject):
-    l = subject.split("_")
-    s = ""
-    for entry in l:
-        s += " " + entry
-    return s
+    return subject.replace(".csv", "")
 
 
 def format_example(df, idx, include_answer=True):
@@ -225,7 +221,7 @@ def main(args):
     cat_cors = {cat: [] for cat in categories}
 
     for subject in subjects:
-        all_df = pd.read_csv(os.path.join(args.data_dir, subject + "_test.csv"), header=None)
+        all_df = pd.read_csv(os.path.join(args.data_dir, subject), header=None)
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
         if args.fixed_answer != -1:
