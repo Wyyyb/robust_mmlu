@@ -129,7 +129,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
             prompt = train_prompt + prompt_end
             input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
 
-        label = test_df.iloc[i, test_df.shape[1] - 1]
+        label = test_df.iloc[i, test_df.shape[1] - 2]
 
         logits = model(
             input_ids=input_ids  # decoder_input_ids=decoder_input_ids
