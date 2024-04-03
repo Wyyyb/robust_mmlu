@@ -72,15 +72,17 @@ def format_subject(subject):
 def format_example(df, idx, include_answer=True):
     prompt = str(df.iloc[idx, 0])
     k = df.shape[1] - 3
+    options = []
     for j in range(k):
         prompt += "\n{}. {}".format(choices[j], str(df.iloc[idx, j + 1]))
+        options.append(str(df.iloc[idx, j + 1]))
     prompt += "\nAnswer:"
     if include_answer:
         ori_ans = df.iloc[idx, k + 1]
         ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ori_ans)
-        prompt += " {}\n\n".format(choices[ans_index])
-    # print("prompt", prompt)
-    return prompt
+        prompt += " {}\n\n".format(options[ans_index])
+
+    return prompt, options
 
 
 def gen_prompt(train_df, subject, k=-1):
@@ -93,7 +95,7 @@ def gen_prompt(train_df, subject, k=-1):
     if k == -1:
         k = train_df.shape[0]
     for i in range(k):
-        prompt += format_example(train_df, i)
+        prompt += format_example(train_df, i)[0]
     return prompt
 
 
@@ -117,45 +119,62 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
     for i in tqdm(range(test_df.shape[0])):
         # get prompt and make sure it fits
         k = args.ntrain
-        prompt_end = format_example(test_df, i, include_answer=False)
+        prompt_end, options = format_example(test_df, i, include_answer=False)
         train_prompt = gen_prompt(dev_df, subject, k)
         prompt = train_prompt + prompt_end
 
-        input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
+        prompt_input_ids = tokenizer.encode(prompt, return_tensors="pt")
 
-        while input_ids.shape[-1] > 2048:
+        while prompt_input_ids.shape[-1] > 2000:
             k -= 1
             train_prompt = gen_prompt(dev_df, subject, k)
             prompt = train_prompt + prompt_end
-            input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
+            prompt_input_ids = tokenizer.encode(prompt, return_tensors="pt")
+        
+        log_likelihoods = []
+        for opt in options:
+            full_text = prompt + opt
+            input_ids = tokenizer.encode(full_text, return_tensors="pt").cuda()
+            labels = torch.full(input_ids.shape, -100).cuda()
+            start_target = len(prompt_input_ids)
+            labels[0, start_target:] = input_ids[0, start_target:]
+            loss = model(input_ids, labels=labels).loss
+            log_likelihoods.append(-loss.item())
+        probs = torch.nn.functional.softmax(torch.tensor(log_likelihoods), dim=0).detach().cpu().numpy()
+        pred = choices[np.argmax(probs)]
+        
+        print(log_likelihoods)
+        print("probs", probs)
+        print("pred", pred)
+        print("label", test_df.iloc[i, test_df.shape[1] - 2])
 
+        # label = test_df.iloc[i, test_df.shape[1] - 2]
+
+        # logits = model(
+        #     input_ids=input_ids  # decoder_input_ids=decoder_input_ids
+        # ).logits
+
+        # chars = "".join(choices)
+        # probs = (
+        #     torch.nn.functional.softmax(
+        #         torch.tensor(
+        #             [
+        #                 logits[0, -1, tokenizer(chars[i]).input_ids[-1]] for i in range(args.options_num)
+        #             ]
+        #         ),
+        #         dim=0,
+        #     )
+        #     .detach()
+        #     .cpu()
+        #     .numpy()
+        # )
+        # # print(probs)
+        # letters = [chr(i) for i in range(ord('A'), ord('Z') + 1)]
+
+        # # 使用字典推导式构建特定长度的字典
+        # index_letter_dict = {i: letters[i] for i in range(args.options_num)}
+        # pred = index_letter_dict[np.argmax(probs)]
         label = test_df.iloc[i, test_df.shape[1] - 2]
-
-        logits = model(
-            input_ids=input_ids  # decoder_input_ids=decoder_input_ids
-        ).logits
-
-        chars = "".join(choices)
-        probs = (
-            torch.nn.functional.softmax(
-                torch.tensor(
-                    [
-                        logits[0, -1, tokenizer(chars[i]).input_ids[-1]] for i in range(args.options_num)
-                    ]
-                ),
-                dim=0,
-            )
-            .detach()
-            .cpu()
-            .numpy()
-        )
-        # print(probs)
-        letters = [chr(i) for i in range(ord('A'), ord('Z') + 1)]
-
-        # 使用字典推导式构建特定长度的字典
-        index_letter_dict = {i: letters[i] for i in range(args.options_num)}
-        pred = index_letter_dict[np.argmax(probs)]
-
         cor = pred == label
         cors.append(cor)
         all_probs.append(probs)
