@@ -384,8 +384,8 @@ if __name__ == "__main__":
     parser.add_argument("--save_dir", "-s", type=str, default="results")
     parser.add_argument("--options_num", "-o", type=int, default=4)
     parser.add_argument("--use_rare_symbol", "-r", type=bool, default=False)
-    # parser.add_argument("--fixed_answer", "-f", type=int, default=-1)
-    # parser.add_argument("--fixed_example_answer", "-e", type=int, default=-1)
+    parser.add_argument("--fixed_answer", "-f", type=int, default=-1)
+    parser.add_argument("--fixed_example_answer", "-e", type=int, default=-1)
     parser.add_argument("--fixed_question_answer", "-q", type=int, default=-1)
     parser.add_argument("--scoring_method", "-sm", type=str, default="symbol_scoring")
     parser.add_argument(
