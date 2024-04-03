@@ -143,10 +143,10 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
         probs = torch.nn.functional.softmax(torch.tensor(log_likelihoods), dim=0).detach().cpu().numpy()
         pred = choices[np.argmax(probs)]
         
-        print(log_likelihoods)
-        print("probs", probs)
-        print("pred", pred)
-        print("label", test_df.iloc[i, test_df.shape[1] - 2])
+        # print(log_likelihoods)
+        # print("probs", probs)
+        # print("pred", pred)
+        # print("label", test_df.iloc[i, test_df.shape[1] - 2])
 
         # label = test_df.iloc[i, test_df.shape[1] - 2]
 

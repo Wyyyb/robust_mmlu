@@ -72,15 +72,17 @@ def format_subject(subject):
 def format_example(df, idx, include_answer=True):
     prompt = str(df.iloc[idx, 0])
     k = df.shape[1] - 3
+    options = []
     for j in range(k):
         prompt += "\n{}. {}".format(choices[j], str(df.iloc[idx, j + 1]))
+        options.append(str(df.iloc[idx, j + 1]))
     prompt += "\nAnswer:"
     if include_answer:
         ori_ans = df.iloc[idx, k + 1]
         ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ori_ans)
-        prompt += " {}\n\n".format(choices[ans_index])
-    # print("prompt", prompt)
-    return prompt
+        prompt += " {}\n\n".format(options[ans_index])
+
+    return prompt, options
 
 
 def gen_prompt(train_df, subject, k=-1):
@@ -93,7 +95,8 @@ def gen_prompt(train_df, subject, k=-1):
     if k == -1:
         k = train_df.shape[0]
     for i in range(k):
-        prompt += format_example(train_df, i)
+        p, options = format_example(train_df, i)
+        prompt += p
     return prompt
 
 
@@ -117,7 +120,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
     for i in tqdm(range(test_df.shape[0])):
         # get prompt and make sure it fits
         k = args.ntrain
-        prompt_end = format_example(test_df, i, include_answer=False)
+        prompt_end, options = format_example(test_df, i, include_answer=False)
         train_prompt = gen_prompt(dev_df, subject, k)
         prompt = train_prompt + prompt_end
 
@@ -156,6 +159,73 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
         index_letter_dict = {i: letters[i] for i in range(args.options_num)}
         pred = index_letter_dict[np.argmax(probs)]
 
+        cor = pred == label
+        cors.append(cor)
+        all_probs.append(probs)
+
+    acc = np.mean(cors)
+    cors = np.array(cors)
+
+    all_probs = np.array(all_probs)
+    save_result_path = args_generate_path(args)
+    file_prefix = save_result_path.replace("/", "-")
+    timestamp = time.time()
+    time_str = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(timestamp))
+    file_name = f"{file_prefix}_{time_str}_summary.txt"
+    save_result_path = os.path.join(args.save_dir, file_name)
+    if os.path.exists(save_result_path):
+        with open(save_result_path, "a") as fo:
+            fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
+    else:
+        with open(save_result_path, "w") as fo:
+            fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
+    return cors, acc, all_probs
+
+
+def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df):
+    generation_config = GenerationConfig(
+        do_sample=False
+    )
+
+    cors = []
+    all_probs = []
+    global choices
+    if args.use_rare_symbol:
+        greek_upper_unicode_start = 0x391
+
+        # 创建一个列表，包含1-20对应的大写希腊字母
+        greek_letters = [chr(greek_upper_unicode_start + i) for i in range(17)]
+        choices = greek_letters
+    answers = choices[: test_df.shape[1] - 2]
+
+    for i in tqdm(range(test_df.shape[0])):
+        # get prompt and make sure it fits
+        k = args.ntrain
+        prompt_end, options = format_example(test_df, i, include_answer=False)
+        train_prompt = gen_prompt(dev_df, subject, k)
+        prompt = train_prompt + prompt_end
+
+        prompt_input_ids = tokenizer.encode(prompt, return_tensors="pt")
+
+        while prompt_input_ids.shape[-1] > 2000:
+            k -= 1
+            train_prompt = gen_prompt(dev_df, subject, k)
+            prompt = train_prompt + prompt_end
+            prompt_input_ids = tokenizer.encode(prompt, return_tensors="pt")
+
+        log_likelihoods = []
+        for opt in options:
+            full_text = prompt + opt
+            input_ids = tokenizer.encode(full_text, return_tensors="pt").cuda()
+            labels = torch.full(input_ids.shape, -100).cuda()
+            start_target = len(prompt_input_ids)
+            labels[0, start_target:] = input_ids[0, start_target:]
+            loss = model(input_ids, labels=labels).loss
+            log_likelihoods.append(-loss.item())
+        probs = torch.nn.functional.softmax(torch.tensor(log_likelihoods), dim=0).detach().cpu().numpy()
+        pred = choices[np.argmax(probs)]
+
+        label = test_df.iloc[i, test_df.shape[1] - 2]
         cor = pred == label
         cors.append(cor)
         all_probs.append(probs)
@@ -212,13 +282,14 @@ def main(args):
             if ".csv" in f
         ]
     )
-    # print("subjects: {}".format(subjects))
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
-    if not os.path.exists(os.path.join(args.save_dir, "results_{}".format(args.model))):
-        os.makedirs(os.path.join(args.save_dir, "results_{}".format(args.model)))
-    save_result_dir = os.path.join(args.save_dir, "results_{}".format(args.model))
+    save_result_dir = os.path.join(
+        args.save_dir, args_generate_path(args)
+    )
+    if not os.path.exists(save_result_dir):
+        os.makedirs(save_result_dir)
 
     all_cors = []
 
@@ -240,8 +311,10 @@ def main(args):
             dev_df = fix_answer(dev_df, args.fixed_example_answer)
         elif args.fixed_question_answer != -1:
             test_df = fix_answer(test_df, args.fixed_question_answer)
-
-        cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df)
+        if args.scoring_method == "hybrid_scoring":
+            cors, acc, probs = hybrid_eval(args, subject, model, tokenizer, dev_df, test_df)
+        else:
+            cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df)
         # print("cors, acc, probs", cors, acc, probs)
         subcat = subcategories[subject]
         subcat_cors[subcat].append(cors)
@@ -257,7 +330,7 @@ def main(args):
             test_df["{}_choice_{}_probs".format(args.model, choice)] = probs[:, j]
         test_df.to_csv(
             os.path.join(
-                args.save_dir, "results_{}".format(args.model), "{}".format(subject)
+                save_result_dir, "{}".format(subject)
             ),
             index=None,
         )
@@ -281,6 +354,28 @@ def main(args):
         f.write("Average accuracy: {:.4f}\n".format(weighted_acc))
 
 
+def args_generate_path(input_args):
+    scoring_method = input_args.scoring_method
+    model_name = input_args.model.split("/")[-1]
+    if "ori" in input_args.data_dir:
+        dataset_name = "mmlu"
+    else:
+        dataset_name = "mmlu_pro"
+    if input_args.options_num > 4:
+        dataset_name += f"_exp_{str(input_args.options_num)}"
+    if input_args.fixed_question_answer == -1 and not input_args.use_rare_symbol:
+        eval_method = "ori_eval"
+    elif input_args.fixed_question_answer == -1:
+        eval_method = "rare_symbol"
+    elif input_args.fixed_question_answer != -1:
+        fix_map = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        eval_method = f"fix_{fix_map[input_args.fixed_question_answer]}"
+    else:
+        eval_method = "ori_eval"
+    res = f"{scoring_method}/{model_name}/{dataset_name}/{eval_method}"
+    return res
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--ntrain", "-k", type=int, default=5)
@@ -289,9 +384,10 @@ if __name__ == "__main__":
     parser.add_argument("--save_dir", "-s", type=str, default="results")
     parser.add_argument("--options_num", "-o", type=int, default=4)
     parser.add_argument("--use_rare_symbol", "-r", type=bool, default=False)
-    parser.add_argument("--fixed_answer", "-f", type=int, default=-1)
-    parser.add_argument("--fixed_example_answer", "-e", type=int, default=-1)
+    # parser.add_argument("--fixed_answer", "-f", type=int, default=-1)
+    # parser.add_argument("--fixed_example_answer", "-e", type=int, default=-1)
     parser.add_argument("--fixed_question_answer", "-q", type=int, default=-1)
+    parser.add_argument("--scoring_method", "-sm", type=str, default="symbol_scoring")
     parser.add_argument(
         "--model",
         "-m",
