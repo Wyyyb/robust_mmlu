@@ -169,16 +169,17 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
 
     all_probs = np.array(all_probs)
     # global save_result_dir
-    # save_result_path = args_generate_path(args)
+
     file_prefix = save_result_dir.replace("/", "-")
     timestamp = time.time()
     time_str = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(timestamp))
     file_name = f"{file_prefix}_{time_str}_summary.txt"
-    if os.path.exists(save_result_dir):
-        with open(save_result_dir, "a") as fo:
+    save_result_path = os.path.join(save_result_dir, file_name)
+    if os.path.exists(save_result_path):
+        with open(save_result_path, "a") as fo:
             fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
     else:
-        with open(save_result_dir, "w") as fo:
+        with open(save_result_path, "w") as fo:
             fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
     return cors, acc, all_probs
 
