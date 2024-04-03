@@ -3,7 +3,7 @@
 # 设置默认参数
 ntrain=5
 ngpu=2
-data_dir="../data/ori_mmlu_data"
+data_dir="../data/merged_ori_mmlu"
 save_dir="../eval_result"
 options_num=4
 use_rare_symbol=False
