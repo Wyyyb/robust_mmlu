@@ -1,4 +1,5 @@
 import warnings
+warnings.filterwarnings("ignore")
 
 import argparse
 import os
@@ -169,12 +170,6 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
 
     all_probs = np.array(all_probs)
     # global save_result_dir
-
-    file_prefix = save_result_dir.replace("/", "-")
-    timestamp = time.time()
-    time_str = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(timestamp))
-    file_name = f"{file_prefix}_{time_str}_summary.txt"
-    save_result_path = os.path.join(save_result_dir, file_name)
     if os.path.exists(save_result_path):
         with open(save_result_path, "a") as fo:
             fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
@@ -236,7 +231,7 @@ def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df):
     cors = np.array(cors)
 
     all_probs = np.array(all_probs)
-    save_result_path = os.path.join(args.save_dir, "results_{}".format(args.model), "accu_subjects.txt")
+
     if os.path.exists(save_result_path):
         with open(save_result_path, "a") as fo:
             fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
@@ -397,4 +392,9 @@ if __name__ == "__main__":
     save_result_dir = os.path.join(
         args.save_dir, args_generate_path(args)
     )
+    file_prefix = save_result_dir.replace("/", "-")
+    timestamp = time.time()
+    time_str = time.strftime('%m-%d_%H-%M', time.localtime(timestamp))
+    file_name = f"{file_prefix}_{time_str}_summary.txt"
+    save_result_path = os.path.join(args.save_dir, file_name)
     main(args)
