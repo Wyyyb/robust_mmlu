@@ -57,7 +57,7 @@ def fix_answer(all_df, fixed_answer_index):
         ans = row[5]
         ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ans)
         if ans_index != fixed_answer_index:
-            all_data_list[i][-1] = choices[fixed_answer_index]
+            all_data_list[i][-2] = choices[fixed_answer_index]
             temp = row[fixed_answer_index + 1]
             all_data_list[i][fixed_answer_index + 1] = row[ans_index + 1]
             all_data_list[i][ans_index + 1] = temp

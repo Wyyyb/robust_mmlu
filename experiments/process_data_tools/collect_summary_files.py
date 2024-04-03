@@ -27,11 +27,13 @@ def collect_summary_files(directory):
 
 
 def fetch_single_summary(summary_path):
+    helpful_path_segments = ["mmlu", "fix", "ori", "rare", "7b", "13b", "mistral", "gemma"]
     path_segments = str(summary_path).split("/")
     res_path = []
     for each in path_segments:
-        if "mmlu" in each:
-            res_path.append(each)
+        for segs in helpful_path_segments:
+            if segs in each:
+                res_path.append(each)
     summary_line = -1
     with open(summary_path, "r") as fi:
         for i, line in enumerate(fi.readlines()):
@@ -43,7 +45,7 @@ def fetch_single_summary(summary_path):
 
 
 if __name__ == "__main__":
-    collect_summary_files("../eval_result/")
+    collect_summary_files("../eval_result/0402_darth_result")
 
 
 
