@@ -7,7 +7,7 @@ export PYTHONWARNINGS="ignore"
 ./eval_7b_fixC.sh &
 ./eval_7b_fixD.sh &
 ./eval_gemma_7b_ori.sh &
-./eval_mistral_7b_ori.sh &
+# ./eval_mistral_7b_ori.sh &
 
 # 等待所有后台进程结束
 wait
