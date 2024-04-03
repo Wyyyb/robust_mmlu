@@ -167,17 +167,17 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
     cors = np.array(cors)
 
     all_probs = np.array(all_probs)
-    save_result_path = args_generate_path(args)
-    file_prefix = save_result_path.replace("/", "-")
+    # global save_result_dir
+    # save_result_path = args_generate_path(args)
+    file_prefix = save_result_dir.replace("/", "-")
     timestamp = time.time()
     time_str = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(timestamp))
     file_name = f"{file_prefix}_{time_str}_summary.txt"
-    save_result_path = os.path.join(args.save_dir, file_name)
-    if os.path.exists(save_result_path):
-        with open(save_result_path, "a") as fo:
+    if os.path.exists(save_result_dir):
+        with open(save_result_dir, "a") as fo:
             fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
     else:
-        with open(save_result_path, "w") as fo:
+        with open(save_result_dir, "w") as fo:
             fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
     return cors, acc, all_probs
 
@@ -285,9 +285,6 @@ def main(args):
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
-    save_result_dir = os.path.join(
-        args.save_dir, args_generate_path(args)
-    )
     if not os.path.exists(save_result_dir):
         os.makedirs(save_result_dir)
 
@@ -395,4 +392,7 @@ if __name__ == "__main__":
         default="meta-llama/Llama-2-7b-hf",
     )
     args = parser.parse_args()
+    save_result_dir = os.path.join(
+        args.save_dir, args_generate_path(args)
+    )
     main(args)
