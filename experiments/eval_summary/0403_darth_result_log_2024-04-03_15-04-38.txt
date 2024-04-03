@@ -1,0 +1,16 @@
+mmlu_pro:
+
+fixA/Llama-2-7b-hf                  Average accuracy: 0.5657
+fixB/Llama-2-7b-hf                  Average accuracy: 0.3446
+fixC/Llama-2-7b-hf                  Average accuracy: 0.2900
+fixD/Llama-2-7b-hf                  Average accuracy: 0.2793
+ori/Llama-2-7b-hf                   Average accuracy: 0.3449
+rare_symbol/Llama-2-7b-hf           Average accuracy: 0.3229
+ori/gemma-7b/gemma-7b               Average accuracy: 0.5235
+
+mmlu-7b-ori                         Average accuracy: 0.451
+mmlu-7b-rare_symbols                Average accuracy: 0.425
+
+
+
+

@@ -14,7 +14,8 @@ def find_summary_files(directory):
 def collect_summary_files(directory):
     timestamp = time.time()
     time_str = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(timestamp))
-    log_file_name = f"../eval_summary/log_{time_str}.txt"
+    cat = directory.split("/")[-1]
+    log_file_name = f"../eval_summary/{cat}_log_{time_str}.txt"
     paths = find_summary_files(directory)
     res = []
     for each in paths:
@@ -45,7 +46,7 @@ def fetch_single_summary(summary_path):
 
 
 if __name__ == "__main__":
-    collect_summary_files("../eval_result/0402_darth_result")
+    collect_summary_files("../eval_result/0403_darth_result")
 
 
 
