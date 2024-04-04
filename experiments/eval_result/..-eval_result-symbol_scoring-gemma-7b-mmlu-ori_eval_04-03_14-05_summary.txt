@@ -1,0 +1,17 @@
+Average accuracy 0.5612 - biology.csv
+Average accuracy 0.5162 - business.csv
+Average accuracy 0.2919 - chemistry.csv
+Average accuracy 0.4324 - computer science.csv
+Average accuracy 0.4190 - culture.csv
+Average accuracy 0.4722 - economics.csv
+Average accuracy 0.2571 - engineering.csv
+Average accuracy 0.3886 - geography.csv
+Average accuracy 0.4085 - health.csv
+Average accuracy 0.4314 - history.csv
+Average accuracy 0.4204 - law.csv
+Average accuracy 0.3620 - math.csv
+Average accuracy 0.5155 - other.csv
+Average accuracy 0.4619 - philosophy.csv
+Average accuracy 0.4679 - physics.csv
+Average accuracy 0.5062 - politics.csv
+Average accuracy 0.4289 - psychology.csv
