@@ -133,7 +133,7 @@ def check_exist(exists_result, question_option_str):
     for each in exists_result:
         curr = ""
         for i in range(args.options_num + 1):
-            curr += each[i] + "\n"
+            curr += str(each[i]) + "\n"
         if curr == question_option_str:
             return True
     return False
@@ -158,7 +158,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
         prompt_end, options = format_example(test_df, i, include_answer=False)
         question_option_str = ""
         for index in range(args.options_num + 1):
-            question_option_str += test_df.iloc[i, index] + "\n"
+            question_option_str += str(test_df.iloc[i, index]) + "\n"
         if check_exist(exists_result, question_option_str):
             continue
         train_prompt = gen_prompt(dev_df, subject, k)
@@ -236,7 +236,7 @@ def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=
         prompt_end, options = format_example(test_df, i, include_answer=False)
         question_option_str = ""
         for index in range(args.options_num + 1):
-            question_option_str += test_df.iloc[i, index] + "\n"
+            question_option_str += str(test_df.iloc[i, index]) + "\n"
         if check_exist(exists_result, question_option_str):
             continue
         train_prompt = gen_prompt(dev_df, subject, k)
