@@ -1,6 +1,6 @@
 import warnings
 warnings.filterwarnings("ignore")
-
+import csv
 import argparse
 import os
 import torch
@@ -50,6 +50,20 @@ def smart_tokenizer_and_embedding_resize(
 
         input_embeddings[-num_new_tokens:] = input_embeddings_avg
         # output_embeddings[-num_new_tokens:] = output_embeddings_avg
+
+
+def read_csv_file(file_path, start_line=0):
+    with open(file_path, mode='r', encoding='utf-8') as file:
+        csv_reader = csv.reader(file)
+        data = list(csv_reader)
+    data = data[start_line:, ]
+    return data
+
+
+def write_2dlist_to_csv(data, file_name):
+    with open(file_name, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerows(data)
 
 
 def fix_answer(all_df, fixed_answer_index):
@@ -102,18 +116,37 @@ def gen_prompt(train_df, subject, k=-1):
     return prompt
 
 
-@torch.no_grad()
-def eval(args, subject, model, tokenizer, dev_df, test_df):
-    generation_config = GenerationConfig(
-        do_sample=False
-    )
-
+def load_exists_result(exists_result):
     cors = []
     all_probs = []
+    for each in exists_result:
+        curr_cor = str(each[len(each) - args.options_num - 1]) == "True"
+        curr_probs = each[-args.options_num:]
+        print("curr_cor", curr_cor)
+        print("curr_probs", curr_probs)
+        cors.append(curr_cor)
+        all_probs.append(curr_probs)
+    return cors, all_probs
+
+
+def check_exist(exists_result, question_option_str):
+    for each in exists_result:
+        curr = ""
+        for i in range(args.options_num + 1):
+            curr += each[i] + "\n"
+        if curr == question_option_str:
+            return True
+    return False
+
+
+@torch.no_grad()
+def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
+    if not exists_result:
+        exists_result = []
+    cors, all_probs = load_exists_result(exists_result)
     global choices
     if args.use_rare_symbol:
         greek_upper_unicode_start = 0x391
-
         # 创建一个列表，包含1-20对应的大写希腊字母
         greek_letters = [chr(greek_upper_unicode_start + i) for i in range(17)]
         choices = greek_letters
@@ -123,6 +156,11 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
         # get prompt and make sure it fits
         k = args.ntrain
         prompt_end, options = format_example(test_df, i, include_answer=False)
+        question_option_str = ""
+        for index in range(args.options_num + 1):
+            question_option_str += test_df.iloc[i, index] + "\n"
+        if check_exist(exists_result, question_option_str):
+            continue
         train_prompt = gen_prompt(dev_df, subject, k)
         prompt = train_prompt + prompt_end
 
@@ -179,13 +217,10 @@ def eval(args, subject, model, tokenizer, dev_df, test_df):
     return cors, acc, all_probs
 
 
-def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df):
-    generation_config = GenerationConfig(
-        do_sample=False
-    )
-
-    cors = []
-    all_probs = []
+def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
+    if not exists_result:
+        exists_result = []
+    cors, all_probs = load_exists_result(exists_result)
     global choices
     if args.use_rare_symbol:
         greek_upper_unicode_start = 0x391
@@ -199,6 +234,11 @@ def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df):
         # get prompt and make sure it fits
         k = args.ntrain
         prompt_end, options = format_example(test_df, i, include_answer=False)
+        question_option_str = ""
+        for index in range(args.options_num + 1):
+            question_option_str += test_df.iloc[i, index] + "\n"
+        if check_exist(exists_result, question_option_str):
+            continue
         train_prompt = gen_prompt(dev_df, subject, k)
         prompt = train_prompt + prompt_end
 
@@ -295,6 +335,7 @@ def main(args):
     cat_cors = {cat: [] for cat in categories}
 
     for subject in subjects:
+        exists_result = read_csv_file(os.path.join(save_result_dir, "{}".format(subject)), start_line=1)
         all_df = pd.read_csv(os.path.join(args.data_dir, subject), header=None)
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
@@ -306,9 +347,9 @@ def main(args):
         elif args.fixed_question_answer != -1:
             test_df = fix_answer(test_df, args.fixed_question_answer)
         if args.scoring_method == "hybrid_scoring":
-            cors, acc, probs = hybrid_eval(args, subject, model, tokenizer, dev_df, test_df)
+            cors, acc, probs = hybrid_eval(args, subject, model, tokenizer, dev_df, test_df, exists_result)
         else:
-            cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df)
+            cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df, exists_result)
         # print("cors, acc, probs", cors, acc, probs)
         subcat = subcategories[subject]
         subcat_cors[subcat].append(cors)
