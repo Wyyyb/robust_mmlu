@@ -304,11 +304,12 @@ def main(args):
                 "unk_token": DEFAULT_UNK_TOKEN,
             }
         )
-    elif "gemma" in args.model.lower() or "mistral" in args.model.lower():
+    elif "gemma" in args.model.lower() or "mistral" in args.model.lower() \
+            or "yi-6b" in args.model.lower():
         tokenizer = AutoTokenizer.from_pretrained(args.model,
                                                   model_max_length=2048,
                                                   padding_side="right",
-                                                  use_fast=False,)
+                                                  use_fast=False)
         model = AutoModelForCausalLM.from_pretrained(args.model, device_map="auto")
         print("length of {} tokenizer".format(args.model), len(tokenizer))
     else:
@@ -440,7 +441,7 @@ if __name__ == "__main__":
     save_result_dir = os.path.join(
         args.save_dir, args_generate_path(args)
     )
-    file_prefix = save_result_dir.replace("/", "-")
+    file_prefix = args_generate_path(args).replace("/", "-")
     timestamp = time.time()
     time_str = time.strftime('%m-%d_%H-%M', time.localtime(timestamp))
     file_name = f"{file_prefix}_{time_str}_summary.txt"
