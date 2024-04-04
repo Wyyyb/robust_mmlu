@@ -55,6 +55,7 @@ def smart_tokenizer_and_embedding_resize(
 def read_csv_file(file_path, start_line=0):
     df = pd.read_csv(file_path, header=start_line-1)
     data = df.values.tolist()
+    print("read csv length", len(data))
     return data
 
 
@@ -150,6 +151,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
     if not exists_result:
         exists_result = []
     cors, all_probs = load_exists_result(exists_result)
+    print("load exists result length", len(exists_result), len(cors))
     global choices
     if args.use_rare_symbol:
         greek_upper_unicode_start = 0x391
