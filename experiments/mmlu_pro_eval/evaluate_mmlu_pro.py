@@ -130,13 +130,16 @@ def load_exists_result(exists_result):
 
 
 def check_exist(exists_result, question_option_str, index):
-    for each in exists_result:
-        curr = ""
-        for i in range(args.options_num + 1):
-            curr += str(each[i]) + "\n"
-        if curr == question_option_str and index < len(exists_result):
-            return True
+    if index < len(exists_result):
+        return True
     return False
+    # for each in exists_result:
+    #     curr = ""
+    #     for i in range(args.options_num + 1):
+    #         curr += str(each[i]) + "\n"
+    #     if curr == question_option_str and index < len(exists_result):
+    #         return True
+    # return False
 
 
 @torch.no_grad()
@@ -237,7 +240,7 @@ def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=
         question_option_str = ""
         for index in range(args.options_num + 1):
             question_option_str += str(test_df.iloc[i, index]) + "\n"
-        if check_exist(exists_result, question_option_str):
+        if check_exist(exists_result, question_option_str, i):
             continue
         train_prompt = gen_prompt(dev_df, subject, k)
         prompt = train_prompt + prompt_end
@@ -282,6 +285,7 @@ def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=
 
 
 def main(args):
+    # model, tokenizer = None, None
     if "llama" in args.model.lower():
         model = transformers.AutoModelForCausalLM.from_pretrained(
             args.model,
@@ -335,7 +339,10 @@ def main(args):
     cat_cors = {cat: [] for cat in categories}
 
     for subject in subjects:
-        exists_result = read_csv_file(os.path.join(save_result_dir, "{}".format(subject)), start_line=1)
+        if os.path.exists(os.path.join(save_result_dir, "{}".format(subject))):
+            exists_result = read_csv_file(os.path.join(save_result_dir, "{}".format(subject)), start_line=1)
+        else:
+            exists_result = []
         all_df = pd.read_csv(os.path.join(args.data_dir, subject), header=None)
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
