@@ -52,10 +52,12 @@ def smart_tokenizer_and_embedding_resize(
         # output_embeddings[-num_new_tokens:] = output_embeddings_avg
 
 
-def read_csv_file(file_path, start_line=0):
-    df = pd.read_csv(file_path, header=start_line-1)
-    data = df.values.tolist()
-    print("read csv length", len(data))
+def read_csv_file(file_path):
+    with open(file_path, mode='r', encoding='utf-8') as file:
+        csv_reader = csv.reader(file)
+        data = list(csv_reader)
+        if str(data[0][0]) == "0" and str(data[0][1]) == "1" and str(data[0][2]) == "2":
+            data = data[1:]
     return data
 
 
@@ -347,14 +349,15 @@ def main(args):
 
     for subject in subjects:
         if os.path.exists(os.path.join(save_result_dir, "{}".format(subject))):
-            exists_result = read_csv_file(os.path.join(save_result_dir, "{}".format(subject)), start_line=1)
+            exists_result = read_csv_file(os.path.join(save_result_dir, "{}".format(subject)))
         else:
             exists_result = []
-        all_df = pd.read_csv(os.path.join(args.data_dir, subject), header=None)
-        print("all_df length", len(all_df.values.tolist()))
+        all_data = read_csv_file(os.path.join(args.data_dir, subject))
+        all_df = pd.DataFrame(all_data)
+        # print("all_df length", len(all_df.values.tolist()))
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
-        print("test_df length", len(test_df.values.tolist()))
+        # print("test_df length", len(test_df.values.tolist()))
         if args.fixed_answer != -1:
             dev_df = fix_answer(dev_df, args.fixed_answer)
             test_df = fix_answer(test_df, args.fixed_answer)
@@ -366,33 +369,21 @@ def main(args):
             cors, acc, probs = hybrid_eval(args, subject, model, tokenizer, dev_df, test_df, exists_result)
         else:
             cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df, exists_result)
-        # print("cors, acc, probs", cors, acc, probs)
         subcat = subcategories[subject]
         subcat_cors[subcat].append(cors)
         for key in categories.keys():
             if subcat in categories[key]:
                 cat_cors[key].append(cors)
         all_cors.append(cors)
-        # print("all_cors", all_cors)
 
         test_df["{}_correct".format(args.model)] = cors
         for j in range(probs.shape[1]):
             choice = choices[j]
             test_df["{}_choice_{}_probs".format(args.model, choice)] = probs[:, j]
-        test_df.to_csv(
-            os.path.join(
-                save_result_dir, "{}".format(subject)
-            ),
-            index=None,
-        )
-    with open(os.path.join(save_result_path), 'a') as f:
-        f.write("\n------subcategory level sta------\n")
-        for subcat in subcat_cors:
-            if not subcat_cors[subcat]:
-                continue
-            subcat_acc = np.mean(np.concatenate(subcat_cors[subcat]))
-            f.write("Average accuracy {:.4f} - {}\n".format(subcat_acc, subcat))
+        test_data = test_df.to_numpy().tolist()
+        write_2dlist_to_csv(test_data, os.path.join(save_result_dir, "{}".format(subject)))
 
+    with open(os.path.join(save_result_path), 'a') as f:
         f.write("\n------category level sta------\n")
         for cat in cat_cors:
             if not cat_cors[cat]:
