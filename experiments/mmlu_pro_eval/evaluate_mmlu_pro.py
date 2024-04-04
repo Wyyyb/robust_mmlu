@@ -171,7 +171,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
             question_option_str += str(test_df.iloc[i, index]) + "\n"
         if check_exist(exists_result, question_option_str, i):
             continue
-        print("not exist", question_option_str)
+        # print("not exist", question_option_str)
         train_prompt = gen_prompt(dev_df, subject, k)
         prompt = train_prompt + prompt_end
 
