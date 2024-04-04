@@ -129,12 +129,12 @@ def load_exists_result(exists_result):
     return cors, all_probs
 
 
-def check_exist(exists_result, question_option_str):
+def check_exist(exists_result, question_option_str, index):
     for each in exists_result:
         curr = ""
         for i in range(args.options_num + 1):
             curr += str(each[i]) + "\n"
-        if curr == question_option_str:
+        if curr == question_option_str and index < len(exists_result):
             return True
     return False
 
@@ -159,7 +159,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
         question_option_str = ""
         for index in range(args.options_num + 1):
             question_option_str += str(test_df.iloc[i, index]) + "\n"
-        if check_exist(exists_result, question_option_str):
+        if check_exist(exists_result, question_option_str, i):
             continue
         train_prompt = gen_prompt(dev_df, subject, k)
         prompt = train_prompt + prompt_end
@@ -369,7 +369,7 @@ def main(args):
             ),
             index=None,
         )
-    with open(os.path.join(save_result_dir, 'summary.txt'), 'w') as f:
+    with open(os.path.join(save_result_path), 'a') as f:
         f.write("\n------subcategory level sta------\n")
         for subcat in subcat_cors:
             if not subcat_cors[subcat]:
