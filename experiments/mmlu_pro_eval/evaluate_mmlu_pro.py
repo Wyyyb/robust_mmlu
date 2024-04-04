@@ -56,7 +56,7 @@ def read_csv_file(file_path, start_line=0):
     with open(file_path, mode='r', encoding='utf-8') as file:
         csv_reader = csv.reader(file)
         data = list(csv_reader)
-    data = data[start_line:, ]
+    data = data[start_line:]
     return data
 
 
