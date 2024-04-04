@@ -120,8 +120,12 @@ def load_exists_result(exists_result):
     cors = []
     all_probs = []
     for each in exists_result:
-        curr_cor = str(each[len(each) - args.options_num - 1]) == "True"
-        curr_probs = each[-args.options_num:]
+        if len(each) != 4 + 2 * args.options_num:
+            curr_cor = False
+            curr_probs = [0 for _ in range(args.options_num)]
+        else:
+            curr_cor = str(each[len(each) - args.options_num - 1]) == "True"
+            curr_probs = each[-args.options_num:]
         print("curr_cor", curr_cor)
         print("curr_probs", curr_probs)
         cors.append(curr_cor)
