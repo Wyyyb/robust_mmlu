@@ -10,24 +10,27 @@ def read_csv_file(file_path, start_line=0):
 
 
 def pandas_read_csv(filename):
-    df = pd.read_csv(filename, header=None)
+    df = pd.read_csv(filename, header=0)
     data = df.values.tolist()
-    for each in data:
-        if "If I_2 and Br_2 are added to a solution containing " in each[0]:
-            print("found, index is", data.index(each))
+    # for each in data:
+    #     if "If I_2 and Br_2 are added to a solution containing " in each[0]:
+    #         print("found, index is", data.index(each))
+    return data
 
 
 def csv_read_csv(filename):
     data = read_csv_file(filename)
-    for each in data:
-        if "If I_2 and Br_2 are added to a solution containing " in each[0]:
-            print("found, index is", data.index(each))
+    # for each in data:
+    #     if "If I_2 and Br_2 are added to a solution containing " in each[0]:
+    #         print("found, index is", data.index(each))
+    return data
 
+chemistry = "/Users/server/MMLU/git/robust_mmlu/experiments/eval_result/symbol_scoring/Llama-2-7b-hf/mmlu_pro/ori_eval/chemistry.csv"
+cs = "/Users/server/MMLU/git/robust_mmlu/experiments/eval_result/symbol_scoring/Llama-2-7b-hf/mmlu_pro/ori_eval/computer science.csv"
 
+pandas_read_csv(chemistry)
 
-pandas_read_csv("/Users/server/MMLU/git/robust_mmlu/experiments/eval_result/symbol_scoring/Llama-2-7b-hf/mmlu_pro/ori_eval/chemistry.csv")
-
-csv_read_csv("/Users/server/MMLU/git/robust_mmlu/experiments/eval_result/symbol_scoring/Llama-2-7b-hf/mmlu_pro/ori_eval/chemistry.csv")
+csv_read_csv(chemistry)
 
 
 
