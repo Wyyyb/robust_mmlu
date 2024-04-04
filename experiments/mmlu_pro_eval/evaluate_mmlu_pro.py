@@ -53,7 +53,7 @@ def smart_tokenizer_and_embedding_resize(
 
 
 def read_csv_file(file_path, start_line=0):
-    df = pd.read_csv(file_path, header=None)
+    df = pd.read_csv(file_path, header=start_line-1)
     data = df.values.tolist()
     return data
 

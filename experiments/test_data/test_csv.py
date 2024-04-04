@@ -10,7 +10,7 @@ def read_csv_file(file_path, start_line=0):
 
 
 def pandas_read_csv(filename):
-    df = pd.read_csv(filename, header=0)
+    df = pd.read_csv(filename, header=None)
     data = df.values.tolist()
     for each in data:
         if "If I_2 and Br_2 are added to a solution containing " in each[0]:
