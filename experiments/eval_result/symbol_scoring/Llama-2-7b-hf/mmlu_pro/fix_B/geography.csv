@@ -1,4 +1,4 @@
-0,1,2,3,4,5,6,meta-llama/Llama-2-7b-hf_correct,meta-llama/Llama-2-7b-hf_choice_A_probs,meta-llama/Llama-2-7b-hf_choice_B_probs,meta-llama/Llama-2-7b-hf_choice_C_probs,meta-llama/Llama-2-7b-hf_choice_D_probs
+0,1,2,3,4,5,6,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_correct,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_A_probs,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_B_probs,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_C_probs,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_D_probs
 All the following factors can be considered pull factors of migration EXCEPT,safety.,overcrowding.,better schools.,better climate.,B,ori_mmlu-high_school_geography,True,0.38368034,0.5525255,0.047411397,0.016382769
 Which of the following countries does NOT have a well-known example of a relict boundary?,Vietnam,Bolivia,Germany,United Kingdom,B,ori_mmlu-high_school_geography,False,0.43787515,0.32483315,0.11173427,0.12555745
 Which of the following is a centrifugal force in a country?,A national holiday,Religious differences,An attack by another country,A charismatic national leader,B,ori_mmlu-high_school_geography,False,0.99753535,0.00046272762,0.00042249841,0.0015793855

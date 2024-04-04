@@ -1,6 +1,6 @@
 cd ../../mmlu_pro_eval
 export CUDA_VISIBLE_DEVICES=1
-python evaluate_mmlu_pro_likelihood.py -k 5 -g 1 -d ../data/add_stemez_mmlu -s ../eval_result/0404_darth_result/hybrid_ori -m meta-llama/Llama-2-13b-hf
+python evaluate_mmlu_pro_likelihood.py -k 5 -g 1 -d ../data/add_stemez_mmlu -s ../eval_result/0404_darth_result/hybrid_ori -m /ML-A100/team/mm/zhangge/Llama-2-13b-hf
 
 
 
