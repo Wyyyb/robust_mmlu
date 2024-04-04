@@ -25,10 +25,11 @@ def csv_read_csv(filename):
     #         print("found, index is", data.index(each))
     return data
 
+ori_chemistry = "/Users/server/MMLU/git/robust_mmlu/experiments/data/add_stemez_mmlu/chemistry.csv"
 chemistry = "/Users/server/MMLU/git/robust_mmlu/experiments/eval_result/symbol_scoring/Llama-2-7b-hf/mmlu_pro/ori_eval/chemistry.csv"
 cs = "/Users/server/MMLU/git/robust_mmlu/experiments/eval_result/symbol_scoring/Llama-2-7b-hf/mmlu_pro/ori_eval/computer science.csv"
 
-pandas_read_csv(chemistry)
+pandas_read_csv(ori_chemistry)
 
 csv_read_csv(chemistry)
 

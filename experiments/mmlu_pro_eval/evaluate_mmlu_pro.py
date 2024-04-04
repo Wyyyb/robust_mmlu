@@ -351,8 +351,10 @@ def main(args):
         else:
             exists_result = []
         all_df = pd.read_csv(os.path.join(args.data_dir, subject), header=None)
+        print("all_df length", len(all_df.values.tolist()))
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
+        print("test_df length", len(test_df.values.tolist()))
         if args.fixed_answer != -1:
             dev_df = fix_answer(dev_df, args.fixed_answer)
             test_df = fix_answer(test_df, args.fixed_answer)
