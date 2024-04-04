@@ -16,5 +16,5 @@ source activate robust_mmlu  # 激活你的 conda 环境
 
 export CUDA_VISIBLE_DEVICES=0
 cd ../eval/
-python evaluate_llama.py -k 5 -g 1 -d ../test_data/test -s ../eval_result -m meta-llama/Llama-2-7b-hf
+python evaluate_llama.py -k 5 -g 1 -d ../test_data/test -s ../eval_result -m /ML-A100/team/mm/zhangge/Llama-2-7b-hf
 
