@@ -53,10 +53,8 @@ def smart_tokenizer_and_embedding_resize(
 
 
 def read_csv_file(file_path, start_line=0):
-    with open(file_path, mode='r', encoding='utf-8') as file:
-        csv_reader = csv.reader(file)
-        data = list(csv_reader)
-    data = data[start_line:]
+    df = pd.read_csv(file_path, header=None)
+    data = df.values.tolist()
     return data
 
 
@@ -126,8 +124,8 @@ def load_exists_result(exists_result):
         else:
             curr_cor = str(each[len(each) - args.options_num - 1]) == "True"
             curr_probs = each[-args.options_num:]
-        print("curr_cor", curr_cor)
-        print("curr_probs", curr_probs)
+        # print("curr_cor", curr_cor)
+        # print("curr_probs", curr_probs)
         cors.append(curr_cor)
         all_probs.append(curr_probs)
     return cors, all_probs
