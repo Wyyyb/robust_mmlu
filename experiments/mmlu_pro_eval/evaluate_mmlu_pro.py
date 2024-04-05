@@ -297,8 +297,7 @@ def main(args):
     if "llama" in args.model.lower():
         model = transformers.AutoModelForCausalLM.from_pretrained(
             args.model,
-            device_map="auto",
-        )
+            device_map="auto", torch_dtype=torch.bfloat16)
         tokenizer = transformers.LlamaTokenizer.from_pretrained(
             args.model,
             model_max_length=2048,
@@ -318,7 +317,7 @@ def main(args):
                                                   model_max_length=2048,
                                                   padding_side="right",
                                                   use_fast=False)
-        model = AutoModelForCausalLM.from_pretrained(args.model, device_map="auto")
+        model = AutoModelForCausalLM.from_pretrained(args.model, device_map="auto", torch_dtype=torch.bfloat16)
         print("length of {} tokenizer".format(args.model), len(tokenizer))
     else:
         model, tokenizer = None, None
