@@ -1,0 +1,25 @@
+Average accuracy 0.3381 - biology.csv
+Average accuracy 0.0547 - business.csv
+Average accuracy 0.0352 - chemistry.csv
+Average accuracy 0.1379 - computer science.csv
+Average accuracy 0.0603 - culture.csv
+Average accuracy 0.2273 - economics.csv
+Average accuracy 0.0758 - engineering.csv
+Average accuracy 0.0811 - geography.csv
+Average accuracy 0.1050 - health.csv
+Average accuracy 0.0652 - history.csv
+Average accuracy 0.0590 - law.csv
+Average accuracy 0.0180 - math.csv
+Average accuracy 0.0904 - other.csv
+Average accuracy 0.2993 - philosophy.csv
+Average accuracy 0.0511 - physics.csv
+Average accuracy 0.0906 - politics.csv
+Average accuracy 0.1927 - psychology.csv
+
+------category level sta------
+Average accuracy 0.0919 - STEM
+Average accuracy 0.1513 - humanities and social sciences
+Average accuracy 0.0904 - other
+
+------average acc sta------
+Average accuracy: 0.1170

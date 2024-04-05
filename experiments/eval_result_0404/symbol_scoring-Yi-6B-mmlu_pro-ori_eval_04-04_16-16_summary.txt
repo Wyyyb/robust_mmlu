@@ -1,0 +1,2 @@
+Average accuracy 0.7000 - biology.csv
+Average accuracy 0.4915 - business.csv

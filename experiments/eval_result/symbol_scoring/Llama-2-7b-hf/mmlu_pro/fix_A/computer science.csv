@@ -707,18 +707,50 @@ Devise a BASIC program to calculate the first N numbers of the FIBONACCI series.
 "Using COBOL language write a DATA DIVISION. There are four independent data items in the program, namely FIRST- NAME, eight characters; LAST-NAME, ten characters? TEL- NO, twelve characters; and STATE, twenty characters.","DATA-DIVISION is the third division of the COBOL program, describing the data to be used in the procedure division.",DATA-DIVISION is used to describe the procedure of the program.,DATA-DIVISION is the first division of the COBOL program.,DATA-DIVISION is the section where the program execution starts.,A,stemez-ComputerScience,False,0.034137335,0.0036360822,0.0057810876,0.9564456
 "80 standard characters,and E-MESSAGE: 52 standard characters.",The record BAS-REC will be stored in the indexed file in blocks of 5,The record BAS-REC will be stored in the indexed file in blocks of 3,The record BAS-REC will be stored in the indexed file in blocks of 2,The record BAS-REC will be stored in the indexed file in blocks of 10,A,stemez-ComputerScience,False,0.2659815,0.35959232,0.29647884,0.077947274
 "Given a one-dimensional array Y with 50 elements, and numbersU and I, write statements to compute the value of S fromthe following equation: S =y_i+ U {(y_i+ 1-y_i- 1) / 2} + (U^2 / 2) (y_i+ 1- 2y_i +y_i- 1) S =y_i+ U {(y_i+ 1-y_i- 1) / 2} + (U^2 / 2) (y_i+ 1- 2y_i +y_i- 1)",Stirling's interpolation formula,Lagrange's interpolation formula,Newton's interpolation formula,Taylor's interpolation formula,A,stemez-ComputerScience,True,0.4575741,0.3575267,0.13356178,0.051337462
-"Using APL, simulate the game of craps.","ablaCRAPS [1]A \leftarrow 10 [2]AGAIN:A \leftarrow A, B \leftarrow +/?2ho6 [3]ightarrow( ( (1 =hoA)\wedge\simB \epsilon 7 11 2 3 12) ee (1 
-ot =hoA) \sim \wedge\simB \epsilon (A [1] , 7) ) /AGAIN \sim \sim [4]ightarrow( ( (1 =hoA) \wedge B \epsilon 7 11) ee (1 
-ot =hoA) \wedge B =A [1] ) /WIN [5]`YOU LOSE WITH' ; A [6]ightarrow0 [7]WIN:`YOU WIN WITH' ; A [8]
-abla","ablaCRAPS [1]A \leftarrow 10 [2]AGAIN:A \leftarrow A, B \leftarrow +/?2ho6 [3]ightarrow( ( (1 =hoA)\wedge\simB \epsilon 7 11 2 3 12) ee (1 
-ot =hoA) \sim \wedge\simB \epsilon (A [1] , 7) ) /AGAIN \sim \sim [4]ightarrow( ( (1 =hoA) \wedge B \epsilon 2 3 12) ee (1 
-ot =hoA) \wedge B =A [1] ) /WIN [5]`YOU LOSE WITH' ; A [6]ightarrow0 [7]WIN:`YOU WIN WITH' ; A [8]
-abla","ablaCRAPS [1]A \leftarrow 10 [2]AGAIN:A \leftarrow A, B \leftarrow +/?2ho6 [3]ightarrow( ( (1 =hoA)\wedge\simB \epsilon 7 11 2 3 12) ee (1 
-ot =hoA) \sim \wedge\simB \epsilon (A [1] , 7) ) /AGAIN \sim \sim [4]ightarrow( ( (1 =hoA) \wedge B \epsilon 7 11 2 3 12) ee (1 
-ot =hoA) \wedge B =A [1] ) /WIN [5]`YOU LOSE WITH' ; A [6]ightarrow0 [7]WIN:`YOU WIN WITH' ; A [8]
-abla","ablaCRAPS [1]A \leftarrow 10 [2]AGAIN:A \leftarrow A, B \leftarrow +/?2ho6 [3]ightarrow( ( (1 =hoA)\wedge\simB \epsilon 7 11 2 3 12) ee (1 
-ot =hoA) \sim \wedge\simB \epsilon (A [1] , 7) ) /AGAIN \sim \sim [4]ightarrow( ( (1 =hoA) \wedge B \epsilon 7 11) ee (1 
-ot =hoA) \wedge B =A [1] ) /WIN [5]`YOU LOSE WITH' ; A [6]ightarrow0 [7]WIN:`YOU WIN WITH' ; A [8]
+"Using APL, simulate the game of craps.","ablaCRAPS [1]A \leftarrow 10 [2]AGAIN:A \leftarrow A, B \leftarrow +/?2
+ho6 [3]
+ightarrow( ( (1 =
+hoA)\wedge\simB \epsilon 7 11 2 3 12) ee (1 
+ot =
+hoA) \sim \wedge\simB \epsilon (A [1] , 7) ) /AGAIN \sim \sim [4]
+ightarrow( ( (1 =
+hoA) \wedge B \epsilon 7 11) ee (1 
+ot =
+hoA) \wedge B =A [1] ) /WIN [5]`YOU LOSE WITH' ; A [6]
+ightarrow0 [7]WIN:`YOU WIN WITH' ; A [8]
+abla","ablaCRAPS [1]A \leftarrow 10 [2]AGAIN:A \leftarrow A, B \leftarrow +/?2
+ho6 [3]
+ightarrow( ( (1 =
+hoA)\wedge\simB \epsilon 7 11 2 3 12) ee (1 
+ot =
+hoA) \sim \wedge\simB \epsilon (A [1] , 7) ) /AGAIN \sim \sim [4]
+ightarrow( ( (1 =
+hoA) \wedge B \epsilon 2 3 12) ee (1 
+ot =
+hoA) \wedge B =A [1] ) /WIN [5]`YOU LOSE WITH' ; A [6]
+ightarrow0 [7]WIN:`YOU WIN WITH' ; A [8]
+abla","ablaCRAPS [1]A \leftarrow 10 [2]AGAIN:A \leftarrow A, B \leftarrow +/?2
+ho6 [3]
+ightarrow( ( (1 =
+hoA)\wedge\simB \epsilon 7 11 2 3 12) ee (1 
+ot =
+hoA) \sim \wedge\simB \epsilon (A [1] , 7) ) /AGAIN \sim \sim [4]
+ightarrow( ( (1 =
+hoA) \wedge B \epsilon 7 11 2 3 12) ee (1 
+ot =
+hoA) \wedge B =A [1] ) /WIN [5]`YOU LOSE WITH' ; A [6]
+ightarrow0 [7]WIN:`YOU WIN WITH' ; A [8]
+abla","ablaCRAPS [1]A \leftarrow 10 [2]AGAIN:A \leftarrow A, B \leftarrow +/?2
+ho6 [3]
+ightarrow( ( (1 =
+hoA)\wedge\simB \epsilon 7 11 2 3 12) ee (1 
+ot =
+hoA) \sim \wedge\simB \epsilon (A [1] , 7) ) /AGAIN \sim \sim [4]
+ightarrow( ( (1 =
+hoA) \wedge B \epsilon 7 11) ee (1 
+ot =
+hoA) \wedge B =A [1] ) /WIN [5]`YOU LOSE WITH' ; A [6]
+ightarrow0 [7]WIN:`YOU WIN WITH' ; A [8]
 abla",A,stemez-ComputerScience,True,0.41560218,0.17943299,0.2122753,0.19268955
 What is the output for each of the following?,,,,,A,stemez-ComputerScience,True,0.41185316,0.31757814,0.16798672,0.10258202
 Write a FORTRAN program which determines whether or not the given square matrix (up to 20 × 20) is symmetrical.,"The FORTRAN program checks whether a matrix is symmetric by using two nested DO loops to verify if A(i, j) = A(j,i) for all i and j.",The program checks if the matrix is square by comparing the number of rows and columns.,The program checks the symmetry of a matrix by comparing the sum of all elements.,The program checks the symmetry of a matrix by multiplying it with its transpose and checking if the result is an identity matrix.,A,stemez-ComputerScience,True,0.66196567,0.15219156,0.07949965,0.106343135
@@ -900,10 +932,18 @@ a) .1_10 = (.19999...)_16 b) .875_10 = (.513)_6 c) .2_10 = (.001100110011...)_2,
 Explain how initialization is done for array variables. Can the statementDCL A(8) FIXED(3) INIT(0) initialize the ele-ments ofthe array A?,"No, it only initializes the first element to 0.","Yes, it initializes all elements to 1.","Yes, it initializes all elements to 0.","No, it does not initialize any element.",A,stemez-ComputerScience,True,0.31956294,0.15999548,0.28469828,0.23574333
 Explain the 'END OF FILE Condition' method of ending a Explain the 'END OF FILE Condition' method of ending a programin PL/I.,The end-file condition occurs when an attempt is made to acquire data from the input file after the last data from the file has already been read.,The end-file condition occurs when the file is corrupted,The end-file condition occurs when the file is empty,The end-file condition occurs when the file is not found,A,stemez-ComputerScience,True,0.56598574,0.11881391,0.17134579,0.14385454
 Write an APL program to build 10 rows of Pascal's triangle.,"
-ablaPASCAL [1]P \leftarrow 1 [2]P [3]ightarrow 2 × N \geqho\Rho\leftarrow (0,P) + (P,0) 
+ablaPASCAL [1]P \leftarrow 1 [2]P [3]
+ightarrow 2 × N \geq
+ho\Rho\leftarrow (0,P) + (P,0) 
 abla","
-ablaPASCAL [1]P \leftarrow 1 [2]P [3]ightarrow 2 × N \geqho\Rho\leftarrow (0,P) + (P,0)","P \leftarrow 1 [2]P [3]ightarrow 2 × N \geqho\Rho\leftarrow (0,P) + (P,0)","
-ablaPASCAL [1]P \leftarrow 1 [2]P [3]ightarrow 2 × N \geqho\Rho\leftarrow (P,0) + (0,P) 
+ablaPASCAL [1]P \leftarrow 1 [2]P [3]
+ightarrow 2 × N \geq
+ho\Rho\leftarrow (0,P) + (P,0)","P \leftarrow 1 [2]P [3]
+ightarrow 2 × N \geq
+ho\Rho\leftarrow (0,P) + (P,0)","
+ablaPASCAL [1]P \leftarrow 1 [2]P [3]
+ightarrow 2 × N \geq
+ho\Rho\leftarrow (P,0) + (0,P) 
 abla",A,stemez-ComputerScience,True,0.55730015,0.1548163,0.16618934,0.12169414
 Write a program which counts the number of times each letter is used in input text.,SNOBOL IV program,Python program,C++ program,Java program,A,stemez-ComputerScience,False,0.023203665,0.016486079,0.95891285,0.001397469
 Write a program which uses a bubble sort procedure to put given strings in lexical order.,Bubble Sort Program,Insertion Sort Program,Merge Sort Program,Quick Sort Program,A,stemez-ComputerScience,False,0.024514636,0.9726998,0.0023792156,0.00040640353
@@ -935,7 +975,15 @@ Writepseudocodeto describe an algorithm to find a particularsubarrayin a larger 
 How is an ARRAY declared inPL/I? Explain using examples.,An array in PL/I is declared using the format: DCL ARRAY NAME (DIMENSION ATTRIBUTES) DATA ATTRIBUTES;,An array in PL/I is declared using the format: ARRAY (DIMENSION ATTRIBUTES) NAME DCL DATA ATTRIBUTES;,An array in PL/I is declared using the format: NAME ARRAY DCL (DIMENSION ATTRIBUTES) DATA ATTRIBUTES;,An array in PL/I is declared using the format: ARRAY NAME DCL (DIMENSION ATTRIBUTES) DATA ATTRIBUTES;,A,stemez-ComputerScience,False,0.30671796,0.047550708,0.012259817,0.63347155
 "Explain the basic functions of a base register, and describe howit affects the location of a program segment in the main memoryof the IBM/360-370 computers.",A base register aids in the relocation of a program.,A base register decodes the instructions of a program.,A base register stores the data of a program.,A base register increases the speed of a program.,A,stemez-ComputerScience,True,0.9915206,0.004258255,0.0026428557,0.0015783893
 "Obtain the 7's and 8's complement of the following octal numbers: 770, 1263, 00010 and 0000.","Seven's complements are 007, 6514, 77767, 7777 and Eight's complements are 010, 6515, 77770, 10000","Seven's complements are 010, 1263, 00010, 0000 and Eight's complements are 007, 6514, 77767, 10000","Seven's complements are 010, 6515, 77770, 10000 and Eight's complements are 007, 6514, 77767, 7777","Seven's complements are 770, 1263, 00010, 0000 and Eight's complements are 777, 7777, 77777, 10000",A,stemez-ComputerScience,True,0.29313222,0.24569549,0.18483351,0.27633876
-"Write statements in APL to generate the identity matrix of dimension N. This matrix consists of N ones along the main diagonal and zeros everywhere else. Use the rho (\rho) and catenate (,) functions.","N \leftarrow 10 V \leftarrow (N,N) ho (1,Nho0) V","N \leftarrow 10 V \leftarrow (N,N) ho (N,Nho0) V","N \leftarrow 10 V \leftarrow (N,N) ho (0,Nho1) V","N \leftarrow 10 V \leftarrow (1,N) ho (N,Nho0) V",A,stemez-ComputerScience,True,0.5693729,0.15994024,0.07310415,0.19758274
+"Write statements in APL to generate the identity matrix of dimension N. This matrix consists of N ones along the main diagonal and zeros everywhere else. Use the rho (\rho) and catenate (,) functions.","N \leftarrow 10 V \leftarrow (N,N) 
+ho (1,N
+ho0) V","N \leftarrow 10 V \leftarrow (N,N) 
+ho (N,N
+ho0) V","N \leftarrow 10 V \leftarrow (N,N) 
+ho (0,N
+ho1) V","N \leftarrow 10 V \leftarrow (1,N) 
+ho (N,N
+ho0) V",A,stemez-ComputerScience,True,0.5693729,0.15994024,0.07310415,0.19758274
 What is wrong with each of the following gate representa-tions ?,"a) Single variable may be controlled simultaneously from two or more elements whose outputs are inconsistent, b) Circuit contains a closed loop of inconsistent dependency, c) Output in terms of a pair of simultaneous Boolean equations: is ambiguous","a) Single variable is controlled by one element, b) Circuit contains an open loop of consistent dependency, c) Output is represented in a single Boolean equation","a) Multiple variables are controlled simultaneously from two or more elements, b) Circuit contains a closed loop of consistent dependency, c) Output in terms of a pair of simultaneous Boolean equations: is clear","a) Single variable may be controlled simultaneously from two or more elements whose outputs are consistent, b) Circuit contains an open loop of inconsistent dependency, c) Output in terms of a pair of simultaneous Boolean equations: is ambiguous",A,stemez-ComputerScience,True,0.7413017,0.03818098,0.09447451,0.12604286
 "Give examples of the following editing procedures in APL. i ) Perform editing on a single instruction of a function. ii) Change the name of the header of a given function. iii) Open a function, exhibit a specific line, then direct program control to this line. iv) Erase a function that is contained in your active workspace.","Change NS to MSQ, Change header from VARIANCE to SDEV, Amend Line [10], Erase function SDEV","Change AVG to MEAN, Change header from VARIANCE to MEANSQ, Amend Line [5], Erase function AVG","Change RANGE to R, Change header from VARIANCE to RANGE, Amend Line [4], Erase function RANGE","Change X1 to X, Change header from VARIANCE to VAR, Amend Line [7], Erase function X1",A,stemez-ComputerScience,False,0.33624586,0.13781485,0.47184688,0.054092426
 Write the micro-instructions for the execute cycles of the following register reference instructions. Instruction Symbol Hexadecimal Code Definition CIR 7080 Circulate right E and AC CIL 7040 Circulate left E and AC SPA 7010 Skip if AC is positive SNA 7008 Skip if AC is negative SZA 7004 Skip if AC is zero SZE 7002 Skip if E is zero,Each register-reference instruction is specified when the expression q_7I ̅c_2t_3 [MBR]_i is True (logical 1) where the i_th bit of the MBR is the high bit specified by each instruction. All the instructions can be executed during one timing signal t_3.,All the instructions can be executed during multiple timing signals,Each register-reference instruction is specified when the expression q_7I ̅c_2t_3 [MBR]_i is True (logical 0),Each register-reference instruction is specified when the expression q_7I ̅c_2t_3 [MBR]_i is False,A,stemez-ComputerScience,False,0.22772744,0.082652375,0.5009419,0.18867838
@@ -1068,6 +1116,18 @@ Write a PL/I program that will simulate the moves of disks in the Towers of Hano
 "Define the term ""debugging.""","Debugging a program means the modification of programs, throughout its lifetime, in order to fix the faults that produce unacceptable or unexpected results.",Debugging means deploying a program.,Debugging is the process of creating bugs.,Debugging is the process of testing a program.,A,stemez-ComputerScience,True,0.81549346,0.08286362,0.058297947,0.04334497
 Define and draw a contrast between compilers and interpreters .,"A compiler translates the entire program into the machine language equivalent, while an interpreter interprets the statements one by one and directs the computer to do what the high-level statement intends.","A compiler interprets the statements one by one, while an interpreter translates the entire program into machine language.",Both compilers and interpreters translate the entire program into machine language.,Compilers and interpreters are the same in how they process high-level languages.,A,stemez-ComputerScience,True,0.9766888,0.0144254,0.0040241834,0.004861634
 "For the following PL/I program, a) Explain how a condition called ENDFILE CONDITION' arises. b) Show what will be printed out if the program is run. c) Write out a corrected program to avoid errors due to this condition . d) Show what the printout from the corrected program will be . EXAMPLE:PROCOPTIONS(MAIN); DCL(X,Y,Z) FIXED(3) INIT(0); GETLIST(Z); DO I = 1 TO Z; GET LIST(X); Y = Y + X; PUTLIST(I,Y); END; PUTLIST(21,Y); END EXAMPLE; The DATA CARD contains the following data: 8, 0, 1, 2, 3, 4, 5, 6",ENDFILE CONDITION,STARTFILE CONDITION,OVERFLOW CONDITION,UNDERFLOW CONDITION,A,stemez-ComputerScience,True,0.62519485,0.10624304,0.037899934,0.23066211
-Convert the following logical expressions to reverse Polish string notation: (a) (Z \downarrow ((((X) \odot Y) / (X \odot (Z))) > ((Y) \equiv X))) (b) (X / Y) / ((X / X) / (Y / Y)),"ZXceilY \odot XZceil \odot / YceilX\equiv> \downarrow, XY / XX / YY / / /","ZXceilY \odot XZceil \odot / YceilX\equiv> \downarrow, XX / XY / YY / / /","ZceilXY \odot XZceil \odot / YceilX\equiv> \downarrow, XY / XX / YY / / /","ZXceilX \odot YZceil \odot / YceilX\equiv> \downarrow, XY / XX / YY / / /",A,stemez-ComputerScience,True,0.50181043,0.28694296,0.065216236,0.14603043
+Convert the following logical expressions to reverse Polish string notation: (a) (Z \downarrow ((((X) \odot Y) / (X \odot (Z))) > ((Y) \equiv X))) (b) (X / Y) / ((X / X) / (Y / Y)),"ZX
+ceilY \odot XZ
+ceil \odot / Y
+ceilX\equiv> \downarrow, XY / XX / YY / / /","ZX
+ceilY \odot XZ
+ceil \odot / Y
+ceilX\equiv> \downarrow, XX / XY / YY / / /","Z
+ceilXY \odot XZ
+ceil \odot / Y
+ceilX\equiv> \downarrow, XY / XX / YY / / /","ZX
+ceilX \odot YZ
+ceil \odot / Y
+ceilX\equiv> \downarrow, XY / XX / YY / / /",A,stemez-ComputerScience,True,0.50181043,0.28694296,0.065216236,0.14603043
 "Write a FORTRAN program which reads 100 data cards, each consisting of four letters, and stores them in a vector WORD. Then sort these words into alphabetical order.","INTEGER WORD (1\O\O) LOGICAL SWT DO 1 I = 1, 1\O\O 1 READ2, WORD (I) 2 FORMAT (A4) N = 99 DO 3 I = 1,99 SWT = .FALSE. DO 4 J = 1, N IF (WORD (J).LE.WORD (J + 1)) GO TO 4 ITEMP = WORD (J) WORD (J) = WORD (J + l) WORD (J + l) = ITEMP SWT = .TRUE. 4 CONTINUE IF (.NOT. SWT) GO TO 5 3 N = N - 1 5 PRINT7, WORD 7 FORMAT ('\cyrchar\CYRF' ,1\cyrchar\CYRFA6) STOP END",IF (WORD (J).LE.WORD (J + 1)) GO TO 4 ITEMP = WORD (J),"DO 1 I = 1, 1\O\O 1 READ2, WORD (I)","N = 99 DO 3 I = 1,99 SWT = .FALSE. DO 4 J = 1, N",A,stemez-ComputerScience,True,0.5036053,0.11728234,0.14993274,0.22917962
 Write a program in APL to compute the gross pay of any num-ber of employees.,"The APL program given in the solution calculates the gross pay of any number of employees by continuously taking the input of employee names, hours worked and rate of pay, and then computing the gross pay.",The program calculates the net pay of employees,The program keeps track of employees' attendance,The program calculates the tax of employees,A,stemez-ComputerScience,True,0.816142,0.07191278,0.069770485,0.04217467
