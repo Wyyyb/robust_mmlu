@@ -3,7 +3,7 @@
 # 设置默认参数
 ntrain=5
 ngpu=1
-data_dir="../data/add_stemez_mmlu"
+data_dir="../data/mmlu_pro_v1"
 save_dir="../eval_result_0405"
 options_num=4
 use_rare_symbol=False
