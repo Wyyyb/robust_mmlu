@@ -1,4 +1,4 @@
-0,1,2,3,4,5,6,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_correct,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_Α_probs,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_Β_probs,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_Γ_probs,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_Δ_probs
+0,1,2,3,4,5,6,meta-llama/Llama-2-7b-hf_correct,meta-llama/Llama-2-7b-hf_choice_Α_probs,meta-llama/Llama-2-7b-hf_choice_Β_probs,meta-llama/Llama-2-7b-hf_choice_Γ_probs,meta-llama/Llama-2-7b-hf_choice_Δ_probs
 "A large data set contains information about all students majoring in computer science in colleges across the United States. The data set contains the following information about each student.
    ° The student's gender
    ° The state in which the student attends college

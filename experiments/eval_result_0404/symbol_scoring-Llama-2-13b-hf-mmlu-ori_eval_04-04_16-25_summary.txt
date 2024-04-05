@@ -10,3 +10,16 @@ Average accuracy 0.4348 - health.csv
 Average accuracy 0.5427 - history.csv
 Average accuracy 0.4067 - law.csv
 Average accuracy 0.3043 - math.csv
+Average accuracy 0.5069 - other.csv
+Average accuracy 0.4235 - philosophy.csv
+Average accuracy 0.3798 - physics.csv
+Average accuracy 0.5750 - politics.csv
+Average accuracy 0.5465 - psychology.csv
+
+------category level sta------
+Average accuracy 0.3817 - STEM
+Average accuracy 0.4727 - humanities and social sciences
+Average accuracy 0.5069 - other
+
+------average acc sta------
+Average accuracy: 0.4560
