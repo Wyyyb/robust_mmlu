@@ -1,4 +1,4 @@
-0,1,2,3,4,5,6,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_correct,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_A_probs,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_B_probs,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_C_probs,/ML-A100/team/mm/zhangge/Llama-2-7b-hf_choice_D_probs
+0,1,2,3,4,5,6,meta-llama/Llama-2-7b-hf_correct,meta-llama/Llama-2-7b-hf_choice_A_probs,meta-llama/Llama-2-7b-hf_choice_B_probs,meta-llama/Llama-2-7b-hf_choice_C_probs,meta-llama/Llama-2-7b-hf_choice_D_probs
 "Suppose the characters 0,1, . . . ,8,9,A,B,C,D, E,F are used to represent a hexadecimal (base-16) number. Here A = 10, B = 11, . . . ,F = 15. What is the largest base-10 integer that can be represented with a two-digit hexadecimal number, such as 14 or 3A?",32,225,255,256,C,ori_mmlu-high_school_computer_science,True,0.15093768,0.04898696,0.74767786,0.05239749
 "A large data set contains information about all students majoring in computer science in colleges across the United States. The data set contains the following information about each student.
    ° The student's gender

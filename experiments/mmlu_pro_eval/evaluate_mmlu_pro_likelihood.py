@@ -315,7 +315,7 @@ if __name__ == "__main__":
         "--model",
         "-m",
         type=str,
-        default="/ML-A100/team/mm/zhangge/Llama-2-7b-hf",
+        default="meta-llama/Llama-2-7b-hf",
     )
     args = parser.parse_args()
     main(args)

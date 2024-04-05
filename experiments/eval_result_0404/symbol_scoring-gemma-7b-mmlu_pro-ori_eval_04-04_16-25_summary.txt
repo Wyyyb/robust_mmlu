@@ -12,3 +12,14 @@ Average accuracy 0.3084 - law.csv
 Average accuracy 0.3039 - math.csv
 Average accuracy 0.3333 - other.csv
 Average accuracy 0.2092 - philosophy.csv
+Average accuracy 0.4032 - physics.csv
+Average accuracy 0.4453 - politics.csv
+Average accuracy 0.5323 - psychology.csv
+
+------category level sta------
+Average accuracy 0.3910 - STEM
+Average accuracy 0.3723 - humanities and social sciences
+Average accuracy 0.3333 - other
+
+------average acc sta------
+Average accuracy: 0.3812
