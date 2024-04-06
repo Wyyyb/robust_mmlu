@@ -25,7 +25,7 @@ def find_csv_filenames(dir_path):
 
 
 # 示例用法
-dir_path = '../data/ori_mmlu_data'
+dir_path = '../data/ori_mmlu_test_data'
 csv_files = find_csv_filenames(dir_path)
 print(",".join(csv_files))
 

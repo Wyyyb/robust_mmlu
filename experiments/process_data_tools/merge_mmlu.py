@@ -155,7 +155,7 @@ def save_dataset(dir_path, data_map):
 
 
 if __name__ == "__main__":
-    merge_mmlu("../data/ori_mmlu_data", "../data/merged_mmlu/")
+    merge_mmlu("../data/ori_mmlu_test_data", "../data/merged_mmlu/")
 
 
 
