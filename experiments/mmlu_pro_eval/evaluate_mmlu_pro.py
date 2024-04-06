@@ -174,6 +174,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
             continue
         # print("not exist", question_option_str)
         train_prompt = gen_prompt(dev_df, subject, k)
+        print("train_prompt", train_prompt)
         prompt = train_prompt + prompt_end
 
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
