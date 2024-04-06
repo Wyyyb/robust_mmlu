@@ -346,7 +346,6 @@ def ori_mmlu_main():
 
     for subject in subjects:
         all_data = read_csv_file(os.path.join(args.data_dir, subject + "_test.csv"))
-        all_data = all_data[:10]
         all_df = pd.DataFrame(all_data)
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
