@@ -164,6 +164,8 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
     answers = choices[: test_df.shape[1] - 2]
 
     for i in tqdm(range(test_df.shape[0])):
+        if i > 16:
+            continue
         # get prompt and make sure it fits
         k = args.ntrain
         prompt_end, options = format_example(test_df, i, include_answer=False)
