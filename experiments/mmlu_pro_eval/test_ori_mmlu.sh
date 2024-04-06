@@ -13,7 +13,7 @@ scoring_method="symbol_scoring"
 model="meta-llama/Llama-2-7b-hf"
 
 # cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=5
+export CUDA_VISIBLE_DEVICES=7
 # 调用 Python 脚本，并传递参数
 python evaluate_mmlu_pro.py \
                  --ntrain $ntrain \
