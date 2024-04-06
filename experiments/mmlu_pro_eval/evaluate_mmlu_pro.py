@@ -345,7 +345,7 @@ def ori_mmlu_main():
     cat_cors = {cat: [] for cat in ori_mmlu_categories}
 
     for subject in subjects:
-        all_data = read_csv_file(os.path.join(args.data_dir, subject))
+        all_data = read_csv_file(os.path.join(args.data_dir, subject + "_test.csv"))
         all_df = pd.DataFrame(all_data)
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
