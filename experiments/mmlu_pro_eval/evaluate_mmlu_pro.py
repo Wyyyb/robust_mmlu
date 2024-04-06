@@ -508,7 +508,7 @@ if __name__ == "__main__":
     time_str = time.strftime('%m-%d_%H-%M', time.localtime(timestamp))
     file_name = f"{file_prefix}_{time_str}_summary.txt"
     save_result_path = os.path.join(args.save_dir, file_name)
-    if "mmlu_ori" in args.data_dir:
+    if "ori_mmlu" in args.data_dir:
         ori_mmlu_main()
     else:
         main()
