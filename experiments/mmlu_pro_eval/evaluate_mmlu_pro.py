@@ -105,7 +105,7 @@ def format_example(df, idx, include_answer=True):
         ori_ans = df.iloc[idx, k + 1]
         ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ori_ans)
         if args.scoring_method == "symbol_scoring":
-            prompt += " {}\n\n".format(ori_ans)
+            prompt += " {}\n\n".format(choices[ans_index])
         elif args.scoring_method == "hybrid_scoring":
             prompt += " {}\n\n".format(options[ans_index])
     return prompt, options
