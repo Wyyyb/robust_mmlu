@@ -1,0 +1,3 @@
+Average accuracy 0.4120 - biology.csv
+Average accuracy 0.5602 - business.csv
+Average accuracy 0.2852 - chemistry.csv

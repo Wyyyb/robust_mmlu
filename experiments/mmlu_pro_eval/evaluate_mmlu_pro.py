@@ -9,6 +9,7 @@ import pandas as pd
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from transformers import AutoModelForCausalLM
 from categories import subcategories, categories
+from ori_mmlu_categories import ori_mmlu_categories, ori_mmlu_subcategories
 import transformers
 import time
 from transformers import GenerationConfig
@@ -171,7 +172,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
             question_option_str += str(test_df.iloc[i, index]) + "\n"
         if check_exist(exists_result, question_option_str, i):
             continue
-        print("not exist", question_option_str)
+        # print("not exist", question_option_str)
         train_prompt = gen_prompt(dev_df, subject, k)
         prompt = train_prompt + prompt_end
 
@@ -292,7 +293,7 @@ def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=
     return cors, acc, all_probs
 
 
-def main(args):
+def load_model():
     # model, tokenizer = None, None
     if "llama" in args.model.lower():
         model = transformers.AutoModelForCausalLM.from_pretrained(
@@ -321,6 +322,78 @@ def main(args):
         print("length of {} tokenizer".format(args.model), len(tokenizer))
     else:
         model, tokenizer = None, None
+    return model, tokenizer
+
+
+def ori_mmlu_main():
+    model, tokenizer = load_model()
+    print("model.eval()")
+    model.eval()
+
+    subjects = sorted(
+        [
+            f.split("_test.csv")[0]
+            for f in os.listdir(args.data_dir)
+            if "_test.csv" in f
+        ]
+    )
+
+    all_cors = []
+    subcat_cors = {
+        subcat: [] for subcat in ori_mmlu_subcategories.values()
+    }
+    cat_cors = {cat: [] for cat in ori_mmlu_categories}
+
+    for subject in subjects:
+        all_data = read_csv_file(os.path.join(args.data_dir, subject))
+        all_df = pd.DataFrame(all_data)
+        dev_df = all_df[: args.ntrain]
+        test_df = all_df[args.ntrain:]
+        if args.fixed_question_answer != -1:
+            test_df = fix_answer(test_df, args.fixed_question_answer)
+
+        if args.fixed_question_answer != -1:
+            test_df = fix_answer(test_df, args.fixed_question_answer)
+        if args.scoring_method == "hybrid_scoring":
+            cors, acc, probs = hybrid_eval(args, subject, model, tokenizer, dev_df, test_df)
+        else:
+            cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df)
+        subcat = ori_mmlu_subcategories[subject]
+        subcat_cors[subcat].append(cors)
+        for key in categories.keys():
+            if subcat in categories[key]:
+                cat_cors[key].append(cors)
+        all_cors.append(cors)
+
+        test_df["{}_correct".format(args.model)] = cors
+        for j in range(probs.shape[1]):
+            choice = choices[j]
+            test_df["{}_choice_{}_probs".format(args.model, choice)] = probs[:, j]
+        test_data = test_df.to_numpy().tolist()
+        write_2dlist_to_csv(test_data, os.path.join(save_result_dir, "{}_test.csv".format(subject)))
+
+    with open(os.path.join(save_result_path), 'a') as f:
+        f.write("\n------subcategory level sta------\n")
+        for subcat in subcat_cors:
+            if not subcat_cors[subcat]:
+                continue
+            subcat_acc = np.mean(np.concatenate(subcat_cors[subcat]))
+            f.write("Average accuracy {:.4f} - {}\n".format(subcat_acc, subcat))
+
+        f.write("\n------category level sta------\n")
+        for cat in cat_cors:
+            if not cat_cors[cat]:
+                continue
+            cat_acc = np.mean(np.concatenate(cat_cors[cat]))
+            f.write("Average accuracy {:.4f} - {}\n".format(cat_acc, cat))
+
+        f.write("\n------average acc sta------\n")
+        weighted_acc = np.mean(np.concatenate(all_cors))
+        f.write("Average accuracy: {:.4f}\n".format(weighted_acc))
+
+
+def main():
+    model, tokenizer = load_model()
     print("model.eval()")
     model.eval()
 
@@ -353,16 +426,9 @@ def main(args):
             exists_result = []
         all_data = read_csv_file(os.path.join(args.data_dir, subject))
         all_df = pd.DataFrame(all_data)
-        # print("all_df length", len(all_df.values.tolist()))
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
-        # print("test_df length", len(test_df.values.tolist()))
-        if args.fixed_answer != -1:
-            dev_df = fix_answer(dev_df, args.fixed_answer)
-            test_df = fix_answer(test_df, args.fixed_answer)
-        elif args.fixed_example_answer != -1:
-            dev_df = fix_answer(dev_df, args.fixed_example_answer)
-        elif args.fixed_question_answer != -1:
+        if args.fixed_question_answer != -1:
             test_df = fix_answer(test_df, args.fixed_question_answer)
         if args.scoring_method == "hybrid_scoring":
             cors, acc, probs = hybrid_eval(args, subject, model, tokenizer, dev_df, test_df, exists_result)
@@ -425,8 +491,6 @@ if __name__ == "__main__":
     parser.add_argument("--save_dir", "-s", type=str, default="results")
     parser.add_argument("--options_num", "-o", type=int, default=4)
     parser.add_argument("--use_rare_symbol", "-r", type=lambda x: bool(strtobool(x)), default=False)
-    parser.add_argument("--fixed_answer", "-f", type=int, default=-1)
-    parser.add_argument("--fixed_example_answer", "-e", type=int, default=-1)
     parser.add_argument("--fixed_question_answer", "-q", type=int, default=-1)
     parser.add_argument("--scoring_method", "-sm", type=str, default="symbol_scoring")
     parser.add_argument(
@@ -444,4 +508,4 @@ if __name__ == "__main__":
     time_str = time.strftime('%m-%d_%H-%M', time.localtime(timestamp))
     file_name = f"{file_prefix}_{time_str}_summary.txt"
     save_result_path = os.path.join(args.save_dir, file_name)
-    main(args)
+    main()

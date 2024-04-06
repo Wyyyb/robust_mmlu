@@ -55,11 +55,7 @@ subcategories = {
     "sociology": ["culture"],
     "us_foreign_policy": ["politics"],
     "virology": ["health"],
-    "world_religions": ["philosophy"],
-    "Math_theoremQA": ["math"],
-    "EECS_theoremQA": ["computer science"],
-    "Physics_theoremQA": ["physics"],
-    "Finance_theoremQA": ["business"]
+    "world_religions": ["philosophy"]
 }
 
 categories = {
