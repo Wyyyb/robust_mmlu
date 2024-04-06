@@ -164,8 +164,6 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
     answers = choices[: test_df.shape[1] - 2]
 
     for i in tqdm(range(test_df.shape[0])):
-        if i > 16:
-            continue
         # get prompt and make sure it fits
         k = args.ntrain
         prompt_end, options = format_example(test_df, i, include_answer=False)
@@ -348,6 +346,7 @@ def ori_mmlu_main():
 
     for subject in subjects:
         all_data = read_csv_file(os.path.join(args.data_dir, subject + "_test.csv"))
+        all_data = all_data[:10]
         all_df = pd.DataFrame(all_data)
         dev_df = all_df[: args.ntrain]
         test_df = all_df[args.ntrain:]
@@ -510,6 +509,7 @@ if __name__ == "__main__":
     time_str = time.strftime('%m-%d_%H-%M', time.localtime(timestamp))
     file_name = f"{file_prefix}_{time_str}_summary.txt"
     save_result_path = os.path.join(args.save_dir, file_name)
+    os.makedirs(save_result_dir, exist_ok=True)
     if "ori_mmlu" in args.data_dir:
         ori_mmlu_main()
     else:
