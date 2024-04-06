@@ -197,7 +197,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
                     [
                         logits[0, -1, tokenizer(chars[i]).input_ids[-1]] for i in range(args.options_num)
                     ]
-                ),
+                ).to(torch.float32),
                 dim=0,
             )
             .detach()
