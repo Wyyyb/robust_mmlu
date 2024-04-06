@@ -375,7 +375,9 @@ def ori_mmlu_main():
 
     with open(os.path.join(save_result_path), 'a') as f:
         f.write("\n------subcategory level sta------\n")
-        for subcat in subcat_cors:
+        keys = list(subcat_cors.keys())
+        keys = sorted(keys)
+        for subcat in keys:
             if not subcat_cors[subcat]:
                 continue
             subcat_acc = np.mean(np.concatenate(subcat_cors[subcat]))
