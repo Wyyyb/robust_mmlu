@@ -84,6 +84,12 @@ def fix_answer(all_df, fixed_answer_index):
 
 
 def format_subject(subject):
+    if ".csv" not in subject and "_" in subject:
+        l = subject.split("_")
+        s = ""
+        for entry in l:
+            s += " " + entry
+        return s
     return subject.replace(".csv", "")
 
 
@@ -98,8 +104,10 @@ def format_example(df, idx, include_answer=True):
     if include_answer:
         ori_ans = df.iloc[idx, k + 1]
         ans_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(ori_ans)
-        prompt += " {}\n\n".format(options[ans_index])
-
+        if args.scoring_method == "symbol_scoring":
+            prompt += " {}\n\n".format(ori_ans)
+        elif args.scoring_method == "hybrid_scoring":
+            prompt += " {}\n\n".format(options[ans_index])
     return prompt, options
 
 
