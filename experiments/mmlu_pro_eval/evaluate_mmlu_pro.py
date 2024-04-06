@@ -360,8 +360,8 @@ def ori_mmlu_main():
             cors, acc, probs = eval(args, subject, model, tokenizer, dev_df, test_df)
         subcat = ori_mmlu_subcategories[subject]
         subcat_cors[subcat].append(cors)
-        for key in categories.keys():
-            if subcat in categories[key]:
+        for key in ori_mmlu_categories.keys():
+            if subcat in ori_mmlu_categories[key]:
                 cat_cors[key].append(cors)
         all_cors.append(cors)
 
@@ -508,4 +508,7 @@ if __name__ == "__main__":
     time_str = time.strftime('%m-%d_%H-%M', time.localtime(timestamp))
     file_name = f"{file_prefix}_{time_str}_summary.txt"
     save_result_path = os.path.join(args.save_dir, file_name)
-    main()
+    if "mmlu_ori" in args.data_dir:
+        ori_mmlu_main()
+    else:
+        main()
