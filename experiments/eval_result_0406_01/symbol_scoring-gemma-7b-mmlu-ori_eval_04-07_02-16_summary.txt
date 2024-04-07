@@ -1,0 +1,85 @@
+Average accuracy 0.3100 - abstract_algebra
+Average accuracy 0.5556 - anatomy
+Average accuracy 0.7039 - astronomy
+Average accuracy 0.6500 - business_ethics
+Average accuracy 0.6792 - clinical_knowledge
+Average accuracy 0.7361 - college_biology
+Average accuracy 0.4200 - college_chemistry
+Average accuracy 0.4700 - college_computer_science
+Average accuracy 0.3100 - college_mathematics
+Average accuracy 0.6705 - college_medicine
+Average accuracy 0.3824 - college_physics
+Average accuracy 0.7200 - computer_security
+Average accuracy 0.6298 - conceptual_physics
+Average accuracy 0.4386 - econometrics
+Average accuracy 0.6069 - electrical_engineering
+Average accuracy 0.4603 - elementary_mathematics
+Average accuracy 0.4762 - formal_logic
+Average accuracy 0.3900 - global_facts
+Average accuracy 0.7968 - high_school_biology
+Average accuracy 0.5123 - high_school_chemistry
+Average accuracy 0.6800 - high_school_computer_science
+Average accuracy 0.7636 - high_school_european_history
+Average accuracy 0.8131 - high_school_geography
+Average accuracy 0.8756 - high_school_government_and_politics
+Average accuracy 0.6359 - high_school_macroeconomics
+Average accuracy 0.4037 - high_school_mathematics
+Average accuracy 0.6471 - high_school_microeconomics
+Average accuracy 0.3907 - high_school_physics
+Average accuracy 0.8257 - high_school_psychology
+Average accuracy 0.4907 - high_school_statistics
+Average accuracy 0.7990 - high_school_us_history
+Average accuracy 0.8270 - high_school_world_history
+Average accuracy 0.7220 - human_aging
+Average accuracy 0.7481 - human_sexuality
+Average accuracy 0.8512 - international_law
+Average accuracy 0.7778 - jurisprudence
+Average accuracy 0.7485 - logical_fallacies
+Average accuracy 0.5089 - machine_learning
+Average accuracy 0.8544 - management
+Average accuracy 0.8889 - marketing
+Average accuracy 0.7200 - medical_genetics
+Average accuracy 0.8480 - miscellaneous
+Average accuracy 0.6965 - moral_disputes
+Average accuracy 0.2715 - moral_scenarios
+Average accuracy 0.7680 - nutrition
+Average accuracy 0.7138 - philosophy
+Average accuracy 0.7222 - prehistory
+Average accuracy 0.4823 - professional_accounting
+Average accuracy 0.4687 - professional_law
+Average accuracy 0.5772 - professional_medicine
+Average accuracy 0.6879 - professional_psychology
+Average accuracy 0.6636 - public_relations
+Average accuracy 0.7224 - security_studies
+Average accuracy 0.8408 - sociology
+Average accuracy 0.8700 - us_foreign_policy
+Average accuracy 0.5241 - virology
+Average accuracy 0.8596 - world_religions
+
+------subcategory level sta------
+Average accuracy 0.7775 - biology
+Average accuracy 0.8261 - business
+Average accuracy 0.4818 - chemistry
+Average accuracy 0.5922 - computer science
+Average accuracy 0.8042 - culture
+Average accuracy 0.6092 - economics
+Average accuracy 0.6069 - engineering
+Average accuracy 0.8131 - geography
+Average accuracy 0.6604 - health
+Average accuracy 0.7731 - history
+Average accuracy 0.5139 - law
+Average accuracy 0.4239 - math
+Average accuracy 0.7202 - other
+Average accuracy 0.5144 - philosophy
+Average accuracy 0.5516 - physics
+Average accuracy 0.7809 - politics
+Average accuracy 0.7528 - psychology
+
+------category level sta------
+Average accuracy 0.5417 - STEM
+Average accuracy 0.5654 - humanities
+Average accuracy 0.7335 - social sciences
+Average accuracy 0.7042 - other (business, health, misc.)
+
+------average acc sta------
+Average accuracy: 0.6292
