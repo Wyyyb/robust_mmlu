@@ -1,0 +1,14 @@
+Average accuracy 0.3500 - abstract_algebra
+Average accuracy 0.6000 - anatomy
+Average accuracy 0.6974 - astronomy
+Average accuracy 0.6500 - business_ethics
+Average accuracy 0.7132 - clinical_knowledge
+Average accuracy 0.7361 - college_biology
+Average accuracy 0.4200 - college_chemistry
+Average accuracy 0.6800 - college_computer_science
+Average accuracy 0.4900 - college_mathematics
+Average accuracy 0.6416 - college_medicine
+Average accuracy 0.3235 - college_physics
+Average accuracy 0.7600 - computer_security
+Average accuracy 0.6213 - conceptual_physics
+Average accuracy 0.5175 - econometrics
