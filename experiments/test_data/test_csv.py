@@ -29,7 +29,7 @@ def csv_read_csv(filename):
     #         print("found, index is", data.index(each))
     return data
 
-ori_chemistry = "/Users/server/MMLU/git/robust_mmlu/experiments/data/mmlu_pro_v1/chemistry.csv"
+ori_chemistry = "/Users/server/MMLU/git/robust_mmlu/experiments/data/mmlu_pro_v0_1/chemistry.csv"
 chemistry = "/Users/server/MMLU/git/robust_mmlu/experiments/eval_result/symbol_scoring/Llama-2-7b-hf/mmlu_pro/ori_eval/chemistry.csv"
 
 

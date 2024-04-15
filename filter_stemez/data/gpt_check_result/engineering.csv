@@ -1,0 +1,287 @@
+Molecules of a gas are crossing a given plane of unit area in unit time. Show that the average total kinetic energy of the molecules is 2kT.,2kT,3kT,kT,4kT,A,stemez-Thermodynamics,FALSE,"The original question is a proof problem, which is not suitable for a multiple-choice question.",What is the average total kinetic energy of the molecules of a gas crossing a given plane of unit area in unit time?,A. 2kT B. 3kT C. kT D. 4kT,A,"The average total kinetic energy of the molecules of a gas crossing a given plane of unit area in unit time is 2kT, according to the kinetic theory of gases.",重写的问题：一个气体的分子正在穿过单位面积的平面。这些分子的平均总动能是多少？选项：A. 2kT B. 3kT C. kT D. 4kT正确答案：A简要分析：根据气体动力学理论，穿过单位面积平面的气体分子的平均总动能是2kT。中文翻译：一个气体的分子正在穿过单位面积的平面。这些分子的平均总动能是多少？选项：A. 2kT B. 3kT C. kT D. 4kT正确答案：A简要分析：根据气体动力学理论，穿过单位面积平面的气体分子的平均总动能是2kT。,"{
+    ""suitable"": ""False"",
+    ""brief reason"": ""The original question is a proof problem, which is not suitable for a multiple-choice question."",
+    ""rewritten question"": ""What is the average total kinetic energy of the molecules of a gas crossing a given plane of unit area in unit time?"",
+    ""rewritten options"": ""A. 2kT B. 3kT C. kT D. 4kT"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""The average total kinetic energy of the molecules of a gas crossing a given plane of unit area in unit time is 2kT, according to the kinetic theory of gases."",
+    ""Chinese translation"": ""重写的问题：一个气体的分子正在穿过单位面积的平面。这些分子的平均总动能是多少？选项：A. 2kT B. 3kT C. kT D. 4kT正确答案：A简要分析：根据气体动力学理论，穿过单位面积平面的气体分子的平均总动能是2kT。中文翻译：一个气体的分子正在穿过单位面积的平面。这些分子的平均总动能是多少？选项：A. 2kT B. 3kT C. kT D. 4kT正确答案：A简要分析：根据气体动力学理论，穿过单位面积平面的气体分子的平均总动能是2kT。""
+}"
+"Air is flowing through a nozzle with a 90% efficiency and an expansion rate of 2.0 Kg/s. The inlet conditions are P = 550kPa and T = 680\textdegreeK. If the exit pressure is 120kPa calculate the actual exit area, velocity and enthalpy. Assume K = 1.4.","Exit area = 5.37 × 10^-3m^2, Velocity = 850 m/s, Enthalpy = 550 KJ/kg","Exit area = 2.37 × 10^-3m^2, Velocity = 550 m/s, Enthalpy = 400 KJ/kg","Exit area = 3.37 × 10^-3m^2, Velocity = 658 m/s, Enthalpy = 465.8 KJ/kg","Exit area = 4.37 × 10^-3m^2, Velocity = 750 m/s, Enthalpy = 500 KJ/kg",C,stemez-Thermodynamics,TRUE,None,None,None,None,None,None,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""None"",
+    ""Chinese translation"": ""None""
+}"
+"When 100 kJ of work is done on a closed system during a process, the total energy of the system increases by 55.0 kJ. Calculate how much heat is either added or removed from thesystem?",45.0 kJ of energy in the form of heat is added to the system,100.0 kJ of energy in the form of heat is removed from the system,45.0 kJ of energy in the form of heat is removed from the system,55.0 kJ of energy in the form of heat is added to the system,C,stemez-Thermodynamics,TRUE,None,None,None,C,"The first law of thermodynamics states that the change in internal energy of a system is equal to the heat added to the system minus the work done by the system. In this case, the work is done on the system, so it is positive. The change in internal energy is positive, so the heat must be negative, meaning it is removed from the system. The amount of heat removed is the difference between the work done on the system and the increase in internal energy, which is 45.0 kJ.",问题：当一个封闭系统在一个过程中做了100 kJ的工作，系统的总能量增加了55.0 kJ。计算有多少热量被添加或从系统中移除？选项：A.45.0 kJ的热量以热的形式被添加到系统中B.100.0 kJ的热量以热的形式从系统中移除C.45.0 kJ的热量以热的形式从系统中移除D.55.0 kJ的热量以热的形式被添加到系统中。正确答案：C。简要分析：热力学第一定律指出，系统的内能变化等于加入系统的热量减去系统做的工作。在这种情况下，工作是在系统上完成的，所以它是正的。内能的变化是正的，所以热量必须是负的，意味着它从系统中移除。移除的热量量是在系统上做的工作和内能增加的差值，即45.0 kJ。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""C"",
+    ""brief analysis"": ""The first law of thermodynamics states that the change in internal energy of a system is equal to the heat added to the system minus the work done by the system. In this case, the work is done on the system, so it is positive. The change in internal energy is positive, so the heat must be negative, meaning it is removed from the system. The amount of heat removed is the difference between the work done on the system and the increase in internal energy, which is 45.0 kJ."",
+    ""Chinese translation"": ""问题：当一个封闭系统在一个过程中做了100 kJ的工作，系统的总能量增加了55.0 kJ。计算有多少热量被添加或从系统中移除？选项：A.45.0 kJ的热量以热的形式被添加到系统中B.100.0 kJ的热量以热的形式从系统中移除C.45.0 kJ的热量以热的形式从系统中移除D.55.0 kJ的热量以热的形式被添加到系统中。正确答案：C。简要分析：热力学第一定律指出，系统的内能变化等于加入系统的热量减去系统做的工作。在这种情况下，工作是在系统上完成的，所以它是正的。内能的变化是正的，所以热量必须是负的，意味着它从系统中移除。移除的热量量是在系统上做的工作和内能增加的差值，即45.0 kJ。""
+}"
+Calculate the specific availability function \textphi for steam at a pressure of 100 lb/in^2 and a temperature of 1000\textdegreeF in an environment of pressure 14.7 lb/in^2 and a temperature of 60\textdegreeF. Also calculate the specific availability of steam in a process having the same initial state as given above and whose final state is at a pressure of 40 lb/in^2 and a temperature of 500\textdegreeF.,396.2 Btu/lbm,121.0 Btu /lbm,275.2 Btu/lbm,1179.9 Btu/lbm,B,stemez-Thermodynamics,TRUE,None,None,None,None,None,None,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""None"",
+    ""Chinese translation"": ""None""
+}"
+"An automobile battery is able to deliver 5.2 MJ of electrical energy to start a car. Suppose compressed air at 7MPa, 25\textdegreeC were to be used for doing the same work. What will be the volume of the tank required in order for the compressed air to have an availability of 5.2 MJ?",0.2276 m^3,0.3124 m^3,0.1892 m^3,0.2567 m^3,A,stemez-Thermodynamics,TRUE,None,None,None,This cannot be determined without additional information,"This question is suitable as a multiple-choice question, but the correct answer cannot be determined without additional information such as the specific heat capacity of air and the efficiency of the air compressor.",这个问题适合作为多项选择题，但是没有额外的信息（如空气的比热容和空气压缩机的效率），无法确定正确答案。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""This cannot be determined without additional information"",
+    ""brief analysis"": ""This question is suitable as a multiple-choice question, but the correct answer cannot be determined without additional information such as the specific heat capacity of air and the efficiency of the air compressor."",
+    ""Chinese translation"": ""这个问题适合作为多项选择题，但是没有额外的信息（如空气的比热容和空气压缩机的效率），无法确定正确答案。""
+}"
+"A piston-cylinder device has an initial contained volume of 0.1 ft^3 and contains steam at an initial state of 160 psia, 500\textdegreeF. The steam is then expanded to 20 psia, and as a result of this process 0.50 Btu of heat is transferred to the system. Assuming atmospheric conditions to be 14.7 psia, 80\textdegreeF calculate (a) the actual useful work done by the system, and (b) the change in availability during the process.","- 1.82 Btu, - 2.34 Btu","- 0.82 Btu, - 2.34 Btu","- 0.82 Btu, 2.34 Btu","0.82 Btu, 2.34 Btu",B,stemez-Thermodynamics,FALSE,"The original question requires students to perform calculations and provide two numerical answers, which is not suitable for a multiple-choice question format.","A piston-cylinder device initially contains steam at a state of 160 psia, 500°F in a volume of 0.1 ft^3. The steam is expanded to 20 psia, and 0.50 Btu of heat is transferred to the system. Assuming atmospheric conditions of 14.7 psia, 80°F, which of the following pairs of values could represent (a) the actual useful work done by the system, and (b) the change in availability during the process?","A. 1.82 Btu, -2.34 Btu
+B. 0.82 Btu, -2.34 Btu
+C. 0.82 Btu, 2.34 Btu
+D. 1.82 Btu, 2.34 Btu",None,The correct answer cannot be determined without performing the necessary calculations based on the given conditions and the principles of thermodynamics.,"一个活塞-气缸装置最初包含在0.1立方英尺的体积中，状态为160 psia，500°F的蒸汽。然后将蒸汽扩展到20 psia，并将0.50 Btu的热量转移到系统中。假设大气条件为14.7 psia，80°F，以下哪一对值可能代表（a）系统实际做的有用工作，和（b）过程中可用性的变化？
+A. 1.82 Btu, -2.34 Btu
+B. 0.82 Btu, -2.34 Btu
+C. 0.82 Btu, 2.34 Btu
+D. 1.82 Btu, 2.34 Btu
+正确答案无法确定，需要根据给定的条件和热力学原理进行必要的计算。","{
+    ""suitable"": ""False"",
+    ""brief reason"": ""The original question requires students to perform calculations and provide two numerical answers, which is not suitable for a multiple-choice question format."",
+    ""rewritten question"": ""A piston-cylinder device initially contains steam at a state of 160 psia, 500°F in a volume of 0.1 ft^3. The steam is expanded to 20 psia, and 0.50 Btu of heat is transferred to the system. Assuming atmospheric conditions of 14.7 psia, 80°F, which of the following pairs of values could represent (a) the actual useful work done by the system, and (b) the change in availability during the process?"",
+    ""rewritten options"": ""A. 1.82 Btu, -2.34 Btu\nB. 0.82 Btu, -2.34 Btu\nC. 0.82 Btu, 2.34 Btu\nD. 1.82 Btu, 2.34 Btu"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""The correct answer cannot be determined without performing the necessary calculations based on the given conditions and the principles of thermodynamics."",
+    ""Chinese translation"": ""一个活塞-气缸装置最初包含在0.1立方英尺的体积中，状态为160 psia，500°F的蒸汽。然后将蒸汽扩展到20 psia，并将0.50 Btu的热量转移到系统中。假设大气条件为14.7 psia，80°F，以下哪一对值可能代表（a）系统实际做的有用工作，和（b）过程中可用性的变化？\nA. 1.82 Btu, -2.34 Btu\nB. 0.82 Btu, -2.34 Btu\nC. 0.82 Btu, 2.34 Btu\nD. 1.82 Btu, 2.34 Btu\n正确答案无法确定，需要根据给定的条件和热力学原理进行必要的计算。""
+}"
+"SCUBA tanks normally have a volume of 1 ft^3 and contain air at 50 psia and 75\textdegreeF after it is used. Assume that they are recharged by connecting them to a pipeline at 100 psia and 120\textdegreeF. Air is passed into each tank until the pressure in it is 1000 psia. Calculate the amount of air added and the total amount of air in the tank at the end of filling if (a) the tank is filled slowly and the final temperature of air in the tank is the same as the room temperature (75\textdegreeF). (b) If the tanks are filled rapidly, so that the process is adiabatic. Assume air obeys the ideal gas equation of state and C_v = 4.4 + 1.5 × 10^-3T cal/g-mol\textdegreeK.",3.53 lb_m,5.07 lb_m,"4.82 lb_m for slow filling, 3.28 lb_m for rapid filling",0.254 lb_m,C,stemez-Thermodynamics,FALSE,The original question is a calculation problem that requires detailed steps and cannot be answered directly from the given options without working through the problem.,"Consider a SCUBA tank with a volume of 1 ft^3, initially containing air at 50 psia and 75°F. It is recharged by connecting it to a pipeline at 100 psia and 120°F, and air is passed into the tank until the pressure reaches 1000 psia. If the tank is filled slowly and the final temperature of air in the tank is the same as the room temperature (75°F), which of the following is the closest to the total amount of air in the tank at the end of filling? Assume air obeys the ideal gas equation of state and C_v = 4.4 + 1.5 × 10^-3T cal/g-mol°K.",A. 3.53 lb_m B. 5.07 lb_m C. 4.82 lb_m D. 0.254 lb_m,This cannot be determined without the actual calculation.,The correct answer cannot be determined without the actual calculation. The question involves the application of the ideal gas law and the specific heat capacity of air to calculate the total amount of air in the tank after filling.,假设一个SCUBA潜水罐体积为1立方英尺，最初含有50 psia和75°F的空气。通过将其连接到100 psia和120°F的管道进行充气，空气被传入罐中，直到压力达到1000 psia。如果罐子填充得很慢，罐中空气的最终温度与室温（75°F）相同，那么以下哪个选项最接近填充结束时罐中空气的总量？假设空气遵循理想气体状态方程，C_v = 4.4 + 1.5 × 10^-3T cal/g-mol°K。 A. 3.53 lb_m B. 5.07 lb_m C. 4.82 lb_m D. 0.254 lb_m。正确答案无法在没有实际计算的情况下确定。问题涉及应用理想气体定律和空气的比热容来计算填充后罐中的空气总量。,"{
+    ""suitable"": ""False"",
+    ""brief reason"": ""The original question is a calculation problem that requires detailed steps and cannot be answered directly from the given options without working through the problem."",
+    ""rewritten question"": ""Consider a SCUBA tank with a volume of 1 ft^3, initially containing air at 50 psia and 75°F. It is recharged by connecting it to a pipeline at 100 psia and 120°F, and air is passed into the tank until the pressure reaches 1000 psia. If the tank is filled slowly and the final temperature of air in the tank is the same as the room temperature (75°F), which of the following is the closest to the total amount of air in the tank at the end of filling? Assume air obeys the ideal gas equation of state and C_v = 4.4 + 1.5 × 10^-3T cal/g-mol°K."",
+    ""rewritten options"": ""A. 3.53 lb_m B. 5.07 lb_m C. 4.82 lb_m D. 0.254 lb_m"",
+    ""correct answer"": ""This cannot be determined without the actual calculation."",
+    ""brief analysis"": ""The correct answer cannot be determined without the actual calculation. The question involves the application of the ideal gas law and the specific heat capacity of air to calculate the total amount of air in the tank after filling."",
+    ""Chinese translation"": ""假设一个SCUBA潜水罐体积为1立方英尺，最初含有50 psia和75°F的空气。通过将其连接到100 psia和120°F的管道进行充气，空气被传入罐中，直到压力达到1000 psia。如果罐子填充得很慢，罐中空气的最终温度与室温（75°F）相同，那么以下哪个选项最接近填充结束时罐中空气的总量？假设空气遵循理想气体状态方程，C_v = 4.4 + 1.5 × 10^-3T cal/g-mol°K。 A. 3.53 lb_m B. 5.07 lb_m C. 4.82 lb_m D. 0.254 lb_m。正确答案无法在没有实际计算的情况下确定。问题涉及应用理想气体定律和空气的比热容来计算填充后罐中的空气总量。""
+}"
+"A cylinder piston arrangement compresses air at 70\textdegreeF and 14.7 psia to 294 psia. The compression follows a reversible process defined by the relation PV^1.3 = C. (a) Calculate the work performed and the heat transferred in this case, (b) Also calculate the specific heat. In this case the specific heat is considered to be a constant. Q - W = \DeltaE = \DeltaU","- 90,000 ft-lbm, - 25 Btu, - 0.0500 Btu/lb degree","- 95,800 ft-lbm, - 30.1 Btu, - 0.0522 Btu/lb degree","- 92,500 ft-lbm, - 28 Btu, - 0.0540 Btu/lb degree","- 93,800 ft-lbm, - 29.1 Btu, - 0.0552 Btu/lb degree",D,stemez-Thermodynamics,TRUE,None,None,None,None,None,None,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""None"",
+    ""Chinese translation"": ""None""
+}"
+A group of twenty executives attend a board meeting in a roomwhich measures 20 ft by 20 ft and has a 10 ft ceiling. Assume that each person occupies 2.5 ft^3 and gives out about375 Btu of heat per hour. Calculate the air temperaturerise occurring within 15 min of the start of the conferenceif the room is completely sealed and insulated. Takec_vfor air as 0.1715 Btu/lbm\textdegreeF.,37°F,27°F,57°F,47°F,A,stemez-Thermodynamics,TRUE,None,None,None,None,None,None,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""None"",
+    ""Chinese translation"": ""None""
+}"
+"Find the throat area, exit area and the exit Mach number for a nozzle having an efficiency of 90%. The initial air pressure and temperature are 60 psia and 1500\textdegreeR respectively. The air mass flow rate is 0.6 lb/sec and the exit pressure is 14.696 psia.","Throat area: 0.0051 ft^2, Exit area: 0.0068 ft^2, Exit Mach number: 1.45","Throat area: 0.0061 ft^2, Exit area: 0.0078 ft^2, Exit Mach number: 1.55","Throat area: 0.0051 ft^2, Exit area: 0.0068 ft^2, Exit Mach number: 1.35","Throat area: 0.0068 ft^2, Exit area: 0.0051 ft^2, Exit Mach number: 1.45",A,stemez-Thermodynamics,TRUE,None,None,None,None,None,None,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""None"",
+    ""Chinese translation"": ""None""
+}"
+"An adiabatically run air turbine has a nozzle of 4 in. diameter. The air flowing through the nozzle, has a pressure of 735 psia and a temperature of 350 \textdegreeR. Calculate the air velocity as a function of P_2/P_1 and also the maximum output of air if k = 1.35.",1.5 Ib/sec,2.0 Ib/sec,2.5 Ib/sec,3.5 Ib/sec,C,stemez-Thermodynamics,TRUE,None,None,None,None,"This question is suitable as a multiple-choice question for a subject related to fluid dynamics or thermodynamics. It requires the student to apply the principles of adiabatic flow and the ideal gas law to calculate the air velocity and maximum output. However, without the necessary formulas or context, it's not possible to determine the correct answer.",这个问题适合作为流体动力学或热力学相关科目的多项选择题。它要求学生应用绝热流动和理想气体定律的原理来计算空气速度和最大输出。然而，没有必要的公式或上下文，无法确定正确答案。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""This question is suitable as a multiple-choice question for a subject related to fluid dynamics or thermodynamics. It requires the student to apply the principles of adiabatic flow and the ideal gas law to calculate the air velocity and maximum output. However, without the necessary formulas or context, it's not possible to determine the correct answer."",
+    ""Chinese translation"": ""这个问题适合作为流体动力学或热力学相关科目的多项选择题。它要求学生应用绝热流动和理想气体定律的原理来计算空气速度和最大输出。然而，没有必要的公式或上下文，无法确定正确答案。""
+}"
+"Calculate the molecular translational partition functions in a volume of 1 cm^3 at 298 \textdegreeK for the following molecules a) H_2,b) CH_4,c) C_8H_18.","H_2: 3.750 × 10^24, CH_4: 7.175 × 10^25, C_8H_18: 1.573 × 10^27","H_2: 2.750 × 10^24, CH_4: 6.175 × 10^25, C_8H_18: 1.173 × 10^27","H_2: 2.150 × 10^24, CH_4: 6.575 × 10^25, C_8H_18: 1.273 × 10^27","H_2: 1.750 × 10^24, CH_4: 5.175 × 10^25, C_8H_18: 2.173 × 10^27",B,stemez-Thermodynamics,TRUE,None,None,None,A,"The molecular translational partition function is a measure of the number of quantum states available to a molecule at a given energy. It depends on the temperature and the volume in which the molecule is confined. The correct values for H_2, CH_4, and C_8H_18 at 298 K and 1 cm^3 are given in option A.","问题：在298K和1cm^3的体积下，计算以下分子的分子平动配分函数 a) H_2,b) CH_4,c) C_8H_18。选项：A.H_2: 3.750 × 10^24, CH_4: 7.175 × 10^25, C_8H_18: 1.573 × 10^27 B.H_2: 2.750 × 10^24, CH_4: 6.175 × 10^25, C_8H_18: 1.173 × 10^27 C.H_2: 2.150 × 10^24, CH_4: 6.575 × 10^25, C_8H_18: 1.273 × 10^27 D.H_2: 1.750 × 10^24, CH_4: 5.175 × 10^25, C_8H_18: 2.173 × 10^27。正确答案：A。简要分析：分子平动配分函数是一个测量分子在给定能量下可用的量子态数量的度量。它取决于温度和分子被限制的体积。在298K和1cm^3的条件下，H_2，CH_4和C_8H_18的正确值在选项A中给出。","{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""The molecular translational partition function is a measure of the number of quantum states available to a molecule at a given energy. It depends on the temperature and the volume in which the molecule is confined. The correct values for H_2, CH_4, and C_8H_18 at 298 K and 1 cm^3 are given in option A."",
+    ""Chinese translation"": ""问题：在298K和1cm^3的体积下，计算以下分子的分子平动配分函数 a) H_2,b) CH_4,c) C_8H_18。选项：A.H_2: 3.750 × 10^24, CH_4: 7.175 × 10^25, C_8H_18: 1.573 × 10^27 B.H_2: 2.750 × 10^24, CH_4: 6.175 × 10^25, C_8H_18: 1.173 × 10^27 C.H_2: 2.150 × 10^24, CH_4: 6.575 × 10^25, C_8H_18: 1.273 × 10^27 D.H_2: 1.750 × 10^24, CH_4: 5.175 × 10^25, C_8H_18: 2.173 × 10^27。正确答案：A。简要分析：分子平动配分函数是一个测量分子在给定能量下可用的量子态数量的度量。它取决于温度和分子被限制的体积。在298K和1cm^3的条件下，H_2，CH_4和C_8H_18的正确值在选项A中给出。""
+}"
+"In one of the experiments on gravitational sedimentation equilibrium, the number of gamboge particles in water at 20\textdegreeC were monitored. (Gamboge is a yellow pigment not soluble in water.) The following data was obtained: Height in \mum: 0 25 50 75 100 Mean no. of particles: 203 166 136 112 91 Assuming that the gamboge particles had a mean volume equal to 9.78 × 10^-21 m^3 and a density equal to 1351 kg/m^3, calculate the Boltzmann constant.",1.44 × 10^-23 J /°K,1.54 × 10^-23 J /°K,1.34 × 10^-23 J /°K,1.24 × 10^-23 J /°K,A,stemez-Thermodynamics,TRUE,None,None,None,A,"The Boltzmann constant can be calculated using the formula k = (ρgV/N) * ln(N1/N2) / (h2 - h1), where ρ is the density of the particles, g is the acceleration due to gravity, V is the volume of the particles, N is Avogadro's number, N1 and N2 are the number of particles at heights h1 and h2 respectively. Substituting the given values into the formula, we get k = 1.44 × 10^-23 J /°K.",问题：在一个关于重力沉降平衡的实验中，监测了20℃下水中黄色颜料粒子的数量。（黄色颜料在水中不溶解。）得到了以下数据：高度（微米）：0 25 50 75 100 平均粒子数：203 166 136 112 91 假设黄色颜料粒子的平均体积等于9.78 × 10^-21 m^3，密度等于1351 kg/m^3，计算玻尔兹曼常数。选项：A.1.44 × 10^-23 J /°K B.1.54 × 10^-23 J /°K C.1.34 × 10^-23 J /°K D.1.24 × 10^-23 J /°K 答案：A 简析：玻尔兹曼常数可以使用公式k = (ρgV/N) * ln(N1/N2) / (h2 - h1)计算，其中ρ是粒子的密度，g是重力加速度，V是粒子的体积，N是阿伏伽德罗常数，N1和N2是高度h1和h2处的粒子数。将给定的值代入公式，我们得到k = 1.44 × 10^-23 J /°K。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""The Boltzmann constant can be calculated using the formula k = (ρgV/N) * ln(N1/N2) / (h2 - h1), where ρ is the density of the particles, g is the acceleration due to gravity, V is the volume of the particles, N is Avogadro's number, N1 and N2 are the number of particles at heights h1 and h2 respectively. Substituting the given values into the formula, we get k = 1.44 × 10^-23 J /°K."",
+    ""Chinese translation"": ""问题：在一个关于重力沉降平衡的实验中，监测了20℃下水中黄色颜料粒子的数量。（黄色颜料在水中不溶解。）得到了以下数据：高度（微米）：0 25 50 75 100 平均粒子数：203 166 136 112 91 假设黄色颜料粒子的平均体积等于9.78 × 10^-21 m^3，密度等于1351 kg/m^3，计算玻尔兹曼常数。选项：A.1.44 × 10^-23 J /°K B.1.54 × 10^-23 J /°K C.1.34 × 10^-23 J /°K D.1.24 × 10^-23 J /°K 答案：A 简析：玻尔兹曼常数可以使用公式k = (ρgV/N) * ln(N1/N2) / (h2 - h1)计算，其中ρ是粒子的密度，g是重力加速度，V是粒子的体积，N是阿伏伽德罗常数，N1和N2是高度h1和h2处的粒子数。将给定的值代入公式，我们得到k = 1.44 × 10^-23 J /°K。""
+}"
+"A nozzle has air flowing through it at a rate of 0.25 lb/sec. The inlet conditions are; P_i = 35 psia, T_i = 650\textdegreeR and specific volume = 6.0 ft^3/lb. The air enters with a velocity of 550 fps and leaves with a pressure of 18 psia. Compute the nozzle outlet cross-sectional area. Assume that the air expands inside the nozzle frictionlessly according to the relation pv^1.4 = constant and that the change in elevation between inlet and outlet is negligible.",0.0025 ft^2,0.0020 ft^2,0.0015 ft^2,0.0019 ft^2,D,stemez-Thermodynamics,TRUE,None,None,None,A,"The question is a calculation problem related to fluid dynamics. By applying the conservation of mass and energy, and the ideal gas law, we can derive the equation for the nozzle outlet cross-sectional area. The correct answer is A. 0.0025 ft^2.",问题：一个喷嘴中的空气流动速率为0.25 lb/sec。入口条件是：P_i = 35 psia，T_i = 650	extdegreeR，特定体积 = 6.0 ft^3/lb。空气以550 fps的速度进入，并以18 psia的压力离开。计算喷嘴出口的横截面积。假设空气在喷嘴内部按照pv^1.4 = 常数的关系无摩擦地扩展，且入口和出口之间的高度变化可以忽略。选项：A.0.0025 ft^2 B.0.0020 ft^2 C.0.0015 ft^2 D.0.0019 ft^2。答案：A。分析：这个问题是一个与流体动力学相关的计算问题。通过应用质量和能量的守恒以及理想气体定律，我们可以推导出喷嘴出口横截面积的公式。正确答案是A. 0.0025 ft^2。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""The question is a calculation problem related to fluid dynamics. By applying the conservation of mass and energy, and the ideal gas law, we can derive the equation for the nozzle outlet cross-sectional area. The correct answer is A. 0.0025 ft^2."",
+    ""Chinese translation"": ""问题：一个喷嘴中的空气流动速率为0.25 lb/sec。入口条件是：P_i = 35 psia，T_i = 650\textdegreeR，特定体积 = 6.0 ft^3/lb。空气以550 fps的速度进入，并以18 psia的压力离开。计算喷嘴出口的横截面积。假设空气在喷嘴内部按照pv^1.4 = 常数的关系无摩擦地扩展，且入口和出口之间的高度变化可以忽略。选项：A.0.0025 ft^2 B.0.0020 ft^2 C.0.0015 ft^2 D.0.0019 ft^2。答案：A。分析：这个问题是一个与流体动力学相关的计算问题。通过应用质量和能量的守恒以及理想气体定律，我们可以推导出喷嘴出口横截面积的公式。正确答案是A. 0.0025 ft^2。""
+}"
+"An air-vapor mixture, initially at 60\textdegreeF and 55 percent relative humidity, is heated until its temperature reaches 85\textdegreeF. Determine (a) the initial and final specifichumidities, (b) the final relative humidity, and (c) the amount of heat added perlbmof dry air. Assume the mixture to be at a pressure of 14.7psia.","Initial and final specific humidities: 0.00602lbm vapor/lbm dry air, Final relative humidity: 23.64 percent, Heat added: 6.1 Btu/lbm of dry air","Initial and final specific humidities: 0.00702lbm vapor/lbm dry air, Final relative humidity: 24.64 percent, Heat added: 7.1 Btu/lbm of dry air","Initial and final specific humidities: 0.00652lbm vapor/lbm dry air, Final relative humidity: 23.14 percent, Heat added: 6.6 Btu/lbm of dry air","Initial and final specific humidities: 0.00802lbm vapor/lbm dry air, Final relative humidity: 22.64 percent, Heat added: 5.1 Btu/lbm of dry air",A,stemez-Thermodynamics,True,None,None,None,A,Option A is correct. The initial specific humidity can be found using the relative humidity and the saturation pressure at the initial temperature. The final specific humidity is the same as the initial specific humidity because no water is added or removed. The final relative humidity can be found using the final specific humidity and the saturation pressure at the final temperature. The heat added can be found using the specific heat of dry air and the temperature change.,问题：一个空气-蒸汽混合物，初始温度为60°F，相对湿度为55%，被加热直到其温度达到85°F。确定（a）初始和最终的特定湿度，（b）最终的相对湿度，以及（c）每磅干燥空气添加的热量。假设混合物的压力为14.7psia。选项：A.初始和最终的特定湿度：0.00602磅蒸汽/磅干燥空气，最终相对湿度：23.64%，添加的热量：6.1 Btu/磅干燥空气 B.初始和最终的特定湿度：0.00702磅蒸汽/磅干燥空气，最终相对湿度：24.64%，添加的热量：7.1 Btu/磅干燥空气 C.初始和最终的特定湿度：0.00652磅蒸汽/磅干燥空气，最终相对湿度：23.14%，添加的热量：6.6 Btu/磅干燥空气 D.初始和最终的特定湿度：0.00802磅蒸汽/磅干燥空气，最终相对湿度：22.64%，添加的热量：5.1 Btu/磅干燥空气。答案：A选项是正确的。初始的特定湿度可以使用相对湿度和初始温度下的饱和压力来找到。最终的特定湿度与初始的特定湿度相同，因为没有添加或移除水分。最终的相对湿度可以使用最终的特定湿度和最终温度下的饱和压力来找到。添加的热量可以使用干燥空气的比热和温度变化来找到。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""Option A is correct. The initial specific humidity can be found using the relative humidity and the saturation pressure at the initial temperature. The final specific humidity is the same as the initial specific humidity because no water is added or removed. The final relative humidity can be found using the final specific humidity and the saturation pressure at the final temperature. The heat added can be found using the specific heat of dry air and the temperature change."",
+    ""Chinese translation"": ""问题：一个空气-蒸汽混合物，初始温度为60°F，相对湿度为55%，被加热直到其温度达到85°F。确定（a）初始和最终的特定湿度，（b）最终的相对湿度，以及（c）每磅干燥空气添加的热量。假设混合物的压力为14.7psia。选项：A.初始和最终的特定湿度：0.00602磅蒸汽/磅干燥空气，最终相对湿度：23.64%，添加的热量：6.1 Btu/磅干燥空气 B.初始和最终的特定湿度：0.00702磅蒸汽/磅干燥空气，最终相对湿度：24.64%，添加的热量：7.1 Btu/磅干燥空气 C.初始和最终的特定湿度：0.00652磅蒸汽/磅干燥空气，最终相对湿度：23.14%，添加的热量：6.6 Btu/磅干燥空气 D.初始和最终的特定湿度：0.00802磅蒸汽/磅干燥空气，最终相对湿度：22.64%，添加的热量：5.1 Btu/磅干燥空气。答案：A选项是正确的。初始的特定湿度可以使用相对湿度和初始温度下的饱和压力来找到。最终的特定湿度与初始的特定湿度相同，因为没有添加或移除水分。最终的相对湿度可以使用最终的特定湿度和最终温度下的饱和压力来找到。添加的热量可以使用干燥空气的比热和温度变化来找到。""
+}"
+"A tank contains saturated air-vapor mixture at 240\textdegreeF and 55 psia. If the mixture contains 1 lb of dry air, calculate the volume of the tank and the mass of water vapor in the mixture.","8.62 ft^3, 0.600 lbm","8.62 ft^3, 0.528 lbm","9.0 ft^3, 0.500 lbm","7.5 ft^3, 0.528 lbm",B,stemez-Thermodynamics,True,None,None,None,A,"The volume of the tank and the mass of water vapor in the mixture can be calculated using the properties of saturated air-vapor mixtures. The correct answer is A, which gives the correct volume and mass of water vapor.",问题：一个罐子内含有240°F和55 psia的饱和空气蒸汽混合物。如果混合物中含有1磅的干燥空气，计算罐子的体积和混合物中的水蒸气质量。选项：A.8.62立方英尺，0.600磅B.8.62立方英尺，0.528磅C.9.0立方英尺，0.500磅D.7.5立方英尺，0.528磅。答案：A。分析：可以使用饱和空气蒸汽混合物的性质来计算罐子的体积和混合物中的水蒸气质量。正确答案是A，给出了正确的体积和水蒸气质量。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""The volume of the tank and the mass of water vapor in the mixture can be calculated using the properties of saturated air-vapor mixtures. The correct answer is A, which gives the correct volume and mass of water vapor."",
+    ""Chinese translation"": ""问题：一个罐子内含有240°F和55 psia的饱和空气蒸汽混合物。如果混合物中含有1磅的干燥空气，计算罐子的体积和混合物中的水蒸气质量。选项：A.8.62立方英尺，0.600磅B.8.62立方英尺，0.528磅C.9.0立方英尺，0.500磅D.7.5立方英尺，0.528磅。答案：A。分析：可以使用饱和空气蒸汽混合物的性质来计算罐子的体积和混合物中的水蒸气质量。正确答案是A，给出了正确的体积和水蒸气质量。""
+}"
+"A cylinder which contains 3 pounds of saturated liquid water at a constant pressure of 30 psia is heated until the quality of the mixture is 70 per cent. Calculate: a) the initial temperature, b) the final pressure and temperature, and c) the volume change of the mixture.","a) 250.34°F, b) 30 psia and 250.34°F, c) 28.8 ft³","a) 255°F, b) 35 psia and 255°F, c) 35 ft³","a) 260°F, b) 32 psia and 260°F, c) 30 ft³","a) 240°F, b) 28 psia and 240°F, c) 27 ft³",A,stemez-Thermodynamics,True,None,None,None,A,"Option A is correct. The initial temperature can be found from the saturated liquid tables at 30 psia, which is 250.34°F. The final pressure remains the same because the process is at constant pressure. The final temperature is also the same because the process is at constant pressure and the water is in the two-phase region. The volume change can be calculated using the specific volume at the given quality and the mass of the water.","问题：一个装有3磅饱和液态水的气缸在30 psia的恒定压力下被加热，直到混合物的质量分数为70%。计算：a) 初始温度，b) 最终压力和温度，以及c) 混合物的体积变化。选项：A.a) 250.34°F, b) 30 psia和250.34°F, c) 28.8立方英尺 B.a) 255°F, b) 35 psia和255°F, c) 35立方英尺 C.a) 260°F, b) 32 psia和260°F, c) 30立方英尺 D.a) 240°F, b) 28 psia和240°F, c) 27立方英尺。答案：A。分析：选项A是正确的。初始温度可以从30 psia的饱和液态水表中找到，为250.34°F。最终压力保持不变，因为过程是在恒定压力下进行的。最终温度也保持不变，因为过程是在恒定压力下进行的，且水处于两相区。体积变化可以使用给定质量分数的比体积和水的质量来计算。","{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""Option A is correct. The initial temperature can be found from the saturated liquid tables at 30 psia, which is 250.34°F. The final pressure remains the same because the process is at constant pressure. The final temperature is also the same because the process is at constant pressure and the water is in the two-phase region. The volume change can be calculated using the specific volume at the given quality and the mass of the water."",
+    ""Chinese translation"": ""问题：一个装有3磅饱和液态水的气缸在30 psia的恒定压力下被加热，直到混合物的质量分数为70%。计算：a) 初始温度，b) 最终压力和温度，以及c) 混合物的体积变化。选项：A.a) 250.34°F, b) 30 psia和250.34°F, c) 28.8立方英尺 B.a) 255°F, b) 35 psia和255°F, c) 35立方英尺 C.a) 260°F, b) 32 psia和260°F, c) 30立方英尺 D.a) 240°F, b) 28 psia和240°F, c) 27立方英尺。答案：A。分析：选项A是正确的。初始温度可以从30 psia的饱和液态水表中找到，为250.34°F。最终压力保持不变，因为过程是在恒定压力下进行的。最终温度也保持不变，因为过程是在恒定压力下进行的，且水处于两相区。体积变化可以使用给定质量分数的比体积和水的质量来计算。""
+}"
+"An air-vapor mixture consisting of 1lbmof air and 0.92 lbmof water vapor isisentropicallycompressed from 45 psiaand 240\textdegreeF to 90psia. For this process determine (a) the final temperature, and (b) the change in entropy of each constituent.","Final temperature is 380°F, change in entropy of air is -0.0030 Btu/°R, change in entropy of vapor is 0.0030 Btu/°R","Final temperature is 380°F, change in entropy of air is -0.0034 Btu/°R, change in entropy of vapor is 0.0034 Btu/°R","Final temperature is 400°F, change in entropy of air is -0.0034 Btu/°R, change in entropy of vapor is 0.0034 Btu/°R","Final temperature is 360°F, change in entropy of air is -0.0034 Btu/°R, change in entropy of vapor is 0.0034 Btu/°R",B,stemez-Thermodynamics,True,None,None,None,None,None,None,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""None"",
+    ""Chinese translation"": ""None""
+}"
+"A sling-psychrometerreads 85\textdegreeF DBT and 65\textdegreeF WBT (DBT = Dry bulb temp., WBT = Wet bulb temp.). Calculate the following: (a) Specific humidity (b) Relative humidity (c) Dew point temperature. Assume atmospheric pressure to be 14.7psia.","Specific humidity = 0.007lbmwater/lbmdry air, Relative humidity = 35%, Dew point temperature = 52°F","Specific humidity = 0.01lbmwater/lbmdry air, Relative humidity = 30%, Dew point temperature = 55°F","Specific humidity = 0.00859lbmwater/lbmdry air, Relative humidity = 33.57%, Dew point temperature = 53.1°F","Specific humidity = 0.005lbmwater/lbmdry air, Relative humidity = 40%, Dew point temperature = 50°F",C,stemez-Thermodynamics,True,None,None,None,C,"The correct answer is C. The specific humidity, relative humidity, and dew point temperature can be calculated using the given DBT and WBT values and the atmospheric pressure. The calculations result in the values provided in option C.",问题：一个湿球温度计读取85°F DBT和65°F WBT（DBT = 干球温度，WBT = 湿球温度）。计算以下内容：（a）特定湿度（b）相对湿度（c）露点温度。假设大气压为14.7psia。选项：A.特定湿度 = 0.007lbmwater/lbmdry air，相对湿度 = 35%，露点温度 = 52°F B.特定湿度 = 0.01lbmwater/lbmdry air，相对湿度 = 30%，露点温度 = 55°F C.特定湿度 = 0.00859lbmwater/lbmdry air，相对湿度 = 33.57%，露点温度 = 53.1°F D.特定湿度 = 0.005lbmwater/lbmdry air，相对湿度 = 40%，露点温度 = 50°F。答案：C。分析：正确答案是C。可以使用给定的DBT和WBT值以及大气压来计算特定湿度、相对湿度和露点温度。计算结果在选项C中给出。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""C"",
+    ""brief analysis"": ""The correct answer is C. The specific humidity, relative humidity, and dew point temperature can be calculated using the given DBT and WBT values and the atmospheric pressure. The calculations result in the values provided in option C."",
+    ""Chinese translation"": ""问题：一个湿球温度计读取85°F DBT和65°F WBT（DBT = 干球温度，WBT = 湿球温度）。计算以下内容：（a）特定湿度（b）相对湿度（c）露点温度。假设大气压为14.7psia。选项：A.特定湿度 = 0.007lbmwater/lbmdry air，相对湿度 = 35%，露点温度 = 52°F B.特定湿度 = 0.01lbmwater/lbmdry air，相对湿度 = 30%，露点温度 = 55°F C.特定湿度 = 0.00859lbmwater/lbmdry air，相对湿度 = 33.57%，露点温度 = 53.1°F D.特定湿度 = 0.005lbmwater/lbmdry air，相对湿度 = 40%，露点温度 = 50°F。答案：C。分析：正确答案是C。可以使用给定的DBT和WBT值以及大气压来计算特定湿度、相对湿度和露点温度。计算结果在选项C中给出。""
+}"
+"Using the steam tables, calculate the velocity in a nozzle at a pointwhere the pressure is 40Psiawhen the superheated steamflows from a boiler. The initial boiler conditions are P(pressure) = 80Psia, T(temperature) = 500\textdegreeF, and V(velocity) = 0.",2000 ft/sec,1700 ft/sec,1819 ft/sec,1500 ft/sec,C,stemez-Thermodynamics,True,None,None,None,The correct answer cannot be determined without additional information or calculations.,"This question is suitable as a multiple-choice question, but the correct answer cannot be determined without additional information or calculations. The velocity of steam in a nozzle depends on several factors, including the pressure difference, the properties of the steam (which can be obtained from steam tables), and the specific design of the nozzle.",使用蒸汽表，计算从锅炉流出的过热蒸汽在压力为40Psia的喷嘴处的速度。初始锅炉条件为P(压力) = 80Psia，T(温度) = 500°F，V(速度) = 0。选项：A.2000 ft/sec B.1700 ft/sec C.1819 ft/sec D.1500 ft/sec。这个问题作为多选题是合适的，但是没有额外的信息或计算，无法确定正确答案。蒸汽在喷嘴中的速度取决于几个因素，包括压力差，蒸汽的性质（可以从蒸汽表中获得），以及喷嘴的具体设计。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""The correct answer cannot be determined without additional information or calculations."",
+    ""brief analysis"": ""This question is suitable as a multiple-choice question, but the correct answer cannot be determined without additional information or calculations. The velocity of steam in a nozzle depends on several factors, including the pressure difference, the properties of the steam (which can be obtained from steam tables), and the specific design of the nozzle."",
+    ""Chinese translation"": ""使用蒸汽表，计算从锅炉流出的过热蒸汽在压力为40Psia的喷嘴处的速度。初始锅炉条件为P(压力) = 80Psia，T(温度) = 500°F，V(速度) = 0。选项：A.2000 ft/sec B.1700 ft/sec C.1819 ft/sec D.1500 ft/sec。这个问题作为多选题是合适的，但是没有额外的信息或计算，无法确定正确答案。蒸汽在喷嘴中的速度取决于几个因素，包括压力差，蒸汽的性质（可以从蒸汽表中获得），以及喷嘴的具体设计。""
+}"
+"A set of ideal gas molecules, each of mass m, are restricted to two dimensions. The distribution law for each component of velocity is given by {(dN_(v)x) / (N_total)} = A e^{-m(v)(x)2/2kT} dv_x a) Show that the distribution law with respect to speed v, is given by {(dN_v) / (N_total)} = 2\piA^2e^-m(v)2/2kT vdv and evaluate the constant A. b) Determine the average speedvof the molecules, in terms of mass m of the molecules, temperature T, and universal constants.",A^2 = m / (kT\pi),A^2 = 2\pi / (mkT),A^2 = m / (2\pikT),A^2 = 2m / (kT\pi),C,stemez-Thermodynamics,-,-,-,-,-,-,-,"{
+    ""suitable"": ""False"",
+    ""brief reason"": ""The original question is a proof problem, which is not suitable for a multiple-choice question format. It requires detailed mathematical derivations and explanations."",
+    ""rewritten question"": ""A set of ideal gas molecules, each of mass m, are restricted to two dimensions. The distribution law for each component of velocity is given by {(dN_(v)x) / (N_total)} = A e^{-m(v)(x)2/2kT} dv_x. If the distribution law with respect to speed v, is given by {(dN_v) / (N_total)} = 2\piA^2e^-m(v)2/2kT vdv, which of the following options correctly represents the constant A^2?"",
+    ""rewritten options"": ""A. A^2 = m / (kT\pi) B. A^2 = 2\pi / (mkT) C. A^2 = m / (2\pikT) D. A^2 = 2m / (kT\pi)"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""Option A is correct. The constant A^2 can be evaluated by integrating the distribution law with respect to speed v, and comparing it with the normalization condition of the probability density function."",
+    ""Chinese translation"": ""一组理想气体分子，每个分子的质量为m，被限制在二维空间中。速度的每个分量的分布定律由{(dN_(v)x) / (N_total)} = A e^{-m(v)(x)2/2kT} dv_x给出。如果关于速度v的分布定律由{(dN_v) / (N_total)} = 2\piA^2e^-m(v)2/2kT vdv给出，那么以下哪个选项正确地表示常数A^2？ A. A^2 = m / (kT\pi) B. A^2 = 2\pi / (mkT) C. A^2 = m / (2\pikT) D. A^2 = 2m / (kT\pi)。正确答案是A。常数A^2可以通过对速度v的分布定律进行积分，并将其与概率密度函数的归一化条件进行比较来求解。""
+}"
+"Using the Euler-Maclaurin summation formula ^\infty \sum_n=a f(n) = _a\int^\infty f(x)dx + (1/2) f(a) - (1 / 12)f'(a) + {1 / (720)} f""'(a) + ..., evaluate the rotational partition function at high temperatures.",q_rot = [T / (\Theta_rot)],q_rot = [(\sigma\Theta_rot) / T],q_rot = [T / (\sigma\Theta_rot)],q_rot = [T * (\sigma\Theta_rot)],C,stemez-Thermodynamics,False,"The original question requires students to perform a complex calculation using the Euler-Maclaurin summation formula, which is not suitable for a multiple-choice question format.","Which of the following expressions correctly represents the rotational partition function at high temperatures, according to the Euler-Maclaurin summation formula?",A. q_rot = [T / (Θ_rot)] B. q_rot = [(σΘ_rot) / T] C. q_rot = [T / (σΘ_rot)] D. q_rot = [T * (σΘ_rot)],A,"Option A is correct. According to the Euler-Maclaurin summation formula, the rotational partition function at high temperatures is given by q_rot = [T / (Θ_rot)].",重写的问题：根据欧拉-麦克劳林求和公式，以下哪个表达式正确地表示了高温下的旋转配分函数？重写的选项：A. q_rot = [T / (Θ_rot)] B. q_rot = [(σΘ_rot) / T] C. q_rot = [T / (σΘ_rot)] D. q_rot = [T * (σΘ_rot)]正确答案：A简要分析：选项A是正确的。根据欧拉-麦克劳林求和公式，高温下的旋转配分函数由q_rot = [T / (Θ_rot)]给出。中文翻译：根据欧拉-麦克劳林求和公式，以下哪个表达式正确地表示了高温下的旋转配分函数？选项：A. q_rot = [T / (Θ_rot)] B. q_rot = [(σΘ_rot) / T] C. q_rot = [T / (σΘ_rot)] D. q_rot = [T * (σΘ_rot)]正确答案：A简要分析：选项A是正确的。根据欧拉-麦克劳林求和公式，高温下的旋转配分函数由q_rot = [T / (Θ_rot)]给出。,"{
+    ""suitable"": ""False"",
+    ""brief reason"": ""The original question requires students to perform a complex calculation using the Euler-Maclaurin summation formula, which is not suitable for a multiple-choice question format."",
+    ""rewritten question"": ""Which of the following expressions correctly represents the rotational partition function at high temperatures, according to the Euler-Maclaurin summation formula?"",
+    ""rewritten options"": ""A. q_rot = [T / (Θ_rot)] B. q_rot = [(σΘ_rot) / T] C. q_rot = [T / (σΘ_rot)] D. q_rot = [T * (σΘ_rot)]"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""Option A is correct. According to the Euler-Maclaurin summation formula, the rotational partition function at high temperatures is given by q_rot = [T / (Θ_rot)]."",
+    ""Chinese translation"": ""重写的问题：根据欧拉-麦克劳林求和公式，以下哪个表达式正确地表示了高温下的旋转配分函数？重写的选项：A. q_rot = [T / (Θ_rot)] B. q_rot = [(σΘ_rot) / T] C. q_rot = [T / (σΘ_rot)] D. q_rot = [T * (σΘ_rot)]正确答案：A简要分析：选项A是正确的。根据欧拉-麦克劳林求和公式，高温下的旋转配分函数由q_rot = [T / (Θ_rot)]给出。中文翻译：根据欧拉-麦克劳林求和公式，以下哪个表达式正确地表示了高温下的旋转配分函数？选项：A. q_rot = [T / (Θ_rot)] B. q_rot = [(σΘ_rot) / T] C. q_rot = [T / (σΘ_rot)] D. q_rot = [T * (σΘ_rot)]正确答案：A简要分析：选项A是正确的。根据欧拉-麦克劳林求和公式，高温下的旋转配分函数由q_rot = [T / (Θ_rot)]给出。""
+}"
+"Water is continuously spilling over a water tank at a height of 100 m from ground level. a) Calculate the potential energy of the water at the top of the tank with respect to its base. b) Calculate the kinetic energy of the water just before it strikes the floor. c) After the water enters the flow below, what change has occurred to its state? Calculate for 1 kg of water in all three cases, assuming that there is no energy exchange with the surroundings.",500(J),1000(J),980.66(J),1200(J),C,stemez-Thermodynamics,False,"The original question is a calculation problem, which is not suitable for a multiple-choice question. It also asks for multiple calculations and explanations, which makes it more complex than a typical multiple-choice question.","Water is continuously spilling over a water tank at a height of 100 m from ground level. Assuming that there is no energy exchange with the surroundings, which of the following is the potential energy of 1 kg of water at the top of the tank with respect to its base?",A. 500 J B. 1000 J C. 980 J D. 1200 J,C,"The potential energy of an object is given by the formula PE = mgh, where m is the mass of the object, g is the acceleration due to gravity, and h is the height above the ground. For 1 kg of water at a height of 100 m, the potential energy is (1 kg)(9.8 m/s^2)(100 m) = 980 J, so option C is correct.",问题重写：水源源不断地从地面100米高的水箱中溢出。假设与周围环境没有能量交换，那么1公斤水在水箱顶部相对于其底部的势能是多少？选项重写：A. 500焦耳 B. 1000焦耳 C. 980焦耳 D. 1200焦耳。正确答案：C。简要分析：物体的势能由公式PE = mgh给出，其中m是物体的质量，g是重力加速度，h是离地面的高度。对于高度为100米的1公斤水，势能是(1公斤)(9.8米/秒^2)(100米) = 980焦耳，所以选项C是正确的。中文翻译：问题重写：水源源不断地从地面100米高的水箱中溢出。假设与周围环境没有能量交换，那么1公斤水在水箱顶部相对于其底部的势能是多少？选项重写：A. 500焦耳 B. 1000焦耳 C. 980焦耳 D. 1200焦耳。正确答案：C。简要分析：物体的势能由公式PE = mgh给出，其中m是物体的质量，g是重力加速度，h是离地面的高度。对于高度为100米的1公斤水，势能是(1公斤)(9.8米/秒^2)(100米) = 980焦耳，所以选项C是正确的。,"{
+    ""suitable"": ""False"",
+    ""brief reason"": ""The original question is a calculation problem, which is not suitable for a multiple-choice question. It also asks for multiple calculations and explanations, which makes it more complex than a typical multiple-choice question."",
+    ""rewritten question"": ""Water is continuously spilling over a water tank at a height of 100 m from ground level. Assuming that there is no energy exchange with the surroundings, which of the following is the potential energy of 1 kg of water at the top of the tank with respect to its base?"",
+    ""rewritten options"": ""A. 500 J B. 1000 J C. 980 J D. 1200 J"",
+    ""correct answer"": ""C"",
+    ""brief analysis"": ""The potential energy of an object is given by the formula PE = mgh, where m is the mass of the object, g is the acceleration due to gravity, and h is the height above the ground. For 1 kg of water at a height of 100 m, the potential energy is (1 kg)(9.8 m/s^2)(100 m) = 980 J, so option C is correct."",
+    ""Chinese translation"": ""问题重写：水源源不断地从地面100米高的水箱中溢出。假设与周围环境没有能量交换，那么1公斤水在水箱顶部相对于其底部的势能是多少？选项重写：A. 500焦耳 B. 1000焦耳 C. 980焦耳 D. 1200焦耳。正确答案：C。简要分析：物体的势能由公式PE = mgh给出，其中m是物体的质量，g是重力加速度，h是离地面的高度。对于高度为100米的1公斤水，势能是(1公斤)(9.8米/秒^2)(100米) = 980焦耳，所以选项C是正确的。中文翻译：问题重写：水源源不断地从地面100米高的水箱中溢出。假设与周围环境没有能量交换，那么1公斤水在水箱顶部相对于其底部的势能是多少？选项重写：A. 500焦耳 B. 1000焦耳 C. 980焦耳 D. 1200焦耳。正确答案：C。简要分析：物体的势能由公式PE = mgh给出，其中m是物体的质量，g是重力加速度，h是离地面的高度。对于高度为100米的1公斤水，势能是(1公斤)(9.8米/秒^2)(100米) = 980焦耳，所以选项C是正确的。""
+}"
+"Calculate the internal efficiency and reheat factor for a three-stage turbine operating between an initial pressure of 100 psia, saturated steam, and a final pressure of 1 psia. Assume that the approach velocity is negligible, the stage efficiency is 65 percent and the process is isentropic.","Efficiency = 0.675, Reheat factor = 1.04","Efficiency = 0.990, Reheat factor = 1.1187","Efficiency = 0.953, Reheat factor = 1.1124","Efficiency = 0.65, Reheat factor = 1.675",A,stemez-Thermodynamics,True,None,None,None,None,None,None,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""None"",
+    ""Chinese translation"": ""None""
+}"
+A rigid tank contains 1lbmof air and 0.2lbmof saturated water vapor at 250\textdegreeF. Determine the volume of the tank and the total pressure of the air-vapor mixture.,"V = 2.766 ft^3, P_t = 124.92psia","V = 2.5 ft^3, P_t = 120psia","V = 3.5 ft^3, P_t = 130psia","V = 2.8 ft^3, P_t = 125psia",A,stemez-Thermodynamics,True,None,None,None,A,The correct answer is A. The volume and total pressure of the air-vapor mixture can be calculated using the ideal gas law and the properties of saturated water vapor at the given temperature.,问题：一个刚性罐子里装有1磅的空气和0.2磅的饱和水蒸气，温度为250华氏度。求罐子的体积和空气-蒸气混合物的总压力。选项：A. V = 2.766立方英尺，P_t = 124.92psia B. V = 2.5立方英尺，P_t = 120psia C. V = 3.5立方英尺，P_t = 130psia D. V = 2.8立方英尺，P_t = 125psia。答案：A。分析：正确答案是A。可以使用理想气体定律和给定温度下饱和水蒸气的性质来计算空气-蒸气混合物的体积和总压力。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""The correct answer is A. The volume and total pressure of the air-vapor mixture can be calculated using the ideal gas law and the properties of saturated water vapor at the given temperature."",
+    ""Chinese translation"": ""问题：一个刚性罐子里装有1磅的空气和0.2磅的饱和水蒸气，温度为250华氏度。求罐子的体积和空气-蒸气混合物的总压力。选项：A. V = 2.766立方英尺，P_t = 124.92psia B. V = 2.5立方英尺，P_t = 120psia C. V = 3.5立方英尺，P_t = 130psia D. V = 2.8立方英尺，P_t = 125psia。答案：A。分析：正确答案是A。可以使用理想气体定律和给定温度下饱和水蒸气的性质来计算空气-蒸气混合物的体积和总压力。""
+}"
+a) Oxygen at 30\textdegreeC and 1.0MPa b) Nitrogen at - 100\textdegreeC and 10MPa c) Water at 40\textdegreeC and 10kPa. Determine whether it is reasonable to assume that the given substance behaves as an ideal gas at the specified state.,"a) Oxygen: Not reasonable, b) Nitrogen: Reasonable, c) Water: Reasonable","a) Oxygen: Reasonable, b) Nitrogen: Not reasonable, c) Water: Not reasonable","a) Oxygen: Reasonable, b) Nitrogen: Reasonable, c) Water: Not reasonable","a) Oxygen: Not reasonable, b) Nitrogen: Not reasonable, c) Water: Reasonable",B,stemez-Thermodynamics,True,None,None,None,B,"The ideal gas law is a good approximation for many gases under many conditions, but it becomes less accurate at very high pressures and very low temperatures. Therefore, for Oxygen at 30°C and 1.0MPa, it is reasonable to assume it behaves as an ideal gas. For Nitrogen at -100°C and 10MPa, it is not reasonable due to the very low temperature and high pressure. For Water at 40°C and 10kPa, it is also not reasonable because water is not a gas at these conditions.",问题：a) 30°C和1.0MPa的氧气 b) -100°C和10MPa的氮气 c) 40°C和10kPa的水。确定在指定状态下，假设给定物质表现为理想气体是否合理。选项：A.a) 氧气：不合理，b) 氮气：合理，c) 水：合理 B.a) 氧气：合理，b) 氮气：不合理，c) 水：不合理 C.a) 氧气：合理，b) 氮气：合理，c) 水：不合理 D.a) 氧气：不合理，b) 氮气：不合理，c) 水：合理。正确答案：B。简要分析：理想气体定律对许多气体在许多条件下是一个很好的近似，但在非常高的压力和非常低的温度下，它的准确性会降低。因此，对于30°C和1.0MPa的氧气，假设它表现为理想气体是合理的。对于-100°C和10MPa的氮气，由于温度非常低，压力非常高，所以不合理。对于40°C和10kPa的水，也不合理，因为在这些条件下，水不是气体。,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""B"",
+    ""brief analysis"": ""The ideal gas law is a good approximation for many gases under many conditions, but it becomes less accurate at very high pressures and very low temperatures. Therefore, for Oxygen at 30°C and 1.0MPa, it is reasonable to assume it behaves as an ideal gas. For Nitrogen at -100°C and 10MPa, it is not reasonable due to the very low temperature and high pressure. For Water at 40°C and 10kPa, it is also not reasonable because water is not a gas at these conditions."",
+    ""Chinese translation"": ""问题：a) 30°C和1.0MPa的氧气 b) -100°C和10MPa的氮气 c) 40°C和10kPa的水。确定在指定状态下，假设给定物质表现为理想气体是否合理。选项：A.a) 氧气：不合理，b) 氮气：合理，c) 水：合理 B.a) 氧气：合理，b) 氮气：不合理，c) 水：不合理 C.a) 氧气：合理，b) 氮气：合理，c) 水：不合理 D.a) 氧气：不合理，b) 氮气：不合理，c) 水：合理。正确答案：B。简要分析：理想气体定律对许多气体在许多条件下是一个很好的近似，但在非常高的压力和非常低的温度下，它的准确性会降低。因此，对于30°C和1.0MPa的氧气，假设它表现为理想气体是合理的。对于-100°C和10MPa的氮气，由于温度非常低，压力非常高，所以不合理。对于40°C和10kPa的水，也不合理，因为在这些条件下，水不是气体。""
+}"
+"An oxygen cylinder at 35 psia and 80\textdegreeF contains 0.9 lb of oxygen. If nitrogen is added to the cylinder to increase the cylinder pressure to 45 psia at the same temperature, find the mass of nitrogen added.",0.00804 lb,0.9 lb,0.02813 lb,0.225 lb,D,stemez-Thermodynamics,True,None,None,None,None,None,None,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""None"",
+    ""Chinese translation"": ""None""
+}"
+"Superheated steam enters an adiabatic turbine at 400 lbf/in^2, 600\textdegreeF and leaves at a pressure of 50 lbf/in^2 and a quality of 99.5%. If the temperature of the surroundings (T_0) is 60\textdegreeF, calculate the turbine efficiency, effectiveness, and loss of available energy.","Turbine efficiency: 74.5%, Effectiveness: 81%, Loss of available energy: -32.6 Btu/lbm","Turbine efficiency: 80%, Effectiveness: 75%, Loss of available energy: -30 Btu/lbm","Turbine efficiency: 75%, Effectiveness: 80%, Loss of available energy: -40 Btu/lbm","Turbine efficiency: 70%, Effectiveness: 85%, Loss of available energy: -35 Btu/lbm",A,stemez-Thermodynamics,False,"The original question requires students to perform complex calculations, which is not suitable for a multiple-choice question.","Superheated steam enters an adiabatic turbine at 400 lbf/in^2, 600	extdegreeF and leaves at a pressure of 50 lbf/in^2 and a quality of 99.5%. If the temperature of the surroundings (T_0) is 60	extdegreeF, which of the following sets of values could represent the turbine efficiency, effectiveness, and loss of available energy?","A. Turbine efficiency: 74.5%, Effectiveness: 81%, Loss of available energy: -32.6 Btu/lbm B. Turbine efficiency: 80%, Effectiveness: 75%, Loss of available energy: -30 Btu/lbm C. Turbine efficiency: 75%, Effectiveness: 80%, Loss of available energy: -40 Btu/lbm D. Turbine efficiency: 70%, Effectiveness: 85%, Loss of available energy: -35 Btu/lbm",None,The correct answer cannot be determined without performing the necessary calculations.,超热蒸汽以400 lbf/in^2，600	extdegreeF的条件进入绝热涡轮机，并以50 lbf/in^2的压力和99.5%的质量分数离开。如果周围环境的温度（T_0）为60	extdegreeF，那么以下哪一组值可能代表涡轮机的效率、有效性和可用能量的损失？选项：A. 涡轮机效率：74.5%，有效性：81%，可用能量损失：-32.6 Btu/lbm B. 涡轮机效率：80%，有效性：75%，可用能量损失：-30 Btu/lbm C. 涡轮机效率：75%，有效性：80%，可用能量损失：-40 Btu/lbm D. 涡轮机效率：70%，有效性：85%，可用能量损失：-35 Btu/lbm。正确答案：无法确定，需要进行必要的计算。,"{
+    ""suitable"": ""False"",
+    ""brief reason"": ""The original question requires students to perform complex calculations, which is not suitable for a multiple-choice question."",
+    ""rewritten question"": ""Superheated steam enters an adiabatic turbine at 400 lbf/in^2, 600\textdegreeF and leaves at a pressure of 50 lbf/in^2 and a quality of 99.5%. If the temperature of the surroundings (T_0) is 60\textdegreeF, which of the following sets of values could represent the turbine efficiency, effectiveness, and loss of available energy?"",
+    ""rewritten options"": ""A. Turbine efficiency: 74.5%, Effectiveness: 81%, Loss of available energy: -32.6 Btu/lbm B. Turbine efficiency: 80%, Effectiveness: 75%, Loss of available energy: -30 Btu/lbm C. Turbine efficiency: 75%, Effectiveness: 80%, Loss of available energy: -40 Btu/lbm D. Turbine efficiency: 70%, Effectiveness: 85%, Loss of available energy: -35 Btu/lbm"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""The correct answer cannot be determined without performing the necessary calculations."",
+    ""Chinese translation"": ""超热蒸汽以400 lbf/in^2，600\textdegreeF的条件进入绝热涡轮机，并以50 lbf/in^2的压力和99.5%的质量分数离开。如果周围环境的温度（T_0）为60\textdegreeF，那么以下哪一组值可能代表涡轮机的效率、有效性和可用能量的损失？选项：A. 涡轮机效率：74.5%，有效性：81%，可用能量损失：-32.6 Btu/lbm B. 涡轮机效率：80%，有效性：75%，可用能量损失：-30 Btu/lbm C. 涡轮机效率：75%，有效性：80%，可用能量损失：-40 Btu/lbm D. 涡轮机效率：70%，有效性：85%，可用能量损失：-35 Btu/lbm。正确答案：无法确定，需要进行必要的计算。""
+}"
+"The metal beaker of a dew-point apparatus is gradually cooled from room temperature, 75\textdegreeF. When the beaker temperature reaches 60\textdegreeF, the moisture of the room air starts condensing on it. Assuming the room air to be at 14.7 psia, determine (a) the partial pressure of vapor, and (b) the parts by mass of vapor in the room air.","0.2756psia, 0.00987","0.2563psia, 0.01089","0.2304psia, 0.01234","0.3452psia, 0.00876",B,stemez-Thermodynamics,True,None,None,None,A,The partial pressure of the vapor can be determined using the saturation pressure at the dew point temperature (60°F). The parts by mass of vapor in the room air can be calculated using the partial pressure of the vapor and the total pressure. Option A provides the correct values.,"问题：一个露点仪器的金属烧杯从室温75°F逐渐冷却。当烧杯温度降到60°F时，室内空气的湿气开始在其上凝结。假设室内空气为14.7 psia，确定（a）蒸汽的部分压力，和（b）室内空气中蒸汽的质量分数。选项：A.0.2756psia, 0.00987 B.0.2563psia, 0.01089 C.0.2304psia, 0.01234 D.0.3452psia, 0.00876。答案：A。分析：蒸汽的部分压力可以使用露点温度（60°F）的饱和压力来确定。室内空气中蒸汽的质量分数可以使用蒸汽的部分压力和总压力来计算。选项A提供了正确的值。","{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""A"",
+    ""brief analysis"": ""The partial pressure of the vapor can be determined using the saturation pressure at the dew point temperature (60°F). The parts by mass of vapor in the room air can be calculated using the partial pressure of the vapor and the total pressure. Option A provides the correct values."",
+    ""Chinese translation"": ""问题：一个露点仪器的金属烧杯从室温75°F逐渐冷却。当烧杯温度降到60°F时，室内空气的湿气开始在其上凝结。假设室内空气为14.7 psia，确定（a）蒸汽的部分压力，和（b）室内空气中蒸汽的质量分数。选项：A.0.2756psia, 0.00987 B.0.2563psia, 0.01089 C.0.2304psia, 0.01234 D.0.3452psia, 0.00876。答案：A。分析：蒸汽的部分压力可以使用露点温度（60°F）的饱和压力来确定。室内空气中蒸汽的质量分数可以使用蒸汽的部分压力和总压力来计算。选项A提供了正确的值。""
+}"
+"Superheated steam at 330psiaand 600\textdegreeF, is flowing through a nozzle at a rate of 12,000 lb/hr. The final pressure at the exit is 5psia. The velocity coefficient and the discharge coefficients are 0.92 and 0.95 respectively. Calculate a) the exit jet velocity and b) the areas at the throat and the exit.","Exit jet velocity: 4000 ft/sec, Throat area: 0.8 in^2, Exit area: 9 in^2","Exit jet velocity: 3697 ft/sec, Throat area: 0.772 in^2, Exit area: 8.784 in^2","Exit jet velocity: 3800 ft/sec, Throat area: 0.78 in^2, Exit area: 8.9 in^2","Exit jet velocity: 3500 ft/sec, Throat area: 0.75 in^2, Exit area: 8.5 in^2",B,stemez-Thermodynamics,True,None,None,None,B,Option B is correct. The exit jet velocity and the areas at the throat and the exit can be calculated using the given parameters and the appropriate equations for superheated steam flowing through a nozzle.,"问题：超热蒸汽在330psia和600°F下，以每小时12,000磅的速度流过喷嘴。出口处的最终压力为5psia。速度系数和排放系数分别为0.92和0.95。计算a)出口喷射速度和b)喉部和出口的面积。选项：A.出口喷射速度：4000英尺/秒，喉部面积：0.8平方英寸，出口面积：9平方英寸B.出口喷射速度：3697英尺/秒，喉部面积：0.772平方英寸，出口面积：8.784平方英寸C.出口喷射速度：3800英尺/秒，喉部面积：0.78平方英寸，出口面积：8.9平方英寸D.出口喷射速度：3500英尺/秒，喉部面积：0.75平方英寸，出口面积：8.5平方英寸。答案：B。分析：选项B是正确的。可以使用给定的参数和适用于超热蒸汽流过喷嘴的适当方程来计算出口喷射速度和喉部和出口的面积。","{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""B"",
+    ""brief analysis"": ""Option B is correct. The exit jet velocity and the areas at the throat and the exit can be calculated using the given parameters and the appropriate equations for superheated steam flowing through a nozzle."",
+    ""Chinese translation"": ""问题：超热蒸汽在330psia和600°F下，以每小时12,000磅的速度流过喷嘴。出口处的最终压力为5psia。速度系数和排放系数分别为0.92和0.95。计算a)出口喷射速度和b)喉部和出口的面积。选项：A.出口喷射速度：4000英尺/秒，喉部面积：0.8平方英寸，出口面积：9平方英寸B.出口喷射速度：3697英尺/秒，喉部面积：0.772平方英寸，出口面积：8.784平方英寸C.出口喷射速度：3800英尺/秒，喉部面积：0.78平方英寸，出口面积：8.9平方英寸D.出口喷射速度：3500英尺/秒，喉部面积：0.75平方英寸，出口面积：8.5平方英寸。答案：B。分析：选项B是正确的。可以使用给定的参数和适用于超热蒸汽流过喷嘴的适当方程来计算出口喷射速度和喉部和出口的面积。""
+}"
+Calculate the change of enthalpy as 1 lbm of oxygen is heated from 500 R to 2000 R. Also calculate the average specific heat for the process.,"366 Btu/lbm, 0.244 Btu/lbm	extdegreeR","390 Btu/lbm, 0.250 Btu/lbm	extdegreeR","350 Btu/lbm, 0.230 Btu/lbm	extdegreeR","380 Btu/lbm, 0.260 Btu/lbm	extdegreeR",A,stemez-Thermodynamics,True,None,None,None,None,None,None,"{
+    ""suitable"": ""True"",
+    ""brief reason"": ""None"",
+    ""rewritten question"": ""None"",
+    ""rewritten options"": ""None"",
+    ""correct answer"": ""None"",
+    ""brief analysis"": ""None"",
+    ""Chinese translation"": ""None""
+}"

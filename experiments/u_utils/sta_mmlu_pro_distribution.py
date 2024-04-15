@@ -3,7 +3,7 @@ import os
 
 
 input_dir = "/Users/server/MMLU/git/robust_mmlu/filter_stemez/data/images_removed_mmlu"
-# input_dir = "/Users/server/MMLU/git/robust_mmlu/experiments/data/mmlu_pro_v1"
+# input_dir = "/Users/server/MMLU/git/robust_mmlu/experiments/data/mmlu_pro_v0_1"
 file_list = list(os.listdir(input_dir))
 file_list = sorted(file_list)
 
