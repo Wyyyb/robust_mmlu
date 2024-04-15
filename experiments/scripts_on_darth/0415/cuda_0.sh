@@ -11,7 +11,7 @@ fixed_question_answer=-1
 scoring_method="symbol_scoring"
 model="meta-llama/Llama-2-7b-hf"
 
-cd ../../../mmlu_pro_eval/
+cd ../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=3
 # 调用 Python 脚本，并传递参数
 python evaluate_mmlu_pro.py \
