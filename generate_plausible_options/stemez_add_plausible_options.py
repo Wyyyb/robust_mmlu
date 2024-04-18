@@ -4,6 +4,7 @@ import csv
 import re
 import random
 from tqdm import tqdm
+import time
 
 API_KEY = '786f8c1ff30a4c4b9f9b8917f2f5191b'
 
@@ -17,7 +18,8 @@ my_client = AzureOpenAI(
 index_map = {0: "A", 1: "B", 2: "C", 3: "D", 4: "E", 5: "F", 6: "G", 7: "H", 8: "I", 9: "J"}
 re_index_map = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4, "F": 5, "G": 6, "H": 7, "I": 8, "J": 9}
 
-skip_files = ['moral_scenarios_test.csv']
+# skip_files = ['physics.csv', 'engineer.csv', 'business.csv']
+skip_files = []
 
 
 def read_csv_file(file_path):
@@ -50,6 +52,7 @@ def write_2dlist_to_csv(data, file_name):
 
 
 def call_gpt_4(client, instruction, inputs):
+    start = time.time()
     message_text = [{"role": "user", "content": instruction + inputs}]
     completion = client.chat.completions.create(
       model="gpt-4",
@@ -61,6 +64,7 @@ def call_gpt_4(client, instruction, inputs):
       presence_penalty=0,
       stop=None
     )
+    print("cost time", time.time() - start)
     return completion.choices[0].message.content
 
 
@@ -76,9 +80,9 @@ def request_gpt4(question, options, answer):
     return response
 
 
-def check_exist(question_str, result):
+def check_exist(question_str, answer, result):
     for each in result:
-        if question_str in each:
+        if question_str in each and answer in each:
             return True
     return False
 
@@ -106,24 +110,43 @@ def load_exist_mmlu_data():
         if src not in exist_mmlu_data:
             exist_mmlu_data[src] = {}
         for each in data:
-            question_str = get_question_str_id(each)
+            if not isinstance(each, list):
+                print("not a list", each)
+            answer = each[re_index_map[each[11]] + 1]
+            question_str = get_question_str_id(each, answer)
             if question_str not in exist_mmlu_data[src]:
                 exist_mmlu_data[src][question_str] = [each + [src]]
             else:
-                exist_mmlu_data[src][question_str].append([each + [src]])
+                continue
     return exist_mmlu_data
 
 
-def get_question_str_id(each):
-    question = each[0]
+def get_question_str_id(each, answer):
+    question = each[0] + "\n" + answer
     return question
 
 
-def compare_4_with_10_options(options_4, options_10):
-    for option in options_4:
-        if option not in options_10:
-            return False
-    return True
+def deduplicate(item_list):
+    duplicate_count = 0
+    res = []
+    exist_str = []
+    moral_scenarios_count = 0
+    for each in item_list:
+        if "ori_mmlu-moral_scenarios" in each:
+            moral_scenarios_count += 1
+            continue
+        # id_str = "\n".join(each)
+        answer_index = re_index_map[(each[11])] + 1
+        id_str = each[0] + "\n" + each[answer_index]
+        if id_str not in exist_str:
+            exist_str.append(id_str)
+            res.append(each)
+        else:
+            duplicate_count += 1
+    # print("ori_mmlu-moral_scenarios", moral_scenarios_count)
+    # if duplicate_count != 0:
+    #     print("duplicate_count", duplicate_count)
+    return res
 
 
 def expand_options():
@@ -134,7 +157,9 @@ def expand_options():
     file_list = list(os.listdir(input_dir))
     file_list = sorted(file_list)
     for each_file in file_list:
+        # print("subject", each_file)
         if each_file in skip_files:
+            print("skip", each_file)
             continue
         output_path = os.path.join(output_dir, each_file)
         if os.path.exists(output_path):
@@ -151,22 +176,26 @@ def expand_options():
             single_out = [line[0]]
             question_str = line[0]
             src = line[6]
-            question_str_id = get_question_str_id(line)
+            if src == "ori_mmlu-moral_scenarios":
+                continue
+            answer = line[re_index_map[line[5]] + 1]
+            question_str_id = get_question_str_id(line, answer)
             if src in exist_mmlu_data and question_str_id in exist_mmlu_data[src]:
-                for each in exist_mmlu_data[src][question_str_id]:
-                    options_4 = line[1: 5]
-                    options_10 = each[1: 11]
-                    if compare_4_with_10_options(options_4, options_10):
-                        output_data.append(each)
-                        # print("already expanded by gpt-4")
-                        continue
-            if check_exist(question_str, output_data):
+                each = exist_mmlu_data[src][question_str_id][0]
+                output_data.append(each)
+                # print("already expanded by gpt-4")
+                continue
+            # if "mmlu" in src:
+            #     print("error; not using ori mmlu exp_10", src)
+            if check_exist(question_str, answer, output_data):
+                # print("cache file")
                 continue
             options = line[1: 5]
             ans_index = line[5]
             answer_content = options[re_index_map[ans_index]]
             options_str = "A: {}\nB: {}\nC: {}\nD: {}".format(options[0], options[1], options[2], options[3])
             answer_str = "{}: {}".format(ans_index, options[re_index_map[ans_index]])
+            # print("src", src)
             response = request_gpt4(question_str, options_str, answer_str)
             expanded_options = parse_options(response)
             if not expanded_options:
@@ -177,7 +206,12 @@ def expand_options():
             new_ans_index = index_map[new_options.index(answer_content)]
             single_out += new_options + [new_ans_index] + [src]
             output_data.append(single_out)
+            output_data = deduplicate(output_data)
             write_2dlist_to_csv(output_data, output_path)
+        output_data = deduplicate(output_data)
+        print("subject", each_file)
+        print("length", len(output_data))
+        write_2dlist_to_csv(output_data, output_path)
 
 
 if __name__ == "__main__":
