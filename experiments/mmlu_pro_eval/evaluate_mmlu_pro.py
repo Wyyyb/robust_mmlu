@@ -304,7 +304,7 @@ def hybrid_eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=
 
 def load_model():
     # model, tokenizer = None, None
-    if "llama" in args.model.lower():
+    if "llama-2" in args.model.lower():
         model = transformers.AutoModelForCausalLM.from_pretrained(
             args.model,
             device_map="auto", torch_dtype=torch.bfloat16)
@@ -322,7 +322,7 @@ def load_model():
             }
         )
     elif "gemma" in args.model.lower() or "mistral" in args.model.lower() \
-            or "yi-6b" in args.model.lower():
+            or "yi-6b" in args.model.lower() or "llama-3" in args.model.lower():
         tokenizer = AutoTokenizer.from_pretrained(args.model,
                                                   model_max_length=2048,
                                                   padding_side="right",
