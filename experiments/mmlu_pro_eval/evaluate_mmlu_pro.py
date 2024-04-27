@@ -169,7 +169,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, exists_result=None):
         # 创建一个列表，包含1-20对应的大写希腊字母
         greek_letters = [chr(greek_upper_unicode_start + i) for i in range(17)]
         choices = greek_letters
-    answers = choices[: test_df.shape[1] - 2]
+    # answers = choices[: test_df.shape[1] - 2]
 
     for i in tqdm(range(test_df.shape[0])):
         # get prompt and make sure it fits
