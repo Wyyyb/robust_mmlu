@@ -297,8 +297,8 @@ def args_generate_path(input_args):
         dataset_name = "mmlu"
     else:
         dataset_name = "mmlu_pro"
-    if input_args.options_num > 4:
-        dataset_name += f"_exp_{str(input_args.options_num)}"
+    # if input_args.options_num > 4:
+    #     dataset_name += f"_exp_{str(input_args.options_num)}"
     if input_args.fixed_question_answer == -1 and not input_args.use_rare_symbol:
         eval_method = "ori_eval"
     elif input_args.fixed_question_answer == -1:
@@ -318,7 +318,7 @@ if __name__ == "__main__":
     parser.add_argument("--ngpu", "-g", type=int, default=1)
     parser.add_argument("--data_dir", "-d", type=str, default="data")
     parser.add_argument("--save_dir", "-s", type=str, default="results")
-    # parser.add_argument("--options_num", "-o", type=int, default=4)
+    parser.add_argument("--options_num", "-o", type=int, default=4)
     parser.add_argument("--use_rare_symbol", "-r", type=lambda x: bool(strtobool(x)), default=False)
     parser.add_argument("--fixed_question_answer", "-q", type=int, default=-1)
     parser.add_argument("--scoring_method", "-sm", type=str, default="symbol_scoring")
