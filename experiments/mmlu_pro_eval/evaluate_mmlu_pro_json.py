@@ -262,13 +262,15 @@ def main():
 
     all_cors = []
     if "ori_mmlu" in args.data_dir:
-        subcat_cors = {subcat: [] for subcat in ori_mmlu_subcategories.values()}
-        cat_cors = {cat: [] for cat in ori_mmlu_categories}
+        subcat_dict = ori_mmlu_subcategories
+        cat_dict = ori_mmlu_categories
     else:
-        subcat_cors = {}
-        for subcat in subcategories.values():
-            subcat_cors[subcat] = []
-        cat_cors = {cat: [] for cat in categories}
+        subcat_dict = subcategories
+        cat_dict = categories
+    subcat_cors = {}
+    for subcat in subcat_dict.values():
+        subcat_cors[subcat] = []
+    cat_cors = {cat: [] for cat in cat_dict}
 
     for subject in subjects:
         output_path = os.path.join(save_result_dir, "{}".format(subject))
@@ -285,11 +287,11 @@ def main():
             test_df = fix_answer(test_df, args.fixed_question_answer)
         acc, corr_count, wrong_count = eval(args, subject, model, tokenizer, dev_df, test_df,
                                             output_path, exists_result)
-        subcat = subcategories[subject.replace(".json", ".csv")]
+        subcat = subcat_dict[subject.replace(".json", ".csv")]
         cors = [0 for _ in range(int(wrong_count))] + [1 for _ in range(int(corr_count))]
         subcat_cors[subcat].append(cors)
-        for key in categories.keys():
-            if subcat in categories[key]:
+        for key in cat_dict.keys():
+            if subcat in cat_dict[key]:
                 cat_cors[key].append(cors)
         all_cors.append(cors)
 
