@@ -1,21 +1,21 @@
 subcategories = {
-    "biology.csv": "biology",
-    "business.csv": "business",
-    "chemistry.csv": "chemistry",
-    "computer science.csv": "computer science",
-    "culture.csv": "culture",
-    "economics.csv": "economics",
-    "engineering.csv": "engineering",
-    "geography.csv": "geography",
-    "health.csv": "health",
-    "history.csv": "history",
-    "law.csv": "law",
-    "math.csv": "math",
-    "other.csv": "other",
-    "philosophy.csv": "philosophy",
-    "physics.csv": "physics",
-    "politics.csv": "politics",
-    "psychology.csv": "psychology"
+    "biology": "biology",
+    "business": "business",
+    "chemistry": "chemistry",
+    "computer science": "computer science",
+    "culture": "culture",
+    "economics": "economics",
+    "engineering": "engineering",
+    "geography": "geography",
+    "health": "health",
+    "history": "history",
+    "law": "law",
+    "math": "math",
+    "other": "other",
+    "philosophy": "philosophy",
+    "physics": "physics",
+    "politics": "politics",
+    "psychology": "psychology"
 }
 
 categories = {

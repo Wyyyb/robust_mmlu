@@ -287,7 +287,7 @@ def main():
             test_df = fix_answer(test_df, args.fixed_question_answer)
         acc, corr_count, wrong_count = eval(args, subject, model, tokenizer, dev_df, test_df,
                                             output_path, exists_result)
-        subcat = subcat_dict[subject.replace(".json", ".csv")]
+        subcat = subcat_dict[subject.replace(".json", "")]
         cors = [0 for _ in range(int(wrong_count))] + [1 for _ in range(int(corr_count))]
         subcat_cors[subcat].append(cors)
         for key in cat_dict.keys():
