@@ -18,8 +18,10 @@ def write_2dlist_to_csv(data, file_name):
         writer.writerows(data)
 
 
-def transfer(input_dir, output_dir):
+def transfer(input_dir, output_dir, sample_dir=""):
     os.makedirs(output_dir, exist_ok=True)
+    if sample_dir != "":
+        os.makedirs(sample_dir, exist_ok=True)
     exist_questions = []
     file_list = list(os.listdir(input_dir))
     file_list = sorted(file_list)
@@ -45,14 +47,20 @@ def transfer(input_dir, output_dir):
                         "answer_index": answer_index, "src": src}
             q_id += 1
             res.append(curr_res)
-        output_path = os.path.join(output_dir, each.replace(".csv", ".json"))
+        output_path = os.path.join(output_dir, each.replace(".csv", ".json").replace("_test", ""))
+        sample_path = os.path.join(sample_dir, each.replace(".csv", ".json").replace("_test", ""))
         with open(output_path, "w") as fo:
             fo.write(json.dumps(res))
         print(each, "question number is: ", len(res))
+        if sample_dir != "":
+            with open(sample_path, "w") as fo:
+                fo.write(json.dumps(res[:10]))
 
 
 if __name__ == "__main__":
-    transfer("experiments/data/mmlu_pro_exp_10_options", "data/mmlu_pro_exp_10_options")
+    # transfer("experiments/data/mmlu_pro_exp_10_options", "data/mmlu_pro_exp_10_options")
+    transfer("experiments/data/ori_mmlu_data", "data/ori_mmlu_data_json",
+             "data/ori_mmlu_sample")
 
 
 

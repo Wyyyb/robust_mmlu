@@ -408,13 +408,7 @@ def main():
     print("model.eval()")
     model.eval()
 
-    subjects = sorted(
-        [
-            f
-            for f in os.listdir(args.data_dir)
-            if ".csv" in f
-        ]
-    )
+    subjects = sorted([f for f in os.listdir(args.data_dir) if ".csv" in f])
 
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
@@ -497,6 +491,8 @@ def args_generate_path(input_args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--ntrain", "-k", type=int, default=5)
+    parser.add_argument("--examples_start_index", "-esi", type=int, default=0)
+    parser.add_argument("--prompt_type", "-p", type=int, default=0)
     parser.add_argument("--ngpu", "-g", type=int, default=1)
     parser.add_argument("--data_dir", "-d", type=str, default="data")
     parser.add_argument("--save_dir", "-s", type=str, default="results")

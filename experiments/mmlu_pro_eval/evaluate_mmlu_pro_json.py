@@ -39,7 +39,12 @@ def format_subject(subject):
 
 
 def format_example(df, idx, include_answer=True):
-    prompt = str(df[idx]["question"])
+    prompt = ""
+    if args.prompt_type == 1:
+        prompt += "Question:"
+    prompt += str(df[idx]["question"])
+    if args.prompt_type == 1:
+        prompt += "\nOptions:"
     options = df[idx]["options"]
     for j in range(len(options)):
         prompt += "\n{}. {}".format(choices[j], options[j])
@@ -63,15 +68,18 @@ def fix_answer(test_df, fixed_index):
             options[ans_index] = options[fixed_index]
             options[fixed_index] = temp
             each["answer_index"] = fixed_index
+            each["answer"] = options[fixed_index]
         res.append(each)
     return res
 
 
 def gen_prompt(train_df, subject, k=-1):
     if subject and subject != "":
-        prompt = "The following are multiple choice questions (with answers) about {}.\n\n".format(
-            format_subject(subject)
-        )
+        if args.prompt_type == 1:
+            prompt = ""
+        else:
+            prompt = "The following are multiple choice questions (with answers) about {}.\n\n"\
+                .format(format_subject(subject))
     else:
         prompt = ""
     if k == -1:
@@ -202,7 +210,6 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_r
             # print(probs)
             letters = [chr(i) for i in range(ord('A'), ord('Z') + 1)]
 
-            # 使用字典推导式构建特定长度的字典
             index_letter_dict = {i: letters[i] for i in range(options_num)}
             pred = index_letter_dict[np.argmax(probs)]
         else:
@@ -233,6 +240,14 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_r
     return acc, correct_count, wrong_count
 
 
+def divide_df(all_df):
+    start_index = args.examples_start_index
+    example_num = args.ntrain
+    test_df = all_df[start_index: start_index + example_num]
+    dev_df = all_df[: start_index] + all_df[start_index + example_num:]
+    return dev_df, test_df
+
+
 def main():
     model, tokenizer = load_model()
     print("model.eval()")
@@ -246,13 +261,14 @@ def main():
         os.makedirs(save_result_dir)
 
     all_cors = []
-
-    subcat_cors = {}
-
-    for subcat in subcategories.values():
-        subcat_cors[subcat] = []
-
-    cat_cors = {cat: [] for cat in categories}
+    if "ori_mmlu" in args.data_dir:
+        subcat_cors = {subcat: [] for subcat in ori_mmlu_subcategories.values()}
+        cat_cors = {cat: [] for cat in ori_mmlu_categories}
+    else:
+        subcat_cors = {}
+        for subcat in subcategories.values():
+            subcat_cors[subcat] = []
+        cat_cors = {cat: [] for cat in categories}
 
     for subject in subjects:
         output_path = os.path.join(save_result_dir, "{}".format(subject))
@@ -263,8 +279,8 @@ def main():
             exists_result = []
         with open(os.path.join(args.data_dir, subject), "r") as fi:
             all_df = json.load(fi)
-        dev_df = all_df[: args.ntrain]
-        test_df = all_df[args.ntrain:]
+        dev_df, test_df = divide_df(all_df)
+        print("dev_df", dev_df)
         if args.fixed_question_answer != -1:
             test_df = fix_answer(test_df, args.fixed_question_answer)
         acc, corr_count, wrong_count = eval(args, subject, model, tokenizer, dev_df, test_df,
@@ -278,6 +294,15 @@ def main():
         all_cors.append(cors)
 
     with open(os.path.join(summary_path), 'a') as f:
+        f.write("\n------subcategory level sta------\n")
+        keys = list(subcat_cors.keys())
+        keys = sorted(keys)
+        for subcat in keys:
+            if not subcat_cors[subcat]:
+                continue
+            subcat_acc = np.mean(np.concatenate(subcat_cors[subcat]))
+            f.write("Average accuracy {:.4f} - {}\n".format(subcat_acc, subcat))
+
         f.write("\n------category level sta------\n")
         for cat in cat_cors:
             if not cat_cors[cat]:
@@ -297,8 +322,6 @@ def args_generate_path(input_args):
         dataset_name = "mmlu"
     else:
         dataset_name = "mmlu_pro"
-    # if input_args.options_num > 4:
-    #     dataset_name += f"_exp_{str(input_args.options_num)}"
     if input_args.fixed_question_answer == -1 and not input_args.use_rare_symbol:
         eval_method = "ori_eval"
     elif input_args.fixed_question_answer == -1:
@@ -315,6 +338,8 @@ def args_generate_path(input_args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--ntrain", "-k", type=int, default=5)
+    parser.add_argument("--examples_start_index", "-esi", type=int, default=0)
+    parser.add_argument("--prompt_type", "-p", type=int, default=0)
     parser.add_argument("--ngpu", "-g", type=int, default=1)
     parser.add_argument("--data_dir", "-d", type=str, default="data")
     parser.add_argument("--save_dir", "-s", type=str, default="results")
