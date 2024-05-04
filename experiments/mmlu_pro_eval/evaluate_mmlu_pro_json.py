@@ -365,4 +365,13 @@ if __name__ == "__main__":
     os.makedirs(save_result_dir, exist_ok=True)
     main()
 
+'''
+model="meta-llama/Llama-2-7b-hf"
+model="google/gemma-7b"
+model="meta-llama/Llama-2-13b-hf"
+model="/mnt/tjena/shared/Meta-Llama-3-8B"
+model="meta-llama/Llama-2-7b-chat-hf"
+model="01-ai/Yi-6B"
+model="mistralai/Mixtral-8x7B-v0.1"
+'''
 
