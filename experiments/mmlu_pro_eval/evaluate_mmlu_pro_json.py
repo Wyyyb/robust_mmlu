@@ -243,8 +243,8 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_r
 def divide_df(all_df):
     start_index = args.examples_start_index
     example_num = args.ntrain
-    test_df = all_df[start_index: start_index + example_num]
-    dev_df = all_df[: start_index] + all_df[start_index + example_num:]
+    dev_df = all_df[start_index: start_index + example_num]
+    test_df = all_df[: start_index] + all_df[start_index + example_num:]
     return dev_df, test_df
 
 
