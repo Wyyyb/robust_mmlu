@@ -386,8 +386,8 @@ if __name__ == "__main__":
         type=str,
         default="meta-llama/Llama-2-7b-hf",
     )
-    cot_lib_map = load_cot_lib()
     args = parser.parse_args()
+    cot_lib_map = load_cot_lib()
     save_result_dir = os.path.join(
         args.save_dir, args_generate_path(args)
     )
