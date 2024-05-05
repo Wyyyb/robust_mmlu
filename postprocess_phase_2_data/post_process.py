@@ -67,9 +67,9 @@ def postprocess(input_file, output_dir):
 
 
 def save_global_sta():
-    with open("annotator_sta_0504.json", "w") as fo:
+    with open("annotator_sta_0505.json", "w") as fo:
         fo.write(json.dumps(global_sta))
-    with open("lead_time_sta_0504.json", "w") as fo:
+    with open("lead_time_sta_0505.json", "w") as fo:
         fo.write(json.dumps(lead_time_sta))
     summary_sta = {}
     no_issues_count = 0
@@ -79,7 +79,7 @@ def save_global_sta():
             if key not in summary_sta:
                 summary_sta[key] = 0
             summary_sta[key] += value
-    with open("summary_sta_0504.json", "w") as fo:
+    with open("summary_sta_0505.json", "w") as fo:
         fo.write(json.dumps(summary_sta))
 
 
@@ -251,5 +251,5 @@ def match_annotator(annntator_id):
 
 
 if __name__ == '__main__':
-    postprocess("data/ann_data_0504.json", "../data/mmlu_pro_exp_0504")
+    postprocess("data/ann_data_0505.json", "../data/mmlu_pro_exp_0505")
 

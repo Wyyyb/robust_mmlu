@@ -1,0 +1,10 @@
+{
+    "no_issues": 10748,
+    "duplicate_correct_answer": 404,
+    "question_unsure": 338,
+    "answer_is_incorrect": 329,
+    "unsure_options": 489,
+    "meta_options_issue": 236,
+    "bad_questions": 262,
+    "hard_to_verify": 233
+}

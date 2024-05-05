@@ -3,10 +3,10 @@ subcategories = {
     "business": "business",
     "chemistry": "chemistry",
     "computer science": "computer science",
-    "culture": "culture",
+    "culture": "other",
     "economics": "economics",
     "engineering": "engineering",
-    "geography": "geography",
+    "geography": "other",
     "health": "health",
     "history": "history",
     "law": "law",
@@ -14,13 +14,13 @@ subcategories = {
     "other": "other",
     "philosophy": "philosophy",
     "physics": "physics",
-    "politics": "politics",
+    "politics": "other",
     "psychology": "psychology"
 }
 
 categories = {
     "STEM": ["physics", "chemistry", "biology", "computer science", "math", "engineering"],
-    "humanities and social sciences": ["politics", "culture", "economics", "geography", "psychology",
-                                       "history", "philosophy", "business", "health", "law"],
+    "humanities and social sciences": ["economics", "psychology", "history", "philosophy", "business",
+                                       "health", "law"],
     "other": ["other"],
 }

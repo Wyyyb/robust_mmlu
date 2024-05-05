@@ -4,7 +4,7 @@ import argparse
 import os
 import torch
 import numpy as np
-import pandas as pd
+import random
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from transformers import AutoModelForCausalLM
 from categories import subcategories, categories
@@ -178,7 +178,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_r
             prompt_input_ids = tokenizer.encode(prompt, return_tensors="pt")
             while prompt_input_ids.shape[-1] > 2000:
                 k -= 1
-                # train_prompt = gen_prompt(dev_df, subject, k)
+                train_prompt = gen_prompt(dev_df, subject, k)
                 prompt = train_prompt + prompt_end
                 prompt_input_ids = tokenizer.encode(prompt, return_tensors="pt")
             log_likelihoods = []
@@ -197,7 +197,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_r
             input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
             while input_ids.shape[-1] > 2048:
                 k -= 1
-                # train_prompt = gen_prompt(dev_df, subject, k)
+                train_prompt = gen_prompt(dev_df, subject, k)
                 prompt = train_prompt + prompt_end
                 input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
             logits = model(
@@ -341,11 +341,38 @@ def args_generate_path(input_args):
     return res
 
 
+def load_cot_lib(lib_path=""):
+    cot_lib = {}
+    seed = 123456
+    random.seed(seed)
+    if args.cot_type == "-1":
+        return cot_lib
+    elif args.cot_type == "0":
+        if lib_path == "":
+            lib_path = "cot_lib_prompt/mmlu-cot.json"
+        with open(lib_path, "r") as fi:
+            lib_data = json.load(fi)
+        if "ori_mmlu" in args.data_dir:
+            return lib_data
+        ori_cat = ori_mmlu_subcategories
+        pro_cat = subcategories
+        for k, v in lib_data.items():
+            key = pro_cat.get(ori_cat.get(k, ""), "")
+            if key not in cot_lib:
+                cot_lib[key] = []
+            cot_lib[key] += v.split("\n\n")
+        for k, v in cot_lib.items():
+            random.shuffle(v)
+            cot_lib[k] = v
+    return cot_lib
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--ntrain", "-k", type=int, default=5)
     parser.add_argument("--examples_start_index", "-esi", type=int, default=0)
     parser.add_argument("--prompt_type", "-p", type=int, default=0)
+    parser.add_argument("--cot_type", "-c", type=int, default=-1)
     parser.add_argument("--ngpu", "-g", type=int, default=1)
     parser.add_argument("--data_dir", "-d", type=str, default="data")
     parser.add_argument("--save_dir", "-s", type=str, default="results")
@@ -359,6 +386,7 @@ if __name__ == "__main__":
         type=str,
         default="meta-llama/Llama-2-7b-hf",
     )
+    cot_lib_map = load_cot_lib()
     args = parser.parse_args()
     save_result_dir = os.path.join(
         args.save_dir, args_generate_path(args)
@@ -385,5 +413,9 @@ model="/mnt/tjena/shared/Meta-Llama-3-8B"
 model="meta-llama/Llama-2-7b-chat-hf"
 model="01-ai/Yi-6B"
 model="mistralai/Mixtral-8x7B-v0.1"
+
+
+variance
+ranking big difference
 '''
 
