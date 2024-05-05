@@ -195,7 +195,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_r
 
         elif args.scoring_method == "symbol_scoring":
             input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
-            while input_ids.shape[-1] > 2048:
+            while input_ids.shape[-1] > 2000:
                 k -= 1
                 train_prompt = gen_prompt(dev_df, subject, k)
                 prompt = train_prompt + prompt_end
