@@ -164,12 +164,14 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_r
     for i in tqdm(range(len(test_df))):
         k = args.ntrain
         options_num = len(test_df[i]["options"])
-        print("options_num", options_num)
+        if options_num != 10 and options_num != 4:
+            print("options_num", options_num)
         prompt_end, options = format_example(test_df, i, include_answer=False)
         if check_exist(res, test_df[i]["q_id"]):
             continue
         train_prompt = gen_prompt(dev_df, subject, k)
-        print("train_prompt", train_prompt)
+        if i == 0:
+            print("train_prompt", train_prompt)
         prompt = train_prompt + prompt_end
         label = test_df[i]["answer"]
 
