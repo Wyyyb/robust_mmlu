@@ -32,15 +32,7 @@ re_index_map = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4, "F": 5, "G": 6, "H": 7, 
 
 
 def format_subject(subject):
-    if ".csv" not in subject and "_" in subject:
-        l = subject.split("_")
-        s = ""
-        for entry in l:
-            s += " " + entry
-        return s
-    elif ".json" in subject:
-        return subject.replace(".json", "")
-    return subject.replace(".csv", "")
+    return subject.replace(".json", "").replace("_", " ").replace(".csv", "")
 
 
 def format_example(df, idx, include_answer=True):
