@@ -14,6 +14,9 @@ import time
 from transformers import GenerationConfig
 from tqdm import tqdm
 from distutils.util import strtobool
+import logging
+import sys
+
 
 IGNORE_INDEX = -100
 DEFAULT_PAD_TOKEN = "[PAD]"
@@ -35,6 +38,8 @@ def format_subject(subject):
         for entry in l:
             s += " " + entry
         return s
+    elif ".json" in subject:
+        return subject.replace(".json", "")
     return subject.replace(".csv", "")
 
 
@@ -170,16 +175,18 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_r
         if check_exist(res, test_df[i]["q_id"]):
             continue
         train_prompt = gen_prompt(dev_df, subject, k)
+        prompt = train_prompt + prompt_end
         if i == 0:
             print("train_prompt", train_prompt)
-        prompt = train_prompt + prompt_end
+            logging.info("prompt:\n" + prompt)
+
         label = test_df[i]["answer"]
 
         if args.scoring_method == "hybrid_scoring":
             prompt_input_ids = tokenizer.encode(prompt, return_tensors="pt")
             while prompt_input_ids.shape[-1] > 2000:
                 k -= 1
-                train_prompt = gen_prompt(dev_df, subject, k)
+                # train_prompt = gen_prompt(dev_df, subject, k)
                 prompt = train_prompt + prompt_end
                 prompt_input_ids = tokenizer.encode(prompt, return_tensors="pt")
             log_likelihoods = []
@@ -198,7 +205,7 @@ def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_r
             input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
             while input_ids.shape[-1] > 2048:
                 k -= 1
-                train_prompt = gen_prompt(dev_df, subject, k)
+                # train_prompt = gen_prompt(dev_df, subject, k)
                 prompt = train_prompt + prompt_end
                 input_ids = tokenizer(prompt, return_tensors="pt").input_ids.cuda()
             logits = model(
@@ -285,6 +292,7 @@ def main():
             all_df = json.load(fi)
         dev_df, test_df = divide_df(all_df)
         print("dev_df", dev_df)
+        logging.info(json.dumps(dev_df))
         if args.fixed_question_answer != -1:
             test_df = fix_answer(test_df, args.fixed_question_answer)
         acc, corr_count, wrong_count = eval(args, subject, model, tokenizer, dev_df, test_df,
@@ -369,6 +377,12 @@ if __name__ == "__main__":
     file_name = f"{file_prefix}_{time_str}_summary.txt"
     summary_path = os.path.join(args.save_dir, file_name)
     os.makedirs(save_result_dir, exist_ok=True)
+    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s',
+                        handlers=[logging.FileHandler(os.path.join(args.save_dir,
+                                                                   file_name.replace("_summary.txt",
+                                                                                     "_logfile.log"))),
+                                  logging.StreamHandler(sys.stdout)])
+
     main()
 
 '''
