@@ -27,33 +27,33 @@ export CUDA_VISIBLE_DEVICES=0
 #                 --scoring_method $scoring_method \
 #                 --model $model
 
-prompt_type=2
-python evaluate_mmlu_pro_json.py \
-                 --ntrain $ntrain \
-                 --examples_start_index $examples_start_index \
-                 --prompt_type $prompt_type \
-                 --ngpu $ngpu \
-                 --data_dir $data_dir \
-                 --save_dir $save_dir \
-                 --use_rare_symbol $use_rare_symbol \
-                 --fixed_question_answer $fixed_question_answer \
-                 --scoring_method $scoring_method \
-                 --model $model
+#prompt_type=2
+#python evaluate_mmlu_pro_json.py \
+#                 --ntrain $ntrain \
+#                 --examples_start_index $examples_start_index \
+#                 --prompt_type $prompt_type \
+#                 --ngpu $ngpu \
+#                 --data_dir $data_dir \
+#                 --save_dir $save_dir \
+#                 --use_rare_symbol $use_rare_symbol \
+#                 --fixed_question_answer $fixed_question_answer \
+#                 --scoring_method $scoring_method \
+#                 --model $model
 
 
-examples_start_index=5
-prompt_type=2
-python evaluate_mmlu_pro_json.py \
-                 --ntrain $ntrain \
-                 --examples_start_index $examples_start_index \
-                 --prompt_type $prompt_type \
-                 --ngpu $ngpu \
-                 --data_dir $data_dir \
-                 --save_dir $save_dir \
-                 --use_rare_symbol $use_rare_symbol \
-                 --fixed_question_answer $fixed_question_answer \
-                 --scoring_method $scoring_method \
-                 --model $model
+#examples_start_index=5
+#prompt_type=2
+#python evaluate_mmlu_pro_json.py \
+#                 --ntrain $ntrain \
+#                 --examples_start_index $examples_start_index \
+#                 --prompt_type $prompt_type \
+#                 --ngpu $ngpu \
+#                 --data_dir $data_dir \
+#                 --save_dir $save_dir \
+#                 --use_rare_symbol $use_rare_symbol \
+#                 --fixed_question_answer $fixed_question_answer \
+#                 --scoring_method $scoring_method \
+#                 --model $model
 
 
 examples_start_index=0
