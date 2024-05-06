@@ -265,8 +265,6 @@ def main():
 
     subjects = sorted([f for f in os.listdir(args.data_dir) if ".json" in f])
 
-    if not os.path.exists(args.save_dir):
-        os.makedirs(args.save_dir)
     if not os.path.exists(save_result_dir):
         os.makedirs(save_result_dir)
 
@@ -407,7 +405,7 @@ if __name__ == "__main__":
     summary_path = os.path.join(args.save_dir, file_name)
     os.makedirs(save_result_dir, exist_ok=True)
     save_log_dir = os.path.join(args.save_dir, "log")
-    os.makedirs(save_result_dir, exist_ok=True)
+    os.makedirs(save_log_dir, exist_ok=True)
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s',
                         handlers=[logging.FileHandler(os.path.join(save_log_dir,
                                                                    file_name.replace("_summary.txt",
