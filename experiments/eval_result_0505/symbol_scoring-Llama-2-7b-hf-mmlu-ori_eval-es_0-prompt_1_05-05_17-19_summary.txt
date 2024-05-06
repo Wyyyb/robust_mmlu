@@ -1,0 +1,17 @@
+Average accuracy 0.3000 - abstract_algebra.json
+Average accuracy 0.4296 - anatomy.json
+Average accuracy 0.4211 - astronomy.json
+Average accuracy 0.4900 - business_ethics.json
+Average accuracy 0.4113 - clinical_knowledge.json
+Average accuracy 0.4444 - college_biology.json
+Average accuracy 0.3300 - college_chemistry.json
+Average accuracy 0.3600 - college_computer_science.json
+Average accuracy 0.2800 - college_mathematics.json
+Average accuracy 0.3757 - college_medicine.json
+Average accuracy 0.2059 - college_physics.json
+Average accuracy 0.5600 - computer_security.json
+Average accuracy 0.4085 - conceptual_physics.json
+Average accuracy 0.2368 - econometrics.json
+Average accuracy 0.3586 - electrical_engineering.json
+Average accuracy 0.2566 - elementary_mathematics.json
+Average accuracy 0.3095 - formal_logic.json
