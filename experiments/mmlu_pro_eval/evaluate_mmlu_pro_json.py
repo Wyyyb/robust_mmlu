@@ -58,6 +58,7 @@ def format_example(df, idx, include_answer=True):
 def fix_answer(test_df, fixed_index):
     res = []
     for each in test_df:
+        print("ori", each)
         ans_index = each["answer_index"]
         if ans_index != fixed_index:
             options = each["options"]
@@ -68,6 +69,8 @@ def fix_answer(test_df, fixed_index):
             each["answer_index"] = fixed_index
             each["answer"] = options[fixed_index]
         res.append(each)
+        print("fixed", each)
+        input("enter")
     return res
 
 
@@ -403,8 +406,10 @@ if __name__ == "__main__":
     file_name = f"{file_prefix}_{time_str}_summary.txt"
     summary_path = os.path.join(args.save_dir, file_name)
     os.makedirs(save_result_dir, exist_ok=True)
+    save_log_dir = os.path.join(args.save_dir, "log")
+    os.makedirs(save_result_dir, exist_ok=True)
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s',
-                        handlers=[logging.FileHandler(os.path.join(args.save_dir,
+                        handlers=[logging.FileHandler(os.path.join(save_log_dir,
                                                                    file_name.replace("_summary.txt",
                                                                                      "_logfile.log"))),
                                   logging.StreamHandler(sys.stdout)])
