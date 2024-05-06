@@ -58,7 +58,7 @@ def format_example(df, idx, include_answer=True):
 def fix_answer(test_df, fixed_index):
     res = []
     for each in test_df:
-        print("ori", each)
+        # print("ori", each)
         ans_index = each["answer_index"]
         if ans_index != fixed_index:
             options = each["options"]
@@ -67,10 +67,10 @@ def fix_answer(test_df, fixed_index):
             options[fixed_index] = temp
             each["options"] = options
             each["answer_index"] = fixed_index
-            each["answer"] = options[fixed_index]
+            each["answer"] = choices[fixed_index]
         res.append(each)
-        print("fixed", each)
-        input("enter")
+        # print("fixed", each)
+        # input("enter")
     return res
 
 
