@@ -64,6 +64,7 @@ def fix_answer(test_df, fixed_index):
             temp = options[ans_index]
             options[ans_index] = options[fixed_index]
             options[fixed_index] = temp
+            each["options"] = options
             each["answer_index"] = fixed_index
             each["answer"] = options[fixed_index]
         res.append(each)
@@ -74,6 +75,11 @@ def gen_prompt(train_df, subject, k=-1):
     if subject and subject != "":
         if args.prompt_type == 1:
             prompt = ""
+        elif args.prompt_type == 2:
+            prompt = "You are an expert in {}. Below is a series of example questions \
+            (with answers) about {} for demonstration. You will be given a question at \
+            the end, after the examples, for you to answer.\n\n".format(format_subject(subject),
+                                                                        format_subject(subject))
         else:
             prompt = "The following are multiple choice questions (with answers) about {}.\n\n"\
                 .format(format_subject(subject))
