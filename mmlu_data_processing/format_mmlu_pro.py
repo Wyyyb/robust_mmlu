@@ -22,8 +22,8 @@ def format_test_data():
             for i, each in enumerate(curr):
                 max_q_id = max(max_q_id, each["q_id"])
                 new = {"question_id": each["q_id"], "question": each["question"], "options": each["options"],
-                       "answer": each["answer"], "answer_index": each["answer_index"], "category": category,
-                       "src": each["src"]}
+                       "answer": each["answer"], "answer_index": each["answer_index"],
+                       "cot_content": "", "category": category, "src": each["src"]}
                 curr[i] = new
             curr = sorted(curr, key=lambda x: x["question_id"])
             if file not in test_data:
