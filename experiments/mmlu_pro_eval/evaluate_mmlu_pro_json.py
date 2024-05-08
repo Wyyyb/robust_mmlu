@@ -167,6 +167,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         greek_upper_unicode_start = 0x391
         greek_letters = [chr(greek_upper_unicode_start + i) for i in range(17)]
         choices = greek_letters
+    logging.info("evaluating " + subject)
     for i in tqdm(range(len(test_df))):
         k = args.ntrain
         options_num = len(test_df[i]["options"])
@@ -190,12 +191,13 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         output = model.generate(**inputs, max_new_tokens=512, num_return_sequences=1)
         answer = tokenizer.decode(output[0], skip_special_tokens=True)
         pred = extract_answer(answer)
-        logging.info("answer", answer)
+        logging.info("answer: " + answer)
+        logging.info("pred: " + pred)
         if not pred or pred not in choices:
             temp = choices[: options_num]
             random.shuffle(temp)
             pred = temp[0]
-            logging.info("answer extract failed", answer, "pred random select", pred)
+            logging.info("answer extract failed" + answer + "pred random select" + pred)
 
         curr = test_df[i]
         curr["pred"] = pred
