@@ -11,7 +11,7 @@ save_dir="../test_result_0508"
 use_rare_symbol=False
 fixed_question_answer=-1
 scoring_method="hybrid_scoring"
-model="meta-llama/Llama-2-7b-hf"
+model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 # model="google/gemma-7b"
 
 cd ../../../mmlu_pro_eval/

@@ -1,0 +1,1 @@
+Average accuracy 0.5258 - biology.json

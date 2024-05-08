@@ -562,7 +562,7 @@ if __name__ == "__main__":
         "--model",
         "-m",
         type=str,
-        default="meta-llama/Llama-2-7b-hf",
+        default="/ML-A100/team/mm/zhangge/Llama-2-7b-hf",
     )
     global_record_file = "../result_record/eval_record_collection.txt"
     os.makedirs("../result_record", exist_ok=True)
@@ -589,11 +589,11 @@ if __name__ == "__main__":
     main()
 
 '''
-model="meta-llama/Llama-2-7b-hf"
+model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 model="google/gemma-7b"
-model="meta-llama/Llama-2-13b-hf"
+model="/ML-A100/team/mm/zhangge/Llama-2-13b-hf"
 model="/mnt/tjena/shared/Meta-Llama-3-8B"
-model="meta-llama/Llama-2-7b-chat-hf"
+model="/ML-A100/team/mm/zhangge/Llama-2-7b-chat-hf"
 model="01-ai/Yi-6B"
 model="mistralai/Mixtral-8x7B-v0.1"
 
