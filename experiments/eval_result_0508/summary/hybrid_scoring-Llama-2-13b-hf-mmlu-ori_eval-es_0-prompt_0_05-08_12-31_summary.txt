@@ -29,3 +29,57 @@ Average accuracy 0.2649 - high_school_physics.json
 Average accuracy 0.5431 - high_school_psychology.json
 Average accuracy 0.3519 - high_school_statistics.json
 Average accuracy 0.4853 - high_school_us_history.json
+Average accuracy 0.4810 - high_school_world_history.json
+Average accuracy 0.4036 - human_aging.json
+Average accuracy 0.5344 - human_sexuality.json
+Average accuracy 0.6198 - international_law.json
+Average accuracy 0.5833 - jurisprudence.json
+Average accuracy 0.4417 - logical_fallacies.json
+Average accuracy 0.2768 - machine_learning.json
+Average accuracy 0.6505 - management.json
+Average accuracy 0.6667 - marketing.json
+Average accuracy 0.5200 - medical_genetics.json
+Average accuracy 0.7510 - miscellaneous.json
+Average accuracy 0.4335 - moral_disputes.json
+Average accuracy 0.2883 - moral_scenarios.json
+Average accuracy 0.4869 - nutrition.json
+Average accuracy 0.5080 - philosophy.json
+Average accuracy 0.4105 - prehistory.json
+Average accuracy 0.3121 - professional_accounting.json
+Average accuracy 0.2992 - professional_law.json
+Average accuracy 0.3824 - professional_medicine.json
+Average accuracy 0.3480 - professional_psychology.json
+Average accuracy 0.4545 - public_relations.json
+Average accuracy 0.3714 - security_studies.json
+Average accuracy 0.5174 - sociology.json
+Average accuracy 0.5500 - us_foreign_policy.json
+Average accuracy 0.3012 - virology.json
+Average accuracy 0.7251 - world_religions.json
+
+------subcategory level sta------
+Average accuracy 0.4758 - biology
+Average accuracy 0.6087 - business
+Average accuracy 0.3564 - chemistry
+Average accuracy 0.4053 - computer science
+Average accuracy 0.5241 - culture
+Average accuracy 0.4245 - economics
+Average accuracy 0.4345 - engineering
+Average accuracy 0.5404 - geography
+Average accuracy 0.4213 - health
+Average accuracy 0.4591 - history
+Average accuracy 0.3386 - law
+Average accuracy 0.3524 - math
+Average accuracy 0.6103 - other
+Average accuracy 0.4001 - philosophy
+Average accuracy 0.3766 - physics
+Average accuracy 0.4537 - politics
+Average accuracy 0.4399 - psychology
+
+------category level sta------
+Average accuracy 0.3877 - STEM
+Average accuracy 0.3887 - humanities
+Average accuracy 0.4547 - social sciences
+Average accuracy 0.5145 - other (business, health, misc.)
+
+------average acc sta------
+Average accuracy: 0.4320

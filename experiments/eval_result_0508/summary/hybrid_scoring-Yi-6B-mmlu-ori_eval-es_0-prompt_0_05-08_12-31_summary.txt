@@ -46,3 +46,40 @@ Average accuracy 0.5229 - nutrition.json
 Average accuracy 0.4952 - philosophy.json
 Average accuracy 0.3951 - prehistory.json
 Average accuracy 0.3121 - professional_accounting.json
+Average accuracy 0.3162 - professional_law.json
+Average accuracy 0.3750 - professional_medicine.json
+Average accuracy 0.3742 - professional_psychology.json
+Average accuracy 0.4909 - public_relations.json
+Average accuracy 0.3673 - security_studies.json
+Average accuracy 0.4478 - sociology.json
+Average accuracy 0.5900 - us_foreign_policy.json
+Average accuracy 0.3614 - virology.json
+Average accuracy 0.6901 - world_religions.json
+
+------subcategory level sta------
+Average accuracy 0.5132 - biology
+Average accuracy 0.6110 - business
+Average accuracy 0.3795 - chemistry
+Average accuracy 0.4102 - computer science
+Average accuracy 0.4548 - culture
+Average accuracy 0.4515 - economics
+Average accuracy 0.5034 - engineering
+Average accuracy 0.5859 - geography
+Average accuracy 0.4360 - health
+Average accuracy 0.4344 - history
+Average accuracy 0.3573 - law
+Average accuracy 0.3741 - math
+Average accuracy 0.5837 - other
+Average accuracy 0.3941 - philosophy
+Average accuracy 0.3797 - physics
+Average accuracy 0.4738 - politics
+Average accuracy 0.4624 - psychology
+
+------category level sta------
+Average accuracy 0.4079 - STEM
+Average accuracy 0.3883 - humanities
+Average accuracy 0.4693 - social sciences
+Average accuracy 0.5126 - other (business, health, misc.)
+
+------average acc sta------
+Average accuracy: 0.4390
