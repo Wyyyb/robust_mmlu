@@ -533,6 +533,7 @@ if __name__ == "__main__":
         default="meta-llama/Llama-2-7b-hf",
     )
     global_record_file = "../result_record/eval_record_collection.txt"
+    os.makedirs("../result_record", exist_ok=True)
     args = parser.parse_args()
     cot_lib = load_cot_lib()
     save_result_dir = os.path.join(
