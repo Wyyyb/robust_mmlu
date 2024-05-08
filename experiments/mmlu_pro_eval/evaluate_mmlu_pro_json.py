@@ -188,6 +188,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         label = test_df[i]["answer"]
         inputs = tokenizer(prompt, return_tensors="pt")
         inputs = {key: value.cuda() for key, value in inputs.items()}
+        logging.info("length of input tokens: " + str(len(inputs["input_ids"])))
         output = model.generate(**inputs, max_new_tokens=512, num_return_sequences=1)
         answer = tokenizer.decode(output[0], skip_special_tokens=True)
         pred = extract_answer(answer)
@@ -261,7 +262,7 @@ def gen_cot_prompt(subject, k, tokenizer):
         p += "Answer: " + cot_content + "\n"
         prompt += p
         inputs = tokenizer.encode(prompt, return_tensors="pt")
-        if len(inputs) > 1600:
+        if len(inputs) > 1000:
             prompt = temp
             logging.info("use less examples due to length limit" + str(i))
             break
