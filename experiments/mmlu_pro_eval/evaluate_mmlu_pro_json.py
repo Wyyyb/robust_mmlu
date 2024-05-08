@@ -186,6 +186,8 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             print("prompt", prompt)
             # logging.info("prompt:\n" + prompt)
         label = test_df[i]["answer"]
+        print("prompt\n", prompt)
+        input("enter:")
         inputs = tokenizer(prompt, return_tensors="pt")
         inputs = {key: value.cuda() for key, value in inputs.items()}
         logging.info("length of input tokens: " + str(len(inputs["input_ids"][0])))
