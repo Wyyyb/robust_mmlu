@@ -179,18 +179,19 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         prompt_end += "Answer: Let's think step by step."
         if check_exist(res, test_df[i]["q_id"]):
             continue
-        train_prompt = gen_cot_prompt(subject, k)
+        train_prompt = gen_cot_prompt(subject, k, tokenizer)
         prompt = train_prompt + prompt_end
         if i == 0:
             print("prompt", prompt)
-            logging.info("prompt:\n" + prompt)
+            # logging.info("prompt:\n" + prompt)
         label = test_df[i]["answer"]
         inputs = tokenizer(prompt, return_tensors="pt")
         inputs = {key: value.cuda() for key, value in inputs.items()}
         output = model.generate(**inputs, max_new_tokens=512, num_return_sequences=1)
         answer = tokenizer.decode(output[0], skip_special_tokens=True)
         pred = extract_answer(answer)
-        if not pred:
+        logging.info("answer", answer)
+        if not pred or pred not in choices:
             temp = choices[: options_num]
             random.shuffle(temp)
             pred = temp[0]
@@ -228,7 +229,7 @@ def extract_answer(text):
         return None
 
 
-def gen_cot_prompt(subject, k):
+def gen_cot_prompt(subject, k, tokenizer):
     subject = format_subject(subject)
     if subject not in cot_lib:
         print("subject not in cot_lib", subject)
@@ -246,6 +247,7 @@ def gen_cot_prompt(subject, k):
             .format(format_subject(subject))
     if k == -1:
         k = 5
+    temp = ""
     for i in range(k):
         curr_example = cot_lib[subject][i]
         option_num = len(curr_example["options"])
@@ -256,6 +258,12 @@ def gen_cot_prompt(subject, k):
                                                           "Let's think step by step.")
         p += "Answer: " + cot_content + "\n"
         prompt += p
+        inputs = tokenizer.encode(prompt, return_tensors="pt")
+        if len(inputs) > 1600:
+            prompt = temp
+            logging.info("use less examples due to length limit" + str(i))
+            break
+        temp = prompt
     return prompt
 
 
@@ -285,7 +293,7 @@ def eval(subject, model, tokenizer, dev_df, test_df, output_path, exists_result=
         prompt = train_prompt + prompt_end
         if i == 0:
             print("train_prompt", train_prompt)
-            logging.info("prompt:\n" + prompt)
+            # logging.info("prompt:\n" + prompt)
 
         label = test_df[i]["answer"]
 
@@ -397,7 +405,7 @@ def main():
             all_df = json.load(fi)
         dev_df, test_df = divide_df(all_df)
         print("dev_df", dev_df)
-        logging.info(json.dumps(dev_df))
+        # logging.info(json.dumps(dev_df))
         if args.fixed_question_answer != -1:
             test_df = fix_answer(test_df, args.fixed_question_answer)
         if args.cot_type == "cot_1":
