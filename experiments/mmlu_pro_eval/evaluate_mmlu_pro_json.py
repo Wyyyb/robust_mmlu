@@ -183,17 +183,24 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         train_prompt = gen_cot_prompt(subject, k, tokenizer)
         prompt = train_prompt + prompt_end
         label = test_df[i]["answer"]
-        logging.info("--------------\nprompt\n" + prompt)
         # input("enter:")
         inputs = tokenizer(prompt, return_tensors="pt")
         inputs = {key: value.cuda() for key, value in inputs.items()}
         logging.info("length of input tokens: " + str(len(inputs["input_ids"][0])))
-        output = model.generate(**inputs, max_new_tokens=128, num_return_sequences=1)
-        answer = tokenizer.decode(output[0], skip_special_tokens=True)
-        if answer.startswith(prompt):
-            answer = answer.replace(prompt, "")
-        pred = extract_answer(answer)
-        logging.info("--------------\nanswer: " + answer)
+        pred = None
+        max_new_token = 64
+        answer = ""
+        while pred is None and max_new_token <= 256:
+            output = model.generate(**inputs, max_new_tokens=max_new_token, num_return_sequences=1)
+            answer = tokenizer.decode(output[0], skip_special_tokens=True)
+            if answer.startswith(prompt):
+                answer = answer.replace(prompt, "")
+            else:
+                logging.info("--------------\nprompt\n" + prompt)
+                logging.info("answer is not startswith(prompt):\n" + answer)
+            pred = extract_answer(answer)
+            max_new_token += 64
+        # logging.info("--------------\nanswer: " + answer)
         if not pred or pred not in choices:
             temp = choices[: options_num]
             random.shuffle(temp)
@@ -213,6 +220,9 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         res.append(curr)
         with open(output_path, "w") as fo:
             fo.write(json.dumps(res))
+        acc = correct_count / (correct_count + wrong_count)
+        logging.info("correct_count" + str(correct_count))
+        logging.info("accu" + str(acc))
 
     acc = correct_count / (correct_count + wrong_count)
     if os.path.exists(summary_path):
