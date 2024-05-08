@@ -262,6 +262,8 @@ def gen_cot_prompt(subject, k, tokenizer):
         p += "Answer: " + cot_content + "\n"
         prompt += p
         inputs = tokenizer.encode(prompt, return_tensors="pt")
+        logging.info("gen prompt input length" + str(len(inputs)))
+        logging.info("gen prompt input length[0]" + str(len(inputs[0])))
         if len(inputs) > 1000:
             prompt = temp
             logging.info("use less examples due to length limit" + str(i))
