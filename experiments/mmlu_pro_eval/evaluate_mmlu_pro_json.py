@@ -193,9 +193,12 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         logging.info("length of input tokens: " + str(len(inputs["input_ids"][0])))
         output = model.generate(**inputs, max_new_tokens=512, num_return_sequences=1)
         answer = tokenizer.decode(output[0], skip_special_tokens=True)
+        if answer.startswith(prompt):
+            answer = answer.replace(prompt, "")
         pred = extract_answer(answer)
         logging.info("answer: " + answer)
         logging.info("pred: " + pred)
+        logging.info("label:" + label)
         if not pred or pred not in choices:
             temp = choices[: options_num]
             random.shuffle(temp)
