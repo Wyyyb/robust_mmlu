@@ -214,18 +214,18 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         with open(output_path, "w") as fo:
             fo.write(json.dumps(res))
 
-        acc = correct_count / (correct_count + wrong_count)
-        if os.path.exists(summary_path):
-            with open(summary_path, "a") as fo:
-                fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
-        else:
-            with open(summary_path, "w") as fo:
-                fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
-        return acc, correct_count, wrong_count
+    acc = correct_count / (correct_count + wrong_count)
+    if os.path.exists(summary_path):
+        with open(summary_path, "a") as fo:
+            fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
+    else:
+        with open(summary_path, "w") as fo:
+            fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
+    return acc, correct_count, wrong_count
 
 
 def extract_answer(text):
-    pattern = r"answer is \(?([ABCD])\)?"
+    pattern = r"answer is \(?([ABCDEFGHIJ])\)?"
     match = re.search(pattern, text)
     if match:
         return match.group(1)
