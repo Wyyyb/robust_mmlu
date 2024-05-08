@@ -1,6 +1,16 @@
 import json
 import random
 import os
+import csv
+
+
+def read_csv_file(file_path):
+    with open(file_path, mode='r', encoding='utf-8') as file:
+        csv_reader = csv.reader(file)
+        data = list(csv_reader)
+        if str(data[0][0]) == "0" and str(data[0][1]) == "1" and str(data[0][2]) == "2":
+            data = data[1:]
+    return data
 
 
 def format_mmlu_pro():
@@ -44,8 +54,23 @@ def format_test_data():
 
 def format_dev_data():
     global max_q_id
-    with open("data/mmlu_pro_cot_data.json", "r") as fi:
-        cot_data = json.load(fi)
+    cot_data = {}
+    data = read_csv_file("data/mmlu_pro-cot.csv")
+    for each in data:
+        cat = each[1]
+        if cat not in cot_data:
+            cot_data[cat] = []
+        options = each[2: 12]
+        temp = []
+        for opt in options:
+            if opt.replace(" ", "") == "N/A":
+                continue
+            else:
+                temp.append(opt)
+        options = temp
+        curr = {"question": each[2], "options": options, "answer": each[14], "answer_symbol": each[13],
+                "cot_content": each[15], "ori_key": each[0]}
+        cot_data[cat].append(curr)
     dev_data = {}
     for k, v in cot_data.items():
         category = k
