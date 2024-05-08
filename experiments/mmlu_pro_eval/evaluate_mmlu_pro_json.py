@@ -180,13 +180,21 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         prompt_end += "Answer: Let's think step by step."
         if check_exist(res, test_df[i]["q_id"]):
             continue
-        train_prompt = gen_cot_prompt(subject, k, tokenizer)
-        prompt = train_prompt + prompt_end
         label = test_df[i]["answer"]
-        # input("enter:")
-        inputs = tokenizer(prompt, return_tensors="pt")
-        inputs = {key: value.cuda() for key, value in inputs.items()}
-        logging.info("length of input tokens: " + str(len(inputs["input_ids"][0])))
+        prompt_length_ok = False
+        prompt = None
+        inputs = None
+        while not prompt_length_ok:
+            train_prompt = gen_cot_prompt(subject, k, tokenizer)
+            prompt = train_prompt + prompt_end
+            inputs = tokenizer(prompt, return_tensors="pt")
+            inputs = {key: value.cuda() for key, value in inputs.items()}
+            length = len(inputs["input_ids"][0])
+            logging.info("length of input tokens: " + str(length))
+            if length < 2048 - 256:
+                prompt_length_ok = True
+            k -= 1
+            logging.info("exceed length limit, reduce k into: " + str(k))
         pred = None
         max_new_token = 64
         answer = ""
@@ -205,7 +213,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             temp = choices[: options_num]
             random.shuffle(temp)
             pred = temp[0]
-            logging.info("answer extract failed" + answer + "pred random select" + pred)
+            logging.info("answer extract failed" + answer + "pred random select " + pred)
         logging.info("pred: " + pred)
         logging.info("label:" + label)
         curr = test_df[i]
@@ -274,13 +282,13 @@ def gen_cot_prompt(subject, k, tokenizer):
                                                           "Let's think step by step.")
         p += "Answer: " + cot_content + "\n"
         prompt += p
-        inputs = tokenizer.encode(prompt, return_tensors="pt")
+        # inputs = tokenizer.encode(prompt, return_tensors="pt")
         # logging.info("gen prompt input length[0]" + str(len(inputs[0])))
-        if len(inputs[0]) > 1600:
-            prompt = temp
-            logging.info("use less examples due to length limit " + str(i))
-            break
-        temp = prompt
+        # if len(inputs[0]) > 1600:
+        #     prompt = temp
+        #     logging.info("use less examples due to length limit " + str(i))
+        #     break
+        # temp = prompt
     return prompt
 
 
