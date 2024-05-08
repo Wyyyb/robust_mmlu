@@ -514,6 +514,7 @@ def load_cot_lib():
         for each in data:
             each = each[1:]
             subject = each[0]
+            subject = format_subject(subject)
             question = each[1]
             options = each[2: 2 + option_num]
             temp = []
