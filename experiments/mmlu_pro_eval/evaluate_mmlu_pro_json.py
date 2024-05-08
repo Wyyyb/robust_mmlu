@@ -11,6 +11,7 @@ from categories import subcategories, categories
 from ori_mmlu_categories import ori_mmlu_categories, ori_mmlu_subcategories
 import transformers
 import time
+import re
 from transformers import GenerationConfig
 from tqdm import tqdm
 from distutils.util import strtobool
@@ -154,6 +155,109 @@ def load_model():
 
 
 @torch.no_grad()
+def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_result=None):
+    if not exists_result:
+        res = []
+    else:
+        res = exists_result
+    correct_count, wrong_count = load_exist_result(res)
+    print("load exists result length", len(res))
+    global choices
+    if args.use_rare_symbol:
+        greek_upper_unicode_start = 0x391
+        greek_letters = [chr(greek_upper_unicode_start + i) for i in range(17)]
+        choices = greek_letters
+    for i in tqdm(range(len(test_df))):
+        k = args.ntrain
+        options_num = len(test_df[i]["options"])
+        if options_num != 10 and options_num != 4:
+            print("options_num", options_num)
+        curr = test_df[i]
+        prompt_end = "Question: " + curr["question"] + "\nOptions: \n"
+        for j in range(options_num):
+            prompt_end += "{}. {}\n".format(choices[j], curr["options"][j])
+        prompt_end += "Answer: Let's think step by step."
+        if check_exist(res, test_df[i]["q_id"]):
+            continue
+        train_prompt = gen_cot_prompt(subject, k)
+        prompt = train_prompt + prompt_end
+        if i == 0:
+            print("prompt", prompt)
+            logging.info("prompt:\n" + prompt)
+        label = test_df[i]["answer"]
+        inputs = tokenizer.encode(prompt, return_tensors="pt").cuda()
+        output = model.generate(**inputs, max_length=512, num_return_sequences=1)
+        answer = tokenizer.decode(output[0], skip_special_tokens=True)
+        pred = extract_answer(answer)
+        if not pred:
+            temp = choices[: options_num]
+            random.shuffle(temp)
+            pred = temp[0]
+            logging.info("answer extract failed", answer, "pred random select", pred)
+
+            curr = test_df[i]
+            curr["pred"] = pred
+            if pred == label:
+                curr["pred_score"] = "True"
+                correct_count += 1
+            else:
+                curr["pred_score"] = "False"
+                wrong_count += 1
+            curr["full_text_answer"] = answer
+            res.append(curr)
+            with open(output_path, "w") as fo:
+                fo.write(json.dumps(res))
+
+        acc = correct_count / (correct_count + wrong_count)
+        if os.path.exists(summary_path):
+            with open(summary_path, "a") as fo:
+                fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
+        else:
+            with open(summary_path, "w") as fo:
+                fo.write("Average accuracy {:.4f} - {}".format(acc, subject) + "\n")
+        return acc, correct_count, wrong_count
+
+
+def extract_answer(text):
+    pattern = r"answer is \(?([ABCD])\)?"
+    match = re.search(pattern, text)
+    if match:
+        return match.group(1)
+    else:
+        return None
+
+
+def gen_cot_prompt(subject, k):
+    if subject not in cot_lib:
+        print("subject not in cot_lib", subject)
+        return None
+    k = min(k, len(cot_lib[subject]))
+    if args.prompt_type == 1:
+        prompt = ""
+    elif args.prompt_type == 2:
+        prompt = "You are an expert in {}. Below is a series of example questions \
+        (with answers) about {} for demonstration. You will be given a question at \
+        the end, after the examples, for you to answer.\n\n".format(format_subject(subject),
+                                                                    format_subject(subject))
+    else:
+        prompt = "The following are multiple choice questions (with answers) about {}.\n\n" \
+            .format(format_subject(subject))
+    if k == -1:
+        k = 5
+    for i in range(k):
+        curr_example = cot_lib[subject][i]
+        option_num = len(curr_example["options"])
+        p = "Question: " + curr_example["question"] + "\nOptions: \n"
+        for j in range(option_num):
+            p += "{}. {}\n".format(choices[j], curr_example["options"][j])
+        cot_content = curr_example["cot_content"].replace("A: Let's think step by step.",
+                                                          "Let's think step by step.")
+        p += "Answer: " + cot_content + "\n"
+        prompt += p
+    return prompt
+
+
+@torch.no_grad()
 def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_result=None):
     if not exists_result:
         res = []
@@ -294,8 +398,12 @@ def main():
         logging.info(json.dumps(dev_df))
         if args.fixed_question_answer != -1:
             test_df = fix_answer(test_df, args.fixed_question_answer)
-        acc, corr_count, wrong_count = eval(args, subject, model, tokenizer, dev_df, test_df,
-                                            output_path, exists_result)
+        if args.cot_type == "cot_1":
+            acc, corr_count, wrong_count = eval_cot(args, subject, model, tokenizer, dev_df,
+                                                    test_df, output_path, exists_result)
+        else:
+            acc, corr_count, wrong_count = eval(args, subject, model, tokenizer, dev_df,
+                                                test_df, output_path, exists_result)
         subcat = subcat_dict[subject.replace(".json", "")]
         cors = [0 for _ in range(int(wrong_count))] + [1 for _ in range(int(corr_count))]
         subcat_cors[subcat].append(cors)
@@ -324,6 +432,9 @@ def main():
         f.write("\n------average acc sta------\n")
         weighted_acc = np.mean(np.concatenate(all_cors))
         f.write("Average accuracy: {:.4f}\n".format(weighted_acc))
+    with open(global_record_file, "a") as fi:
+        record = file_prefix + "\t\t" + time_str + "\t\t" + str(weighted_acc) + "\n"
+        fi.write(record)
 
 
 def args_generate_path(input_args):
@@ -348,30 +459,46 @@ def args_generate_path(input_args):
     return res
 
 
-def load_cot_lib(lib_path=""):
-    cot_lib = {}
+def read_csv_file(file_path):
+    with open(file_path, mode='r', encoding='utf-8') as file:
+        csv_reader = csv.reader(file)
+        data = list(csv_reader)
+        if str(data[0][0]) == "0" and str(data[0][1]) == "1" and str(data[0][2]) == "2":
+            data = data[1:]
+    return data
+
+
+def load_cot_lib():
+    lib_data = {}
     seed = 123456
     random.seed(seed)
     if args.cot_type == "-1":
-        return cot_lib
-    elif args.cot_type == "0":
-        if lib_path == "":
-            lib_path = "cot_lib_prompt/mmlu-cot.json"
-        with open(lib_path, "r") as fi:
-            lib_data = json.load(fi)
+        return lib_data
+    # else:
+    elif args.cot_type == "cot_1":
         if "ori_mmlu" in args.data_dir:
-            return lib_data
-        ori_cat = ori_mmlu_subcategories
-        pro_cat = subcategories
-        for k, v in lib_data.items():
-            key = pro_cat.get(ori_cat.get(k, ""), "")
-            if key not in cot_lib:
-                cot_lib[key] = []
-            cot_lib[key] += v.split("\n\n")
-        for k, v in cot_lib.items():
-            random.shuffle(v)
-            cot_lib[k] = v
-    return cot_lib
+            lib_path = "cot_lib_prompt/ori_mmlu-cot.csv"
+            option_num = 4
+        else:
+            lib_path = "cot_lib_prompt/mmlu_pro-cot.csv"
+            option_num = 10
+        data = read_csv_file(lib_path)
+        for each in data:
+            each = each[1:]
+            subject = each[0]
+            question = each[1]
+            options = each[2: 2 + option_num]
+            answer_symbol = each[option_num + 2]
+            answer_content = each[option_num + 3]
+            cot_content = each[option_num + 4]
+            if subject not in lib_data:
+                lib_data[subject] = []
+            if len(lib_data[subject]) >= 5:
+                continue
+            curr = {"question": question, "options": options, "answer_content": answer_content,
+                    "answer_symbol": answer_symbol, "cot_content": cot_content}
+            lib_data[subject].append(curr)
+    return lib_data
 
 
 if __name__ == "__main__":
@@ -379,7 +506,7 @@ if __name__ == "__main__":
     parser.add_argument("--ntrain", "-k", type=int, default=5)
     parser.add_argument("--examples_start_index", "-esi", type=int, default=0)
     parser.add_argument("--prompt_type", "-p", type=int, default=0)
-    parser.add_argument("--cot_type", "-c", type=int, default=-1)
+    parser.add_argument("--cot_type", "-c", type=str, default="-1")
     parser.add_argument("--ngpu", "-g", type=int, default=1)
     parser.add_argument("--data_dir", "-d", type=str, default="data")
     parser.add_argument("--save_dir", "-s", type=str, default="results")
@@ -393,8 +520,9 @@ if __name__ == "__main__":
         type=str,
         default="meta-llama/Llama-2-7b-hf",
     )
+    global_record_file = "../result_record/eval_record_collection.txt"
     args = parser.parse_args()
-    cot_lib_map = load_cot_lib()
+    cot_lib = load_cot_lib()
     save_result_dir = os.path.join(
         args.save_dir, args_generate_path(args)
     )
@@ -402,7 +530,8 @@ if __name__ == "__main__":
     timestamp = time.time()
     time_str = time.strftime('%m-%d_%H-%M', time.localtime(timestamp))
     file_name = f"{file_prefix}_{time_str}_summary.txt"
-    summary_path = os.path.join(args.save_dir, file_name)
+    summary_path = os.path.join(args.save_dir, "summary", file_name)
+    os.makedirs(os.path.join(args.save_dir, "summary"), exist_ok=True)
     os.makedirs(save_result_dir, exist_ok=True)
     save_log_dir = os.path.join(args.save_dir, "log")
     os.makedirs(save_log_dir, exist_ok=True)

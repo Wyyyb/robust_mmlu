@@ -84,15 +84,25 @@ def save_global_sta():
 
 
 def save_res_data(res_data, output_dir):
+    other_cat = ["culture.csv", "geography.csv", "politics.csv", "other.csv"]
     keys = list(res_data.keys())
     keys = sorted(keys)
+    other_data = []
     for k in keys:
         v = res_data[k]
+        if k in other_cat:
+            other_data += v
+            continue
         random.shuffle(v)
         output_path = os.path.join(output_dir, k.replace(".csv", ".json"))
         with open(output_path, "w") as fo:
             fo.write(json.dumps(v))
             print("number of", k, len(v))
+    random.shuffle(other_data)
+    output_path = os.path.join(output_dir, "other.json")
+    with open(output_path, "w") as fo:
+        fo.write(json.dumps(other_data))
+        print("number of other", len(other_data))
 
 
 def save_ann_tag_data(save_by_tags, output_dir):
@@ -251,5 +261,5 @@ def match_annotator(annntator_id):
 
 
 if __name__ == '__main__':
-    postprocess("data/ann_data_0505.json", "../data/mmlu_pro_exp_0505")
+    postprocess("data/ann_data_0505.json", "../data/mmlu_pro_v1_0506")
 

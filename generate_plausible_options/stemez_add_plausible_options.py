@@ -68,9 +68,11 @@ def call_gpt_4(client, instruction, inputs):
     return completion.choices[0].message.content
 
 
-def request_gpt4(question, options, answer):
+def request_gpt4(question, options, answer, ins_path=None):
+    if not ins_path:
+        ins_path = "ins.txt"
     instruction = ""
-    with open("ins.txt", "r", encoding="utf-8") as fi:
+    with open(ins_path, "r", encoding="utf-8") as fi:
         for line in fi.readlines():
             instruction += line + "\n"
     inputs = "Input:\nQuestion: " + question + "\nExisting 4 Options:\n" + options + "\nAnswer: " + answer + \
