@@ -182,9 +182,6 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             continue
         train_prompt = gen_cot_prompt(subject, k, tokenizer)
         prompt = train_prompt + prompt_end
-        if i == 0:
-            print("prompt", prompt)
-            # logging.info("prompt:\n" + prompt)
         label = test_df[i]["answer"]
         logging.info("--------------\nprompt\n" + prompt)
         # input("enter:")
