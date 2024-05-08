@@ -228,6 +228,7 @@ def extract_answer(text):
 
 
 def gen_cot_prompt(subject, k):
+    subject = format_subject(subject)
     if subject not in cot_lib:
         print("subject not in cot_lib", subject)
         return None
