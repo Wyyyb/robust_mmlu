@@ -15,7 +15,7 @@ scoring_method="symbol_scoring"
 model="google/gemma-7b"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=1
 # 调用 Python 脚本，并传递参数
 python evaluate_mmlu_pro_json.py \
                  --ntrain $ntrain \

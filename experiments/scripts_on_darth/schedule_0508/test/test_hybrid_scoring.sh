@@ -4,6 +4,7 @@
 ntrain=5
 examples_start_index=0
 prompt_type=0
+cot_type="-1"
 ngpu=1
 data_dir="../../data/mmlu_pro_v1_sample"
 save_dir="../test_result_0508"
@@ -14,7 +15,7 @@ model="meta-llama/Llama-2-7b-hf"
 # model="google/gemma-7b"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=0
 # 调用 Python 脚本，并传递参数
 python evaluate_mmlu_pro_json.py \
                  --ntrain $ntrain \

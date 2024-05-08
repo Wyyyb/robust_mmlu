@@ -4,6 +4,7 @@
 ntrain=5
 examples_start_index=0
 prompt_type=0
+cot_type="-1"
 ngpu=1
 data_dir="../../data/ori_mmlu_sample"
 save_dir="../test_result_0508"
