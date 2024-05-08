@@ -23,7 +23,7 @@ def read_csv_file(file_path):
     return data
 
 
-def postprocess(input_file, output_dir):
+def postprocess(input_file, output_dir, sample=""):
     os.makedirs(output_dir, exist_ok=True)
     res_data = {}
     q_id = 0
@@ -62,7 +62,7 @@ def postprocess(input_file, output_dir):
         res_data[subject].append(curr)
         q_id += 1
     save_ann_tag_data(save_by_tags, "ann_tag_data/")
-    save_res_data(res_data, output_dir)
+    save_res_data(res_data, output_dir, sample)
     save_global_sta()
 
 
@@ -83,7 +83,7 @@ def save_global_sta():
         fo.write(json.dumps(summary_sta))
 
 
-def save_res_data(res_data, output_dir):
+def save_res_data(res_data, output_dir, sample=""):
     other_cat = ["culture.csv", "geography.csv", "politics.csv", "other.csv"]
     keys = list(res_data.keys())
     keys = sorted(keys)
@@ -96,11 +96,15 @@ def save_res_data(res_data, output_dir):
         random.shuffle(v)
         output_path = os.path.join(output_dir, k.replace(".csv", ".json"))
         with open(output_path, "w") as fo:
+            if sample == "sample":
+                v = v[:10]
             fo.write(json.dumps(v))
             print("number of", k, len(v))
     random.shuffle(other_data)
     output_path = os.path.join(output_dir, "other.json")
     with open(output_path, "w") as fo:
+        if sample == "sample":
+            other_data = other_data[:10]
         fo.write(json.dumps(other_data))
         print("number of other", len(other_data))
 
@@ -261,5 +265,6 @@ def match_annotator(annntator_id):
 
 
 if __name__ == '__main__':
-    postprocess("data/ann_data_0505.json", "../data/mmlu_pro_v1_0506")
+    # postprocess("data/ann_data_0505.json", "../data/mmlu_pro_v1_0506")
+    postprocess("data/ann_data_0505.json", "../data/mmlu_pro_v1_sample", "sample")
 

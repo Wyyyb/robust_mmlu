@@ -217,12 +217,14 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             curr["pred_score"] = "False"
             wrong_count += 1
         curr["full_text_answer"] = answer
+        curr["generated_prompt"] = prompt
         res.append(curr)
         with open(output_path, "w") as fo:
             fo.write(json.dumps(res))
         acc = correct_count / (correct_count + wrong_count)
-        logging.info("correct_count" + str(correct_count))
-        logging.info("accu" + str(acc))
+        logging.info(subject + " correct_count: " + str(correct_count))
+        logging.info(subject + " wrong_count: " + str(wrong_count))
+        logging.info(subject + " accu: " + str(acc))
 
     acc = correct_count / (correct_count + wrong_count)
     if os.path.exists(summary_path):
@@ -273,7 +275,7 @@ def gen_cot_prompt(subject, k, tokenizer):
         p += "Answer: " + cot_content + "\n"
         prompt += p
         inputs = tokenizer.encode(prompt, return_tensors="pt")
-        logging.info("gen prompt input length[0]" + str(len(inputs[0])))
+        # logging.info("gen prompt input length[0]" + str(len(inputs[0])))
         if len(inputs[0]) > 1600:
             prompt = temp
             logging.info("use less examples due to length limit " + str(i))
@@ -464,6 +466,8 @@ def main():
 
 def args_generate_path(input_args):
     scoring_method = input_args.scoring_method
+    if args.cot_type != "-1":
+        scoring_method = args.cot_type
     model_name = input_args.model.split("/")[-1]
     if "ori_mmlu" in input_args.data_dir:
         dataset_name = "mmlu"
@@ -499,7 +503,6 @@ def load_cot_lib():
     random.seed(seed)
     if args.cot_type == "-1":
         return lib_data
-    # else:
     elif args.cot_type == "cot_1":
         if "ori_mmlu" in args.data_dir:
             lib_path = "cot_lib_prompt/ori_mmlu-cot.csv"
@@ -513,6 +516,13 @@ def load_cot_lib():
             subject = each[0]
             question = each[1]
             options = each[2: 2 + option_num]
+            temp = []
+            for opt in options:
+                if opt.replace(" ", "") == "N/A":
+                    continue
+                else:
+                    temp.append(opt)
+            options = temp
             answer_symbol = each[option_num + 2]
             answer_content = each[option_num + 3]
             cot_content = each[option_num + 4]

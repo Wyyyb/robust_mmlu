@@ -5,15 +5,15 @@ ntrain=5
 examples_start_index=0
 prompt_type=0
 ngpu=1
-data_dir="../../data/mmlu_pro_exp_0505"
-save_dir="../eval_result_0505"
+data_dir="../../data/ori_mmlu_data_json"
+save_dir="../eval_result_0508"
 use_rare_symbol=False
 fixed_question_answer=-1
-scoring_method="symbol_scoring"
-model="01-ai/Yi-6B"
+scoring_method="hybrid_scoring"
+model="meta-llama/Llama-2-7b-hf"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=5
+export CUDA_VISIBLE_DEVICES=0
 # 调用 Python 脚本，并传递参数
 python evaluate_mmlu_pro_json.py \
                  --ntrain $ntrain \

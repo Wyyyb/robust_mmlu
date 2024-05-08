@@ -6,14 +6,14 @@ examples_start_index=0
 prompt_type=0
 ngpu=1
 data_dir="../../data/ori_mmlu_data_json"
-save_dir="../eval_result_0505"
+save_dir="../eval_result_0508"
 use_rare_symbol=False
 fixed_question_answer=-1
 scoring_method="symbol_scoring"
-model="meta-llama/Llama-2-13b-hf"
+model="01-ai/Yi-6B"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=6
+export CUDA_VISIBLE_DEVICES=4
 # 调用 Python 脚本，并传递参数
 python evaluate_mmlu_pro_json.py \
                  --ntrain $ntrain \
