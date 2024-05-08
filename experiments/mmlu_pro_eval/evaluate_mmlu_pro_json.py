@@ -186,17 +186,17 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             print("prompt", prompt)
             # logging.info("prompt:\n" + prompt)
         label = test_df[i]["answer"]
-        print("prompt\n", prompt)
-        input("enter:")
+        logging.info("--------------\nprompt\n" + prompt)
+        # input("enter:")
         inputs = tokenizer(prompt, return_tensors="pt")
         inputs = {key: value.cuda() for key, value in inputs.items()}
         logging.info("length of input tokens: " + str(len(inputs["input_ids"][0])))
-        output = model.generate(**inputs, max_new_tokens=512, num_return_sequences=1)
+        output = model.generate(**inputs, max_new_tokens=128, num_return_sequences=1)
         answer = tokenizer.decode(output[0], skip_special_tokens=True)
         if answer.startswith(prompt):
             answer = answer.replace(prompt, "")
         pred = extract_answer(answer)
-        logging.info("answer: " + answer)
+        logging.info("--------------\nanswer: " + answer)
         logging.info("pred: " + pred)
         logging.info("label:" + label)
         if not pred or pred not in choices:
@@ -268,7 +268,7 @@ def gen_cot_prompt(subject, k, tokenizer):
         prompt += p
         inputs = tokenizer.encode(prompt, return_tensors="pt")
         logging.info("gen prompt input length[0]" + str(len(inputs[0])))
-        if len(inputs[0]) > 1000:
+        if len(inputs[0]) > 1600:
             prompt = temp
             logging.info("use less examples due to length limit " + str(i))
             break
