@@ -265,7 +265,7 @@ def gen_cot_prompt(subject, k, tokenizer):
         logging.info("gen prompt input length[0]" + str(len(inputs[0])))
         if len(inputs[0]) > 1000:
             prompt = temp
-            logging.info("use less examples due to length limit" + str(i))
+            logging.info("use less examples due to length limit " + str(i))
             break
         temp = prompt
     return prompt
