@@ -197,14 +197,13 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             answer = answer.replace(prompt, "")
         pred = extract_answer(answer)
         logging.info("--------------\nanswer: " + answer)
-        logging.info("pred: " + pred)
-        logging.info("label:" + label)
         if not pred or pred not in choices:
             temp = choices[: options_num]
             random.shuffle(temp)
             pred = temp[0]
             logging.info("answer extract failed" + answer + "pred random select" + pred)
-
+        logging.info("pred: " + pred)
+        logging.info("label:" + label)
         curr = test_df[i]
         curr["pred"] = pred
         if pred == label:
