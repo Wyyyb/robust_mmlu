@@ -258,7 +258,7 @@ def gen_cot_prompt(subject, k):
 
 
 @torch.no_grad()
-def eval(args, subject, model, tokenizer, dev_df, test_df, output_path, exists_result=None):
+def eval(subject, model, tokenizer, dev_df, test_df, output_path, exists_result=None):
     if not exists_result:
         res = []
     else:
@@ -399,10 +399,10 @@ def main():
         if args.fixed_question_answer != -1:
             test_df = fix_answer(test_df, args.fixed_question_answer)
         if args.cot_type == "cot_1":
-            acc, corr_count, wrong_count = eval_cot(args, subject, model, tokenizer, dev_df,
+            acc, corr_count, wrong_count = eval_cot(subject, model, tokenizer, dev_df,
                                                     test_df, output_path, exists_result)
         else:
-            acc, corr_count, wrong_count = eval(args, subject, model, tokenizer, dev_df,
+            acc, corr_count, wrong_count = eval(subject, model, tokenizer, dev_df,
                                                 test_df, output_path, exists_result)
         subcat = subcat_dict[subject.replace(".json", "")]
         cors = [0 for _ in range(int(wrong_count))] + [1 for _ in range(int(corr_count))]
