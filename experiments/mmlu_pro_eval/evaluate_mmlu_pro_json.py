@@ -185,7 +185,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             print("prompt", prompt)
             logging.info("prompt:\n" + prompt)
         label = test_df[i]["answer"]
-        inputs = tokenizer.encode(prompt, return_tensors="pt").cuda()
+        inputs = tokenizer(prompt, return_tensors="pt").cuda()
         output = model.generate(**inputs, max_length=512, num_return_sequences=1)
         answer = tokenizer.decode(output[0], skip_special_tokens=True)
         pred = extract_answer(answer)
