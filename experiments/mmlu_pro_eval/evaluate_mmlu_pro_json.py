@@ -196,18 +196,18 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             pred = temp[0]
             logging.info("answer extract failed", answer, "pred random select", pred)
 
-            curr = test_df[i]
-            curr["pred"] = pred
-            if pred == label:
-                curr["pred_score"] = "True"
-                correct_count += 1
-            else:
-                curr["pred_score"] = "False"
-                wrong_count += 1
-            curr["full_text_answer"] = answer
-            res.append(curr)
-            with open(output_path, "w") as fo:
-                fo.write(json.dumps(res))
+        curr = test_df[i]
+        curr["pred"] = pred
+        if pred == label:
+            curr["pred_score"] = "True"
+            correct_count += 1
+        else:
+            curr["pred_score"] = "False"
+            wrong_count += 1
+        curr["full_text_answer"] = answer
+        res.append(curr)
+        with open(output_path, "w") as fo:
+            fo.write(json.dumps(res))
 
         acc = correct_count / (correct_count + wrong_count)
         if os.path.exists(summary_path):
