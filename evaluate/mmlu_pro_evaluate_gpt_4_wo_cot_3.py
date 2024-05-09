@@ -6,10 +6,10 @@ import random
 from tqdm import tqdm
 import time
 
-API_KEY = '786f8c1ff30a4c4b9f9b8917f2f5191b'
+API_KEY = 'fbec5a4ae51c49feac7eb9444245fad9'
 
 my_client = AzureOpenAI(
-  azure_endpoint="https://waterloo-gpt4.openai.azure.com/",
+  azure_endpoint="https://waterloo-gpt-turbo.openai.azure.com/",
   api_key=API_KEY,
   api_version="2024-02-15-preview"
 )
@@ -19,7 +19,7 @@ def call_gpt_4(client, instruction, inputs):
     start = time.time()
     message_text = [{"role": "user", "content": instruction + inputs}]
     completion = client.chat.completions.create(
-      model="gpt-4",
+      model="gpt-4-turbo",
       messages=message_text,
       temperature=0.7,
       max_tokens=4000,
@@ -49,6 +49,7 @@ def extract_answer_wo_cot(text):
     if match:
         return match.group(1)
     else:
+        print("extraction failed:\n", text)
         return None
 
 
@@ -82,17 +83,24 @@ def single_request_gpt4(single_question, exist_result):
 def update_result(output_res_path):
     category_record = {}
     res = []
-    if os.path.exists(output_res_path):
-        with open(output_res_path, "r") as fi:
-            res = json.load(fi)
-            for each in res:
-                category = each["category"]
-                if category not in category_record:
-                    category_record[category] = {"corr": 0.0, "wrong": 0.0}
-                if each["pred"] == each["answer"]:
-                    category_record[category]["corr"] += 1
-                else:
-                    category_record[category]["wrong"] += 1
+    success = False
+    while not success:
+        try:
+            if os.path.exists(output_res_path):
+                with open(output_res_path, "r") as fi:
+                    res = json.load(fi)
+                    for each in res:
+                        category = each["category"]
+                        if category not in category_record:
+                            category_record[category] = {"corr": 0.0, "wrong": 0.0}
+                        if each["pred"] == each["answer"]:
+                            category_record[category]["corr"] += 1
+                        else:
+                            category_record[category]["wrong"] += 1
+            success = True
+        except Exception as e:
+            print("Error", e, "sleep 2 seconds")
+            time.sleep(2)
     return res, category_record
 
 
@@ -101,19 +109,22 @@ def evaluate(data_dir):
     output_res_path = os.path.join(output_dir, "eval_result_gpt_4_0509_wo_cot.json")
     output_summary_path = os.path.join(output_dir, "eval_summary_gpt_4_0509_wo_cot.json")
     category_record = {}
+    res, category_record = update_result(output_res_path)
     for file in os.listdir(data_dir):
         if not file.endswith("_test.json"):
             continue
         category = file.replace("_test.json", "")
-        if category not in category_record:
-            category_record[category] = {"corr": 0.0, "wrong": 0.0}
+        if category not in assigned_subject:
+            continue
         with open(os.path.join(data_dir, file), "r") as fi:
             data = json.load(fi)
             for each in tqdm(data):
-                res, category_record = update_result(output_res_path)
                 label = each["answer"]
                 pred, response = single_request_gpt4(each, res)
                 if pred is not None:
+                    res, category_record = update_result(output_res_path)
+                    if category not in category_record:
+                        category_record[category] = {"corr": 0.0, "wrong": 0.0}
                     each["pred"] = pred
                     each["gpt_4_response"] = response
                     res.append(each)
@@ -123,6 +134,7 @@ def evaluate(data_dir):
                         category_record[category]["wrong"] += 1
                     save_res(res, output_res_path)
                     save_summary(category_record, output_summary_path)
+                    res, category_record = update_result(output_res_path)
 
 
 def save_res(res, output_res_path):
@@ -157,7 +169,7 @@ def load_dev_examples(input_dir):
 
 
 if __name__ == '__main__':
-    exist_subject = ["business"]
+    assigned_subject = ["philosophy", "physics", "psychology"]
     output_dir = "../experiments/eval_result_0509_gpt_4/"
     dev_dir = "../data/mmlu_pro_v1_0509/dev"
     test_dir = "../data/mmlu_pro_v1_0509/test"

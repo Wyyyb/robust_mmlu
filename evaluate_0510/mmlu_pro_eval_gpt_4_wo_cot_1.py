@@ -6,10 +6,10 @@ import random
 from tqdm import tqdm
 import time
 
-API_KEY = 'fbec5a4ae51c49feac7eb9444245fad9'
+API_KEY = 'a181a87847ef467688b7d8f69438d7d8'
 
 my_client = AzureOpenAI(
-  azure_endpoint="https://waterloo-gpt-turbo.openai.azure.com/",
+  azure_endpoint="https://waterloo-gpt-turbo2.openai.azure.com/",
   api_key=API_KEY,
   api_version="2024-02-15-preview"
 )
@@ -21,9 +21,9 @@ def call_gpt_4(client, instruction, inputs):
     completion = client.chat.completions.create(
       model="gpt-4-turbo",
       messages=message_text,
-      temperature=0.7,
+      temperature=0,
       max_tokens=4000,
-      top_p=0.95,
+      top_p=1,
       frequency_penalty=0,
       presence_penalty=0,
       stop=None
@@ -32,20 +32,18 @@ def call_gpt_4(client, instruction, inputs):
     return completion.choices[0].message.content
 
 
-def format_example(question, options, cot_content=""):
-    if cot_content == "":
-        cot_content = "Let think step by step."
-    if cot_content.startswith("A: "):
-        cot_content = cot_content[3:]
+def format_example(question, options, answer):
     example = "Question: {}\nOptions: ".format(question)
     choice_map = "ABCDEFGHIJ"
     for i, opt in enumerate(options):
         example += "{}. {}\n".format(choice_map[i], opt)
-    example += "Answer: " + cot_content
+    example += "Answer: " + answer
     return example
 
 
-def extract_answer(text):
+def extract_answer_wo_cot(text):
+    if text.strip()[0] in ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]:
+        return text.strip()[0]
     pattern = r"answer is \(?([ABCDEFGHIJ])\)?"
     match = re.search(pattern, text)
     if match:
@@ -56,21 +54,21 @@ def extract_answer(text):
 
 
 def single_request_gpt4(single_question, exist_result):
-    global cot_examples_map
+    global dev_examples_map
     q_id = single_question["question_id"]
     for each in exist_result:
         if q_id == each["question_id"]:
             print("already exists, skip it")
             return None, None
     category = single_question["category"]
-    cot_examples = cot_examples_map[category]
+    dev_examples = dev_examples_map[category]
     question = single_question["question"]
     options = single_question["options"]
     prompt = "The following are multiple choice questions (with answers) about {}.\n\n" \
         .format(category)
-    for each in cot_examples:
-        prompt += format_example(each["question"], each["options"], each["cot_content"])
-    input_text = format_example(question, options)
+    for each in dev_examples:
+        prompt += format_example(each["question"], each["options"], each["answer"])
+    input_text = format_example(question, options, "")
     try:
         start = time.time()
         response = call_gpt_4(my_client, prompt, input_text)
@@ -78,7 +76,7 @@ def single_request_gpt4(single_question, exist_result):
     except Exception as e:
         print("error", e)
         return None, None
-    pred = extract_answer(response)
+    pred = extract_answer_wo_cot(response)
     return pred, response
 
 
@@ -107,21 +105,22 @@ def update_result(output_res_path):
 
 
 def evaluate(data_dir):
-    res = []
-    output_res_path = os.path.join(output_dir, "eval_result_gpt_4_0509.json")
-    output_summary_path = os.path.join(output_dir, "eval_summary_gpt_4_0509.json")
-    category_record = {}
-    res, category_record = update_result(output_res_path)
+    output_res_path = os.path.join(output_dir, "eval_result_gpt_4_0510_wo_cot.json")
+    output_summary_path = os.path.join(output_dir, "eval_summary_gpt_4_0510_wo_cot.json")
     for file in os.listdir(data_dir):
         if not file.endswith("_test.json"):
             continue
         category = file.replace("_test.json", "")
         if category not in assigned_subject:
             continue
+        output_res_path = output_res_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
+        output_summary_path = output_summary_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
+        res, category_record = update_result(output_res_path)
         with open(os.path.join(data_dir, file), "r") as fi:
             data = json.load(fi)
             for each in tqdm(data):
                 label = each["answer"]
+                print("category:", category)
                 pred, response = single_request_gpt4(each, res)
                 if pred is not None:
                     res, category_record = update_result(output_res_path)
@@ -160,23 +159,23 @@ def save_summary(category_record, output_summary_path):
         fo.write(json.dumps(category_record))
 
 
-def load_cot_examples(input_dir):
-    global cot_examples_map
+def load_dev_examples(input_dir):
+    global dev_examples_map
     for file in os.listdir(input_dir):
         if not file.endswith("_dev.json"):
             continue
         with open(os.path.join(input_dir, file), 'r') as fi:
             curr = json.load(fi)
-            cot_examples_map[file.replace("_dev.json", "")] = curr
+            dev_examples_map[file.replace("_dev.json", "")] = curr
 
 
 if __name__ == '__main__':
-    assigned_subject = ["philosophy", "physics", "psychology"]
-    output_dir = "../experiments/eval_result_0509_gpt_4/"
+    assigned_subject = ["biology", "economics", "engineering", "health", "philosophy", "physics", "psychology"]
+    output_dir = "../experiments/eval_result_0510_gpt_4/"
     dev_dir = "../data/mmlu_pro_v1_0509/dev"
     test_dir = "../data/mmlu_pro_v1_0509/test"
     os.makedirs(output_dir, exist_ok=True)
-    cot_examples_map = {}
-    load_cot_examples(dev_dir)
+    dev_examples_map = {}
+    load_dev_examples(dev_dir)
     evaluate(test_dir)
 

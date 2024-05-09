@@ -6,10 +6,10 @@ import random
 from tqdm import tqdm
 import time
 
-API_KEY = 'fbec5a4ae51c49feac7eb9444245fad9'
+API_KEY = '786f8c1ff30a4c4b9f9b8917f2f5191b'
 
 my_client = AzureOpenAI(
-  azure_endpoint="https://waterloo-gpt-turbo.openai.azure.com/",
+  azure_endpoint="https://waterloo-gpt4.openai.azure.com/",
   api_key=API_KEY,
   api_version="2024-02-15-preview"
 )
@@ -19,11 +19,11 @@ def call_gpt_4(client, instruction, inputs):
     start = time.time()
     message_text = [{"role": "user", "content": instruction + inputs}]
     completion = client.chat.completions.create(
-      model="gpt-4-turbo",
+      model="gpt-4",
       messages=message_text,
-      temperature=0.7,
+      temperature=0,
       max_tokens=4000,
-      top_p=0.95,
+      top_p=1,
       frequency_penalty=0,
       presence_penalty=0,
       stop=None
@@ -107,21 +107,22 @@ def update_result(output_res_path):
 
 
 def evaluate(data_dir):
-    res = []
-    output_res_path = os.path.join(output_dir, "eval_result_gpt_4_0509.json")
-    output_summary_path = os.path.join(output_dir, "eval_summary_gpt_4_0509.json")
-    category_record = {}
-    res, category_record = update_result(output_res_path)
+    output_res_path = os.path.join(output_dir, "eval_result_gpt_4_0510.json")
+    output_summary_path = os.path.join(output_dir, "eval_summary_gpt_4_0510.json")
     for file in os.listdir(data_dir):
         if not file.endswith("_test.json"):
             continue
         category = file.replace("_test.json", "")
+        output_res_path = output_res_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
+        output_summary_path = output_summary_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
+        res, category_record = update_result(output_res_path)
         if category not in assigned_subject:
             continue
         with open(os.path.join(data_dir, file), "r") as fi:
             data = json.load(fi)
             for each in tqdm(data):
                 label = each["answer"]
+                print("category:", category)
                 pred, response = single_request_gpt4(each, res)
                 if pred is not None:
                     res, category_record = update_result(output_res_path)
@@ -171,8 +172,8 @@ def load_cot_examples(input_dir):
 
 
 if __name__ == '__main__':
-    assigned_subject = ["philosophy", "physics", "psychology"]
-    output_dir = "../experiments/eval_result_0509_gpt_4/"
+    assigned_subject = ["biology", "business", "chemistry", "computer science", "history"]
+    output_dir = "../experiments/eval_result_0510_gpt_4/"
     dev_dir = "../data/mmlu_pro_v1_0509/dev"
     test_dir = "../data/mmlu_pro_v1_0509/test"
     os.makedirs(output_dir, exist_ok=True)

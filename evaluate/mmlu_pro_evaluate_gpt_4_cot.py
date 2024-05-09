@@ -51,6 +51,7 @@ def extract_answer(text):
     if match:
         return match.group(1)
     else:
+        print("extraction failed:\n", text)
         return None
 
 
@@ -81,49 +82,61 @@ def single_request_gpt4(single_question, exist_result):
     return pred, response
 
 
+def update_result(output_res_path):
+    category_record = {}
+    res = []
+    success = False
+    while not success:
+        try:
+            if os.path.exists(output_res_path):
+                with open(output_res_path, "r") as fi:
+                    res = json.load(fi)
+                    for each in res:
+                        category = each["category"]
+                        if category not in category_record:
+                            category_record[category] = {"corr": 0.0, "wrong": 0.0}
+                        if each["pred"] == each["answer"]:
+                            category_record[category]["corr"] += 1
+                        else:
+                            category_record[category]["wrong"] += 1
+            success = True
+        except Exception as e:
+            print("Error", e, "sleep 2 seconds")
+            time.sleep(2)
+    return res, category_record
+
+
 def evaluate(data_dir):
     res = []
     output_res_path = os.path.join(output_dir, "eval_result_gpt_4_0509.json")
     output_summary_path = os.path.join(output_dir, "eval_summary_gpt_4_0509.json")
     category_record = {}
-    total_corr = 0.0
-    total_wrong = 0.0
-    if os.path.exists(output_res_path):
-        with open(output_res_path, "r") as fi:
-            res = json.load(fi)
-            for each in res:
-                category = each["category"]
-                if category not in category_record:
-                    category_record[category] = {"corr": 0.0, "wrong": 0.0}
-                if each["pred"] == each["answer"]:
-                    total_corr += 1
-                    category_record[category]["corr"] += 1
-                else:
-                    total_wrong += 1
-                    category_record[category]["wrong"] += 1
+    res, category_record = update_result(output_res_path)
     for file in os.listdir(data_dir):
         if not file.endswith("_test.json"):
             continue
         category = file.replace("_test.json", "")
-        if category not in category_record:
-            category_record[category] = {"corr": 0.0, "wrong": 0.0}
+        if category not in assigned_subject:
+            continue
         with open(os.path.join(data_dir, file), "r") as fi:
             data = json.load(fi)
             for each in tqdm(data):
                 label = each["answer"]
                 pred, response = single_request_gpt4(each, res)
                 if pred is not None:
+                    res, category_record = update_result(output_res_path)
+                    if category not in category_record:
+                        category_record[category] = {"corr": 0.0, "wrong": 0.0}
                     each["pred"] = pred
                     each["gpt_4_response"] = response
                     res.append(each)
                     if pred == label:
-                        total_corr += 1
                         category_record[category]["corr"] += 1
                     else:
-                        total_wrong += 1
                         category_record[category]["wrong"] += 1
                     save_res(res, output_res_path)
                     save_summary(category_record, output_summary_path)
+                    res, category_record = update_result(output_res_path)
 
 
 def save_res(res, output_res_path):
@@ -158,6 +171,7 @@ def load_cot_examples(input_dir):
 
 
 if __name__ == '__main__':
+    assigned_subject = ["biology", "business", "chemistry", "computer science", "history"]
     output_dir = "../experiments/eval_result_0509_gpt_4/"
     dev_dir = "../data/mmlu_pro_v1_0509/dev"
     test_dir = "../data/mmlu_pro_v1_0509/test"
