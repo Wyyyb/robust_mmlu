@@ -1,0 +1,85 @@
+Average accuracy 0.2600 - abstract_algebra.json
+Average accuracy 0.4148 - anatomy.json
+Average accuracy 0.5000 - astronomy.json
+Average accuracy 0.4900 - business_ethics.json
+Average accuracy 0.4943 - clinical_knowledge.json
+Average accuracy 0.3889 - college_biology.json
+Average accuracy 0.3000 - college_chemistry.json
+Average accuracy 0.2900 - college_computer_science.json
+Average accuracy 0.2900 - college_mathematics.json
+Average accuracy 0.3988 - college_medicine.json
+Average accuracy 0.3725 - college_physics.json
+Average accuracy 0.6200 - computer_security.json
+Average accuracy 0.3915 - conceptual_physics.json
+Average accuracy 0.2807 - econometrics.json
+Average accuracy 0.4828 - electrical_engineering.json
+Average accuracy 0.4365 - elementary_mathematics.json
+Average accuracy 0.2937 - formal_logic.json
+Average accuracy 0.3500 - global_facts.json
+Average accuracy 0.5419 - high_school_biology.json
+Average accuracy 0.3892 - high_school_chemistry.json
+Average accuracy 0.3700 - high_school_computer_science.json
+Average accuracy 0.5333 - high_school_european_history.json
+Average accuracy 0.5505 - high_school_geography.json
+Average accuracy 0.5492 - high_school_government_and_politics.json
+Average accuracy 0.4590 - high_school_macroeconomics.json
+Average accuracy 0.3296 - high_school_mathematics.json
+Average accuracy 0.5378 - high_school_microeconomics.json
+Average accuracy 0.2980 - high_school_physics.json
+Average accuracy 0.5688 - high_school_psychology.json
+Average accuracy 0.3843 - high_school_statistics.json
+Average accuracy 0.4118 - high_school_us_history.json
+Average accuracy 0.4768 - high_school_world_history.json
+Average accuracy 0.3587 - human_aging.json
+Average accuracy 0.4580 - human_sexuality.json
+Average accuracy 0.6198 - international_law.json
+Average accuracy 0.6296 - jurisprudence.json
+Average accuracy 0.4724 - logical_fallacies.json
+Average accuracy 0.2411 - machine_learning.json
+Average accuracy 0.7184 - management.json
+Average accuracy 0.7222 - marketing.json
+Average accuracy 0.6100 - medical_genetics.json
+Average accuracy 0.6731 - miscellaneous.json
+Average accuracy 0.4306 - moral_disputes.json
+Average accuracy 0.2704 - moral_scenarios.json
+Average accuracy 0.4837 - nutrition.json
+Average accuracy 0.5113 - philosophy.json
+Average accuracy 0.4321 - prehistory.json
+Average accuracy 0.3121 - professional_accounting.json
+Average accuracy 0.3168 - professional_law.json
+Average accuracy 0.3787 - professional_medicine.json
+Average accuracy 0.3807 - professional_psychology.json
+Average accuracy 0.4818 - public_relations.json
+Average accuracy 0.3755 - security_studies.json
+Average accuracy 0.4726 - sociology.json
+Average accuracy 0.6300 - us_foreign_policy.json
+Average accuracy 0.3795 - virology.json
+Average accuracy 0.6608 - world_religions.json
+
+------subcategory level sta------
+Average accuracy 0.4934 - biology
+Average accuracy 0.6682 - business
+Average accuracy 0.3597 - chemistry
+Average accuracy 0.3762 - computer science
+Average accuracy 0.4669 - culture
+Average accuracy 0.4569 - economics
+Average accuracy 0.4828 - engineering
+Average accuracy 0.5505 - geography
+Average accuracy 0.4335 - health
+Average accuracy 0.4570 - history
+Average accuracy 0.3568 - law
+Average accuracy 0.3684 - math
+Average accuracy 0.5579 - other
+Average accuracy 0.3862 - philosophy
+Average accuracy 0.3922 - physics
+Average accuracy 0.4846 - politics
+Average accuracy 0.4693 - psychology
+
+------category level sta------
+Average accuracy 0.3979 - STEM
+Average accuracy 0.3892 - humanities
+Average accuracy 0.4745 - social sciences
+Average accuracy 0.5099 - other (business, health, misc.)
+
+------average acc sta------
+Average accuracy: 0.4376

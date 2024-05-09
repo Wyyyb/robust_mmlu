@@ -3,3 +3,11 @@ Average accuracy 0.2528 - business.json
 Average accuracy 0.3814 - chemistry.json
 Average accuracy 0.2300 - computer science.json
 Average accuracy 0.3692 - economics.json
+Average accuracy 0.2885 - engineering.json
+Average accuracy 0.2646 - health.json
+Average accuracy 0.2026 - history.json
+Average accuracy 0.2036 - law.json
+Average accuracy 0.2759 - math.json
+Average accuracy 0.2487 - other.json
+Average accuracy 0.2628 - philosophy.json
+Average accuracy 0.3129 - physics.json
