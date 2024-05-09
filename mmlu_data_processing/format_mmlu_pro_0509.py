@@ -2,6 +2,7 @@ import json
 import random
 import os
 import csv
+import re
 
 
 def read_csv_file(file_path):
@@ -52,6 +53,13 @@ def format_test_data():
             fo.write(json.dumps(v[:10]))
 
 
+def postprocess(cot_content, answer_symbol):
+    pattern = r'The answer is \(([A-Z])\)'
+    target = "The answer is (" + answer_symbol + ")"
+    res = re.sub(pattern, target, cot_content)
+    return res
+
+
 def format_dev_data():
     global max_q_id
     cot_data = {}
@@ -68,8 +76,10 @@ def format_dev_data():
             else:
                 temp.append(opt)
         options = temp
+        cot_content = each[15]
+        cot_content = postprocess(cot_content, each[13])
         curr = {"question": each[2], "options": options, "answer": each[14], "answer_symbol": each[13],
-                "cot_content": each[15], "ori_key": each[0]}
+                "cot_content": cot_content, "ori_key": each[0]}
         cot_data[cat].append(curr)
     dev_data = {}
     for k, v in cot_data.items():
