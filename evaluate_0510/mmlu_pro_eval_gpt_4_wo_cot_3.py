@@ -6,10 +6,10 @@ import random
 from tqdm import tqdm
 import time
 
-API_KEY = 'fbec5a4ae51c49feac7eb9444245fad9'
+API_KEY = '4214db191e964ed18685b20a31bdb535'
 
 my_client = AzureOpenAI(
-  azure_endpoint="https://waterloo-gpt-turbo.openai.azure.com/",
+  azure_endpoint="https://fast-gpt4.openai.azure.com/",
   api_key=API_KEY,
   api_version="2024-02-15-preview"
 )
@@ -170,7 +170,7 @@ def load_dev_examples(input_dir):
 
 
 if __name__ == '__main__':
-    assigned_subject = ["biology", "health", "history", "law"]
+    assigned_subject = ["other", "math"]
     output_dir = "../experiments/eval_result_0510_gpt_4/"
     dev_dir = "../data/mmlu_pro_v1_0509/dev"
     test_dir = "../data/mmlu_pro_v1_0509/test"

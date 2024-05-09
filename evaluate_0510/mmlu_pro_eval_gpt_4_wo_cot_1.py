@@ -170,7 +170,7 @@ def load_dev_examples(input_dir):
 
 
 if __name__ == '__main__':
-    assigned_subject = ["biology", "economics", "engineering", "health", "philosophy", "physics", "psychology"]
+    assigned_subject = ["engineering", "philosophy", "physics", "psychology"]
     output_dir = "../experiments/eval_result_0510_gpt_4/"
     dev_dir = "../data/mmlu_pro_v1_0509/dev"
     test_dir = "../data/mmlu_pro_v1_0509/test"

@@ -172,8 +172,8 @@ def load_cot_examples(input_dir):
 
 
 if __name__ == '__main__':
-    assigned_subject = ["biology", "business", "chemistry", "computer science", "history"]
-    output_dir = "../experiments/eval_result_0510_gpt_4/"
+    assigned_subject = ["business", "chemistry", "computer science", "economics"]
+    output_dir = "../experiments/eval_result_0510_gpt_4_cot/"
     dev_dir = "../data/mmlu_pro_v1_0509/dev"
     test_dir = "../data/mmlu_pro_v1_0509/test"
     os.makedirs(output_dir, exist_ok=True)
