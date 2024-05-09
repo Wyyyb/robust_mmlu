@@ -1,1 +1,1 @@
-{"other": {"corr": 1.0, "wrong": 3.0, "acc": 0.25}, "total": {"corr": 1.0, "wrong": 3.0, "acc": 0.25}}
+{"other": {"corr": 22.0, "wrong": 5.0, "acc": 0.8148148148148148}, "total": {"corr": 22.0, "wrong": 5.0, "acc": 0.8148148148148148}}

@@ -1,1 +1,1 @@
-{"psychology": {"corr": 5.0, "wrong": 17.0, "acc": 0.22727272727272727}, "total": {"corr": 5.0, "wrong": 17.0, "acc": 0.22727272727272727}}
+{"psychology": {"corr": 21.0, "wrong": 7.0, "acc": 0.75}, "total": {"corr": 21.0, "wrong": 7.0, "acc": 0.75}}
