@@ -7,21 +7,21 @@ import time
 from transformers import AutoTokenizer
 from vllm import LLM, SamplingParams
 
-max_model_len, tp_size = 3000, 8
-model_name = "deepseek-ai/DeepSeek-V2-Chat"
+max_model_len, tp_size = 2048, 8
+model_name = "deepseek-ai/DeepSeek-V2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 llm = LLM(model=model_name, tensor_parallel_size=tp_size, max_model_len=max_model_len, trust_remote_code=True, enforce_eager=True, gpu_memory_utilization=0.9)
-sampling_params = SamplingParams(temperature=0, max_tokens=5, stop_token_ids=[tokenizer.eos_token_id])
+sampling_params = SamplingParams(temperature=0, max_tokens=256, stop_token_ids=[tokenizer.eos_token_id])
 
 
 def call_gpt_4(instruction, inputs):
     start = time.time()
-    messages = [{"role": "user", "content": instruction + inputs}]
-    prompt_token_ids = tokenizer.apply_chat_template(messages, add_generation_prompt=True)
-    outputs = llm.generate(prompt_token_ids=[prompt_token_ids], sampling_params=sampling_params)
+    text = instruction + inputs
+    inputs = tokenizer(text)
+    outputs = llm.generate(prompt_token_ids=[inputs], sampling_params=sampling_params)
     generated_text = [output.outputs[0].text for output in outputs][0]
-    # print(generated_text)
-    # print("cost time", time.time() - start)
+    print(generated_text)
+    print("cost time", time.time() - start)
     return generated_text
 
 
@@ -35,7 +35,6 @@ def format_example(question, options, answer):
 
 
 def extract_answer_wo_cot(text):
-    text = text.replace('Answer:', '')
     if text.strip()[0] in ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]:
         return text.strip()[0]
     pattern = r"answer is \(?([ABCDEFGHIJ])\)?"
@@ -61,12 +60,12 @@ def single_request_gpt4(single_question, exist_result):
     prompt = "The following are multiple choice questions (with answers) about {}.\n\n" \
         .format(category)
     for each in dev_examples:
-        prompt += format_example(each["question"], each["options"], each["answer"]) + '\n\n'
+        prompt += format_example(each["question"], each["options"], each["answer"])
     input_text = format_example(question, options, "")
     try:
         start = time.time()
         response = call_gpt_4(prompt, input_text)
-        # print("requesting gpt 4 costs: ", time.time() - start)
+        print("requesting gpt 4 costs: ", time.time() - start)
     except Exception as e:
         print("error", e)
         return None, None
@@ -99,8 +98,8 @@ def update_result(output_res_path):
 
 
 def evaluate(data_dir):
-    output_res_path = os.path.join(output_dir, "eval_result_deepseek_chat_0510_wo_cot.json")
-    output_summary_path = os.path.join(output_dir, "eval_summary_deepseek_chat_0510_wo_cot.json")
+    output_res_path = os.path.join(output_dir, "eval_result_deepseek_base_0510_wo_cot.json")
+    output_summary_path = os.path.join(output_dir, "eval_summary_deepseek_base_0510_wo_cot.json")
     for file in os.listdir(data_dir):
         if not file.endswith("_test.json"):
             continue
@@ -114,7 +113,7 @@ def evaluate(data_dir):
             data = json.load(fi)
             for each in tqdm(data):
                 label = each["answer"]
-                # print("category:", category)
+                print("category:", category)
                 pred, response = single_request_gpt4(each, res)
                 if pred is not None:
                     res, category_record = update_result(output_res_path)
@@ -165,7 +164,7 @@ def load_dev_examples(input_dir):
 
 if __name__ == '__main__':
     # assigned_subject = ["business", "chemistry", "computer science", "economics"]
-    output_dir = "../experiments/eval_result_0510_deepseek_chat/"
+    output_dir = "../experiments/eval_result_0510_deepseek_base/"
     dev_dir = "../data/mmlu_pro_v1_0509/dev"
     test_dir = "../data/mmlu_pro_v1_0509/test"
     os.makedirs(output_dir, exist_ok=True)
