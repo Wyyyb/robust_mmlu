@@ -41,7 +41,7 @@ def format_example(question, options, cot_content=""):
     choice_map = "ABCDEFGHIJ"
     for i, opt in enumerate(options):
         example += "{}. {}\n".format(choice_map[i], opt)
-    example += "Answer: " + cot_content
+    example += "Answer: " + cot_content + "\n\n"
     return example
 
 
@@ -57,16 +57,19 @@ def extract_answer(text):
 
 def single_request_gpt4(single_question, exist_result):
     global cot_examples_map
+    exist = True
     q_id = single_question["question_id"]
     for each in exist_result:
-        if q_id == each["question_id"]:
+        if q_id == each["question_id"] and single_question["question"] == each["question"]:
             print("already exists, skip it")
-            return None, None
+            return each["pred"], each["gpt_4_response"], exist
+    exist = False
     category = single_question["category"]
     cot_examples = cot_examples_map[category]
     question = single_question["question"]
     options = single_question["options"]
-    prompt = "The following are multiple choice questions (with answers) about {}.\n\n" \
+    prompt = "The following are multiple choice questions (with answers) about {}. Think step by" \
+             " step and then output the answer in the format of \"The answer is (X)\" at the end.\n\n" \
         .format(category)
     for each in cot_examples:
         prompt += format_example(each["question"], each["options"], each["cot_content"])
@@ -77,9 +80,9 @@ def single_request_gpt4(single_question, exist_result):
         print("requesting gpt 4 costs: ", time.time() - start)
     except Exception as e:
         print("error", e)
-        return None, None
+        return None, None, exist
     pred = extract_answer(response)
-    return pred, response
+    return pred, response, exist
 
 
 def update_result(output_res_path):
@@ -107,14 +110,14 @@ def update_result(output_res_path):
 
 
 def evaluate(data_dir):
-    output_res_path = os.path.join(output_dir, "eval_result_gpt_4_0510.json")
-    output_summary_path = os.path.join(output_dir, "eval_summary_gpt_4_0510.json")
+    ori_output_res_path = os.path.join(output_dir, "eval_result_gpt_4_0510.json")
+    ori_output_summary_path = os.path.join(output_dir, "eval_summary_gpt_4_0510.json")
     for file in os.listdir(data_dir):
         if not file.endswith("_test.json"):
             continue
         category = file.replace("_test.json", "")
-        output_res_path = output_res_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
-        output_summary_path = output_summary_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
+        output_res_path = ori_output_res_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
+        output_summary_path = ori_output_summary_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
         res, category_record = update_result(output_res_path)
         if category not in assigned_subject:
             continue
@@ -123,24 +126,38 @@ def evaluate(data_dir):
             for each in tqdm(data):
                 label = each["answer"]
                 print("category:", category)
-                pred, response = single_request_gpt4(each, res)
-                if pred is not None:
+                pred, response, exist = single_request_gpt4(each, res)
+                if exist:
+                    continue
+                if response is not None:
                     res, category_record = update_result(output_res_path)
                     if category not in category_record:
                         category_record[category] = {"corr": 0.0, "wrong": 0.0}
                     each["pred"] = pred
                     each["gpt_4_response"] = response
                     res.append(each)
-                    if pred == label:
-                        category_record[category]["corr"] += 1
-                    else:
-                        category_record[category]["wrong"] += 1
+                    if pred is not None:
+                        if pred == label:
+                            category_record[category]["corr"] += 1
+                        else:
+                            category_record[category]["wrong"] += 1
                     save_res(res, output_res_path)
                     save_summary(category_record, output_summary_path)
                     res, category_record = update_result(output_res_path)
+            save_res(res, output_res_path)
+            save_summary(category_record, output_summary_path)
 
 
 def save_res(res, output_res_path):
+    temp = []
+    exist_q_id = []
+    for each in res:
+        if each["question_id"] not in exist_q_id:
+            exist_q_id.append(each["question_id"])
+            temp.append(each)
+        else:
+            continue
+    res = temp
     with open(output_res_path, "w") as fo:
         fo.write(json.dumps(res))
 
