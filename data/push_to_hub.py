@@ -3,6 +3,7 @@ import os
 import sys
 from datasets import Dataset, DatasetDict
 import random
+from huggingface_hub import HfApi, HfFolder
 
 
 def transfer_list_to_ds(list_data):
@@ -18,6 +19,9 @@ def transfer_list_to_ds(list_data):
     return result
 
 
+api = HfApi()
+username = api.whoami()['name']
+token = HfFolder.get_token()
 input_dir = "mmlu_pro_v1_0510"
 dataset_dict = {}
 all_subset = {}
@@ -46,7 +50,7 @@ for key, value in dataset_dict.items():
         seg = key + "_" + k
         target = f"TIGER-Lab/MMLU-Pro"
         print("pushing to", target)
-        v.push_to_hub(target, private=True)
+        v.push_to_hub(target, private=True, token=token)
 
 # for subset, data in full_dataset.items():
 #     data.push_to_hub(f"TIGER-Lab/MMLU-Pro/{subset}", private=False)
