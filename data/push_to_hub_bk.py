@@ -40,11 +40,20 @@ for dir_name in os.listdir(input_dir):
     with open(dev_data_path, "r") as fi:
         dev_data = json.load(fi)
         all_dev += dev_data
+    dataset_dict[subset_name] = {"test": transfer_list_to_ds(test_data),
+                                 "validation": transfer_list_to_ds(dev_data)}
+dataset_dict["all"] = {"test": transfer_list_to_ds(all_test),
+                       "validation": transfer_list_to_ds(all_dev)}
 
-dataset_test = Dataset.from_list(all_test)
-dataset_dev = Dataset.from_list(all_dev)
-dataset_test.push_to_hub("TIGER-Lab/MMLU-Pro", private=True, split="test")
-dataset_dev.push_to_hub("TIGER-Lab/MMLU-Pro", private=True, split="validation")
+for key, value in dataset_dict.items():
+    for k, v in value.items():
+        seg = key + "_" + k
+        target = f"TIGER-Lab/MMLU-Pro"
+        print("pushing to", target)
+        v.push_to_hub(target, private=True, token=token)
+
+# for subset, data in full_dataset.items():
+#     data.push_to_hub(f"TIGER-Lab/MMLU-Pro/{subset}", private=False)
 
 
 
