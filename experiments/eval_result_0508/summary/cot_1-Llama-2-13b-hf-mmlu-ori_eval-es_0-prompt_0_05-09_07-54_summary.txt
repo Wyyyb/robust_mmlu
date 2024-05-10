@@ -32,3 +32,54 @@ Average accuracy 0.7206 - high_school_us_history.json
 Average accuracy 0.6878 - high_school_world_history.json
 Average accuracy 0.6368 - human_aging.json
 Average accuracy 0.6183 - human_sexuality.json
+Average accuracy 0.6364 - international_law.json
+Average accuracy 0.6204 - jurisprudence.json
+Average accuracy 0.6135 - logical_fallacies.json
+Average accuracy 0.3304 - machine_learning.json
+Average accuracy 0.6990 - management.json
+Average accuracy 0.7949 - marketing.json
+Average accuracy 0.6400 - medical_genetics.json
+Average accuracy 0.7752 - miscellaneous.json
+Average accuracy 0.6012 - moral_disputes.json
+Average accuracy 0.3654 - moral_scenarios.json
+Average accuracy 0.5523 - nutrition.json
+Average accuracy 0.6527 - philosophy.json
+Average accuracy 0.6080 - prehistory.json
+Average accuracy 0.3652 - professional_accounting.json
+Average accuracy 0.3592 - professional_law.json
+Average accuracy 0.5184 - professional_medicine.json
+Average accuracy 0.5180 - professional_psychology.json
+Average accuracy 0.6818 - public_relations.json
+Average accuracy 0.4653 - security_studies.json
+Average accuracy 0.7214 - sociology.json
+Average accuracy 0.7700 - us_foreign_policy.json
+Average accuracy 0.5060 - virology.json
+Average accuracy 0.8304 - world_religions.json
+
+------subcategory level sta------
+Average accuracy 0.5529 - biology
+Average accuracy 0.7323 - business
+Average accuracy 0.3960 - chemistry
+Average accuracy 0.5097 - computer science
+Average accuracy 0.6807 - culture
+Average accuracy 0.4879 - economics
+Average accuracy 0.5172 - engineering
+Average accuracy 0.6919 - geography
+Average accuracy 0.5579 - health
+Average accuracy 0.6645 - history
+Average accuracy 0.3942 - law
+Average accuracy 0.3882 - math
+Average accuracy 0.6532 - other
+Average accuracy 0.5089 - philosophy
+Average accuracy 0.4594 - physics
+Average accuracy 0.6497 - politics
+Average accuracy 0.6223 - psychology
+
+------category level sta------
+Average accuracy 0.4516 - STEM
+Average accuracy 0.4967 - humanities
+Average accuracy 0.6064 - social sciences
+Average accuracy 0.6157 - other (business, health, misc.)
+
+------average acc sta------
+Average accuracy: 0.5385
