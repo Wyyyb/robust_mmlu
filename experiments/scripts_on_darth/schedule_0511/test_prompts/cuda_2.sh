@@ -13,7 +13,7 @@ model="meta-llama/Llama-2-7b-hf"
 selected_subjects="history"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=5
 
 python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
