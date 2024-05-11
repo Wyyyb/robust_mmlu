@@ -5,7 +5,7 @@ ntrain=5
 examples_start_index=0
 prompt_type=0
 ngpu=1
-data_dir="../../data/ori_mmlu_data_json"
+# data_dir="../../data/ori_mmlu_data_json"
 data_dir="../../data/mmlu_pro_v1_0506"
 save_dir="../eval_result_0511"
 scoring_method="symbol_scoring"
@@ -14,7 +14,7 @@ model="meta-llama/Llama-2-7b-hf"
 selected_subjects="physics"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=5
+export CUDA_VISIBLE_DEVICES=1
 
 python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
