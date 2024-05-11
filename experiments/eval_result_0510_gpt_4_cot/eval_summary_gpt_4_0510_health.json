@@ -1,1 +1,1 @@
-{"health": {"corr": 451.0, "wrong": 374.0, "acc": 0.5466666666666666}, "total": {"corr": 451.0, "wrong": 374.0, "acc": 0.5466666666666666}}
+{"health": {"corr": 28.0, "wrong": 12.0, "acc": 0.7}, "total": {"corr": 28.0, "wrong": 12.0, "acc": 0.7}}
