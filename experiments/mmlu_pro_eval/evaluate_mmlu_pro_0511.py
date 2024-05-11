@@ -17,6 +17,7 @@ from tqdm import tqdm
 from distutils.util import strtobool
 import logging
 import sys
+from prompt_format_examples import prompt_format_examples
 
 
 IGNORE_INDEX = -100
@@ -37,22 +38,18 @@ def format_subject(subject):
 
 
 def format_example(df, idx, include_answer=True):
-    prompt = ""
-    if args.prompt_type == 1:
-        prompt += "Question:"
-    prompt += str(df[idx]["question"])
-    if args.prompt_type == 1:
-        prompt += "\nOptions:"
+    prompt_format = args.prompt_format
     options = df[idx]["options"]
-    for j in range(len(options)):
-        prompt += "\n{}. {}".format(choices[j], options[j])
-    prompt += "\nAnswer:"
+    question = df[idx]["question"]
+    prompt = prompt_format_examples(prompt_format, question, options)
     if include_answer:
         ans_index = df[idx]["answer_index"]
         if args.scoring_method == "symbol_scoring":
             prompt += " {}\n\n".format(choices[ans_index])
         elif args.scoring_method == "hybrid_scoring":
             prompt += " {}\n\n".format(options[ans_index])
+    if idx % 20 == 0:
+        logging.info("prompt: \n" + prompt)
     return prompt, options
 
 
@@ -83,7 +80,7 @@ def get_initial_prompt(subject):
         for line in fi.readlines():
             prompt += line + "\n"
     prompt = prompt.replace("{$}", subject)
-    prompt += "\n"
+    prompt += "\n\n"
     return prompt
 
 
@@ -504,7 +501,8 @@ def args_generate_path(input_args):
         eval_method = "ori_eval"
     examples_start_index = f"es_{str(input_args.examples_start_index)}"
     prompt_type = f"prompt_{str(input_args.prompt_type)}"
-    res = f"{scoring_method}/{model_name}/{dataset_name}/{eval_method}/{examples_start_index}/{prompt_type}"
+    prompt_format = f"format_{str(input_args.prompt_format)}"
+    res = f"{scoring_method}/{model_name}/{dataset_name}/{examples_start_index}/{prompt_type}/{prompt_format}"
     if args.selected_subjects != "":
         res += "/" + args.selected_subjects.replace(",", "-").replace(" ", "_")
     return res
@@ -564,6 +562,7 @@ if __name__ == "__main__":
     parser.add_argument("--ntrain", "-k", type=int, default=5)
     parser.add_argument("--examples_start_index", "-esi", type=int, default=0)
     parser.add_argument("--prompt_type", "-p", type=int, default=0)
+    parser.add_argument("--prompt_format", "-pf", type=int, default=0)
     parser.add_argument("--selected_subjects", "-sub", type=str, default="")
     parser.add_argument("--cot_type", "-c", type=str, default="-1")
     parser.add_argument("--ngpu", "-g", type=int, default=1)
