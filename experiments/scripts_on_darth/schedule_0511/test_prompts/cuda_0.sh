@@ -10,6 +10,7 @@ save_dir="../eval_result_0511"
 scoring_method="symbol_scoring"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 model="meta-llama/Llama-2-7b-hf"
+selected_subjects="physics"
 
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=1
@@ -18,6 +19,7 @@ python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
+                 --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
                  --data_dir $data_dir \
                  --save_dir $save_dir \
@@ -30,6 +32,7 @@ python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
+                 --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
                  --data_dir $data_dir \
                  --save_dir $save_dir \
@@ -41,6 +44,7 @@ python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
+                 --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
                  --data_dir $data_dir \
                  --save_dir $save_dir \
@@ -52,6 +56,7 @@ python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
+                 --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
                  --data_dir $data_dir \
                  --save_dir $save_dir \
@@ -63,6 +68,7 @@ python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
+                 --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
                  --data_dir $data_dir \
                  --save_dir $save_dir \
@@ -74,6 +80,7 @@ python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
+                 --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
                  --data_dir $data_dir \
                  --save_dir $save_dir \

@@ -420,7 +420,18 @@ def main():
         subcat_cors[subcat] = []
     cat_cors = {cat: [] for cat in cat_dict}
 
-    for subject in subjects:
+    if args.selected_subjects == "":
+        selected_subjects = subjects
+    else:
+        selected_subjects = []
+        args_selected = args.selected_subjects.split(",")
+        for sub in subjects:
+            for each in args_selected:
+                if each.replace(" ", "_") in sub.replace(" ", "_"):
+                    selected_subjects.append(sub)
+    logging.info("selected subjects:\n" + "\n".join(selected_subjects))
+    print("selected subjects:\n" + "\n".join(selected_subjects))
+    for subject in selected_subjects:
         output_path = os.path.join(save_result_dir, "{}".format(subject))
         if os.path.exists(output_path):
             with open(output_path, "r") as fi:
@@ -551,6 +562,7 @@ if __name__ == "__main__":
     parser.add_argument("--ntrain", "-k", type=int, default=5)
     parser.add_argument("--examples_start_index", "-esi", type=int, default=0)
     parser.add_argument("--prompt_type", "-p", type=int, default=0)
+    parser.add_argument("--selected_subjects", "-sub", type=str, default="")
     parser.add_argument("--cot_type", "-c", type=str, default="-1")
     parser.add_argument("--ngpu", "-g", type=int, default=1)
     parser.add_argument("--data_dir", "-d", type=str, default="data")
