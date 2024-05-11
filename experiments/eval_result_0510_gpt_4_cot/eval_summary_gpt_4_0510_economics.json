@@ -1,1 +1,1 @@
-{"economics": {"corr": 115.0, "wrong": 49.0, "acc": 0.7012195121951219}, "total": {"corr": 115.0, "wrong": 49.0, "acc": 0.7012195121951219}}
+{"economics": {"corr": 261.0, "wrong": 114.0, "acc": 0.696}, "total": {"corr": 261.0, "wrong": 114.0, "acc": 0.696}}

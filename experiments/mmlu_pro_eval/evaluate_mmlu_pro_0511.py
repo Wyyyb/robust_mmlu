@@ -505,6 +505,8 @@ def args_generate_path(input_args):
     examples_start_index = f"es_{str(input_args.examples_start_index)}"
     prompt_type = f"prompt_{str(input_args.prompt_type)}"
     res = f"{scoring_method}/{model_name}/{dataset_name}/{eval_method}/{examples_start_index}/{prompt_type}"
+    if args.selected_subjects != "":
+        res += "/" + args.selected_subjects.replace(",", "-").replace(" ", "_")
     return res
 
 
