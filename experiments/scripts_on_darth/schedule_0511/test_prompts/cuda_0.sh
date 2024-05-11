@@ -12,7 +12,7 @@ scoring_method="symbol_scoring"
 model = "meta-llama/Llama-2-7b-hf"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=1
 
 python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
