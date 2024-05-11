@@ -48,7 +48,7 @@ def format_example(df, idx, include_answer=True):
             prompt += " {}\n\n".format(choices[ans_index])
         elif args.scoring_method == "hybrid_scoring":
             prompt += " {}\n\n".format(options[ans_index])
-    if idx % 20 == 0:
+    if idx <= 5:
         logging.info("prompt: \n" + prompt)
     return prompt, options
 
@@ -578,7 +578,7 @@ if __name__ == "__main__":
         type=str,
         default="/ML-A100/team/mm/zhangge/Llama-2-7b-hf",
     )
-    global_record_file = "../result_record/eval_record_collection.txt"
+    global_record_file = "../result_record/eval_record_collection_0511.txt"
     os.makedirs("../result_record", exist_ok=True)
     args = parser.parse_args()
     cot_lib = load_cot_lib()
