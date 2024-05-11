@@ -9,7 +9,7 @@ data_dir="../../data/ori_mmlu_data_json"
 save_dir="../eval_result_0511"
 scoring_method="symbol_scoring"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
-model = "meta-llama/Llama-2-7b-hf"
+model="meta-llama/Llama-2-7b-hf"
 
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=1
