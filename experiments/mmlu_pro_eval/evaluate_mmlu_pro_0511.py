@@ -417,7 +417,7 @@ def main():
         subcat_cors[subcat] = []
     cat_cors = {cat: [] for cat in cat_dict}
 
-    if args.selected_subjects == "":
+    if args.selected_subjects == "all":
         selected_subjects = subjects
     else:
         selected_subjects = []
@@ -503,7 +503,7 @@ def args_generate_path(input_args):
     prompt_type = f"prompt_{str(input_args.prompt_type)}"
     prompt_format = f"format_{str(input_args.prompt_format)}"
     res = f"{scoring_method}/{model_name}/{dataset_name}/{examples_start_index}/{prompt_type}/{prompt_format}"
-    if args.selected_subjects != "":
+    if args.selected_subjects != "all":
         res += "/" + args.selected_subjects.replace(",", "-").replace(" ", "_")
     return res
 
@@ -563,7 +563,7 @@ if __name__ == "__main__":
     parser.add_argument("--examples_start_index", "-esi", type=int, default=0)
     parser.add_argument("--prompt_type", "-p", type=int, default=0)
     parser.add_argument("--prompt_format", "-pf", type=int, default=0)
-    parser.add_argument("--selected_subjects", "-sub", type=str, default="")
+    parser.add_argument("--selected_subjects", "-sub", type=str, default="all")
     parser.add_argument("--cot_type", "-c", type=str, default="-1")
     parser.add_argument("--ngpu", "-g", type=int, default=1)
     parser.add_argument("--data_dir", "-d", type=str, default="data")
