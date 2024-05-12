@@ -18,13 +18,19 @@ def test_vllm():
     llm = LLM(model=model_name, gpu_memory_utilization=0.95, tensor_parallel_size=tp_size)
     sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                      stop_token_ids=stop_tokens)
-    start = time.time()
-    outputs = llm.generate([prompt], sampling_params)
-    for output in outputs:
-        prompt = output.prompt
-        generated_text = output.outputs[0].text
-        print(f"Prompt: {prompt!r}, Generated text: {generated_text!r}")
-    print("vllm cost time", time.time() - start)
+    for i in range(10):
+        start = time.time()
+        outputs = llm.generate([prompt], sampling_params)
+        for output in outputs:
+            prompt = output.prompt
+            generated_text = output.outputs[0].text
+            # print(f"Prompt: {prompt!r}, Generated text: {generated_text!r}")
+            if generated_text.startswith(prompt):
+                answer = generated_text.replace(prompt, "")
+                print("answer", answer)
+            else:
+                print("generated_text", generated_text)
+        print(i, "vllm cost time", time.time() - start)
 
 
 def test_llama():
@@ -51,4 +57,4 @@ def test_llama():
 
 if __name__ == "__main__":
     test_vllm()
-    test_llama()
+    # test_llama()
