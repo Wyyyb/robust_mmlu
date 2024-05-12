@@ -20,7 +20,7 @@ def test_vllm():
                                      stop=["Question:"])
     for i in range(10):
         start = time.time()
-        outputs = llm.generate([prompt for _ in range(4)], sampling_params)
+        outputs = llm.generate([prompt for _ in range(8)], sampling_params)
         for output in outputs:
             prompt = output.prompt
             generated_text = output.outputs[0].text
