@@ -1,0 +1,38 @@
+Average accuracy 0.4198 - biology.json
+Average accuracy 0.1163 - business.json
+Average accuracy 0.1318 - chemistry.json
+Average accuracy 0.1719 - computer science.json
+Average accuracy 0.2909 - economics.json
+Average accuracy 0.1665 - engineering.json
+Average accuracy 0.1756 - health.json
+Average accuracy 0.1636 - history.json
+Average accuracy 0.1650 - law.json
+Average accuracy 0.1154 - math.json
+Average accuracy 0.1590 - other.json
+Average accuracy 0.1660 - philosophy.json
+Average accuracy 0.1377 - physics.json
+Average accuracy 0.3370 - psychology.json
+
+------subcategory level sta------
+Average accuracy 0.4198 - biology
+Average accuracy 0.1163 - business
+Average accuracy 0.1318 - chemistry
+Average accuracy 0.1719 - computer science
+Average accuracy 0.2909 - economics
+Average accuracy 0.1665 - engineering
+Average accuracy 0.1756 - health
+Average accuracy 0.1636 - history
+Average accuracy 0.1650 - law
+Average accuracy 0.1154 - math
+Average accuracy 0.1590 - other
+Average accuracy 0.1660 - philosophy
+Average accuracy 0.1377 - physics
+Average accuracy 0.3370 - psychology
+
+------category level sta------
+Average accuracy 0.1729 - STEM
+Average accuracy 0.2062 - humanities and social sciences
+Average accuracy 0.1590 - other
+
+------average acc sta------
+Average accuracy: 0.1863

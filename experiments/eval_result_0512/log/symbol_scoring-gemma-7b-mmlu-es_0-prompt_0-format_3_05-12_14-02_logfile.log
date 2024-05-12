@@ -1,0 +1,63 @@
+2024-05-12 14:02:34,701 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
+2024-05-12 14:02:35,120 DEBUG https://hf-mirror.com:443 "HEAD /google/gemma-7b/resolve/main/tokenizer_config.json HTTP/1.1" 401 0
+2024-05-12 14:02:36,123 DEBUG https://hf-mirror.com:443 "HEAD /google/gemma-7b/resolve/main/config.json HTTP/1.1" 401 0
+2024-05-12 14:02:37,313 INFO We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2024-05-12 14:02:45,158 DEBUG https://hf-mirror.com:443 "HEAD /google/gemma-7b/resolve/main/generation_config.json HTTP/1.1" 401 0
+2024-05-12 14:02:45,594 INFO selected subjects:
+abstract_algebra.json
+anatomy.json
+astronomy.json
+business_ethics.json
+clinical_knowledge.json
+college_biology.json
+college_chemistry.json
+college_computer_science.json
+college_mathematics.json
+college_medicine.json
+college_physics.json
+computer_security.json
+conceptual_physics.json
+econometrics.json
+electrical_engineering.json
+elementary_mathematics.json
+formal_logic.json
+global_facts.json
+high_school_biology.json
+high_school_chemistry.json
+high_school_computer_science.json
+high_school_european_history.json
+high_school_geography.json
+high_school_government_and_politics.json
+high_school_macroeconomics.json
+high_school_mathematics.json
+high_school_microeconomics.json
+high_school_physics.json
+high_school_psychology.json
+high_school_statistics.json
+high_school_us_history.json
+high_school_world_history.json
+human_aging.json
+human_sexuality.json
+international_law.json
+jurisprudence.json
+logical_fallacies.json
+machine_learning.json
+management.json
+marketing.json
+medical_genetics.json
+miscellaneous.json
+moral_disputes.json
+moral_scenarios.json
+nutrition.json
+philosophy.json
+prehistory.json
+professional_accounting.json
+professional_law.json
+professional_medicine.json
+professional_psychology.json
+public_relations.json
+security_studies.json
+sociology.json
+us_foreign_policy.json
+virology.json
+world_religions.json
