@@ -34,6 +34,7 @@ def test_vllm():
 
 
 def test_llama():
+
     model_name = "meta-llama/Llama-2-7b-hf"
     prompt = ""
     with open("cot.txt", "r") as fi:
@@ -42,13 +43,25 @@ def test_llama():
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
     inputs = tokenizer(prompt, return_tensors="pt")
     inputs = {key: value.cuda() for key, value in inputs.items()}
+    terminators = [
+        tokenizer.eos_token_id,
+        tokenizer.convert_tokens_to_ids("Question:")
+    ]
     model = transformers.AutoModelForCausalLM.from_pretrained(model_name,
                                                               device_map="auto",
                                                               torch_dtype=torch.bfloat16)
     for i in range(10):
         start = time.time()
-        output = model.generate(**inputs, max_new_tokens=256, num_return_sequences=1)
-        answer = tokenizer.decode(output[0], skip_special_tokens=True)
+        outputs = model.generate(
+            inputs,
+            max_new_tokens=256,
+            eos_token_id=terminators,
+            do_sample=True,
+            temperature=0,
+            top_p=0.9,
+        )
+        # output = model.generate(**inputs, max_new_tokens=256, num_return_sequences=1)
+        answer = tokenizer.decode(outputs, skip_special_tokens=True)
         # print("ori answer", answer)
         if answer.startswith(prompt):
             answer = answer.replace(prompt, "")
