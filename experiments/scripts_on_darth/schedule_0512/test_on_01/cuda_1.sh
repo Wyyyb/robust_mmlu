@@ -14,9 +14,9 @@ cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=1
 
 prompt_type=0
-for prompt_format in {0..6}; do
-        echo "Running with prompt_type=${prompt_type} and prompt_format=${prompt_format}"
-        python evaluate_mmlu_pro_0511.py \
+for prompt_type in $(seq 0 6); do
+    echo "Running with prompt_type=${prompt_type} and prompt_format=${prompt_format}"
+    python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
@@ -27,12 +27,12 @@ for prompt_format in {0..6}; do
                  --save_dir $save_dir \
                  --scoring_method $scoring_method \
                  --model $model
-    done
+done
 
 prompt_format=0
-for prompt_type in {1..8}; do
-        echo "Running with prompt_type=${prompt_type} and prompt_format=${prompt_format}"
-        python evaluate_mmlu_pro_0511.py \
+for prompt_type in $(seq 1 8); do
+    echo "Running with prompt_type=${prompt_type} and prompt_format=${prompt_format}"
+    python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
@@ -43,10 +43,10 @@ for prompt_type in {1..8}; do
                  --save_dir $save_dir \
                  --scoring_method $scoring_method \
                  --model $model
-    done
+done
 
-for prompt_type in {1..8}; do
-    for prompt_format in {1..6}; do
+for prompt_type in $(seq 1 8); do
+    for prompt_format in $(seq 1 6); do
         echo "Running with prompt_type=${prompt_type} and prompt_format=${prompt_format}"
         python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
