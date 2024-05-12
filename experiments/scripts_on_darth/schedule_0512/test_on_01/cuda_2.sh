@@ -11,7 +11,7 @@ selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
 
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=2
 
 prompt_type=0
 for prompt_format in {0..6}; do
