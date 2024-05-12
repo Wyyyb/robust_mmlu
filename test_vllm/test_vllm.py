@@ -15,8 +15,7 @@ def test_vllm():
     stop_words = "Question:"
     stop_tokens = tokenizer.encode(stop_words)
     print("stop_tokens", stop_tokens)
-    llm = LLM(model=model_name, tensor_parallel_size=tp_size, max_model_len=max_model_len,
-              trust_remote_code=True, enforce_eager=True, gpu_memory_utilization=0.9)
+    llm = LLM(model=model_name, gpu_memory_utilization=0.9)
     sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                      stop_token_ids=stop_tokens)
     start = time.time()
@@ -43,7 +42,7 @@ def test_llama():
     start = time.time()
     output = model.generate(**inputs, max_new_tokens=256, num_return_sequences=1)
     answer = tokenizer.decode(output[0], skip_special_tokens=True)
-    print("ori answer", answer)
+    # print("ori answer", answer)
     if answer.startswith(prompt):
         answer = answer.replace(prompt, "")
     print("answer", answer)
@@ -51,5 +50,5 @@ def test_llama():
 
 
 if __name__ == "__main__":
-    test_llama()
     test_vllm()
+    test_llama()
