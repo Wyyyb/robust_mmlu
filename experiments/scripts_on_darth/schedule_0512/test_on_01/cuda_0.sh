@@ -14,7 +14,7 @@ cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=0
 
 prompt_type=0
-for prompt_type in $(seq 0 6); do
+for prompt_format in $(seq 0 6); do
     echo "Running with prompt_type=${prompt_type} and prompt_format=${prompt_format}"
     python evaluate_mmlu_pro_0511.py \
                  --ntrain $ntrain \
