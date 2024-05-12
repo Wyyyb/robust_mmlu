@@ -17,7 +17,7 @@ def test_vllm():
     print("stop_tokens", stop_tokens)
     llm = LLM(model=model_name, gpu_memory_utilization=0.7)
     sampling_params = SamplingParams(temperature=0, max_tokens=256,
-                                     stop_token_ids=[stop_tokens])
+                                     stop=["Question:"])
     for i in range(10):
         start = time.time()
         outputs = llm.generate([prompt for _ in range(4)], sampling_params)
