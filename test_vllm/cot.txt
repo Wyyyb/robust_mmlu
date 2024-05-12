@@ -8,7 +8,7 @@ Thought process:
 The main source of energy for the Earth is the Sun because it provides the light and warmth necessary for life. The Moon does not emit light or warmth; it only reflects sunlight. Wind and geothermal energy are sources of energy derived indirectly from the Sun and the Earth's internal heat, respectively.
 
 Correct answer: B) The Sun
-
+$
 ---
 
 Question: Which gas is most prevalent in Earth's atmosphere?
@@ -21,7 +21,7 @@ Thought process:
 The most prevalent gas in Earth's atmosphere is nitrogen, making up about 78% of the atmosphere. Oxygen is the second most common, but it's only about 21%. Hydrogen and carbon dioxide are present in much smaller amounts.
 
 Correct answer: C) Nitrogen
-
+$
 ---
 
 Question: What causes the phases of the Moon?
@@ -34,7 +34,7 @@ Thought process:
 The phases of the Moon are caused by its position relative to the Earth and Sun. As the Moon orbits the Earth, different portions of its surface are illuminated by the Sun, creating the phases. The Earth's shadow causes eclipses, not regular moon phases, and the Moon's shadow on Earth is related to solar eclipses. The Sun's rotation affects other phenomena, not the Moon's phases.
 
 Correct answer: C) The position of the Moon in relation to the Sun and Earth
-
+$
 ---
 
 Question: What is the primary function of leaves on a plant?
@@ -47,7 +47,7 @@ Thought process:
 The primary function of leaves is to produce food for the plant through photosynthesis. They absorb light and carbon dioxide to create glucose and oxygen. While some leaves may help in attracting pollinators and some plants store water in their leaves, these are not their primary functions. Nutrients are mainly absorbed by roots from the soil.
 
 Correct answer: B) To produce food via photosynthesis
-
+$
 ---
 
 Question: How long does it take for Earth to complete one orbit around the Sun?
@@ -60,7 +60,7 @@ Thought process:
 It takes one year for Earth to complete an orbit around the Sun. A day is the time it takes for the Earth to rotate once on its axis. A week and a month are measures of time based on the calendar but do not correspond to the orbital period around the Sun.
 
 Correct answer: B) One year
-
+$
 ---
 
 Question: Which of the following represents an accurate statement concerning arthropods?

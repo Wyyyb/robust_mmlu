@@ -12,7 +12,7 @@ def test_vllm():
             prompt += line
     model_name = "meta-llama/Llama-2-7b-hf"
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
-    stop_words = "Question"
+    stop_words = "$"
     stop_tokens = tokenizer.encode(stop_words)
     print("stop_tokens", stop_tokens)
     llm = LLM(model=model_name, gpu_memory_utilization=0.95, tensor_parallel_size=tp_size)
