@@ -45,14 +45,15 @@ def test_llama():
     model = transformers.AutoModelForCausalLM.from_pretrained(model_name,
                                                               device_map="auto",
                                                               torch_dtype=torch.bfloat16)
-    start = time.time()
-    output = model.generate(**inputs, max_new_tokens=256, num_return_sequences=1)
-    answer = tokenizer.decode(output[0], skip_special_tokens=True)
-    # print("ori answer", answer)
-    if answer.startswith(prompt):
-        answer = answer.replace(prompt, "")
-    print("answer", answer)
-    print("llama cost time", time.time() - start)
+    for i in range(10):
+        start = time.time()
+        output = model.generate(**inputs, max_new_tokens=256, num_return_sequences=1)
+        answer = tokenizer.decode(output[0], skip_special_tokens=True)
+        # print("ori answer", answer)
+        if answer.startswith(prompt):
+            answer = answer.replace(prompt, "")
+        print("answer", answer)
+        print(i, "llama cost time", time.time() - start)
 
 
 if __name__ == "__main__":
