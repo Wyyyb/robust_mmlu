@@ -12,15 +12,15 @@ def test_vllm():
             prompt += line
     model_name = "meta-llama/Llama-2-7b-hf"
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
-    stop_words = "$"
-    stop_tokens = tokenizer.encode(stop_words)
+    stop_words = "Question:"
+    stop_tokens = tokenizer.encode(stop_words, add_special_tokens=False)
     print("stop_tokens", stop_tokens)
     llm = LLM(model=model_name, gpu_memory_utilization=0.7)
     sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                      stop_token_ids=stop_tokens)
     for i in range(10):
         start = time.time()
-        outputs = llm.generate([prompt], sampling_params)
+        outputs = llm.generate([prompt for _ in range(4)], sampling_params)
         for output in outputs:
             prompt = output.prompt
             generated_text = output.outputs[0].text
