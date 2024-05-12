@@ -8,7 +8,7 @@ def prompt_format_examples(prompt_format, question, options):
     elif prompt_format in [5]:
         prompt += "Q: "
     prompt += question + "\n"
-    if prompt_format in [1, 2, 3]:
+    if prompt_format in [1, 2, 3, 4, 5, 6, 7, 8]:
         prompt += "Options:\n"
     for i, each in enumerate(options):
         if prompt_format in [1]:
@@ -16,17 +16,15 @@ def prompt_format_examples(prompt_format, question, options):
         else:
             prompt += f"{choices[i]}. {options[i]}\n"
     if prompt_format in [2]:
-        prompt += "Correct option is: "
+        prompt += "Correct answer is: "
     elif prompt_format in [3]:
         prompt += "Your choice is "
     elif prompt_format in [4]:
-        prompt += "Answer is"
+        prompt += "The most likely option is "
     elif prompt_format in [5]:
-        prompt += "A: "
-    elif prompt_format in [6]:
-        prompt += "Answer: "
+        prompt += "The correct answer is option "
     else:
-        prompt += "Answer:"
+        prompt += "Answer: "
     return prompt
 
 
