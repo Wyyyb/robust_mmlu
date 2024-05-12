@@ -53,15 +53,16 @@ def test_llama():
     for i in range(10):
         start = time.time()
         outputs = model.generate(
-            inputs,
+            **inputs,
             max_new_tokens=256,
             eos_token_id=terminators,
+            num_return_sequences=1,
             do_sample=True,
             temperature=0,
             top_p=0.9,
         )
         # output = model.generate(**inputs, max_new_tokens=256, num_return_sequences=1)
-        answer = tokenizer.decode(outputs, skip_special_tokens=True)
+        answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
         # print("ori answer", answer)
         if answer.startswith(prompt):
             answer = answer.replace(prompt, "")
