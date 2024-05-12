@@ -50,8 +50,8 @@ def format_example(df, idx, include_answer=True):
                 prompt += "{}. {}\n\n".format(choices[ans_index], options[ans_index])
         elif args.scoring_method == "hybrid_scoring":
             prompt += "{}\n\n".format(options[ans_index])
-    if idx <= 5:
-        logging.info("prompt: \n" + prompt)
+    # if idx <= 5:
+    #     logging.info("prompt: \n" + prompt)
     return prompt, options
 
 
