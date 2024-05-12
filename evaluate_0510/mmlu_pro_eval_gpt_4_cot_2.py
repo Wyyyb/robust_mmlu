@@ -190,7 +190,7 @@ def load_cot_examples(input_dir):
 
 if __name__ == '__main__':
     # assigned_subject = ["biology", "health", "history", "law", "physics"]
-    assigned_subject = ["psychology", "economics"]
+    assigned_subject = ["psychology", "chemistry"]
     output_dir = "../experiments/eval_result_0510_gpt_4_cot/"
     dev_dir = "../data/mmlu_pro_v1_0512/dev"
     test_dir = "../data/mmlu_pro_v1_0512/test"

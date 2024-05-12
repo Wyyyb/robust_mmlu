@@ -1,1 +1,1 @@
-{"chemistry": {"corr": 13.0, "wrong": 3.0, "acc": 0.8125}, "total": {"corr": 13.0, "wrong": 3.0, "acc": 0.8125}}
+{"chemistry": {"corr": 338.0, "wrong": 214.0, "acc": 0.6123188405797102}, "total": {"corr": 338.0, "wrong": 214.0, "acc": 0.6123188405797102}}
