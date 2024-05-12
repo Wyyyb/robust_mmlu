@@ -15,7 +15,7 @@ def test_vllm():
     stop_words = "$"
     stop_tokens = tokenizer.encode(stop_words)
     print("stop_tokens", stop_tokens)
-    llm = LLM(model=model_name, gpu_memory_utilization=0.95)
+    llm = LLM(model=model_name, gpu_memory_utilization=0.7)
     sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                      stop_token_ids=stop_tokens)
     for i in range(10):
