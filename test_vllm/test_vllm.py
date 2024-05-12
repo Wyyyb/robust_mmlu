@@ -44,9 +44,9 @@ def test_llama():
     inputs = tokenizer(prompt, return_tensors="pt")
     inputs = {key: value.cuda() for key, value in inputs.items()}
     terminators = [
-        tokenizer.eos_token_id,
         tokenizer.convert_tokens_to_ids("Question:")
     ]
+    print("terminators", terminators)
     model = transformers.AutoModelForCausalLM.from_pretrained(model_name,
                                                               device_map="auto",
                                                               torch_dtype=torch.bfloat16)
