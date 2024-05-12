@@ -612,7 +612,8 @@ model="/mnt/tjena/shared/Meta-Llama-3-8B"
 model="/ML-A100/team/mm/zhangge/Llama-2-7b-chat-hf"
 model="01-ai/Yi-6B"
 model="mistralai/Mixtral-8x7B-v0.1"
-
+meta-llama
+Llama-2-7b-hf
 
 variance
 ranking big difference
