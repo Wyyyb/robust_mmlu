@@ -440,8 +440,8 @@ def main():
         test_df = json.load(fi)
     with open(os.path.join(args.data_dir, dataset + "_dev.json"), "r") as fi:
         dev_df = json.load(fi)
-    test_df = preprocess(test_df)
-    dev_df = preprocess(dev_df)
+    ori_test_df = preprocess(test_df)
+    ori_dev_df = preprocess(dev_df)
     all_subjects = []
     for each in test_df:
         if each["category"] not in all_subjects:
@@ -462,8 +462,8 @@ def main():
     for subject in selected_subjects:
         if subject not in sta_dict:
             sta_dict[subject] = {"corr": 0.0, "wrong": 0.0, "accu": 0.0}
-        test_df = select_by_category(test_df, subject)
-        dev_df = select_by_category(dev_df, subject)
+        test_df = select_by_category(ori_test_df, subject)
+        dev_df = select_by_category(ori_dev_df, subject)
         output_path = os.path.join(save_result_dir, "{}".format(subject))
         if os.path.exists(output_path):
             with open(output_path, "r") as fi:
