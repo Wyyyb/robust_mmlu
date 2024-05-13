@@ -17,7 +17,7 @@ selected_subjects="all"
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=0
 
-for prompt_type in $(seq 0 8); do
+for prompt_type in $(seq 0 6); do
     for ntrain in $(seq 3 5); do
         echo "Running with prompt_type=${prompt_type} and ntrain=${ntrain}"
         python evaluate_mmlu_pro_cot_0513.py \
