@@ -225,7 +225,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
     print("load exists result length", len(res))
     global choices
     logging.info("evaluating " + subject)
-    batch_size = 32
+    batch_size = 64
     inference_batches = []
     label_batches = []
     in_batch_index = []
@@ -262,6 +262,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             curr["generated_text"] = response_batch[j]
             res.append(curr)
         save_res(res, output_path)
+        i += batch_size
     accu, corr, wrong = save_res(res, output_path)
     return accu, corr, wrong
 
