@@ -485,29 +485,21 @@ def main():
 
 def args_generate_path(input_args):
     scoring_method = input_args.scoring_method
-    if args.cot_type != "-1":
-        scoring_method = args.cot_type
+    # if args.cot_type != "-1":
+    #     scoring_method = args.cot_type
     model_name = input_args.model.split("/")[-1]
     if "ori_mmlu" in input_args.data_dir:
         dataset_name = "mmlu"
     else:
         dataset_name = "mmlu_pro"
-    if input_args.fixed_question_answer == -1 and not input_args.use_rare_symbol:
-        eval_method = "ori_eval"
-    elif input_args.fixed_question_answer == -1:
-        eval_method = "rare_symbol"
-    elif input_args.fixed_question_answer != -1:
-        fix_map = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        eval_method = f"fix_{fix_map[input_args.fixed_question_answer]}"
-    else:
-        eval_method = "ori_eval"
     examples_start_index = f"es_{str(input_args.examples_start_index)}"
     prompt_type = f"prompt_{str(input_args.prompt_type)}"
     prompt_format = f"format_{str(input_args.prompt_format)}"
-    res = f"{scoring_method}/{model_name}/{dataset_name}/{examples_start_index}/{prompt_type}/{prompt_format}"
-    if args.selected_subjects != "all":
-        res += "/" + args.selected_subjects.replace(",", "-").replace(" ", "_")
-    return res
+    subjects = args.selected_subjects.replace(",", "-").replace(" ", "_")
+    shot_num = str(input_args.ntrain) + "_shot"
+    res = [scoring_method, model_name, dataset_name, examples_start_index, shot_num, prompt_type,
+           prompt_format, subjects]
+    return "/".join(res)
 
 
 def read_csv_file(file_path):

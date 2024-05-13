@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置默认参数
-ntrain=3
+ntrain=5
 examples_start_index=0
 prompt_type=0
 prompt_format=0
@@ -18,8 +18,9 @@ cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=0
 
 for prompt_type in $(seq 0 8); do
-    echo "Running with prompt_type=${prompt_type} and prompt_format=${prompt_format}"
-    python evaluate_mmlu_pro_cot_0513.py \
+    for ntrain in $(seq 2 5); do
+        echo "Running with prompt_type=${prompt_type} and ntrain=${ntrain}"
+        python evaluate_mmlu_pro_cot_0513.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
@@ -31,6 +32,5 @@ for prompt_type in $(seq 0 8); do
                  --scoring_method $scoring_method \
                  --model $model
 done
-
 
 

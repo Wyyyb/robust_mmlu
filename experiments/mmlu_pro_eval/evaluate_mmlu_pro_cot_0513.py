@@ -247,11 +247,11 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             inputs = tokenizer(prompt, return_tensors="pt")
             inputs = {key: value.cuda() for key, value in inputs.items()}
             length = len(inputs["input_ids"][0])
-            logging.info("length of input tokens: " + str(length))
+            # logging.info("length of input tokens: " + str(length))
             if length < 2048 - 256:
                 prompt_length_ok = True
+            logging.info("using examples number:" + str(k))
             k -= 1
-            logging.info("exceed length limit, reduce k into: " + str(k))
         # if i % 10 == 0:
         #     logging.info("prompt:\n" + prompt)
         inference_batches.append(prompt)
@@ -512,7 +512,8 @@ def args_generate_path(input_args):
     prompt_type = f"prompt_{str(input_args.prompt_type)}"
     prompt_format = f"format_{str(input_args.prompt_format)}"
     subjects = args.selected_subjects.replace(",", "-").replace(" ", "_")
-    return [scoring_method, model_name, dataset_name, examples_start_index, prompt_type,
+    shot_num = str(input_args.ntrain) + "_shot"
+    return [scoring_method, model_name, dataset_name, examples_start_index, shot_num, prompt_type,
             prompt_format, subjects]
 
 
