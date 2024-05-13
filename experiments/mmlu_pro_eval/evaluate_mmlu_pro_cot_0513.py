@@ -234,7 +234,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         q_id = curr["question_id"]
         if check_exist(res, q_id):
             continue
-        prompt, label = generate_cot_prompt(dev_df, curr)
+        prompt = generate_cot_prompt(dev_df, curr)
         inference_batches.append(prompt)
         # label_batches.append(label)
         in_batch_index.append(i)
