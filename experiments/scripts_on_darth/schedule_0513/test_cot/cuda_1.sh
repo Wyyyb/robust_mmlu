@@ -16,6 +16,7 @@ selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=1
+
 for prompt_type in $(seq 0 8); do
     echo "Running with prompt_type=${prompt_type} and prompt_format=${prompt_format}"
     python evaluate_mmlu_pro_cot_0513.py \
@@ -29,3 +30,5 @@ for prompt_type in $(seq 0 8); do
                  --save_dir $save_dir \
                  --scoring_method $scoring_method \
                  --model $model
+done
+
