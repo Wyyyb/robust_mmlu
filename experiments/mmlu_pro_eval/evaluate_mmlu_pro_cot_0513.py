@@ -125,7 +125,7 @@ def load_exist_result(res):
 def load_model():
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
-        llm = LLM(model=args.model, gpu_memory_utilization=0.7)
+        llm = LLM(model=args.model, gpu_memory_utilization=0.9)
         sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                          stop=["Question:"])
         tokenizer = transformers.AutoTokenizer.from_pretrained(args.model)
