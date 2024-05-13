@@ -126,9 +126,9 @@ def load_model():
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
         llm = LLM(model=args.model, gpu_memory_utilization=0.7)
-        # sampling_params = SamplingParams(temperature=0, max_tokens=256,
-        #                                  stop=["Question:"])
-        sampling_params = SamplingParams(temperature=0, max_tokens=256)
+        sampling_params = SamplingParams(temperature=0, max_tokens=256,
+                                         stop=["Question:"])
+        # sampling_params = SamplingParams(temperature=0, max_tokens=256)
         tokenizer = transformers.AutoTokenizer.from_pretrained(args.model)
         return (llm, sampling_params), tokenizer
     if "llama-2" in args.model.lower():
@@ -222,7 +222,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
     print("load exists result length", len(res))
     global choices
     logging.info("evaluating " + subject)
-    batch_size = 2
+    batch_size = 8
     inference_batches = []
     label_batches = []
     in_batch_index = []
