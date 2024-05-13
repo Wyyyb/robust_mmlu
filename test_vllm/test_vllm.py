@@ -71,5 +71,5 @@ def test_llama():
 
 
 if __name__ == "__main__":
-    # test_vllm()
-    test_llama()
+    test_vllm()
+    # test_llama()
