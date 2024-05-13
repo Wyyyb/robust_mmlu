@@ -126,8 +126,9 @@ def load_model():
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
         llm = LLM(model=args.model, gpu_memory_utilization=0.7)
-        sampling_params = SamplingParams(temperature=0, max_tokens=256,
-                                         stop=["Question:"])
+        # sampling_params = SamplingParams(temperature=0, max_tokens=256,
+        #                                  stop=["Question:"])
+        sampling_params = SamplingParams(temperature=0, max_tokens=256)
         tokenizer = transformers.AutoTokenizer.from_pretrained(args.model)
         return (llm, sampling_params), tokenizer
     if "llama-2" in args.model.lower():
@@ -162,7 +163,7 @@ def load_model():
 
 def batch_inference(llm, sampling_params, inference_batch):
     start = time.time()
-    logging.info("inference input:\n" + "\n".join(inference_batch))
+    # logging.info("inference input:\n" + "\n".join(inference_batch))
     outputs = llm.generate(inference_batch, sampling_params)
     logging.info(str(len(inference_batch)) + "size batch costing time: " + str(time.time() - start))
     response_batch = []
