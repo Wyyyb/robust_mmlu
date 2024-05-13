@@ -123,13 +123,17 @@ def load_exist_result(res):
 
 
 def load_model():
+    print("checkpoint 1")
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
         llm = LLM(model=args.model, gpu_memory_utilization=0.8)
+        print("checkpoint 2")
         sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                          stop=["Question:"])
+        print("checkpoint 3")
         # sampling_params = SamplingParams(temperature=0, max_tokens=256)
         tokenizer = transformers.AutoTokenizer.from_pretrained(args.model)
+        print("checkpoint 4")
         return (llm, sampling_params), tokenizer
     if "llama-2" in args.model.lower():
         model = transformers.AutoModelForCausalLM.from_pretrained(
@@ -164,7 +168,9 @@ def load_model():
 def batch_inference(llm, sampling_params, inference_batch):
     start = time.time()
     # logging.info("\n\ninference input:\n" + inference_batch[0] + "\n\n")
+    print("checkpoint 9")
     outputs = llm.generate(inference_batch, sampling_params)
+    print("checkpoint 10")
     logging.info(str(len(inference_batch)) + "size batch costing time: " + str(time.time() - start))
     response_batch = []
     pred_batch = []
@@ -266,6 +272,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             end_index = len(test_df)
         curr_batch = inference_batches[i: end_index]
         # curr_labels = label_batches[i: end_index]
+        print("checkpoint 8")
         pred_batch, response_batch = batch_inference(llm, sampling_params, curr_batch)
         index_list = in_batch_index[i: end_index]
         for j, index in enumerate(index_list):
@@ -426,6 +433,7 @@ def preprocess(test_df):
 
 def main():
     model, tokenizer = load_model()
+    print("checkpoint 5")
     if args.scoring_method != "CoT":
         print("model.eval()")
         model.eval()
@@ -471,6 +479,7 @@ def main():
         else:
             exists_result = []
         if args.scoring_method == "CoT":
+            print("checkpoint 7")
             acc, corr_count, wrong_count = eval_cot(subject, model, tokenizer, dev_df,
                                                     test_df, output_path, exists_result)
         else:
