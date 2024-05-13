@@ -32,5 +32,6 @@ for prompt_type in $(seq 0 6); do
                          --save_dir $save_dir \
                          --scoring_method $scoring_method \
                          --model $model
-
+    done
+done
 
