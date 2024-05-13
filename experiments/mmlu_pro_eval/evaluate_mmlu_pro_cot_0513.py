@@ -220,7 +220,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
     print("load exists result length", len(res))
     global choices
     logging.info("evaluating " + subject)
-    batch_size = 8
+    batch_size = 4
     inference_batches = []
     label_batches = []
     in_batch_index = []
@@ -235,8 +235,8 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         if check_exist(res, q_id):
             continue
         prompt = generate_cot_prompt(dev_df, curr)
-        if i % 10 == 0:
-            logging.info("prompt:\n" + prompt)
+        # if i % 10 == 0:
+        #     logging.info("prompt:\n" + prompt)
         inference_batches.append(prompt)
         # label_batches.append(label)
         in_batch_index.append(i)
