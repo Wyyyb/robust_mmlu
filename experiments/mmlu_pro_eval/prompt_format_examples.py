@@ -1,12 +1,12 @@
 
 
 def prompt_format_examples(prompt_format, question, options):
-    prompt = ""
+    prompt = "Question:\n"
     choices = "ABCDEFGHIJ"
-    if prompt_format in [1, 2, 3, 4]:
-        prompt += "Question:\n"
-    elif prompt_format in [5]:
-        prompt += "Q: "
+    # if prompt_format in [1, 2, 3, 4]:
+    #     prompt += "Question:\n"
+    # elif prompt_format in [5]:
+    #     prompt += "Q: "
     prompt += question + "\n"
     if prompt_format in [1, 2, 3, 4, 5, 6, 7, 8]:
         prompt += "Options:\n"
