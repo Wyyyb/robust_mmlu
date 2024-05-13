@@ -51,3 +51,35 @@ Average accuracy 0.5074 - professional_medicine.json
 Average accuracy 0.4248 - professional_psychology.json
 Average accuracy 0.5455 - public_relations.json
 Average accuracy 0.4327 - security_studies.json
+Average accuracy 0.6219 - sociology.json
+Average accuracy 0.5900 - us_foreign_policy.json
+Average accuracy 0.3735 - virology.json
+Average accuracy 0.6550 - world_religions.json
+
+------subcategory level sta------
+Average accuracy 0.4581 - biology
+Average accuracy 0.5927 - business
+Average accuracy 0.2673 - chemistry
+Average accuracy 0.4175 - computer science
+Average accuracy 0.5693 - culture
+Average accuracy 0.3854 - economics
+Average accuracy 0.3448 - engineering
+Average accuracy 0.4495 - geography
+Average accuracy 0.4585 - health
+Average accuracy 0.5366 - history
+Average accuracy 0.3681 - law
+Average accuracy 0.2321 - math
+Average accuracy 0.5099 - other
+Average accuracy 0.3852 - philosophy
+Average accuracy 0.3328 - physics
+Average accuracy 0.5386 - politics
+Average accuracy 0.5013 - psychology
+
+------category level sta------
+Average accuracy 0.3217 - STEM
+Average accuracy 0.4087 - humanities
+Average accuracy 0.4852 - social sciences
+Average accuracy 0.4951 - other (business, health, misc.)
+
+------average acc sta------
+Average accuracy: 0.4267
