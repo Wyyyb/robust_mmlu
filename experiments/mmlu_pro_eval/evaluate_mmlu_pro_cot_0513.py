@@ -235,6 +235,8 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         if check_exist(res, q_id):
             continue
         prompt = generate_cot_prompt(dev_df, curr)
+        if i % 10 == 0:
+            logging.info("prompt:\n" + prompt)
         inference_batches.append(prompt)
         # label_batches.append(label)
         in_batch_index.append(i)
@@ -265,7 +267,6 @@ def save_res(res, output_path):
         fo.write(json.dumps(res))
     for each in res:
         if each["pred"] is None:
-            logging.info("answer extract failed\n" + each["generated_text"])
             continue
         if each["pred"] == each["answer"]:
             corr += 1
@@ -281,47 +282,8 @@ def extract_answer(text):
     if match:
         return match.group(1)
     else:
+        logging.info("answer extract failed\n" + text)
         return None
-
-
-def gen_cot_prompt(subject, k, tokenizer):
-    subject = format_subject(subject)
-    if subject not in cot_lib:
-        print("subject not in cot_lib", subject)
-        return None
-    k = min(k, len(cot_lib[subject]))
-    if args.prompt_type == 1:
-        prompt = ""
-    elif args.prompt_type == 2:
-        prompt = "You are an expert in {}. Below is a series of example questions \
-        (with answers) about {} for demonstration. You will be given a question at \
-        the end, after the examples, for you to answer.\n\n".format(format_subject(subject),
-                                                                    format_subject(subject))
-    else:
-        prompt = "The following are multiple choice questions (with answers) about {}.\n\n" \
-            .format(format_subject(subject))
-    if k == -1:
-        k = 5
-    temp = ""
-    for i in range(k):
-        curr_example = cot_lib[subject][i]
-        option_num = len(curr_example["options"])
-        p = "Question: " + curr_example["question"] + "\nOptions: \n"
-        for j in range(option_num):
-            p += "{}. {}\n".format(choices[j], curr_example["options"][j])
-        cot_content = curr_example["cot_content"].replace("A: Let's think step by step.",
-                                                          "Let's think step by step.")
-        p += "Answer: " + cot_content + "\n"
-        prompt += p
-        # inputs = tokenizer.encode(prompt, return_tensors="pt")
-        # logging.info("gen prompt input length[0]" + str(len(inputs[0])))
-        # if len(inputs[0]) > 1600:
-        #     prompt = temp
-        #     logging.info("use less examples due to length limit " + str(i))
-        #     break
-        # temp = prompt
-    return prompt
-
 
 @torch.no_grad()
 def eval(subject, model, tokenizer, dev_df, test_df, output_path, exists_result=None):
