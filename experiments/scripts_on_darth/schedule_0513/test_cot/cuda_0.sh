@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置默认参数
-ntrain=5
+ntrain=3
 examples_start_index=0
 prompt_type=0
 prompt_format=0

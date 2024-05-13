@@ -125,7 +125,7 @@ def load_exist_result(res):
 def load_model():
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
-        llm = LLM(model=args.model, gpu_memory_utilization=0.9)
+        llm = LLM(model=args.model, gpu_memory_utilization=0.8)
         sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                          stop=["Question:"])
         # sampling_params = SamplingParams(temperature=0, max_tokens=256)
@@ -247,7 +247,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             inputs = tokenizer(prompt, return_tensors="pt")
             inputs = {key: value.cuda() for key, value in inputs.items()}
             length = len(inputs["input_ids"][0])
-            # logging.info("length of input tokens: " + str(length))
+            logging.info("length of input tokens: " + str(length))
             if length < 2048 - 256:
                 prompt_length_ok = True
             k -= 1
