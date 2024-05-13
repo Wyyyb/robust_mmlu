@@ -243,7 +243,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         prompt_length_ok = False
         prompt = None
         while not prompt_length_ok:
-            prompt = generate_cot_prompt(dev_df, curr, args.ntrain)
+            prompt = generate_cot_prompt(dev_df, curr, k)
             inputs = tokenizer(prompt, return_tensors="pt")
             inputs = {key: value.cuda() for key, value in inputs.items()}
             length = len(inputs["input_ids"][0])
