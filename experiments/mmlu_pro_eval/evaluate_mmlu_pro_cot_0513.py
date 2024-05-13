@@ -75,8 +75,8 @@ def fix_answer(test_df, fixed_index):
 
 
 def get_initial_prompt(subject):
-    ins_file_name = f"cot_lib_prompt/ins_{str(args.prompt_type)}.txt"
-    ins_file_path = os.path.join("prompt_lib", ins_file_name)
+    ins_file_name = f"ins_{str(args.prompt_type)}.txt"
+    ins_file_path = os.path.join("cot_lib_prompt", ins_file_name)
     prompt = ""
     with open(ins_file_path, "r") as fi:
         for line in fi.readlines():
@@ -197,7 +197,7 @@ def select_by_category(df, subject):
 
 def generate_cot_prompt(dev_df, curr):
     prompt = ""
-    with open(f"cot_ins_{str(args.prompt_type)}.txt", "r") as fi:
+    with open(f"cot_lib_prompt/cot_ins_{str(args.prompt_type)}.txt", "r") as fi:
         for line in fi.readlines():
             prompt += line
     subject = curr["category"]
