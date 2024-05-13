@@ -162,7 +162,7 @@ def load_model():
 
 def batch_inference(llm, sampling_params, inference_batch):
     start = time.time()
-    logging.info("inference input:\n", "\n".join(inference_batch))
+    logging.info("inference input:\n" + "\n".join(inference_batch))
     outputs = llm.generate(inference_batch, sampling_params)
     logging.info(str(len(inference_batch)) + "size batch costing time: " + str(time.time() - start))
     response_batch = []
