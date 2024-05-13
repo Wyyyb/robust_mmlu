@@ -163,7 +163,7 @@ def load_model():
 
 def batch_inference(llm, sampling_params, inference_batch):
     start = time.time()
-    logging.info("\n\ninference input:\n" + inference_batch[0] + "\n\n")
+    # logging.info("\n\ninference input:\n" + inference_batch[0] + "\n\n")
     outputs = llm.generate(inference_batch, sampling_params)
     logging.info(str(len(inference_batch)) + "size batch costing time: " + str(time.time() - start))
     response_batch = []
@@ -225,7 +225,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
     print("load exists result length", len(res))
     global choices
     logging.info("evaluating " + subject)
-    batch_size = 16
+    batch_size = 32
     inference_batches = []
     label_batches = []
     in_batch_index = []
