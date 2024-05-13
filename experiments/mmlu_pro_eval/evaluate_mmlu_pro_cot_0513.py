@@ -200,13 +200,14 @@ def select_by_category(df, subject):
     return res
 
 
-def generate_cot_prompt(dev_df, curr):
+def generate_cot_prompt(dev_df, curr, k):
     prompt = ""
     with open(f"cot_lib_prompt/cot_ins_{str(args.prompt_type)}.txt", "r") as fi:
         for line in fi.readlines():
             prompt += line
     subject = curr["category"]
     dev_df = select_by_category(dev_df, subject)
+    dev_df = dev_df[: k]
     prompt = prompt.replace("{$}", subject) + "\n"
     for example in dev_df:
         prompt += format_cot_example(example, including_answer=True)
@@ -239,7 +240,18 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
         q_id = curr["question_id"]
         if check_exist(res, q_id):
             continue
-        prompt = generate_cot_prompt(dev_df, curr)
+        prompt_length_ok = False
+        prompt = None
+        while not prompt_length_ok:
+            prompt = generate_cot_prompt(dev_df, curr, args.ntrain)
+            inputs = tokenizer(prompt, return_tensors="pt")
+            inputs = {key: value.cuda() for key, value in inputs.items()}
+            length = len(inputs["input_ids"][0])
+            logging.info("length of input tokens: " + str(length))
+            if length < 2048 - 256:
+                prompt_length_ok = True
+            k -= 1
+            logging.info("exceed length limit, reduce k into: " + str(k))
         # if i % 10 == 0:
         #     logging.info("prompt:\n" + prompt)
         inference_batches.append(prompt)
