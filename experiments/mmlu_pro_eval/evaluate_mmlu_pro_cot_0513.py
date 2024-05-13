@@ -125,7 +125,7 @@ def load_exist_result(res):
 def load_model():
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
-        llm = LLM(model=args.model, gpu_memory_utilization=0.7)
+        llm = LLM(model=args.model, gpu_memory_utilization=0.9)
         sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                          stop=["Question:"])
         # sampling_params = SamplingParams(temperature=0, max_tokens=256)
@@ -226,7 +226,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
     print("load exists result length", len(res))
     global choices
     logging.info("evaluating " + subject)
-    batch_size = 128
+    batch_size = 64
     inference_batches = []
     label_batches = []
     in_batch_index = []
@@ -247,7 +247,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             inputs = tokenizer(prompt, return_tensors="pt")
             inputs = {key: value.cuda() for key, value in inputs.items()}
             length = len(inputs["input_ids"][0])
-            logging.info("length of input tokens: " + str(length))
+            # logging.info("length of input tokens: " + str(length))
             if length < 2048 - 256:
                 prompt_length_ok = True
             k -= 1
@@ -273,7 +273,8 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             curr["pred"] = pred_batch[j]
             curr["generated_text"] = response_batch[j]
             res.append(curr)
-        save_res(res, output_path)
+        accu, corr, wrong = save_res(res, output_path)
+        logging.info("this batch accu is: {}, corr: {}, wrong: {}\n".format(str(accu), str(corr), str(wrong)))
         i += batch_size
     accu, corr, wrong = save_res(res, output_path)
     return accu, corr, wrong
