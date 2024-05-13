@@ -75,7 +75,7 @@ def fix_answer(test_df, fixed_index):
 
 
 def get_initial_prompt(subject):
-    ins_file_name = f"ins_{str(args.prompt_type)}.txt"
+    ins_file_name = f"cot_lib_prompt/ins_{str(args.prompt_type)}.txt"
     ins_file_path = os.path.join("prompt_lib", ins_file_name)
     prompt = ""
     with open(ins_file_path, "r") as fi:
