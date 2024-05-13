@@ -49,7 +49,7 @@ def sta(input_dir, pad=False):
                 total_wrong += wrong
     sta_map["total"] = {"corr": total_corr, "wrong": total_wrong,
                         "acc": total_corr / (total_corr + total_wrong)}
-    print("sta result: ", sta_map["total"])
+    print("sta result: ", sta_map)
     sta_result_path = os.path.join(input_dir, "sta_result.json")
     with open(sta_result_path, "w") as fo:
         fo.write(json.dumps(sta_map))

@@ -1,0 +1,16 @@
+2024-05-12 16:15:14,327 INFO We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2024-05-12 16:15:19,674 INFO selected subjects:
+biology.json
+business.json
+chemistry.json
+computer science.json
+economics.json
+engineering.json
+health.json
+history.json
+law.json
+math.json
+other.json
+philosophy.json
+physics.json
+psychology.json

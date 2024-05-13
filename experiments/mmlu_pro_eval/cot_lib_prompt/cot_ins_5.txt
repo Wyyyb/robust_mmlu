@@ -1,0 +1,1 @@
+Identify any causal relationships implied in the question. Determine which answer choice correctly follows as an effect of the causes mentioned. This reasoning will help in selecting the most accurate answer. You will be given some examples for reference before answering the question at the end.

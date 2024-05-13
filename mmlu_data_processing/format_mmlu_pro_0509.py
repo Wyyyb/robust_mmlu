@@ -40,13 +40,13 @@ def format_test_data():
             if file not in test_data:
                 test_data[file] = curr
 
-    output_dir = "../data/mmlu_pro_v1_0509/test"
+    output_dir = "../data/mmlu_pro_v1_0512/test"
     for k, v in test_data.items():
         output_path = os.path.join(output_dir, k.replace(".json", "_test.json"))
         with open(output_path, "w") as fo:
             fo.write(json.dumps(v))
 
-    output_dir = "../data/mmlu_pro_v1_0509/val"
+    output_dir = "../data/mmlu_pro_v1_0512/val"
     for k, v in test_data.items():
         output_path = os.path.join(output_dir, k.replace(".json", "_val.json"))
         with open(output_path, "w") as fo:
@@ -96,7 +96,7 @@ def format_dev_data():
         if file_name not in dev_data:
             dev_data[file_name] = curr
 
-    output_dir = "../data/mmlu_pro_v1_0509/dev"
+    output_dir = "../data/mmlu_pro_v1_0512/dev"
     for k, v in dev_data.items():
         output_path = os.path.join(output_dir, k)
         with open(output_path, "w") as fo:
