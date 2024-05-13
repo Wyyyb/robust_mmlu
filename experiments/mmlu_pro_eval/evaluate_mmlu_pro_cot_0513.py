@@ -518,8 +518,8 @@ def main():
 
 def args_generate_path(input_args):
     scoring_method = input_args.scoring_method
-    if args.cot_type != "-1":
-        scoring_method = args.cot_type
+    # if args.cot_type != "-1":
+    #     scoring_method = args.cot_type
     model_name = input_args.model.split("/")[-1]
     if "ori_mmlu" in input_args.data_dir:
         dataset_name = "mmlu"
