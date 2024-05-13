@@ -15,7 +15,7 @@ model="meta-llama/Llama-2-7b-hf"
 selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=5
 
 for prompt_type in $(seq 0 6); do
     for ntrain in $(seq 3 5); do
