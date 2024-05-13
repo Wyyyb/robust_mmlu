@@ -184,7 +184,7 @@ def format_cot_example(example, including_answer=True):
     prompt += "Options:\n"
     for i, opt in enumerate(options):
         prompt += "{}. {}\n".format(choices[i], opt)
-    prompt += "Answer:\n"
+    # prompt += "Answer: "
     prompt += example["cot_content"] + "\n\n"
     return prompt
 
