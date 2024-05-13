@@ -15,9 +15,11 @@ model="meta-llama/Llama-2-7b-hf"
 selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=4
+export CUDA_VISIBLE_DEVICES=0
 
-python evaluate_mmlu_pro_cot_0513.py \
+for prompt_type in $(seq 0 8); do
+    echo "Running with prompt_type=${prompt_type} and prompt_format=${prompt_format}"
+    python evaluate_mmlu_pro_cot_0513.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
@@ -28,6 +30,7 @@ python evaluate_mmlu_pro_cot_0513.py \
                  --save_dir $save_dir \
                  --scoring_method $scoring_method \
                  --model $model
+
 
 
 
