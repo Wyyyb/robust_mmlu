@@ -17,6 +17,7 @@ selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=0
+export VLLM_NO_USAGE_STATS=1
 
 python evaluate_mmlu_pro_cot_0513.py \
                  --ntrain $ntrain \
