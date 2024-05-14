@@ -256,7 +256,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             # logging.info("length of input tokens: " + str(length))
             if length < 2048 - 256:
                 prompt_length_ok = True
-            logging.info("using examples number:" + str(k))
+            # logging.info("using examples number:" + str(k))
             k -= 1
         # if i % 10 == 0:
         #     logging.info("prompt:\n" + prompt)
