@@ -14,7 +14,7 @@ scoring_method="CoT"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 model="01-ai/Yi-34B"
 selected_subjects="all"
-gpu_util="0.8"
+gpu_util="0.7"
 batch_size=512
 
 cd ../../../mmlu_pro_eval/
