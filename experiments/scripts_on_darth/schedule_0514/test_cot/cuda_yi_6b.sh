@@ -28,7 +28,8 @@ python evaluate_mmlu_pro_cot_0513.py \
                  --data_dir $data_dir \
                  --save_dir $save_dir \
                  --scoring_method $scoring_method \
-                 --model $model
+                 --model $model \
+                 --global_record_file $global_record_file
 
 
 
