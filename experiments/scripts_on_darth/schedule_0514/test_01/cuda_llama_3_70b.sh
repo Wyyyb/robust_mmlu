@@ -14,9 +14,10 @@ scoring_method="CoT"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 model="/ML-A100/team/mm/zhangge/Meta-Llama-3-70B"
 selected_subjects="all"
+gpu_util="0.8"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=2,3,4,5
+export CUDA_VISIBLE_DEVICES=0,1,4,5
 export VLLM_NO_USAGE_STATS=1
 
 python evaluate_mmlu_pro_cot_0513.py \
@@ -26,6 +27,7 @@ python evaluate_mmlu_pro_cot_0513.py \
                  --prompt_format $prompt_format \
                  --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
+                 --gpu_util $gpu_util \
                  --data_dir $data_dir \
                  --save_dir $save_dir \
                  --scoring_method $scoring_method \
