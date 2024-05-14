@@ -12,7 +12,7 @@ global_record_file="../result_record/eval_record_collection_0514_01.csv"
 # scoring_method="symbol_scoring"
 scoring_method="CoT"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
-model="/ML-A100/team/mm/zhangge/Llama-2-70b-hf"
+model="/ML-A800/models/Llama-2-70b-hf"
 selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
