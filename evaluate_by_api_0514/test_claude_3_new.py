@@ -1,42 +1,69 @@
-import openai
-from openai import OpenAI
+import os
+import asyncio
+import base64
 from anthropic import Anthropic
 
-API_BASE = "https://api.lingyiwanwu.com"
-# API_BASE = "https://api.pre.lingyiwanwu.com/"
-# API_BASE = "https://api.01ww.xyz"
-# API_KEY = "ef798a2b5d834a1b8d6f2e69d83b22c7"
-# API_KEY = "126df074e908436e8a171e445fe702cb"
-# API_KEY = "bdfad0935717497e8a4eca4eca1da405"
-API_KEY = "191d4c83d53245848862382a4187a49c"
 
-client = OpenAI(
-    # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key=API_KEY,
-    base_url=API_BASE
-)
+# Function to encode the image
+def encode_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
 
 
-def request(prompt, timeout=60, max_tokens=2000):
+def make_content(text, image_paths):
+    text_elem = {
+        "type": "text",
+        "text": text,
+    }
+
+    content = [text_elem]
+    for image_path in image_paths:
+        image_fmt = os.path.splitext(image_path)[1]
+        if image_fmt not in [".jpg", ".jpeg", ".png"]:
+            raise ValueError(f"Unsupported image format: {image_fmt}")
+        else:
+            if image_fmt == ".jpg":
+                image_fmt = "jpeg"
+
+        base64_image = encode_image(image_path)
+        image_elem = {
+            "type": "image",
+            "source":
+            {
+                "type": "base64",
+                "media_type": f"image/{image_fmt}",
+                "data": base64_image,
+            }
+        }
+        content.append(image_elem)
+
+    return content
+
+
+# async def request(title, description, asr, image_paths) -> None:
+def request(prompt, image_paths, timeout=60, max_tokens=100, model_name="sonnet"):
+    name2model = {
+        "haiku": "claude-3-haiku-20240307",
+        "sonnet": "claude-3-sonnet-20240229",
+        "opus": "claude-3-opus-20240229"
+    }
+    model = name2model[model_name]
+
     # api_key = "multimodel-lidongxu"
-    api_key = API_KEY
+    api_key = "191d4c83d53245848862382a4187a49c"
+    base_url = "api.lingyiwanwu.com"
 
-    # client = OpenAI(
     client = Anthropic(
-        # base_url="https://api.01ww.xyz/v1",
-        base_url="https://api.01ww.xyz/",
+        base_url=base_url,
         api_key=api_key,
     )
 
-    # response = client.chat.completions.create(
     response = client.messages.create(
-        model="claude-3-opus-20240229",
-        # model="yi-34b-chat-0205",
-        # model="claude-3-haiku-20240307",
+        model=model,
         messages=[
             {
                 "role": "user",
-                "content": prompt
+                "content": "hello",
             }  # Add closing square bracket here
         ],  # Add closing square bracket here
         max_tokens=max_tokens,
@@ -46,5 +73,28 @@ def request(prompt, timeout=60, max_tokens=2000):
     return response
 
 
-request("hello")
+if __name__ == "__main__":
+    title = "test title"
+    description = "test description"
+    asr = "test asr"
+    image_paths = [
+        "/ML-A100/team/mm/lidongxu/workspace/multimodal-yi/scripts/video_preprocess/clips_ytt180m_v2/--wO4RopA-k/--wO4RopA-k-0000-000109-q.jpg"
+    ]
 
+    # response = asyncio.run(request(title, description, asr, image_paths))
+    response = request(title, description, asr, image_paths, model_name="opus")
+
+    print("async call done")
+    import pdb
+
+    pdb.set_trace()
+    print(response.choices[0])
+
+
+# response = asyncio.run(request())
+
+# print("async call done")
+# import pdb
+
+# pdb.set_trace()
+# print(response.choices[0])

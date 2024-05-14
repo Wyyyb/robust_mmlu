@@ -12,4 +12,4 @@ data = {
 fig = px.pie(data, values='Count', names='Subject', title='Distribution of Disciplines in MMLU-Pro')
 
 # 保存图像
-fig.write_image("path/to/save/image.png")
+fig.write_image("image.png")

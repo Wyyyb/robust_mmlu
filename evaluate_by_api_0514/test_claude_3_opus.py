@@ -1,10 +1,11 @@
 import openai
 from openai import OpenAI
 
-# API_BASE = "https://api.lingyiwanwu.com"
-API_BASE = "https://api.pre.lingyiwanwu.com/"
+API_BASE = "https://api.lingyiwanwu.com"
+# API_BASE = "https://api.pre.lingyiwanwu.com/"
 # API_BASE = "https://api.01ww.xyz"
 API_KEY = "ef798a2b5d834a1b8d6f2e69d83b22c7"
+# API_KEY = "191d4c83d53245848862382a4187a49c"
 
 client = OpenAI(
     # defaults to os.environ.get("OPENAI_API_KEY")
