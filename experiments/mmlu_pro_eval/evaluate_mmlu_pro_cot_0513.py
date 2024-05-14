@@ -553,7 +553,7 @@ if __name__ == "__main__":
     parser.add_argument("--scoring_method", "-sm", type=str, default="symbol_scoring")
     parser.add_argument("--global_record_file", "-grf", type=str,
                         default="../result_record/eval_record_collection_0514.csv")
-    parser.add_argument("--args.gpu_util", "-gu", type=str, default="0.8")
+    parser.add_argument("--gpu_util", "-gu", type=str, default="0.8")
     parser.add_argument(
         "--model",
         "-m",
