@@ -1,2 +1,0 @@
-Average accuracy 0.4644 - biology.json
-Average accuracy 0.2845 - business.json

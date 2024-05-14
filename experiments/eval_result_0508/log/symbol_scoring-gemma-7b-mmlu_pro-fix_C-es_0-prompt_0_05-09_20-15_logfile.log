@@ -1,5 +1,0 @@
-2024-05-09 20:15:50,030 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
-2024-05-09 20:16:00,377 DEBUG https://hf-mirror.com:443 "HEAD /google/gemma-7b/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
-2024-05-09 20:16:01,073 DEBUG https://hf-mirror.com:443 "HEAD /google/gemma-7b/resolve/main/config.json HTTP/1.1" 200 0
-2024-05-09 20:16:02,114 INFO We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
-2024-05-09 20:16:09,403 DEBUG https://hf-mirror.com:443 "HEAD /google/gemma-7b/resolve/main/generation_config.json HTTP/1.1" 200 0
