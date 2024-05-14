@@ -468,6 +468,8 @@ def main():
     print("selected subjects:\n" + "\n".join(selected_subjects))
     sta_dict = {}
     selected_subjects = sorted(selected_subjects)
+    with open(os.path.join(summary_path), 'a') as f:
+        f.write("\n------category level sta------\n")
     for subject in selected_subjects:
         if subject not in sta_dict:
             sta_dict[subject] = {"corr": 0.0, "wrong": 0.0, "accu": 0.0}
@@ -489,6 +491,8 @@ def main():
         sta_dict[subject]["corr"] = corr_count
         sta_dict[subject]["wrong"] = wrong_count
         sta_dict[subject]["accu"] = acc
+        with open(os.path.join(summary_path), 'a') as f:
+            f.write("Average accuracy {:.4f} - {}\n".format(sta_dict[subject]["accu"], subject))
     total_corr, total_wrong = 0.0, 0.0
     for k, v in sta_dict.items():
         total_corr += v["corr"]
@@ -497,9 +501,6 @@ def main():
     sta_dict["total"] = {"corr": total_corr, "wrong": total_wrong, "accu": total_accu}
 
     with open(os.path.join(summary_path), 'a') as f:
-        f.write("\n------category level sta------\n")
-        for subject in selected_subjects:
-            f.write("Average accuracy {:.4f} - {}\n".format(sta_dict[subject]["accu"], subject))
         f.write("\n------average acc sta------\n")
         weighted_acc = total_accu
         f.write("Average accuracy: {:.4f}\n".format(weighted_acc))
