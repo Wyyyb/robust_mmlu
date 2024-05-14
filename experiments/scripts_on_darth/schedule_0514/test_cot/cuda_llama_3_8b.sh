@@ -16,7 +16,7 @@ model="meta-llama/Meta-Llama-3-8B"
 selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=5
 
 python evaluate_mmlu_pro_cot_0513.py \
                  --ntrain $ntrain \
