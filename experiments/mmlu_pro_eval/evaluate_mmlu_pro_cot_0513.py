@@ -232,7 +232,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
     print("load exists result length", len(res))
     global choices
     logging.info("evaluating " + subject)
-    batch_size = 64
+    batch_size = args.batch_size
     inference_batches = []
     label_batches = []
     in_batch_index = []
@@ -555,6 +555,7 @@ if __name__ == "__main__":
     parser.add_argument("--global_record_file", "-grf", type=str,
                         default="../result_record/eval_record_collection_0514.csv")
     parser.add_argument("--gpu_util", "-gu", type=str, default="0.8")
+    parser.add_argument("--batch_size", "-bs", type=int, default=64)
     parser.add_argument(
         "--model",
         "-m",

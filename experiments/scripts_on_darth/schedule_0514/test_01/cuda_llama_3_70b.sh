@@ -15,6 +15,7 @@ scoring_method="CoT"
 model="/ML-A100/team/mm/zhangge/Meta-Llama-3-70B"
 selected_subjects="all"
 gpu_util="0.7"
+batch_size=512
 
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=0,1,4,5
@@ -32,7 +33,8 @@ python evaluate_mmlu_pro_cot_0513.py \
                  --save_dir $save_dir \
                  --scoring_method $scoring_method \
                  --model $model \
-                 --global_record_file $global_record_file
+                 --global_record_file $global_record_file \
+                 --batch_size $batch_size
 
 
 

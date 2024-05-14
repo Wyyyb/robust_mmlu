@@ -1,8 +1,9 @@
 import openai
 from openai import OpenAI
 
-API_BASE = "https://api.lingyiwanwu.com/v1"
-API_KEY = "126df074e908436e8a171e445fe702cb"
+# API_BASE = "https://api.lingyiwanwu.com/v1"
+API_BASE = "https://api.pre.lingyiwanwu.com/v1"
+API_KEY = "bdfad0935717497e8a4eca4eca1da405"
 
 client = OpenAI(
     # defaults to os.environ.get("OPENAI_API_KEY")
@@ -12,7 +13,22 @@ client = OpenAI(
 
 completion = client.chat.completions.create(
     model="claude-3-opus-20240229",  # 这里填写模型名称（yi-34b-chat-0205 / yi-34b-chat-200k），注意全部小写。
-    messages=[{"role": "user", "content": "你好，今天北京天气不好，很冷。帮助我推荐一个穿搭。"}]
+    # model="claude-3-sonnet-20240229",
+    messages=[
+        {
+            "role": "user",
+            "content": "Hello there."
+        },
+        {
+            "role": "assistant",
+            "content": "Hi, I'\''m Claude. How can I help you?"
+        },
+        {
+            "role": "user",
+            "content": "Can you explain LLMs in plain English?"
+        }
+    ]
+
 )
 print(completion)
 
