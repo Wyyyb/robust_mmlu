@@ -126,7 +126,7 @@ def load_model():
     print("checkpoint 1")
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
-        llm = LLM(model=args.model, gpu_memory_utilization=0.8)
+        llm = LLM(model=args.model, gpu_memory_utilization=0.8, tensor_parallel_size=args.ngpu)
         print("checkpoint 2")
         sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                          stop=["Question:"])
