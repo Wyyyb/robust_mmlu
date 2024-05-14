@@ -2,7 +2,7 @@ import openai
 from openai import OpenAI
 
 API_BASE = "https://api.lingyiwanwu.com/v1"
-API_KEY = "ef798a2b5d834a1b8d6f2e69d83b22c7"
+API_KEY = "126df074e908436e8a171e445fe702cb"
 
 client = OpenAI(
     # defaults to os.environ.get("OPENAI_API_KEY")
@@ -12,9 +12,7 @@ client = OpenAI(
 
 completion = client.chat.completions.create(
     model="claude-3-opus-20240229",  # 这里填写模型名称（yi-34b-chat-0205 / yi-34b-chat-200k），注意全部小写。
-    messages=[
-        {"role": "user", "content": "你好，今天北京天气不好，很冷。帮助我推荐一个穿搭。"},
-        ]
+    messages=[{"role": "user", "content": "你好，今天北京天气不好，很冷。帮助我推荐一个穿搭。"}]
 )
 print(completion)
 

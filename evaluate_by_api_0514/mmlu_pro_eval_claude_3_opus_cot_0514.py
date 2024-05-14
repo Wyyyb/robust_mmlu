@@ -8,7 +8,7 @@ import time
 from openai import OpenAI
 
 API_BASE = "https://api.lingyiwanwu.com/v1"
-API_KEY = "ef798a2b5d834a1b8d6f2e69d83b22c7"
+API_KEY = "126df074e908436e8a171e445fe702cb"
 
 
 my_client = OpenAI(
