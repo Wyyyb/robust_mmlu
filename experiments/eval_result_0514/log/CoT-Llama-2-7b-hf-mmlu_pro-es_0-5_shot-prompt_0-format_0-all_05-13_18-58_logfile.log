@@ -1,0 +1,853 @@
+2024-05-13 18:58:49,106 INFO selected subjects:
+business
+law
+psychology
+biology
+chemistry
+history
+other
+health
+economics
+math
+physics
+computer science
+philosophy
+engineering
+2024-05-13 18:58:49,115 INFO evaluating biology
+2024-05-13 18:58:49,131 INFO 0size batch costing time: 0.00025773048400878906
+2024-05-13 18:58:49,140 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,141 INFO 0size batch costing time: 0.00030231475830078125
+2024-05-13 18:58:49,147 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,148 INFO 0size batch costing time: 0.00029778480529785156
+2024-05-13 18:58:49,154 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,155 INFO 0size batch costing time: 0.000308990478515625
+2024-05-13 18:58:49,161 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,162 INFO 0size batch costing time: 0.0003027915954589844
+2024-05-13 18:58:49,169 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,169 INFO 0size batch costing time: 0.00028514862060546875
+2024-05-13 18:58:49,175 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,176 INFO 0size batch costing time: 0.0002875328063964844
+2024-05-13 18:58:49,183 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,183 INFO 0size batch costing time: 0.0002923011779785156
+2024-05-13 18:58:49,189 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,190 INFO 0size batch costing time: 0.0002830028533935547
+2024-05-13 18:58:49,196 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,197 INFO 0size batch costing time: 0.0002849102020263672
+2024-05-13 18:58:49,203 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,204 INFO 0size batch costing time: 0.0002856254577636719
+2024-05-13 18:58:49,210 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,211 INFO 0size batch costing time: 0.0002789497375488281
+2024-05-13 18:58:49,217 INFO this batch accu is: 0.3902027027027027, corr: 231.0, wrong: 361.0
+
+2024-05-13 18:58:49,230 INFO evaluating business
+2024-05-13 18:58:49,243 INFO 0size batch costing time: 0.00022792816162109375
+2024-05-13 18:58:49,251 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,251 INFO 0size batch costing time: 0.000301361083984375
+2024-05-13 18:58:49,257 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,257 INFO 0size batch costing time: 0.00028228759765625
+2024-05-13 18:58:49,262 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,262 INFO 0size batch costing time: 0.0002562999725341797
+2024-05-13 18:58:49,267 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,267 INFO 0size batch costing time: 0.0002815723419189453
+2024-05-13 18:58:49,272 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,273 INFO 0size batch costing time: 0.0002751350402832031
+2024-05-13 18:58:49,278 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,278 INFO 0size batch costing time: 0.00025272369384765625
+2024-05-13 18:58:49,282 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,283 INFO 0size batch costing time: 0.0002548694610595703
+2024-05-13 18:58:49,288 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,288 INFO 0size batch costing time: 0.00028061866760253906
+2024-05-13 18:58:49,293 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,293 INFO 0size batch costing time: 0.0002605915069580078
+2024-05-13 18:58:49,299 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,299 INFO 0size batch costing time: 0.0002472400665283203
+2024-05-13 18:58:49,303 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,304 INFO 0size batch costing time: 0.00025963783264160156
+2024-05-13 18:58:49,308 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,309 INFO 0size batch costing time: 0.00025844573974609375
+2024-05-13 18:58:49,313 INFO this batch accu is: 0.18170103092783504, corr: 141.0, wrong: 635.0
+
+2024-05-13 18:58:49,322 INFO evaluating chemistry
+2024-05-13 18:58:49,336 INFO using examples number:5
+2024-05-13 18:58:49,339 INFO using examples number:5
+2024-05-13 18:58:49,342 INFO using examples number:5
+2024-05-13 18:58:49,344 INFO using examples number:4
+2024-05-13 18:58:49,347 INFO using examples number:5
+2024-05-13 18:58:49,349 INFO using examples number:4
+2024-05-13 18:58:49,352 INFO using examples number:5
+2024-05-13 18:58:49,355 INFO using examples number:5
+2024-05-13 18:58:49,358 INFO using examples number:5
+2024-05-13 18:58:49,360 INFO using examples number:5
+2024-05-13 18:58:49,363 INFO using examples number:5
+2024-05-13 18:58:49,366 INFO using examples number:5
+2024-05-13 18:58:49,368 INFO using examples number:5
+2024-05-13 18:58:49,371 INFO using examples number:5
+2024-05-13 18:58:49,374 INFO using examples number:5
+2024-05-13 18:58:49,376 INFO using examples number:5
+2024-05-13 18:58:49,379 INFO using examples number:5
+2024-05-13 18:58:49,381 INFO using examples number:4
+2024-05-13 18:58:49,384 INFO using examples number:5
+2024-05-13 18:58:49,387 INFO using examples number:5
+2024-05-13 18:58:49,390 INFO using examples number:5
+2024-05-13 18:58:49,392 INFO using examples number:4
+2024-05-13 18:58:49,395 INFO using examples number:5
+2024-05-13 18:58:49,398 INFO using examples number:5
+2024-05-13 18:58:49,401 INFO using examples number:5
+2024-05-13 18:58:49,403 INFO using examples number:5
+2024-05-13 18:58:49,406 INFO using examples number:5
+2024-05-13 18:58:49,409 INFO using examples number:5
+2024-05-13 18:58:49,411 INFO using examples number:4
+2024-05-13 18:58:49,414 INFO using examples number:5
+2024-05-13 18:58:49,416 INFO using examples number:5
+2024-05-13 18:58:49,419 INFO using examples number:5
+2024-05-13 18:58:49,422 INFO using examples number:5
+2024-05-13 18:58:49,424 INFO using examples number:4
+2024-05-13 18:58:49,427 INFO using examples number:5
+2024-05-13 18:58:49,429 INFO using examples number:4
+2024-05-13 18:58:49,432 INFO using examples number:5
+2024-05-13 18:58:49,435 INFO using examples number:5
+2024-05-13 18:58:49,438 INFO using examples number:5
+2024-05-13 18:58:49,440 INFO using examples number:5
+2024-05-13 18:58:49,443 INFO using examples number:5
+2024-05-13 18:58:49,446 INFO using examples number:5
+2024-05-13 18:58:49,449 INFO using examples number:5
+2024-05-13 18:58:49,452 INFO using examples number:5
+2024-05-13 18:58:49,454 INFO using examples number:5
+2024-05-13 18:58:49,457 INFO using examples number:5
+2024-05-13 18:58:49,460 INFO using examples number:5
+2024-05-13 18:58:49,462 INFO using examples number:5
+2024-05-13 18:58:49,465 INFO using examples number:5
+2024-05-13 18:58:49,468 INFO using examples number:5
+2024-05-13 18:58:49,470 INFO using examples number:5
+2024-05-13 18:58:49,473 INFO using examples number:5
+2024-05-13 18:58:49,476 INFO using examples number:5
+2024-05-13 18:58:49,479 INFO using examples number:5
+2024-05-13 18:58:49,481 INFO using examples number:5
+2024-05-13 18:58:49,485 INFO using examples number:5
+2024-05-13 18:58:49,487 INFO using examples number:5
+2024-05-13 18:58:49,490 INFO using examples number:5
+2024-05-13 18:58:49,493 INFO using examples number:5
+2024-05-13 18:58:49,495 INFO using examples number:4
+2024-05-13 18:58:49,498 INFO using examples number:5
+2024-05-13 18:58:49,501 INFO using examples number:5
+2024-05-13 18:58:49,503 INFO using examples number:4
+2024-05-13 18:58:49,506 INFO using examples number:5
+2024-05-13 18:58:49,508 INFO using examples number:5
+2024-05-13 18:58:49,511 INFO using examples number:5
+2024-05-13 18:58:49,513 INFO using examples number:5
+2024-05-13 18:58:49,516 INFO using examples number:5
+2024-05-13 18:58:49,518 INFO using examples number:4
+2024-05-13 18:58:49,521 INFO using examples number:5
+2024-05-13 18:58:49,523 INFO using examples number:4
+2024-05-13 18:58:49,526 INFO using examples number:5
+2024-05-13 18:58:49,529 INFO using examples number:4
+2024-05-13 18:58:49,532 INFO using examples number:5
+2024-05-13 18:58:49,534 INFO using examples number:5
+2024-05-13 18:58:49,537 INFO using examples number:5
+2024-05-13 18:58:49,540 INFO using examples number:5
+2024-05-13 18:58:49,543 INFO using examples number:5
+2024-05-13 18:58:49,546 INFO using examples number:5
+2024-05-13 18:58:49,548 INFO using examples number:5
+2024-05-13 18:58:49,551 INFO using examples number:4
+2024-05-13 18:58:49,553 INFO using examples number:5
+2024-05-13 18:58:49,556 INFO using examples number:5
+2024-05-13 18:58:49,559 INFO using examples number:5
+2024-05-13 18:58:49,561 INFO using examples number:5
+2024-05-13 18:58:49,564 INFO using examples number:5
+2024-05-13 18:58:49,567 INFO using examples number:5
+2024-05-13 18:58:49,570 INFO using examples number:5
+2024-05-13 18:58:49,572 INFO using examples number:5
+2024-05-13 18:58:49,575 INFO using examples number:5
+2024-05-13 18:58:49,578 INFO using examples number:5
+2024-05-13 18:58:49,581 INFO using examples number:5
+2024-05-13 18:58:49,584 INFO using examples number:5
+2024-05-13 18:58:49,586 INFO using examples number:4
+2024-05-13 18:58:49,589 INFO using examples number:5
+2024-05-13 18:58:49,591 INFO using examples number:5
+2024-05-13 18:58:49,594 INFO using examples number:5
+2024-05-13 18:58:49,597 INFO using examples number:5
+2024-05-13 18:58:49,600 INFO using examples number:5
+2024-05-13 18:58:49,603 INFO using examples number:5
+2024-05-13 18:58:49,605 INFO using examples number:5
+2024-05-13 18:58:49,608 INFO using examples number:5
+2024-05-13 18:58:49,611 INFO using examples number:5
+2024-05-13 18:58:49,613 INFO using examples number:4
+2024-05-13 18:58:49,616 INFO using examples number:5
+2024-05-13 18:58:49,619 INFO using examples number:5
+2024-05-13 18:58:49,621 INFO using examples number:5
+2024-05-13 18:58:49,624 INFO using examples number:5
+2024-05-13 18:58:49,627 INFO using examples number:5
+2024-05-13 18:58:49,630 INFO using examples number:5
+2024-05-13 18:58:49,632 INFO using examples number:5
+2024-05-13 18:58:49,636 INFO using examples number:5
+2024-05-13 18:58:49,639 INFO using examples number:5
+2024-05-13 18:58:49,642 INFO using examples number:5
+2024-05-13 18:58:49,644 INFO using examples number:5
+2024-05-13 18:58:49,647 INFO using examples number:5
+2024-05-13 18:58:49,650 INFO using examples number:5
+2024-05-13 18:58:49,653 INFO using examples number:5
+2024-05-13 18:58:49,655 INFO using examples number:4
+2024-05-13 18:58:49,658 INFO using examples number:5
+2024-05-13 18:58:49,661 INFO using examples number:5
+2024-05-13 18:58:49,664 INFO using examples number:5
+2024-05-13 18:58:49,667 INFO using examples number:4
+2024-05-13 18:58:49,669 INFO using examples number:3
+2024-05-13 18:58:49,672 INFO using examples number:5
+2024-05-13 18:58:49,674 INFO using examples number:5
+2024-05-13 18:58:49,677 INFO using examples number:5
+2024-05-13 18:58:49,680 INFO using examples number:5
+2024-05-13 18:58:49,683 INFO using examples number:5
+2024-05-13 18:58:49,686 INFO using examples number:5
+2024-05-13 18:58:49,689 INFO using examples number:5
+2024-05-13 18:58:49,691 INFO using examples number:5
+2024-05-13 18:58:49,694 INFO using examples number:5
+2024-05-13 18:58:49,697 INFO using examples number:5
+2024-05-13 18:58:49,700 INFO using examples number:5
+2024-05-13 18:58:49,703 INFO using examples number:5
+2024-05-13 18:58:49,706 INFO using examples number:4
+2024-05-13 18:58:49,709 INFO using examples number:5
+2024-05-13 18:58:49,711 INFO using examples number:5
+2024-05-13 18:58:49,714 INFO using examples number:5
+2024-05-13 18:58:49,717 INFO using examples number:5
+2024-05-13 18:58:49,720 INFO using examples number:5
+2024-05-13 18:58:49,723 INFO using examples number:5
+2024-05-13 18:58:49,725 INFO using examples number:5
+2024-05-13 18:58:49,728 INFO using examples number:5
+2024-05-13 18:58:49,731 INFO using examples number:5
+2024-05-13 18:58:49,733 INFO using examples number:5
+2024-05-13 18:58:49,736 INFO using examples number:5
+2024-05-13 18:58:49,739 INFO using examples number:5
+2024-05-13 18:58:49,742 INFO using examples number:5
+2024-05-13 18:58:49,744 INFO using examples number:5
+2024-05-13 18:58:49,747 INFO using examples number:5
+2024-05-13 18:58:49,750 INFO using examples number:4
+2024-05-13 18:58:49,753 INFO using examples number:5
+2024-05-13 18:58:49,755 INFO using examples number:5
+2024-05-13 18:58:49,758 INFO using examples number:5
+2024-05-13 18:58:49,761 INFO using examples number:5
+2024-05-13 18:58:49,764 INFO using examples number:5
+2024-05-13 18:58:49,767 INFO using examples number:4
+2024-05-13 18:58:49,769 INFO using examples number:5
+2024-05-13 18:58:49,772 INFO using examples number:5
+2024-05-13 18:58:49,775 INFO using examples number:5
+2024-05-13 18:58:49,778 INFO using examples number:5
+2024-05-13 18:58:49,781 INFO using examples number:5
+2024-05-13 18:58:49,784 INFO using examples number:5
+2024-05-13 18:58:49,787 INFO using examples number:5
+2024-05-13 18:58:49,789 INFO using examples number:4
+2024-05-13 18:58:49,792 INFO using examples number:5
+2024-05-13 18:58:49,795 INFO using examples number:5
+2024-05-13 18:58:49,798 INFO using examples number:5
+2024-05-13 18:58:49,800 INFO using examples number:5
+2024-05-13 18:58:49,803 INFO using examples number:5
+2024-05-13 18:58:49,806 INFO using examples number:5
+2024-05-13 18:58:49,809 INFO using examples number:4
+2024-05-13 18:58:49,812 INFO using examples number:5
+2024-05-13 18:58:49,814 INFO using examples number:5
+2024-05-13 18:58:49,817 INFO using examples number:5
+2024-05-13 18:58:49,820 INFO using examples number:5
+2024-05-13 18:58:49,823 INFO using examples number:5
+2024-05-13 18:58:49,826 INFO using examples number:5
+2024-05-13 18:58:49,829 INFO using examples number:5
+2024-05-13 18:58:49,831 INFO using examples number:5
+2024-05-13 18:58:49,834 INFO using examples number:5
+2024-05-13 18:58:49,837 INFO using examples number:5
+2024-05-13 18:58:49,840 INFO using examples number:5
+2024-05-13 18:58:49,842 INFO using examples number:4
+2024-05-13 18:58:49,845 INFO using examples number:5
+2024-05-13 18:58:49,848 INFO using examples number:5
+2024-05-13 18:58:49,851 INFO using examples number:5
+2024-05-13 18:58:49,853 INFO using examples number:5
+2024-05-13 18:58:49,856 INFO using examples number:5
+2024-05-13 18:58:49,859 INFO using examples number:5
+2024-05-13 18:58:49,862 INFO using examples number:5
+2024-05-13 18:58:49,864 INFO using examples number:4
+2024-05-13 18:58:49,867 INFO using examples number:5
+2024-05-13 18:58:49,869 INFO using examples number:4
+2024-05-13 18:58:49,872 INFO using examples number:5
+2024-05-13 18:58:49,875 INFO using examples number:5
+2024-05-13 18:58:49,878 INFO using examples number:5
+2024-05-13 18:58:49,880 INFO using examples number:5
+2024-05-13 18:58:49,883 INFO using examples number:5
+2024-05-13 18:58:49,886 INFO using examples number:5
+2024-05-13 18:58:49,889 INFO using examples number:5
+2024-05-13 18:58:49,891 INFO using examples number:5
+2024-05-13 18:58:49,894 INFO using examples number:5
+2024-05-13 18:58:49,897 INFO using examples number:5
+2024-05-13 18:58:49,899 INFO using examples number:5
+2024-05-13 18:58:49,902 INFO using examples number:5
+2024-05-13 18:58:49,905 INFO using examples number:5
+2024-05-13 18:58:49,907 INFO using examples number:4
+2024-05-13 18:58:49,910 INFO using examples number:5
+2024-05-13 18:58:49,912 INFO using examples number:4
+2024-05-13 18:58:49,915 INFO using examples number:5
+2024-05-13 18:58:49,918 INFO using examples number:5
+2024-05-13 18:58:49,920 INFO using examples number:4
+2024-05-13 18:58:49,923 INFO using examples number:5
+2024-05-13 18:58:49,926 INFO using examples number:5
+2024-05-13 18:58:49,929 INFO using examples number:5
+2024-05-13 18:58:49,931 INFO using examples number:5
+2024-05-13 18:58:49,934 INFO using examples number:5
+2024-05-13 18:58:49,937 INFO using examples number:5
+2024-05-13 18:58:49,940 INFO using examples number:5
+2024-05-13 18:58:49,942 INFO using examples number:4
+2024-05-13 18:58:49,945 INFO using examples number:5
+2024-05-13 18:58:49,947 INFO using examples number:5
+2024-05-13 18:58:49,950 INFO using examples number:5
+2024-05-13 18:58:49,953 INFO using examples number:5
+2024-05-13 18:58:49,956 INFO using examples number:4
+2024-05-13 18:58:49,958 INFO using examples number:3
+2024-05-13 18:58:49,961 INFO using examples number:5
+2024-05-13 18:58:49,964 INFO using examples number:5
+2024-05-13 18:58:49,967 INFO using examples number:4
+2024-05-13 18:58:49,970 INFO using examples number:5
+2024-05-13 18:58:49,972 INFO using examples number:5
+2024-05-13 18:58:49,975 INFO using examples number:5
+2024-05-13 18:58:49,978 INFO using examples number:4
+2024-05-13 18:58:49,981 INFO using examples number:5
+2024-05-13 18:58:49,984 INFO using examples number:4
+2024-05-13 18:58:49,987 INFO using examples number:5
+2024-05-13 18:58:49,989 INFO using examples number:5
+2024-05-13 18:58:49,992 INFO using examples number:5
+2024-05-13 18:58:49,995 INFO using examples number:4
+2024-05-13 18:58:49,997 INFO using examples number:5
+2024-05-13 18:58:50,000 INFO using examples number:5
+2024-05-13 18:58:50,003 INFO using examples number:5
+2024-05-13 18:58:50,005 INFO using examples number:5
+2024-05-13 18:58:50,008 INFO using examples number:5
+2024-05-13 18:58:50,011 INFO using examples number:5
+2024-05-13 18:58:50,013 INFO using examples number:5
+2024-05-13 18:58:50,016 INFO using examples number:5
+2024-05-13 18:58:50,019 INFO using examples number:5
+2024-05-13 18:58:50,022 INFO using examples number:5
+2024-05-13 18:58:50,024 INFO using examples number:5
+2024-05-13 18:58:50,027 INFO using examples number:5
+2024-05-13 18:58:50,030 INFO using examples number:5
+2024-05-13 18:58:50,033 INFO using examples number:5
+2024-05-13 18:58:50,035 INFO using examples number:4
+2024-05-13 18:58:50,038 INFO using examples number:5
+2024-05-13 18:58:50,040 INFO using examples number:5
+2024-05-13 18:58:50,043 INFO using examples number:5
+2024-05-13 18:58:50,046 INFO using examples number:5
+2024-05-13 18:58:50,048 INFO using examples number:5
+2024-05-13 18:58:50,051 INFO using examples number:5
+2024-05-13 18:58:50,054 INFO using examples number:5
+2024-05-13 18:58:50,057 INFO using examples number:5
+2024-05-13 18:58:50,059 INFO using examples number:4
+2024-05-13 18:58:50,062 INFO using examples number:5
+2024-05-13 18:58:50,065 INFO using examples number:5
+2024-05-13 18:58:50,068 INFO using examples number:5
+2024-05-13 18:58:50,071 INFO using examples number:5
+2024-05-13 18:58:50,074 INFO using examples number:5
+2024-05-13 18:58:50,076 INFO using examples number:4
+2024-05-13 18:58:50,080 INFO using examples number:5
+2024-05-13 18:58:50,082 INFO using examples number:4
+2024-05-13 18:58:50,086 INFO using examples number:5
+2024-05-13 18:58:50,088 INFO using examples number:4
+2024-05-13 18:58:50,091 INFO using examples number:5
+2024-05-13 18:58:50,094 INFO using examples number:4
+2024-05-13 18:58:50,097 INFO using examples number:5
+2024-05-13 18:58:50,099 INFO using examples number:4
+2024-05-13 18:58:50,102 INFO using examples number:5
+2024-05-13 18:58:50,105 INFO using examples number:5
+2024-05-13 18:58:50,108 INFO using examples number:5
+2024-05-13 18:58:50,110 INFO using examples number:4
+2024-05-13 18:58:50,113 INFO using examples number:5
+2024-05-13 18:58:50,115 INFO using examples number:5
+2024-05-13 18:58:50,118 INFO using examples number:5
+2024-05-13 18:58:50,121 INFO using examples number:5
+2024-05-13 18:58:50,124 INFO using examples number:5
+2024-05-13 18:58:50,127 INFO using examples number:5
+2024-05-13 18:58:50,129 INFO using examples number:4
+2024-05-13 18:58:50,132 INFO using examples number:5
+2024-05-13 18:58:50,135 INFO using examples number:5
+2024-05-13 18:58:50,138 INFO using examples number:5
+2024-05-13 18:58:50,141 INFO using examples number:5
+2024-05-13 18:58:50,144 DEBUG Starting new HTTPS connection (1): stats.vllm.ai:443
+2024-05-13 18:58:50,145 INFO using examples number:5
+2024-05-13 18:58:50,147 INFO using examples number:4
+2024-05-13 18:58:50,150 INFO using examples number:3
+2024-05-13 18:58:50,152 INFO using examples number:5
+2024-05-13 18:58:50,155 INFO using examples number:5
+2024-05-13 18:58:50,158 INFO using examples number:5
+2024-05-13 18:58:50,161 INFO using examples number:5
+2024-05-13 18:58:50,164 INFO using examples number:5
+2024-05-13 18:58:50,166 INFO using examples number:5
+2024-05-13 18:58:50,169 INFO using examples number:5
+2024-05-13 18:58:50,172 INFO using examples number:5
+2024-05-13 18:58:50,175 INFO using examples number:5
+2024-05-13 18:58:50,177 INFO using examples number:5
+2024-05-13 18:58:50,180 INFO using examples number:5
+2024-05-13 18:58:50,183 INFO using examples number:4
+2024-05-13 18:58:50,185 INFO using examples number:5
+2024-05-13 18:58:50,188 INFO using examples number:5
+2024-05-13 18:58:50,190 INFO using examples number:4
+2024-05-13 18:58:50,193 INFO using examples number:5
+2024-05-13 18:58:50,196 INFO using examples number:4
+2024-05-13 18:58:50,198 INFO using examples number:5
+2024-05-13 18:58:50,201 INFO using examples number:5
+2024-05-13 18:58:50,204 INFO using examples number:5
+2024-05-13 18:58:50,207 INFO using examples number:4
+2024-05-13 18:58:50,209 INFO using examples number:5
+2024-05-13 18:58:50,213 INFO using examples number:5
+2024-05-13 18:58:50,215 INFO using examples number:4
+2024-05-13 18:58:50,218 INFO using examples number:5
+2024-05-13 18:58:50,221 INFO using examples number:5
+2024-05-13 18:58:50,223 INFO using examples number:5
+2024-05-13 18:58:50,226 INFO using examples number:5
+2024-05-13 18:58:50,229 INFO using examples number:5
+2024-05-13 18:58:50,232 INFO using examples number:5
+2024-05-13 18:58:50,234 INFO using examples number:5
+2024-05-13 18:58:50,237 INFO using examples number:5
+2024-05-13 18:58:50,240 INFO using examples number:5
+2024-05-13 18:58:50,243 INFO using examples number:5
+2024-05-13 18:58:50,246 INFO using examples number:5
+2024-05-13 18:58:50,250 INFO using examples number:5
+2024-05-13 18:58:50,253 INFO using examples number:5
+2024-05-13 18:58:50,256 INFO using examples number:5
+2024-05-13 18:58:50,259 INFO using examples number:5
+2024-05-13 18:58:50,261 INFO using examples number:4
+2024-05-13 18:58:50,265 INFO using examples number:5
+2024-05-13 18:58:50,267 INFO using examples number:5
+2024-05-13 18:58:50,270 INFO using examples number:5
+2024-05-13 18:58:50,274 INFO using examples number:5
+2024-05-13 18:58:50,277 INFO using examples number:5
+2024-05-13 18:58:50,279 INFO using examples number:5
+2024-05-13 18:58:50,283 INFO using examples number:5
+2024-05-13 18:58:50,286 INFO using examples number:5
+2024-05-13 18:58:50,289 INFO using examples number:5
+2024-05-13 18:58:50,292 INFO using examples number:5
+2024-05-13 18:58:50,295 INFO using examples number:4
+2024-05-13 18:58:50,298 INFO using examples number:5
+2024-05-13 18:58:50,301 INFO using examples number:5
+2024-05-13 18:58:50,304 INFO using examples number:5
+2024-05-13 18:58:50,308 INFO using examples number:5
+2024-05-13 18:58:50,311 INFO using examples number:4
+2024-05-13 18:58:50,314 INFO using examples number:5
+2024-05-13 18:58:50,317 INFO using examples number:5
+2024-05-13 18:58:50,320 INFO using examples number:4
+2024-05-13 18:58:50,323 INFO using examples number:5
+2024-05-13 18:58:50,326 INFO using examples number:5
+2024-05-13 18:58:50,329 INFO using examples number:5
+2024-05-13 18:58:50,332 INFO using examples number:5
+2024-05-13 18:58:50,335 INFO using examples number:5
+2024-05-13 18:58:50,338 INFO using examples number:5
+2024-05-13 18:58:50,341 INFO using examples number:5
+2024-05-13 18:58:50,344 INFO using examples number:5
+2024-05-13 18:58:50,348 INFO using examples number:5
+2024-05-13 18:58:50,351 INFO using examples number:5
+2024-05-13 18:58:50,355 INFO using examples number:5
+2024-05-13 18:58:50,358 INFO using examples number:4
+2024-05-13 18:58:50,361 INFO using examples number:5
+2024-05-13 18:58:50,365 INFO using examples number:5
+2024-05-13 18:58:50,368 INFO using examples number:5
+2024-05-13 18:58:50,372 INFO using examples number:5
+2024-05-13 18:58:50,376 INFO using examples number:5
+2024-05-13 18:58:50,380 INFO using examples number:5
+2024-05-13 18:58:50,383 INFO using examples number:4
+2024-05-13 18:58:50,387 INFO using examples number:5
+2024-05-13 18:58:50,390 INFO using examples number:5
+2024-05-13 18:58:50,394 INFO using examples number:5
+2024-05-13 18:58:50,397 INFO using examples number:5
+2024-05-13 18:58:50,400 INFO using examples number:5
+2024-05-13 18:58:50,403 INFO using examples number:5
+2024-05-13 18:58:50,406 INFO using examples number:4
+2024-05-13 18:58:50,410 INFO using examples number:5
+2024-05-13 18:58:50,413 INFO using examples number:5
+2024-05-13 18:58:50,886 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2024-05-13 19:00:44,781 INFO using examples number:5
+2024-05-13 19:00:44,791 INFO using examples number:5
+2024-05-13 19:00:44,795 INFO using examples number:5
+2024-05-13 19:00:44,797 INFO using examples number:5
+2024-05-13 19:00:44,800 INFO using examples number:5
+2024-05-13 19:00:44,803 INFO using examples number:5
+2024-05-13 19:00:44,806 INFO using examples number:4
+2024-05-13 19:00:44,809 INFO using examples number:5
+2024-05-13 19:00:44,812 INFO using examples number:5
+2024-05-13 19:00:44,814 INFO using examples number:5
+2024-05-13 19:00:44,817 INFO using examples number:5
+2024-05-13 19:00:44,820 INFO using examples number:5
+2024-05-13 19:00:44,823 INFO using examples number:5
+2024-05-13 19:00:44,826 INFO using examples number:5
+2024-05-13 19:00:44,829 INFO using examples number:4
+2024-05-13 19:00:44,832 INFO using examples number:5
+2024-05-13 19:00:44,835 INFO using examples number:5
+2024-05-13 19:00:44,838 INFO using examples number:4
+2024-05-13 19:00:44,841 INFO using examples number:5
+2024-05-13 19:00:44,844 INFO using examples number:5
+2024-05-13 19:00:44,847 INFO using examples number:5
+2024-05-13 19:00:44,850 INFO using examples number:5
+2024-05-13 19:00:44,853 INFO using examples number:4
+2024-05-13 19:00:44,856 INFO using examples number:5
+2024-05-13 19:00:44,859 INFO using examples number:5
+2024-05-13 19:00:44,862 INFO using examples number:5
+2024-05-13 19:00:44,864 INFO using examples number:4
+2024-05-13 19:00:44,868 INFO using examples number:5
+2024-05-13 19:00:44,871 INFO using examples number:5
+2024-05-13 19:00:44,874 INFO using examples number:5
+2024-05-13 19:00:44,877 INFO using examples number:4
+2024-05-13 19:00:44,880 INFO using examples number:5
+2024-05-13 19:00:44,883 INFO using examples number:5
+2024-05-13 19:00:44,886 INFO using examples number:5
+2024-05-13 19:00:44,889 INFO using examples number:5
+2024-05-13 19:00:44,892 INFO using examples number:5
+2024-05-13 19:00:44,896 INFO using examples number:5
+2024-05-13 19:00:44,903 INFO using examples number:4
+2024-05-13 19:00:44,911 INFO using examples number:5
+2024-05-13 19:00:44,918 INFO using examples number:5
+2024-05-13 19:00:44,925 INFO using examples number:5
+2024-05-13 19:00:44,932 INFO using examples number:4
+2024-05-13 19:00:44,939 INFO using examples number:3
+2024-05-13 19:00:44,946 INFO using examples number:5
+2024-05-13 19:00:44,953 INFO using examples number:5
+2024-05-13 19:00:44,960 INFO using examples number:4
+2024-05-13 19:00:44,967 INFO using examples number:5
+2024-05-13 19:00:44,974 INFO using examples number:5
+2024-05-13 19:00:44,981 INFO using examples number:4
+2024-05-13 19:00:44,988 INFO using examples number:5
+2024-05-13 19:00:44,995 INFO using examples number:5
+2024-05-13 19:00:45,002 INFO using examples number:4
+2024-05-13 19:00:45,009 INFO using examples number:5
+2024-05-13 19:00:45,016 INFO using examples number:5
+2024-05-13 19:00:45,023 INFO using examples number:5
+2024-05-13 19:00:45,030 INFO using examples number:5
+2024-05-13 19:00:45,037 INFO using examples number:5
+2024-05-13 19:00:45,044 INFO using examples number:5
+2024-05-13 19:00:45,051 INFO using examples number:5
+2024-05-13 19:00:45,058 INFO using examples number:4
+2024-05-13 19:00:45,065 INFO using examples number:5
+2024-05-13 19:00:45,072 INFO using examples number:5
+2024-05-13 19:00:45,079 INFO using examples number:5
+2024-05-13 19:00:45,086 INFO using examples number:4
+2024-05-13 19:00:45,093 INFO using examples number:5
+2024-05-13 19:00:45,101 INFO using examples number:5
+2024-05-13 19:00:45,107 INFO using examples number:4
+2024-05-13 19:00:45,114 INFO using examples number:5
+2024-05-13 19:00:45,121 INFO using examples number:5
+2024-05-13 19:00:45,128 INFO using examples number:5
+2024-05-13 19:00:45,136 INFO using examples number:5
+2024-05-13 19:00:45,143 INFO using examples number:5
+2024-05-13 19:00:45,152 INFO using examples number:5
+2024-05-13 19:00:45,155 INFO using examples number:4
+2024-05-13 19:00:45,158 INFO using examples number:3
+2024-05-13 19:00:45,161 INFO using examples number:5
+2024-05-13 19:00:45,164 INFO using examples number:5
+2024-05-13 19:00:45,167 INFO using examples number:4
+2024-05-13 19:00:45,170 INFO using examples number:5
+2024-05-13 19:00:45,173 INFO using examples number:5
+2024-05-13 19:00:45,176 INFO using examples number:5
+2024-05-13 19:00:45,179 INFO using examples number:5
+2024-05-13 19:00:45,182 INFO using examples number:5
+2024-05-13 19:00:45,186 INFO using examples number:5
+2024-05-13 19:00:45,189 INFO using examples number:5
+2024-05-13 19:00:45,192 INFO using examples number:4
+2024-05-13 19:00:45,195 INFO using examples number:5
+2024-05-13 19:00:45,199 INFO using examples number:4
+2024-05-13 19:00:45,202 INFO using examples number:5
+2024-05-13 19:00:45,206 INFO using examples number:5
+2024-05-13 19:00:45,209 INFO using examples number:5
+2024-05-13 19:00:45,212 INFO using examples number:5
+2024-05-13 19:00:45,216 INFO using examples number:5
+2024-05-13 19:00:45,219 INFO using examples number:5
+2024-05-13 19:00:45,222 INFO using examples number:4
+2024-05-13 19:00:45,225 INFO using examples number:5
+2024-05-13 19:00:45,228 INFO using examples number:5
+2024-05-13 19:00:45,231 INFO using examples number:5
+2024-05-13 19:00:45,234 INFO using examples number:5
+2024-05-13 19:00:45,237 INFO using examples number:5
+2024-05-13 19:00:45,240 INFO using examples number:5
+2024-05-13 19:00:45,243 INFO using examples number:5
+2024-05-13 19:00:45,246 INFO using examples number:5
+2024-05-13 19:00:45,249 INFO using examples number:4
+2024-05-13 19:00:45,252 INFO using examples number:5
+2024-05-13 19:00:45,255 INFO using examples number:5
+2024-05-13 19:00:45,258 INFO using examples number:5
+2024-05-13 19:00:45,261 INFO using examples number:5
+2024-05-13 19:00:45,264 INFO using examples number:5
+2024-05-13 19:00:45,267 INFO using examples number:4
+2024-05-13 19:00:45,270 INFO using examples number:5
+2024-05-13 19:00:45,273 INFO using examples number:5
+2024-05-13 19:00:45,275 INFO using examples number:4
+2024-05-13 19:00:45,278 INFO using examples number:5
+2024-05-13 19:00:45,282 INFO using examples number:5
+2024-05-13 19:00:45,285 INFO using examples number:4
+2024-05-13 19:00:45,288 INFO using examples number:5
+2024-05-13 19:00:45,291 INFO using examples number:5
+2024-05-13 19:00:45,293 INFO using examples number:5
+2024-05-13 19:00:45,297 INFO using examples number:5
+2024-05-13 19:00:45,299 INFO using examples number:4
+2024-05-13 19:00:45,302 INFO using examples number:5
+2024-05-13 19:00:45,305 INFO using examples number:5
+2024-05-13 19:00:45,308 INFO using examples number:4
+2024-05-13 19:00:45,311 INFO using examples number:5
+2024-05-13 19:00:45,314 INFO using examples number:5
+2024-05-13 19:00:45,317 INFO using examples number:5
+2024-05-13 19:00:45,320 INFO using examples number:5
+2024-05-13 19:00:45,323 INFO using examples number:5
+2024-05-13 19:00:45,326 INFO using examples number:5
+2024-05-13 19:00:45,329 INFO using examples number:5
+2024-05-13 19:00:45,331 INFO using examples number:5
+2024-05-13 19:00:45,334 INFO using examples number:5
+2024-05-13 19:00:45,338 INFO using examples number:5
+2024-05-13 19:00:45,340 INFO using examples number:4
+2024-05-13 19:00:45,344 INFO using examples number:5
+2024-05-13 19:00:45,346 INFO using examples number:4
+2024-05-13 19:00:45,349 INFO using examples number:5
+2024-05-13 19:00:45,352 INFO using examples number:5
+2024-05-13 19:00:45,355 INFO using examples number:4
+2024-05-13 19:00:45,357 INFO using examples number:5
+2024-05-13 19:00:45,360 INFO using examples number:5
+2024-05-13 19:00:45,364 INFO using examples number:5
+2024-05-13 19:00:45,368 INFO using examples number:4
+2024-05-13 19:00:45,372 INFO using examples number:5
+2024-05-13 19:00:45,374 INFO using examples number:4
+2024-05-13 19:00:45,378 INFO using examples number:5
+2024-05-13 19:00:45,381 INFO using examples number:5
+2024-05-13 19:00:45,385 INFO using examples number:5
+2024-05-13 19:00:45,388 INFO using examples number:5
+2024-05-13 19:00:45,391 INFO using examples number:4
+2024-05-13 19:00:45,394 INFO using examples number:5
+2024-05-13 19:00:45,397 INFO using examples number:4
+2024-05-13 19:00:45,400 INFO using examples number:5
+2024-05-13 19:00:45,403 INFO using examples number:5
+2024-05-13 19:00:45,406 INFO using examples number:5
+2024-05-13 19:00:45,409 INFO using examples number:5
+2024-05-13 19:00:45,412 INFO using examples number:5
+2024-05-13 19:00:45,415 INFO using examples number:5
+2024-05-13 19:00:45,417 INFO using examples number:4
+2024-05-13 19:00:45,420 INFO using examples number:5
+2024-05-13 19:00:45,423 INFO using examples number:5
+2024-05-13 19:00:45,426 INFO using examples number:5
+2024-05-13 19:00:45,429 INFO using examples number:5
+2024-05-13 19:00:45,432 INFO using examples number:4
+2024-05-13 19:00:45,435 INFO using examples number:5
+2024-05-13 19:00:45,437 INFO using examples number:5
+2024-05-13 19:00:45,440 INFO using examples number:5
+2024-05-13 19:00:45,444 INFO using examples number:5
+2024-05-13 19:00:45,446 INFO using examples number:4
+2024-05-13 19:00:45,449 INFO using examples number:5
+2024-05-13 19:00:45,453 INFO using examples number:5
+2024-05-13 19:00:45,456 INFO using examples number:5
+2024-05-13 19:00:45,459 INFO using examples number:4
+2024-05-13 19:00:45,462 INFO using examples number:5
+2024-05-13 19:00:45,464 INFO using examples number:4
+2024-05-13 19:00:45,467 INFO using examples number:5
+2024-05-13 19:00:45,471 INFO using examples number:5
+2024-05-13 19:00:45,474 INFO using examples number:4
+2024-05-13 19:00:45,477 INFO using examples number:3
+2024-05-13 19:00:45,480 INFO using examples number:5
+2024-05-13 19:00:45,484 INFO using examples number:5
+2024-05-13 19:00:45,487 INFO using examples number:5
+2024-05-13 19:00:45,490 INFO using examples number:5
+2024-05-13 19:00:45,493 INFO using examples number:5
+2024-05-13 19:00:45,496 INFO using examples number:4
+2024-05-13 19:00:45,499 INFO using examples number:5
+2024-05-13 19:00:45,502 INFO using examples number:5
+2024-05-13 19:00:45,504 INFO using examples number:5
+2024-05-13 19:00:45,507 INFO using examples number:5
+2024-05-13 19:00:45,510 INFO using examples number:5
+2024-05-13 19:00:45,513 INFO using examples number:5
+2024-05-13 19:00:45,516 INFO using examples number:5
+2024-05-13 19:00:45,519 INFO using examples number:5
+2024-05-13 19:00:45,521 INFO using examples number:4
+2024-05-13 19:00:45,525 INFO using examples number:5
+2024-05-13 19:00:45,528 INFO using examples number:5
+2024-05-13 19:00:45,531 INFO using examples number:5
+2024-05-13 19:00:45,534 INFO using examples number:5
+2024-05-13 19:00:45,537 INFO using examples number:5
+2024-05-13 19:00:45,539 INFO using examples number:5
+2024-05-13 19:00:45,542 INFO using examples number:5
+2024-05-13 19:00:45,545 INFO using examples number:5
+2024-05-13 19:00:45,548 INFO using examples number:5
+2024-05-13 19:00:45,551 INFO using examples number:5
+2024-05-13 19:00:45,554 INFO using examples number:5
+2024-05-13 19:00:45,557 INFO using examples number:5
+2024-05-13 19:00:45,561 INFO using examples number:5
+2024-05-13 19:00:45,563 INFO using examples number:4
+2024-05-13 19:00:45,566 INFO using examples number:5
+2024-05-13 19:00:45,569 INFO using examples number:5
+2024-05-13 19:00:45,571 INFO using examples number:4
+2024-05-13 19:00:45,575 INFO using examples number:5
+2024-05-13 19:00:45,578 INFO using examples number:5
+2024-05-13 19:00:45,581 INFO using examples number:4
+2024-05-13 19:00:45,584 INFO using examples number:5
+2024-05-13 19:00:45,587 INFO using examples number:5
+2024-05-13 19:00:45,590 INFO using examples number:4
+2024-05-13 19:00:45,593 INFO using examples number:5
+2024-05-13 19:00:45,596 INFO using examples number:5
+2024-05-13 19:00:45,599 INFO using examples number:5
+2024-05-13 19:00:45,602 INFO using examples number:5
+2024-05-13 19:00:45,605 INFO using examples number:5
+2024-05-13 19:00:45,608 INFO using examples number:5
+2024-05-13 19:00:45,610 INFO using examples number:5
+2024-05-13 19:00:45,613 INFO using examples number:5
+2024-05-13 19:00:45,617 INFO using examples number:5
+2024-05-13 19:00:45,619 INFO using examples number:5
+2024-05-13 19:00:45,622 INFO using examples number:5
+2024-05-13 19:00:45,625 INFO using examples number:5
+2024-05-13 19:00:45,628 INFO using examples number:5
+2024-05-13 19:00:45,631 INFO using examples number:5
+2024-05-13 19:00:45,634 INFO using examples number:5
+2024-05-13 19:00:45,637 INFO using examples number:5
+2024-05-13 19:00:45,640 INFO using examples number:5
+2024-05-13 19:00:45,643 INFO using examples number:5
+2024-05-13 19:00:45,645 INFO using examples number:5
+2024-05-13 19:00:45,648 INFO using examples number:5
+2024-05-13 19:00:45,652 INFO using examples number:5
+2024-05-13 19:00:45,654 INFO using examples number:4
+2024-05-13 19:00:45,657 INFO using examples number:5
+2024-05-13 19:00:45,660 INFO using examples number:4
+2024-05-13 19:00:45,663 INFO using examples number:5
+2024-05-13 19:00:45,666 INFO using examples number:5
+2024-05-13 19:00:45,669 INFO using examples number:5
+2024-05-13 19:00:45,671 INFO using examples number:4
+2024-05-13 19:00:45,674 INFO using examples number:5
+2024-05-13 19:00:45,677 INFO using examples number:5
+2024-05-13 19:00:45,681 INFO using examples number:5
+2024-05-13 19:00:45,684 INFO using examples number:5
+2024-05-13 19:00:45,687 INFO using examples number:5
+2024-05-13 19:00:45,690 INFO using examples number:4
+2024-05-13 19:00:45,693 INFO using examples number:5
+2024-05-13 19:00:45,695 INFO using examples number:4
+2024-05-13 19:00:45,698 INFO using examples number:5
+2024-05-13 19:00:45,701 INFO using examples number:5
+2024-05-13 19:00:45,704 INFO using examples number:5
+2024-05-13 19:00:45,707 INFO using examples number:5
+2024-05-13 19:00:45,710 INFO using examples number:4
+2024-05-13 19:00:45,713 INFO using examples number:5
+2024-05-13 19:00:45,716 INFO using examples number:5
+2024-05-13 19:00:45,719 INFO using examples number:4
+2024-05-13 19:00:45,722 INFO using examples number:5
+2024-05-13 19:00:45,725 INFO using examples number:5
+2024-05-13 19:00:45,728 INFO using examples number:5
+2024-05-13 19:00:45,731 INFO using examples number:5
+2024-05-13 19:00:45,734 INFO using examples number:5
+2024-05-13 19:00:45,737 INFO using examples number:5
+2024-05-13 19:00:45,740 INFO using examples number:5
+2024-05-13 19:00:45,743 INFO using examples number:5
+2024-05-13 19:00:45,746 INFO using examples number:5
+2024-05-13 19:00:45,749 INFO using examples number:5
+2024-05-13 19:00:45,752 INFO using examples number:5
+2024-05-13 19:00:45,755 INFO using examples number:5
+2024-05-13 19:00:45,757 INFO using examples number:5
+2024-05-13 19:00:45,760 INFO using examples number:5
+2024-05-13 19:00:45,763 INFO using examples number:5
+2024-05-13 19:00:45,766 INFO using examples number:5
+2024-05-13 19:00:45,769 INFO using examples number:5
+2024-05-13 19:00:45,772 INFO using examples number:4
+2024-05-13 19:00:45,775 INFO using examples number:5
+2024-05-13 19:00:45,778 INFO using examples number:5
+2024-05-13 19:00:45,781 INFO using examples number:5
+2024-05-13 19:00:45,784 INFO using examples number:5
+2024-05-13 19:00:45,788 INFO using examples number:5
+2024-05-13 19:00:45,791 INFO using examples number:5
+2024-05-13 19:00:45,793 INFO using examples number:4
+2024-05-13 19:00:45,796 INFO using examples number:5
+2024-05-13 19:00:45,799 INFO using examples number:5
+2024-05-13 19:00:45,802 INFO using examples number:5
+2024-05-13 19:00:45,804 INFO using examples number:5
+2024-05-13 19:00:45,808 INFO using examples number:5
+2024-05-13 19:00:45,810 INFO using examples number:5
+2024-05-13 19:00:45,813 INFO using examples number:5
+2024-05-13 19:00:45,816 INFO using examples number:5
+2024-05-13 19:00:45,819 INFO using examples number:5
+2024-05-13 19:00:45,822 INFO using examples number:5
+2024-05-13 19:00:45,825 INFO using examples number:5
+2024-05-13 19:00:45,828 INFO using examples number:5
+2024-05-13 19:00:45,831 INFO using examples number:5
+2024-05-13 19:00:45,834 INFO using examples number:5
+2024-05-13 19:00:45,837 INFO using examples number:5
+2024-05-13 19:00:45,840 INFO using examples number:5
+2024-05-13 19:00:45,843 INFO using examples number:5
+2024-05-13 19:00:45,845 INFO using examples number:5
+2024-05-13 19:00:45,848 INFO using examples number:5
+2024-05-13 19:00:45,851 INFO using examples number:5
+2024-05-13 19:00:45,855 INFO using examples number:5
+2024-05-13 19:00:45,859 INFO using examples number:5
+2024-05-13 19:00:45,863 INFO using examples number:5
+2024-05-13 19:00:45,868 INFO using examples number:5
+2024-05-13 19:00:45,872 INFO using examples number:5
+2024-05-13 19:00:45,876 INFO using examples number:4
+2024-05-13 19:00:45,881 INFO using examples number:5
+2024-05-13 19:00:45,884 INFO using examples number:4
+2024-05-13 19:00:45,888 INFO using examples number:5
+2024-05-13 19:00:45,893 INFO using examples number:5
+2024-05-13 19:00:45,898 INFO using examples number:5
+2024-05-13 19:00:45,901 INFO using examples number:4
+2024-05-13 19:00:45,905 INFO using examples number:5
+2024-05-13 19:00:45,910 INFO using examples number:5
+2024-05-13 19:00:45,913 INFO using examples number:5
+2024-05-13 19:00:45,918 INFO using examples number:5
+2024-05-13 19:00:45,920 INFO using examples number:5
+2024-05-13 19:00:45,923 INFO using examples number:5
+2024-05-13 19:00:45,926 INFO using examples number:5
+2024-05-13 19:00:45,929 INFO using examples number:5
+2024-05-13 19:00:45,932 INFO using examples number:5
+2024-05-13 19:00:45,935 INFO using examples number:4
+2024-05-13 19:00:45,938 INFO using examples number:5
+2024-05-13 19:00:45,941 INFO using examples number:5
+2024-05-13 19:00:45,944 INFO using examples number:5
+2024-05-13 19:00:45,947 INFO using examples number:5
+2024-05-13 19:00:45,949 INFO using examples number:5
+2024-05-13 19:00:45,952 INFO using examples number:5
+2024-05-13 19:00:45,955 INFO using examples number:5
+2024-05-13 19:00:45,958 INFO using examples number:5
+2024-05-13 19:00:45,961 INFO using examples number:4
+2024-05-13 19:00:45,964 INFO using examples number:5
+2024-05-13 19:00:45,967 INFO using examples number:5
+2024-05-13 19:00:45,970 INFO using examples number:5
+2024-05-13 19:00:45,973 INFO using examples number:5
+2024-05-13 19:00:45,976 INFO using examples number:5
+2024-05-13 19:00:45,978 INFO using examples number:4
+2024-05-13 19:00:45,981 INFO using examples number:5
+2024-05-13 19:00:45,984 INFO using examples number:5
+2024-05-13 19:00:45,987 INFO using examples number:5
+2024-05-13 19:00:45,990 INFO using examples number:5
+2024-05-13 19:00:45,993 INFO using examples number:5
+2024-05-13 19:00:45,996 INFO using examples number:5
+2024-05-13 19:00:45,999 INFO using examples number:4
+2024-05-13 19:00:46,002 INFO using examples number:5
+2024-05-13 19:00:46,005 INFO using examples number:4
+2024-05-13 19:00:46,007 INFO using examples number:3
+2024-05-13 19:00:46,010 INFO using examples number:5
+2024-05-13 19:00:46,013 INFO using examples number:5
+2024-05-13 19:00:46,017 INFO using examples number:5
+2024-05-13 19:00:46,020 INFO using examples number:4
+2024-05-13 19:00:46,022 INFO using examples number:3
+2024-05-13 19:00:46,025 INFO using examples number:5
+2024-05-13 19:00:46,028 INFO using examples number:5
+2024-05-13 19:00:46,032 INFO using examples number:5
+2024-05-13 19:00:46,035 INFO using examples number:5
+2024-05-13 19:00:46,038 INFO using examples number:5
+2024-05-13 19:00:46,041 INFO using examples number:5
+2024-05-13 19:00:46,044 INFO using examples number:5
+2024-05-13 19:00:46,047 INFO using examples number:5
+2024-05-13 19:00:46,050 INFO using examples number:5
+2024-05-13 19:00:46,053 INFO using examples number:5
+2024-05-13 19:00:46,056 INFO using examples number:5
+2024-05-13 19:00:46,060 INFO using examples number:5
+2024-05-13 19:00:46,062 INFO using examples number:4
+2024-05-13 19:00:46,065 INFO using examples number:5

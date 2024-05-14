@@ -11,7 +11,7 @@ save_dir="../eval_result_0513"
 scoring_method="symbol_scoring"
 # scoring_method="hybrid_scoring"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
-model="meta-llama/Llama-2-7b-hf"
+model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
