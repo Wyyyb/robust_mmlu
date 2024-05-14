@@ -15,6 +15,7 @@ scoring_method="CoT"
 model="01-ai/Yi-6B"
 selected_subjects="all"
 
+
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=2
 

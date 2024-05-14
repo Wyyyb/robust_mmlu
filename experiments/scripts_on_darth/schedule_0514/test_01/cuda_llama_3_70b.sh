@@ -18,7 +18,7 @@ gpu_util="0.7"
 batch_size=512
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=0,1,4,5
+export CUDA_VISIBLE_DEVICES=0,2,4,5
 export VLLM_NO_USAGE_STATS=1
 
 python evaluate_mmlu_pro_cot_0513.py \

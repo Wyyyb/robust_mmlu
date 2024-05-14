@@ -15,6 +15,7 @@ scoring_method="CoT"
 model="01-ai/Yi-34B"
 selected_subjects="all"
 gpu_util="0.9"
+batch_size=512
 
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=0,1
@@ -31,7 +32,8 @@ python evaluate_mmlu_pro_cot_0513.py \
                  --save_dir $save_dir \
                  --scoring_method $scoring_method \
                  --model $model \
-                 --global_record_file $global_record_file
+                 --global_record_file $global_record_file \
+                 --batch_size $batch_size
 
 
 
