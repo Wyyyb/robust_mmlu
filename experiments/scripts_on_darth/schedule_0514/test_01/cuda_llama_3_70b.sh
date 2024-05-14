@@ -14,7 +14,7 @@ scoring_method="CoT"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 model="/ML-A100/team/mm/zhangge/Meta-Llama-3-70B"
 selected_subjects="all"
-gpu_util="0.8"
+gpu_util="0.7"
 
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=0,1,4,5
