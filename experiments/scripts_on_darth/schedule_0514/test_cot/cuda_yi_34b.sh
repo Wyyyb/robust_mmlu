@@ -5,7 +5,7 @@ ntrain=5
 examples_start_index=0
 prompt_type=8
 prompt_format=0
-ngpu=2
+ngpu=4
 data_dir="../../data_formal/mmlu_pro_data_v1"
 save_dir="../eval_result_0514"
 global_record_file="../result_record/eval_record_collection_0514_darth.csv"
@@ -18,7 +18,7 @@ gpu_util="0.9"
 batch_size=512
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=0,1
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 python evaluate_mmlu_pro_cot_0513.py \
                  --ntrain $ntrain \
