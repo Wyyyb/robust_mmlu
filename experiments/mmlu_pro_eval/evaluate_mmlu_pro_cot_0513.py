@@ -292,10 +292,15 @@ def save_res(res, output_path):
     with open(output_path, "w") as fo:
         fo.write(json.dumps(res))
     for each in res:
-        if each["pred"] is None:
-            wrong += 1
-            continue
-        if each["pred"] == each["answer"]:
+        if not each["pred"]:
+            random.seed(12345)
+            x = random.randint(0, len(each["options"]) - 1)
+            if x == each["answer_index"]:
+                corr += 1
+                print("random hit.")
+            else:
+                wrong += 1
+        elif each["pred"] == each["answer"]:
             corr += 1
         else:
             wrong += 1

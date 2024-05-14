@@ -96,7 +96,15 @@ def update_result(output_res_path):
                         category = each["category"]
                         if category not in category_record:
                             category_record[category] = {"corr": 0.0, "wrong": 0.0}
-                        if each["pred"] == each["answer"]:
+                        if not each["pred"]:
+                            random.seed(12345)
+                            x = random.randint(0, len(each["options"]) - 1)
+                            if x == each["answer_index"]:
+                                category_record[category]["corr"] += 1
+                                print("random hit.")
+                            else:
+                                category_record[category]["wrong"] += 1
+                        elif each["pred"] == each["answer"]:
                             category_record[category]["corr"] += 1
                         else:
                             category_record[category]["wrong"] += 1
@@ -114,7 +122,7 @@ def evaluate(data_dir):
         if not file.endswith("_test.json"):
             continue
         category = file.replace("_test.json", "")
-        if category not in assigned_subject:
+        if assigned_subject and category not in assigned_subject:
             continue
         output_res_path = ori_output_res_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
         output_summary_path = ori_output_summary_path.replace(".json", "_" + category.replace(" ", "_") + ".json")
@@ -187,8 +195,9 @@ def load_dev_examples(input_dir):
 
 
 if __name__ == '__main__':
-    assigned_subject = ["business", "chemistry", "computer science", "economics"]
+    # assigned_subject = ["business", "chemistry", "computer science", "economics"]
     # assigned_subject = ["math"]
+    assigned_subject = []
     output_dir = "../experiments/eval_result_0510_gpt_4/"
     dev_dir = "../data/mmlu_pro_v1_0509/dev"
     test_dir = "../data/mmlu_pro_v1_0509/test"

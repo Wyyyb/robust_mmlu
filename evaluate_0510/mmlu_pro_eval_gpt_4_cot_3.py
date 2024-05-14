@@ -98,7 +98,15 @@ def update_result(output_res_path):
                         category = each["category"]
                         if category not in category_record:
                             category_record[category] = {"corr": 0.0, "wrong": 0.0}
-                        if each["pred"] == each["answer"]:
+                        if not each["pred"]:
+                            random.seed(12345)
+                            x = random.randint(0, len(each["options"]) - 1)
+                            if x == each["answer_index"]:
+                                category_record[category]["corr"] += 1
+                                print("random hit.")
+                            else:
+                                category_record[category]["wrong"] += 1
+                        elif each["pred"] == each["answer"]:
                             category_record[category]["corr"] += 1
                         else:
                             category_record[category]["wrong"] += 1

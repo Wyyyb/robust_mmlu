@@ -9,6 +9,7 @@ from openai import OpenAI
 
 API_BASE = "https://api.lingyiwanwu.com/v1"
 API_KEY = "ef798a2b5d834a1b8d6f2e69d83b22c7"
+# API_KEY = "bdfad0935717497e8a4eca4eca1da405"
 
 
 my_client = OpenAI(
@@ -111,7 +112,13 @@ def update_result(output_res_path):
                         if category not in category_record:
                             category_record[category] = {"corr": 0.0, "wrong": 0.0}
                         if not each["pred"]:
-                            category_record[category]["wrong"] += 1
+                            random.seed(12345)
+                            x = random.randint(0, len(each["options"]) - 1)
+                            if x == each["answer_index"]:
+                                category_record[category]["corr"] += 1
+                                print("random hit.")
+                            else:
+                                category_record[category]["wrong"] += 1
                         elif each["pred"] == each["answer"]:
                             category_record[category]["corr"] += 1
                         else:
