@@ -3,11 +3,12 @@
 # 设置默认参数
 ntrain=5
 examples_start_index=0
-prompt_type=0
-prompt_format=8
+prompt_type=8
+prompt_format=0
 ngpu=1
 data_dir="../../data_formal/mmlu_pro_data_v1"
-save_dir="../eval_result_0513"
+save_dir="../eval_result_0514"
+global_record_file="../result_record/eval_record_collection_0514_darth.csv"
 # scoring_method="symbol_scoring"
 scoring_method="CoT"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"

@@ -550,16 +550,18 @@ if __name__ == "__main__":
     parser.add_argument("--use_rare_symbol", "-r", type=lambda x: bool(strtobool(x)), default=False)
     parser.add_argument("--fixed_question_answer", "-q", type=int, default=-1)
     parser.add_argument("--scoring_method", "-sm", type=str, default="symbol_scoring")
+    parser.add_argument("--global_record_file", "-grf", type=str,
+                        default="../result_record/eval_record_collection_0514.csv")
     parser.add_argument(
         "--model",
         "-m",
         type=str,
         default="/ML-A100/team/mm/zhangge/Llama-2-7b-hf",
     )
-    global_record_file = "../result_record/eval_record_collection_0513.csv"
     os.makedirs("../result_record", exist_ok=True)
     args = parser.parse_args()
     # cot_lib = load_cot_lib()
+    global_record_file = args.global_record_file
     save_result_dir = os.path.join(
         args.save_dir, "/".join(args_generate_path(args))
     )
