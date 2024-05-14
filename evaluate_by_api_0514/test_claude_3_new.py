@@ -49,9 +49,9 @@ def request(prompt, image_paths, timeout=60, max_tokens=100, model_name="sonnet"
     }
     model = name2model[model_name]
 
-    # api_key = "multimodel-lidongxu"
-    api_key = "191d4c83d53245848862382a4187a49c"
-    base_url = "api.lingyiwanwu.com"
+    api_key = "multimodel-lidongxu"
+    # api_key = "claude-eval"
+    base_url = "https://api.pre.lingyiwanwu.com/v1/messages "
 
     client = Anthropic(
         base_url=base_url,
