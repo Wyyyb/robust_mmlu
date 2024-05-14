@@ -5,18 +5,18 @@ ntrain=5
 examples_start_index=0
 prompt_type=8
 prompt_format=0
-ngpu=1
+ngpu=2
 data_dir="../../data_formal/mmlu_pro_data_v1"
 save_dir="../eval_result_0514"
 global_record_file="../result_record/eval_record_collection_0514_darth.csv"
 # scoring_method="symbol_scoring"
 scoring_method="CoT"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
-model="meta-llama/Meta-Llama-3-8B"
+model="01-ai/Yi-34B"
 selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=5
+export CUDA_VISIBLE_DEVICES=0,1
 
 python evaluate_mmlu_pro_cot_0513.py \
                  --ntrain $ntrain \
