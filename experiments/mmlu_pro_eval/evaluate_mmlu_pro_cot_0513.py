@@ -293,6 +293,7 @@ def save_res(res, output_path):
         fo.write(json.dumps(res))
     for each in res:
         if each["pred"] is None:
+            wrong += 1
             continue
         if each["pred"] == each["answer"]:
             corr += 1
@@ -492,7 +493,7 @@ def main():
     for k, v in sta_dict.items():
         total_corr += v["corr"]
         total_wrong += v["wrong"]
-    total_accu = total_corr / (total_corr + total_wrong)
+    total_accu = total_corr / (total_corr + total_wrong + 0.000001)
     sta_dict["total"] = {"corr": total_corr, "wrong": total_wrong, "accu": total_accu}
 
     with open(os.path.join(summary_path), 'a') as f:
