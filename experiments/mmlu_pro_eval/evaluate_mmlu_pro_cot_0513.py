@@ -126,7 +126,7 @@ def load_model():
     print("checkpoint 1")
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
-        llm = LLM(model=args.model, gpu_memory_utilization=0.8, tensor_parallel_size=args.ngpu)
+        llm = LLM(model=args.model, gpu_memory_utilization=args.gpu_util, tensor_parallel_size=args.ngpu)
         print("checkpoint 2")
         sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                          stop=["Question:"])
@@ -553,6 +553,7 @@ if __name__ == "__main__":
     parser.add_argument("--scoring_method", "-sm", type=str, default="symbol_scoring")
     parser.add_argument("--global_record_file", "-grf", type=str,
                         default="../result_record/eval_record_collection_0514.csv")
+    parser.add_argument("--args.gpu_util", "-gu", type=float, default="0.8")
     parser.add_argument(
         "--model",
         "-m",
