@@ -15,7 +15,7 @@ scoring_method="CoT"
 model="/ML-A800/models/Llama-2-70b-hf"
 selected_subjects="all"
 gpu_util="0.8"
-batch_size=512
+batch_size=2048
 
 cd ../../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=2,3,4,5
