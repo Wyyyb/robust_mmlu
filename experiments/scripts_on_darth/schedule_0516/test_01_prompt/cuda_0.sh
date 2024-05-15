@@ -28,7 +28,7 @@ for try_times in $(seq 0 100); do
     prompt_type=$((RANDOM %9))
     for data_dir in "${data_dir_list[@]}"; do
         echo "Evaluating: $model on: $data_dir with prompt_format: $prompt_format and prompt_type: $prompt_type"
-        python evaluate_mmlu_pro_0511.py \
+        python evaluate_mmlu_pro_0516_prompt.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
                  --prompt_type $prompt_type \
@@ -40,6 +40,7 @@ for try_times in $(seq 0 100); do
                  --scoring_method $scoring_method \
                  --model $model \
                  --global_record_file $global_record_file
-
+    done
+done
 
 
