@@ -82,7 +82,7 @@ def get_initial_prompt(subject):
         for line in fi.readlines():
             prompt += line + "\n"
     prompt = prompt.replace("{$}", subject)
-    prompt += "\n\n"
+    prompt += "\n"
     return prompt
 
 
@@ -319,7 +319,7 @@ def eval(subject, model, tokenizer, dev_df, test_df, output_path, exists_result=
         if display_prompt:
             print("train_prompt", train_prompt)
             display_prompt = False
-            logging.info("prompt_format: " + args.prompt_format)
+            logging.info("prompt_format: " + str(args.prompt_format))
             logging.info("prompt:\n" + prompt)
 
         label = test_df[i]["answer"]
