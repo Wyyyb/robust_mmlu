@@ -20,7 +20,7 @@ selected_subjects="all"
 global_record_file="../result_record/eval_record_collection_0516_prompt.csv"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=2
 
 
 for try_times in $(seq 0 100); do
