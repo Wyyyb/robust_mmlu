@@ -44,11 +44,13 @@ def sta(input_dir, pad=False):
                 v["corr"] = corr
                 v["wrong"] = wrong
                 v["acc"] = corr / (corr + wrong)
+                v["total"] = corr + wrong
                 sta_map[k] = v
                 total_corr += corr
                 total_wrong += wrong
     sta_map["total"] = {"corr": total_corr, "wrong": total_wrong,
-                        "acc": total_corr / (total_corr + total_wrong)}
+                        "acc": total_corr / (total_corr + total_wrong),
+                        "total": total_corr + total_wrong}
     print("sta result: ", sta_map)
     sta_result_path = os.path.join(input_dir, "sta_result.json")
     with open(sta_result_path, "w") as fo:
