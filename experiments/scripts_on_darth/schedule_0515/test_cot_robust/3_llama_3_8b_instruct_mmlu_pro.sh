@@ -18,7 +18,7 @@ selected_subjects="all"
 batch_size=2048
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=5
 export VLLM_NO_USAGE_STATS=1
 
 

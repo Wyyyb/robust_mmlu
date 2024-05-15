@@ -18,7 +18,7 @@ selected_subjects="all"
 batch_size=2048
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=2
 export VLLM_NO_USAGE_STATS=1
 
 python evaluate_mmlu_pro_cot_0513.py \
