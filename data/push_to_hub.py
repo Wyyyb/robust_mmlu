@@ -43,8 +43,8 @@ for dir_name in os.listdir(input_dir):
 
 dataset_test = Dataset.from_list(all_test)
 dataset_dev = Dataset.from_list(all_dev)
-dataset_test.push_to_hub("TIGER-Lab/MMLU-Pro", private=True, split="test")
-dataset_dev.push_to_hub("TIGER-Lab/MMLU-Pro", private=True, split="validation")
+dataset_test.push_to_hub("TIGER-Lab/MMLU-Pro", split="test")
+dataset_dev.push_to_hub("TIGER-Lab/MMLU-Pro", split="validation")
 
 
 
