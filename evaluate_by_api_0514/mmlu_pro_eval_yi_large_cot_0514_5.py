@@ -214,7 +214,7 @@ if __name__ == '__main__':
     # assigned_subject = ["business", "chemistry", "computer science"]
     # assigned_subject = ["economics", "engineering", "health", "physics"]
     # assigned_subject = ["law", "other", "history", "math"]
-    assigned_subject = ["math"]
+    assigned_subject = ["math", "computer science"]
     output_dir = "../experiments/eval_result_0514_yi_large_cot/"
     dev_dir = "../data/mmlu_pro_v1_0512/dev"
     test_dir = "../data/mmlu_pro_v1_0512/test"

@@ -38,5 +38,20 @@ for prompt_type in $(seq 0 7); do
                  --batch_size $batch_size
 done
 
+model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 
-
+for prompt_type in $(seq 0 7); do
+    python evaluate_mmlu_pro_cot_0513.py \
+                 --ntrain $ntrain \
+                 --examples_start_index $examples_start_index \
+                 --prompt_type $prompt_type \
+                 --prompt_format $prompt_format \
+                 --selected_subjects $selected_subjects \
+                 --ngpu $ngpu \
+                 --data_dir $data_dir \
+                 --save_dir $save_dir \
+                 --scoring_method $scoring_method \
+                 --model $model \
+                 --global_record_file $global_record_file \
+                 --batch_size $batch_size
+done
