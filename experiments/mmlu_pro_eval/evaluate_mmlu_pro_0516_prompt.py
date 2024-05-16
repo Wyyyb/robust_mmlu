@@ -17,7 +17,7 @@ from tqdm import tqdm
 from distutils.util import strtobool
 import logging
 import sys
-from prompt_format_examples import prompt_format_examples
+from prompt_format_examples import prompt_format_examples_0516
 
 
 IGNORE_INDEX = -100
@@ -41,7 +41,7 @@ def format_example(df, idx, include_answer=True):
     prompt_format = args.prompt_format
     options = df[idx]["options"]
     question = df[idx]["question"]
-    prompt = prompt_format_examples(prompt_format, question, options)
+    prompt = prompt_format_examples_0516(prompt_format, question, options)
     if include_answer:
         ans_index = df[idx]["answer_index"]
         if args.scoring_method == "symbol_scoring":
