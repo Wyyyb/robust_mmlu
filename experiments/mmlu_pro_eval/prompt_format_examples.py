@@ -29,9 +29,13 @@ def prompt_format_examples(prompt_format, question, options):
 
 
 def prompt_format_examples_0516(prompt_format, question, options):
+    if prompt_format >= 1000:
+        ins_format = prompt_format
+    else:
+        ins_format = -1
     choices = "ABCDEFGHIJ"
     # 决定是否Question:与question是否放在同一行
-    if prompt_format % 4 == 0:
+    if prompt_format % 4 == 0 or ins_format in [1000, 1001, 1002, 1003]:
         prompt = "Question:\n"
     elif prompt_format % 4 == 1:
         prompt = "Question: "
@@ -44,7 +48,7 @@ def prompt_format_examples_0516(prompt_format, question, options):
     prompt += question
     prompt_format = prompt_format // 4
     # option_prefix
-    if prompt_format % 3 == 0:
+    if prompt_format % 3 == 0 or ins_format in [1000, 1001, 1002, 1003]:
         option_prefix_1 = ""
         option_prefix_2 = ". "
     elif prompt_format % 3 == 1:
@@ -57,11 +61,11 @@ def prompt_format_examples_0516(prompt_format, question, options):
 
     prompt_format = prompt_format // 3
     # option_postfix
-    if prompt_format % 3 == 0:
-        option_postfix = ", "
-    elif prompt_format % 3 == 1:
+
+    if prompt_format % 3 == 1 or ins_format in [1000, 1001, 1002, 1003]:
         option_postfix = "\n"
-    # elif prompt_format % 3 == 2:
+    elif prompt_format % 3 == 0:
+        option_postfix = ", "
     else:
         option_postfix = " "
 
@@ -75,7 +79,16 @@ def prompt_format_examples_0516(prompt_format, question, options):
         prompt += f"{option_prefix_1}{choices[i]}{option_prefix_2}{options[i]}{option_postfix}"
 
     prompt += "\n"
-    if prompt_format % 6 == 0:
+    if ins_format == 1000:
+        answer_prefix = "Answer: "
+    elif ins_format == 1001:
+        answer_prefix = "Your choice: "
+    elif ins_format == 1002:
+        answer_prefix = "The Best Choice: "
+    elif ins_format == 1003:
+        answer_prefix = "The most likely option is "
+    # normal
+    elif prompt_format % 6 == 0:
         answer_prefix = "Answer: "
     elif prompt_format % 6 == 1:
         answer_prefix = "**Answer**:"
