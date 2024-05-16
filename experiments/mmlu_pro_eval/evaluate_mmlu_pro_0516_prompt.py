@@ -155,7 +155,9 @@ def load_model():
                                                   padding_side="right",
                                                   use_fast=False,
                                                   trust_remote_code=True)
-        model = AutoModelForCausalLM.from_pretrained(args.model, device_map="auto", torch_dtype=torch.bfloat16)
+        model = AutoModelForCausalLM.from_pretrained(args.model, device_map="auto",
+                                                     torch_dtype=torch.bfloat16,
+                                                     trust_remote_code=True)
         print("length of {} tokenizer".format(args.model), len(tokenizer))
     return model, tokenizer
 
