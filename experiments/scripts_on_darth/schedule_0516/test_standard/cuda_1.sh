@@ -4,7 +4,7 @@
 ntrain=5
 examples_start_index=0
 prompt_type=2
-prompt_format=336
+prompt_format=444
 ngpu=1
 data_dir="../../data/ori_mmlu_data_json"
 data_dir_list=(
@@ -15,7 +15,7 @@ save_dir="../eval_result_0516_standard"
 scoring_method="symbol_scoring"
 # scoring_method="hybrid_scoring"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
-model="/ML-A800/models/Yi-6b-Chat"
+model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 selected_subjects="all"
 global_record_file="../result_record/eval_record_collection_0516_standard.csv"
 
