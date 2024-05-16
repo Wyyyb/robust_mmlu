@@ -15,7 +15,7 @@ save_dir="../eval_result_0516_prompt"
 scoring_method="symbol_scoring"
 # scoring_method="hybrid_scoring"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
-model="/ML-A800/models/Mistral-7B-Instruct-v0.2"
+model="mistralai/Mistral-7B-Instruct-v0.2"
 selected_subjects="all"
 global_record_file="../result_record/eval_record_collection_0516_prompt.csv"
 

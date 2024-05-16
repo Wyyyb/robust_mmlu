@@ -15,7 +15,7 @@ save_dir="../eval_result_0516_prompt"
 scoring_method="symbol_scoring"
 # scoring_method="hybrid_scoring"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
-model="/ML-A800/models/Yi-6b-Chat"
+model="01-ai/Yi-6b-Chat"
 selected_subjects="all"
 global_record_file="../result_record/eval_record_collection_0516_prompt.csv"
 

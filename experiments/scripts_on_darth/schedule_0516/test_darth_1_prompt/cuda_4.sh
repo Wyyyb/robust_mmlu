@@ -15,7 +15,7 @@ save_dir="../eval_result_0516_prompt"
 scoring_method="symbol_scoring"
 # scoring_method="hybrid_scoring"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
-model="/ML-A800/models/Meta-Llama-3-8B"
+model="/mnt/tjena/shared/Meta-Llama-3-8B"
 selected_subjects="all"
 global_record_file="../result_record/eval_record_collection_0516_prompt.csv"
 
