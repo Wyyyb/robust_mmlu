@@ -13,7 +13,7 @@ global_record_file="../result_record/eval_record_collection_0516_eval.csv"
 scoring_method="CoT"
 # model="/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
 # model="01-ai/Yi-34B"
-model="/ML-A800/models/Qwen1.5-110B-Chat-AWQ"
+model="/ML-A800/models/c4ai-command-r-v01"
 selected_subjects="all"
 gpu_util="0.7"
 batch_size=2048
@@ -36,8 +36,7 @@ python evaluate_mmlu_pro_cot_0513.py \
                  --global_record_file $global_record_file \
                  --batch_size $batch_size
 
-model="/ML-A800/models/c4ai-command-r-v01"
-
+model="/ML-A800/models/Qwen1.5-72B"
 python evaluate_mmlu_pro_cot_0513.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
@@ -54,6 +53,23 @@ python evaluate_mmlu_pro_cot_0513.py \
                  --batch_size $batch_size
 
 model="/ML-A800/models/Qwen1.5-72B-Chat"
+
+python evaluate_mmlu_pro_cot_0513.py \
+                 --ntrain $ntrain \
+                 --examples_start_index $examples_start_index \
+                 --prompt_type $prompt_type \
+                 --prompt_format $prompt_format \
+                 --selected_subjects $selected_subjects \
+                 --ngpu $ngpu \
+                 --gpu_util $gpu_util \
+                 --data_dir $data_dir \
+                 --save_dir $save_dir \
+                 --scoring_method $scoring_method \
+                 --model $model \
+                 --global_record_file $global_record_file \
+                 --batch_size $batch_size
+
+model="/ML-A800/models/Qwen1.5-110B-Chat-AWQ"
 python evaluate_mmlu_pro_cot_0513.py \
                  --ntrain $ntrain \
                  --examples_start_index $examples_start_index \
@@ -87,21 +103,7 @@ python evaluate_mmlu_pro_cot_0513.py \
                  --batch_size $batch_size
 
 
-model="/ML-A800/models/Qwen1.5-72B"
-python evaluate_mmlu_pro_cot_0513.py \
-                 --ntrain $ntrain \
-                 --examples_start_index $examples_start_index \
-                 --prompt_type $prompt_type \
-                 --prompt_format $prompt_format \
-                 --selected_subjects $selected_subjects \
-                 --ngpu $ngpu \
-                 --gpu_util $gpu_util \
-                 --data_dir $data_dir \
-                 --save_dir $save_dir \
-                 --scoring_method $scoring_method \
-                 --model $model \
-                 --global_record_file $global_record_file \
-                 --batch_size $batch_size
+
 
 
 
