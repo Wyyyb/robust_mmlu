@@ -1,7 +1,8 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # 模型名称
-model_name = "meta-llama/Meta-Llama-3-70B"
+# model_name = "meta-llama/Meta-Llama-3-70B"
+model_name = "Qwen/Qwen1.5-110B"
 
 # 保存模型的路径
 save_directory = "/ML-A100/team/mm/zhangge/"
