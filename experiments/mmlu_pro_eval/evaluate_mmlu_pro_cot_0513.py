@@ -126,7 +126,7 @@ def load_model():
     print("checkpoint 1")
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
-        llm = LLM(model=args.model, gpu_memory_utilization=0.8)
+        llm = LLM(model=args.model, gpu_memory_utilization=float(args.gpu_util), tensor_parallel_size=args.ngpu)
         print("checkpoint 2")
         sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                          stop=["Question:"])
@@ -232,7 +232,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
     print("load exists result length", len(res))
     global choices
     logging.info("evaluating " + subject)
-    batch_size = 64
+    batch_size = args.batch_size
     inference_batches = []
     label_batches = []
     in_batch_index = []
@@ -256,7 +256,7 @@ def eval_cot(subject, model, tokenizer, dev_df, test_df, output_path, exists_res
             # logging.info("length of input tokens: " + str(length))
             if length < 2048 - 256:
                 prompt_length_ok = True
-            logging.info("using examples number:" + str(k))
+            # logging.info("using examples number:" + str(k))
             k -= 1
         # if i % 10 == 0:
         #     logging.info("prompt:\n" + prompt)
@@ -292,9 +292,15 @@ def save_res(res, output_path):
     with open(output_path, "w") as fo:
         fo.write(json.dumps(res))
     for each in res:
-        if each["pred"] is None:
-            continue
-        if each["pred"] == each["answer"]:
+        if not each["pred"]:
+            random.seed(12345)
+            x = random.randint(0, len(each["options"]) - 1)
+            if x == each["answer_index"]:
+                corr += 1
+                print("random hit.")
+            else:
+                wrong += 1
+        elif each["pred"] == each["answer"]:
             corr += 1
         else:
             wrong += 1
@@ -467,6 +473,8 @@ def main():
     print("selected subjects:\n" + "\n".join(selected_subjects))
     sta_dict = {}
     selected_subjects = sorted(selected_subjects)
+    with open(os.path.join(summary_path), 'a') as f:
+        f.write("\n------category level sta------\n")
     for subject in selected_subjects:
         if subject not in sta_dict:
             sta_dict[subject] = {"corr": 0.0, "wrong": 0.0, "accu": 0.0}
@@ -488,17 +496,16 @@ def main():
         sta_dict[subject]["corr"] = corr_count
         sta_dict[subject]["wrong"] = wrong_count
         sta_dict[subject]["accu"] = acc
+        with open(os.path.join(summary_path), 'a') as f:
+            f.write("Average accuracy {:.4f} - {}\n".format(sta_dict[subject]["accu"], subject))
     total_corr, total_wrong = 0.0, 0.0
     for k, v in sta_dict.items():
         total_corr += v["corr"]
         total_wrong += v["wrong"]
-    total_accu = total_corr / (total_corr + total_wrong)
+    total_accu = total_corr / (total_corr + total_wrong + 0.000001)
     sta_dict["total"] = {"corr": total_corr, "wrong": total_wrong, "accu": total_accu}
 
     with open(os.path.join(summary_path), 'a') as f:
-        f.write("\n------category level sta------\n")
-        for subject in selected_subjects:
-            f.write("Average accuracy {:.4f} - {}\n".format(sta_dict[subject]["accu"], subject))
         f.write("\n------average acc sta------\n")
         weighted_acc = total_accu
         f.write("Average accuracy: {:.4f}\n".format(weighted_acc))
@@ -550,16 +557,20 @@ if __name__ == "__main__":
     parser.add_argument("--use_rare_symbol", "-r", type=lambda x: bool(strtobool(x)), default=False)
     parser.add_argument("--fixed_question_answer", "-q", type=int, default=-1)
     parser.add_argument("--scoring_method", "-sm", type=str, default="symbol_scoring")
+    parser.add_argument("--global_record_file", "-grf", type=str,
+                        default="../result_record/eval_record_collection_0514.csv")
+    parser.add_argument("--gpu_util", "-gu", type=str, default="0.8")
+    parser.add_argument("--batch_size", "-bs", type=int, default=64)
     parser.add_argument(
         "--model",
         "-m",
         type=str,
         default="/ML-A100/team/mm/zhangge/Llama-2-7b-hf",
     )
-    global_record_file = "../result_record/eval_record_collection_0513.csv"
     os.makedirs("../result_record", exist_ok=True)
     args = parser.parse_args()
     # cot_lib = load_cot_lib()
+    global_record_file = args.global_record_file
     save_result_dir = os.path.join(
         args.save_dir, "/".join(args_generate_path(args))
     )

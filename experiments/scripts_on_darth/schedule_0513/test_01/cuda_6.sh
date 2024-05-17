@@ -14,7 +14,7 @@ model="/ML-A100/team/mm/zhangge/Llama-2-13b-hf"
 selected_subjects="all"
 
 cd ../../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=6
+export CUDA_VISIBLE_DEVICES=3
 
 for prompt_type in $(seq 0 9); do
     echo "Running with prompt_type=${prompt_type} and ntrain=${ntrain}"

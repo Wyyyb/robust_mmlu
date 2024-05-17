@@ -10,7 +10,7 @@ def test_vllm():
     with open("cot.txt", "r") as fi:
         for line in fi.readlines():
             prompt += line
-    model_name = "meta-llama/Llama-2-7b-hf"
+    model_name = "/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
     stop_words = "Question:"
     stop_tokens = tokenizer.encode(stop_words, add_special_tokens=False)
@@ -35,7 +35,7 @@ def test_vllm():
 
 def test_llama():
 
-    model_name = "meta-llama/Llama-2-7b-hf"
+    model_name = "/ML-A100/team/mm/zhangge/Llama-2-7b-hf"
     prompt = ""
     with open("cot.txt", "r") as fi:
         for line in fi.readlines():

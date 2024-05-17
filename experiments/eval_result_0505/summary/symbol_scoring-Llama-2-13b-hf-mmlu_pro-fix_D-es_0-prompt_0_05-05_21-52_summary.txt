@@ -1,8 +1,0 @@
-Average accuracy 0.0614 - biology.json
-Average accuracy 0.0405 - business.json
-Average accuracy 0.0457 - chemistry.json
-Average accuracy 0.0823 - computer science.json
-Average accuracy 0.0291 - culture.json
-Average accuracy 0.0643 - economics.json
-Average accuracy 0.0445 - engineering.json
-Average accuracy 0.1129 - geography.json

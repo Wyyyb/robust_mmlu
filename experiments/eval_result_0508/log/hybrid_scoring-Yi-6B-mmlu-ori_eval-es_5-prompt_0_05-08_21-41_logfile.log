@@ -1,5 +1,0 @@
-2024-05-08 21:41:34,479 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
-2024-05-08 21:41:34,799 DEBUG https://hf-mirror.com:443 "HEAD /01-ai/Yi-6B/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
-2024-05-08 21:41:35,200 DEBUG https://hf-mirror.com:443 "HEAD /01-ai/Yi-6B/resolve/main/config.json HTTP/1.1" 200 0
-2024-05-08 21:41:36,513 INFO We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
-2024-05-08 21:41:43,448 DEBUG https://hf-mirror.com:443 "HEAD /01-ai/Yi-6B/resolve/main/generation_config.json HTTP/1.1" 200 0

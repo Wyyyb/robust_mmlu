@@ -1,0 +1,2 @@
+CoT,Llama-2-13b-hf,mmlu_pro,es_0,3_shot,prompt_0,format_0,all,05-13_18-59,0.2644263082093135
+CoT,Llama-2-13b-hf,mmlu_pro,es_0,5_shot,prompt_1,format_0,all,05-13_18-59,0.2647087237948024

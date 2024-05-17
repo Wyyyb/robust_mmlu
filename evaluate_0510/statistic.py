@@ -56,8 +56,8 @@ def sta(input_dir, pad=False):
 
 
 if __name__ == "__main__":
-    # cot_result_dir = "../experiments/eval_result_0510_gpt_4_cot"
-    wo_cot_result_dir = "../experiments/eval_result_0510_deepseek_api_nocot"
+    cot_result_dir = "../experiments/eval_result_0510_gpt_4_cot"
+    wo_cot_result_dir = "../experiments/eval_result_0510_gpt_4"
     # sta(cot_result_dir)
     sta(wo_cot_result_dir)
 

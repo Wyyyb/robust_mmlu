@@ -1,0 +1,979 @@
+2024-05-13 18:44:20,275 INFO selected subjects:
+business
+law
+psychology
+biology
+chemistry
+history
+other
+health
+economics
+math
+physics
+computer science
+philosophy
+engineering
+2024-05-13 18:44:20,277 INFO evaluating biology
+2024-05-13 18:44:20,287 INFO using examples number:5
+2024-05-13 18:44:20,291 INFO using examples number:5
+2024-05-13 18:44:20,294 INFO using examples number:5
+2024-05-13 18:44:20,297 INFO using examples number:5
+2024-05-13 18:44:20,300 INFO using examples number:5
+2024-05-13 18:44:20,303 INFO using examples number:5
+2024-05-13 18:44:20,306 INFO using examples number:5
+2024-05-13 18:44:20,309 INFO using examples number:5
+2024-05-13 18:44:20,312 INFO using examples number:5
+2024-05-13 18:44:20,315 INFO using examples number:5
+2024-05-13 18:44:20,318 INFO using examples number:5
+2024-05-13 18:44:20,321 INFO using examples number:5
+2024-05-13 18:44:20,324 INFO using examples number:5
+2024-05-13 18:44:20,327 INFO using examples number:5
+2024-05-13 18:44:20,330 INFO using examples number:5
+2024-05-13 18:44:20,333 INFO using examples number:5
+2024-05-13 18:44:20,336 INFO using examples number:5
+2024-05-13 18:44:20,339 INFO using examples number:5
+2024-05-13 18:44:20,342 INFO using examples number:5
+2024-05-13 18:44:20,345 INFO using examples number:5
+2024-05-13 18:44:20,349 INFO using examples number:5
+2024-05-13 18:44:20,352 INFO using examples number:5
+2024-05-13 18:44:20,355 INFO using examples number:5
+2024-05-13 18:44:20,358 INFO using examples number:5
+2024-05-13 18:44:20,361 INFO using examples number:5
+2024-05-13 18:44:20,365 INFO using examples number:5
+2024-05-13 18:44:20,368 INFO using examples number:5
+2024-05-13 18:44:20,371 INFO using examples number:5
+2024-05-13 18:44:20,375 INFO using examples number:5
+2024-05-13 18:44:20,378 INFO using examples number:4
+2024-05-13 18:44:20,381 INFO using examples number:3
+2024-05-13 18:44:20,384 INFO using examples number:5
+2024-05-13 18:44:20,388 INFO using examples number:4
+2024-05-13 18:44:20,390 INFO using examples number:3
+2024-05-13 18:44:20,393 INFO using examples number:2
+2024-05-13 18:44:20,396 INFO using examples number:5
+2024-05-13 18:44:20,399 INFO using examples number:5
+2024-05-13 18:44:20,402 INFO using examples number:5
+2024-05-13 18:44:20,405 INFO using examples number:5
+2024-05-13 18:44:20,409 INFO using examples number:5
+2024-05-13 18:44:20,412 INFO using examples number:4
+2024-05-13 18:44:20,415 INFO using examples number:5
+2024-05-13 18:44:20,418 INFO using examples number:5
+2024-05-13 18:44:20,421 INFO using examples number:5
+2024-05-13 18:44:20,424 INFO using examples number:5
+2024-05-13 18:44:20,428 INFO using examples number:5
+2024-05-13 18:44:20,431 INFO using examples number:5
+2024-05-13 18:44:20,434 INFO using examples number:5
+2024-05-13 18:44:20,437 INFO using examples number:5
+2024-05-13 18:44:20,440 INFO using examples number:5
+2024-05-13 18:44:20,443 INFO using examples number:5
+2024-05-13 18:44:20,447 INFO using examples number:5
+2024-05-13 18:44:20,450 INFO using examples number:5
+2024-05-13 18:44:20,453 INFO using examples number:5
+2024-05-13 18:44:20,456 INFO using examples number:5
+2024-05-13 18:44:20,459 INFO using examples number:5
+2024-05-13 18:44:20,462 INFO using examples number:5
+2024-05-13 18:44:20,465 INFO using examples number:5
+2024-05-13 18:44:20,468 INFO using examples number:5
+2024-05-13 18:44:20,471 INFO using examples number:5
+2024-05-13 18:44:20,474 INFO using examples number:5
+2024-05-13 18:44:20,477 INFO using examples number:5
+2024-05-13 18:44:20,480 INFO using examples number:5
+2024-05-13 18:44:20,483 INFO using examples number:5
+2024-05-13 18:44:20,486 INFO using examples number:5
+2024-05-13 18:44:20,489 INFO using examples number:5
+2024-05-13 18:44:20,492 INFO using examples number:5
+2024-05-13 18:44:20,495 INFO using examples number:5
+2024-05-13 18:44:20,498 INFO using examples number:5
+2024-05-13 18:44:20,501 INFO using examples number:5
+2024-05-13 18:44:20,504 INFO using examples number:5
+2024-05-13 18:44:20,508 INFO using examples number:5
+2024-05-13 18:44:20,511 INFO using examples number:5
+2024-05-13 18:44:20,515 INFO using examples number:5
+2024-05-13 18:44:20,518 INFO using examples number:5
+2024-05-13 18:44:20,521 INFO using examples number:5
+2024-05-13 18:44:20,525 INFO using examples number:5
+2024-05-13 18:44:20,528 INFO using examples number:4
+2024-05-13 18:44:20,532 INFO using examples number:5
+2024-05-13 18:44:20,535 INFO using examples number:5
+2024-05-13 18:44:20,538 INFO using examples number:5
+2024-05-13 18:44:20,542 INFO using examples number:5
+2024-05-13 18:44:20,544 INFO using examples number:5
+2024-05-13 18:44:20,548 INFO using examples number:5
+2024-05-13 18:44:20,551 INFO using examples number:5
+2024-05-13 18:44:20,555 INFO using examples number:4
+2024-05-13 18:44:20,559 INFO using examples number:5
+2024-05-13 18:44:20,562 INFO using examples number:5
+2024-05-13 18:44:20,565 INFO using examples number:4
+2024-05-13 18:44:20,569 INFO using examples number:5
+2024-05-13 18:44:20,572 INFO using examples number:5
+2024-05-13 18:44:20,575 INFO using examples number:5
+2024-05-13 18:44:20,579 INFO using examples number:5
+2024-05-13 18:44:20,583 INFO using examples number:4
+2024-05-13 18:44:20,586 INFO using examples number:5
+2024-05-13 18:44:20,590 INFO using examples number:5
+2024-05-13 18:44:20,593 INFO using examples number:4
+2024-05-13 18:44:20,597 INFO using examples number:3
+2024-05-13 18:44:20,600 INFO using examples number:5
+2024-05-13 18:44:20,603 INFO using examples number:5
+2024-05-13 18:44:20,606 INFO using examples number:5
+2024-05-13 18:44:20,609 INFO using examples number:5
+2024-05-13 18:44:20,613 INFO using examples number:5
+2024-05-13 18:44:20,616 INFO using examples number:5
+2024-05-13 18:44:20,619 INFO using examples number:5
+2024-05-13 18:44:20,622 INFO using examples number:5
+2024-05-13 18:44:20,625 INFO using examples number:5
+2024-05-13 18:44:20,629 INFO using examples number:5
+2024-05-13 18:44:20,632 INFO using examples number:5
+2024-05-13 18:44:20,635 INFO using examples number:5
+2024-05-13 18:44:20,638 INFO using examples number:5
+2024-05-13 18:44:20,641 INFO using examples number:5
+2024-05-13 18:44:20,645 INFO using examples number:5
+2024-05-13 18:44:20,648 INFO using examples number:5
+2024-05-13 18:44:20,651 INFO using examples number:5
+2024-05-13 18:44:20,654 INFO using examples number:5
+2024-05-13 18:44:20,657 INFO using examples number:5
+2024-05-13 18:44:20,661 INFO using examples number:5
+2024-05-13 18:44:20,664 INFO using examples number:5
+2024-05-13 18:44:20,667 INFO using examples number:5
+2024-05-13 18:44:20,671 INFO using examples number:5
+2024-05-13 18:44:20,674 INFO using examples number:4
+2024-05-13 18:44:20,677 INFO using examples number:5
+2024-05-13 18:44:20,680 INFO using examples number:5
+2024-05-13 18:44:20,684 INFO using examples number:5
+2024-05-13 18:44:20,687 INFO using examples number:5
+2024-05-13 18:44:20,690 INFO using examples number:5
+2024-05-13 18:44:20,693 INFO using examples number:5
+2024-05-13 18:44:20,697 INFO using examples number:5
+2024-05-13 18:44:20,700 INFO using examples number:5
+2024-05-13 18:44:20,703 INFO using examples number:5
+2024-05-13 18:44:20,706 INFO using examples number:5
+2024-05-13 18:44:20,709 INFO using examples number:5
+2024-05-13 18:44:20,713 INFO using examples number:5
+2024-05-13 18:44:20,715 INFO using examples number:5
+2024-05-13 18:44:20,719 INFO using examples number:5
+2024-05-13 18:44:20,722 INFO using examples number:5
+2024-05-13 18:44:20,725 INFO using examples number:5
+2024-05-13 18:44:20,728 INFO using examples number:5
+2024-05-13 18:44:20,731 INFO using examples number:5
+2024-05-13 18:44:20,733 INFO using examples number:5
+2024-05-13 18:44:20,736 INFO using examples number:5
+2024-05-13 18:44:20,740 INFO using examples number:5
+2024-05-13 18:44:20,743 INFO using examples number:5
+2024-05-13 18:44:20,746 INFO using examples number:4
+2024-05-13 18:44:20,749 INFO using examples number:5
+2024-05-13 18:44:20,752 INFO using examples number:5
+2024-05-13 18:44:20,755 INFO using examples number:5
+2024-05-13 18:44:20,759 INFO using examples number:5
+2024-05-13 18:44:20,762 INFO using examples number:5
+2024-05-13 18:44:20,765 INFO using examples number:5
+2024-05-13 18:44:20,768 INFO using examples number:5
+2024-05-13 18:44:20,771 INFO using examples number:5
+2024-05-13 18:44:20,776 INFO using examples number:5
+2024-05-13 18:44:20,779 INFO using examples number:4
+2024-05-13 18:44:20,783 INFO using examples number:3
+2024-05-13 18:44:20,786 INFO using examples number:2
+2024-05-13 18:44:20,790 INFO using examples number:5
+2024-05-13 18:44:20,794 INFO using examples number:5
+2024-05-13 18:44:20,798 INFO using examples number:5
+2024-05-13 18:44:20,802 INFO using examples number:4
+2024-05-13 18:44:20,807 INFO using examples number:3
+2024-05-13 18:44:20,811 INFO using examples number:5
+2024-05-13 18:44:20,815 INFO using examples number:5
+2024-05-13 18:44:20,818 INFO using examples number:5
+2024-05-13 18:44:20,822 INFO using examples number:5
+2024-05-13 18:44:20,826 INFO using examples number:5
+2024-05-13 18:44:20,829 INFO using examples number:5
+2024-05-13 18:44:20,833 INFO using examples number:5
+2024-05-13 18:44:20,837 INFO using examples number:5
+2024-05-13 18:44:20,842 INFO using examples number:5
+2024-05-13 18:44:20,846 INFO using examples number:5
+2024-05-13 18:44:20,851 INFO using examples number:4
+2024-05-13 18:44:20,855 INFO using examples number:5
+2024-05-13 18:44:20,859 INFO using examples number:4
+2024-05-13 18:44:20,862 INFO using examples number:3
+2024-05-13 18:44:20,866 INFO using examples number:5
+2024-05-13 18:44:20,870 INFO using examples number:5
+2024-05-13 18:44:20,876 INFO using examples number:5
+2024-05-13 18:44:20,879 INFO using examples number:5
+2024-05-13 18:44:20,882 INFO using examples number:5
+2024-05-13 18:44:20,886 INFO using examples number:5
+2024-05-13 18:44:20,889 INFO using examples number:5
+2024-05-13 18:44:20,892 INFO using examples number:5
+2024-05-13 18:44:20,895 INFO using examples number:5
+2024-05-13 18:44:20,898 INFO using examples number:5
+2024-05-13 18:44:20,902 INFO using examples number:5
+2024-05-13 18:44:20,905 INFO using examples number:5
+2024-05-13 18:44:20,908 INFO using examples number:5
+2024-05-13 18:44:20,911 INFO using examples number:5
+2024-05-13 18:44:20,915 INFO using examples number:5
+2024-05-13 18:44:20,918 INFO using examples number:5
+2024-05-13 18:44:20,921 INFO using examples number:5
+2024-05-13 18:44:20,925 INFO using examples number:5
+2024-05-13 18:44:20,928 INFO using examples number:5
+2024-05-13 18:44:20,931 INFO using examples number:5
+2024-05-13 18:44:20,935 INFO using examples number:5
+2024-05-13 18:44:20,938 INFO using examples number:5
+2024-05-13 18:44:20,941 INFO using examples number:5
+2024-05-13 18:44:20,944 INFO using examples number:5
+2024-05-13 18:44:20,947 INFO using examples number:5
+2024-05-13 18:44:20,951 INFO using examples number:5
+2024-05-13 18:44:20,954 INFO using examples number:5
+2024-05-13 18:44:20,957 INFO using examples number:5
+2024-05-13 18:44:20,960 INFO using examples number:5
+2024-05-13 18:44:20,963 INFO using examples number:5
+2024-05-13 18:44:20,966 INFO using examples number:5
+2024-05-13 18:44:20,969 INFO using examples number:5
+2024-05-13 18:44:20,972 INFO using examples number:5
+2024-05-13 18:44:20,975 INFO using examples number:5
+2024-05-13 18:44:20,978 INFO using examples number:5
+2024-05-13 18:44:20,981 INFO using examples number:5
+2024-05-13 18:44:20,984 INFO using examples number:5
+2024-05-13 18:44:20,988 INFO using examples number:5
+2024-05-13 18:44:20,991 INFO using examples number:5
+2024-05-13 18:44:20,994 INFO using examples number:5
+2024-05-13 18:44:20,997 INFO using examples number:5
+2024-05-13 18:44:21,000 INFO using examples number:5
+2024-05-13 18:44:21,003 INFO using examples number:5
+2024-05-13 18:44:21,007 INFO using examples number:5
+2024-05-13 18:44:21,010 INFO using examples number:5
+2024-05-13 18:44:21,013 INFO using examples number:5
+2024-05-13 18:44:21,016 INFO using examples number:4
+2024-05-13 18:44:21,019 INFO using examples number:5
+2024-05-13 18:44:21,022 INFO using examples number:5
+2024-05-13 18:44:21,026 INFO using examples number:5
+2024-05-13 18:44:21,029 INFO using examples number:5
+2024-05-13 18:44:21,032 INFO using examples number:5
+2024-05-13 18:44:21,036 INFO using examples number:5
+2024-05-13 18:44:21,039 INFO using examples number:5
+2024-05-13 18:44:21,042 INFO using examples number:5
+2024-05-13 18:44:21,045 INFO using examples number:5
+2024-05-13 18:44:21,049 INFO using examples number:5
+2024-05-13 18:44:21,052 INFO using examples number:5
+2024-05-13 18:44:21,055 INFO using examples number:5
+2024-05-13 18:44:21,058 INFO using examples number:5
+2024-05-13 18:44:21,062 INFO using examples number:5
+2024-05-13 18:44:21,065 INFO using examples number:5
+2024-05-13 18:44:21,069 INFO using examples number:4
+2024-05-13 18:44:21,072 INFO using examples number:5
+2024-05-13 18:44:21,075 INFO using examples number:5
+2024-05-13 18:44:21,078 INFO using examples number:5
+2024-05-13 18:44:21,081 INFO using examples number:5
+2024-05-13 18:44:21,084 INFO using examples number:5
+2024-05-13 18:44:21,087 INFO using examples number:5
+2024-05-13 18:44:21,090 INFO using examples number:5
+2024-05-13 18:44:21,093 INFO using examples number:5
+2024-05-13 18:44:21,096 INFO using examples number:5
+2024-05-13 18:44:21,100 INFO using examples number:5
+2024-05-13 18:44:21,103 INFO using examples number:5
+2024-05-13 18:44:21,107 INFO using examples number:4
+2024-05-13 18:44:21,111 INFO using examples number:5
+2024-05-13 18:44:21,114 INFO using examples number:4
+2024-05-13 18:44:21,118 INFO using examples number:5
+2024-05-13 18:44:21,121 INFO using examples number:5
+2024-05-13 18:44:21,124 INFO using examples number:5
+2024-05-13 18:44:21,127 INFO using examples number:5
+2024-05-13 18:44:21,131 INFO using examples number:5
+2024-05-13 18:44:21,134 INFO using examples number:5
+2024-05-13 18:44:21,137 INFO using examples number:5
+2024-05-13 18:44:21,141 INFO using examples number:5
+2024-05-13 18:44:21,144 INFO using examples number:5
+2024-05-13 18:44:21,147 INFO using examples number:5
+2024-05-13 18:44:21,150 INFO using examples number:5
+2024-05-13 18:44:21,154 INFO using examples number:5
+2024-05-13 18:44:21,157 INFO using examples number:5
+2024-05-13 18:44:21,160 INFO using examples number:5
+2024-05-13 18:44:21,163 INFO using examples number:5
+2024-05-13 18:44:21,167 INFO using examples number:5
+2024-05-13 18:44:21,170 INFO using examples number:5
+2024-05-13 18:44:21,173 INFO using examples number:5
+2024-05-13 18:44:21,176 INFO using examples number:5
+2024-05-13 18:44:21,179 INFO using examples number:5
+2024-05-13 18:44:21,182 INFO using examples number:5
+2024-05-13 18:44:21,185 INFO using examples number:5
+2024-05-13 18:44:21,188 INFO using examples number:5
+2024-05-13 18:44:21,191 INFO using examples number:5
+2024-05-13 18:44:21,194 INFO using examples number:5
+2024-05-13 18:44:21,197 INFO using examples number:5
+2024-05-13 18:44:21,200 INFO using examples number:5
+2024-05-13 18:44:21,203 INFO using examples number:5
+2024-05-13 18:44:21,206 INFO using examples number:5
+2024-05-13 18:44:21,209 INFO using examples number:5
+2024-05-13 18:44:21,212 INFO using examples number:5
+2024-05-13 18:44:21,215 INFO using examples number:5
+2024-05-13 18:44:21,218 INFO using examples number:5
+2024-05-13 18:44:21,222 INFO using examples number:5
+2024-05-13 18:44:21,225 INFO using examples number:5
+2024-05-13 18:44:21,228 INFO using examples number:5
+2024-05-13 18:44:21,232 INFO using examples number:5
+2024-05-13 18:44:21,235 INFO using examples number:5
+2024-05-13 18:44:21,238 INFO using examples number:5
+2024-05-13 18:44:21,241 INFO using examples number:5
+2024-05-13 18:44:21,244 INFO using examples number:5
+2024-05-13 18:44:21,248 INFO using examples number:5
+2024-05-13 18:44:21,251 INFO using examples number:5
+2024-05-13 18:44:21,254 INFO using examples number:5
+2024-05-13 18:44:21,257 INFO using examples number:5
+2024-05-13 18:44:21,261 INFO using examples number:5
+2024-05-13 18:44:21,264 INFO using examples number:4
+2024-05-13 18:44:21,267 INFO using examples number:5
+2024-05-13 18:44:21,271 INFO using examples number:5
+2024-05-13 18:44:21,274 INFO using examples number:5
+2024-05-13 18:44:21,277 INFO using examples number:5
+2024-05-13 18:44:21,280 INFO using examples number:4
+2024-05-13 18:44:21,283 INFO using examples number:5
+2024-05-13 18:44:21,286 INFO using examples number:5
+2024-05-13 18:44:21,290 INFO using examples number:5
+2024-05-13 18:44:21,293 INFO using examples number:5
+2024-05-13 18:44:21,296 INFO using examples number:5
+2024-05-13 18:44:21,299 INFO using examples number:5
+2024-05-13 18:44:21,303 INFO using examples number:5
+2024-05-13 18:44:21,307 DEBUG Starting new HTTPS connection (1): stats.vllm.ai:443
+2024-05-13 18:44:21,307 INFO using examples number:5
+2024-05-13 18:44:21,311 INFO using examples number:5
+2024-05-13 18:44:21,314 INFO using examples number:5
+2024-05-13 18:44:21,317 INFO using examples number:5
+2024-05-13 18:44:21,320 INFO using examples number:5
+2024-05-13 18:44:21,323 INFO using examples number:5
+2024-05-13 18:44:21,327 INFO using examples number:5
+2024-05-13 18:44:21,330 INFO using examples number:5
+2024-05-13 18:44:21,333 INFO using examples number:5
+2024-05-13 18:44:21,337 INFO using examples number:5
+2024-05-13 18:44:21,340 INFO using examples number:5
+2024-05-13 18:44:21,344 INFO using examples number:5
+2024-05-13 18:44:21,347 INFO using examples number:5
+2024-05-13 18:44:21,350 INFO using examples number:5
+2024-05-13 18:44:21,353 INFO using examples number:5
+2024-05-13 18:44:21,356 INFO using examples number:5
+2024-05-13 18:44:21,360 INFO using examples number:5
+2024-05-13 18:44:21,363 INFO using examples number:5
+2024-05-13 18:44:21,366 INFO using examples number:5
+2024-05-13 18:44:21,369 INFO using examples number:5
+2024-05-13 18:44:21,372 INFO using examples number:5
+2024-05-13 18:44:21,376 INFO using examples number:5
+2024-05-13 18:44:21,379 INFO using examples number:5
+2024-05-13 18:44:21,382 INFO using examples number:5
+2024-05-13 18:44:21,385 INFO using examples number:5
+2024-05-13 18:44:21,388 INFO using examples number:5
+2024-05-13 18:44:21,391 INFO using examples number:5
+2024-05-13 18:44:21,394 INFO using examples number:5
+2024-05-13 18:44:21,397 INFO using examples number:5
+2024-05-13 18:44:21,401 INFO using examples number:5
+2024-05-13 18:44:21,404 INFO using examples number:5
+2024-05-13 18:44:21,407 INFO using examples number:5
+2024-05-13 18:44:21,410 INFO using examples number:5
+2024-05-13 18:44:21,413 INFO using examples number:5
+2024-05-13 18:44:21,416 INFO using examples number:5
+2024-05-13 18:44:21,419 INFO using examples number:5
+2024-05-13 18:44:21,422 INFO using examples number:5
+2024-05-13 18:44:21,425 INFO using examples number:5
+2024-05-13 18:44:21,429 INFO using examples number:5
+2024-05-13 18:44:21,432 INFO using examples number:4
+2024-05-13 18:44:21,436 INFO using examples number:5
+2024-05-13 18:44:21,439 INFO using examples number:5
+2024-05-13 18:44:21,443 INFO using examples number:5
+2024-05-13 18:44:21,446 INFO using examples number:5
+2024-05-13 18:44:21,449 INFO using examples number:5
+2024-05-13 18:44:21,453 INFO using examples number:4
+2024-05-13 18:44:21,456 INFO using examples number:5
+2024-05-13 18:44:21,459 INFO using examples number:4
+2024-05-13 18:44:21,462 INFO using examples number:3
+2024-05-13 18:44:21,465 INFO using examples number:5
+2024-05-13 18:44:21,469 INFO using examples number:5
+2024-05-13 18:44:21,472 INFO using examples number:5
+2024-05-13 18:44:21,475 INFO using examples number:5
+2024-05-13 18:44:21,479 INFO using examples number:5
+2024-05-13 18:44:21,482 INFO using examples number:5
+2024-05-13 18:44:21,485 INFO using examples number:5
+2024-05-13 18:44:21,488 INFO using examples number:5
+2024-05-13 18:44:21,492 INFO using examples number:5
+2024-05-13 18:44:21,495 INFO using examples number:5
+2024-05-13 18:44:21,498 INFO using examples number:5
+2024-05-13 18:44:21,501 INFO using examples number:5
+2024-05-13 18:44:21,505 INFO using examples number:5
+2024-05-13 18:44:21,508 INFO using examples number:5
+2024-05-13 18:44:21,511 INFO using examples number:5
+2024-05-13 18:44:21,515 INFO using examples number:5
+2024-05-13 18:44:21,518 INFO using examples number:5
+2024-05-13 18:44:21,521 INFO using examples number:5
+2024-05-13 18:44:21,524 INFO using examples number:5
+2024-05-13 18:44:21,528 INFO using examples number:5
+2024-05-13 18:44:21,531 INFO using examples number:5
+2024-05-13 18:44:21,534 INFO using examples number:5
+2024-05-13 18:44:21,537 INFO using examples number:5
+2024-05-13 18:44:21,540 INFO using examples number:5
+2024-05-13 18:44:21,544 INFO using examples number:5
+2024-05-13 18:44:21,547 INFO using examples number:5
+2024-05-13 18:44:21,550 INFO using examples number:5
+2024-05-13 18:44:21,553 INFO using examples number:5
+2024-05-13 18:44:21,556 INFO using examples number:5
+2024-05-13 18:44:21,559 INFO using examples number:5
+2024-05-13 18:44:21,562 INFO using examples number:5
+2024-05-13 18:44:21,565 INFO using examples number:5
+2024-05-13 18:44:21,569 INFO using examples number:5
+2024-05-13 18:44:21,572 INFO using examples number:5
+2024-05-13 18:44:21,575 INFO using examples number:5
+2024-05-13 18:44:21,578 INFO using examples number:5
+2024-05-13 18:44:21,582 INFO using examples number:5
+2024-05-13 18:44:21,585 INFO using examples number:5
+2024-05-13 18:44:21,589 INFO using examples number:5
+2024-05-13 18:44:21,592 INFO using examples number:5
+2024-05-13 18:44:21,596 INFO using examples number:4
+2024-05-13 18:44:21,599 INFO using examples number:5
+2024-05-13 18:44:21,603 INFO using examples number:4
+2024-05-13 18:44:21,606 INFO using examples number:5
+2024-05-13 18:44:21,609 INFO using examples number:5
+2024-05-13 18:44:21,613 INFO using examples number:5
+2024-05-13 18:44:21,616 INFO using examples number:5
+2024-05-13 18:44:21,619 INFO using examples number:5
+2024-05-13 18:44:21,622 INFO using examples number:5
+2024-05-13 18:44:21,625 INFO using examples number:5
+2024-05-13 18:44:21,629 INFO using examples number:5
+2024-05-13 18:44:21,632 INFO using examples number:5
+2024-05-13 18:44:21,635 INFO using examples number:5
+2024-05-13 18:44:21,639 INFO using examples number:5
+2024-05-13 18:44:21,642 INFO using examples number:5
+2024-05-13 18:44:21,645 INFO using examples number:5
+2024-05-13 18:44:21,649 INFO using examples number:5
+2024-05-13 18:44:21,652 INFO using examples number:5
+2024-05-13 18:44:21,655 INFO using examples number:5
+2024-05-13 18:44:21,659 INFO using examples number:5
+2024-05-13 18:44:21,662 INFO using examples number:4
+2024-05-13 18:44:21,665 INFO using examples number:5
+2024-05-13 18:44:21,668 INFO using examples number:5
+2024-05-13 18:44:21,672 INFO using examples number:5
+2024-05-13 18:44:21,675 INFO using examples number:5
+2024-05-13 18:44:21,678 INFO using examples number:5
+2024-05-13 18:44:21,682 INFO using examples number:5
+2024-05-13 18:44:21,685 INFO using examples number:5
+2024-05-13 18:44:21,688 INFO using examples number:5
+2024-05-13 18:44:21,691 INFO using examples number:5
+2024-05-13 18:44:21,694 INFO using examples number:5
+2024-05-13 18:44:21,697 INFO using examples number:5
+2024-05-13 18:44:21,700 INFO using examples number:5
+2024-05-13 18:44:21,703 INFO using examples number:5
+2024-05-13 18:44:21,707 INFO using examples number:5
+2024-05-13 18:44:21,710 INFO using examples number:4
+2024-05-13 18:44:21,713 INFO using examples number:5
+2024-05-13 18:44:21,716 INFO using examples number:5
+2024-05-13 18:44:21,720 INFO using examples number:5
+2024-05-13 18:44:21,723 INFO using examples number:4
+2024-05-13 18:44:21,726 INFO using examples number:5
+2024-05-13 18:44:21,730 INFO using examples number:5
+2024-05-13 18:44:21,733 INFO using examples number:5
+2024-05-13 18:44:21,735 INFO using examples number:5
+2024-05-13 18:44:21,739 INFO using examples number:5
+2024-05-13 18:44:21,742 INFO using examples number:5
+2024-05-13 18:44:21,745 INFO using examples number:5
+2024-05-13 18:44:21,748 INFO using examples number:5
+2024-05-13 18:44:21,751 INFO using examples number:5
+2024-05-13 18:44:21,754 INFO using examples number:5
+2024-05-13 18:44:21,757 INFO using examples number:5
+2024-05-13 18:44:21,760 INFO using examples number:5
+2024-05-13 18:44:21,763 INFO using examples number:5
+2024-05-13 18:44:21,766 INFO using examples number:5
+2024-05-13 18:44:21,769 INFO using examples number:5
+2024-05-13 18:44:21,773 INFO using examples number:5
+2024-05-13 18:44:21,776 INFO using examples number:5
+2024-05-13 18:44:21,780 INFO using examples number:4
+2024-05-13 18:44:21,783 INFO using examples number:5
+2024-05-13 18:44:21,787 INFO using examples number:5
+2024-05-13 18:44:21,790 INFO using examples number:5
+2024-05-13 18:44:21,793 INFO using examples number:5
+2024-05-13 18:44:21,796 INFO using examples number:5
+2024-05-13 18:44:21,800 INFO using examples number:5
+2024-05-13 18:44:21,804 INFO using examples number:5
+2024-05-13 18:44:21,807 INFO using examples number:5
+2024-05-13 18:44:21,810 INFO using examples number:5
+2024-05-13 18:44:21,813 INFO using examples number:5
+2024-05-13 18:44:21,817 INFO using examples number:5
+2024-05-13 18:44:21,820 INFO using examples number:4
+2024-05-13 18:44:21,823 INFO using examples number:3
+2024-05-13 18:44:21,826 INFO using examples number:5
+2024-05-13 18:44:21,830 INFO using examples number:5
+2024-05-13 18:44:21,834 INFO using examples number:5
+2024-05-13 18:44:21,837 INFO using examples number:4
+2024-05-13 18:44:21,841 INFO using examples number:5
+2024-05-13 18:44:21,844 INFO using examples number:5
+2024-05-13 18:44:21,847 INFO using examples number:5
+2024-05-13 18:44:21,850 INFO using examples number:5
+2024-05-13 18:44:21,854 INFO using examples number:5
+2024-05-13 18:44:21,857 INFO using examples number:5
+2024-05-13 18:44:21,860 INFO using examples number:5
+2024-05-13 18:44:21,864 INFO using examples number:5
+2024-05-13 18:44:21,867 INFO using examples number:5
+2024-05-13 18:44:21,870 INFO using examples number:5
+2024-05-13 18:44:21,874 INFO using examples number:5
+2024-05-13 18:44:21,877 INFO using examples number:5
+2024-05-13 18:44:21,880 INFO using examples number:5
+2024-05-13 18:44:21,884 INFO using examples number:5
+2024-05-13 18:44:21,887 INFO using examples number:5
+2024-05-13 18:44:21,890 INFO using examples number:5
+2024-05-13 18:44:21,894 INFO using examples number:5
+2024-05-13 18:44:21,897 INFO using examples number:5
+2024-05-13 18:44:21,900 INFO using examples number:5
+2024-05-13 18:44:21,904 INFO using examples number:5
+2024-05-13 18:44:21,907 INFO using examples number:5
+2024-05-13 18:44:21,910 INFO using examples number:5
+2024-05-13 18:44:21,913 INFO using examples number:5
+2024-05-13 18:44:21,917 INFO using examples number:5
+2024-05-13 18:44:21,920 INFO using examples number:5
+2024-05-13 18:44:21,923 INFO using examples number:5
+2024-05-13 18:44:21,926 INFO using examples number:5
+2024-05-13 18:44:21,929 INFO using examples number:5
+2024-05-13 18:44:21,932 INFO using examples number:5
+2024-05-13 18:44:21,936 INFO using examples number:5
+2024-05-13 18:44:21,939 INFO using examples number:5
+2024-05-13 18:44:21,942 INFO using examples number:5
+2024-05-13 18:44:21,945 INFO using examples number:5
+2024-05-13 18:44:21,948 INFO using examples number:5
+2024-05-13 18:44:21,951 INFO using examples number:5
+2024-05-13 18:44:21,954 INFO using examples number:5
+2024-05-13 18:44:21,957 INFO using examples number:5
+2024-05-13 18:44:21,961 INFO using examples number:5
+2024-05-13 18:44:21,964 INFO using examples number:5
+2024-05-13 18:44:21,967 INFO using examples number:5
+2024-05-13 18:44:21,971 INFO using examples number:5
+2024-05-13 18:44:21,974 INFO using examples number:4
+2024-05-13 18:44:21,978 INFO using examples number:5
+2024-05-13 18:44:21,981 INFO using examples number:5
+2024-05-13 18:44:21,985 INFO using examples number:5
+2024-05-13 18:44:21,988 INFO using examples number:5
+2024-05-13 18:44:21,992 INFO using examples number:5
+2024-05-13 18:44:21,995 INFO using examples number:4
+2024-05-13 18:44:21,998 INFO using examples number:5
+2024-05-13 18:44:22,001 INFO using examples number:5
+2024-05-13 18:44:22,004 INFO using examples number:5
+2024-05-13 18:44:22,007 INFO using examples number:5
+2024-05-13 18:44:22,010 INFO using examples number:5
+2024-05-13 18:44:22,013 INFO using examples number:4
+2024-05-13 18:44:22,016 INFO using examples number:5
+2024-05-13 18:44:22,020 INFO using examples number:5
+2024-05-13 18:44:22,023 INFO using examples number:5
+2024-05-13 18:44:22,026 INFO using examples number:5
+2024-05-13 18:44:22,029 INFO using examples number:5
+2024-05-13 18:44:22,032 INFO using examples number:5
+2024-05-13 18:44:22,035 INFO using examples number:5
+2024-05-13 18:44:22,039 INFO using examples number:5
+2024-05-13 18:44:22,042 INFO using examples number:5
+2024-05-13 18:44:22,045 INFO using examples number:5
+2024-05-13 18:44:22,048 INFO using examples number:5
+2024-05-13 18:44:22,052 DEBUG https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+2024-05-13 18:44:22,052 INFO using examples number:5
+2024-05-13 18:44:22,057 INFO using examples number:5
+2024-05-13 18:44:22,060 INFO using examples number:5
+2024-05-13 18:44:22,063 INFO using examples number:5
+2024-05-13 18:44:22,066 INFO using examples number:5
+2024-05-13 18:44:22,070 INFO using examples number:5
+2024-05-13 18:44:22,073 INFO using examples number:5
+2024-05-13 18:44:22,075 INFO using examples number:5
+2024-05-13 18:44:22,079 INFO using examples number:5
+2024-05-13 18:44:22,082 INFO using examples number:5
+2024-05-13 18:44:22,086 INFO using examples number:5
+2024-05-13 18:44:22,089 INFO using examples number:5
+2024-05-13 18:44:22,092 INFO using examples number:5
+2024-05-13 18:44:22,096 INFO using examples number:5
+2024-05-13 18:44:22,099 INFO using examples number:5
+2024-05-13 18:44:22,102 INFO using examples number:5
+2024-05-13 18:44:22,106 INFO using examples number:5
+2024-05-13 18:44:22,109 INFO using examples number:5
+2024-05-13 18:44:22,112 INFO using examples number:5
+2024-05-13 18:44:22,116 INFO using examples number:5
+2024-05-13 18:44:22,119 INFO using examples number:5
+2024-05-13 18:44:22,122 INFO using examples number:5
+2024-05-13 18:44:22,125 INFO using examples number:5
+2024-05-13 18:44:22,128 INFO using examples number:5
+2024-05-13 18:44:22,131 INFO using examples number:5
+2024-05-13 18:44:22,134 INFO using examples number:5
+2024-05-13 18:44:22,137 INFO using examples number:5
+2024-05-13 18:44:22,140 INFO using examples number:5
+2024-05-13 18:44:22,143 INFO using examples number:5
+2024-05-13 18:44:22,146 INFO using examples number:5
+2024-05-13 18:44:22,149 INFO using examples number:5
+2024-05-13 18:44:22,152 INFO using examples number:5
+2024-05-13 18:44:22,155 INFO using examples number:5
+2024-05-13 18:44:22,158 INFO using examples number:5
+2024-05-13 18:44:22,161 INFO using examples number:5
+2024-05-13 18:44:22,164 INFO using examples number:5
+2024-05-13 18:44:22,168 INFO using examples number:5
+2024-05-13 18:44:22,171 INFO using examples number:5
+2024-05-13 18:44:22,175 INFO using examples number:5
+2024-05-13 18:44:22,178 INFO using examples number:5
+2024-05-13 18:44:22,181 INFO using examples number:5
+2024-05-13 18:44:22,185 INFO using examples number:5
+2024-05-13 18:44:22,189 INFO using examples number:4
+2024-05-13 18:44:22,192 INFO using examples number:5
+2024-05-13 18:44:22,195 INFO using examples number:5
+2024-05-13 18:44:22,199 INFO using examples number:5
+2024-05-13 18:44:22,202 INFO using examples number:5
+2024-05-13 18:44:22,205 INFO using examples number:5
+2024-05-13 18:44:22,209 INFO using examples number:5
+2024-05-13 18:44:22,213 INFO using examples number:5
+2024-05-13 18:44:22,217 INFO using examples number:4
+2024-05-13 18:44:22,221 INFO using examples number:3
+2024-05-13 18:44:22,224 INFO using examples number:2
+2024-05-13 18:44:22,228 INFO using examples number:5
+2024-05-13 18:44:22,232 INFO using examples number:5
+2024-05-13 18:44:22,236 INFO using examples number:5
+2024-05-13 18:44:22,241 INFO using examples number:5
+2024-05-13 18:44:22,244 INFO using examples number:4
+2024-05-13 18:44:22,247 INFO using examples number:5
+2024-05-13 18:44:22,250 INFO using examples number:4
+2024-05-13 18:44:22,253 INFO using examples number:5
+2024-05-13 18:44:22,257 INFO using examples number:5
+2024-05-13 18:44:22,260 INFO using examples number:5
+2024-05-13 18:44:22,263 INFO using examples number:5
+2024-05-13 18:44:22,267 INFO using examples number:5
+2024-05-13 18:44:22,270 INFO using examples number:5
+2024-05-13 18:44:22,273 INFO using examples number:5
+2024-05-13 18:44:22,276 INFO using examples number:5
+2024-05-13 18:44:22,279 INFO using examples number:5
+2024-05-13 18:44:22,283 INFO using examples number:5
+2024-05-13 18:44:22,287 INFO using examples number:5
+2024-05-13 18:44:22,290 INFO using examples number:5
+2024-05-13 18:44:22,294 INFO using examples number:5
+2024-05-13 18:44:22,297 INFO using examples number:5
+2024-05-13 18:44:22,300 INFO using examples number:5
+2024-05-13 18:44:22,303 INFO using examples number:5
+2024-05-13 18:44:22,307 INFO using examples number:5
+2024-05-13 18:44:22,310 INFO using examples number:5
+2024-05-13 18:44:22,313 INFO using examples number:5
+2024-05-13 18:44:22,317 INFO using examples number:5
+2024-05-13 18:44:22,320 INFO using examples number:5
+2024-05-13 18:44:22,323 INFO using examples number:5
+2024-05-13 18:44:22,327 INFO using examples number:5
+2024-05-13 18:44:22,330 INFO using examples number:5
+2024-05-13 18:44:22,333 INFO using examples number:5
+2024-05-13 18:44:22,336 INFO using examples number:5
+2024-05-13 18:44:22,339 INFO using examples number:5
+2024-05-13 18:44:22,343 INFO using examples number:5
+2024-05-13 18:44:22,346 INFO using examples number:5
+2024-05-13 18:44:22,349 INFO using examples number:5
+2024-05-13 18:44:22,352 INFO using examples number:5
+2024-05-13 18:44:22,355 INFO using examples number:5
+2024-05-13 18:44:22,358 INFO using examples number:5
+2024-05-13 18:44:22,361 INFO using examples number:5
+2024-05-13 18:44:22,364 INFO using examples number:5
+2024-05-13 18:44:22,367 INFO using examples number:5
+2024-05-13 18:44:22,370 INFO using examples number:5
+2024-05-13 18:44:22,374 INFO using examples number:5
+2024-05-13 18:44:22,377 INFO using examples number:5
+2024-05-13 18:44:22,380 INFO using examples number:5
+2024-05-13 18:44:22,383 INFO using examples number:5
+2024-05-13 18:44:22,387 INFO using examples number:5
+2024-05-13 18:44:22,391 INFO using examples number:5
+2024-05-13 18:44:22,394 INFO using examples number:4
+2024-05-13 18:44:22,398 INFO using examples number:3
+2024-05-13 18:44:22,401 INFO using examples number:5
+2024-05-13 18:44:22,404 INFO using examples number:5
+2024-05-13 18:44:22,408 INFO using examples number:5
+2024-05-13 18:44:22,411 INFO using examples number:5
+2024-05-13 18:44:22,414 INFO using examples number:5
+2024-05-13 18:44:22,417 INFO using examples number:5
+2024-05-13 18:44:22,421 INFO using examples number:5
+2024-05-13 18:44:22,424 INFO using examples number:5
+2024-05-13 18:44:22,427 INFO using examples number:5
+2024-05-13 18:44:22,431 INFO using examples number:5
+2024-05-13 18:44:22,434 INFO using examples number:4
+2024-05-13 18:44:22,437 INFO using examples number:3
+2024-05-13 18:44:22,440 INFO using examples number:5
+2024-05-13 18:44:22,444 INFO using examples number:5
+2024-05-13 18:44:22,447 INFO using examples number:5
+2024-05-13 18:44:22,450 INFO using examples number:5
+2024-05-13 18:44:22,454 INFO using examples number:5
+2024-05-13 18:44:22,457 INFO using examples number:5
+2024-05-13 18:44:22,460 INFO using examples number:5
+2024-05-13 18:44:22,464 INFO using examples number:5
+2024-05-13 18:44:22,467 INFO using examples number:5
+2024-05-13 18:44:22,470 INFO using examples number:5
+2024-05-13 18:44:22,474 INFO using examples number:5
+2024-05-13 18:44:22,477 INFO using examples number:5
+2024-05-13 18:44:22,480 INFO using examples number:5
+2024-05-13 18:44:22,483 INFO using examples number:5
+2024-05-13 18:44:22,487 INFO using examples number:5
+2024-05-13 18:44:22,490 INFO using examples number:5
+2024-05-13 18:44:22,493 INFO using examples number:5
+2024-05-13 18:44:22,497 INFO using examples number:5
+2024-05-13 18:44:22,500 INFO using examples number:5
+2024-05-13 18:44:22,504 INFO using examples number:5
+2024-05-13 18:44:22,507 INFO using examples number:4
+2024-05-13 18:44:22,510 INFO using examples number:5
+2024-05-13 18:44:22,514 INFO using examples number:5
+2024-05-13 18:44:22,517 INFO using examples number:5
+2024-05-13 18:44:22,520 INFO using examples number:5
+2024-05-13 18:44:22,523 INFO using examples number:5
+2024-05-13 18:44:22,526 INFO using examples number:5
+2024-05-13 18:44:22,529 INFO using examples number:5
+2024-05-13 18:44:22,532 INFO using examples number:5
+2024-05-13 18:44:22,535 INFO using examples number:5
+2024-05-13 18:44:22,538 INFO using examples number:5
+2024-05-13 18:44:22,541 INFO using examples number:5
+2024-05-13 18:44:22,545 INFO using examples number:5
+2024-05-13 18:44:22,548 INFO using examples number:5
+2024-05-13 18:44:22,551 INFO using examples number:5
+2024-05-13 18:44:22,554 INFO using examples number:5
+2024-05-13 18:44:22,557 INFO using examples number:5
+2024-05-13 18:44:22,560 INFO using examples number:5
+2024-05-13 18:44:22,563 INFO using examples number:5
+2024-05-13 18:44:22,566 INFO using examples number:5
+2024-05-13 18:44:22,569 INFO using examples number:5
+2024-05-13 18:44:22,573 INFO using examples number:5
+2024-05-13 18:44:22,576 INFO using examples number:5
+2024-05-13 18:44:22,580 INFO using examples number:5
+2024-05-13 18:44:22,583 INFO using examples number:5
+2024-05-13 18:44:22,586 INFO using examples number:5
+2024-05-13 18:44:22,589 INFO using examples number:5
+2024-05-13 18:44:22,592 INFO using examples number:5
+2024-05-13 18:44:22,596 INFO using examples number:5
+2024-05-13 18:44:22,599 INFO using examples number:5
+2024-05-13 18:44:22,602 INFO using examples number:5
+2024-05-13 18:44:22,605 INFO using examples number:4
+2024-05-13 18:44:22,610 INFO using examples number:5
+2024-05-13 18:44:22,613 INFO using examples number:5
+2024-05-13 18:44:22,616 INFO using examples number:5
+2024-05-13 18:44:22,619 INFO using examples number:5
+2024-05-13 18:44:22,623 INFO using examples number:5
+2024-05-13 18:44:22,626 INFO using examples number:5
+2024-05-13 18:44:22,629 INFO using examples number:4
+2024-05-13 18:44:22,632 INFO using examples number:5
+2024-05-13 18:44:22,636 INFO using examples number:5
+2024-05-13 18:44:22,640 INFO using examples number:5
+2024-05-13 18:44:22,643 INFO using examples number:4
+2024-05-13 18:44:22,646 INFO using examples number:3
+2024-05-13 18:44:22,649 INFO using examples number:2
+2024-05-13 18:44:22,652 INFO using examples number:5
+2024-05-13 18:44:22,655 INFO using examples number:5
+2024-05-13 18:44:22,658 INFO using examples number:4
+2024-05-13 18:44:22,661 INFO using examples number:5
+2024-05-13 18:44:22,665 INFO using examples number:5
+2024-05-13 18:44:22,668 INFO using examples number:5
+2024-05-13 18:44:22,671 INFO using examples number:5
+2024-05-13 18:44:22,674 INFO using examples number:5
+2024-05-13 18:44:22,678 INFO using examples number:5
+2024-05-13 18:44:22,681 INFO using examples number:5
+2024-05-13 18:44:22,684 INFO using examples number:5
+2024-05-13 18:44:22,688 INFO using examples number:5
+2024-05-13 18:44:22,691 INFO using examples number:5
+2024-05-13 18:44:22,695 INFO using examples number:5
+2024-05-13 18:44:22,698 INFO using examples number:5
+2024-05-13 18:44:22,701 INFO using examples number:5
+2024-05-13 18:44:22,705 INFO using examples number:5
+2024-05-13 18:44:22,708 INFO using examples number:5
+2024-05-13 18:44:22,712 INFO using examples number:5
+2024-05-13 18:44:22,715 INFO using examples number:4
+2024-05-13 18:44:22,718 INFO using examples number:5
+2024-05-13 18:44:22,722 INFO using examples number:5
+2024-05-13 18:44:22,725 INFO using examples number:5
+2024-05-13 18:44:22,728 INFO using examples number:5
+2024-05-13 18:44:22,731 INFO using examples number:5
+2024-05-13 18:44:22,734 INFO using examples number:5
+2024-05-13 18:44:22,737 INFO using examples number:5
+2024-05-13 18:44:22,740 INFO using examples number:5
+2024-05-13 18:44:22,743 INFO using examples number:5
+2024-05-13 18:44:22,747 INFO using examples number:5
+2024-05-13 18:44:22,750 INFO using examples number:5
+2024-05-13 18:44:22,754 INFO using examples number:5
+2024-05-13 18:44:22,757 INFO using examples number:5
+2024-05-13 18:44:22,761 INFO using examples number:5
+2024-05-13 18:44:22,765 INFO using examples number:4
+2024-05-13 18:44:22,768 INFO using examples number:3
+2024-05-13 18:44:22,771 INFO using examples number:5
+2024-05-13 18:44:22,775 INFO using examples number:5
+2024-05-13 18:44:22,779 INFO using examples number:4
+2024-05-13 18:44:22,782 INFO using examples number:3
+2024-05-13 18:44:22,784 INFO using examples number:2
+2024-05-13 18:44:22,786 INFO using examples number:1
+2024-05-13 18:44:22,790 INFO using examples number:5
+2024-05-13 18:44:22,793 INFO using examples number:5
+2024-05-13 18:44:22,797 INFO using examples number:5
+2024-05-13 18:44:22,800 INFO using examples number:5
+2024-05-13 18:44:22,803 INFO using examples number:4
+2024-05-13 18:44:22,806 INFO using examples number:5
+2024-05-13 18:44:22,810 INFO using examples number:5
+2024-05-13 18:44:22,813 INFO using examples number:5
+2024-05-13 18:44:22,817 INFO using examples number:5
+2024-05-13 18:44:22,820 INFO using examples number:5
+2024-05-13 18:44:22,823 INFO using examples number:5
+2024-05-13 18:44:22,827 INFO using examples number:5
+2024-05-13 18:44:22,830 INFO using examples number:5
+2024-05-13 18:44:22,834 INFO using examples number:5
+2024-05-13 18:44:22,837 INFO using examples number:5
+2024-05-13 18:44:22,840 INFO using examples number:5
+2024-05-13 18:44:22,843 INFO using examples number:5
+2024-05-13 18:44:22,847 INFO using examples number:5
+2024-05-13 18:44:22,850 INFO using examples number:5
+2024-05-13 18:44:22,854 INFO using examples number:5
+2024-05-13 18:44:22,857 INFO using examples number:5
+2024-05-13 18:44:22,860 INFO using examples number:5
+2024-05-13 18:44:22,864 INFO using examples number:5
+2024-05-13 18:44:22,867 INFO using examples number:5
+2024-05-13 18:44:22,871 INFO using examples number:5
+2024-05-13 18:44:22,874 INFO using examples number:5
+2024-05-13 18:44:37,590 INFO 64size batch costing time: 14.715773344039917
+2024-05-13 18:44:37,590 INFO answer extract failed
+ Mitosis is the process of cell division in which the nucleus divides into two nuclei, and the cytoplasm into two daughter cells. Mitosis is the process of cell division in which the nucleus divides into two nuclei, and the cytoplasm into two daughter cells. Mitosis is the process of cell division in which the nucleus divides into two nuclei, and the cytoplasm into two daughter cells. Mitosis is the process of cell division in which the nucleus divides into two nuclei, and the cytoplasm into two daughter cells. Mitosis is the process of cell division in which the nucleus divides into two nuclei, and the cytoplasm into two daughter cells. Mitosis is the process of cell division in which the nucleus divides into two nuclei, and the cytoplasm into two daughter cells. Mitosis is the process of cell division in which the nucleus divides into two nuclei, and the cytoplasm into two daughter cells. Mitosis is the process of cell division in which the nucleus divides into two nuclei, and the cytoplasm into two daughter cells. Mitosis is the process of cell division
+2024-05-13 18:44:37,590 INFO answer extract failed
+ Aristotle, Darwin, and Lamarck are all individuals who maintained that species are fixed (i.e., unchanging). Aristotle, Lyell, and Darwin are all individuals who maintained that species are fixed (i.e., unchanging). Aristotle, Linnaeus, and Cuvier are all individuals who maintained that species are fixed (i.e., unchanging). Aristotle, Cuvier, and Lamarck are all individuals who maintained that species are fixed (i.e., unchanging). Aristotle, Cuvier, and Lamarck are all individuals who maintained that species are fixed (i.e., unchanging). Aristotle, Cuvier, and Lamarck are all individuals who maintained that species are fixed (i.e., unchanging). Aristotle, Cuvier, and Lamarck are all individuals who maintained that species are fixed (i.e., unchanging). Aristotle, Cuvier, and Lamarck are all individuals who maintained that species are fixed (i.e., unchanging). Aristotle, Cuvier, and Lamarck are all individuals who maintained that species
+2024-05-13 18:44:37,590 INFO answer extract failed
+ The rate of mutation is not related to the evolutionary distance between two organisms. The rate of mutation is related to the rate of replication. The rate of replication is related to the rate of cell division. The rate of cell division is related to the rate of growth. The rate of growth is related to the rate of evolution. The rate of evolution is related to the rate of mutation. The rate of mutation is related to the rate of replication. The rate of replication is related to the rate of cell division. The rate of cell division is related to the rate of growth. The rate of growth is related to the rate of evolution. The rate of evolution is related to the rate of mutation. The rate of mutation is related to the rate of replication. The rate of replication is related to the rate of cell division. The rate of cell division is related to the rate of growth. The rate of growth is related to the rate of evolution. The rate of evolution is related to the rate of mutation. The rate of mutation is related to the rate of replication. The rate of replication is related to the rate of cell division. The rate of cell division is related to the rate of growth
+2024-05-13 18:44:37,590 INFO answer extract failed
+ Cell motility is the ability of a cell to move. Cell motility is a complex process that involves the coordinated action of many proteins and other molecules. Cell motility is important for many biological processes, including embryonic development, wound healing, and cancer metastasis. Cell motility is a complex process that involves the coordinated action of many proteins and other molecules. Cell motility is important for many biological processes, including embryonic development, wound healing, and cancer metastasis. Cell motility is a complex process that involves the coordinated action of many proteins and other molecules. Cell motility is important for many biological processes, including embryonic development, wound healing, and cancer metastasis. Cell motility is a complex process that involves the coordinated action of many proteins and other molecules. Cell motility is important for many biological processes, including embryonic development, wound healing, and cancer metastasis. Cell motility is a complex process that involves the coordinated action of many proteins and other molecules. Cell motility is important for many biological processes, including embryonic development, wound healing,
+2024-05-13 18:44:37,590 INFO answer extract failed
+ The sickle-cell allele is more common in African-Americans than in Africans. This is because the sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-Americans than in Africans. The sickle-cell allele is more common in African-
+2024-05-13 18:44:37,591 INFO answer extract failed
+ The F factor is a plasmid that is transferred between bacteria during conjugation. The F factor is a small circular DNA molecule that contains genes for the F plasmid replication and transfer. The F factor is transferred from one bacterium to another during conjugation. The F factor is transferred from the male bacterium to the female bacterium. The F factor is transferred from the female bacterium to the male bacterium. The F factor is transferred from the male bacterium to the female bacterium. The F factor is transferred from the female bacterium to the male bacterium. The F factor is transferred from the male bacterium to the female bacterium. The F factor is transferred from the female bacterium to the male bacterium. The F factor is transferred from the male bacterium to the female bacterium. The F factor is transferred from the female bacterium to the male bacterium. The F factor is transferred from the male bacterium to the female bacterium. The F factor is transferred from the female bacterium to the male bacterium. The F factor is transferred from the male bacterium to the female b
+2024-05-13 18:44:37,591 INFO answer extract failed
+ The allelic frequency of T is $p^2 + 2 p q + q^2 = 1$, and $p + q = 1$ where $p$ is the frequency of the dominant allele, $q$ is the frequency of the recessive allele, and $p^2$, $q^2$, and $2pq$ are the frequencies of dominant homozygous, recessive homozygous, and heterozygous individuals, respectively. ​The frequency of the recessive allele (q) is $\sqrt{rac{1}{798}} = 0.05$. We have $p = 1 - q = 0.95$. The frequency of heterozygous individuals is $2pq = 2 \cdot 0.05 \cdot 0.95 = 0.095$. The number of heterozygous individuals is equal to the frequency of heterozygous individuals times the size of the population, or $0.095 * 798 = 759$. So we end up with 759/798.
+2024-05-13 18:44:37,591 INFO answer extract failed
+ The probability that a child will be colorblind is 1/2. The probability that a child will be colorblind if the father is colorblind is 1/2. The probability that a child will be colorblind if the father is colorblind and the mother is normal-visioned is 1/2. The probability that a child will be colorblind if the father is colorblind and the mother is normal-visioned is 1/2. The probability that a child will be colorblind if the father is colorblind and the mother is normal-visioned is 1/2. The probability that a child will be colorblind if the father is colorblind and the mother is normal-visioned is 1/2. The probability that a child will be colorblind if the father is colorblind and the mother is normal-visioned is 1/2. The probability that a child will be colorblind if the father is colorblind and the mother is normal-visioned is 1/2. The probability that a child will be colorblind if the father is colorblind and the mother is normal-visioned is 1/2.
+2024-05-13 18:44:37,591 INFO answer extract failed
+ The Hardy-Weinberg Law states that the frequency of the dominant allele (p) plus the frequency of the recessive allele (q) equals 1. In this case, p = .62 and q = .38. The frequency of the dominant allele is .62 + .38 = .999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+2024-05-13 18:44:37,591 INFO answer extract failed
+ Bacterial cells have a cell wall, which is absent in eukaryotic cells. Bacterial cells have a plasma membrane, which is absent in eukaryotic cells. Bacterial cells have ribosomes, which are absent in eukaryotic cells. Bacterial cells have flagella, which are absent in eukaryotic cells. Bacterial cells have pili, which are absent in eukaryotic cells. Bacterial cells have plasmids, which are absent in eukaryotic cells. Bacterial cells have capsules, which are absent in eukaryotic cells. Bacterial cells have peptidoglycan layer, which is absent in eukaryotic cells. Bacterial cells have mesosomes, which are absent in eukaryotic cells. Bacterial cells have cytoplasm, which is absent in eukaryotic cells. Bacterial cells have bacterial DNA, which is absent in eukaryotic cells. Bacterial cells have a nucleoid region, which is absent in eukaryotic cells. Bacterial cells have a nucleus, which is absent in eukaryotic cells. B
+2024-05-13 18:44:37,591 INFO answer extract failed
+ Protozoans are a diverse group of single-celled eukaryotes. They are unicellular organisms that are not multicellular. They are heterotrophic, which means they cannot produce their own food. They are also eukaryotes, which means they have a nucleus and other membrane-bound organelles. They are also heterotrophic, which means they cannot produce their own food. They are also eukaryotes, which means they have a nucleus and other membrane-bound organelles. They are also heterotrophic, which means they cannot produce their own food. They are also eukaryotes, which means they have a nucleus and other membrane-bound organelles. They are also heterotrophic, which means they cannot produce their own food. They are also eukaryotes, which means they have a nucleus and other membrane-bound organelles. They are also heterotrophic, which means they cannot produce their own food. They are also eukaryotes, which means they have a nucleus and other membrane-bound organelles. They are also heterotrophic, which means they cannot produce their own food. They
+2024-05-13 18:44:37,591 INFO answer extract failed
+ The epidermis is the outermost layer of the skin. It is composed of stratified squamous epithelium. The epidermis is the outermost layer of the skin. It is composed of stratified squamous epithelium. The epidermis is the outermost layer of the skin. It is composed of stratified squamous epithelium. The epidermis is the outermost layer of the skin. It is composed of stratified squamous epithelium. The epidermis is the outermost layer of the skin. It is composed of stratified squamous epithelium. The epidermis is the outermost layer of the skin. It is composed of stratified squamous epithelium. The epidermis is the outermost layer of the skin. It is composed of stratified squamous epithelium. The epidermis is the outermost layer of the skin. It is composed of stratified squamous epithelium. The epidermis is the outermost layer of the skin. It is composed of stratified squamous epithelium. The epiderm
+2024-05-13 18:44:37,591 INFO answer extract failed
+ The appendix is a vestigial organ, which means it is a structure that has lost its original function. The appendix is located near the large intestine, which is not a vestigial organ. The appendix can be surgically removed with no immediate ill effects, which is not a detraction from the claim that the appendix is a vestigial organ. The appendix might have been larger in fossil hominids, which is not a detraction from the claim that the appendix is a vestigial organ. The appendix has a substantial amount of defensive lymphatic tissue, which is not a detraction from the claim that the appendix is a vestigial organ. The appendix is often inflamed in cases of appendicitis, which is not a detraction from the claim that the appendix is a vestigial organ. Many people live healthy lives without an appendix after it's been removed, which is not a detraction from the claim that the appendix is a vestigial organ. The appendix has no known function in digestion, which is not a detraction from the claim that the appendix is a vestigial organ. The appendix has a
+2024-05-13 18:44:37,591 INFO answer extract failed
+ Mimetic coloration is a form of camouflage in which an animal resembles another animal or object in its environment. Aposomatic coloration is a form of camouflage in which an animal resembles a poisonous or otherwise dangerous animal or object in its environment. Deceptive markings are markings that are used to deceive predators. Batesian mimicry is a form of mimicry in which a harmless species mimics a poisonous or otherwise dangerous species. Protective coloration is a form of camouflage in which an animal resembles an object in its environment. Warning coloration is a form of camouflage in which an animal resembles an object in its environment that warns predators of its toxicity. Cryptic coloration is a form of camouflage in which an animal resembles an object in its environment that is not easily seen. Disruptive coloration is a form of camouflage in which an animal resembles an object in its environment that is not easily seen. Counter shading is a form of camouflage in which an animal resembles an object in
+2024-05-13 18:44:37,591 INFO answer extract failed
+ The process of oxidative phosphorylation is the process by which the energy released by the oxidation of glucose is used to generate ATP. The process of glycolysis is the process by which glucose is broken down to pyruvate. The process of beta oxidation is the process by which fatty acids are broken down to acetyl CoA. The process of chemiosmosis is the process by which ATP is generated by the movement of protons across a membrane. The process of light-dependent reactions is the process by which ATP is generated by the movement of electrons from water to NADP+. The process of pyruvate oxidation is the process by which pyruvate is converted to acetyl CoA. The process of fermentation is the process by which ATP is generated by the breakdown of glucose to ethanol and CO2. The process of the Calvin cycle is the process by which CO2 is converted to glucose. The process of the Krebs cycle is the process by which pyruvate is converted to acetyl CoA. The process of anaerobic respiration is the process by
+2024-05-13 18:44:37,591 INFO answer extract failed
+ The three domains of life are Archaea, Bacteria, and Eukarya. Archaea and Bacteria are prokaryotes, whereas Eukarya are eukaryotes. Archaea and Bacteria do not have a nucleus, whereas Eukarya do. Archaea and Bacteria do not have a cytoskeleton, whereas Eukarya do. Archaea and Bacteria do not have mitochondria, whereas Eukarya do. Archaea and Bacteria do not have chloroplasts, whereas Eukarya do. Archaea and Bacteria do not have centrioles, whereas Eukarya do. Archaea and Bacteria do not have lysosomes, whereas Eukarya do. Archaea and Bacteria do not have Golgi apparatus, whereas Eukarya do. Archaea and Bacteria do not have endoplasmic reticulum, whereas Eukarya do. Archaea and Bacteria do not have flagella, whereas Eukarya do. Archaea and Bacteria do not have c
+2024-05-13 18:44:37,593 INFO this batch accu is: 0.4166666666666667, corr: 20.0, wrong: 28.0
+
+2024-05-13 18:44:51,823 INFO 64size batch costing time: 14.229783296585083
+2024-05-13 18:44:51,823 INFO answer extract failed
+ Cytochalasin B is a plant toxin that inhibits microtubule assembly and stabilizes microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of microtubules. It is a potent inhibitor of microtubule assembly and stabilizer of micro
+2024-05-13 18:44:51,823 INFO answer extract failed
+ The liver is the largest internal organ in the human body. It is located in the upper right portion of the abdomen, below the diaphragm and above the stomach. The liver is responsible for many important functions in the body, including detoxification, protein synthesis, and the production of biochemicals necessary for digestion. The liver is also involved in the production of bile, which is necessary for the digestion of fats. The liver is also responsible for the production of red blood cells, which are necessary for the transport of oxygen throughout the body. The liver is also involved in the regulation of blood sugar levels, and the production of cholesterol. The liver is also involved in the production of hormones, such as insulin and glucagon. The liver is also involved in the production of vitamins, such as vitamin A and vitamin D. The liver is also involved in the production of amino acids, which are necessary for the production of proteins. The liver is also involved in the production of clotting factors, which are necessary for the clotting of blood. The liver is also involved in
+2024-05-13 18:44:51,823 INFO answer extract failed
+ The Hardy-Weinberg Law states that $p^2 + 2 p q + q^2 = 1$, and $p + q = 1$ where $p$ is the frequency of the dominant allele, $q$ is the frequency of the recessive allele, and $p^2$, $q^2$, and $2pq$ are the frequencies of dominant homozygous, recessive homozygous, and heterozygous individuals, respectively. ​The frequency of the recessive allele (q) is $\sqrt{rac{1}{400}} = 0.05$. We have $p = 1 - q = 0.95$. The frequency of heterozygous individuals is $2pq = 2 \cdot 0.05 \cdot 0.95 = 0.095$. The number of heterozygous individuals is equal to the frequency of heterozygous individuals times the size of the population, or $0.095 * 400 = 38$. So we end up with 38/400
+2024-05-13 18:44:51,823 INFO answer extract failed
+ The total population is 424. The gene frequencies of A, B and O blood alleles are 0.95, 0.04, and 0.01, respectively. The number of individuals with O, A, B, and AB type blood is given by the formula: $n_O = \frac{p_O}{1 - p_O}$ and $n_A = \frac{p_A}{1 - p_A}$, where $p_O$ and $p_A$ are the frequencies of the O and A alleles, respectively. We have $p_O = 0.01$ and $p_A = 0.95$. The number of individuals with O, A, B, and AB type blood is given by the formula: $n_O = \frac{0.01}{1 - 0.01} = 2$, $n_A = \frac{0.95}{1 - 0.95} = 387$, $n_B = \frac{0.04}{1 - 0.04} = 15$, and $n_AB =
+2024-05-13 18:44:51,823 INFO answer extract failed
+ The phenotype of the progeny is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The genotype of the parents is determined by the genotype of the parents. The gen
+2024-05-13 18:44:51,823 INFO answer extract failed
+ The number of genes in the series is equal to the number of gene pairs minus the number of genes that are not in the series. The number of gene pairs is equal to the number of genes in the series minus the number of genes that are not in the series. The number of genes that are not in the series is equal to the number of genes in the series minus the number of gene pairs. The number of genes in the series is equal to the number of gene pairs minus the number of genes that are not in the series. The number of genes that are not in the series is equal to the number of genes in the series minus the number of gene pairs. The number of genes in the series is equal to the number of gene pairs minus the number of genes that are not in the series. The number of genes that are not in the series is equal to the number of genes in the series minus the number of gene pairs. The number of genes in the series is equal to the number of gene pairs minus the number of genes that are not in the series. The number of genes that are not in the series is equal to the number of genes in the series minus the
+2024-05-13 18:44:51,823 INFO answer extract failed
+ The heritability of a trait is the proportion of the phenotypic variance that is due to genetic variation. The heritability of a trait is equal to the proportion of phenotypic variance that is due to genetic variation. The heritability of a trait is equal to the proportion of phenotypic variance that is due to genetic variation. The heritability of a trait is equal to the proportion of phenotypic variance that is due to genetic variation. The heritability of a trait is equal to the proportion of phenotypic variance that is due to genetic variation. The heritability of a trait is equal to the proportion of phenotypic variance that is due to genetic variation. The heritability of a trait is equal to the proportion of phenotypic variance that is due to genetic variation. The heritability of a trait is equal to the proportion of phenotypic variance that is due to genetic variation. The heritability of a trait is equal to the proportion of phenotypic variance that is due to genetic variation. The heritability of a trait is equal to the proportion of phenotypic variance that is due to gen
+2024-05-13 18:44:51,823 INFO answer extract failed
+ The radula is a rasp-like structure used for feeding in molluscs. It is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scrape food from the substrate. The radula is a tongue-like structure that is used to scra
+2024-05-13 18:44:51,824 INFO answer extract failed
+ Mosses are small, non-vascular plants that grow in damp, shady areas. They are often found in moist, shady areas such as under rocks, logs, or other objects. Mosses are small, non-vascular plants that grow in damp, shady areas. They are often found in moist, shady areas such as under rocks, logs, or other objects. Mosses are small, non-vascular plants that grow in damp, shady areas. They are often found in moist, shady areas such as under rocks, logs, or other objects. Mosses are small, non-vascular plants that grow in damp, shady areas. They are often found in moist, shady areas such as under rocks, logs, or other objects. Mosses are small, non-vascular plants that grow in damp, shady areas. They are often found in moist, shady areas such as under rocks, logs, or other objects. Mosses are small, non-vascular plants that grow in damp, shady areas. They are often found in moist, shady areas such as under rocks, logs, or other
+2024-05-13 18:44:51,824 INFO answer extract failed
+ The partial pressure of oxygen at sea level is 210 mm Hg. At an altitude of 2000 m, the partial pressure of oxygen is 140 mm Hg. The partial pressure of oxygen at sea level is 210 mm Hg. At an altitude of 2000 m, the partial pressure of oxygen is 140 mm Hg. The partial pressure of oxygen at sea level is 210 mm Hg. At an altitude of 2000 m, the partial pressure of oxygen is 140 mm Hg. The partial pressure of oxygen at sea level is 210 mm Hg. At an altitude of 2000 m, the partial pressure of oxygen is 140 mm Hg. The partial pressure of oxygen at sea level is 210 mm Hg. At an altitude of 2000 m, the partial pressure of oxygen is 140 mm Hg. The partial pressure of oxygen at sea level is 210 mm Hg. At an altitude of 2000 m, the
+2024-05-13 18:44:51,824 INFO answer extract failed
+ Lipids are a diverse group of naturally occurring molecules that are insoluble in water but soluble in organic solvents. Lipids are a diverse group of naturally occurring molecules that are insoluble in water but soluble in organic solvents. Lipids are a diverse group of naturally occurring molecules that are insoluble in water but soluble in organic solvents. Lipids are a diverse group of naturally occurring molecules that are insoluble in water but soluble in organic solvents. Lipids are a diverse group of naturally occurring molecules that are insoluble in water but soluble in organic solvents. Lipids are a diverse group of naturally occurring molecules that are insoluble in water but soluble in organic solvents. Lipids are a diverse group of naturally occurring molecules that are insoluble in water but soluble in organic solvents. Lipids are a diverse group of naturally occurring molecules that are insoluble in water but soluble in organic solvents. Lipids are a diverse group of naturally
+2024-05-13 18:44:51,824 INFO answer extract failed
+ The amnion is a thin membrane that surrounds the embryo and is filled with amniotic fluid. The amnion is derived from the ectoderm. The amnion is a fluid-filled sac that surrounds the embryo and protects it from desiccation and injury. The amnion is derived from the ectoderm. The amnion is a fluid-filled sac that surrounds the embryo and protects it from desiccation and injury. The amnion is derived from the ectoderm. The amnion is a fluid-filled sac that surrounds the embryo and protects it from desiccation and injury. The amnion is derived from the ectoderm. The amnion is a fluid-filled sac that surrounds the embryo and protects it from desiccation and injury. The amnion is derived from the ectoderm. The amnion is a fluid-filled sac that surrounds the embryo and protects it from desiccation and injury. The amnion is derived from the ectoderm. The amnion is a fluid-filled sac that surrounds
+2024-05-13 18:44:51,828 INFO this batch accu is: 0.33, corr: 33.0, wrong: 67.0
+
+2024-05-13 18:45:05,626 INFO 64size batch costing time: 13.798121213912964
+2024-05-13 18:45:05,626 INFO answer extract failed
+ The root cap is a specialized structure that protects the root tip from damage. It is made up of a single layer of cells that are constantly being shed and replaced. The root cap is a specialized structure that protects the root tip from damage. It is made up of a single layer of cells that are constantly being shed and replaced. The root cap is a specialized structure that protects the root tip from damage. It is made up of a single layer of cells that are constantly being shed and replaced. The root cap is a specialized structure that protects the root tip from damage. It is made up of a single layer of cells that are constantly being shed and replaced. The root cap is a specialized structure that protects the root tip from damage. It is made up of a single layer of cells that are constantly being shed and replaced. The root cap is a specialized structure that protects the root tip from damage. It is made up of a single layer of cells that are constantly being shed and replaced. The root cap is a specialized structure that protects the root tip from damage. It is made up of a single layer of cells that are constantly being shed and replaced. The root cap is a specialized structure that protects
+2024-05-13 18:45:05,626 INFO answer extract failed
+ The osmotic pressure of seawater is 29.7 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 atm. The osmotic pressure of the blood is 25 at
+2024-05-13 18:45:05,626 INFO answer extract failed
+ The probability of selecting a container with ebony beetles is $p = 3/8 = 0.375$. The probability of selecting a container with red beetles is $q = 5/8 = 0.625$. The probability of selecting a container with ebony beetles is $p = 3/8 = 0.375$. The probability of selecting a container with red beetles is $q = 5/8 = 0.625$. The probability of selecting a container with ebony beetles is $p = 3/8 = 0.375$. The probability of selecting a container with red beetles is $q = 5/8 = 0.625$. The probability of selecting a container with ebony beetles is $p = 3/8 = 0.375$. The probability of selecting a container with red beetles is $q = 5/8 = 0.625$. The probability of selecting a container with ebony beetles is $p = 3/8 = 0.375$. The probability of selecting a container with red
+2024-05-13 18:45:05,626 INFO answer extract failed
+ The bacteria developed immunity to antibiotics is not correct because the bacteria were not genetically modified. Transfer of resistance genes from non-pathogenic to pathogenic bacteria through horizontal gene transfer is not correct because the bacteria were not genetically modified. A decline in vaccination rates leading to increased bacterial spread is not correct because the bacteria were not genetically modified. Over-prescription of antibiotics in livestock agriculture leading to cross-species transfer of resistance is not correct because the bacteria were not genetically modified. Natural selection favored bacteria that were inherently resistant to antibiotics is not correct because the bacteria were not genetically modified. The bacteria mutated rapidly is not correct because the bacteria were not genetically modified. Increased use of antibacterial soaps and disinfectants in hospitals is not correct because the bacteria were not genetically modified. Introduction of new antibiotics that were less effective against resistant strains is not correct because the bacteria were not genetically modified. Indiscrim
+2024-05-13 18:45:05,626 INFO answer extract failed
+ The F_1 generation is a hybrid, so it has two alleles for each gene. The height of the F_1 generation is 60 inches, so the average height of the two parental races is 30 inches. The average height of the F_1 generation is 60 inches, so the average height of the parental races is 30 inches. The average height of the parental races is 30 inches, so the average height of the F_1 generation is 60 inches. The average height of the F_1 generation is 60 inches, so the average height of the parental races is 30 inches. The average height of the parental races is 30 inches, so the average height of the F_1 generation is 60 inches. The average height of the F_1 generation is 60 inches, so the average height of the parental races is 30 inches. The average height of the parental races is 30 inches, so the average height of the F_1 generation is 60 inches. The average height of the F_1 generation is 60 inches, so the average height of the parental races is 
+2024-05-13 18:45:05,627 INFO answer extract failed
+ The disease is inherited as an X-linked recessive trait. This means that the disease is caused by a mutation in the X chromosome. The disease is not caused by a mutation in the Y chromosome. The disease is not caused by a mutation in the autosomes. The disease is not caused by a mutation in the mitochondrial DNA. The disease is not caused by a mutation in the plasmid. The disease is not caused by a mutation in the centromere. The disease is not caused by a mutation in the telomere. The disease is not caused by a mutation in the nucleolus. The disease is not caused by a mutation in the nucleus. The disease is not caused by a mutation in the cytoplasm. The disease is not caused by a mutation in the cell membrane. The disease is not caused by a mutation in the cell wall. The disease is not caused by a mutation in the cell nucleus. The disease is not caused by a mutation in the cell cytoplasm. The disease is not caused by a mutation in the cell membrane. The disease is not caused by a mut
+2024-05-13 18:45:05,627 INFO answer extract failed
+ The blood pressure is the force exerted by the blood against the walls of the blood vessels. The blood pressure is determined by the force of the blood against the walls of the blood vessels and the size of the blood vessels. The blood pressure is determined by the force of the blood against the walls of the blood vessels and the size of the blood vessels. The blood pressure is determined by the force of the blood against the walls of the blood vessels and the size of the blood vessels. The blood pressure is determined by the force of the blood against the walls of the blood vessels and the size of the blood vessels. The blood pressure is determined by the force of the blood against the walls of the blood vessels and the size of the blood vessels. The blood pressure is determined by the force of the blood against the walls of the blood vessels and the size of the blood vessels. The blood pressure is determined by the force of the blood against the walls of the blood vessels and the size of the blood vessels. The blood pressure is determined by the force of the blood against the walls of the blood vessels and the size of the blood vessels. The blood pressure is determined by the force of the blood against the walls of the blood vessels and the size of the blood vessels. The blood
+2024-05-13 18:45:05,627 INFO answer extract failed
+ The micron is a unit of length equal to one millionth of a meter. The \AAngstrom is a unit of length equal to one ten-billionth of a meter. The dalton is a unit of mass equal to the mass of a hydrogen atom. The kilogram is a unit of mass equal to the mass of one liter of water. The second is a unit of time equal to 9,192,631,770 periods of the radiation emitted by the cesium-133 atom. The liter is a unit of volume equal to the volume of one cubic decimeter. The hectare is a unit of area equal to the area of one square decimeter. The joule is a unit of energy equal to the work done by a force of one newton acting through a distance of one meter. The mile is a unit of length equal to 1,609.344 meters. The ton is a unit of mass equal to 2,204.62 pounds. The hour is a unit of time equal to 3,600 seconds. The foot is a unit of length equal to 0.3048 meters.
+2024-05-13 18:45:05,627 INFO answer extract failed
+ Connective tissue is a type of tissue that supports and binds other tissues together. Connective tissue is found throughout the body, including in tendons, ligaments, bone, cartilage, blood, lymph, and adipose tissue. Skin is a type of epithelial tissue, which is a type of tissue that covers the surface of the body. Muscle is a type of tissue that is found in the body and is responsible for movement. Blood is a type of fluid that is found in the body and is responsible for transporting oxygen and nutrients throughout the body. Cartilage is a type of connective tissue that is found in the body and is responsible for providing support and protection to the joints. Lymph is a type of fluid that is found in the body and is responsible for transporting immune cells throughout the body. Nerves are a type of tissue that is found in the body and is responsible for transmitting signals throughout the body. Adipose tissue is a type of connective tissue that is found in the body and is responsible for storing energy. Bone is a type of connective tissue that is found in
+2024-05-13 18:45:05,627 INFO answer extract failed
+ The average homozygosity of a species is the proportion of loci that are homozygous. The average homozygosity of a species is equal to the average heterozygosity of the species divided by the average heterozygosity of the species plus the average homozygosity of the species. The average heterozygosity of the species is equal to the average heterozygosity of the species divided by the average heterozygosity of the species plus the average homozygosity of the species. The average heterozygosity of the species is equal to the average heterozygosity of the species divided by the average heterozygosity of the species plus the average homozygosity of the species. The average heterozygosity of the species is equal to the average heterozygosity of the species divided by the average heterozygosity of the species plus the average homozygosity of the species. The average heterozygosity of the species is equal to the average heterozygosity of the species divided by
+2024-05-13 18:45:05,632 INFO this batch accu is: 0.38311688311688313, corr: 59.0, wrong: 95.0
+
+2024-05-13 18:45:20,288 INFO 64size batch costing time: 14.656582593917847
+2024-05-13 18:45:20,289 INFO answer extract failed
+ The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is devoid of cytoplasm. The gray crescent is a region of the zygote that is
+2024-05-13 18:45:20,289 INFO answer extract failed
+ The urea cycle is a metabolic pathway that converts ammonia into urea, which is excreted by the kidneys. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical reactions that occur in the liver. The urea cycle is a series of chemical
+2024-05-13 18:45:20,289 INFO answer extract failed
+ The haploid number of an animal is the number of chromosomes in a single cell. The haploid number of an animal is equal to the number of chromosomes in the gametes. The gametes are the male and female gametes. The male gamete is called the sperm and the female gamete is called the ovum. The sperm and the ovum fuse to form a zygote. The zygote is diploid. The diploid number of an animal is the number of chromosomes in the zygote. The diploid number of an animal is equal to the sum of the haploid numbers of the male and female gametes. The diploid number of an animal is equal to the sum of the haploid numbers of the male and female gametes. The diploid number of an animal is equal to the sum of the haploid numbers of the male and female gametes. The diploid number of an animal is equal to the sum of the haploid numbers of the male and female gametes. The diploid number of an animal is equal to the sum of the haploid numbers
+2024-05-13 18:45:20,289 INFO answer extract failed
+ Planarians are flatworms that can regenerate lost body parts. They can regenerate a whole new body from a small piece of their body. They can also regenerate a new head from a small piece of their tail. Planarians can regenerate a new body from a small piece of their body. They can also regenerate a new head from a small piece of their tail. Planarians can regenerate a new body from a small piece of their body. They can also regenerate a new head from a small piece of their tail. Planarians can regenerate a new body from a small piece of their body. They can also regenerate a new head from a small piece of their tail. Planarians can regenerate a new body from a small piece of their body. They can also regenerate a new head from a small piece of their tail. Planarians can regenerate a new body from a small piece of their body. They can also regenerate a new head from a small piece of their tail. Planarians can regenerate a new body from a small piece of their body. They can also regenerate a new head from a small
+2024-05-13 18:45:20,289 INFO answer extract failed
+ Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry is a characteristic of invertebrates only. Bilateral symmetry
+2024-05-13 18:45:20,289 INFO answer extract failed
+ The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that it is controlled by many genes. The inheritance of eye color in humans is polygenic, meaning that
+2024-05-13 18:45:20,289 INFO answer extract failed
+ The heart is a pump that moves blood around the body. The heart is divided into two sides, the left and the right. The left side of the heart receives deoxygenated blood from the body and pumps it to the lungs. The right side of the heart receives oxygenated blood from the lungs and pumps it to the body. The heart is divided into four chambers: two atria and two ventricles. The atria are the upper chambers of the heart and the ventricles are the lower chambers. The atria are the first to contract and the ventricles are the last to contract. The atria contract first and the ventricles contract last. The atria are the first to relax and the ventricles are the last to relax. The atria are the first to fill and the ventricles are the last to fill. The atria are the first to empty and the ventricles are the last to empty. The atria are the first to relax and the ventricles are the last to relax. The atria are the first to fill and the ventricles are the last to fill. The atria are the first to empty and the vent
+2024-05-13 18:45:20,289 INFO answer extract failed
+ The relative fitness of the allele forchondrodystrophyis 0.1963. The data of the Lying-in Hospital shows that there were 10 dwarfs out of 94,075 births. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the number of mutations per generation. The mutation rate is the
+2024-05-13 18:45:20,289 INFO answer extract failed
+ The cecropia moth is a species of moth in the family Saturniidae. The cecropia moth is a large moth with a wingspan of 100–125 mm. The cecropia moth is a nocturnal moth that is found in the eastern United States and Canada. The cecropia moth is a species of moth in the family Saturniidae. The cecropia moth is a large moth with a wingspan of 100–125 mm. The cecropia moth is a nocturnal moth that is found in the eastern United States and Canada. The cecropia moth is a species of moth in the family Saturniidae. The cecropia moth is a large moth with a wingspan of 100–125 mm. The cecropia moth is a nocturnal moth that is found in the eastern United States and Canada. The cecropia moth is a species of moth in the family Saturniidae. The cecropia moth is a large moth with a wingspan of 100–125 mm. The cecropia moth is a
+2024-05-13 18:45:20,289 INFO answer extract failed
+ The glomerular filtration barrier is a selective barrier that allows water and small solutes to pass through, but not large solutes. The glomerular filtration barrier is formed by the glomerular capillary wall, which is composed of a single layer of endothelial cells. The glomerular capillary wall is very thin, and the glomerular capillaries are very long, so the glomerular capillaries have a large surface area. The glomerular capillaries are also very narrow, so the glomerular capillaries have a small volume. The glomerular capillaries are also very long, so the glomerular capillaries have a large length. The glomerular capillaries are also very thin, so the glomerular capillaries have a small diameter. The glomerular capillaries are also very long, so the glomerular capillaries have a large length. The glomerular capillaries are also very thin, so the glomerular capillaries have a small diameter. The glomerular capillaries are also very long, so the glomerular capillaries have a large length. The
+2024-05-13 18:45:20,289 INFO answer extract failed
+ Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure. Plant tissues are classified based on their location, function, and structure.
+2024-05-13 18:45:20,289 INFO answer extract failed
+ Testosterone is a steroid hormone and anabolic steroid. It is the primary male sex hormone and is needed to develop and maintain male reproductive tissues. It is also important for health and well-being as well as the prevention of osteoporosis. Testosterone decreases muscle mass and strength. Insulin is a hormone that helps control the amount of glucose in your blood. It does this by helping your body store excess glucose for energy or by telling your liver to make more glucose. Insulin decreases storage of glycogen. Progesterone is a female sex hormone important for the regulation of the menstrual cycle and pregnancy. Progesterone stimulates the production of milk. Growth hormone is a small protein that is made by the pituitary gland and secreted into the bloodstream. Growth hormone stimulates cell division and protein synthesis. Glucagon is a hormone that stimulates the liver to release glucose into the bloodstream. Glucagon increases the storage of glycogen in
+2024-05-13 18:45:20,289 INFO answer extract failed
+ A Barr body is a small, round, dense body that is found in the nucleus of female cells. It is formed when one of the two X chromosomes in a female cell is inactivated. The inactivated X chromosome is called the Barr body. The Barr body is not visible under a light microscope, but it can be seen under an electron microscope. The Barr body is not visible under a light microscope, but it can be seen under an electron microscope. The Barr body is not visible under a light microscope, but it can be seen under an electron microscope. The Barr body is not visible under a light microscope, but it can be seen under an electron microscope. The Barr body is not visible under a light microscope, but it can be seen under an electron microscope. The Barr body is not visible under a light microscope, but it can be seen under an electron microscope. The Barr body is not visible under a light microscope, but it can be seen under an electron microscope. The Barr body is not visible under a light microscope,
+2024-05-13 18:45:20,289 INFO answer extract failed
+ The suspensor is derived from the basal cell. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a structure that connects the embryo to the maternal tissue. The suspensor is a
+2024-05-13 18:45:20,295 INFO this batch accu is: 0.35294117647058826, corr: 72.0, wrong: 132.0
+
+2024-05-13 18:45:34,515 INFO 64size batch costing time: 14.220053434371948
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The principle of competitive exclusion states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive exclusion principle states that two species cannot occupy the same niche indefinitely. The competitive
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The parasympathetic nervous system is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's resting state. It is responsible for the body's
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The codons are the three-base sequences that specify the amino acid. The codons are made up of the three bases: A, C, G, and T. The codons are translated into amino acids by the ribosome. The codons are made up of the three bases: A, C, G, and T. The codons are translated into amino acids by the ribosome. The codons are made up of the three bases: A, C, G, and T. The codons are translated into amino acids by the ribosome. The codons are made up of the three bases: A, C, G, and T. The codons are translated into amino acids by the ribosome. The codons are made up of the three bases: A, C, G, and T. The codons are translated into amino acids by the ribosome. The codons are made up of the three bases: A, C, G, and T. The codons are translated into amino acids by the ribosome. The codons are made up of the three bases: A, C, G, and T. The codons are
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue. The wild-type allele is dominant to its mutant homologue.
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The gene frequency for theRhallele among American whites is 0.028. Among American blacks, the frequency is 0.446. Among East African blacks, the frequency of theRh allele is 0.630. The degree of gene exchange (m) between the American whites and blacks is given by the equation $m = \frac{2p_1p_2}{p_1 + p_2}$, where $p_1$ is the frequency of theRh allele in the American whites and $p_2$ is the frequency of theRh allele in the American blacks. We have $p_1 = 0.028$ and $p_2 = 0.446$. The degree of gene exchange (m) is given by the equation $m = \frac{0.028 \cdot 0.446}{0.028 + 0.446} = 0.028 \cdot 0.446 / 0.574 = 0.028 \cdot 0.446 / 0.574
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The genotype of a person is determined by the alleles of the two parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents. The genotype of the child is determined by the alleles of the parents.
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The fossilized teeth, jaws, and craniums of prehistoric man can be used to deduce information about prehistoric man. The fossilized teeth, jaws, and craniums of prehistoric man can be used to deduce information about prehistoric man. The fossilized teeth, jaws, and craniums of prehistoric man can be used to deduce information about prehistoric man. The fossilized teeth, jaws, and craniums of prehistoric man can be used to deduce information about prehistoric man. The fossilized teeth, jaws, and craniums of prehistoric man can be used to deduce information about prehistoric man. The fossilized teeth, jaws, and craniums of prehistoric man can be used to deduce information about prehistoric man. The fossilized teeth, jaws, and craniums of prehistoric man can be used to deduce information about prehistoric man. The fossilized teeth, jaws, and craniums of prehistoric man can be used to deduce information about prehistoric man. The fossilized teeth, jaws
+2024-05-13 18:45:34,515 INFO answer extract failed
+ Sexual selection is the differential reproductive success of individuals due to differences in their phenotype. Sexual selection is a form of natural selection that acts on the phenotype of an organism, rather than its genotype. Sexual selection is a form of natural selection that acts on the phenotype of an organism, rather than its genotype. Sexual selection is a form of natural selection that acts on the phenotype of an organism, rather than its genotype. Sexual selection is a form of natural selection that acts on the phenotype of an organism, rather than its genotype. Sexual selection is a form of natural selection that acts on the phenotype of an organism, rather than its genotype. Sexual selection is a form of natural selection that acts on the phenotype of an organism, rather than its genotype. Sexual selection is a form of natural selection that acts on the phenotype of an organism, rather than its genotype. Sexual selection is a form of natural selection that acts on the phenotype of an organism, rather than its genotype. Sexual selection is a form of natural selection that acts
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The pH of a solution is a measure of the concentration of hydrogen ions in the solution. The pH of a solution is defined as the negative logarithm of the hydrogen ion concentration. The pH of a solution is a measure of the concentration of hydrogen ions in the solution. The pH of a solution is defined as the negative logarithm of the hydrogen ion concentration. The pH of a solution is a measure of the concentration of hydrogen ions in the solution. The pH of a solution is defined as the negative logarithm of the hydrogen ion concentration. The pH of a solution is a measure of the concentration of hydrogen ions in the solution. The pH of a solution is defined as the negative logarithm of the hydrogen ion concentration. The pH of a solution is a measure of the concentration of hydrogen ions in the solution. The pH of a solution is defined as the negative logarithm of the hydrogen ion concentration. The pH of a solution is a measure of the concentration of hydrogen ions in the solution. The pH of a solution is defined as the negative logarithm of the hydrogen ion concentration. The pH of
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The leaves of Nymphaea odorata float on the surface of the water. This means that the leaves are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The leaves of aquatic plants are adapted to an aquatic environment. The
+2024-05-13 18:45:34,515 INFO answer extract failed
+ The logistic curve is a graphical representation of the growth of a population. The logistic curve is a sigmoid curve that starts at a low population and then rises to a peak population, and then falls back to a low population. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe the growth of a population in a finite environment. The logistic curve is used to describe
+2024-05-13 18:45:34,515 INFO answer extract failed
+ Cyanobacteria are a type of bacteria that can photosynthesize. They are also known as blue-green algae. They are unicellular and can be found in freshwater and marine environments. They are also known as blue-green algae. They are unicellular and can be found in freshwater and marine environments. They are also known as blue-green algae. They are unicellular and can be found in freshwater and marine environments. They are also known as blue-green algae. They are unicellular and can be found in freshwater and marine environments. They are also known as blue-green algae. They are unicellular and can be found in freshwater and marine environments. They are also known as blue-green algae. They are unicellular and can be found in freshwater and marine environments. They are also known as blue-green algae. They are unicellular and can be found in freshwater and marine environments. They are also known as blue-green algae. They are unicellular and can be found in freshwater and marine environments. They are also known as blue-green algae. They are
+2024-05-13 18:45:34,515 INFO answer extract failed
+ Gene flow is the movement of genes between populations. Gene flow can occur between populations that are geographically separated or between populations that are not geographically separated. Gene flow can occur between populations that are separated by a physical barrier, such as a mountain range, or between populations that are not separated by a physical barrier. Gene flow can occur between populations that are separated by a physical barrier, such as a mountain range, or between populations that are not separated by a physical barrier. Gene flow can occur between populations that are separated by a physical barrier, such as a mountain range, or between populations that are not separated by a physical barrier. Gene flow can occur between populations that are separated by a physical barrier, such as a mountain range, or between populations that are not separated by a physical barrier. Gene flow can occur between populations that are separated by a physical barrier, such as a mountain range, or between populations that are not separated by a physical barrier. Gene flow can occur between populations that are separated by a physical barrier, such as a mountain range, or between populations that are not separated by a physical barrier. Gene flow can occur between populations that are separated by a physical barrier, such as a
+2024-05-13 18:45:34,521 INFO this batch accu is: 0.37254901960784315, corr: 95.0, wrong: 160.0
+
+2024-05-13 18:45:48,908 INFO 64size batch costing time: 14.386807441711426
+2024-05-13 18:45:48,908 INFO answer extract failed
+ The frequency of the dominant allele is $p = 0.36$ and the frequency of the recessive allele is $q = 0.64$. The frequency of the dominant allele is $p = 0.36$ and the frequency of the recessive allele is $q = 0.64$. The frequency of the dominant allele is $p = 0.36$ and the frequency of the recessive allele is $q = 0.64$. The frequency of the dominant allele is $p = 0.36$ and the frequency of the recessive allele is $q = 0.64$. The frequency of the dominant allele is $p = 0.36$ and the frequency of the recessive allele is $q = 0.64$. The frequency of the dominant allele is $p = 0.36$ and the frequency of the recessive allele is $q = 0.64$. The frequency of the dominant allele is $p = 0.36$ and the frequency of the recessive allele is $q = 0.
+2024-05-13 18:45:48,908 INFO answer extract failed
+ The sex of an organism is determined by the sex chromosomes. In somedioecious organisms, the sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same as the autosomes. The sex chromosomes are not the same
+2024-05-13 18:45:48,908 INFO answer extract failed
+ The Hardy-Weinberg Law states that the frequency of the dominant allele (p) is equal to the frequency of the recessive allele (q) squared. The frequency of the dominant allele is 0.6, so the frequency of the recessive allele is 0.6^2 = 0.36. The frequency of the recessive allele is 1/8000, so the frequency of the dominant allele is 1 - 1/8000 = 0.99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+2024-05-13 18:45:48,908 INFO answer extract failed
+ Pathogens are microorganisms that cause disease. Pathogens are often communicable, meaning they can be transmitted from one host to another. Pathogens can be virulent, meaning they cause disease, or they can be non-virulent, meaning they do not cause disease. Pathogens can be communicable or non-communicable. Pathogens can be virulent or non-virulent. Pathogens can be communicable or non-communicable. Pathogens can be virulent or non-virulent. Pathogens can be communicable or non-communicable. Pathogens can be virulent or non-virulent. Pathogens can be communicable or non-communicable. Pathogens can be virulent or non-virulent. Pathogens can be communicable or non-communicable. Pathogens can be virulent or non-virulent. Pathogens can be communicable or non-communicable. Pathogens can be virulent or non-virulent. Pathogens can be communicable or non-communicable. Pathogens can be virulent or non-virul
+2024-05-13 18:45:48,908 INFO answer extract failed
+ Smaller cells are more resilient to external damage. Smaller cells have a larger surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-volume ratio. Smaller cells have a smaller surface-to-
+2024-05-13 18:45:48,908 INFO answer extract failed
+ The proton pump is a protein complex that transports hydrogen ions (H+, or protons) across a membrane. The proton pump is found in the inner mitochondrial membrane and the thylakoid membrane. The proton pump is also found in the plasma membrane of mammalian skin cells. The proton pump is also found in the plasma membrane of bacteria. The proton pump is also found in the plasma membrane of mammalian nerve cells. The proton pump is also found in the plasma membrane of bird cells. The proton pump is also found in the plasma membrane of insects. The proton pump is also found in the plasma membrane of mammalian blood cells. The proton pump is also found in the plasma membrane of mammalian bone cells. The proton pump is also found in the plasma membrane of mammalian muscle cells. The proton pump is also found in the plasma membrane of amphibian cells. The proton pump is also found in the plasma memb
+2024-05-13 18:45:48,909 INFO answer extract failed
+ The cardiac cycle is the sequence of events that occur during each heartbeat. The cardiac cycle is divided into two phases: the diastolic phase and the systolic phase. During the diastolic phase, the ventricles relax and fill with blood. During the systolic phase, the ventricles contract and pump blood out of the heart. The volume of blood pumped out of the heart during each heartbeat is called the stroke volume. The stroke volume is the volume of blood pumped out of the heart during each heartbeat. The stroke volume is equal to the volume of blood pumped out of the heart during each heartbeat. The stroke volume is equal to the volume of blood pumped out of the heart during each heartbeat. The stroke volume is equal to the volume of blood pumped out of the heart during each heartbeat. The stroke volume is equal to the volume of blood pumped out of the heart during each heartbeat. The stroke volume is equal to the volume of blood pumped out of the heart during each heartbeat. The stroke volume is equal to the volume of blood pumped out of the heart during each
+2024-05-13 18:45:48,909 INFO answer extract failed
+ The phenotype of a fruit fly is determined by the genotype of the fly. The phenotype of a fruit fly is the physical appearance of the fly. The phenotype of a fruit fly is determined by the genotype of the fly. The phenotype of a fruit fly is the physical appearance of the fly. The phenotype of a fruit fly is determined by the genotype of the fly. The phenotype of a fruit fly is the physical appearance of the fly. The phenotype of a fruit fly is determined by the genotype of the fly. The phenotype of a fruit fly is the physical appearance of the fly. The phenotype of a fruit fly is determined by the genotype of the fly. The phenotype of a fruit fly is the physical appearance of the fly. The phenotype of a fruit fly is determined by the genotype of the fly. The phenotype of a fruit fly is the physical appearance of the fly. The phenotype of a fruit fly is determined by the genotype of the fly. The phenotype of a fruit fly is the physical appearance of the fly. The phenotype of a fruit fly is determined by
+2024-05-13 18:45:48,909 INFO answer extract failed
+ The clonal selection theory is correct. The clonal selection theory states that the genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is determined by the genetic makeup of its parents. The genetic makeup of an organism is
+2024-05-13 18:45:48,909 INFO answer extract failed
+ The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having a girl is 1/2. The probability of having a boy is 1/2. The probability of having
+2024-05-13 18:45:48,909 INFO answer extract failed
+ The Hardy-Weinberg Law states that the frequency of the dominant allele is $p^2 + 2 p q + q^2 = 1$, and $p + q = 1$ where $p$ is the frequency of the dominant allele, $q$ is the frequency of the recessive allele, and $p^2$, $q^2$, and $2pq$ are the frequencies of dominant homozygous, recessive homozygous, and heterozygous individuals, respectively. ​The frequency of the recessive allele (q) is $\sqrt{rac{1}{800}} = 0.05$. We have $p = 1 - q = 0.95$. The frequency of heterozygous individuals is $2pq = 2 \cdot 0.05 \cdot 0.95 = 0.095$. The number of heterozygous individuals is equal to the frequency of heterozygous individuals times the size of the population, or $0.095 * 800 = 76$. So we end up
+2024-05-13 18:45:48,916 INFO this batch accu is: 0.38311688311688313, corr: 118.0, wrong: 190.0
+
