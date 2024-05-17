@@ -126,13 +126,22 @@ def load_model():
     print("checkpoint 1")
     # model, tokenizer = None, None
     if args.scoring_method == "CoT":
-        llm = LLM(model=args.model, gpu_memory_utilization=float(args.gpu_util), tensor_parallel_size=args.ngpu)
+        # llm = LLM(model=args.model, gpu_memory_utilization=float(args.gpu_util),
+        #           tensor_parallel_size=args.ngpu, trust_remote_code=True)
+        if "Qwen" in args.model:
+            llm = LLM(model=args.model, gpu_memory_utilization=float(args.gpu_util),
+                      tensor_parallel_size=args.ngpu, max_model_len=4096,
+                      trust_remote_code=True)
+            print("adjust model length for Qwen")
+        else:
+            llm = LLM(model=args.model, gpu_memory_utilization=float(args.gpu_util),
+                      tensor_parallel_size=args.ngpu, trust_remote_code=True)
         print("checkpoint 2")
         sampling_params = SamplingParams(temperature=0, max_tokens=256,
                                          stop=["Question:"])
         print("checkpoint 3")
         # sampling_params = SamplingParams(temperature=0, max_tokens=256)
-        tokenizer = transformers.AutoTokenizer.from_pretrained(args.model)
+        tokenizer = transformers.AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
         print("checkpoint 4")
         return (llm, sampling_params), tokenizer
     if "llama-2" in args.model.lower():

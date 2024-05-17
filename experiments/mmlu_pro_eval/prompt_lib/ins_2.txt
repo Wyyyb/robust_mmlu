@@ -1,1 +1,1 @@
-As a {$} expert, you will find a list of frequently asked questions along with their answers below. These are intended to demonstrate typical inquiries and responses in the field of {$}. After reviewing these examples, you will be asked to respond to a new question based on the information provided.
+The following are multiple choice questions (with answers) about {$}.
