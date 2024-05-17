@@ -202,6 +202,19 @@ def push_to_hub(test_data, dev_data):
     # dev_dataset.push_to_hub("TIGER-Lab/MMLU-Pro", "data", split="validation")
 
 
+def update_to_hf():
+    with open("../data/mmlu_pro_data_v1/mmlu_pro_test.json", "r") as fi:
+        test_data = json.load(fi)
+    test_dataset = Dataset.from_list(test_data)
+    test_dataset.push_to_hub("TIGER-Lab/MMLU-Pro", split="test")
+
+    with open("../data/mmlu_pro_data_v1/mmlu_pro_dev.json", "r") as fi:
+        dev_data = json.load(fi)
+    dev_dataset = Dataset.from_list(dev_data)
+    dev_dataset.push_to_hub("TIGER-Lab/MMLU-Pro", split="validation")
+
+
 if __name__ == '__main__':
-    format_data()
+    # format_data()
+    update_to_hf()
 
