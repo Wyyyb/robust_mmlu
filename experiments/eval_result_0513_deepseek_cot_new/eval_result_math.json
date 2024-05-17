@@ -1,0 +1,140 @@
+[
+    {
+        "question_id": 269,
+        "question": "Statement 1 | A ring homomorphism is one to one if and only if the kernel is {0}. Statement 2 | Q is an ideal in R.",
+        "options": [
+            "True, False",
+            "Not Given, Not Given",
+            "False, False",
+            "Not Given, True",
+            "True, Not Given",
+            "Not Given, False",
+            "True, Not Given",
+            "True, True",
+            "False, True",
+            "False, Not Given"
+        ],
+        "answer": "I",
+        "answer_index": 8,
+        "cot_content": "",
+        "category": "math",
+        "src": "ori_mmlu-abstract_algebra",
+        "pred": "E",
+        "gpt_4_response": " Statement 1: A ring homomorphism is one to one if and only if the kernel is {0}.\nThis statement is true. A ring homomorphism is injective (one to one) if and only if its kernel contains only the zero element. This is a fundamental property of ring homomorphisms.\n\nStatement 2: Q is an ideal in R.\nThis statement is not given enough information to determine its truth or falsity. We would need to know the specific rings R and Q and their relationship to each other to determine if Q is an ideal in R.\n\nSo, the correct answer is (E) True, Not Given."
+    },
+    {
+        "question_id": 270,
+        "question": "Statement 1 | R is a splitting field of some polynomial over Q. Statement 2 | There is a field with 60 elements.",
+        "options": [
+            "Statement 1 is True, Statement 2 is Not Given",
+            "Statement 1 is Not Given, Statement 2 is False",
+            "True, False",
+            "Both Statements are True and False respectively",
+            "True, True",
+            "Statement 1 is Not Given, Statement 2 is True",
+            "False, True",
+            "False, False",
+            "Statement 1 is False, Statement 2 is Not Given",
+            "Both statements are Not Given"
+        ],
+        "answer": "H",
+        "answer_index": 7,
+        "cot_content": "",
+        "category": "math",
+        "src": "ori_mmlu-abstract_algebra",
+        "pred": "C",
+        "gpt_4_response": " Statement 1: R is a splitting field of some polynomial over Q.\nThis statement is true. The field of real numbers R is a splitting field of the polynomial x^2 - 2 over the field of rational numbers Q. The roots of this polynomial are the square roots of 2, which are real numbers.\n\nStatement 2: There is a field with 60 elements.\nThis statement is false. A field with a prime power number of elements exists if and only if the power is a prime number. In this case, 60 is not a prime power (it is 2^2 * 3 * 5), so there cannot be a field with 60 elements.\n\nThe answer is (C) True, False."
+    },
+    {
+        "question_id": 271,
+        "question": "Statement 1 | Any set of two vectors in R^2 is linearly independent. Statement 2 | If V = span(v1, ... , vk) and {v1, ... , vk} are linearly independent, then dim(V) = k.",
+        "options": [
+            "False, False",
+            "True, False",
+            "False, True",
+            "Cannot determine, False",
+            "True, True",
+            "Cannot determine, Cannot determine",
+            "False, Cannot determine",
+            "True, Cannot determine",
+            "Cannot determine, True",
+            "False, False, but there are exceptions"
+        ],
+        "answer": "C",
+        "answer_index": 2,
+        "cot_content": "",
+        "category": "math",
+        "src": "ori_mmlu-abstract_algebra",
+        "pred": "C",
+        "gpt_4_response": " Statement 1: Any set of two vectors in R^2 is linearly independent.\nThis statement is not true. Consider the case where both vectors are scalar multiples of each other. For example, let v1 = (1, 2) and v2 = (2, 4). These vectors are not linearly independent because v2 = 2 * v1. So, there are cases where two vectors in R^2 are not linearly independent.\n\nStatement 2: If V = span(v1, ..., vk) and {v1, ..., vk} are linearly independent, then dim(V) = k.\nThis statement is true. If the set of vectors {v1, ..., vk} is linearly independent, then they form a basis for the subspace V. The dimension of a subspace is equal to the number of vectors in its basis. Therefore, if {v1, ..., vk} is a basis for V, then dim(V) = k.\n\nSo, the correct answer is (C) False, True."
+    },
+    {
+        "question_id": 272,
+        "question": "Statement 1 | Every permutation is a cycle. Statement 2 | Every cycle is a permutation.",
+        "options": [
+            "Not enough information, False",
+            "False, False",
+            "Not enough information, True",
+            "True, True",
+            "True, False",
+            "True, Not enough information",
+            "Not enough information, Not enough information",
+            "False, True",
+            "False, Not enough information",
+            "Both statements are partially true"
+        ],
+        "answer": "H",
+        "answer_index": 7,
+        "cot_content": "",
+        "category": "math",
+        "src": "ori_mmlu-abstract_algebra",
+        "pred": "H",
+        "gpt_4_response": " Statement 1: Every permutation is a cycle.\nThis statement is false. A permutation is a rearrangement of elements, while a cycle is a specific type of permutation where elements are cyclically shifted. Not every permutation can be represented as a single cycle, as some permutations may involve multiple disjoint cycles.\n\nStatement 2: Every cycle is a permutation.\nThis statement is true. A cycle is a specific type of permutation where elements are cyclically shifted. Since a cycle involves a rearrangement of elements, it is indeed a permutation.\n\nThe answer is (H): False, True."
+    },
+    {
+        "question_id": 273,
+        "question": "Find all c in Z_3 such that Z_3[x]/(x^3 + x^2 + c) is a field.",
+        "options": [
+            "-2",
+            "2",
+            "1",
+            "-1",
+            "-3",
+            "0",
+            "3",
+            "4",
+            "6",
+            "5"
+        ],
+        "answer": "B",
+        "answer_index": 1,
+        "cot_content": "",
+        "category": "math",
+        "src": "ori_mmlu-abstract_algebra",
+        "pred": "B",
+        "gpt_4_response": " We are looking for all c in Z_3 such that the polynomial x^3 + x^2 + c has no roots in Z_3. This is because if the polynomial has a root in Z_3, then it is not irreducible, and the quotient ring Z_3[x]/(x^3 + x^2 + c) will not be a field.\n\nLet's check each value of c in Z_3:\n\n1. c = 0: The polynomial is x^3 + x^2. It has a root x = 0, so it's not irreducible.\n2. c = 1: The polynomial is x^3 + x^2 + 1. It has no roots in Z_3, so it's irreducible.\n3. c = 2: The polynomial is x^3 + x^2 + 2. It has no roots in Z_3, so it's irreducible.\n\nThus, the values of c in Z_3 for which Z_3[x]/(x^3 + x^2 + c) is a field are c = 1 and c = 2. The answer is (B) and (C)."
+    },
+    {
+        "question_id": 274,
+        "question": "Statement 1 | Every group of order 159 is cyclic. Statement 2 | Every group of order 102 has a nontrivial proper normal subgroup.",
+        "options": [
+            "False, Cannot be determined",
+            "False, False",
+            "False, True",
+            "True, True",
+            "True, False",
+            "Cannot be determined, True",
+            "True, Cannot be determined",
+            "Cannot be determined, Cannot be determined",
+            "Cannot be determined, False",
+            "False, True, Cannot be determined"
+        ],
+        "answer": "D",
+        "answer_index": 3,
+        "cot_content": "",
+        "category": "math",
+        "src": "ori_mmlu-abstract_algebra",
+        "pred": "D",
+        "gpt_4_response": " Statement 1: Every group of order 159 is cyclic.\nTo determine if this statement is true, we need to check if 159 is a prime number or a product of distinct prime numbers. 159 = 3 * 53, which are distinct prime numbers. According to the Fundamental Theorem of Finite Abelian Groups, if the order of a group is the product of distinct prime numbers, then the group is cyclic. Therefore, Statement 1 is true.\n\nStatement 2: Every group of order 102 has a nontrivial proper normal subgroup.\nTo determine if this statement is true, we need to check if 102 has any divisors other than 1 and itself. 102 = 2 * 3 * 17, which are distinct prime numbers. According to the Sylow theorems, if a group has order 102, it must have a nontrivial proper normal subgroup. Therefore, Statement 2 is true.\n\nSo, the correct answer is (D) True, True."
+    }
+]
