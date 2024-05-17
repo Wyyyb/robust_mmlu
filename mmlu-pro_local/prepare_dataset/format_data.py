@@ -187,8 +187,8 @@ def push_to_hub(test_data, dev_data):
     for k, v in subjects.items():
         sub_dataset = Dataset.from_list(v)
         sub_dataset.push_to_hub("TIGER-Lab/MMLU-Pro", k, split="test")
-    test_dataset = Dataset.from_list(test_data)
-    test_dataset.push_to_hub("TIGER-Lab/MMLU-Pro", "data", split="test")
+    # test_dataset = Dataset.from_list(test_data)
+    # test_dataset.push_to_hub("TIGER-Lab/MMLU-Pro", "data", split="test")
 
     subjects = {}
     for each in dev_data:
@@ -198,8 +198,8 @@ def push_to_hub(test_data, dev_data):
     for k, v in subjects.items():
         sub_dataset = Dataset.from_list(v)
         sub_dataset.push_to_hub("TIGER-Lab/MMLU-Pro", k, split="validation")
-    dev_dataset = Dataset.from_list(dev_data)
-    dev_dataset.push_to_hub("TIGER-Lab/MMLU-Pro", "data", split="validation")
+    # dev_dataset = Dataset.from_list(dev_data)
+    # dev_dataset.push_to_hub("TIGER-Lab/MMLU-Pro", "data", split="validation")
 
 
 if __name__ == '__main__':
