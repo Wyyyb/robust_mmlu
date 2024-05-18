@@ -5,96 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data_hf/transfer_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/.idea/mmlu-pro.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/data/mmlu_pro_data_v1/mmlu_pro_dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/data/mmlu_pro_data_v1/mmlu_pro_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/data/ori_mmlu_data/ori_mmlu_dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/data/ori_mmlu_data/ori_mmlu_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/evaluate/evaluate_local.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/evaluate/prompt_format_examples.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/format_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro-cot.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/biology_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/business_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/chemistry_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/computer science_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/economics_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/engineering_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/health_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/history_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/law_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/math_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/other_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/philosophy_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/physics_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/mmlu_pro_test/psychology_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu-cot.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/abstract_algebra.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/anatomy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/astronomy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/business_ethics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/clinical_knowledge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/college_biology.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/college_chemistry.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/college_computer_science.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/college_mathematics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/college_medicine.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/college_physics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/computer_security.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/conceptual_physics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/econometrics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/electrical_engineering.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/elementary_mathematics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/formal_logic.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/global_facts.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_biology.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_chemistry.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_computer_science.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_european_history.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_geography.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_government_and_politics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_macroeconomics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_mathematics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_microeconomics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_physics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_psychology.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_statistics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_us_history.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/high_school_world_history.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/human_aging.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/human_sexuality.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/international_law.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/jurisprudence.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/logical_fallacies.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/machine_learning.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/management.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/marketing.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/medical_genetics.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/miscellaneous.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/moral_disputes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/moral_scenarios.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/nutrition.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/philosophy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/prehistory.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/professional_accounting.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/professional_law.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/professional_medicine.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/professional_psychology.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/public_relations.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/security_studies.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/sociology.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/us_foreign_policy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/virology.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/input_data/ori_mmlu_data_json/world_religions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmlu-pro/prepare_dataset/ori_mmlu_categories.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +192,7 @@
       <workItem from="1713280202582" duration="14655000" />
       <workItem from="1713629768340" duration="952000" />
       <workItem from="1713656751207" duration="299000" />
-      <workItem from="1713657058587" duration="384941000" />
+      <workItem from="1713657058587" duration="388267000" />
     </task>
     <servers />
   </component>
