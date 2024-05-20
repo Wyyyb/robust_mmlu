@@ -2,7 +2,8 @@ import json
 
 
 def statistic():
-    with open("mmlu_pro_data_v1/mmlu_pro_test.json", "r") as fi:
+    # with open("mmlu_pro_data_v1/mmlu_pro_test.json", "r") as fi:
+    with open("/Users/server/MMLU/git/robust_mmlu/data_hf/local_0521/mmlu_pro_test_data.json", "r") as fi:
         data = json.load(fi)
     cat_data, src_data = {}, {}
     cat_src_data = {}
