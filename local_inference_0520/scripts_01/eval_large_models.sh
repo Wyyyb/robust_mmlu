@@ -5,9 +5,9 @@ save_dir="eval_results_0520/"
 global_record_file="eval_results_0520/eval_record_collection_0520.csv"
 # model="/ML-A100/team/mm/zhangge/Llama-3-70B-Instruct"
 model_list=(
-    "Qwen1.5-72B-Chat"
-    "Qwen1.5-110B"
-    "Qwen1.5-72B"
+    "/ML-A800/models/Qwen1.5-72B-Chat"
+    "/ML-A800/models/Qwen1.5-110B"
+    "/ML-A800/models/Qwen1.5-72B"
 )
 selected_subjects="all"
 gpu_util=0.8
