@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data_sta_0520/sta_mmlu_pro_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_Yi_9B.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/data_source_distribution.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/data_source_distribution.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/statistic_mmlu_pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/statistic_mmlu_pro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/subject_dis.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/subject_dis.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/test_plotly.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/test_plotly.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_large_models.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_large_models.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +32,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/data_sta_0520",
+    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/scripts_01",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/local_inference_0520/scripts_01" />
       <recent name="$PROJECT_DIR$/data_sta_0520" />
       <recent name="$PROJECT_DIR$/local_inference_0520" />
-      <recent name="$PROJECT_DIR$/local_inference_0520/scripts_01" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/evaluate_0520/new_data" />
     </key>
@@ -198,6 +193,7 @@
       <workItem from="1713629768340" duration="952000" />
       <workItem from="1713656751207" duration="299000" />
       <workItem from="1713657058587" duration="426350000" />
+      <workItem from="1716208753979" duration="1854000" />
     </task>
     <servers />
   </component>
