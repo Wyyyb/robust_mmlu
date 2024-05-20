@@ -5,6 +5,10 @@ save_dir="eval_results_0520/"
 global_record_file="eval_results_0520/eval_record_collection_0520.csv"
 # model="/ML-A100/team/mm/zhangge/Meta-Llama-3-70B-Instruct"
 model_list=(
+    "/ML-A800/models/Qwen1.5-7B-Chat"
+    "/ML-A800/models/Qwen1.5-14B-Chat"
+    "/ML-A800/models/Yi-6b-Chat"
+    "/ML-A800/models/Yi-9B"
     "/ML-A800/models/Meta-Llama-3-8B"
     "/ML-A800/models/Meta-Llama-3-8B-Instruct"
     "/ML-A800/models/Llama-2-13b-hf"
@@ -13,9 +17,8 @@ model_list=(
     "/ML-A800/models/Mistral-7B-Instruct-v0.1"
     "/ML-A800/models/Mistral-7B-Instruct-v0.2"
     "/ML-A800/models/Mistral-7B-v0.2-hf"
-    "/ML-A800/models/"
-    "/ML-A800/models/"
-    "/ML-A800/models/"
+    "/ML-A800/models/gemma-7b"
+    "/ML-A800/models/Yi-6B"
 )
 selected_subjects="all"
 gpu_util=0.8
