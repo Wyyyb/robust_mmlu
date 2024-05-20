@@ -27,7 +27,7 @@ for model in "${model_list[@]}"; do
                  --global_record_file $global_record_file \
                  --gpu_util $gpu_util \
                  --batch_size $batch_size
-
+done
 
 
 

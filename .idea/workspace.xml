@@ -5,102 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_biology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_business.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_chemistry.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_computer_science.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_economics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_engineering.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_health.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_law.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_math.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_other.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_philosophy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_physics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_result_gpt_4_0510_psychology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_biology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_business.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_chemistry.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_computer_science.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_economics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_engineering.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_health.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_law.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_math.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_other.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_philosophy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_physics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/eval_summary_gpt_4_0510_psychology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/sta_result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/sta_result_0511_2306.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0510_gpt_4_cot/sta_result_0512.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_biology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_business.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_chemistry.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_computer_science.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_economics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_engineering.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_health.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_law.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_math.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_other.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_philosophy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_physics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_result_psychology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_biology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_business.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_chemistry.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_computer_science.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_economics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_engineering.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_health.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_law.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_math.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_other.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_philosophy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_physics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/eval_summary_psychology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0513_gpt4o_cot/sta_result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_biology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_business.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_chemistry.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_computer_science.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_economics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_engineering.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_health.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_law.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_math.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_other.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_philosophy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_physics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_result_gpt_4_0510_psychology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_biology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_business.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_chemistry.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_computer_science.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_economics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_engineering.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_health.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_history.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_law.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_math.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_other.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_philosophy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_physics.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/eval_summary_gpt_4_0510_psychology.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/exist_results/eval_result_0514_yi_large_cot/sta_result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_0520/new_data/ann_modified_data_0520.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_large_models.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_llama_2_7b.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ann_data_postprocess/post_process_ann_data_0520.py" beforeDir="false" afterPath="$PROJECT_DIR$/ann_data_postprocess/post_process_ann_data_0520.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_hf/pull_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_hf/pull_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_large_models.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_large_models.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +191,7 @@
       <workItem from="1713280202582" duration="14655000" />
       <workItem from="1713629768340" duration="952000" />
       <workItem from="1713656751207" duration="299000" />
-      <workItem from="1713657058587" duration="417985000" />
+      <workItem from="1713657058587" duration="418220000" />
     </task>
     <servers />
   </component>
