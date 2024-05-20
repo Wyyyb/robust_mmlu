@@ -35,6 +35,7 @@ def postprocess(input_files, output_file):
         curr = {"question_id": q_id, "question": question, "options": options, "answer": answer,
                 "answer_index": answer_index, "src": src, "category": subject, "bad_question": bad_question}
         res_data[subject].append(curr)
+    print("rm_options_sta", rm_options_sta)
     save(res_data, output_file)
 
 
@@ -97,6 +98,9 @@ def process_options(ann):
             rm_option_index.append(opt_index)
         for i, option in enumerate(options):
             if i in rm_option_index and option != answer_content:
+                if ann["meta_info"]["subject"] not in rm_options_sta:
+                    rm_options_sta[ann["meta_info"]["subject"]] = 0
+                rm_options_sta[ann["meta_info"]["subject"]] += 1
                 continue
             res_options.append(option)
         answer = index_map_str[res_options.index(answer_content)]
@@ -108,6 +112,7 @@ def process_options(ann):
 
 
 if __name__ == "__main__":
+    rm_options_sta = {}
     postprocess(["ann_data/ann_data_part_1_0520.json", "ann_data/ann_data_part_2_0520.json"],
                 "data/ann_modified_data_0520.json")
 
