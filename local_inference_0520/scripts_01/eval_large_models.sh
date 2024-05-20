@@ -10,6 +10,8 @@ model_list=(
     "/ML-A800/models/Yi-34B"
     "/ML-A800/models/Mixtral-8x7B-Instruct-v0.1"
     "/ML-A800/models/Mixtral-8x7B-v0.1"
+    "/ML-A800/models/Phi-3-mini-4k-instruct"
+    "/ML-A800/models/c4ai-command-r-v01"
 )
 selected_subjects="all"
 gpu_util=0.8
