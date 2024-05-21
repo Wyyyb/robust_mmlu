@@ -1,0 +1,52 @@
+2024-05-20 11:25:42,023 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
+2024-05-20 11:25:42,438 DEBUG https://hf-mirror.com:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro HTTP/1.1" 200 1033
+2024-05-20 11:25:42,441 DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-05-20 11:25:43,134 DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/TIGER-Lab/MMLU-Pro/TIGER-Lab/MMLU-Pro.py HTTP/1.1" 404 0
+2024-05-20 11:25:43,453 DEBUG https://hf-mirror.com:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro HTTP/1.1" 200 1033
+2024-05-20 11:25:43,455 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
+2024-05-20 11:25:43,871 DEBUG https://hf-mirror.com:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da/README.md HTTP/1.1" 200 0
+2024-05-20 11:25:43,880 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
+2024-05-20 11:25:44,278 DEBUG https://hf-mirror.com:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da/.huggingface.yaml HTTP/1.1" 404 0
+2024-05-20 11:25:44,281 DEBUG Starting new HTTPS connection (1): datasets-server.hf-mirror.com:443
+2024-05-20 11:25:44,429 DEBUG https://datasets-server.hf-mirror.com:443 "GET /info?dataset=TIGER-Lab/MMLU-Pro HTTP/1.1" 302 0
+2024-05-20 11:25:44,430 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
+2024-05-20 11:25:44,622 DEBUG https://hf-mirror.com:443 "GET / HTTP/1.1" 200 None
+2024-05-20 11:25:44,924 DEBUG https://hf-mirror.com:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/revision/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 1033
+2024-05-20 11:25:45,159 DEBUG https://hf-mirror.com:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 96
+2024-05-20 11:25:45,398 DEBUG https://hf-mirror.com:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 218
+2024-05-20 11:25:45,621 DEBUG https://hf-mirror.com:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/tree/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da/data?recursive=False&expand=False HTTP/1.1" 200 475
+2024-05-20 11:25:45,625 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
+2024-05-20 11:25:46,095 DEBUG https://hf-mirror.com:443 "GET /api/datasets/TIGER-Lab/MMLU-Pro/revision/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 1033
+2024-05-20 11:25:46,328 DEBUG https://hf-mirror.com:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 96
+2024-05-20 11:25:46,603 DEBUG https://hf-mirror.com:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 218
+2024-05-20 11:25:46,607 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
+2024-05-20 11:25:46,935 DEBUG https://hf-mirror.com:443 "HEAD /datasets/TIGER-Lab/MMLU-Pro/resolve/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da/dataset_infos.json HTTP/1.1" 404 0
+2024-05-20 11:25:47,171 DEBUG https://hf-mirror.com:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 96
+2024-05-20 11:25:47,458 DEBUG https://hf-mirror.com:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 218
+2024-05-20 11:25:47,682 DEBUG https://hf-mirror.com:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 96
+2024-05-20 11:25:47,918 DEBUG https://hf-mirror.com:443 "POST /api/datasets/TIGER-Lab/MMLU-Pro/paths-info/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da HTTP/1.1" 200 218
+2024-05-20 11:25:47,920 DEBUG Attempting to acquire lock 140656262310016 on /root/zhangge/huggingface/datasets/_root_zhangge_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da.lock
+2024-05-20 11:25:47,920 DEBUG Lock 140656262310016 acquired on /root/zhangge/huggingface/datasets/_root_zhangge_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da.lock
+2024-05-20 11:25:47,921 DEBUG open file: /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da/dataset_info.json
+2024-05-20 11:25:47,921 DEBUG Attempting to release lock 140656262310016 on /root/zhangge/huggingface/datasets/_root_zhangge_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da.lock
+2024-05-20 11:25:47,921 DEBUG Lock 140656262310016 released on /root/zhangge/huggingface/datasets/_root_zhangge_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da.lock
+2024-05-20 11:25:47,937 DEBUG Attempting to acquire lock 140656263113216 on /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da_builder.lock
+2024-05-20 11:25:47,937 DEBUG Lock 140656263113216 acquired on /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da_builder.lock
+2024-05-20 11:25:47,937 DEBUG open file: /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da/dataset_info.json
+2024-05-20 11:25:47,937 DEBUG Attempting to release lock 140656263113216 on /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da_builder.lock
+2024-05-20 11:25:47,937 DEBUG Lock 140656263113216 released on /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da_builder.lock
+2024-05-20 11:25:48,797 INFO selected subjects:
+business
+law
+psychology
+biology
+chemistry
+history
+other
+health
+economics
+math
+physics
+computer science
+philosophy
+engineering

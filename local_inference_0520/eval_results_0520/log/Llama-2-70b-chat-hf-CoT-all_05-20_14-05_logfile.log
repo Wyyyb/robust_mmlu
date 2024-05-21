@@ -1,0 +1,43 @@
+2024-05-20 14:05:24,224 DEBUG Attempting to acquire lock 140093386834464 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/node_ip_address.json.lock
+2024-05-20 14:05:24,224 DEBUG Lock 140093386834464 acquired on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/node_ip_address.json.lock
+2024-05-20 14:05:24,224 DEBUG Attempting to release lock 140093386834464 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/node_ip_address.json.lock
+2024-05-20 14:05:24,224 DEBUG Lock 140093386834464 released on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/node_ip_address.json.lock
+2024-05-20 14:05:24,225 DEBUG Attempting to acquire lock 140093386836432 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,225 DEBUG Lock 140093386836432 acquired on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,225 DEBUG Attempting to release lock 140093386836432 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,225 DEBUG Lock 140093386836432 released on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,225 DEBUG Attempting to acquire lock 140093386834416 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,225 DEBUG Lock 140093386834416 acquired on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,225 DEBUG Attempting to release lock 140093386834416 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Lock 140093386834416 released on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Attempting to acquire lock 140093386836864 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Lock 140093386836864 acquired on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Attempting to release lock 140093386836864 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Lock 140093386836864 released on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Attempting to acquire lock 140093387181792 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Lock 140093387181792 acquired on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Attempting to release lock 140093387181792 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Lock 140093387181792 released on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,226 DEBUG Attempting to acquire lock 140093387178768 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,227 DEBUG Lock 140093387178768 acquired on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,227 DEBUG Attempting to release lock 140093387178768 on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:24,227 DEBUG Lock 140093387178768 released on /tmp/ray/session_2024-05-20_14-05-24_223671_819391/ports_by_node.json.lock
+2024-05-20 14:05:43,319 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
+2024-05-20 14:05:43,324 WARNING Using the latest cached version of the dataset since TIGER-Lab/MMLU-Pro couldn't be found on the Hugging Face Hub
+2024-05-20 14:05:43,325 WARNING Found the latest cached dataset configuration 'default' at /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da (last modified on Mon May 20 10:52:05 2024).
+2024-05-20 14:05:43,326 DEBUG open file: /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/f3b1a7cff54a6f8dc91179c81ef73681d1d6b1da/dataset_info.json
+2024-05-20 14:05:44,107 INFO selected subjects:
+business
+law
+psychology
+biology
+chemistry
+history
+other
+health
+economics
+math
+physics
+computer science
+philosophy
+engineering

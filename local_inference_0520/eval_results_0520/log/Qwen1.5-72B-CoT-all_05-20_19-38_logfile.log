@@ -1,0 +1,23 @@
+2024-05-20 19:38:29,196 DEBUG Starting new HTTPS connection (1): hf-mirror.com:443
+2024-05-20 19:38:29,201 WARNING Using the latest cached version of the dataset since TIGER-Lab/MMLU-Pro couldn't be found on the Hugging Face Hub
+2024-05-20 19:38:29,202 WARNING Found the latest cached dataset configuration 'default' at /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/7a486fcd789a38b999f12afd296a126722035b29 (last modified on Mon May 20 14:45:30 2024).
+2024-05-20 19:38:29,203 DEBUG Attempting to acquire lock 140330758254992 on /root/zhangge/huggingface/datasets/_root_zhangge_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_7a486fcd789a38b999f12afd296a126722035b29.lock
+2024-05-20 19:38:29,203 DEBUG Lock 140330758254992 acquired on /root/zhangge/huggingface/datasets/_root_zhangge_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_7a486fcd789a38b999f12afd296a126722035b29.lock
+2024-05-20 19:38:29,203 DEBUG open file: /root/zhangge/huggingface/datasets/TIGER-Lab___mmlu-pro/default/0.0.0/7a486fcd789a38b999f12afd296a126722035b29/dataset_info.json
+2024-05-20 19:38:29,204 DEBUG Attempting to release lock 140330758254992 on /root/zhangge/huggingface/datasets/_root_zhangge_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_7a486fcd789a38b999f12afd296a126722035b29.lock
+2024-05-20 19:38:29,204 DEBUG Lock 140330758254992 released on /root/zhangge/huggingface/datasets/_root_zhangge_huggingface_datasets_TIGER-Lab___mmlu-pro_default_0.0.0_7a486fcd789a38b999f12afd296a126722035b29.lock
+2024-05-20 19:38:30,122 INFO selected subjects:
+business
+law
+psychology
+biology
+chemistry
+history
+other
+health
+economics
+math
+physics
+computer science
+philosophy
+engineering
