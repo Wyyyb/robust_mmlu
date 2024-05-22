@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/local_inference_0520/statistic_pred_none.py" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/statistic_pred_none.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +193,7 @@
       <workItem from="1713629768340" duration="952000" />
       <workItem from="1713656751207" duration="299000" />
       <workItem from="1713657058587" duration="426350000" />
-      <workItem from="1716208753979" duration="13822000" />
+      <workItem from="1716208753979" duration="16107000" />
     </task>
     <servers />
   </component>
