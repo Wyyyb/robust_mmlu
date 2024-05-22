@@ -10,7 +10,7 @@ def func(input_dir):
         file_path = os.path.join(input_dir, file)
         with open(file_path, "r") as fi:
             curr = json.load(fi)
-            data.append(curr)
+            data += curr
     print("length of data", len(data))
     pred_none_number = 0
     for each in data:
