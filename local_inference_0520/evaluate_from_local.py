@@ -266,6 +266,12 @@ def main():
                 exists_result = json.load(fi)
         else:
             exists_result = []
+        temp = []
+        for each in exists_result:
+            if not each["pred"]:
+                continue
+            temp.append(each)
+        exists_result = temp
         acc, corr_count, wrong_count = eval_cot(subject, model, tokenizer, val_df,
                                                 test_df, output_path, exists_result)
         sta_dict[subject]["corr"] = corr_count
