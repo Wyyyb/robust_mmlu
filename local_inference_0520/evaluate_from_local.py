@@ -107,7 +107,7 @@ def generate_cot_prompt(val_df, curr, k):
 def check_exist(res, q_id):
     for each in res:
         if q_id == each["question_id"]:
-            if "pred" in each:
+            if "pred" in each and each["pred"]:
                 # logging.debug("exist, skip it")
                 return True
             else:
