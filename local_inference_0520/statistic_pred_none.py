@@ -18,8 +18,8 @@ def func(input_dir):
     for each in data:
         if not each["pred"]:
             pred_none_number += 1
-        if each["answer"] == "A":
-            hit_count += 1
+            if each["answer"] == "A":
+                hit_count += 1
     print("pred_none_number", pred_none_number)
     print("hit_count", hit_count)
 
