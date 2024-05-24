@@ -1,5 +1,6 @@
 import json
-import re, os
+import re
+import os
 
 
 def collect():

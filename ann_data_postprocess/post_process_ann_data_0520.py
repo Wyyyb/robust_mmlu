@@ -2,10 +2,17 @@ import os
 import json
 
 
+src_map = {"ori_mmlu": "Original MMLU Questions",
+           "stemez": "STEM Website",
+           "theoremQA": "TheoremQA",
+           "scibench": "Scibench"}
+
+
 def postprocess(input_files, output_file):
     res_data = {}
     save_by_tags = {}
     data = []
+    sta_map = {}
     for input_file in input_files:
         with open(input_file, "r") as fi:
             data += json.load(fi)
@@ -15,6 +22,8 @@ def postprocess(input_files, output_file):
         q_id = each["ref_id"]
         # options = each["meta_info"]["options"]
         options, answer, tag = process_options(each)
+        if tag not in sta_map:
+            sta_map[tag] = {}
         if tag == "invalid":
             print("invalid, ref id is", each["ref_id"])
         if tag != "no_issues":
@@ -29,6 +38,14 @@ def postprocess(input_files, output_file):
         else:
             answer_index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".index(answer)
         src = each["meta_info"]["src"]
+        target_src = ""
+        for k, v in src_map.items():
+            if k in src:
+                target_src = v
+                break
+        if target_src not in sta_map[tag]:
+            sta_map[tag][target_src] = 0
+        sta_map[tag][target_src] += 1
         subject = each["meta_info"]["subject"]
         if subject not in res_data:
             res_data[subject] = []
@@ -37,6 +54,7 @@ def postprocess(input_files, output_file):
         res_data[subject].append(curr)
     print("rm_options_sta", rm_options_sta)
     save(res_data, output_file)
+    print("sta_map", sta_map)
 
 
 def save(res_data, output_file):

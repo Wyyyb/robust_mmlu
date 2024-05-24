@@ -11,7 +11,7 @@ model_list=(
     "/ML-A800/models/Qwen1.5-72B"
 )
 selected_subjects="all"
-gpu_util=0.8
+gpu_util=0.9
 batch_size=2048
 
 cd ../

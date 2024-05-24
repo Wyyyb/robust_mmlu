@@ -17,11 +17,11 @@ def pull_data():
             sta_subjects[each["category"]] = 0
         sta_subjects[each["category"]] += 1
     print(sta_subjects)
-    # os.makedirs("local_0521/", exist_ok=True)
-    # with open("local_0521/mmlu_pro_test_data.json", "w") as fo:
-    #     fo.write(json.dumps(test_data))
-    # with open("local_0521/mmlu_pro_val_data.json", "w") as fo:
-    #     fo.write(json.dumps(val_data))
+    os.makedirs("local_0524/", exist_ok=True)
+    with open("local_0524/mmlu_pro_test_data.json", "w") as fo:
+        fo.write(json.dumps(test_data))
+    with open("local_0524/mmlu_pro_val_data.json", "w") as fo:
+        fo.write(json.dumps(val_data))
     return test_data, val_data
 
 

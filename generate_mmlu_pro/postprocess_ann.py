@@ -59,6 +59,7 @@ def postprocess():
     subjects = list(ann_res.keys())
     subjects = sorted(subjects)
     ann_data = {}
+    sta_map = {"bad questions": 0, "incorrect answer": 0}
     for subject in subjects:
         if subject not in ann_data:
             ann_data[subject] = {}
@@ -89,7 +90,9 @@ def postprocess():
                 else:
                     curr_res = "abandon"
                 ann_data[subject][question_str] = curr_res
-
+            sta_map["bad questions"] += not_a_good_mcq + too_obvious_answer
+            sta_map["incorrect answer"] += incomplete_answer
+    print("sta_map", sta_map)
     file_list = list(os.listdir(input_dir))
     file_list = sorted(file_list)
     for file in file_list:
@@ -120,9 +123,12 @@ def postprocess():
 
 
 if __name__ == '__main__':
-    input_dir = r"../experiments/data/images_removed_mmlu"
-    output_dir = r"../experiments/data/mmlu_pro_4_options"
+    # input_dir = r"../experiments/data/images_removed_mmlu"
+    input_dir = "/Users/server/MMLU/git/robust_mmlu_bk_0505/experiments/data/images_removed_mmlu/"
+    # output_dir = r"../experiments/data/mmlu_pro_4_options"
+    output_dir = r"/Users/server/MMLU/git/robust_mmlu_bk_0505/experiments/data/mmlu_pro_4_options_0522"
     os.makedirs(output_dir, exist_ok=True)
-    ann_data_path = r"../experiments/data/ann_data_phase_1/project-at-2024-04-15.json"
+    # ann_data_path = r"../experiments/data/ann_data_phase_1/project-at-2024-04-15.json"
+    ann_data_path = r"/Users/server/MMLU/git/robust_mmlu_bk_0505/experiments/data/ann_data_phase_1/project-at-2024-04-15.json"
     postprocess()
 
