@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiments/mmlu_pro_eval/evaluate_mmlu_pro_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/mmlu_pro_eval/evaluate_mmlu_pro_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0524/test_cot_wo_vllm/cuda_2.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,20 +26,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/server/MMLU/git/robust_mmlu/experiments/mmlu_pro_eval/cot_lib_prompt&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/experiments/scripts_on_darth/schedule_0524/test_cot_wo_vllm",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/experiments/mmlu_pro_eval/cot_lib_prompt" />
       <recent name="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0524/test_cot_wo_vllm" />
+      <recent name="$PROJECT_DIR$/experiments/mmlu_pro_eval/cot_lib_prompt" />
       <recent name="$PROJECT_DIR$/experiments/mmlu_pro_eval" />
       <recent name="$PROJECT_DIR$/data_formal/mmlu_pro_data_v1" />
       <recent name="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0524/test_cot_robust" />
@@ -195,7 +194,7 @@
       <workItem from="1713657058587" duration="426350000" />
       <workItem from="1716208753979" duration="45103000" />
       <workItem from="1716628583380" duration="8036000" />
-      <workItem from="1716745027901" duration="648000" />
+      <workItem from="1716745027901" duration="838000" />
     </task>
     <servers />
   </component>
@@ -268,12 +267,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/experiments/mmlu_pro_eval/evaluate_mmlu_pro_json.py</url>
-          <line>577</line>
+          <line>578</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/experiments/mmlu_pro_eval/evaluate_mmlu_pro_json.py</url>
-          <line>551</line>
+          <line>552</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
