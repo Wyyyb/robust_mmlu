@@ -17,6 +17,8 @@ from tqdm import tqdm
 from distutils.util import strtobool
 import logging
 import sys
+from hf_olmo import OLMoForCausalLM, OLMoTokenizerFast
+
 
 
 IGNORE_INDEX = -100
@@ -149,6 +151,9 @@ def load_model():
                                                   use_fast=False)
         model = AutoModelForCausalLM.from_pretrained(args.model, device_map="auto", torch_dtype=torch.bfloat16)
         print("length of {} tokenizer".format(args.model), len(tokenizer))
+    elif "OLMo" in args.model:
+        model = OLMoForCausalLM.from_pretrained(args.model, trust_remote_code=True)
+        tokenizer = OLMoTokenizerFast.from_pretrained(args.model, device_map='auto', trust_remote_code=True)
     else:
         tokenizer = AutoTokenizer.from_pretrained(args.model,
                                                   model_max_length=2048,
