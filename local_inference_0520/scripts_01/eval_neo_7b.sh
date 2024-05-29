@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ngpu=2
+ngpu=1
 save_dir="eval_results_0530/"
 global_record_file="eval_results_0522/eval_record_collection_0530.csv"
 model="m-a-p/neo_7b"
@@ -10,7 +10,7 @@ gpu_util=0.8
 batch_size=2048
 
 cd ../
-export CUDA_VISIBLE_DEVICES=5,6
+export CUDA_VISIBLE_DEVICES=6
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
