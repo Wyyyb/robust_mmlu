@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0524/test_cot_wo_vllm/cuda_2.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_formal/crop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_formal/draw_subject_dis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_neo_7b.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_formal/data_source_distribution.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/data_source_distribution.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_formal/statistic_mmlu_pro.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/statistic_mmlu_pro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_formal/subject_dis.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/subject_dis.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_formal/test_plotly.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/test_plotly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepare_label_studio_data_phase_1/data/stemez_label_data_full.json" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_label_studio_data_phase_1/data/stemez_label_data_full.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,18 +39,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/experiments/scripts_on_darth/schedule_0524/test_cot_wo_vllm",
+    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/scripts_01",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/local_inference_0520/scripts_01" />
       <recent name="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0524/test_cot_wo_vllm" />
       <recent name="$PROJECT_DIR$/experiments/mmlu_pro_eval/cot_lib_prompt" />
       <recent name="$PROJECT_DIR$/experiments/mmlu_pro_eval" />
       <recent name="$PROJECT_DIR$/data_formal/mmlu_pro_data_v1" />
-      <recent name="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0524/test_cot_robust" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test_vllm" />
@@ -50,74 +58,8 @@
       <recent name="$PROJECT_DIR$/experiments/scripts_01/0328_scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.process_cot_examples">
-    <configuration name="box_plot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="robust_mmlu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_sta_0520" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_sta_0520/box_plot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="paper_bar_chart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="robust_mmlu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/py310/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_sta_0520" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_sta_0520/paper_bar_chart.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="post_process_ann_data_0520" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="robust_mmlu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ann_data_postprocess" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ann_data_postprocess/post_process_ann_data_0520.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="process_cot_examples" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.test_plotly">
+    <configuration name="crop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="robust_mmlu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,12 +67,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/mmlu-pro/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generate_plausible_options" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_formal" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_plausible_options/process_cot_examples.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_formal/crop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pull_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="draw_subject_dis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="robust_mmlu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,12 +89,78 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/mmlu-pro/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_hf" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_formal" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_hf/pull_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_formal/draw_subject_dis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="new_plot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="robust_mmlu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_formal" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_formal/new_plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="robust_mmlu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/mmlu-pro/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_formal" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_formal/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_plotly" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="robust_mmlu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/mmlu-pro/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_formal" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_formal/test_plotly.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,19 +170,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.process_cot_examples" />
-      <item itemvalue="Python.box_plot" />
-      <item itemvalue="Python.paper_bar_chart" />
-      <item itemvalue="Python.post_process_ann_data_0520" />
-      <item itemvalue="Python.pull_data" />
+      <item itemvalue="Python.crop" />
+      <item itemvalue="Python.draw_subject_dis" />
+      <item itemvalue="Python.new_plot" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.test_plotly" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.process_cot_examples" />
-        <item itemvalue="Python.paper_bar_chart" />
-        <item itemvalue="Python.box_plot" />
-        <item itemvalue="Python.pull_data" />
-        <item itemvalue="Python.post_process_ann_data_0520" />
+        <item itemvalue="Python.test_plotly" />
+        <item itemvalue="Python.crop" />
+        <item itemvalue="Python.draw_subject_dis" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.new_plot" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +202,9 @@
       <workItem from="1713657058587" duration="426350000" />
       <workItem from="1716208753979" duration="45103000" />
       <workItem from="1716628583380" duration="8036000" />
-      <workItem from="1716745027901" duration="838000" />
+      <workItem from="1716745027901" duration="2179000" />
+      <workItem from="1716864449018" duration="1000" />
+      <workItem from="1716865885292" duration="12757000" />
     </task>
     <servers />
   </component>
@@ -267,12 +277,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/experiments/mmlu_pro_eval/evaluate_mmlu_pro_json.py</url>
-          <line>578</line>
+          <line>583</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/experiments/mmlu_pro_eval/evaluate_mmlu_pro_json.py</url>
-          <line>552</line>
+          <line>557</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -370,6 +380,7 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$test_pattern.coverage" NAME="test_pattern Coverage Results" MODIFIED="1715089994565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generate_plausible_options" />
     <SUITE FILE_PATH="coverage/robust_mmlu$remove_with_image_stemez.coverage" NAME="remove_with_image_stemez Coverage Results" MODIFIED="1712478650386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/filter_stemez" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_evaluate_gpt_4_wo_cot_2.coverage" NAME="mmlu_pro_evaluate_gpt_4_wo_cot_2 Coverage Results" MODIFIED="1715270642121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$draw_subject_dis.coverage" NAME="draw_subject_dis Coverage Results" MODIFIED="1716914528083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
     <SUITE FILE_PATH="coverage/robust_mmlu$divide.coverage" NAME="divide Coverage Results" MODIFIED="1713325943721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/prepare_label_studio_data_phase_2" />
     <SUITE FILE_PATH="coverage/robust_mmlu$process_results.coverage" NAME="process_results Coverage Results" MODIFIED="1716256254047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local_inference_0520" />
     <SUITE FILE_PATH="coverage/robust_mmlu$process_cot_examples__1_.coverage" NAME="process_cot_examples Coverage Results" MODIFIED="1715145733875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
@@ -390,6 +401,7 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$statistic.coverage" NAME="statistic Coverage Results" MODIFIED="1715689957357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_0510" />
     <SUITE FILE_PATH="coverage/robust_mmlu$format_mmlu_pro_0510.coverage" NAME="format_mmlu_pro_0510 Coverage Results" MODIFIED="1715288176508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mmlu_data_processing" />
     <SUITE FILE_PATH="coverage/robust_mmlu$compute_kendall.coverage" NAME="compute_kendall Coverage Results" MODIFIED="1711610331549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/tools" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$crop.coverage" NAME="crop Coverage Results" MODIFIED="1716915229389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
     <SUITE FILE_PATH="coverage/robust_mmlu$add_SciBench.coverage" NAME="trans_MCQ_SciBench Coverage Results" MODIFIED="1711861771693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generate_mmlu_pro" />
     <SUITE FILE_PATH="coverage/robust_mmlu$post_process_ann_data_0520.coverage" NAME="post_process_ann_data_0520 Coverage Results" MODIFIED="1716384332381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ann_data_postprocess" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_evaluate_gpt_4_wo_cot_1.coverage" NAME="mmlu_pro_evaluate_gpt_4_wo_cot_1 Coverage Results" MODIFIED="1715281188782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate" />
@@ -406,7 +418,7 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$collect_summary_files.coverage" NAME="collect_summary_files Coverage Results" MODIFIED="1712127878017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/process_data_tools" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_yi_large_cot_0514_1.coverage" NAME="mmlu_pro_eval_yi_large_cot_0514_1 Coverage Results" MODIFIED="1715790675613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_by_api_0514" />
     <SUITE FILE_PATH="coverage/robust_mmlu$merge_cell_excel.coverage" NAME="merge_cell_excel Coverage Results" MODIFIED="1711722434229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/tools" />
-    <SUITE FILE_PATH="coverage/robust_mmlu$test_plotly.coverage" NAME="test_plotly Coverage Results" MODIFIED="1716196048132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$test_plotly.coverage" NAME="test_plotly Coverage Results" MODIFIED="1716916664882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
     <SUITE FILE_PATH="coverage/robust_mmlu$push_to_hub.coverage" NAME="push_to_hub Coverage Results" MODIFIED="1715360030755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
     <SUITE FILE_PATH="coverage/robust_mmlu$test_dataset.coverage" NAME="test_dataset Coverage Results" MODIFIED="1716035823126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
     <SUITE FILE_PATH="coverage/robust_mmlu$transfer_csv_to_json.coverage" NAME="transfer_csv_to_json Coverage Results" MODIFIED="1714864926869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
@@ -421,9 +433,10 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$rename_output_result.coverage" NAME="rename_output_result Coverage Results" MODIFIED="1711593233990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/tools" />
     <SUITE FILE_PATH="coverage/robust_mmlu$test_csv.coverage" NAME="test_csv Coverage Results" MODIFIED="1712243976613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/test_data" />
     <SUITE FILE_PATH="coverage/robust_mmlu$stemez_add_plausible_options.coverage" NAME="stemez_add_plausible_options Coverage Results" MODIFIED="1713324556225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generate_plausible_options" />
-    <SUITE FILE_PATH="coverage/robust_mmlu$statistic_mmlu_pro.coverage" NAME="statistic_mmlu_pro Coverage Results" MODIFIED="1716358854372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$statistic_mmlu_pro.coverage" NAME="statistic_mmlu_pro Coverage Results" MODIFIED="1716912004888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_evaluate_gpt_4_wo_cot.coverage" NAME="mmlu_pro_evaluate_gpt_4_wo_cot Coverage Results" MODIFIED="1715270637815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_gpt_4_wo_cot_1.coverage" NAME="mmlu_pro_eval_gpt_4_wo_cot_1 Coverage Results" MODIFIED="1715342899093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_0510" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$new_plot.coverage" NAME="new_plot Coverage Results" MODIFIED="1716913247017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
     <SUITE FILE_PATH="coverage/robust_mmlu$check_format.coverage" NAME="check_format Coverage Results" MODIFIED="1712717131310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/prepare_label_studio_data" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_evaluate_gpt_4_cot_3.coverage" NAME="mmlu_pro_evaluate_gpt_4_cot_3 Coverage Results" MODIFIED="1715270625664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate" />
     <SUITE FILE_PATH="coverage/robust_mmlu$trim_down_merged_mmlu.coverage" NAME="trim_down_merged_mmlu Coverage Results" MODIFIED="1711779698720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/tools" />
@@ -454,6 +467,7 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_gpt_4_cot_3.coverage" NAME="mmlu_pro_eval_gpt_4_cot_3 Coverage Results" MODIFIED="1715487363353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_0510" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_gpt_4_wo_cot_2.coverage" NAME="mmlu_pro_eval_gpt_4_wo_cot_2 Coverage Results" MODIFIED="1715321088350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_0510" />
     <SUITE FILE_PATH="coverage/robust_mmlu$test_yi_large.coverage" NAME="test_yi_large Coverage Results" MODIFIED="1715675851718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_by_api_0514" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$test.coverage" NAME="test Coverage Results" MODIFIED="1716913776001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
     <SUITE FILE_PATH="coverage/robust_mmlu$statistic_ori_mmlu.coverage" NAME="merge_mmlu Coverage Results" MODIFIED="1711779655864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/tools" />
   </component>
 </project>
