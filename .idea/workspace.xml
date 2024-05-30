@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="" />
+    <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_4ai-command-r-plus .sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_phi3-mini-4k.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_neo_7b.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_neo_7b.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +200,7 @@
       <workItem from="1716628583380" duration="8036000" />
       <workItem from="1716745027901" duration="2179000" />
       <workItem from="1716864449018" duration="1000" />
-      <workItem from="1716865885292" duration="13313000" />
+      <workItem from="1716865885292" duration="16755000" />
     </task>
     <servers />
   </component>

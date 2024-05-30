@@ -2,9 +2,9 @@
 
 ngpu=1
 save_dir="eval_results_0530/"
-global_record_file="eval_results_0522/eval_record_collection_0530.csv"
-model="m-a-p/neo_7b"
-# model_list=("microsoft/Phi-3-medium-4k-instruct")
+global_record_file="eval_results_0530/eval_record_collection_0530.csv"
+# model="CohereForAI/c4ai-command-r-plus"
+model_list=("microsoft/Phi-3-mini-4k-instruct")
 selected_subjects="all"
 gpu_util=0.8
 batch_size=2048

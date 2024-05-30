@@ -18,8 +18,8 @@ import sys
 from datasets import load_dataset
 
 choices = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"]
-max_model_length = 2048
-max_new_tokens = 256
+max_model_length = 4096
+max_new_tokens = 2048
 
 
 def load_mmlu_pro():
@@ -260,7 +260,7 @@ def main():
             sta_dict[subject] = {"corr": 0.0, "wrong": 0.0, "accu": 0.0}
         test_df = select_by_category(full_test_df, subject)
         val_df = select_by_category(full_val_df, subject)
-        output_path = os.path.join(save_result_dir, "{}".format(subject))
+        output_path = os.path.join(save_result_dir, "{}.json".format(subject))
         if os.path.exists(output_path):
             with open(output_path, "r") as fi:
                 exists_result = json.load(fi)
