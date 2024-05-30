@@ -33,9 +33,9 @@ def load_mmlu_pro():
 def load_model():
     try:
         llm = LLM(model=args.model, gpu_memory_utilization=float(args.gpu_util),
-                  tensor_parallel_size=args.ngpu, max_model_len=4096,
+                  tensor_parallel_size=args.ngpu, max_model_len=max_model_length,
                   trust_remote_code=True)
-        sampling_params = SamplingParams(temperature=0, max_tokens=2048,
+        sampling_params = SamplingParams(temperature=0, max_tokens=max_new_tokens,
                                          stop=["Question:"])
         tokenizer = transformers.AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
     except Exception as e:
@@ -305,7 +305,7 @@ if __name__ == "__main__":
     parser.add_argument("--global_record_file", "-grf", type=str,
                         default="eval_record_collection.csv")
     parser.add_argument("--gpu_util", "-gu", type=str, default="0.8")
-    parser.add_argument("--batch_size", "-bs", type=int, default=64)
+    parser.add_argument("--batch_size", "-bs", type=int, default=-1)
     parser.add_argument("--model", "-m", type=str, default="meta-llama/Llama-2-7b-hf")
 
     args = parser.parse_args()

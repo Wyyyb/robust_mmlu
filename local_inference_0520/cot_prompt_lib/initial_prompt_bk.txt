@@ -1,0 +1,1 @@
+You are a knowledge expert, you are supposed to answer the multi-choice question to derive your final answer as `The answer is ...`.
