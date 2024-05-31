@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_0531/eval_llama-3-8b-ins.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_0531/eval_llama-3-8b-ins.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_0531/eval_llama-3-8b-ins.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,7 @@
       <workItem from="1716628583380" duration="8036000" />
       <workItem from="1716745027901" duration="2179000" />
       <workItem from="1716864449018" duration="1000" />
-      <workItem from="1716865885292" duration="28564000" />
+      <workItem from="1716865885292" duration="28785000" />
     </task>
     <servers />
   </component>
