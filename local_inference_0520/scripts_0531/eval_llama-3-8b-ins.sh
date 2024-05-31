@@ -3,7 +3,8 @@
 ngpu=1
 save_dir="eval_results_0531/"
 global_record_file="eval_results_0531/eval_record_collection_0531.csv"
-model="/mnt/tjena/shared/Meta-Llama-3-8B-Instruct"
+# model="/mnt/tjena/shared/Meta-Llama-3-8B-Instruct"
+model="meta-llama/Meta-Llama-3-8B"
 selected_subjects="all"
 gpu_util=0.8
 batch_size=2048
