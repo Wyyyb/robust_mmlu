@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/paper/draw_abs_perf_drop_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_0531/eval_llama-3-70b.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_0531/eval_llama-3-70b.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +32,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/experiments/scripts_on_darth/schedule_0531",
+    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/scripts_0531",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0531" />
       <recent name="$PROJECT_DIR$/local_inference_0520/scripts_0531" />
+      <recent name="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0531" />
       <recent name="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data" />
       <recent name="$PROJECT_DIR$/local_inference_0520/scripts_01" />
       <recent name="$PROJECT_DIR$/local_inference_0520/cot_prompt_lib" />
@@ -197,7 +197,7 @@
       <workItem from="1716628583380" duration="8036000" />
       <workItem from="1716745027901" duration="2179000" />
       <workItem from="1716864449018" duration="1000" />
-      <workItem from="1716865885292" duration="32997000" />
+      <workItem from="1716865885292" duration="33967000" />
     </task>
     <servers />
   </component>

@@ -1,16 +1,16 @@
 #!/bin/bash
 
-ngpu=4
+ngpu=2
 save_dir="eval_results_0531/"
 global_record_file="eval_results_0531/eval_record_collection_0531.csv"
-model="meta-llama/Meta-Llama-3-70B"
+model="/ML-A100/public/model/Meta-Llama-3-70B-Instruct"
 selected_subjects="all"
 gpu_util=0.8
 batch_size=2048
 dataset="mmlu"
 
 cd ../
-export CUDA_VISIBLE_DEVICES=4,5,6,7
+export CUDA_VISIBLE_DEVICES=0,1
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
