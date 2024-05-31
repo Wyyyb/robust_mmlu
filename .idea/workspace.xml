@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0531/cuda_0.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0531/cuda_0.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0531/cuda_0.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,7 @@
       <workItem from="1716628583380" duration="8036000" />
       <workItem from="1716745027901" duration="2179000" />
       <workItem from="1716864449018" duration="1000" />
-      <workItem from="1716865885292" duration="29328000" />
+      <workItem from="1716865885292" duration="29877000" />
     </task>
     <servers />
   </component>

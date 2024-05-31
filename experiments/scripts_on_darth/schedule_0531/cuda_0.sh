@@ -5,7 +5,7 @@ ntrain=5
 examples_start_index=0
 prompt_type=2
 prompt_format=1000
-ngpu=1
+ngpu=2
 data_dir="../../data/mmlu_pro_v1_0506"
 save_dir="../eval_result_0531_NonCoT"
 scoring_method="symbol_scoring"
@@ -17,7 +17,7 @@ selected_subjects="all"
 global_record_file="../eval_result_0531_NonCoT/eval_record_collection_0531_NonCoT.csv"
 
 cd ../../mmlu_pro_eval/
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=0,3
 
 python evaluate_mmlu_pro_0516_prompt.py \
                  --ntrain $ntrain \
