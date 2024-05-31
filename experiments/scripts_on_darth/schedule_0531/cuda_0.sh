@@ -16,7 +16,7 @@ model="microsoft/Phi-3-medium-4k-instruct"
 selected_subjects="all"
 global_record_file="../eval_result_0531_NonCoT/eval_record_collection_0531_NonCoT.csv"
 
-cd ../../../mmlu_pro_eval/
+cd ../../mmlu_pro_eval/
 export CUDA_VISIBLE_DEVICES=0
 
 python evaluate_mmlu_pro_0516_prompt.py \
