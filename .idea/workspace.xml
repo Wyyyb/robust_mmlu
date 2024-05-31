@@ -5,8 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu-cot.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/abstract_algebra_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/anatomy_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/astronomy_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/business_ethics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/clinical_knowledge_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/college_biology_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/college_chemistry_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/college_computer_science_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/college_mathematics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/college_medicine_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/college_physics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/computer_security_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/conceptual_physics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/econometrics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/electrical_engineering_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/elementary_mathematics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/formal_logic_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/global_facts_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_biology_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_chemistry_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_computer_science_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_european_history_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_geography_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_government_and_politics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_macroeconomics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_mathematics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_microeconomics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_physics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_psychology_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_statistics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_us_history_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/high_school_world_history_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/human_aging_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/human_sexuality_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/international_law_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/jurisprudence_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/logical_fallacies_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/machine_learning_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/management_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/marketing_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/medical_genetics_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/miscellaneous_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/moral_disputes_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/moral_scenarios_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/nutrition_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/philosophy_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/prehistory_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/professional_accounting_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/professional_law_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/professional_medicine_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/professional_psychology_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/public_relations_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/security_studies_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/sociology_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/us_foreign_policy_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/virology_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data/ori_mmlu_data/world_religions_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_0531/eval_llama-3-8b.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paper/test_abs_figure.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_phi3_medium-128k.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_phi3_medium-128k.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,18 +92,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/scripts_01",
+    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/scripts_0531",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/local_inference_0520/scripts_0531" />
+      <recent name="$PROJECT_DIR$/local_inference_0520/mmlu_cot_data" />
       <recent name="$PROJECT_DIR$/local_inference_0520/scripts_01" />
       <recent name="$PROJECT_DIR$/local_inference_0520/cot_prompt_lib" />
       <recent name="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0524/test_cot_wo_vllm" />
-      <recent name="$PROJECT_DIR$/experiments/mmlu_pro_eval/cot_lib_prompt" />
-      <recent name="$PROJECT_DIR$/experiments/mmlu_pro_eval" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test_vllm" />
@@ -51,7 +111,7 @@
       <recent name="$PROJECT_DIR$/experiments/scripts_01/0328_scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_plotly">
+  <component name="RunManager" selected="Python.test_abs_figure">
     <configuration name="crop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="robust_mmlu" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,28 +156,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="new_plot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="robust_mmlu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_formal" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_formal/new_plot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="robust_mmlu" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,6 +170,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_formal/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_abs_figure" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="robust_mmlu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/paper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/paper/test_abs_figure.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,19 +223,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.test_abs_figure" />
       <item itemvalue="Python.crop" />
       <item itemvalue="Python.draw_subject_dis" />
-      <item itemvalue="Python.new_plot" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.test_plotly" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_abs_figure" />
         <item itemvalue="Python.test_plotly" />
         <item itemvalue="Python.crop" />
         <item itemvalue="Python.draw_subject_dis" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.new_plot" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +257,7 @@
       <workItem from="1716628583380" duration="8036000" />
       <workItem from="1716745027901" duration="2179000" />
       <workItem from="1716864449018" duration="1000" />
-      <workItem from="1716865885292" duration="20485000" />
+      <workItem from="1716865885292" duration="27583000" />
     </task>
     <servers />
   </component>
@@ -451,6 +511,7 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_yi_large_cot_0514_5.coverage" NAME="mmlu_pro_eval_yi_large_cot_0514_5 Coverage Results" MODIFIED="1715760069249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_by_api_0514" />
     <SUITE FILE_PATH="coverage/robust_mmlu$my_evaluate_llama.coverage" NAME="my_evaluate_llama Coverage Results" MODIFIED="1711334186697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/eval" />
     <SUITE FILE_PATH="coverage/robust_mmlu$sta_mmlu_pro_data.coverage" NAME="sta_mmlu_pro_data Coverage Results" MODIFIED="1716194265947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_sta_0520" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$test_abs_figure.coverage" NAME="test_abs_figure Coverage Results" MODIFIED="1717134148550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/paper" />
     <SUITE FILE_PATH="coverage/robust_mmlu$add_stemez.coverage" NAME="add_stemez Coverage Results" MODIFIED="1712114515495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generate_mmlu_pro" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_yi_large_cot_0514_4.coverage" NAME="mmlu_pro_eval_yi_large_cot_0514_4 Coverage Results" MODIFIED="1715712498489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_by_api_0514" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_evaluate_gpt_4_wo_cot_3.coverage" NAME="mmlu_pro_evaluate_gpt_4_wo_cot_3 Coverage Results" MODIFIED="1715270643907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate" />

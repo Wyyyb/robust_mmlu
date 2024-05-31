@@ -30,6 +30,53 @@ def load_mmlu_pro():
     return test_df, val_df
 
 
+def load_mmlu():
+    cot_data = read_csv_file("mmlu_cot_data/ori_mmlu-cot.csv")
+    test_df, val_df = [], []
+    question_id = 0
+    for each in cot_data:
+        question = each[2]
+        category = each[0]
+        options = each[3: 7]
+        answer = each[7]
+        answer_index = options.index(each[8])
+        cot_content = each[9]
+        curr = {"question_id": question_id, "question": question, "category": category,
+                "options": options, "answer": answer, "answer_index": answer_index,
+                "cot_content": cot_content, "src": category}
+        question_id += 1
+        val_df.append(curr)
+    for file in os.listdir("mmlu_cot_data/ori_mmlu_data"):
+        if not file.endswith(".csv"):
+            continue
+        file_path = os.path.join("mmlu_cot_data/ori_mmlu_data", file)
+        input_data = read_csv_file(file_path)
+        category = file.replace("_test.csv", "")
+        for each in input_data:
+            question = each[0]
+            options = each[1: 5]
+            answer = each[5]
+            answer_index = "ABCDEF".index(answer)
+            cot_content = ""
+            curr = {"question_id": question_id, "question": question, "category": category,
+                    "options": options, "answer": answer, "answer_index": answer_index,
+                    "cot_content": cot_content, "src": category}
+            question_id += 1
+            test_df.append(curr)
+    print("mmlu data:\n test_df[0]:\n", test_df[0])
+    print("val_df[0]:\n", val_df[0])
+    return test_df, val_df
+
+
+def read_csv_file(file_path):
+    with open(file_path, mode='r', encoding='utf-8') as file:
+        csv_reader = csv.reader(file)
+        data = list(csv_reader)
+        if str(data[0][0]) == "0" and str(data[0][1]) == "1" and str(data[0][2]) == "2":
+            data = data[1:]
+    return data
+
+
 def load_model():
     try:
         llm = LLM(model=args.model, gpu_memory_utilization=float(args.gpu_util),
@@ -61,7 +108,7 @@ def args_generate_path(input_args):
     scoring_method = "CoT"
     model_name = input_args.model.split("/")[-1]
     subjects = args.selected_subjects.replace(",", "-").replace(" ", "_")
-    return [model_name, scoring_method, subjects]
+    return [model_name, scoring_method, args.dataset]
 
 
 def select_by_category(df, subject):
@@ -235,7 +282,10 @@ def main():
     if not os.path.exists(save_result_dir):
         os.makedirs(save_result_dir)
 
-    full_test_df, full_val_df = load_mmlu_pro()
+    if args.dataset == "mmlu":
+        full_test_df, full_val_df = load_mmlu()
+    else:
+        full_test_df, full_val_df = load_mmlu_pro()
     all_subjects = []
     for each in full_test_df:
         if each["category"] not in all_subjects:
@@ -307,6 +357,7 @@ if __name__ == "__main__":
     parser.add_argument("--gpu_util", "-gu", type=str, default="0.8")
     parser.add_argument("--batch_size", "-bs", type=int, default=-1)
     parser.add_argument("--model", "-m", type=str, default="meta-llama/Llama-2-7b-hf")
+    parser.add_argument("--dataset", "-d", type=str, default="mmlu-pro")
 
     args = parser.parse_args()
     os.makedirs(args.save_dir, exist_ok=True)
