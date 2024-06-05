@@ -6,7 +6,7 @@ global_record_file="eval_results_0605/eval_record_collection_0605.csv"
 model="THUDM/glm-4-9b-chat"
 # model_list=("microsoft/Phi-3-medium-4k-instruct")
 selected_subjects="all"
-gpu_util=0.8
+gpu_util=0.7
 batch_size=2048
 
 cd ../
