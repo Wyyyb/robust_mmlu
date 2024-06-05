@@ -26,9 +26,9 @@ def crop_pdf_top_bottom_left(input_pdf, output_pdf, bottom_crop_ratio, top_crop_
 # 使用示例
 input_pdf_path = "subject_distribution.pdf"  # 输入文件名
 output_pdf_path = "output_subject_distribution.pdf"  # 输出文件名
-crop_pdf_top_bottom_left(input_pdf_path, output_pdf_path, 1/12, 1/15, 1/15)  # 同时裁剪底部的 10%、顶部的约 8.33% 和左侧的 10%
+crop_pdf_top_bottom_left(input_pdf_path, output_pdf_path, 1/12, 1/15, 1/20)  # 同时裁剪底部的 10%、顶部的约 8.33% 和左侧的 10%
 
 # 使用示例
 input_pdf_path = "data_source_distribution.pdf"  # 输入文件名
 output_pdf_path = "output_data_source_distribution.pdf"  # 输出文件名
-crop_pdf_top_bottom_left(input_pdf_path, output_pdf_path, 1/12, 1/15, 1/15)  # 同时裁剪底部的 10%、顶部的约 8.33% 和左侧的 10%
+crop_pdf_top_bottom_left(input_pdf_path, output_pdf_path, 1/12, 1/15, 1/20)  # 同时裁剪底部的 10%、顶部的约 8.33% 和左侧的 10%
