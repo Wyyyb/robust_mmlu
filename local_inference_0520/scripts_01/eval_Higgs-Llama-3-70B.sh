@@ -3,14 +3,14 @@
 ngpu=4
 save_dir="eval_results_0606/"
 global_record_file="eval_results_0606/eval_record_collection_0606.csv"
-model="CohereForAI/c4ai-command-r-plus"
+model="bosonai/Higgs-Llama-3-70B"
 # model_list=("microsoft/Phi-3-medium-4k-instruct")
 selected_subjects="all"
 gpu_util=0.8
 batch_size=2048
 
 cd ../
-export CUDA_VISIBLE_DEVICES=0,1,2,3
+export CUDA_VISIBLE_DEVICES=4,5,6,7
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \

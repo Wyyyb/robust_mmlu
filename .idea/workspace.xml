@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data_sta_0520/performance_0604.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_sta_0520/variance_0604.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_glm_4_9B.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_Higgs-Llama-3-70B.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/crop.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/crop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/data_source_distribution.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/data_source_distribution.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/data_source_distribution.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/data_source_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/data_source_distribution_bk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/output_data_source_distribution.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/output_data_source_distribution.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/output_subject_distribution.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/output_subject_distribution.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/subject_dis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/subject_dis_bk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/subject_distribution.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/subject_distribution.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/subject_distribution.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/subject_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_formal/test_plotly.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_formal/test_plotly.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_sta_0520/box_plot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_sta_0520/performance_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_sta_0520/performance_comparison.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_sta_0520/variance_comparison.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_sta_0520/variance_comparison.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_4ai-command-r-plus.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_4ai-command-r-plus.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,16 +28,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/scripts_01",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/server/MMLU/git/robust_mmlu/local_inference_0520/scripts_01&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/local_inference_0520/scripts_01" />
@@ -216,7 +199,9 @@
       <workItem from="1716745027901" duration="2179000" />
       <workItem from="1716864449018" duration="1000" />
       <workItem from="1716865885292" duration="41848000" />
-      <workItem from="1717260553318" duration="16755000" />
+      <workItem from="1717260553318" duration="17508000" />
+      <workItem from="1717598673742" duration="213000" />
+      <workItem from="1717682744979" duration="178000" />
     </task>
     <servers />
   </component>
