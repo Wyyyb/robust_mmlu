@@ -11,6 +11,7 @@ batch_size=2048
 
 cd ../
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export VLLM_NO_USAGE_STATS=1
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
