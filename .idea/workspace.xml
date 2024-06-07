@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_Higgs-Llama-3-70B.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_4ai-command-r-plus.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_4ai-command-r-plus.sh" afterDir="false" />
     </list>
@@ -201,7 +200,7 @@
       <workItem from="1716865885292" duration="41848000" />
       <workItem from="1717260553318" duration="17508000" />
       <workItem from="1717598673742" duration="213000" />
-      <workItem from="1717682744979" duration="178000" />
+      <workItem from="1717682744979" duration="2302000" />
     </task>
     <servers />
   </component>
