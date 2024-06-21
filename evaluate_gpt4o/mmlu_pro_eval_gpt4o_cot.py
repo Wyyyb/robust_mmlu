@@ -199,11 +199,11 @@ def load_cot_examples(input_dir):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--category", type=str, default="")
+    parser.add_argument("--category", type=str, default="biology")
     args = parser.parse_args()
 
     assigned_subject = [args.category]
-    output_dir = "../experiments/eval_result_0513_gpt4o_cot/"
+    output_dir = "../experiments/eval_result_0613_gpt4o_cot/"
     dev_dir = "../data/mmlu_pro_v1_0512/dev"
     test_dir = "../data/mmlu_pro_v1_0512/test"
     os.makedirs(output_dir, exist_ok=True)
