@@ -13,14 +13,14 @@ cd ../
 export CUDA_VISIBLE_DEVICES=4,5,6,7
 export HF_HOME=/ML-A100/public/tmp
 
-python evaluate_from_local.py \
-                 --selected_subjects $selected_subjects \
-                 --ngpu $ngpu \
-                 --save_dir $save_dir \
-                 --model $model \
-                 --global_record_file $global_record_file \
-                 --gpu_util $gpu_util \
-                 --batch_size $batch_size
+#python evaluate_from_local.py \
+#                 --selected_subjects $selected_subjects \
+#                 --ngpu $ngpu \
+#                 --save_dir $save_dir \
+#                 --model $model \
+#                 --global_record_file $global_record_file \
+#                 --gpu_util $gpu_util \
+#                 --batch_size $batch_size
 
 
 model="/ML-A800/models/gemma-2-9b-it"
