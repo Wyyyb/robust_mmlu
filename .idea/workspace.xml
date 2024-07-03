@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_deepseek_coder_v2_ins.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/test_re.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_gpt4v/test_0614.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_gpt4v/test_data/test_0614_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_gpt4v/test_gpt4o.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_minicpm/test_cpm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_minicpm/test_data/test_0614_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_minicpm/test_mac.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/merge_result.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/statistic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/test_re.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_gemma_2_27b.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_gemma_2_9b.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_hf/pull_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_hf/pull_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_hf/push_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_hf/push_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluate_gpt4o/mmlu_pro_eval_gpt4o_cot.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluate_gpt4o/mmlu_pro_eval_gpt4o_cot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +47,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/local_inference_0520/scripts_01" />
+      <recent name="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
       <recent name="$PROJECT_DIR$/test_minicpm/test_data" />
       <recent name="$PROJECT_DIR$/paper" />
       <recent name="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0531" />
-      <recent name="$PROJECT_DIR$/local_inference_0520/scripts_0531" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test_vllm" />
@@ -61,8 +58,8 @@
       <recent name="$PROJECT_DIR$/experiments/scripts_01/0328_scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_mac">
-    <configuration name="mmlu_pro_eval_gpt4o_cot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.merge_result">
+    <configuration name="evaluate_from_api_deepseek_v2_code" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="robust_mmlu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,12 +67,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/mmlu-pro/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluate_gpt4o" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate_gpt4o/mmlu_pro_eval_gpt4o_cot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="push_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="evaluate_from_api_deepseek_v2_code_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="robust_mmlu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,12 +89,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/mmlu-pro/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_hf" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_hf/push_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +103,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_0614" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="evaluate_from_api_deepseek_v2_code_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="robust_mmlu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,12 +111,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/mmlu-pro/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_gpt4v" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_gpt4v/test_0614.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,20 +125,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_gpt4o" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="merge_result" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="robust_mmlu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/mmlu-pro/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_gpt4v" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_gpt4v/test_gpt4o.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate_deepseek_v2_code/merge_result.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,20 +147,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_mac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="statistic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="robust_mmlu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/mmlu-pro/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_minicpm" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_minicpm/test_mac.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate_deepseek_v2_code/statistic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,19 +170,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_mac" />
-      <item itemvalue="Python.mmlu_pro_eval_gpt4o_cot" />
-      <item itemvalue="Python.test_gpt4o" />
-      <item itemvalue="Python.test_0614" />
-      <item itemvalue="Python.push_data" />
+      <item itemvalue="Python.merge_result" />
+      <item itemvalue="Python.statistic" />
+      <item itemvalue="Python.evaluate_from_api_deepseek_v2_code_2" />
+      <item itemvalue="Python.evaluate_from_api_deepseek_v2_code_1" />
+      <item itemvalue="Python.evaluate_from_api_deepseek_v2_code" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_mac" />
-        <item itemvalue="Python.test_gpt4o" />
-        <item itemvalue="Python.mmlu_pro_eval_gpt4o_cot" />
-        <item itemvalue="Python.test_0614" />
-        <item itemvalue="Python.push_data" />
+        <item itemvalue="Python.merge_result" />
+        <item itemvalue="Python.statistic" />
+        <item itemvalue="Python.evaluate_from_api_deepseek_v2_code" />
+        <item itemvalue="Python.evaluate_from_api_deepseek_v2_code_2" />
+        <item itemvalue="Python.evaluate_from_api_deepseek_v2_code_1" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +210,7 @@
       <workItem from="1717682744979" duration="8548000" />
       <workItem from="1718381837735" duration="12000" />
       <workItem from="1718626193042" duration="629000" />
-      <workItem from="1718634102686" duration="4682000" />
+      <workItem from="1718634102686" duration="18500000" />
     </task>
     <servers />
   </component>
@@ -394,6 +391,11 @@
           <line>29</line>
           <option name="timeStamp" value="187" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code.py</url>
+          <line>191</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -421,7 +423,7 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_evaluate_gpt_4_cot.coverage" NAME="mmlu_pro_evaluate_gpt_4_cot Coverage Results" MODIFIED="1715281019231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_0510" />
     <SUITE FILE_PATH="coverage/robust_mmlu$sta_mmlu_pro_distribution.coverage" NAME="sta_mmlu_pro_distribution Coverage Results" MODIFIED="1712478666075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/u_utils" />
     <SUITE FILE_PATH="coverage/robust_mmlu$post_process.coverage" NAME="post_process Coverage Results" MODIFIED="1715166756983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/postprocess_phase_2_data" />
-    <SUITE FILE_PATH="coverage/robust_mmlu$statistic.coverage" NAME="statistic Coverage Results" MODIFIED="1715689957357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_0510" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$statistic.coverage" NAME="statistic Coverage Results" MODIFIED="1719028235871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
     <SUITE FILE_PATH="coverage/robust_mmlu$format_mmlu_pro_0510.coverage" NAME="format_mmlu_pro_0510 Coverage Results" MODIFIED="1715288176508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mmlu_data_processing" />
     <SUITE FILE_PATH="coverage/robust_mmlu$compute_kendall.coverage" NAME="compute_kendall Coverage Results" MODIFIED="1711610331549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/tools" />
     <SUITE FILE_PATH="coverage/robust_mmlu$crop.coverage" NAME="crop Coverage Results" MODIFIED="1717489029735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
@@ -436,7 +438,7 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_yi_large_cot_0514_1.coverage" NAME="mmlu_pro_eval_yi_large_cot_0514_1 Coverage Results" MODIFIED="1715790675613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_by_api_0514" />
     <SUITE FILE_PATH="coverage/robust_mmlu$test_plotly.coverage" NAME="test_plotly Coverage Results" MODIFIED="1717488187026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
     <SUITE FILE_PATH="coverage/robust_mmlu$push_to_hub.coverage" NAME="push_to_hub Coverage Results" MODIFIED="1715360030755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
-    <SUITE FILE_PATH="coverage/robust_mmlu$test_re.coverage" NAME="test_re Coverage Results" MODIFIED="1717871981898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/local_inference_0520" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$test_re.coverage" NAME="test_re Coverage Results" MODIFIED="1718985288884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
     <SUITE FILE_PATH="coverage/robust_mmlu$test_dataset.coverage" NAME="test_dataset Coverage Results" MODIFIED="1716035823126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
     <SUITE FILE_PATH="coverage/robust_mmlu$draw_cot_comp_gemma.coverage" NAME="draw_cot_comp_gemma Coverage Results" MODIFIED="1717260876576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/paper" />
     <SUITE FILE_PATH="coverage/robust_mmlu$transfer_csv_to_json.coverage" NAME="transfer_csv_to_json Coverage Results" MODIFIED="1714864926869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
@@ -451,8 +453,10 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$statistic_mmlu_pro.coverage" NAME="statistic_mmlu_pro Coverage Results" MODIFIED="1716912004888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
     <SUITE FILE_PATH="coverage/robust_mmlu$draw_abs_perf_drop.coverage" NAME="draw_abs_perf_drop_1 Coverage Results" MODIFIED="1717147836712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/paper" />
     <SUITE FILE_PATH="coverage/robust_mmlu$new_plot.coverage" NAME="new_plot Coverage Results" MODIFIED="1716913247017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$evaluate_from_api_deepseek_v2_code.coverage" NAME="evaluate_from_api_deepseek_v2_code Coverage Results" MODIFIED="1718986408166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_evaluate_gpt_4_cot_3.coverage" NAME="mmlu_pro_evaluate_gpt_4_cot_3 Coverage Results" MODIFIED="1715270625664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate" />
     <SUITE FILE_PATH="coverage/robust_mmlu$trim_down_merged_mmlu.coverage" NAME="trim_down_merged_mmlu Coverage Results" MODIFIED="1711779698720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/tools" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$evaluate_from_api_deepseek_v2_code_1.coverage" NAME="evaluate_from_api_deepseek_v2_code_1 Coverage Results" MODIFIED="1718986035264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
     <SUITE FILE_PATH="coverage/robust_mmlu$format_mmlu_pro_0509.coverage" NAME="format_mmlu_pro_0509 Coverage Results" MODIFIED="1715446154901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mmlu_data_processing" />
     <SUITE FILE_PATH="coverage/robust_mmlu$sta_ann_tag_data.coverage" NAME="sta_ann_tag_data Coverage Results" MODIFIED="1716382158578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/postprocess_phase_2_data" />
     <SUITE FILE_PATH="coverage/robust_mmlu$draw_cot_comp_phi3.coverage" NAME="draw_cot_comp_phi3 Coverage Results" MODIFIED="1717260852634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/paper" />
@@ -470,6 +474,7 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_gpt_4_cot.coverage" NAME="mmlu_pro_eval_gpt_4_cot Coverage Results" MODIFIED="1715689487313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_0510" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_gpt_4_cot_3.coverage" NAME="mmlu_pro_eval_gpt_4_cot_3 Coverage Results" MODIFIED="1715487363353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_0510" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_gpt4o_cot.coverage" NAME="mmlu_pro_eval_gpt4o_cot Coverage Results" MODIFIED="1718339892965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_gpt4o" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$merge_result.coverage" NAME="merge_result Coverage Results" MODIFIED="1719231290032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
     <SUITE FILE_PATH="coverage/robust_mmlu$mmlu_pro_eval_gpt_4_wo_cot_2.coverage" NAME="mmlu_pro_eval_gpt_4_wo_cot_2 Coverage Results" MODIFIED="1715321088350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_0510" />
     <SUITE FILE_PATH="coverage/robust_mmlu$test_yi_large.coverage" NAME="test_yi_large Coverage Results" MODIFIED="1715675851718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_by_api_0514" />
     <SUITE FILE_PATH="coverage/robust_mmlu$test.coverage" NAME="test Coverage Results" MODIFIED="1716913776001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_formal" />
@@ -491,6 +496,7 @@
     <SUITE FILE_PATH="coverage/robust_mmlu$postprocess_ann.coverage" NAME="postprocess_ann Coverage Results" MODIFIED="1716373383117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/generate_mmlu_pro" />
     <SUITE FILE_PATH="coverage/robust_mmlu$collect_problematic_questions.coverage" NAME="collect_problematic_questions Coverage Results" MODIFIED="1716020580858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ann_data_postprocess" />
     <SUITE FILE_PATH="coverage/robust_mmlu$compute_kendall_0510.coverage" NAME="compute_kendall_0510 Coverage Results" MODIFIED="1715356022515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/robust_mmlu$evaluate_from_api_deepseek_v2_code_2.coverage" NAME="evaluate_from_api_deepseek_v2_code_2 Coverage Results" MODIFIED="1718986037897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
     <SUITE FILE_PATH="coverage/robust_mmlu$statistic_yi_large.coverage" NAME="statistic_yi_large Coverage Results" MODIFIED="1715836352380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluate_by_api_0514" />
     <SUITE FILE_PATH="coverage/robust_mmlu$test_download_science.coverage" NAME="test_download_science Coverage Results" MODIFIED="1711866023703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawl_stemez" />
     <SUITE FILE_PATH="coverage/robust_mmlu$evaluate_mmlu_pro.coverage" NAME="evaluate_mmlu_pro Coverage Results" MODIFIED="1712221652013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiments/mmlu_pro_eval" />
