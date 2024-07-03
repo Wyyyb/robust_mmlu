@@ -10,7 +10,7 @@ gpu_util=0.8
 batch_size=2048
 
 cd ../
-export CUDA_VISIBLE_DEVICES=0,1,2,3
+export CUDA_VISIBLE_DEVICES=4,5,6,7
 export HF_HOME=/ML-A100/public/tmp
 
 #python evaluate_from_local.py \

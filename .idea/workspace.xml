@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/evaluate_from_api_deepseek_v2_code_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/merge_result.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/statistic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evaluate_deepseek_v2_code/test_re.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_gemma_2_27b.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_gemma_2_9b.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_gemma_2_27b.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_gemma_2_27b.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_gemma_2_9b.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_01/eval_gemma_2_9b.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +204,7 @@
       <workItem from="1717682744979" duration="8548000" />
       <workItem from="1718381837735" duration="12000" />
       <workItem from="1718626193042" duration="629000" />
-      <workItem from="1718634102686" duration="18500000" />
+      <workItem from="1718634102686" duration="19460000" />
     </task>
     <servers />
   </component>
