@@ -10,20 +10,21 @@ gpu_util=0.8
 batch_size=2048
 
 cd ../
-export CUDA_VISIBLE_DEVICES=4,5,6,7
-export HF_HOME=/ML-A100/public/tmp
+export CUDA_VISIBLE_DEVICES=0,1,4,5
+# export HF_HOME=/ML-A100/public/tmp
 
-#python evaluate_from_local.py \
-#                 --selected_subjects $selected_subjects \
-#                 --ngpu $ngpu \
-#                 --save_dir $save_dir \
-#                 --model $model \
-#                 --global_record_file $global_record_file \
-#                 --gpu_util $gpu_util \
-#                 --batch_size $batch_size
+python evaluate_from_local.py \
+                 --selected_subjects $selected_subjects \
+                 --ngpu $ngpu \
+                 --save_dir $save_dir \
+                 --model $model \
+                 --global_record_file $global_record_file \
+                 --gpu_util $gpu_util \
+                 --batch_size $batch_size
 
 
-model="/ML-A800/models/gemma-2-27b-it"
+# model="/ML-A800/models/gemma-2-27b-it"
+model="google/gemma-2-27b-it"
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
