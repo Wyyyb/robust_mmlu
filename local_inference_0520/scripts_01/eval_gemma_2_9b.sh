@@ -11,7 +11,7 @@ batch_size=2048
 
 cd ../
 export CUDA_VISIBLE_DEVICES=0,1,4,5
-export HF_HOME=/ML-A100/public/tmp
+# export HF_HOME=/ML-A100/public/tmp
 
 #python evaluate_from_local.py \
 #                 --selected_subjects $selected_subjects \
