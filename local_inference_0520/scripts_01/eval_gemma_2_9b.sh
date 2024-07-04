@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ngpu=2
+ngpu=4
 save_dir="eval_results_0703/"
 global_record_file="eval_results_0703/eval_record_collection_0703.csv"
 model="google/gemma-2-9b"
@@ -10,7 +10,7 @@ gpu_util=0.8
 batch_size=2048
 
 cd ../
-export CUDA_VISIBLE_DEVICES=2,3
+export CUDA_VISIBLE_DEVICES=0,1,4,5
 export HF_HOME=/ML-A100/public/tmp
 
 #python evaluate_from_local.py \
@@ -23,7 +23,8 @@ export HF_HOME=/ML-A100/public/tmp
 #                 --batch_size $batch_size
 
 
-model="/ML-A800/models/gemma-2-9b-it"
+# model="/ML-A800/models/gemma-2-9b-it"
+model="google/gemma-2-9b-it"
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
