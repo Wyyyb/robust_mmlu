@@ -23,7 +23,7 @@ python evaluate_from_local.py \
 
 
 # model="/ML-A800/models/gemma-2-9b-it"
-model="Qwen/Qwen2-1.5B"
+model="Qwen/Qwen2-1.5B-Instruct"
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
