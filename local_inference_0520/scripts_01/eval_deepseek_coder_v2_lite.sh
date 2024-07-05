@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ngpu=3
+ngpu=4
 save_dir="eval_results_0706/"
 global_record_file="eval_results_0706/eval_record_collection_0706.csv"
 model="deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct"
