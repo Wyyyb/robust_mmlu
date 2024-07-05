@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="" />
+    <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/07_scripts/eval_qwen2_0_5b.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/07_scripts/eval_qwen2_1_5b.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,18 +33,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/scripts_01",
+    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/07_scripts",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/local_inference_0520/07_scripts" />
       <recent name="$PROJECT_DIR$/local_inference_0520/scripts_01" />
       <recent name="$PROJECT_DIR$/evaluate_deepseek_v2_code" />
       <recent name="$PROJECT_DIR$/test_minicpm/test_data" />
       <recent name="$PROJECT_DIR$/paper" />
-      <recent name="$PROJECT_DIR$/experiments/scripts_on_darth/schedule_0531" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test_vllm" />
@@ -200,7 +204,7 @@
       <workItem from="1717682744979" duration="8548000" />
       <workItem from="1718381837735" duration="12000" />
       <workItem from="1718626193042" duration="629000" />
-      <workItem from="1718634102686" duration="27967000" />
+      <workItem from="1718634102686" duration="29001000" />
     </task>
     <servers />
   </component>
