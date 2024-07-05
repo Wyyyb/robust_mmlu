@@ -5,11 +5,11 @@ save_dir="eval_results_0706/"
 global_record_file="eval_results_0706/eval_record_collection_0706.csv"
 model="deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct"
 selected_subjects="all"
-gpu_util=0.7
+gpu_util=0.8
 batch_size=2048
 
 cd ../
-export CUDA_VISIBLE_DEVICES=1,2,3,5
+export CUDA_VISIBLE_DEVICES=4,5,6,7
 export HF_HOME=/mnt/tjena/yubo/hf_home
 
 #python evaluate_from_local.py \
