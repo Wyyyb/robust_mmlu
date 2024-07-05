@@ -1,17 +1,16 @@
 #!/bin/bash
 
-ngpu=4
-save_dir="eval_results_0704/"
-global_record_file="eval_results_0704/eval_record_collection_0704.csv"
-model="google/gemma-2-27b"
-# model_list=("microsoft/Phi-3-medium-4k-instruct")
+ngpu=3
+save_dir="eval_results_0706/"
+global_record_file="eval_results_0706/eval_record_collection_0706.csv"
+model="deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct"
 selected_subjects="all"
 gpu_util=0.8
 batch_size=2048
 
 cd ../
-export CUDA_VISIBLE_DEVICES=0,1,4,5
-# export HF_HOME=/ML-A100/public/tmp
+export CUDA_VISIBLE_DEVICES=0,1,2,3
+export HF_HOME=/mnt/tjena/yubo/hf_home
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
@@ -23,8 +22,7 @@ python evaluate_from_local.py \
                  --batch_size $batch_size
 
 
-# model="/ML-A800/models/gemma-2-27b-it"
-model="google/gemma-2-27b-it"
+model="deepseek-ai/DeepSeek-Coder-V2-Lite-Base"
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
