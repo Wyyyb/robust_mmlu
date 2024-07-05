@@ -12,14 +12,14 @@ cd ../
 export CUDA_VISIBLE_DEVICES=1,2,3,5
 export HF_HOME=/mnt/tjena/yubo/hf_home
 
-python evaluate_from_local.py \
-                 --selected_subjects $selected_subjects \
-                 --ngpu $ngpu \
-                 --save_dir $save_dir \
-                 --model $model \
-                 --global_record_file $global_record_file \
-                 --gpu_util $gpu_util \
-                 --batch_size $batch_size
+#python evaluate_from_local.py \
+#                 --selected_subjects $selected_subjects \
+#                 --ngpu $ngpu \
+#                 --save_dir $save_dir \
+#                 --model $model \
+#                 --global_record_file $global_record_file \
+#                 --gpu_util $gpu_util \
+#                 --batch_size $batch_size
 
 
 model="deepseek-ai/DeepSeek-Coder-V2-Lite-Base"
