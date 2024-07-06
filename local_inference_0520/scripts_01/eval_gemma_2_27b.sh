@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ngpu=2
+ngpu=4
 save_dir="eval_results_0706/"
 global_record_file="eval_results_0706/eval_record_collection_0706.csv"
 model="google/gemma-2-27b"
@@ -10,7 +10,7 @@ gpu_util=0.8
 batch_size=2048
 
 cd ../
-export CUDA_VISIBLE_DEVICES=4,5
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 # export HF_HOME=/ML-A100/public/tmp
 export HF_HOME=/mnt/tjena/yubo/hf_home
 
