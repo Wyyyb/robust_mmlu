@@ -10,7 +10,7 @@ batch_size=2048
 
 cd ../
 export CUDA_VISIBLE_DEVICES=4,5,6,7
-export HF_HOME=/mnt/tjena/yubo/hf_home
+# export HF_HOME=/mnt/tjena/yubo/hf_home
 
 #python evaluate_from_local.py \
 #                 --selected_subjects $selected_subjects \
