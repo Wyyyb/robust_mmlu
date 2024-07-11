@@ -139,7 +139,7 @@ def format_cot_example(example, including_answer=True):
 def generate_cot_prompt(val_df, curr, k):
     prompt = ""
     # with open(f"cot_prompt_lib/initial_prompt.txt", "r") as fi:
-    with open(f"cot_prompt_lib/test_prompt_0711.txt", "r") as fi:
+    with open(args.prompt_file, "r") as fi:
         for line in fi.readlines():
             prompt += line
     subject = curr["category"]
@@ -368,6 +368,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size", "-bs", type=int, default=-1)
     parser.add_argument("--model", "-m", type=str, default="meta-llama/Llama-2-7b-hf")
     parser.add_argument("--dataset", "-d", type=str, default="mmlu-pro")
+    parser.add_argument("--prompt_file", "-p", type=str, default="cot_prompt_lib/initial_prompt.txt")
 
     args = parser.parse_args()
     os.makedirs(args.save_dir, exist_ok=True)
