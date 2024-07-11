@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/generate_plausible_options/human_check.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate_plausible_options/mmmu_add_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate_plausible_options/mmmu_ins.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate_plausible_options/sample_process_mmmu/mmmu augmented sample - augmented_mmmu_sample.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate_plausible_options/sample_process_mmmu/transfer_json.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/test_duplicate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/exp_0711/eval_llama-3-8b-ins.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/exp_0711/eval_llama-3-8b.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local_0711.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_hf/pull_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_hf/pull_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +32,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/exp_0711",
+    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/local_inference_0520" />
       <recent name="$PROJECT_DIR$/local_inference_0520/exp_0711" />
       <recent name="$PROJECT_DIR$/generate_plausible_options/sample_process_mmmu" />
       <recent name="$PROJECT_DIR$/generate_plausible_options" />
       <recent name="$PROJECT_DIR$/local_inference_0520/07_scripts" />
-      <recent name="$PROJECT_DIR$/local_inference_0520/scripts_01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test_vllm" />
@@ -212,7 +203,7 @@
       <workItem from="1717682744979" duration="8548000" />
       <workItem from="1718381837735" duration="12000" />
       <workItem from="1718626193042" duration="629000" />
-      <workItem from="1718634102686" duration="55581000" />
+      <workItem from="1718634102686" duration="57793000" />
     </task>
     <servers />
   </component>
