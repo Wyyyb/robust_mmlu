@@ -1,0 +1,19 @@
+Given a multiple-choice question, its options, and the correct answer, generate six additional distractors (options) that are plausible but incorrect. These distractors should be relevant to the subject matter of the question but should not be the correct answer or too similar to it. The question may include images, but you do not need to know what the content of the image is. Focus your attention on the textual information.
+
+Input:
+Question: The triangular plate is fixed at its base, and its apex A is given a horizontal displacement of 5 mm. Determine the average normal strain $\varepsilon $_x along the x axis. <image 1>
+Existing 4 Options:
+A. 0.00443 mm/mm
+B. 0.00803 mm/mm
+C. 0.00543 mm/mm
+D. 0.00884 mm/mm
+Answer: A. 0.00443 mm/mm
+
+Output:
+Generated 6 distractors (options):
+E. 0.00812 mm/mm
+F. 0.00148 mm/mm
+G. 0.00256 mm/mm
+H. 0.00293 mm/mm
+I. 0.00585 mm/mm
+J. 0.00303 mm/mm

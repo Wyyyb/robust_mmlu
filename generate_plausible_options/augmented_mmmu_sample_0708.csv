@@ -1,0 +1,549 @@
+question_id,question,existing options,answer,augmented options,image path (if need)
+validation_Accounting_1,"<image 1> Baxter Company has a relevant range of production between 15,000 and 30,000 units. The following cost data represents average variable costs per unit for 25,000 units of production. If 30,000 units are produced, what are the per unit manufacturing overhead costs incurred?","A. $6
+B. $7
+C. $8
+D. $9",B. $7,"E. $5
+F. $10
+G. $11
+H. $12
+I. $4
+J. $13",images/validation_Accounting_1_1.png
+validation_Materials_30,"The triangular plate is fixed at its base, and its apex A is given a horizontal displacement of 5 mm. Determine the average normal strain $\varepsilon $_x along the x axis. <image 1>","A. 0.00443 mm/mm
+B. 0.00803 mm/mm
+C. 0.00543 mm/mm
+D. 0.00884 mm/mm",A. 0.00443 mm/mm,"E. 0.00333 mm/mm
+F. 0.00654 mm/mm
+G. 0.00221 mm/mm
+H. 0.00722 mm/mm
+I. 0.00589 mm/mm
+J. 0.00390 mm/mm",images/validation_Materials_30_1.png
+validation_Electronics_15,Consider a nonlinear inductor which is defined by $\phi = i + tanh (i)$. Let the current through this inductor be i(t) = sin t. Find the voltage across it (see <image 1>).,"A. $[1 + sech^2 (sin t)] cos t$
+B. $[1 + sech^2 (sin t)] sin t$
+C. $[1 - sech^2 (sin t)] sin t$
+D. $[1 - sech^2 (cos t)] sin t$",A. $[1 + sech^2 (sin t)] cos t$,"E. $[1 + tanh^2 (sin t)] cos t$
+F. $[1 - sech^2 (sin t)] cos t$
+G. $[1 + tanh^2 (cos t)] sin t$
+H. $[1 - sech^2 (cos t)] cos t$
+I. $[1 + sech^2 (sin t)] tan t$
+J. $[1 - sech^2 (sin t)] tan t$",images/validation_Electronics_15_1.png
+validation_Electronics_28,Find $v_2$ in the circuit shown in <image 1>.,"A. 75 + 13.3 cos(250t - 57.7°)V
+B. 75 + 23.3 cos(250t - 57.7°)V
+C. 45 + 3.3 cos(250t - 57.7°)V
+D. 95 + 13.3 cos(250t - 57.7°)V",A. 75 + 13.3 cos(250t - 57.7°)V,"E. 65 + 13.3 cos(250t - 57.7°)V
+F. 75 + 23.3 cos(250t - 57.7°)V
+G. 85 + 13.3 cos(250t - 57.7°)V
+H. 75 + 3.3 cos(250t - 57.7°)V
+I. 75 + 13.3 cos(250t - 47.7°)V
+J. 85 + 23.3 cos(250t - 57.7°)V",images/validation_Electronics_28_1.png
+validation_Geography_15,The following statements of the rocks in <image 1> are all correct EXCEPT,"A. Siltstone is cemented silt particles
+B. Shale is Clay, breaking easily into flat flakes and plates
+C. Chert is Silica, a microcrystalline form of quartz
+D. None",D. None,"E. Sandstone is made up of sand-sized mineral particles or rock fragments
+F. Granite is a coarse-grained, light-colored igneous rock
+G. Limestone is a sedimentary rock composed largely of calcite
+H. Basalt is a dark-colored, fine-grained, igneous rock
+I. Marble is a metamorphic rock formed when limestone is exposed to high temperatures and pressures
+J. Dolomite is a carbonate rock consists mostly of the mineral dolomite",images/validation_Geography_15_1.png
+validation_Electronics_7,"Calculate the steady-state voltage, $v_c(t)$, for the network shown in <image 1>","A. $\sqrt(2) cos[(1/3)t]$
+B. $\sqrt(3) cos[(2/3)t]$
+C. $\sqrt(2) cos[(2/3)t]$
+D. $\sqrt(3) cos[(4/3)t]$",C. $\sqrt(2) cos[(2/3)t]$,"E. $\sqrt(4) cos[(1/3)t]$
+F. $\sqrt(2) cos[(3/2)t]$
+G. $\sqrt(3) cos[(1/2)t]$
+H. $\sqrt(2) cos[(4/3)t]$
+I. $\sqrt(3) cos[(3/2)t]$
+J. $\sqrt(4) cos[(2/3)t]$",images/validation_Electronics_7_1.png
+validation_Geography_25,What is the correct method for constructing the waterproofing layer of the basement exterior wall with coiled materials:<image 1>,"A. The roll waterproof layer is laid on the upstream surface of the external wall
+B. The roll waterproof layer is laid on the back surface of the external wall
+C. The outer wall roll adopts the empty laying method
+D.  When laying double layer coils, the two layers of coils are perpendicular to each other",A. The roll waterproof layer is laid on the upstream surface of the external wall,"E. The roll waterproof layer is placed between the external wall layers
+F. The roll waterproof layer is laid on the inside surface of the external wall
+G. The outer wall roll adopts the direct contact method
+H. When laying double layer coils, the two layers of coils are parallel to each other
+I. The roll waterproof layer is laid on the downstream surface of the external wall
+J. The roll waterproof layer is attached to the exterior wall without any specific direction.",images/validation_Geography_25_1.png
+validation_Diagnostics_and_Laboratory_Medicine_11,The most likely diagnosis <image 1>,"A. HIV encephalitis
+B. Creutzfeldt-Jakob Disease
+C. Progressive supranucelar palsy
+D. amyotrophic lateral sclerosis",B. Creutzfeldt-Jakob Disease,"E. Parkinson's Disease
+F. Alzheimer's Disease
+G. Multiple Sclerosis
+H. Huntington's Disease
+I. Stroke
+J. Brain tumor",images/validation_Diagnostics_and_Laboratory_Medicine_11_1.png
+validation_Computer_Science_13,"Suppose we have a training set with m=3 examples,plotted below.Our hypothes is representation is $h_{\theta}(x) = \theta_1x$, with parameter $\theta_1$. The cost function $J(\theta_1)$ is $J(\theta_1)$=${1\over2m}\sum\nolimits_{i=1}^m(h_\theta(x^i) - y^i)^2$. What is $J(0)$?<image 1>","A. 0
+B. 1/6
+C. 1
+D. 14/6",D. 14/6,"E. 1/2
+F. 2
+G. 3/4
+H. 1/4
+I. 7/6
+J. 5/6",images/validation_Computer_Science_13_1.png
+validation_Computer_Science_15,What type of relationship is WORKS_ON in <image 1>?,"A. 1:1
+B. 1:N
+C. N:1
+D. N:M",D. N:M,"E. 1:0
+F. 0:1
+G. M:1
+H. 1:M
+I. N:0
+J. 0:N",images/validation_Computer_Science_15_1.png
+validation_History_19,A historian would most likely use the image in  <image 1> as support for which of the following? ,"A. Defensive walls were successful in preventing borderland nomads from conquering the Han dynasty.
+B. The Han government built fortifications to protect the Silk Road.
+C. Monumental architecture served both a religious and a military purpose in the Qin and Han dynasties.
+D. Fortifications were built to project military power and defend against invasions.",D. Fortifications were built to project military power and defend against invasions.,"E. The Han dynasty extensively used stone in their architecture.
+F. The architecture of the Han dynasty was simplistic and utilitarian.
+G. Fortifications were mainly used as a symbol of power and prestige.
+H. The Han dynasty prioritized the construction of religious monuments over military fortifications.
+I. The Han government built fortifications as a means of territorial expansion.
+J. Defensive walls were ineffective and often breached by invading forces.",images/validation_History_19_1.png
+validation_Diagnostics_and_Laboratory_Medicine_28,This lesion of the cerebellum <image 1>,"A. is commonly associated with Von Hippel Lindau
+B. contains inhibin A positive stromal cells
+C. is rich in reticulin
+D. all are correct",D. all are correct,"E. is commonly associated with Huntington's disease
+F. lacks reticulin fibers
+G. contains inhibin B positive stromal cells
+H. is often benign
+I. is typically malignant
+J. is associated with Parkinson's disease",images/validation_Diagnostics_and_Laboratory_Medicine_28_1.png
+validation_Architecture_and_Engineering_6,Two consecutive photographs were taken with a camera of focal length 200 mm mounted on an airplane flying at a height of 1500 m. The overlap was exactly 60% and the size of prints was 250 mm 250 mm. The flying height was same in case of both the exposures and the flight was balanced so that there was no drift. The ground was flat and was 250 m above the mean sea level. Determine the scale of the photograph and the length of the air base.<image 1>,"A. The scale of the photographs is 1 cm = 62.5 m;Air base = 625 m
+B. The scale of the photographs is 1 cm = 68.5 m;Air base = 625 m
+C. The scale of the photographs is 1 cm = 66.5 m;Air base = 625 m
+D. The scale of the photographs is 1 cm = 64.5 m;Air base = 625 m",A. The scale of the photographs is 1 cm = 62.5 m;Air base = 625 m,"E. The scale of the photographs is 1 cm = 70.5 m; Air base = 625 m
+F. The scale of the photographs is 1 cm = 60.5 m; Air base = 625 m
+G. The scale of the photographs is 1 cm = 65.5 m; Air base = 650 m
+H. The scale of the photographs is 1 cm = 62.5 m; Air base = 650 m
+I. The scale of the photographs is 1 cm = 68.5 m; Air base = 600 m
+J. The scale of the photographs is 1 cm = 66.5 m; Air base = 600 m",images/validation_Architecture_and_Engineering_6_1.png
+validation_Mechanical_Engineering_13,Select the correct left view()<image 1>,"A. A
+B. B
+C. C
+D. D",A. A,"E. E
+F. F
+G. G
+H. H
+I. I
+J. J",images/validation_Mechanical_Engineering_13_1.png
+validation_Computer_Science_8,The maximum flow from v1 to v6 is ____: <image 1>,"A. 11
+B. 0
+C. 12
+D. 13",A. 11,"E. 10
+F. 14
+G. 9
+H. 15
+I. 8
+J. 7",images/validation_Computer_Science_8_1.png
+validation_Clinical_Medicine_29,Which histological feature consistent with Crohn's disease is highlighted in part A? <image 1> ,"A. Fissuring ulcer
+B. Sinus tract
+C. Fistula formation
+D. Non-caseating granuloma",D. Non-caseating granuloma,"E. Transmural inflammation
+F. Crypt abscesses
+G. Cobblestone appearance
+H. Lymphoid aggregates
+I. Goblet cell depletion
+J. Pseudopolyps",images/validation_Clinical_Medicine_29_1.png
+validation_Manage_18,The film in the <image 1> is a diagram of Mintzberg's metaphor of the Battle of Passchendale. What is the mismatch between what the picture is trying to convey?,"A. Plans and actual combat do not match
+B. A catastrophic mismatch between abstract thinking and actual terrain
+C. There is a mismatch between theoretical knowledge and experience
+D. Mismatch between abstract thinking and experience",B. A catastrophic mismatch between abstract thinking and actual terrain,"E. There is no mismatch, the picture perfectly represents the metaphor
+F. Mismatch between the depicted battle and the actual events of Passchendale
+G. The mismatch between the war strategies and soldiers' capabilities
+H. Mismatch between the time period represented and the actual time of the battle
+I. The mismatch between the soldiers' courage and the outcome of the battle
+J. Discrepancy between the topography depicted and actual terrain",images/validation_Manage_18_1.png
+validation_Mechanical_Engineering_11,"For Figure, what is the value of the maximum stress at both the hole and the notch?<image 1>","A. 41.7Mpa,44.83Mpa
+B. 31.7Mpa,34.83Mpa
+C. 21.7Mpa,34.83Mpa
+D. 21.7Mpa,24.83Mpa","A. 41.7Mpa,44.83Mpa","E. 39.7Mpa,42.83Mpa
+F. 35.7Mpa,38.83Mpa
+G. 45.7Mpa,48.83Mpa
+H. 30.7Mpa,33.83Mpa
+I. 28.7Mpa,31.83Mpa
+J. 43.7Mpa,46.83Mpa",images/validation_Mechanical_Engineering_11_1.png
+validation_Clinical_Medicine_4,Can you see the finding on this x-ray of the pelvis? <image 1> ,"A. Fracture of the femoral neck
+B. Dislocation of the sacroiliac joint
+C. Foreign body in the midline at the level of the pubic symphysis
+D. Air the in bladder",C. Foreign body in the midline at the level of the pubic symphysis,"E. Dislocation of the hip joint
+F. Fracture of the pubic bone
+G. Presence of calcification in the bladder
+H. Fracture of the sacrum
+I. Presence of a tumor in the pelvic region
+J. Fracture of the coccyx",images/validation_Clinical_Medicine_4_1.png
+validation_Psychology_14,"The interference resulting from the performance of two simultaneous cognitive tasks can be categorized as either domain-general or domain-specific. Domain-general interference results from a lack of overall cognitive resources to attend to both tasks. A domain-specific interference is related to a lack of resources in a specific system, such as the visual or motor system. Recent research has suggested that language regarding visual and motoric content may engage some of the same systems through mental simulation, rather than engaging separate systems for language and perceptual systems. Studies have shown following distance increases with increased distraction or weather related stress. Other researchers wanted to understand the implications of this research on driving ability. They set up an experiment to test the effects of content specific language involving visual, motor, or abstract content on reaction times and following distance. All participants spoke English fluently and underwent training to ensure competence in the driving simulator did not affect their performance of the task. Participants were required to keep both hands on the wheel during the experiment. After the driving simulation began, the participants had to respond to a battery of true and false questions in each language condition. A possible visual language condition sentence is 'A stop sign is green'; a correct response is speaking the word 'false'. Sentences in the motor condition included fine motor details and differed from required movements for driving (e.g. 'It is possible to crush a remote between the thumb and first finger'; similarly, this would require speaking 'false'). Abstract sentences were taken from the U.S. citizenship exam (e.g. 'The American Civil War took place before WWII'; 'true'). The mean following distance from the pace car for each of the three language conditions and a control group (asked to repeat the word 'true' or 'false') is shown in Figure 1. Figure 1: The mean following distance between the participant's vehicle and the vehicle in front of the participant in the simulation. There were significant differences between pairwise comparisons in all conditions. <image 1> The term 'LBFS (Look But Failed to See) accident' has crept into the nomenclature to describe an accident where the driver looked in a direction, only to be hit by an oncoming vehicle that should have been highly visible from that same direction. Which of these would NOT account for this problem?","A. Saccadic masking occurrence, in which moving eyes are rendered temporarily blind
+B. Driving on an unfamiliar road
+C. Domain-general and domain-specific interference
+D. An experienced driver's existing schema does not match an oncoming car",B. Driving on an unfamiliar road,"E. Overconfidence in driving skills
+F. Poor weather conditions
+G. Listening to music while driving
+H. Misjudgment of the oncoming car's speed
+I. Fatigue or drowsiness
+J. Wearing tinted glasses while driving",images/validation_Psychology_14_1.png
+validation_Art_21,This depiction of <image 1> was a popular subject matter painted by several artists in the 16th and 17th centuries...  who painted this one?  ,"A. Peter Paul Rubens 1675
+B. Caravaggio 1635
+C. Artemisia Gentileschi 1612-13
+D. Francisco de Zurbarán 1614",C. Artemisia Gentileschi 1612-13,"E. Diego Velázquez 1623
+F. Rembrandt van Rijn 1654
+G. Jan Vermeer 1665
+H. El Greco 1600
+I. Titian 1550
+J. Hans Holbein the Younger 1533",images/validation_Art_21_1.png
+validation_Math_23,A rocket is shot from the top of a tower at an angle of 45° above the horizontal (Fig. 19-1). It hits the ground in 5 seconds at a horizontal distance from the foot of the tower equal to three times the height of the tower. Find the height of the tower.<image 1>,"A. h = 100 ft
+B. h = 80 ft
+C. h = 110 ft
+D. h = 85 ft",A. h = 100 ft,"E. h = 90 ft
+F. h = 120 ft
+G. h = 70 ft
+H. h = 95 ft
+I. h = 105 ft
+J. h = 75 ft",images/validation_Math_23_1.png
+validation_Manage_13,"Tango Company produces joint products M, N, and T from a joint process. This information concerns a batch produced in April at a joint cost of $120,000: <image 1> How much of the joint cost should be allocated to each joint product using the net realizable value method?","A. M: $57,000; N: $47,000; T: $16,000;
+B. M: $57,000; N: $47,000; T: $20,000;
+C. M: $60,000: N: $51,996; T: $8,004;
+D. M: $60,000: N: $51,996; T: $12,000;","C. M: $60,000: N: $51,996; T: $8,004;","E. M: $58,000; N: $46,000; T: $16,000;
+F. M: $55,000; N: $50,000; T: $15,000;
+G. M: $59,000; N: $48,000; T: $13,000;
+H. M: $62,000; N: $50,000; T: $8,000;
+I. M: $56,000; N: $49,000; T: $15,000;
+J. M: $57,000; N: $52,000; T: $11,000;",images/validation_Manage_13_1.png
+validation_Electronics_23,Consider the capacitor shown in  <image 1>. The capacitance C(t) is given by $C(t) = C_0 (1 + 0.5 sin t)$. The voltage across this capacitor is given by $v(t) = 2 sin wt$ Find the current through the capacitor.,"A. $C_0 sin wt cos t + 2w C_0 cos wt (1 + 0.5 sin t)$
+B. $C_0 cos wt cos t + 2w C_0 sin wt (1 + 0.5 sin t)$
+C. $C_0 sin wt cos t + 4w C_0 cos wt (1 + sin t)$
+D. $C_0 sin wt cos t + 2w C_0 cos wt (1 - sin t)$",A. $C_0 sin wt cos t + 2w C_0 cos wt (1 + 0.5 sin t)$,"E. $C_0 cos wt sin t + 3w C_0 sin wt (1 + 0.5 sin t)$
+F. $C_0 sin wt cos t - 2w C_0 cos wt (1 + 0.5 sin t)$
+G. $2w C_0 cos wt (1 + 0.5 sin t) - C_0 sin wt cos t$
+H. $C_0 cos wt sin t + 2w C_0 sin wt (1 + 0.5 cos t)$
+I. $C_0 sin wt cos t + 2w C_0 cos wt (1 + 0.5 cos t)$
+J. $C_0 cos wt cos t + 2w C_0 sin wt (1 - 0.5 sin t)$",images/validation_Electronics_23_1.png
+validation_Music_6,<image 1> The second measure of the above example uses which rhythmic device?,"A. Anacrusis
+B. Hemiola
+C. Suspension
+D. Augmentation",B. Hemiola,"E. Syncopation
+F. Diminution
+G. Sforzando
+H. Ritardando
+I. Fermata
+J. Accelerando",images/validation_Music_6_1.png
+validation_History_29,<image 1> British economic interactions with India during the time span covered in the chart above would have been chiefly concerned with which of the following commodities?,"A. Cotton
+B. Spices
+C. Ivory
+D. Opium",A. Cotton,"E. Tea
+F. Silk
+G. Indigo
+H. Coffee
+I. Sugar
+J. Rice",images/validation_History_29_1.png
+validation_Psychology_11,"Epidemiologically speaking, it is crucial to understand the contact structure through which disease travels. In studies of sexually transmitted diseases (STDs) in particular, the structure of sexual networks is critical for understanding STD diffusion. Generally, the network structures of disease diffusion and infection can be categorized into four types: the core infection model, the inverse core infection model, the bridging model, and the spanning tree model (see below). Figure 1. The network structure of four models of infection. For Panels A, B, and C, black circles denote actors that are high-activity or high-risk, and white circles indicate low-activity or low-risk actors. Panel D circles represent randomly selected individuals. Lines represent the relationship between two actors. The dotted lines in Panel A and B delineate the ""core"". <image 1> Disease diffusion is widespread among adolescent populations. A study mapped the romantic and sexual relationships of an entire high school population of over 800 adolescents in a midsized town in the Midwestern US for a period of 18 months. Students were asked to identify their sexual (not dating) and romantic partners (dating) in the past 18 months from a roster of other students attending their school. The study found that adolescent sexual networks are structured very differently from adult ones. In an adult sexual network, there is normally a core group of very sexually active people that links out to others. This can be envisioned as a transportation hub system where many points are connected to a small number of hubs. At the high school, on the contrary, there was no core group. Instead, the romantic and sexual network at the school created long chains of connections that spread out through the community, with few places where students directly shared the same partners with each other. This can be comparable to rural phone lines that run from a long main line to individual houses. One single component of the network was found to have 288 linked students, in one long chain. This chain featured 52% (288) of the romantically involved students at the high school, but most students had only one partner and they had little idea of their connections to the long network chain. Which of the following statements best explains Panel C?","A. One individual's past partner is tied through multiple chains to his or her current or future partner.
+B. It is a structure with few cycles, low redundancy, and sparse density.
+C. One actor shows the ability to stop the transmission of STDs between two networks.
+D. Two populations of persons engaged in different behaviors are linked by one actor.",D. Two populations of persons engaged in different behaviors are linked by one actor.,"E. It is a structure with high redundancy and dense density.
+F. The individual's past, current and future partners are all connected to each other.
+G. Two actors show the ability to prevent the spread of STDs in the network.
+H. The structure involves multiple actors who connect different networks.
+I. One actor links two populations engaged in the same behavior.
+J. The structure is a closed loop, with no new actors entering or leaving.",images/validation_Psychology_11_1.png
+validation_History_12,"<image 1> Study this flowchart of the English, Spanish, and Scottish royal families to identify which two monarchs were related by both blood and marriage.","A. Phillip II and Mary I
+B. Francis II and Mary Queen of Scots
+C. Elizabeth I and Edward VI
+D. Catherine of Aragon and Henry II",A. Phillip II and Mary I,"E. Henry VII and Elizabeth of York
+F. James VI and Anne of Denmark
+G. Charles I and Henrietta Maria
+H. Mary Queen of Scots and Lord Darnley
+I. Henry VIII and Anne Boleyn
+J. James I and Anne of Denmark",images/validation_History_12_1.png
+validation_Geography_26,"The following rock mass structure types () do not belong to the ""Code for Geological Investigation of Water Resources and Hydropower Engineering"" (GB Classification of Rock Mass Structure for 50287-99)<image 1>","A. Overall, block, and sub block structures
+B. Giant thick layered, thick layered, medium thick layered, interbedded, and thin layered structures
+C. Weathering unloading structure and weathering fragment structure
+D. Inlaid fragmented structure and fragmented structure",C. Weathering unloading structure and weathering fragment structure,"E. Layered and jointed structures
+F. Faulted and folded structures
+G. Intrusive and extrusive structures
+H. Sedimentary and metamorphic structures
+I. Strata and bedding structures
+J. Fractured and veined structures",images/validation_Geography_26_1.png
+validation_Geography_19,Which of the following options is not included in the hazard assessment of geological hazards?<image 1>,"A. Land subsidence
+B. Ground collapse
+C.  Ground fissures
+D. Earthquake",D. Earthquake,"E. Soil erosion
+F. Volcanic eruption
+G. Tsunami
+H. Landslide
+I. Flash flood
+J. Avalanche",images/validation_Geography_19_1.png
+validation_Art_Theory_1,<img='./images/q_152_1.png'> <image 2> Ndop sculptures represent a tradition that,"A. disappeared with the British occupation
+B. is still active today
+C. is performed, but has lost its original meaning
+D. is celebrated throughout Africa, and wherever Africans have traveled",B. is still active today,"E. has completely transformed over time
+F. has been replaced by modern art forms
+G. is only known and appreciated by a few tribes
+H. has been entirely forgotten and is not practiced at all
+I. is only performed during specific ceremonies
+J. is only known and kept alive by elders in the community",images/validation_Art_Theory_1_1.png
+validation_Design_22,Radial balance involves a central piece from which all other elements seem to radiate to arrange themselves in circular symmetry.<image 1>,"A. Symmetrical
+B. Asymmetrical
+C. Radical
+D. Bilateral",A. Symmetrical,"E. Concentric
+F. Tangential
+G. Centripetal
+H. Rotational
+I. Equidistant
+J. Circular",images/validation_Design_22_1.png
+validation_Math_12,"Maximize 3∑_{i=1} r_i
+ Subject to: S_{i-1} = 3S_i - d_1 i = 1, 2, 3,
+ S_i ≧ d_i ≧ 0 
+where r_1 = 3d_1 
+r_2 = 3d_2 
+r_3 = 3d_3^2
+<image 1>","A. d1* = S1 and d2* = 0 and d3* = S3
+B. d1* = 0 and d2* = S2 and d3* = 0
+C. d1* = S1 and d2* = S2 and d3* = 0
+D. d1* = 0 and d2* = 0 and d3* = S3",A. d1* = S1 and d2* = 0 and d3* = S3,"E. d1* = S1 and d2* = S2 and d3* = S3
+F. d1* = S2 and d2* = 0 and d3* = S3
+G. d1* = 0 and d2* = S1 and d3* = 0
+H. d1* = S3 and d2* = 0 and d3* = S1
+I. d1* = 0 and d2* = S3 and d3* = S2
+J. d1* = S2 and d2* = S3 and d3* = 0",images/validation_Math_12_1.png
+validation_Diagnostics_and_Laboratory_Medicine_15,Most important predisposing factor for the pictured condition is: <image 1>,"A. 2nd trimester hypoxic/ischemic event
+B. Nuchal cord
+C. Premature birth
+D. Sepsis",C. Premature birth,"E. Maternal diabetes
+F. Genetic disorders
+G. Maternal smoking during pregnancy
+H. Drug or alcohol use during pregnancy
+I. Meconium aspiration
+J. Birth trauma",images/validation_Diagnostics_and_Laboratory_Medicine_15_1.png
+validation_Math_13,"<image 1>A regular hexagon of side length 4 is embedded in a regular octagon of side length 4, as shown. What is the area of quadrilateral $A B C D$ ?","A. $16 \sqrt{2}$
+B. $16 \sqrt{3}$
+C. $16+16 \sqrt{2}-16 \sqrt{3}$
+D. $16+16 \sqrt{3}-16 \sqrt{2}$",C. $16+16 \sqrt{2}-16 \sqrt{3}$,"E. $16+16 \sqrt{3}+16 \sqrt{2}$
+F. $16-16 \sqrt{2}+16 \sqrt{3}$
+G. $16-16 \sqrt{3}+16 \sqrt{2}$
+H. $16+16 \sqrt{2}+16 \sqrt{3}$
+I. $16-16 \sqrt{2}-16 \sqrt{3}$
+J. $16-16 \sqrt{3}-16 \sqrt{2}$",images/validation_Math_13_1.png
+validation_Sociology_3,Sociology studies <image 1> and governmental relationships as _________.,"A. The exercise of power by the state
+B. The strategies some use to direct the behaviour and actions of others
+C. The institutionalization of legislative, executive, and judicial branches of the state
+D. The means by which permanent hierarchies are established and enforced",B. The strategies some use to direct the behaviour and actions of others,"E. The ways in which individuals and groups interact within a society
+F. The development of social norms and values
+G. The impact of social change on individual behavior
+H. The influence of social class on access to resources
+I. The role of culture in shaping societal structures
+J. The analysis of social inequality and discrimination",images/validation_Sociology_3_1.png
+validation_Computer_Science_21,What kind of matrix traversal is <image 1>?,"A. Normal traversal of the matrix.
+B. Row-wise traversal of the matrix.
+C. Column-wise traversal of the matrix.
+D. spiral traversal of the matrix.",D. spiral traversal of the matrix.,"E. Diagonal traversal of the matrix.
+F. Zigzag traversal of the matrix.
+G. Reverse traversal of the matrix.
+H. Boundary traversal of the matrix.
+I. Depth-first traversal of the matrix.
+J. Breadth-first traversal of the matrix.",images/validation_Computer_Science_21_1.png
+validation_Accounting_12,"<image 1> Hicks Products produces and sells patio furniture through a national dealership network. They purchase raw materials from a variety of suppliers and all manufacturing, and assembly work is performed at their plant outside of Cleveland, Ohio. They recorded these costs for the year ending December 31, 2017. What is total revenue?","A. $3,100,000
+B. $2,616,000
+C. $2,474,000
+D. $484,000","A. $3,100,000","E. $2,900,000
+F. $3,200,000
+G. $2,800,000
+H. $3,300,000
+I. $2,700,000
+J. $3,000,000",images/validation_Accounting_12_1.png
+validation_Art_23,Margaret Gere's <image 1> was made in which medium?,"A. Egg tempera
+B. Watercolour
+C. Ink
+D. Oil paint",A. Egg tempera,"E. Acrylic paint
+F. Charcoal
+G. Pastels
+H. Graphite pencil
+I. Gouache
+J. Digital art",images/validation_Art_23_1.png
+validation_Architecture_and_Engineering_2,Compare the scales of photography for the area recorded and the strip widths given by cameras A and B at the same flying heights.<image 1>How many photographs would be taken by the camera A in covering a strip 16 km long at a flying height of 1350 m? The longitudinal overlap is 60%.,"A. 35.567 $\approx$ 36
+B. 36.567 $\approx$ 37
+C. 34.567 $\approx$ 35
+D. 37.567 $\approx$ 38",A. 35.567 $\approx$ 36,"E. 33.567 $\approx$ 34
+F. 32.567 $\approx$ 33
+G. 38.567 $\approx$ 39
+H. 39.567 $\approx$ 40
+I. 31.567 $\approx$ 32
+J. 30.567 $\approx$ 31",images/validation_Architecture_and_Engineering_2_1.png
+validation_Sociology_14,Which of the following is a criticism of <image 1>?,"A. It is too broad and accounts for too many aspects of family.
+B. It is too narrowly focused on a sequence of stages.
+C. It does not serve a practical purpose for studying family behaviour.
+D. It is not based on comprehensive research.",B. It is too narrowly focused on a sequence of stages.,"E. It does not consider cultural differences in family structures.
+F. It fails to take into account the impact of socioeconomic factors.
+G. It overemphasizes the role of individual family members.
+H. It lacks a clear theoretical framework.
+I. It does not consider the impact of external factors on family dynamics.
+J. It does not address the role of gender within the family.",images/validation_Sociology_14_1.png
+validation_Sociology_18,What is the W.E.B Dubois <image 1>?,"A. Says the organization of society (stratiLcations based on class, ethnicity, gender, age, etc.) and the changes in society can be explained by the conSicts inherent to social relations.
+B. Is the economic system that is directed at earning a proLt for a few, selling the proLts to many people, and keeping workers wages low in order to increase proLts
+C. Is a theory that focuses on the social structures that shape society as a whole. It sees society as a complex system whose parts work together to maintain stability and to promote solidarity.
+D. Refers to the particular experience of African Americans where in which they are forced to see themselves their status as citizens who are never able to escape identiLcation based on the color of their skin",D. Refers to the particular experience of African Americans where in which they are forced to see themselves their status as citizens who are never able to escape identiLcation based on the color of their skin,"E. Is a theory that argues for the importance of individual agency in the creation and interpretation of social structures.
+F. Refers to the concept of shared cultural values and norms that serve to unite a society and foster a sense of belonging.
+G. Is the belief in the inherent superiority of one's own ethnic group or culture.
+H. Refers to the social and economic system in which assets and income are primarily held by the government.
+I. Is a perspective that views society as a set of interdependent parts, each of which serves a function for the overall stability and survival of the society.
+J. Refers to the systematic study of how humans understand and interpret the world around them.",images/validation_Sociology_18_1.png
+validation_Public_Health_11,"The results of studies observing the relationship between smoking and lung cancer are shown in the table below, what can be calculated from these data? <image 1>","A. PAR
+B. AR
+C. RR
+D. OR",D. OR,"E. CI
+F. HR
+G. IR
+H. PR
+I. IRR
+J. SR",images/validation_Public_Health_11_1.png
+validation_Economics_16,A recent study found that the demand and supply schedules for Frisbees are as follows:<image 1> Frisbee manufacturers persuade the government that Frisbee production improves scientists' understanding of aerodynamics and thus is important for national security. A concerned Congress votes to impose a price floor $2 above the equilibrium price. What is the new market price?,"A. 8
+B. 9
+C. 10
+D. 11",C. 10,"E. 12
+F. 7
+G. 6
+H. 13
+I. 5
+J. 14",images/validation_Economics_16_1.png
+validation_Art_Theory_30,"<image 1> On the basis of style, this work can be attributed to","A. Paul Cézanne
+B. Claude Monet
+C. José María Velasco
+D. Vincent van Gogh",D. Vincent van Gogh,"E. Pablo Picasso
+F. Salvador Dali
+G. Leonardo da Vinci
+H. Henri Matisse
+I. Edgar Degas
+J. Pierre-Auguste Renoir",images/validation_Art_Theory_30_1.png
+validation_Architecture_and_Engineering_26,"A, B and C are three visible stations in a hydrographic survey. The computed sides of the triangle ABC are AB = 1200 m, BC = 1442 m and CA = 1960 m. A station O is established outside the triangle and its position is to be determined by resection on A, B and C, the angle AOB and BOC being respectively 45°30' and 52°15'. Determine distances of OA and OC, if O and Bare on the opposite sides of line AC.<image 1>","A. AO = 884.49 m,CO = 1644 m
+B. AO = 884.49 m,CO = 1624 m
+C. AO = 885.49 m,CO = 1634 m
+D. AO = 884.49 m,CO = 1634 m","D. AO = 884.49 m,CO = 1634 m","E. AO = 890.49 m, CO = 1645 m
+F. AO = 880.49 m, CO = 1654 m
+G. AO = 884.49 m, CO = 1654 m
+H. AO = 890.49 m, CO = 1624 m
+I. AO = 880.49 m, CO = 1624 m
+J. AO = 885.49 m, CO = 1624 m",images/validation_Architecture_and_Engineering_26_1.png
+validation_Math_19,"A graph <img='./images/q_387_1.png'> and a spanning tree <image 5> of <img='./images/q_387_1.png'> are given, Give the Fundamental Cut sets of <img='./images/q_387_1.png'> with respect of <image 5>","A. {$e_1$, $e_8$}, {$e_2$, $e_4$, $e_8$}, {$e_3$, $e_7$}, {$e_5$, $e_7$, $e_8$}, {$e_6$, $e_8$}
+B. {$e_1$, $e_8$}, {$e_2$, $e_4$, $e_8$}, {$e_6$, $e_8$}
+C. {$e_1$, $e_8$}, {$e_2$, $e_4$, $e_8$}, {$e_3$, $e_7$}, {$e_5$, $e_7$, $e_8$}, {$e_6$, $e_8$}, {$e_2$, $e_4$}
+D. {$e_2$, $e_4$, $e_8$}","A. {$e_1$, $e_8$}, {$e_2$, $e_4$, $e_8$}, {$e_3$, $e_7$}, {$e_5$, $e_7$, $e_8$}, {$e_6$, $e_8$}","E. {$e_1$, $e_8$}, {$e_2$, $e_4$, $e_8$}, {$e_3$, $e_7$}, {$e_6$, $e_8$}, {$e_2$, $e_4$}
+F. {$e_1$, $e_8$}, {$e_3$, $e_7$}, {$e_5$, $e_7$, $e_8$}, {$e_6$, $e_8$}
+G. {$e_1$, $e_8$}, {$e_2$, $e_4$, $e_8$}, {$e_3$, $e_7$}, {$e_5$, $e_7$, $e_8$}
+H. {$e_1$, $e_8$}, {$e_2$, $e_4$, $e_8$}, {$e_5$, $e_7$, $e_8$}, {$e_6$, $e_8$}
+I. {$e_1$, $e_8$}, {$e_3$, $e_7$}, {$e_6$, $e_8$}, {$e_2$, $e_4$}
+J. {$e_1$, $e_8$}, {$e_2$, $e_4$, $e_8$}, {$e_3$, $e_7$}, {$e_2$, $e_4$}",images/validation_Math_19_1.png
+validation_Agriculture_15,<image 1> What could be the reason for this grassy-like clump in the maize photographed by my coworker Wilmarie Kriel in South Africa?,"A. Lack of nutrients
+B. Downy mildew (oomycete)
+C. Don't know, not sure
+D. Virus",B. Downy mildew (oomycete),"E. Fungal infection
+F. Insect damage
+G. Water stress
+H. Herbicide damage
+I. Bacterial infection
+J. Weather damage",images/validation_Agriculture_15_1.png
+validation_Sociology_27, The racial term <image 1> can refer to ____. ,"A. A black person living in Canada
+B. People whose ancestors came to Canada through the slave trade
+C. A white person who originated in Africa and now lives in Canada
+D. Any of the above",D. Any of the above,"E. A person of Asian descent living in Canada
+F. A person of Hispanic origin now residing in Canada
+G. A Native American living in Canada
+H. A person of Middle Eastern descent living in Canada
+I. A person of mixed race living in Canada
+J. People whose ancestors migrated to Canada in the 19th century",images/validation_Sociology_27_1.png
+validation_Finance_28, The following table shows interest rates and exchange rates for the U.S. dollar and the Lilliputian nano. The spot exchange rate is 15 nanos = $1. <image 1>. What is Dollar interest rate for 1 year?,"A. 5.58
+B. 2.34
+C. 15.18
+D. 3.85",A. 5.58,"E. 6.72
+F. 4.45
+G. 1.98
+H. 7.32
+I. 4.90
+J. 3.27",images/validation_Finance_28_1.png
+validation_Biology_5,What is part B in the figure? <image 1>,"A. Sheath
+B. Viral genome
+C. Capsid
+D. Tail Fibers",B. Viral genome,"E. Envelope
+F. Head
+G. Base Plate
+H. Neck
+I. Tail Tube
+J. Spikes",images/validation_Biology_5_1.png
+validation_Math_21,"Consider the problem of finding the solution to the system of one ""simultaneous"" nonlinear equation $f_1(x)=x e^{-x}=0$ by Newton-Raphson iteration. Determine for which values of the starting point x0, the function will converge.
+<image 1>","A. When $x_0$ is greater than 1
+B. When $x_0$ is equal to 1
+C. When $x_0$ is less than 1
+D. When $x_0$ is equal to 0",C. When $x_0$ is less than 1,"E. When $x_0$ is less than 0
+F. When $x_0$ is greater than 2
+G. When $x_0$ is equal to 2
+H. When $x_0$ is less than -1
+I. When $x_0$ is greater than 0
+J. When $x_0$ is equal to -1",images/validation_Math_21_1.png
+validation_Marketing_5,The Eastern and Western Major League Soccer conferences have a new Reserve Division that allows new players to develop their skills. Data for a randomly picked date showed the following annual goals. <image 1> The exact distribution for the hypothesis test is:,"A. the normal distribution
+B. the Student's t-distribution
+C. the uniform distribution
+D. the exponential distribution",B. the Student's t-distribution,"E. the Bernoulli distribution
+F. the Poisson distribution
+G. the binomial distribution
+H. the gamma distribution
+I. the logistic distribution
+J. the beta distribution",images/validation_Marketing_5_1.png
+validation_Pharmacy_24,What is the following structure's <image 1> mechanism of action?,"A. Topoisomerase poison
+B. Metallating agent
+C. Chain terminator
+D. Antisense agent",A. Topoisomerase poison,"E. Alkylating agent
+F. Folic acid antagonist
+G. Intercalating agent
+H. DNA gyrase inhibitor
+I. RNA polymerase inhibitor
+J. DNA primase inhibitor",images/validation_Pharmacy_24_1.png
+validation_Physics_23,"<image 1>A square loop of wire of side 0.5 meter and resistance 10^{-2} ohm is located in a uniform magnetic field of intensity 0.4 tesla directed out of the page as shown. The magnitude of the field is decreased to zero at a constant rate in 2 seconds. As the field is decreased, what are the magnitude and direction of the current in the loop?","A. Zero
+B. 5 A, counterclockwise
+C. 5 A, clockwise
+D. 20 A, counterclockwise","B. 5 A, counterclockwise","E. 10 A, clockwise
+F. 2 A, counterclockwise
+G. 15 A, clockwise
+H. 7 A, counterclockwise
+I. 3 A, clockwise
+J. 6 A, counterclockwise",images/validation_Physics_23_1.png
+validation_Art_Theory_13,Which contemporary artist's architectural style is resembled in the painting's setting? <image 1>,"A. Amolfo di Cambio
+B. Brunelleschi
+C. Bernini
+D. Michelangelo",B. Brunelleschi,"E. Donatello
+F. Giotto
+G. Leonardo da Vinci
+H. Caravaggio
+I. Raphael
+J. Botticelli",images/validation_Art_Theory_13_1.png
+validation_Math_2,"For the picture galleries the plans of which are given in Fig. 1, find the smallest number of attendants who, if placed in the various doorways connect two adjacent rooms, can supervise all rooms. Use integer programming and the simplex method to solve.
+<image 1>","A. (a) 1,(b) 2
+B. (a) 2, (b) 3
+C. (a) 2,(b) 2
+D. (a) 1,(b) 3","B. (a) 2, (b) 3","E. (a) 3, (b) 2
+F. (a) 1, (b) 4
+G. (a) 3, (b) 1
+H. (a) 2, (b) 4
+I. (a) 3, (b) 3
+J. (a) 4, (b) 1",images/validation_Math_2_1.png
+validation_Geography_23,"The cantilever beam is subjected to a concentrated force P at the free end, and the cross-sectional shape and the action line of force P are shown in the figure What type of cross-section produces the combined deformation of oblique bending and torsion?<image 1>","A. Rectangle
+B. Channel steel
+C. I-beam
+D. Equilateral angle steel",D. Equilateral angle steel,"E. Square
+F. Triangle
+G. Round bar steel
+H. T-beam
+I. Box section
+J. Hexagonal",images/validation_Geography_23_1.png
+validation_Diagnostics_and_Laboratory_Medicine_23,This resection of a skull lesion shows a <image 1>,"A. Eosinophilic granuloma
+B. osteosarcoma
+C. trauma with repair
+D. malignant germ cell tumor",A. Eosinophilic granuloma,"E. Meningioma
+F. Glioblastoma
+G. Metastatic carcinoma
+H. Osteoblastoma
+I. Chondrosarcoma
+J. Medulloblastoma",images/validation_Diagnostics_and_Laboratory_Medicine_23_1.png
+validation_Marketing_16,Sixty adults with gum disease were asked the number of times per week they used to floss before their diagnosis. The (incomplete) results are shown in table below. <image 1> What percent flossed at most three times per week?,"A. 90.25%
+B. 94.21%
+C. 93.33%
+D. 95.50%",C. 93.33%,"E. 91.76%
+F. 92.45%
+G. 94.87%
+H. 90.89%
+I. 95.21%
+J. 92.67%",images/validation_Marketing_16_1.png

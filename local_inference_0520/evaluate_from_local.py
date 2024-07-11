@@ -166,12 +166,12 @@ def check_exist(res, q_id):
 
 
 def extract_answer(text):
-    pattern = r"answer is \(?([ABCDEFGHIJ])\)?"
+    pattern = r"answer is \(?([A-J])\)?"
     match = re.search(pattern, text)
     if match:
         return match.group(1)
     else:
-        logging.info("1st answer extract failed\n" + text)
+        print("1st answer extract failed\n" + text)
         return extract_again(text)
 
 
@@ -179,6 +179,15 @@ def extract_again(text):
     match = re.search(r'.*[aA]nswer:\s*([A-J])', text)
     if match:
         return match.group(1)
+    else:
+        return extract_final(text)
+
+
+def extract_final(text):
+    pattern = r"[A-J](?=[^A-J]*$)"
+    match = re.search(pattern, text)
+    if match:
+        return match.group(0)
     else:
         return None
 
