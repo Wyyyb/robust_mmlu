@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/cot_prompt_lib/test_prompt_0711.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local_0711.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/exp_0711/eval_llama-3-8b_test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,15 +34,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520",
+    "last_opened_file_path": "/Users/server/MMLU/git/robust_mmlu/local_inference_0520/exp_0711",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/local_inference_0520" />
       <recent name="$PROJECT_DIR$/local_inference_0520/exp_0711" />
+      <recent name="$PROJECT_DIR$/local_inference_0520" />
       <recent name="$PROJECT_DIR$/generate_plausible_options/sample_process_mmmu" />
       <recent name="$PROJECT_DIR$/generate_plausible_options" />
       <recent name="$PROJECT_DIR$/local_inference_0520/07_scripts" />
@@ -203,7 +205,7 @@
       <workItem from="1717682744979" duration="8548000" />
       <workItem from="1718381837735" duration="12000" />
       <workItem from="1718626193042" duration="629000" />
-      <workItem from="1718634102686" duration="57793000" />
+      <workItem from="1718634102686" duration="58213000" />
     </task>
     <servers />
   </component>
