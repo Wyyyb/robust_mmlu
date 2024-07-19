@@ -3,7 +3,7 @@
 ngpu=2
 save_dir="eval_results_0719/"
 global_record_file="eval_results_0719/eval_record_collection_0719.csv"
-model="mistralai/mathstral-7B-v0.1"
+model="/ML-A100/team/mm/models/mathstral-7B-v0.1"
 # model="meta-llama/Meta-Llama-3-8B"
 # model="/ML-A800/models/Meta-Llama-3-8B"
 selected_subjects="all"

@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea7c048-a886-4ace-948b-af8b0c83f965" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/evaluate_gpt4o-mini/mmlu_pro_eval_gpt_4o_mini_0719.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local_0719_bk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_0719/eval_Mathstral.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_inference_0520/scripts_0719/eval_gemma-2-27b.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_hf/local_0611/mmlu_pro_test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_hf/local_0611/mmlu_pro_test_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_hf/local_0711/mmlu_pro_test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_hf/local_0711_discard/mmlu_pro_test_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_hf/local_0711/mmlu_pro_val_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data_hf/local_0711_discard/mmlu_pro_val_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_hf/pull_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_hf/pull_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_hf/push_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_hf/push_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/evaluate_from_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_0719/eval_Mathstral.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_0719/eval_Mathstral.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_inference_0520/scripts_0719/eval_Mistral_Nemo.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_inference_0520/scripts_0719/eval_Mistral_Nemo.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +206,7 @@
       <workItem from="1718381837735" duration="12000" />
       <workItem from="1718626193042" duration="629000" />
       <workItem from="1718634102686" duration="59794000" />
-      <workItem from="1720681097754" duration="11161000" />
+      <workItem from="1720681097754" duration="15798000" />
     </task>
     <servers />
   </component>
