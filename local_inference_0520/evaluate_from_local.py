@@ -184,8 +184,8 @@ def extract_again(text):
 
 
 def extract_final(text):
-    pattern = r"[A-J](?=[^A-J]*$)"
-    match = re.search(pattern, text)
+    pattern = r"\b[A-J]\b(?!.*\b[A-J]\b)"
+    match = re.search(pattern, text, re.DOTALL)
     if match:
         return match.group(0)
     else:
@@ -367,6 +367,8 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size", "-bs", type=int, default=-1)
     parser.add_argument("--model", "-m", type=str, default="meta-llama/Llama-2-7b-hf")
     parser.add_argument("--dataset", "-d", type=str, default="mmlu-pro")
+    parser.add_argument("--answer_extractor", "-ae", type=str, default="normal",
+                        choices=["strict", "normal", "lenient"])
 
     args = parser.parse_args()
     os.makedirs(args.save_dir, exist_ok=True)
