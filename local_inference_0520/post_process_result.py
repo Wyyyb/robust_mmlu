@@ -136,7 +136,7 @@ if __name__ == "__main__":
     #            "./model_outputs_Meta-Llama-3-8B_5shots_0711.json",
     #            "./submission.csv",
     #            "meta-llama/Meta-Llama-3-8B")
-    run_single("eval_results_0719/mathstral-7B-v0.1",
+    run_single("eval_results_0719/mathstral-7B-v0.1/CoT/mmlu-pro/",
                "eval_results_0719/mathstral-7B-v0.1/model_outputs_mathstral-7B_5shots.json",
                "./submission.csv",
                "Mathstral-7B-v0.1")
