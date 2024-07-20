@@ -23,7 +23,7 @@ def write_2dlist_to_csv(data, file_name):
 def merge_result(dir_path):
     res = []
     for file in os.listdir(dir_path):
-        if not file.endswith("result.json"):
+        if not file.endswith(".json") or "summary" in file:
             continue
         file_path = os.path.join(dir_path, file)
         with open(file_path, "r") as fi:
