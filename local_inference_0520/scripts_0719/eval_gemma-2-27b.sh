@@ -11,6 +11,7 @@ dataset="mmlu-pro"
 
 cd ../
 export CUDA_VISIBLE_DEVICES=2,3
+export VLLM_ATTENTION_BACKEND=FLASHINFER
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
