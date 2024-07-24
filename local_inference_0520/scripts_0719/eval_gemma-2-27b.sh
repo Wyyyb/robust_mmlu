@@ -1,8 +1,8 @@
 #!/bin/bash
 
-ngpu=4
-save_dir="eval_results_0719/"
-global_record_file="eval_results_0719/eval_record_collection_0719.csv"
+ngpu=2
+save_dir="eval_results_0725/"
+global_record_file="eval_results_0719/eval_record_collection_0725.csv"
 model="google/gemma-2-27b-it"
 selected_subjects="all"
 gpu_util=0.8
@@ -10,7 +10,7 @@ batch_size=2048
 dataset="mmlu-pro"
 
 cd ../
-export CUDA_VISIBLE_DEVICES=2,3,4,5
+export CUDA_VISIBLE_DEVICES=2,3
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
