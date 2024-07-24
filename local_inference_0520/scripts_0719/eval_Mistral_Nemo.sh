@@ -1,8 +1,8 @@
 #!/bin/bash
 
-ngpu=2
-save_dir="eval_results_0719/"
-global_record_file="eval_results_0719/eval_record_collection_0719.csv"
+ngpu=4
+save_dir="eval_results_0725/"
+global_record_file="eval_results_0725/eval_record_collection_0725.csv"
 # model="/ML-A100/team/mm/models/Mistral-Nemo-Instruct-2407"
 model="mistralai/Mistral-Nemo-Instruct-2407"
 # model="meta-llama/Meta-Llama-3-8B"
@@ -13,7 +13,7 @@ batch_size=2048
 dataset="mmlu-pro"
 
 cd ../
-export CUDA_VISIBLE_DEVICES=4,5
+export CUDA_VISIBLE_DEVICES=4,5,6,7
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
