@@ -3,7 +3,7 @@
 ngpu=8
 save_dir="eval_results_0729/"
 global_record_file="eval_results_0729/eval_record_collection_0729.csv"
-model="/ML-A100/team/mm/models/Meta-Llama-3.1-70B-Instruct"
+model="/mnt/tjena/yubo/models/Meta-Llama-3.1-70B-Instruct"
 # model="meta-llama/Meta-Llama-3-8B"
 # model="/ML-A800/models/Meta-Llama-3-8B"
 selected_subjects="all"
