@@ -1,8 +1,8 @@
 #!/bin/bash
 
-ngpu=2
-save_dir="eval_results_0725/"
-global_record_file="eval_results_0719/eval_record_collection_0725.csv"
+ngpu=4
+save_dir="eval_results_0730/"
+global_record_file="eval_results_0730/eval_record_collection_0730.csv"
 model="google/gemma-2-27b-it"
 selected_subjects="all"
 gpu_util=0.8
@@ -10,7 +10,7 @@ batch_size=2048
 dataset="mmlu-pro"
 
 cd ../
-export CUDA_VISIBLE_DEVICES=2,3
+export CUDA_VISIBLE_DEVICES=2,3,4,5
 export VLLM_ATTENTION_BACKEND=FLASHINFER
 
 python evaluate_from_local.py \
