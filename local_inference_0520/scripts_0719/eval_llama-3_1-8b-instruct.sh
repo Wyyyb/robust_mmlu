@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ngpu=2
+ngpu=4
 save_dir="eval_results_0731/"
 global_record_file="eval_results_0731/eval_record_collection_0731.csv"
 model="/mnt/tjena/yubo/models/Meta-Llama-3.1-8B-Instruct"
@@ -12,7 +12,7 @@ batch_size=2048
 dataset="mmlu-pro"
 
 cd ../
-export CUDA_VISIBLE_DEVICES=4,5
+export CUDA_VISIBLE_DEVICES=0,2,3,4
 
 python evaluate_from_local.py \
                  --selected_subjects $selected_subjects \
