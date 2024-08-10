@@ -18,7 +18,7 @@ do
     global_record_file="eval_results_0810/eval_record_collection_0810_$n_train.csv"
 
     python evaluate_from_local.py \
-                     --ntrain $n_train \
+                     --ntrain "$n_train" \
                      --selected_subjects $selected_subjects \
                      --ngpu $ngpu \
                      --save_dir $save_dir \
