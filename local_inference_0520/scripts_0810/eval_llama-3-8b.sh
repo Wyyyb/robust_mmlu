@@ -12,13 +12,13 @@ dataset="mmlu-pro"
 cd ../
 export CUDA_VISIBLE_DEVICES=4
 
-for n_train in {0..4}
+for n_train in 0 1 2 3 4
 do
     save_dir="eval_results_0810_$n_train/"
     global_record_file="eval_results_0810/eval_record_collection_0810_$n_train.csv"
 
     python evaluate_from_local.py \
-                     --ntrain "$n_train" \
+                     --ntrain $n_train \
                      --selected_subjects $selected_subjects \
                      --ngpu $ngpu \
                      --save_dir $save_dir \
