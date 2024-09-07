@@ -1,9 +1,12 @@
 #!/bin/bash
 
+source /xpfs/public/research/miniconda3/bin/activate
+conda activate lkg_eval
+
 ngpu=8
 save_dir="eval_results_0908/"
 global_record_file="eval_results_0908/eval_record_collection_0908.csv"
-model="/mnt/tjena/yubo/models/Reflection-Llama-3.1-70B"
+model="/gpfs/public/research/xy/yubowang/models/Reflection-Llama-3.1-70B"
 # model="meta-llama/Meta-Llama-3-8B"
 # model="/ML-A800/models/Meta-Llama-3-8B"
 selected_subjects="all"
