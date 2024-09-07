@@ -25,7 +25,8 @@ python evaluate_from_local_0907.py \
                  --global_record_file $global_record_file \
                  --gpu_util $gpu_util \
                  --batch_size $batch_size \
-                 --dataset $dataset
+                 --dataset $dataset \
+                 --ntrain 0
 
 
 
