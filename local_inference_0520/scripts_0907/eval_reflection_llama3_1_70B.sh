@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ngpu=8
-save_dir="eval_results_0907/"
-global_record_file="eval_results_0907/eval_record_collection_0907.csv"
+save_dir="eval_results_0908/"
+global_record_file="eval_results_0908/eval_record_collection_0908.csv"
 model="/mnt/tjena/yubo/models/Reflection-Llama-3.1-70B"
 # model="meta-llama/Meta-Llama-3-8B"
 # model="/ML-A800/models/Meta-Llama-3-8B"
@@ -14,7 +14,7 @@ dataset="mmlu-pro"
 cd ../
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
-python evaluate_from_local.py \
+python evaluate_from_local_0907.py \
                  --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
                  --save_dir $save_dir \
