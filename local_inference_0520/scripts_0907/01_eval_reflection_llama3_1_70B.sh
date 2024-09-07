@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source /xpfs/public/research/miniconda3/bin/activate
-conda activate lkg_eval
+source activate lkg_eval
 
 ngpu=4
 save_dir="eval_results_0908/"
