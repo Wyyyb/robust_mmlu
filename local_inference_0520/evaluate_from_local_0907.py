@@ -194,6 +194,7 @@ def extract_final(text):
 
 def batch_inference(llm, sampling_params, inference_batch):
     start = time.time()
+    print("---------prompt---------\n", inference_batch[0])
     outputs = llm.generate(inference_batch, sampling_params)
     logging.info(str(len(inference_batch)) + "size batch costing time: " + str(time.time() - start))
     response_batch = []
@@ -262,7 +263,6 @@ def eval_cot(subject, model, tokenizer, val_df, test_df, output_path, exists_res
             if length < max_model_length - max_new_tokens:
                 prompt_length_ok = True
             k -= 1
-        print("---------prompt---------\n", prompt)
         inference_batches.append(prompt)
         in_batch_index.append(i)
 
