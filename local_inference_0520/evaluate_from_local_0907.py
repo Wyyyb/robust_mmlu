@@ -132,7 +132,7 @@ def format_cot_example(example, including_answer=True):
                                                      "Answer: Let's think step by step.")
         prompt += cot_content + "\n\n"
     else:
-        prompt += "Answer: Let's think step by step."
+        prompt += "Answer: "
     return prompt
 
 
