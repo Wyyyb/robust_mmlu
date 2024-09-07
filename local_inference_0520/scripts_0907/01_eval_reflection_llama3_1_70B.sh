@@ -3,7 +3,7 @@
 source /xpfs/public/research/miniconda3/bin/activate
 conda activate lkg_eval
 
-ngpu=8
+ngpu=4
 save_dir="eval_results_0908/"
 global_record_file="eval_results_0908/eval_record_collection_0908.csv"
 model="/gpfs/public/research/xy/yubowang/models/Reflection-Llama-3.1-70B"
@@ -15,7 +15,7 @@ batch_size=8
 dataset="mmlu-pro"
 
 cd ../
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 python evaluate_from_local_0907.py \
                  --selected_subjects $selected_subjects \
