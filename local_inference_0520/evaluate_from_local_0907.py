@@ -196,6 +196,7 @@ def batch_inference(llm, sampling_params, inference_batch):
     start = time.time()
     print("---------prompt---------\n", inference_batch[0])
     outputs = llm.generate(inference_batch, sampling_params)
+    print("---------generated text---------\n", outputs[0].outputs[0].text)
     logging.info(str(len(inference_batch)) + "size batch costing time: " + str(time.time() - start))
     response_batch = []
     pred_batch = []
