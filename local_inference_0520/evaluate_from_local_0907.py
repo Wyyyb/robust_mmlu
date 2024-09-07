@@ -82,7 +82,7 @@ def load_model():
         llm = LLM(model=args.model, gpu_memory_utilization=float(args.gpu_util),
                   tensor_parallel_size=args.ngpu, max_model_len=max_model_length,
                   trust_remote_code=True)
-        sampling_params = SamplingParams(temperature=0, max_tokens=max_new_tokens,
+        sampling_params = SamplingParams(temperature=0.7, top_p=0.95, max_tokens=max_new_tokens,
                                          stop=["Question:"])
         tokenizer = transformers.AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
     except Exception as e:
@@ -138,7 +138,8 @@ def format_cot_example(example, including_answer=True):
 
 def generate_cot_prompt(val_df, curr, k):
     prompt = ""
-    with open(f"cot_prompt_lib/initial_prompt_0907.txt", "r") as fi:
+    # with open(f"cot_prompt_lib/initial_prompt_0907.txt", "r") as fi:
+    with open(f"cot_prompt_lib/initial_prompt_0908.txt", "r") as fi:
         for line in fi.readlines():
             prompt += line
     subject = curr["category"]
