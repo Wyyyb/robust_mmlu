@@ -7,7 +7,7 @@ global_record_file="eval_results_1016/eval_record_collection_1016.csv"
 model="/gpfs/public/research/xy/yubowang/models/Llama-3.1-Nemotron-70B-Instruct-HF"
 selected_subjects="all"
 gpu_util=0.8
-batch_size=8
+batch_size=-1
 dataset="mmlu-pro"
 
 cd ../

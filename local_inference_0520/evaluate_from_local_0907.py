@@ -275,7 +275,14 @@ def eval_cot(subject, model, tokenizer, val_df, test_df, output_path, exists_res
         else:
             end_index = len(test_df)
         curr_batch = inference_batches[i: end_index]
-        pred_batch, response_batch = batch_inference(llm, sampling_params, curr_batch)
+        print("i", i)
+        print("end_index", end_index)
+        try:
+            pred_batch, response_batch = batch_inference(llm, sampling_params, curr_batch)
+        except Exception as e:
+            print("Error", e)
+            i += batch_size
+            continue
         index_list = in_batch_index[i: end_index]
         for j, index in enumerate(index_list):
             curr = test_df[index]
