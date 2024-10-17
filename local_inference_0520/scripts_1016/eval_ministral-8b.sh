@@ -1,6 +1,6 @@
 #!/bin/bash
-source /gpfs/public/research/miniconda3/bin/activate
-conda activate vllm
+#source /gpfs/public/research/miniconda3/bin/activate
+#conda activate vllm
 ngpu=8
 save_dir="eval_results_1017/"
 global_record_file="eval_results_1016/eval_record_collection_1017.csv"
