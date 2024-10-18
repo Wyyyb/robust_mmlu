@@ -3,7 +3,7 @@
 #conda activate vllm
 ngpu=8
 save_dir="eval_results_1017/"
-global_record_file="eval_results_1016/eval_record_collection_1017.csv"
+global_record_file="eval_results_1017/eval_record_collection_1017.csv"
 model="/data/yubowang/models/mistral-8B-Instruct-2410"
 selected_subjects="all"
 gpu_util=0.8
