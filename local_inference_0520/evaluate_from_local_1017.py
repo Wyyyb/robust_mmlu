@@ -80,12 +80,12 @@ def read_csv_file(file_path):
 def load_model():
     try:
         llm = LLM(model=args.model, gpu_memory_utilization=float(args.gpu_util),
-                  tensor_parallel_size=args.ngpu, max_model_len=max_model_length,
-                  trust_remote_code=True, tokenizer_mode="mistral", config_format="mistral",
+                  tensor_parallel_size=args.ngpu, tokenizer_mode="mistral", config_format="mistral",
                   load_format="mistral")
         sampling_params = SamplingParams(temperature=0.7, top_p=0.95, max_tokens=max_new_tokens,
                                          stop=["Question:"])
-        tokenizer = transformers.AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
+        # tokenizer = transformers.AutoTokenizer.from_pretrained(args.model, trust_remote_code=True)
+        tokenizer = None
     except Exception as e:
         print("vllm unsupported models", e)
         return None, None
@@ -256,7 +256,7 @@ def eval_cot(subject, model, tokenizer, val_df, test_df, output_path, exists_res
         q_id = curr["question_id"]
         if check_exist(res, q_id):
             continue
-        prompt_length_ok = False
+        prompt_length_ok = True
         prompt = None
         while not prompt_length_ok:
             prompt = generate_cot_prompt(val_df, curr, k)
