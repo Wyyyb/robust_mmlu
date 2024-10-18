@@ -258,7 +258,7 @@ def eval_cot(subject, model, tokenizer, val_df, test_df, output_path, exists_res
         q_id = curr["question_id"]
         if check_exist(res, q_id):
             continue
-        prompt_length_ok = True
+        prompt_length_ok = False
         prompt = None
         while not prompt_length_ok:
             prompt = generate_cot_prompt(val_df, curr, k)
