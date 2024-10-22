@@ -7,3 +7,7 @@ huggingface-cli download --repo-type model openbmb/MiniCPM-Llama3-V-2_5 --local-
 huggingface-cli download --repo-type model google/gemma-2-27b --local-dir /mnt/tjena/yubo/gemma-2-27b
 
 huggingface-cli download --repo-type model google/gemma-2-27b-it --local-dir /mnt/tjena/yubo/gemma-2-27b-it
+
+huggingface-cli download --repo-type model Qwen/Qwen2.5-7B --local-dir /gpfs/public/research/xy/yubowang/models/Qwen2.5-7B
+
+huggingface-cli download --repo-type model ministral/Ministral-3b-instruct --local-dir /data/yubowang/models/Ministral-3b-instruct
