@@ -4,7 +4,7 @@
 ngpu=4
 save_dir="eval_results_1022/"
 global_record_file="eval_results_1022/eval_record_collection_1022.csv"
-model="mistralai/Mistral-Small-Instruct-2409"
+model="/data/yubowang/models/Mistral-Small-Instruct-2409"
 selected_subjects="all"
 gpu_util=0.8
 batch_size=8

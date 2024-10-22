@@ -11,3 +11,5 @@ huggingface-cli download --repo-type model google/gemma-2-27b-it --local-dir /mn
 huggingface-cli download --repo-type model Qwen/Qwen2.5-7B --local-dir /gpfs/public/research/xy/yubowang/models/Qwen2.5-7B
 
 huggingface-cli download --repo-type model ministral/Ministral-3b-instruct --local-dir /data/yubowang/models/Ministral-3b-instruct
+
+huggingface-cli download --repo-type model mistralai/Mistral-Small-Instruct-2409 --local-dir /data/yubowang/models/Mistral-Small-Instruct-2409
