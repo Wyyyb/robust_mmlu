@@ -4,7 +4,7 @@
 ngpu=4
 save_dir="eval_results_1022/"
 global_record_file="eval_results_1022/eval_record_collection_1022.csv"
-model="/data/yubowang/models/Ministral-3b-instruct"
+model="/data/yubowang/models/mistral-3b-instruct"
 selected_subjects="all"
 gpu_util=0.8
 batch_size=8
