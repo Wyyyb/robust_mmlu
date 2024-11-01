@@ -10,6 +10,7 @@ gpu_util=0.8
 batch_size=100
 dataset="mmlu-pro"
 export HF_HOME="/data/yubowang/hf_home"
+export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
 
 cd ../
 export CUDA_VISIBLE_DEVICES=1
