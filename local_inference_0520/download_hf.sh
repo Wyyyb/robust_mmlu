@@ -20,3 +20,14 @@ huggingface-cli download --repo-type model Qwen/Qwen2.5-3B --local-dir /gpfs/pub
 
 huggingface-cli download --repo-type model google/gemma-2-2b-it --local-dir /data/yubowang/models/gemma-2-2b-it
 
+huggingface-cli download --repo-type model CohereForAI/aya-expanse-32b --local-dir /data/yubowang/models/aya-expanse-32b
+
+huggingface-cli download --repo-type model CohereForAI/aya-expanse-8b --local-dir /data/yubowang/models/aya-expanse-8b
+
+
+
+
+
+
+
+
