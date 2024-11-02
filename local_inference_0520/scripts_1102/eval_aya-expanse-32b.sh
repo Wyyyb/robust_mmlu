@@ -13,7 +13,7 @@ export HF_HOME="/data/yubowang/hf_home"
 export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
 
 cd ../
-export CUDA_VISIBLE_DEVICES=4,5,6,7
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 python evaluate_from_local_0907.py \
                  --selected_subjects $selected_subjects \
