@@ -18,4 +18,5 @@ huggingface-cli download --repo-type model nvidia/NVLM-D-72B --local-dir /gpfs/p
 
 huggingface-cli download --repo-type model Qwen/Qwen2.5-3B --local-dir /gpfs/public/research/xy/yubowang/models/Qwen2.5-3B
 
+huggingface-cli download --repo-type model google/gemma-2-2b-it --local-dir /data/yubowang/models/gemma-2-2b-it
 
