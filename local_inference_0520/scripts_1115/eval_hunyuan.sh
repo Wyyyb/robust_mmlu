@@ -4,7 +4,7 @@ conda activate mmlu-pro
 ngpu=8
 save_dir="eval_results_1115/"
 global_record_file="eval_results_1115/eval_record_collection_1115.csv"
-model="/gpfs/public/research/xy/yubowang/models/Tencent-Hunyuan-Large"
+model="/gpfs/public/research/xy/yubowang/models/Tencent-Hunyuan-Large/Hunyuan-A52B-Instruct"
 selected_subjects="all"
 gpu_util=0.8
 batch_size=100
