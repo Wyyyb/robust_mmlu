@@ -28,6 +28,9 @@ huggingface-cli download --repo-type model Nexusflow/Athene-V2-Chat --local-dir 
 
 huggingface-cli download --repo-type model tencent/Tencent-Hunyuan-Large --local-dir /gpfs/public/research/xy/yubowang/models/Tencent-Hunyuan-Large
 
+huggingface-cli download --repo-type model Nexusflow/Athene-V2-Chat --local-dir /data/yubowang/models/Athene-V2-Chat
+
+huggingface-cli download --repo-type model tencent/Tencent-Hunyuan-Large --local-dir /data/yubowang/models/Tencent-Hunyuan-Large
 
 
 

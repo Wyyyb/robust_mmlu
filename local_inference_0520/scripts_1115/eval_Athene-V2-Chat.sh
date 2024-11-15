@@ -1,10 +1,11 @@
 #!/bin/bash
-source /gpfs/public/research/miniconda3/bin/activate
-conda activate mmlu-pro
+#source /gpfs/public/research/miniconda3/bin/activate
+#conda activate mmlu-pro
 ngpu=8
 save_dir="eval_results_1115/"
 global_record_file="eval_results_1115/eval_record_collection_1115.csv"
-model="/gpfs/public/research/xy/yubowang/models/Athene-V2-Chat"
+#model="/gpfs/public/research/xy/yubowang/models/Athene-V2-Chat"
+model="/data/yubowang/models/Athene-V2-Chat"
 selected_subjects="all"
 gpu_util=0.8
 batch_size=100
