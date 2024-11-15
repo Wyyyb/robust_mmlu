@@ -10,7 +10,7 @@ selected_subjects="all"
 gpu_util=0.8
 batch_size=100
 dataset="mmlu-pro"
-export HF_HOME="/gpfs/public/research/xy/yubowang/hf_home"
+# export HF_HOME="/gpfs/public/research/xy/yubowang/hf_home"
 export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
 
 cd ../
