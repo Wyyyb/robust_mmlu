@@ -24,7 +24,9 @@ huggingface-cli download --repo-type model CohereForAI/aya-expanse-32b --local-d
 
 huggingface-cli download --repo-type model CohereForAI/aya-expanse-8b --local-dir /data/yubowang/models/aya-expanse-8b
 
+huggingface-cli download --repo-type model Nexusflow/Athene-V2-Chat --local-dir /gpfs/public/research/xy/yubowang/models/Athene-V2-Chat
 
+huggingface-cli download --repo-type model tencent/Tencent-Hunyuan-Large --local-dir /gpfs/public/research/xy/yubowang/models/Tencent-Hunyuan-Large
 
 
 
