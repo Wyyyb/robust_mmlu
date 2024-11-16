@@ -1,7 +1,7 @@
 #!/bin/bash
 #source /gpfs/public/research/miniconda3/bin/activate
 #conda activate mmlu-pro
-ngpu=8
+ngpu=2
 save_dir="eval_results_1116/"
 global_record_file="eval_results_1116/eval_record_collection_1116.csv"
 #model="/gpfs/public/research/xy/yubowang/models/Athene-V2-Chat"
@@ -14,7 +14,7 @@ dataset="mmlu-pro"
 export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
 
 cd ../
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export CUDA_VISIBLE_DEVICES=4,5
 
 python evaluate_from_local_0907.py \
                  --selected_subjects $selected_subjects \
