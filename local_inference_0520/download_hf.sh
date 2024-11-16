@@ -32,7 +32,14 @@ huggingface-cli download --repo-type model Nexusflow/Athene-V2-Chat --local-dir 
 
 huggingface-cli download --repo-type model tencent/Tencent-Hunyuan-Large --local-dir /data/yubowang/models/Tencent-Hunyuan-Large
 
+huggingface-cli download --repo-type model google/gemma-2-27b-it --local-dir /data/yubowang/models/gemma-2-27b-it
 
+huggingface-cli download --repo-type model mistralai/Mixtral-8x22B-Instruct-v0.1 --local-dir /data/yubowang/models/Mixtral-8x22B-Instruct-v0.1
 
+huggingface-cli download --repo-type model google/gemma-2-27b-it --local-dir /gpfs/public/research/xy/yubowang/models/gemma-2-27b-it
 
+huggingface-cli download --repo-type model mistralai/Mixtral-8x22B-Instruct-v0.1 --local-dir /gpfs/public/research/xy/yubowang/models/Mixtral-8x22B-Instruct-v0.1
 
+huggingface-cli download --repo-type model mistralai/Mistral-Large-Instruct-2407 --local-dir /gpfs/public/research/xy/yubowang/models/Mistral-Large-Instruct-2407
+
+huggingface-cli download --repo-type model meta-llama/Llama-3.1-405B-Instruct --local-dir /gpfs/public/research/models/Llama-3.1-405B-Instruct
