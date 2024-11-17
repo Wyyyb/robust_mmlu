@@ -108,6 +108,7 @@ def args_generate_path(input_args):
     scoring_method = "CoT"
     model_name = input_args.model.split("/")[-1]
     subjects = args.selected_subjects.replace(",", "-").replace(" ", "_")
+    print("args_generate_path res", [model_name, scoring_method, args.dataset])
     return [model_name, scoring_method, args.dataset]
 
 
@@ -376,6 +377,7 @@ if __name__ == "__main__":
     save_result_dir = os.path.join(
         args.save_dir, "/".join(args_generate_path(args))
     )
+    print("save_result_dir", save_result_dir)
     file_prefix = "-".join(args_generate_path(args))
     timestamp = time.time()
     time_str = time.strftime('%m-%d_%H-%M', time.localtime(timestamp))
