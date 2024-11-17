@@ -2,8 +2,8 @@
 source /gpfs/public/research/miniconda3/bin/activate
 conda activate mmlu-pro
 ngpu=8
-save_dir="eval_results_1117/"
-global_record_file="eval_results_1117/eval_record_collection_1117.csv"
+save_dir="eval_results_1118/"
+global_record_file="eval_results_1118/eval_record_collection_1118.csv"
 #model="/gpfs/public/research/xy/yubowang/models/Athene-V2-Chat"
 model="/gpfs/public/research/xy/yubowang/models/Mistral-Large-Instruct-2407/"
 selected_subjects="all"
