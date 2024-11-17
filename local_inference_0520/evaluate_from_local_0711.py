@@ -248,8 +248,8 @@ def eval_cot(subject, model, tokenizer, val_df, test_df, output_path, exists_res
     for i in tqdm(range(len(test_df))):
         k = args.ntrain
         options_num = len(test_df[i]["options"])
-        if options_num != 10 and options_num != 4:
-            print("options_num", options_num)
+        # if options_num != 10 and options_num != 4:
+        #     print("options_num", options_num)
         curr = test_df[i]
         q_id = curr["question_id"]
         if check_exist(res, q_id):
