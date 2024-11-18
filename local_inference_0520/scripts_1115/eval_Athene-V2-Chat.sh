@@ -16,7 +16,8 @@ export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
 cd ../
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
 
-python evaluate_from_local_0907.py \
+python evaluate_from_local_0711.py \
+                 --ntrain 0 \
                  --selected_subjects $selected_subjects \
                  --ngpu $ngpu \
                  --save_dir $save_dir \
