@@ -3,11 +3,11 @@ import os
 
 # 模型名称
 # model_name = "meta-llama/Meta-Llama-3-70B"
-model_name = "Qwen/Qwen1.5-110B"
+model_name = "mistralai/Ministral-8B-Instruct-2410"
 
 # 保存模型的路径
 # save_directory = "/ML-A100/team/mm/zhangge/"
-save_directory = "/ML-A800/models/Qwen1.5-110B"
+save_directory = "/data/yubowang/models/Ministral-8B-Instruct-2410"
 os.makedirs(save_directory, exist_ok=True)
 # 加载模型和分词器
 model = AutoModelForCausalLM.from_pretrained(model_name)

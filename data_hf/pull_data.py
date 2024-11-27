@@ -35,10 +35,10 @@ def pull_data():
         sta_subjects[each["category"]] += 1
     print(sta_subjects)
     sta_source(test_data)
-    os.makedirs("local_0719/", exist_ok=True)
-    with open("local_0719/mmlu_pro_test_data.json", "w") as fo:
+    os.makedirs("local_1127/", exist_ok=True)
+    with open("local_1127/mmlu_pro_test_data.json", "w") as fo:
         fo.write(json.dumps(test_data))
-    with open("local_0719/mmlu_pro_val_data.json", "w") as fo:
+    with open("local_1127/mmlu_pro_val_data.json", "w") as fo:
         fo.write(json.dumps(val_data))
     return test_data, val_data
 
