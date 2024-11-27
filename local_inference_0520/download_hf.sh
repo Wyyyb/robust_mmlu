@@ -43,3 +43,5 @@ huggingface-cli download --repo-type model mistralai/Mixtral-8x22B-Instruct-v0.1
 huggingface-cli download --repo-type model mistralai/Mistral-Large-Instruct-2407 --local-dir /gpfs/public/research/xy/yubowang/models/Mistral-Large-Instruct-2407
 
 huggingface-cli download --repo-type model meta-llama/Llama-3.1-405B-Instruct --local-dir /gpfs/public/research/models/Llama-3.1-405B-Instruct
+
+huggingface-cli download --repo-type model allenai/OLMo-2-1124-7B --local-dir /data/yubowang/models/OLMo-2-1124-7B
