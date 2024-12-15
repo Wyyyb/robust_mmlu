@@ -4,7 +4,7 @@ conda activate test_mmlu_pro
 ngpu=8
 save_dir="eval_results_1215/"
 global_record_file="eval_results_1215/eval_record_collection_1215.csv"
-model="/gpfs/public/research/models/DeepSeek-V2.5-1210"
+model="/gpfs/public/research/models/Mistral-Large-Instruct-2411"
 selected_subjects="all"
 gpu_util=0.9
 batch_size=100

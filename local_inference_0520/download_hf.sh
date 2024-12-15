@@ -58,6 +58,7 @@ huggingface-cli download --repo-type model deepseek-ai/DeepSeek-V2.5-1210 --loca
 
 huggingface-cli download --repo-type model Qwen/QwQ-32B-Preview --local-dir /gpfs/public/research/models/QwQ-32B-Preview
 
+huggingface-cli download --repo-type model mistralai/Mistral-Large-Instruct-2411 --local-dir /gpfs/public/research/models/Mistral-Large-Instruct-2411
 
 
 
