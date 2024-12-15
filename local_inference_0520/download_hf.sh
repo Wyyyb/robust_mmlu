@@ -52,8 +52,11 @@ huggingface-cli download --repo-type model LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct 
 
 huggingface-cli download --repo-type model LGAI-EXAONE/EXAONE-3.5-32B-Instruct --local-dir /gpfs/public/research/models/EXAONE-3.5-32B-Instruct
 
+huggingface-cli download --repo-type model meta-llama/Llama-3.3-70B-Instruct --local-dir /gpfs/public/research/models/Llama-3.3-70B-Instruct
 
+huggingface-cli download --repo-type model deepseek-ai/DeepSeek-V2.5-1210 --local-dir /gpfs/public/research/models/DeepSeek-V2.5-1210
 
+huggingface-cli download --repo-type model Qwen/QwQ-32B-Preview --local-dir /gpfs/public/research/models/QwQ-32B-Preview
 
 
 
