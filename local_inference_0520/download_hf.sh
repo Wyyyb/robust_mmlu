@@ -45,3 +45,16 @@ huggingface-cli download --repo-type model mistralai/Mistral-Large-Instruct-2407
 huggingface-cli download --repo-type model meta-llama/Llama-3.1-405B-Instruct --local-dir /gpfs/public/research/models/Llama-3.1-405B-Instruct
 
 huggingface-cli download --repo-type model allenai/OLMo-2-1124-7B --local-dir /data/yubowang/models/OLMo-2-1124-7B
+
+huggingface-cli download --repo-type model LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct --local-dir /gpfs/public/research/models/EXAONE-3.5-2.4B-Instruct
+
+huggingface-cli download --repo-type model LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct --local-dir /gpfs/public/research/models/EXAONE-3.5-7.8B-Instruct
+
+huggingface-cli download --repo-type model LGAI-EXAONE/EXAONE-3.5-32B-Instruct --local-dir /gpfs/public/research/models/EXAONE-3.5-32B-Instruct
+
+
+
+
+
+
+
