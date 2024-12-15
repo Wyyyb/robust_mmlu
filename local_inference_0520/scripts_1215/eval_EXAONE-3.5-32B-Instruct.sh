@@ -4,7 +4,7 @@ conda activate mmlu-pro
 ngpu=4
 save_dir="eval_results_1215/"
 global_record_file="eval_results_1215/eval_record_collection_1215.csv"
-model="/gpfs/public/research/xy/yubowang/models/EXAONE-3.5-32B-Instruct"
+model="/gpfs/public/research/models/EXAONE-3.5-32B-Instruct"
 selected_subjects="all"
 gpu_util=0.8
 batch_size=100
