@@ -1,19 +1,19 @@
 #!/bin/bash
 source /gpfs/public/research/miniconda3/bin/activate
 conda activate mmlu-pro
-ngpu=4
+ngpu=1
 save_dir="eval_results_1215/"
 global_record_file="eval_results_1215/eval_record_collection_1215.csv"
 model="/gpfs/public/research/models/EXAONE-3.5-32B-Instruct"
 selected_subjects="all"
-gpu_util=0.8
+gpu_util=0.9
 batch_size=100
 dataset="mmlu-pro"
 # export HF_HOME="/gpfs/public/research/xy/yubowang/hf_home"
 export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
 
 cd ../
-export CUDA_VISIBLE_DEVICES=0,1,2,3
+export CUDA_VISIBLE_DEVICES=0
 
 python evaluate_from_local_0711.py \
                  --selected_subjects $selected_subjects \
