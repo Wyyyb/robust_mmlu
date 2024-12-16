@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /gpfs/public/research/xy/yubowang/robust_mmlu/local_inference_0520/scripts_1215
 source /gpfs/public/research/miniconda3/bin/activate
 conda activate test_mmlu_pro
 ngpu=8
