@@ -2,7 +2,7 @@
 cd /gpfs/public/research/xy/yubowang/robust_mmlu/local_inference_0520/scripts_1215
 source /gpfs/public/research/miniconda3/bin/activate
 conda activate test_mmlu_pro
-ngpu=8
+ngpu=4
 save_dir="eval_results_1215/"
 global_record_file="eval_results_1215/eval_record_collection_1215.csv"
 model="/gpfs/public/research/models/Mistral-Large-Instruct-2411"
@@ -14,7 +14,7 @@ dataset="mmlu-pro"
 export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
 
 cd ../
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 python evaluate_from_local_0711.py \
                  --selected_subjects $selected_subjects \
