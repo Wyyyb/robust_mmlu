@@ -64,3 +64,14 @@ huggingface-cli download --repo-type model ibm-granite/granite-3.1-8b-instruct -
 
 huggingface-cli download --repo-type model ibm-granite/granite-3.1-8b-base --local-dir /gpfs/public/research/models/granite-3.1-8b-base
 
+huggingface-cli download --repo-type model ibm-granite/granite-3.1-3b-a800m-instruct --local-dir /gpfs/public/research/models/granite-3.1-3b-a800m-instruct
+
+huggingface-cli download --repo-type model ibm-granite/granite-3.1-3b-a800m-base --local-dir /gpfs/public/research/models/granite-3.1-3b-a800m-base
+
+huggingface-cli download --repo-type model ibm-granite/granite-3.1-1b-a400m-instruct --local-dir /gpfs/public/research/models/granite-3.1-1b-a400m-instruct
+
+huggingface-cli download --repo-type model ibm-granite/granite-3.1-1b-a400m-base --local-dir /gpfs/public/research/models/granite-3.1-1b-a400m-base
+
+huggingface-cli download --repo-type model ibm-granite/granite-3.1-2b-instruct --local-dir /gpfs/public/research/models/granite-3.1-2b-instruct
+
+huggingface-cli download --repo-type model ibm-granite/granite-3.1-2b-base --local-dir /gpfs/public/research/models/granite-3.1-2b-base
