@@ -60,5 +60,7 @@ huggingface-cli download --repo-type model Qwen/QwQ-32B-Preview --local-dir /gpf
 
 huggingface-cli download --repo-type model mistralai/Mistral-Large-Instruct-2411 --local-dir /gpfs/public/research/models/Mistral-Large-Instruct-2411
 
+huggingface-cli download --repo-type model ibm-granite/granite-3.1-8b-instruct --local-dir /gpfs/public/research/models/granite-3.1-8b-instruct
 
+huggingface-cli download --repo-type model ibm-granite/granite-3.1-8b-base --local-dir /gpfs/public/research/models/granite-3.1-8b-base
 
