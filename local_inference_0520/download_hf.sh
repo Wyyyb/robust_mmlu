@@ -75,3 +75,7 @@ huggingface-cli download --repo-type model ibm-granite/granite-3.1-1b-a400m-base
 huggingface-cli download --repo-type model ibm-granite/granite-3.1-2b-instruct --local-dir /gpfs/public/research/models/granite-3.1-2b-instruct
 
 huggingface-cli download --repo-type model ibm-granite/granite-3.1-2b-base --local-dir /gpfs/public/research/models/granite-3.1-2b-base
+
+huggingface-cli download --repo-type model OpenGVLab/InternVL2_5-78B --local-dir /gpfs/public/01/models/hf_models/InternVL2_5-78B
+
+huggingface-cli download --repo-type model Qwen/QVQ-72B-Preview --local-dir /gpfs/public/01/models/hf_models/QVQ-72B-Preview
