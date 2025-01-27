@@ -1,7 +1,7 @@
 #!/bin/bash
 source /gpfs/public/research/miniconda3/bin/activate
 conda activate mmlu-pro
-ngpu=2
+ngpu=4
 save_dir="eval_results_0127/"
 global_record_file="eval_results_0127/eval_record_collection_0127.csv"
 model="/gpfs/public/research/xy/yubowang/models/Sky-T1-32B-Preview"
@@ -12,8 +12,8 @@ dataset="mmlu-pro"
 # export HF_HOME="/gpfs/public/research/xy/yubowang/hf_home"
 export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
 
-cd ../
-export CUDA_VISIBLE_DEVICES=0,1
+cd /gpfs/public/research/xy/yubowang/robust_mmlu/local_inference_0520/
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 python evaluate_from_local_0711.py \
                  --selected_subjects $selected_subjects \
