@@ -12,7 +12,7 @@ dataset="mmlu-pro"
 # export HF_HOME="/gpfs/public/research/xy/yubowang/hf_home"
 export VLLM_ALLOW_LONG_MAX_MODEL_LEN=1
 
-cd /gpfs/public/research/xy/yubowang/robust_mmlu/local_inference_0520/
+cd ..
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 python evaluate_from_local_0711.py \
