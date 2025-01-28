@@ -4,7 +4,7 @@
 ngpu=4
 save_dir="eval_results_0127/"
 global_record_file="eval_results_0127/eval_record_collection_0127.csv"
-model="/gpfs/public/research/xy/yubowang/models/Qwen2.5-32B-Instruct"
+model="/data/yubowang/models/Qwen2.5-32B-Instruct"
 selected_subjects="all"
 gpu_util=0.95
 batch_size=100
