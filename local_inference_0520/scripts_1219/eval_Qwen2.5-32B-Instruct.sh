@@ -1,6 +1,6 @@
 #!/bin/bash
-source /gpfs/public/research/miniconda3/bin/activate
-conda activate mmlu-pro
+#source /gpfs/public/research/miniconda3/bin/activate
+#conda activate mmlu-pro
 ngpu=4
 save_dir="eval_results_0127/"
 global_record_file="eval_results_0127/eval_record_collection_0127.csv"
