@@ -20,3 +20,4 @@ huggingface-cli download HuggingFaceTB/SmolLM2-135M --local-dir /data/yubowang/m
 
 huggingface-cli download Qwen/Qwen2.5-14B --local-dir /gpfs/public/research/xy/yubowang/models/Qwen2.5-14B --resume-download
 
+huggingface-cli download Qwen/Qwen2.5-32B-Instruct --local-dir /data/yubowang/models/Qwen2.5-32B-Instruct --resume-download
