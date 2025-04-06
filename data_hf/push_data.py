@@ -5,9 +5,9 @@ import json
 
 def push_data():
     # with open("pushed_data/test_data.json", "r") as fi:
-    with open("local_0405/mmlu_pro_test_data.json", "r") as fi:
+    with open("local_0406/mmlu_pro_test_data.json", "r") as fi:
         test_data = json.load(fi)
-    with open("local_0405/mmlu_pro_val_data.json", "r") as fi:
+    with open("local_0406/mmlu_pro_val_data.json", "r") as fi:
         val_data = json.load(fi)
     for i, each in enumerate(test_data):
         if "cot_content" not in each:
